@@ -1,0 +1,89 @@
+body {
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+a:hover { 
+    text-decoration: underline; 
+    background-color: transparent;
+    color: currentColor;
+}
+
+h1 {
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+
+    @include breakpoint($tablet) { font-size: 50px; }
+    @include breakpoint($desktop) { font-size: 60px; }
+}
+
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+
+    @include breakpoint($tablet) { font-size: 28px; }
+    @include breakpoint($desktop) { font-size: 32px; }
+}
+
+
+h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    @include breakpoint($tablet) { font-size: 22px; }
+}
+
+pre {
+    background-color: $gray-10;
+    padding: 10px 20px;   
+}
+
+p > a { 
+    text-decoration: underline; 
+}
+
+p > a:hover { 
+    text-decoration: none;
+
+}
+
+table {
+    margin-top: 20px;
+    width: 100%;
+
+    th { 
+        background-color: $gray-10;
+        text-transform: uppercase;
+    }
+
+    tr { text-align: left; }
+    tr:nth-child(2n) { background-color: $gray-05; }
+
+    td, th {
+        padding: 8px;
+        font-size: 12px;
+        vertical-align: top;
+        @include breakpoint($tablet) { 
+            font-size: 16px; 
+            padding: 10px;
+        }
+        @include breakpoint($desktop) { 
+            font-size: 16px; 
+            padding: 15px;
+        }
+    }
+
+    td p {
+        margin: 0;
+        line-height: 1.2;
+    }
+}
