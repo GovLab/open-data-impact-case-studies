@@ -20,8 +20,15 @@
         }
     }
 
-    .e-nav-group { 
-        position: absolute; 
+    // for text-only titles
+    .e-title {
+        padding: 11px 0 0 0;
+        text-align: center;
+        display: block;
+    }
+
+    .e-nav-group {
+        position: absolute;
         top: 0;
 
         &.m-left { left: 0; }
@@ -35,6 +42,11 @@
     }
 
     .e-nav-item.m-container { padding: 0; }
+
+    &.m-negative {
+        background-color: transparent;
+        color: $black;
+    }
 }
 
 .b-top-nav {

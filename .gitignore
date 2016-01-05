@@ -1,0 +1,4 @@
+_Store
+.sass-cache
+venv
+support/*
