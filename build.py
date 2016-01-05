@@ -152,7 +152,7 @@ if __name__ == '__main__':
         sass_dest_path=path.join(_SEARCHPATH, 'static', 'styles',
                                  'styles.css'),
         site=site,
-        site_name='www.thegovlab.org',
+        site_name='odi-draft',
     )
     context.add_to(manager)
     argh.add_commands(manager.parser, [deploy, clean])
