@@ -25,6 +25,9 @@
         @include transition;
     }
 
+
+
+
     &.m-naked {
         letter-spacing: 0.5px;
         padding: 8px 12px;
@@ -37,11 +40,11 @@
             background-color: $gray-20;
             margin-left: 0;
             @include transition;
-        }    
+        }
     }
 }
 
-.b-button.m-purple { 
+.b-button.m-purple {
     background-color: $purple;
     color: $white;
 }

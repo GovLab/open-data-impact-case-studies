@@ -9,9 +9,15 @@
 
     h4 { text-transform: uppercase; }
 
-    .row {
+    .row, .columns {
         &.spaced {
             margin-bottom: 50px;
+        }
+    }
+
+    &.m-impact-section {
+        p.b-description {
+            margin-top: 5px;
         }
     }
 }

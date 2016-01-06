@@ -98,16 +98,18 @@ table {
     }
 }
 
-i.material-icons {
+i {
+    &.m-xl {
+        font-size: 150px;
+    }
     &.m-xl-badge {
         display: block;
         width: 150px;
         margin: 0 auto 50px auto;
         font-size: 150px;
     }
-    &.m-gray {
-        color: $gray-30;
-    }
+    &.m-gray { color: $gray-20; }
+    &.m-black { color: $gray-60; }
 }
 
 .m-space-1 {

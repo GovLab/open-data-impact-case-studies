@@ -4777,13 +4777,17 @@ table {
     margin: 0;
     line-height: 1.2; }
 
-i.material-icons.m-xl-badge {
+i.m-xl {
+  font-size: 150px; }
+i.m-xl-badge {
   display: block;
   width: 150px;
   margin: 0 auto 50px auto;
   font-size: 150px; }
-i.material-icons.m-gray {
-  color: rgba(0, 0, 0, 0.3); }
+i.m-gray {
+  color: rgba(0, 0, 0, 0.2); }
+i.m-black {
+  color: rgba(0, 0, 0, 0.6); }
 
 .m-space-1 {
   margin-top: 100px;
@@ -4817,6 +4821,10 @@ i.material-icons.m-gray {
     margin-left: 15px;
     vertical-align: bottom;
     float: right; }
+  .b-button.m-panel, .b-form input.m-panel[type="submit"] {
+    display: block; }
+    .b-button.m-panel i.m-xl, .b-form input.m-panel[type="submit"] i.m-xl {
+      font-size: 150px; }
 
 .b-button.m-icon-only i, .b-form input.m-icon-only[type="submit"] i {
   margin-left: 0;
@@ -5496,8 +5504,10 @@ i.material-icons.m-gray {
     font-weight: 100; }
   .b-page-section h4 {
     text-transform: uppercase; }
-  .b-page-section .row.spaced {
+  .b-page-section .row.spaced, .b-page-section .columns.spaced {
     margin-bottom: 50px; }
+  .b-page-section.m-impact-section p.b-description {
+    margin-top: 5px; }
 
 .b-page-section.m-purple,
 .b-page-section.m-black,

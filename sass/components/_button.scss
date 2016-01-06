@@ -9,14 +9,14 @@
 
     @include transition;
 
-    
-    &:hover { 
+
+    &:hover {
         text-decoration: none;
         @include transition;
         background-color: $gray-20;
     }
 
-    @include breakpoint($mobile-only) { 
+    @include breakpoint($mobile-only) {
         // display: block;
         text-align: center;
 
@@ -30,42 +30,51 @@
         vertical-align: bottom;
         float: right;
     }
+
+    &.m-panel {
+        display: block;
+        i {
+            &.m-xl {
+                font-size: 150px;
+            }
+        }
+    }
 }
 
-.b-button.m-icon-only i { 
+.b-button.m-icon-only i {
     margin-left: 0;
-    float: none; 
+    float: none;
 }
 
-.b-button.m-purple { 
+.b-button.m-purple {
     background-color: $purple;
     color: $white;
 
     &:hover { background-color: $purple-40k; }
 }
 
-.b-button.m-teal { 
+.b-button.m-teal {
     background-color: $teal;
     color: $white;
 
     &:hover { background-color: $teal-20k; }
 }
 
-.b-button.m-orange { 
+.b-button.m-orange {
     background-color: $orange;
     color: $white;
 
     &:hover { background-color: $orange-20k; }
 }
 
-.b-button.m-blue { 
+.b-button.m-blue {
     background-color: $blue;
     color: $white;
 
     &:hover { background-color: $blue-20k; }
 }
 
-.b-button.m-black { 
+.b-button.m-black {
     background-color: $black;
     color: $white;
 
@@ -83,5 +92,5 @@
     &:hover {
         background-color: $gray-20;
         @include transition;
-    }    
+    }
 }
