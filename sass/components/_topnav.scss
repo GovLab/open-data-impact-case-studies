@@ -1,10 +1,10 @@
 .b-top-nav {
     background-color: $black;
     color: $white;
-    padding: 5px;
+    padding: 5px 5px 10px 5px;
     position: relative;
 
-    @include breakpoint($tablet) { padding: 10px 20px; }
+    @include breakpoint($tablet) { padding: 10px 20px 20px 20px; }
 
 
     a { color: currentColor; }
@@ -30,6 +30,14 @@
     .e-nav-group {
         position: absolute;
         top: 0;
+
+        .e-side-logo {
+            position: relative;
+            top: -8px;
+            img {
+                max-width: 75px;
+            }
+        }
 
         &.m-left { left: 0; }
         &.m-right { right: 0; }

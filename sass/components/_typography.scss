@@ -23,6 +23,12 @@ h1 {
 
     @include breakpoint($tablet) { font-size: 50px; }
     @include breakpoint($desktop) { font-size: 60px; }
+
+    &.m-sm {
+        font-size: 20px;
+        @include breakpoint($tablet) { font-size: 40px; }
+        @include breakpoint($desktop) { font-size: 50px; }
+    }
 }
 
 h2 {
@@ -47,13 +53,17 @@ pre {
     padding: 10px 20px;
 }
 
-p > a {
-    text-decoration: underline;
-}
+p {
+    &.m-lg {
+        font-size: 20px;
+    }
 
-p > a:hover {
-    text-decoration: none;
-
+    & > a {
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }
 
 table {
@@ -89,7 +99,7 @@ table {
 }
 
 .m-space-1 {
-    margin-top: 100px !important;
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 

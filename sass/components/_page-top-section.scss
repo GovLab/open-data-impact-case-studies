@@ -1,8 +1,16 @@
 .b-top-section {
     background-color: $black;
     color: $white-80;
-    padding-top: 70px;
-    padding-bottom: 30px;
+    // padding: 0;
+    padding: 100px 0;
+
+    h1 {
+        &.m-space-1 {
+            // font-weight: 300;
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+    }
 
     h2 {
         text-align: center;
@@ -11,6 +19,11 @@
         font-weight: 100;
         font-size: 30px;
         margin-top: 0;
+
+        &.m-space-1 {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
     }
 
     h3 {
@@ -20,13 +33,42 @@
         font-size: 22px;
         font-weight: 100;
     }
+
+    .b-shader {
+        // width: 100%;
+        // height: 100%;
+        padding: 50px 0;
+        background-color: $gray-50;
+    }
+
+    &.m-orange  { background-color: $orange; }
+    &.m-purple  { background-color: $purple; }
+    &.m-blue    { background-color: $blue;   }
+    &.m-teal    { background-color: $teal;   }
+    &.m-light   { background-color: transparent;  color: $black;  }
+
+    &.m-hires-1   {
+        background: url('../img/citybg.jpg') no-repeat center top;
+        background-size: cover;
+    }
+
+    i.m-lg-faded {
+        font-size: 50px;
+        color: $white-40;
+        &:hover {
+            color: $white;
+            @include transition;
+        }
+    }
+
+    // &.m-flush-top {
+    //     position: relative;
+    //     top: 0;
+    //     z-index: -1;
+    // }
 }
 
-.b-top-section.m-orange  { background-color: $orange; }
-.b-top-section.m-purple  { background-color: $purple; }
-.b-top-section.m-blue    { background-color: $blue;   }
-.b-top-section.m-teal    { background-color: $teal;   }
-.b-top-section.m-light   { background-color: transparent;  color: $black;  }
+
 
 
 
