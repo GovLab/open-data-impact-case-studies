@@ -4777,6 +4777,14 @@ table {
     margin: 0;
     line-height: 1.2; }
 
+i.material-icons.m-xl-badge {
+  display: block;
+  width: 150px;
+  margin: 0 auto 50px auto;
+  font-size: 150px; }
+i.material-icons.m-gray {
+  color: rgba(0, 0, 0, 0.3); }
+
 .m-space-1 {
   margin-top: 100px;
   margin-bottom: 100px; }
@@ -5488,6 +5496,8 @@ table {
     font-weight: 100; }
   .b-page-section h4 {
     text-transform: uppercase; }
+  .b-page-section .row.spaced {
+    margin-bottom: 50px; }
 
 .b-page-section.m-purple,
 .b-page-section.m-black,
