@@ -4679,9 +4679,7 @@ table.hover tr:nth-of-type(even):hover {
   left: 0;
   right: 0;
   z-index: 10;
-  display: none;
-  background-color: red;
-  opacity: .1; }
+  display: none; }
   #overlay.m-active {
     display: block; }
 
@@ -4723,6 +4721,12 @@ h1 {
   @media screen and (min-width: 64.0625em) {
     h1 {
       font-size: 60px; } }
+  h1.m-sm {
+    font-size: 20px;
+    font-size: 40px; }
+    @media screen and (min-width: 64.0625em) {
+      h1.m-sm {
+        font-size: 50px; } }
 
 h2 {
   font-size: 20px;
@@ -4742,11 +4746,12 @@ pre {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 10px 20px; }
 
+p.m-lg {
+  font-size: 20px; }
 p > a {
   text-decoration: underline; }
-
-p > a:hover {
-  text-decoration: none; }
+  p > a:hover {
+    text-decoration: none; }
 
 table {
   margin-top: 20px;
@@ -4772,8 +4777,20 @@ table {
     margin: 0;
     line-height: 1.2; }
 
+i.m-xl {
+  font-size: 150px; }
+i.m-xl-badge {
+  display: block;
+  width: 150px;
+  margin: 0 auto 50px auto;
+  font-size: 150px; }
+i.m-gray {
+  color: rgba(0, 0, 0, 0.2); }
+i.m-black {
+  color: rgba(0, 0, 0, 0.6); }
+
 .m-space-1 {
-  margin-top: 100px !important;
+  margin-top: 100px;
   margin-bottom: 100px; }
 
 .m-space-2 {
@@ -4804,6 +4821,10 @@ table {
     margin-left: 15px;
     vertical-align: bottom;
     float: right; }
+  .b-button.m-panel, .b-form input.m-panel[type="submit"] {
+    display: block; }
+    .b-button.m-panel i.m-xl, .b-form input.m-panel[type="submit"] i.m-xl {
+      font-size: 150px; }
 
 .b-button.m-icon-only i, .b-form input.m-icon-only[type="submit"] i {
   margin-left: 0;
@@ -5103,9 +5124,9 @@ table {
 .b-top-nav {
   background-color: #333;
   color: white;
-  padding: 5px;
+  padding: 5px 5px 10px 5px;
   position: relative;
-  padding: 10px 20px; }
+  padding: 10px 20px 20px 20px; }
   .b-top-nav a {
     color: currentColor; }
   .b-top-nav .e-logo {
@@ -5122,6 +5143,11 @@ table {
   .b-top-nav .e-nav-group {
     position: absolute;
     top: 0; }
+    .b-top-nav .e-nav-group .e-side-logo {
+      position: relative;
+      top: -8px; }
+      .b-top-nav .e-nav-group .e-side-logo img {
+        max-width: 75px; }
     .b-top-nav .e-nav-group.m-left {
       left: 0; }
     .b-top-nav .e-nav-group.m-right {
@@ -5426,8 +5452,10 @@ table {
 .b-top-section {
   background-color: #333;
   color: rgba(255, 255, 255, 0.8);
-  padding-top: 70px;
-  padding-bottom: 30px; }
+  padding: 100px 0; }
+  .b-top-section h1.m-space-1 {
+    margin-top: 0;
+    margin-bottom: 50px; }
   .b-top-section h2 {
     text-align: center;
     text-transform: uppercase;
@@ -5435,28 +5463,38 @@ table {
     font-weight: 100;
     font-size: 30px;
     margin-top: 0; }
+    .b-top-section h2.m-space-1 {
+      margin-top: 100px;
+      margin-bottom: 100px; }
   .b-top-section h3 {
     text-align: center;
     margin-bottom: 30px;
     text-transform: none;
     font-size: 22px;
     font-weight: 100; }
-
-.b-top-section.m-orange {
-  background-color: #ee5b43; }
-
-.b-top-section.m-purple {
-  background-color: #523080; }
-
-.b-top-section.m-blue {
-  background-color: #008ab3; }
-
-.b-top-section.m-teal {
-  background-color: #008895; }
-
-.b-top-section.m-light {
-  background-color: transparent;
-  color: #333; }
+  .b-top-section .b-shader {
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.5); }
+  .b-top-section.m-orange {
+    background-color: #ee5b43; }
+  .b-top-section.m-purple {
+    background-color: #523080; }
+  .b-top-section.m-blue {
+    background-color: #008ab3; }
+  .b-top-section.m-teal {
+    background-color: #008895; }
+  .b-top-section.m-light {
+    background-color: transparent;
+    color: #333; }
+  .b-top-section.m-hires-1 {
+    background: url("../img/citybg.jpg") no-repeat center top;
+    background-size: cover; }
+  .b-top-section i.m-lg-faded {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.4); }
+    .b-top-section i.m-lg-faded:hover {
+      color: white;
+      transition: all .4s ease; }
 
 .b-page-section {
   padding-top: 30px;
@@ -5466,6 +5504,10 @@ table {
     font-weight: 100; }
   .b-page-section h4 {
     text-transform: uppercase; }
+  .b-page-section .row.spaced, .b-page-section .columns.spaced {
+    margin-bottom: 50px; }
+  .b-page-section.m-impact-section p.b-description {
+    margin-top: 5px; }
 
 .b-page-section.m-purple,
 .b-page-section.m-black,
