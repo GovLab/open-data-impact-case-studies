@@ -54,14 +54,6 @@ pre {
 }
 
 p {
-    &.m-lg {
-        font-size: 20px;
-    }
-
-    &.m-xl {
-        font-size: 32px;
-    }
-
     & > a {
         text-decoration: underline;
         &:hover {
@@ -102,31 +94,3 @@ table {
     }
 }
 
-i {
-    &.m-xl {
-        font-size: 150px;
-    }
-    &.m-xl-badge {
-        display: block;
-        width: 150px;
-        margin: 0 auto 50px auto;
-        font-size: 150px;
-    }
-    &.m-gray { color: $gray-20; }
-    &.m-black { color: $gray-60; }
-}
-
-.m-space-1 {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.m-space-2 {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.m-space-3 {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
