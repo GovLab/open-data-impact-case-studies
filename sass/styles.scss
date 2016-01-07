@@ -13,7 +13,6 @@
 @import 'components/base';
 
 // components
-
 @import 'components/typography';
 @import 'components/button';
 @import 'components/form';
@@ -31,14 +30,5 @@
 @import 'components/breadcrumbs';
 @import 'components/modal';
 
-
-
-
-body {
-    // background-color: red;
-    // background-color: $purple;
-}
-
-
-
-
+// custom site rules
+@import 'custom';
