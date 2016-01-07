@@ -4803,10 +4803,6 @@ pre {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 10px 20px; }
 
-p.m-lg {
-  font-size: 20px; }
-p.m-xl {
-  font-size: 32px; }
 p > a {
   text-decoration: underline; }
   p > a:hover {
@@ -4835,30 +4831,6 @@ table {
   table td p {
     margin: 0;
     line-height: 1.2; }
-
-i.m-xl {
-  font-size: 150px; }
-i.m-xl-badge {
-  display: block;
-  width: 150px;
-  margin: 0 auto 50px auto;
-  font-size: 150px; }
-i.m-gray {
-  color: rgba(0, 0, 0, 0.2); }
-i.m-black {
-  color: rgba(0, 0, 0, 0.6); }
-
-.m-space-1 {
-  margin-top: 100px;
-  margin-bottom: 100px; }
-
-.m-space-2 {
-  margin-top: 50px;
-  margin-bottom: 50px; }
-
-.m-space-3 {
-  margin-top: 25px;
-  margin-bottom: 25px; }
 
 .b-button, .b-form input[type="submit"] {
   display: inline-block;
