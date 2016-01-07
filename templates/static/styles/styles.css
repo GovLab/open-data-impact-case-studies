@@ -4748,6 +4748,8 @@ pre {
 
 p.m-lg {
   font-size: 20px; }
+p.m-xl {
+  font-size: 32px; }
 p > a {
   text-decoration: underline; }
   p > a:hover {
@@ -5506,6 +5508,9 @@ i.m-black {
     text-transform: uppercase; }
   .b-page-section .row.spaced, .b-page-section .columns.spaced {
     margin-bottom: 50px; }
+  .b-page-section .row.padded, .b-page-section .columns.padded {
+    padding-top: 50px;
+    padding-bottom: 50px; }
   .b-page-section.m-impact-section p.b-description {
     margin-top: 5px; }
 
