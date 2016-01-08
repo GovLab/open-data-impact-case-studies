@@ -1,0 +1,17 @@
+.b-page-section {
+    .row, .columns {
+        &.m-spaced {
+            margin-bottom: 50px;
+        }
+        &.m-padded {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+
+    &.m-impact-section {
+        p.b-description {
+            margin-top: 5px;
+        }
+    }
+}

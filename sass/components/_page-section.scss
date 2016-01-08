@@ -9,21 +9,9 @@
 
     h4 { text-transform: uppercase; }
 
-    .row, .columns {
-        &.spaced {
-            margin-bottom: 50px;
-        }
-        &.padded {
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-    }
 
-    &.m-impact-section {
-        p.b-description {
-            margin-top: 5px;
-        }
-    }
+
+
 }
 
 .b-page-section.m-purple,
