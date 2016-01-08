@@ -1,0 +1,27 @@
+.b-top-nav {
+    padding: 5px 5px 10px 5px;
+
+    @include breakpoint($tablet) { padding: 10px 20px 20px 20px; }
+
+    // for text-only title
+    .e-title {
+        padding: 11px 0 0 0;
+        text-align: center;
+        display: block;
+    }
+
+    &.m-negative {
+        background-color: transparent;
+        color: $black;
+    }
+
+    .e-nav-group {
+        .e-side-logo {
+            position: relative;
+            top: -8px;
+            img {
+                max-width: 75px;
+            }
+        }
+    }
+}
