@@ -1,0 +1,10 @@
+.b-button {
+    &.m-panel {
+        display: block;
+        i {
+            &.m-xl {
+                font-size: 150px;
+            }
+        }
+    }
+}
