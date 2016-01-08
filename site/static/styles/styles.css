@@ -3038,7 +3038,7 @@ table.hover tr:nth-of-type(even):hover {
 .tabs {
   margin: 0;
   list-style-type: none;
-  background: #777;
+  background: #999;
   border: 1px solid #fff; }
   .tabs::before, .tabs::after {
     content: ' ';
@@ -4208,9 +4208,6 @@ table {
 .m-center {
   text-align: center; }
 
-#explore-content {
-  min-height: 200px; }
-
 p.m-lg {
   font-size: 20px; }
 p.m-xl {
@@ -4298,5 +4295,28 @@ i.m-black {
 #overlay {
   background-color: transparent;
   opacity: 0.0; }
+
+.tabs {
+  border: 0;
+  position: relative; }
+  .tabs > .tabs-title > a {
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none; }
+    .tabs > .tabs-title > a:hover {
+      color: white; }
+  .tabs .e-side-link {
+    padding: 17px 0;
+    position: absolute;
+    right: 25px;
+    color: white; }
+
+.tabs-content .tabs-panel {
+  padding: 0; }
+  .tabs-content .tabs-panel .row {
+    max-width: none; }
+    .tabs-content .tabs-panel .row .columns {
+      padding: 0; }
 
 /*# sourceMappingURL=styles.css.map */
