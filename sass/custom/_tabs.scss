@@ -1,0 +1,36 @@
+.tabs {
+    border: 0;
+
+    position: relative;
+    & > .tabs-title {
+        & > a {
+            font-size: 18px;
+            font-weight: 300;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .e-side-link {
+        padding: 17px 0;
+        position: absolute;
+        right: 25px;
+        color: $white;
+    }
+}
+
+// remove all the extra space from tabs-content section
+.tabs-content {
+    .tabs-panel {
+        padding: 0;
+        .row {
+            max-width: none;
+            .columns {
+                padding: 0;
+            }
+        }
+    }
+}
