@@ -203,81 +203,66 @@
     </div>
 
     <div class="b-page-section">
-<dl class="tabs" data-tab>
-  <dd class="active"><a href="#panel2-1">Tab 1</a></dd>
-  <dd><a href="#panel2-2">Tab 2</a></dd>
-  <dd><a href="#panel2-3">Tab 3</a></dd>
-  <dd><a href="#panel2-4">Tab 4</a></dd>
-</dl>
-<div class="tabs-content">
-  <div class="content active" id="panel2-1">
-    <p>First panel content goes here...</p>
-  </div>
-  <div class="content" id="panel2-2">
-    <p>Second panel content goes here...</p>
-  </div>
-  <div class="content" id="panel2-3">
-    <p>Third panel content goes here...</p>
-  </div>
-  <div class="content" id="panel2-4">
-    <p>Fourth panel content goes here...</p>
-  </div>
-</div>
         <div class="row m-center m-spaced">
-            <a name="explore" id="a-explore" />
+            <a name="explore" id="a-explore"></a>
             <p class="m-xl"><strong>Explore the Impact of Open Data</strong> around the world</p>
         </div>
-        <div class="row">
-            <ul class="tabs" data-tab>
-                <li class="tab-title active"><a href="#sector-panel">Sector</a></li>
-                <li class="tab-title"><a href="#impact-panel">Impact</a></li>
-                <li class="tab-title"><a href="#all-panel">Download all case studies</a></li>
-            </ul>
-        </div>
-        <div class="tabs-content">
-            <div class="row content active" id="sector-panel">
-                <div class="large-2 columns">
-                    <i class="material-icons">domain</i>
-                    <p>Public Sector</p>
-                </div>
-                <div class="large-2 columns">
-                    <i class="material-icons">accessibility</i>
-                    <p>Philantrophy &amp; Aid</p>
-                </div>
-                <div class="large-2 columns">
-                    <i class="material-icons">add_location</i>
-                    <p>Geospatial Services</p>
-                </div>
-                <div class="large-2 columns">
-                    <i class="material-icons">done</i>
-                    <p>Politics &amp; Elections</p>
-                </div>
-                <div class="large-2 columns">
-                    <i class="material-icons">healing</i>
-                    <p>Health</p>
-                </div>
-                <div class="large-2 columns">
-                    <i class="material-icons">school</i>
-                    <p>Education</p>
+        <ul class="tabs" data-tabs id="explore-tabs">
+            <li class="tabs-title is-active"><a href="#panel1">Sector</a></li>
+            <li class="tabs-title"><a href="#panel2">Impact</a></li>
+            <li class="tabs-title"><a href="#panel3">Download all case studies</a></li>
+        </ul>
+        <div class="tabs-content" data-tabs-content="explore-tabs">
+            <div class="tabs-panel is-active" id="panel1">
+                <div class="row">
+                    <div class="large-2 columns">
+                        <i class="material-icons">domain</i>
+                        <p>Public Sector</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <i class="material-icons">accessibility</i>
+                        <p>Philantrophy &amp; Aid</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <i class="material-icons">add_location</i>
+                        <p>Geospatial Services</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <i class="material-icons">done</i>
+                        <p>Politics &amp; Elections</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <i class="material-icons">healing</i>
+                        <p>Health</p>
+                    </div>
+                    <div class="large-2 columns">
+                        <i class="material-icons">school</i>
+                        <p>Education</p>
+                    </div>
                 </div>
             </div>
-            <div class="row content" id="impact-panel">
-                <div class="large-3 columns">
-                    <i class="material-icons">person_pin</i>
-                    <p>Empowering Citizens</p>
+            <div class="tabs-panel" id="panel2">
+                <div class="row">
+                    <div class="large-3 columns">
+                        <i class="material-icons">person_pin</i>
+                        <p>Empowering Citizens</p>
+                    </div>
+                    <div class="large-3 columns">
+                        <i class="material-icons">account_balance</i>
+                        <p>Improving Government</p>
+                    </div>
+                    <div class="large-3 columns">
+                        <i class="material-icons">trending_up</i>
+                        <p>New Economic Opportunities</p>
+                    </div>
+                    <div class="large-3 columns">
+                        <i class="material-icons">public</i>
+                        <p>Solving Public Problems</p>
+                    </div>
                 </div>
-                <div class="large-3 columns">
-                    <i class="material-icons">account_balance</i>
-                    <p>Improving Government</p>
-                </div>
-                <div class="large-3 columns">
-                    <i class="material-icons">trending_up</i>
-                    <p>New Economic Opportunities</p>
-                </div>
-                <div class="large-3 columns">
-                    <i class="material-icons">public</i>
-                    <p>Solving Public Problems</p>
-                </div>
+            </div>
+            <div class="tabs-panel" id="panel3">
+                Download
             </div>
         </div>
         <div>
@@ -297,6 +282,7 @@
     </div>
 
 </main><!--@main-->
+
 
 
 
@@ -357,17 +343,18 @@
         $(document).foundation();
     </script>
 
-<script src="static/js/scripts.js"></script>
-<script src="static/js/tweens.js"></script>
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script src="static/js/scripts.js"></script>
+    <script src="static/js/tweens.js"></script>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-40012093-4', 'auto');
-ga('send', 'pageview');
+    ga('create', 'UA-40012093-4', 'auto');
+    ga('send', 'pageview');
 
-</script>
+    </script>
+
 </body>
 </html>
