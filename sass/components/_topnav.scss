@@ -20,24 +20,13 @@
         }
     }
 
-    // for text-only titles
-    .e-title {
-        padding: 11px 0 0 0;
-        text-align: center;
-        display: block;
-    }
+
 
     .e-nav-group {
         position: absolute;
         top: 0;
 
-        .e-side-logo {
-            position: relative;
-            top: -8px;
-            img {
-                max-width: 75px;
-            }
-        }
+
 
         &.m-left { left: 0; }
         &.m-right { right: 0; }
@@ -51,10 +40,7 @@
 
     .e-nav-item.m-container { padding: 0; }
 
-    &.m-negative {
-        background-color: transparent;
-        color: $black;
-    }
+
 }
 
 .b-top-nav {
