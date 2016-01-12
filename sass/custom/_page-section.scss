@@ -21,10 +21,15 @@
         text-transform: uppercase;
     }
 
+    .m-lr-padding {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
     .e-expandable {
-        -webkit-flex: 4;
-        flex: 4;
-        order: 1;
+        // -webkit-flex: 4;
+        // flex: 4;
+        // order: 1;
         @include breakpoint($desktop) { max-height: 500px;}
         @include breakpoint($mobile-only) { max-height: 1000px;}
         height: auto;

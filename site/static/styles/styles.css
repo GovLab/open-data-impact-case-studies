@@ -4268,10 +4268,10 @@ i.m-black {
   color: rgba(0, 0, 0, 0.4);
   font-size: 22px;
   text-transform: uppercase; }
+.b-page-section .m-lr-padding {
+  margin-left: 100px;
+  margin-right: 100px; }
 .b-page-section .e-expandable {
-  -webkit-flex: 4;
-  flex: 4;
-  order: 1;
   max-height: 1000px;
   height: auto;
   transition: all .4s ease; }
