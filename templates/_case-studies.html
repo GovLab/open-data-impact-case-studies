@@ -40,6 +40,13 @@
             <p>Location | {{case.location | upper}}</p>
             <p class="m-space-top m-underline">Read Time</p>
             <p>Brief View {{case.read_time}} MINS &nbsp;&nbsp;&nbsp;&nbsp; Full Story {{case.full_read_time}} MINS</p>
+            <p>
+                <a href="#" class="b-button m-icon-only m-transparent m-negative m-box">
+                    <i class="material-icons">file_download</i>
+                    <br />
+                    Download Full Story
+                </a>
+            </p>
         </div>
     </div>
 
@@ -50,6 +57,10 @@
             </aside>
             <p class="large-10 columns">
                 {{case.summary}}
+                <div class="e-expandable">
+                    <div class="b-button m-more m-naked js-more-toggle">More <i class="material-icons"><i class="material-icons">keyboard_arrow_down</i></i></div>
+                    <div class="b-button m-less m-naked js-more-toggle">Less <i class="material-icons"><i class="material-icons">keyboard_arrow_up</i></i></div>
+                </div>
             </p>
         </div>
     </div>
@@ -121,5 +132,11 @@
     </div>
 
 </main>
+
+<script type="text/javascript">
+$('.js-more-toggle').click(function() {
+    $(this).parent().toggleClass('m-active');
+})
+</script>
 
 {% endblock %}

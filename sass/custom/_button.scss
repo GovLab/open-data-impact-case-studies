@@ -10,4 +10,17 @@
             }
         }
     }
+
+    &.m-transparent {
+        background-color: transparent;
+    }
+
+    &.m-negative {
+        color: $white;
+    }
+
+    &.m-box {
+        max-width: 150px;
+        border: solid 2px $white;
+    }
 }
