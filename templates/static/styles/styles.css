@@ -4212,6 +4212,10 @@ p.m-lg {
   font-size: 20px; }
 p.m-xl {
   font-size: 32px; }
+p.m-space-top {
+  margin: 40px 0 0 0; }
+p.m-underline {
+  text-decoration: underline; }
 
 i.m-xl {
   font-size: 150px; }
@@ -4253,6 +4257,18 @@ i.m-black {
     .b-top-nav .e-nav-group .e-side-logo img {
       max-width: 75px; }
 
+.b-page-section .row.m-spaced, .b-page-section .columns.m-spaced {
+  margin-bottom: 50px; }
+.b-page-section .row.m-padded, .b-page-section .columns.m-padded {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+.b-page-section.m-impact-section p.b-description {
+  margin-top: 5px; }
+.b-page-section aside {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 22px;
+  text-transform: uppercase; }
+
 .b-top-section {
   padding: 100px 0; }
   .b-top-section h1.m-space-1 {
@@ -4273,17 +4289,12 @@ i.m-black {
   .b-top-section.m-hires-1 {
     background: url("../img/citybg.jpg") no-repeat center top;
     background-size: cover; }
+  .b-top-section.m-hires-2 {
+    background: url("../img/nairobi.jpg") no-repeat center top;
+    background-size: cover; }
   .b-top-section.m-light {
     background-color: transparent;
     color: #333; }
-
-.b-page-section .row.m-spaced, .b-page-section .columns.m-spaced {
-  margin-bottom: 50px; }
-.b-page-section .row.m-padded, .b-page-section .columns.m-padded {
-  padding-top: 50px;
-  padding-bottom: 50px; }
-.b-page-section.m-impact-section p.b-description {
-  margin-top: 5px; }
 
 .b-button.m-panel, .b-form input.m-panel[type="submit"] {
   display: block; }

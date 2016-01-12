@@ -1,2 +1,125 @@
-{{case.title}}
-{{case.description}}
+{% extends "_base.html" %}
+{% block content %}
+
+<main role="main">
+
+    <div class="b-top-section m-hires-2 m-center">
+        <div class="b-shader">
+            <h1>{{case.title}}</h1>
+            <h2>{{case.description}}</h2>
+            <p>Impact |
+                {% if case.impact_type is equalto 'citizens' %}
+                EMPOWERING CITIZENS
+                {% elif case.impact_type is equalto 'government' %}
+                IMPROVING GOVERNMENT
+                {% elif case.impact_type is equalto 'economic' %}
+                CREATING NEW ECONOMIC OPPORTUNITIES
+                {% elif case.impact_type is equalto 'public' %}
+                SOLVING PUBLIC PROBLEMS
+                {% else %}
+                {{case.impact_type | upper}}
+                {% endif %}
+            </p>
+            <p>Sector |
+                {% if case.sector is equalto 'public' %}
+                PUBLIC SECTOR
+                {% elif case.sector is equalto 'philantrophy' %}
+                PHILANTROPHY &AMP; AID
+                {% elif case.sector is equalto 'geospatial' %}
+                GEOSPATIAL SERVICES
+                {% elif case.sector is equalto 'politics' %}
+                POLITICS &AMP; ELECTIONS
+                {% elif case.sector is equalto 'health' %}
+                HEALTH
+                {% elif case.sector is equalto 'education' %}
+                EDUCATION
+                {% else %}
+                {{case.impact | upper}}
+                {% endif %}
+            </p>
+            <p>Location | {{case.location | upper}}</p>
+            <p class="m-space-top m-underline">Read Time</p>
+            <p>Brief View {{case.read_time}} MINS &nbsp;&nbsp;&nbsp;&nbsp; Full Story {{case.full_read_time}} MINS</p>
+        </div>
+    </div>
+
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="large-2 columns">
+                Summary
+            </aside>
+            <p class="large-10 columns">
+                {{case.summary}}
+            </p>
+        </div>
+    </div>
+
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="large-2 columns">
+                Takeaways
+            </aside>
+            <p class="large-10 columns">
+                {{case.takeaways}}
+            </p>
+        </div>
+    </div>
+
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="large-2 columns">
+                Background
+            </aside>
+            <p class="large-10 columns">
+                {{case.background}}
+            </p>
+        </div>
+    </div>
+
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="large-2 columns">
+                Project
+            </aside>
+            <p class="large-10 columns">
+                {{case.project}}
+            </p>
+        </div>
+    </div>
+
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="large-2 columns">
+                Impact
+            </aside>
+            <p class="large-10 columns">
+                {{case.impact}}
+            </p>
+        </div>
+    </div>
+
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="large-2 columns">
+                Challenges
+            </aside>
+            <p class="large-10 columns">
+                {{case.challenges}}
+            </p>
+        </div>
+    </div>
+
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="large-2 columns">
+                Looking Forward
+            </aside>
+            <p class="large-10 columns">
+                {{case.looking_forward}}
+            </p>
+        </div>
+    </div>
+
+</main>
+
+{% endblock %}

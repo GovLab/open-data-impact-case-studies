@@ -6,6 +6,14 @@ p {
     &.m-xl {
         font-size: 32px;
     }
+
+    &.m-space-top {
+        margin: 40px 0 0 0;
+    }
+
+    &.m-underline {
+        text-decoration: underline;
+    }
 }
 
 i {

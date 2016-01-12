@@ -29,11 +29,15 @@
         }
     }
 
-    &.m-hires-1   {
+    &.m-hires-1 {
         background: url('../img/citybg.jpg') no-repeat center top;
         background-size: cover;
     }
 
+    &.m-hires-2 {
+        background: url('../img/nairobi.jpg') no-repeat center top;
+        background-size: cover;
+    }
 
     &.m-light   { background-color: transparent;  color: $black;  }
 }
