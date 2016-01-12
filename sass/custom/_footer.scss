@@ -1,0 +1,26 @@
+.b-footer {
+    .e-content {
+        .e-partner-logo {
+            display: block;
+            text-align: left;
+
+            > img {
+                max-width: 90%;
+                padding: 10px 0;
+                max-height: 60px;
+                opacity: .5;
+                @include transition;
+
+                &:hover {
+                    opacity: 1;
+                    @include transition;
+                }
+
+            }
+
+            &.m-lg > img {
+                max-height: 100px;
+            }
+        }
+    }
+}

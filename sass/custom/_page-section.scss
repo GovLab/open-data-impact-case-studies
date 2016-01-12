@@ -20,4 +20,34 @@
         font-size: 22px;
         text-transform: uppercase;
     }
+
+    .e-expandable {
+        -webkit-flex: 4;
+        flex: 4;
+        order: 1;
+        @include breakpoint($desktop) { max-height: 500px;}
+        @include breakpoint($mobile-only) { max-height: 1000px;}
+        height: auto;
+        @include transition;
+
+        .b-button.m-less { display: none; }
+
+        &.m-active {
+            max-height: 4000px;
+            @include transition;
+
+            .b-button.m-more { display: none; }
+            .b-button.m-less { display: inline-block; }
+        }
+
+        p { margin-bottom: 15px; }
+
+        p:not(:first-of-type) { display: none; }
+
+        p:only-of-type ~ .b-button { display: none; }
+
+        &.m-active p { display: block; }
+
+        .b-button { color: $purple; }
+    }
 }
