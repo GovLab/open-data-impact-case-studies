@@ -4337,7 +4337,7 @@ i.m-black {
   color: white; }
 .b-button.m-box, .b-form input.m-box[type="submit"] {
   max-width: 150px;
-  border: solid 2px white; }
+  border: solid 1px white; }
 
 #overlay {
   background-color: transparent;
