@@ -4385,4 +4385,39 @@ i.m-black {
   margin-left: 150px;
   margin-right: 150px; }
 
+ul.b-sidebar {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  margin: 0 30px 0 0; }
+  ul.b-sidebar li {
+    padding: 10px;
+    color: white;
+    width: 45px;
+    height: 45px;
+    display: inline-block; }
+    ul.b-sidebar li.facebook {
+      background-color: #3b5998; }
+    ul.b-sidebar li.linkedin {
+      background-color: #007bb5; }
+    ul.b-sidebar li.google-plus {
+      background-color: #dd4b39; }
+    ul.b-sidebar li.twitter {
+      background-color: #55acee; }
+    ul.b-sidebar li.email {
+      background-color: rgba(0, 0, 0, 0.2); }
+    @media screen and (min-width: 64.0625em) {
+      ul.b-sidebar li {
+        display: block; } }
+  @media screen and (min-width: 64.0625em) {
+    ul.b-sidebar {
+      margin: 30px 30px 0 0; } }
+  ul.b-sidebar.js-scroll-fixed {
+    position: fixed;
+    right: 0;
+    top: 0; }
+  ul.b-sidebar.js-scroll-none {
+    position: absolute;
+    right: 0; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,41 @@
+ul.b-sidebar {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+
+    li {
+        padding: 10px;
+        color: $white;
+        width: 45px;
+        height: 45px;
+        &.facebook    { background-color: $facebook-blue; }
+        &.linkedin    { background-color: $linkedin-blue; }
+        &.google-plus { background-color: $google-plus-red; }
+        &.twitter     { background-color: $twitter-blue; }
+        &.email       { background-color: $gray-20; }
+        @include breakpoint($desktop) {
+            display: block;
+        }
+        @include breakpoint($mobile-only) {
+            display: inline-block;
+        }
+    }
+
+    @include breakpoint($desktop) {
+        margin: 30px 30px 0 0;
+    }
+    @include breakpoint($mobile-only) {
+        margin: 0 30px 0 0;
+    }
+
+    &.js-scroll-fixed {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    &.js-scroll-none {
+        position: absolute;
+        right: 0;
+    }
+}
