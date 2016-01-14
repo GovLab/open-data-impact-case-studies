@@ -52,4 +52,12 @@
 
         .b-button { color: $purple; }
     }
+
+    p.e-last {
+        text-align: right;
+        color: $gray-30;
+        a {
+            text-decoration: underline;
+        }
+    }
 }

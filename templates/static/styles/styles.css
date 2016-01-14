@@ -4301,6 +4301,11 @@ i.m-black {
     display: block; }
   .b-page-section .e-expandable .b-button, .b-page-section .e-expandable .b-form input[type="submit"], .b-form .b-page-section .e-expandable input[type="submit"] {
     color: #523080; }
+.b-page-section p.e-last {
+  text-align: right;
+  color: rgba(0, 0, 0, 0.3); }
+  .b-page-section p.e-last a {
+    text-decoration: underline; }
 
 .b-top-section {
   padding: 100px 0; }
