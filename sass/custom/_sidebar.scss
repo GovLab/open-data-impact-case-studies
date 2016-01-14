@@ -14,7 +14,7 @@ ul.b-sidebar {
         &.linkedin    { background-color: $linkedin-blue; }
         &.google-plus { background-color: $google-plus-red; }
         &.twitter     { background-color: $twitter-blue; }
-        &.email       { background-color: $gray-20; }
+        &.email       { background-color: $gray-20-solid; }
         @include breakpoint($desktop) {
             display: block;
         }
