@@ -1,0 +1,45 @@
+.b-divider {
+    &.m-next {
+        text-align: right;
+        * {
+            vertical-align: middle;
+            @include breakpoint($mobile-only) {
+                text-align: left;
+            }
+        }
+        h1, h2 {
+            margin-left: 10px;
+            @include breakpoint($desktop) {
+                display: inline;
+            }
+            @include breakpoint($mobile-only) {
+                display: block;
+            }
+        }
+        h1 {
+            text-transform: uppercase;
+            font-size: 30px;
+            color: $white;
+        }
+        h2 {
+            text-transform: none;
+            font-size: 25px;
+            font-weight: 400;
+            color: $white-70;
+            @include transition;
+        }
+        h2::after {
+            @include material-icons;
+            content: 'chevron_right';
+            font-size: 50px;
+            vertical-align: middle;
+        }
+        a:hover {
+            text-decoration: none;
+            h2 {
+             color: $white;
+             @include transition;
+         }
+     }
+ }
+}
