@@ -8,7 +8,15 @@ p {
     }
 
     &.m-space-top {
+        margin-top: 40px;
+    }
+
+    &.m-space-only-top {
         margin: 40px 0 0 0;
+    }
+
+    &.m-no-space {
+        margin: 0;
     }
 
     &.m-underline {

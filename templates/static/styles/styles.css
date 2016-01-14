@@ -4213,7 +4213,11 @@ p.m-lg {
 p.m-xl {
   font-size: 32px; }
 p.m-space-top {
+  margin-top: 40px; }
+p.m-space-only-top {
   margin: 40px 0 0 0; }
+p.m-no-space {
+  margin: 0; }
 p.m-underline {
   text-decoration: underline; }
 
@@ -4325,6 +4329,8 @@ i.m-black {
     background-color: transparent;
     color: #333; }
 
+.b-button i.m-space, .b-form input[type="submit"] i.m-space {
+  line-height: 1.5; }
 .b-button.m-panel, .b-form input.m-panel[type="submit"] {
   display: block; }
   .b-button.m-panel i.m-lg, .b-form input.m-panel[type="submit"] i.m-lg {
@@ -4333,11 +4339,34 @@ i.m-black {
     font-size: 150px; }
 .b-button.m-transparent, .b-form input.m-transparent[type="submit"] {
   background-color: transparent; }
+  .b-button.m-transparent:hover, .b-form input.m-transparent[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all .4s ease; }
 .b-button.m-negative, .b-form input.m-negative[type="submit"] {
   color: white; }
 .b-button.m-box, .b-form input.m-box[type="submit"] {
   max-width: 150px;
   border: solid 1px white; }
+
+.b-lower-top-buttons {
+  position: relative; }
+  .b-lower-top-buttons .b-button, .b-lower-top-buttons .b-form input[type="submit"], .b-form .b-lower-top-buttons input[type="submit"] {
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    top: -100px; }
+    .b-lower-top-buttons .b-button.m-right, .b-lower-top-buttons .b-form input.m-right[type="submit"], .b-form .b-lower-top-buttons input.m-right[type="submit"] {
+      right: 50px; }
+    .b-lower-top-buttons .b-button.m-left, .b-lower-top-buttons .b-form input.m-left[type="submit"], .b-form .b-lower-top-buttons input.m-left[type="submit"] {
+      left: 50px; }
+    .b-lower-top-buttons .b-button.m-more-info .e-more, .b-lower-top-buttons .b-form input.m-more-info[type="submit"] .e-more, .b-form .b-lower-top-buttons input.m-more-info[type="submit"] .e-more {
+      opacity: 0;
+      transition: all .4s ease; }
+    .b-lower-top-buttons .b-button.m-more-info:hover, .b-lower-top-buttons .b-form input.m-more-info[type="submit"]:hover, .b-form .b-lower-top-buttons input.m-more-info[type="submit"]:hover {
+      background-color: transparent; }
+      .b-lower-top-buttons .b-button.m-more-info:hover .e-more, .b-lower-top-buttons .b-form input.m-more-info[type="submit"]:hover .e-more, .b-form .b-lower-top-buttons input.m-more-info[type="submit"]:hover .e-more {
+        opacity: 1;
+        transition: all .4s ease; }
 
 #overlay {
   background-color: transparent;

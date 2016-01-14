@@ -7,7 +7,8 @@
         <div class="b-shader">
             <h1>{{case.title}}</h1>
             <h2>{{case.description}}</h2>
-            <p>Impact |
+            <h4>by {{case.authors}}</h4>
+            <p class="m-space-only-top">Impact |
                 {% if case.impact_type is equalto 'citizens' %}
                 EMPOWERING CITIZENS
                 {% elif case.impact_type is equalto 'government' %}
@@ -20,7 +21,8 @@
                 {{case.impact_type | upper}}
                 {% endif %}
             </p>
-            <p>Sector |
+            <p class="m-no-space">
+                Sector |
                 {% if case.sector is equalto 'public' %}
                 PUBLIC SECTOR
                 {% elif case.sector is equalto 'philantrophy' %}
@@ -37,14 +39,19 @@
                 {{case.impact | upper}}
                 {% endif %}
             </p>
-            <p>Location | {{case.location | upper}}</p>
-            <p class="m-space-top m-underline">Read Time</p>
-            <p>Brief View {{case.read_time}} MINS &nbsp;&nbsp;&nbsp;&nbsp; Full Story {{case.full_read_time}} MINS</p>
-            <p class="m-space-top">
-                <a href="#" class="b-button m-icon-only m-transparent m-negative m-box">
-                    <i class="material-icons">file_download</i>
-                    <br />
-                    Download Full Story
+            <p class="m-no-space">Location | {{case.location | upper}}</p>
+            <p class="m-space-only-top"><b>Read Time</b></p>
+            <p class="m-no-space">Brief View {{case.read_time}} MINS &nbsp;&nbsp;&nbsp;&nbsp; Full Story {{case.full_read_time}} MINS</p>
+            <p class="m-space-top b-lower-top-buttons">
+                <a href="#" class="b-button m-icon-only m-transparent m-negative m-right">
+                    <i class="material-icons m-space">file_download</i>
+                    <br>
+                    Download
+                    <br>Full Story
+                </a>
+                <a href="#" class="b-button m-icon-only m-transparent m-negative m-left m-more-info">
+                    12 Shares
+                    <i class="material-icons e-more m-space">more_horiz</i>
                 </a>
             </p>
         </div>

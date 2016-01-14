@@ -1,4 +1,9 @@
 .b-button {
+
+    i.m-space {
+        line-height: 1.5;
+    }
+
     &.m-panel {
         display: block;
         i {
@@ -13,6 +18,10 @@
 
     &.m-transparent {
         background-color: transparent;
+        &:hover {
+            background-color: $white-30;
+            @include transition;
+        }
     }
 
     &.m-negative {
@@ -23,4 +32,39 @@
         max-width: 150px;
         border: solid 1px $white;
     }
+
+}
+
+
+.b-lower-top-buttons {
+    position: relative;
+
+    .b-button {
+        width: 150px;
+        height: 120px;
+        position: absolute;
+        top: -100px;
+        &.m-right {
+            right: 50px;
+        }
+        &.m-left {
+            left: 50px;
+        }
+
+        &.m-more-info {
+            .e-more {
+                opacity: 0;
+                @include transition;
+            }
+            &:hover {
+                background-color: transparent;
+                & .e-more {
+                    opacity: 1;
+                    @include transition;
+                }
+            }
+        }
+    }
+
+
 }
