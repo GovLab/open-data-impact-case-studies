@@ -1,4 +1,6 @@
 ul.b-sidebar {
+    position: absolute;
+    right: 0;
     display: inline-block;
     list-style: none;
     text-align: center;
@@ -32,10 +34,5 @@ ul.b-sidebar {
         position: fixed;
         right: 0;
         top: 0;
-    }
-
-    &.js-scroll-none {
-        position: absolute;
-        right: 0;
     }
 }

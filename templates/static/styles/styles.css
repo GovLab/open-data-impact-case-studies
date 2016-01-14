@@ -4386,6 +4386,8 @@ i.m-black {
   margin-right: 150px; }
 
 ul.b-sidebar {
+  position: absolute;
+  right: 0;
   display: inline-block;
   list-style: none;
   text-align: center;
@@ -4416,8 +4418,5 @@ ul.b-sidebar {
     position: fixed;
     right: 0;
     top: 0; }
-  ul.b-sidebar.js-scroll-none {
-    position: absolute;
-    right: 0; }
 
 /*# sourceMappingURL=styles.css.map */
