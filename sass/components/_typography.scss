@@ -15,6 +15,17 @@ a:hover {
     color: currentColor;
 }
 
+a[data-open] {
+    vertical-align: super;
+    font-size: 12px;
+    &::before {
+        content: '[';
+    }
+    &::after {
+        content: ']';
+    }
+}
+
 h1 {
     font-weight: 100;
     text-transform: uppercase;

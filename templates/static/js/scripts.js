@@ -10,7 +10,7 @@ $(document).ready(function($) {
 
     // Logic for Sticky
     $('.js-close-sticky').click(function() {
-        $('.b-sticky').fadeOut('fast');
+        $($(this).attr('data-close')).fadeOut('fast');
     });
 
 
@@ -21,7 +21,7 @@ $(document).ready(function($) {
     });
 
 
-    // Search Field Toggle Logic 
+    // Search Field Toggle Logic
     $('.js-search-trigger').click(function() {
         $(this).parent().addClass('m-active');
         $overlay.addClass('m-active');
@@ -32,7 +32,7 @@ $(document).ready(function($) {
         var param = $('.js-search-value').val();
         event.preventDefault();
         if (param != '') {
-            window.location.href = "http://thegovlab.org/?s=" + param;    
+            window.location.href = "http://thegovlab.org/?s=" + param;
         }
     });
 

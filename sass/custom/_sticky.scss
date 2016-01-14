@@ -1,0 +1,9 @@
+.b-sticky {
+    .e-wrap {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+    &.m-closed {
+        opacity: 0;
+    }
+}

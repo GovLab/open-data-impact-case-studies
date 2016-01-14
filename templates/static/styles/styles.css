@@ -3321,6 +3321,14 @@ a:hover {
   background-color: transparent;
   color: currentColor; }
 
+a[data-open] {
+  vertical-align: super;
+  font-size: 12px; }
+  a[data-open]::before {
+    content: '['; }
+  a[data-open]::after {
+    content: ']'; }
+
 h1 {
   font-weight: 100;
   text-transform: uppercase;
@@ -4441,7 +4449,7 @@ ul.b-sidebar {
     ul.b-sidebar li.twitter {
       background-color: #55acee; }
     ul.b-sidebar li.email {
-      background-color: rgba(0, 0, 0, 0.2); }
+      background-color: #ccc; }
     @media screen and (min-width: 64.0625em) {
       ul.b-sidebar li {
         display: block; } }
@@ -4496,5 +4504,11 @@ ul.b-sidebar {
     .b-divider.m-next a:hover h2 {
       color: white;
       transition: all .4s ease; }
+
+.b-sticky .e-wrap {
+  max-width: 850px;
+  margin: 0 auto; }
+.b-sticky.m-closed {
+  opacity: 0; }
 
 /*# sourceMappingURL=styles.css.map */
