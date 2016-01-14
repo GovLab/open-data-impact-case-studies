@@ -8,12 +8,13 @@
     <script>try{Typekit.load();}catch(e){}</script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="static/vendor/normalize.css">
     <link rel="stylesheet" href="static/vendor/slick.css">
     <link rel="stylesheet" href="static/vendor/prism.css" />
     <link rel="stylesheet" href="static/styles/styles.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- needed up here because of scripts in child templates -->
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
@@ -72,40 +73,57 @@
         <div class="b-shader">
             <h1>Kenya's Open Duka</h1>
             <h2>Open Data for Transactional Transparency</h2>
-            <p>Impact |
+            <h4>by Andrew Young &amp; Stefaan Verhulst</h4>
+            <p class="m-space-only-top">Impact |
                 
                 IMPROVING GOVERNMENT
                 
             </p>
-            <p>Sector |
+            <p class="m-no-space">
+                Sector |
                 
                 PUBLIC SECTOR
                 
             </p>
-            <p>Location | KENYA</p>
-            <p class="m-space-top m-underline">Read Time</p>
-            <p>Brief View 5 MINS &nbsp;&nbsp;&nbsp;&nbsp; Full Story 20 MINS</p>
-            <p class="m-space-top">
-                <a href="#" class="b-button m-icon-only m-transparent m-negative m-box">
-                    <i class="material-icons">file_download</i>
-                    <br />
-                    Download Full Story
+            <p class="m-no-space">Location | KENYA</p>
+            <p class="m-space-only-top"><b>Read Time</b></p>
+            <p class="m-no-space">Brief View 5 MINS &nbsp;&nbsp;&nbsp;&nbsp; Full Story 20 MINS</p>
+            <p class="m-space-top b-lower-top-buttons">
+                <a href="#" class="b-button m-icon-only m-transparent m-negative m-right">
+                    <i class="material-icons m-space">file_download</i>
+                    <br>
+                    Download
+                    <br>Full Story
+                </a>
+                <a href="#" class="b-button m-icon-only m-transparent m-negative m-left m-more-info">
+                    12 Shares
+                    <i class="material-icons e-more m-space">more_horiz</i>
                 </a>
             </p>
         </div>
     </div>
 
+    <div class="row">
+        <ul class="b-sidebar">
+            <a href="#"><li class="facebook"><i class="fa fa-facebook"></i></li></a>
+            <a href="#"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a>
+            <a href="#"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a>
+            <a href="#"><li class="twitter"><i class="fa fa-twitter"></i></li></a>
+            <a href="#"><li class="email"><i class="fa fa-envelope"></i></li></a>
+        </ul>
+    </div>
+
+    <i class=“fa fa-facebook”></i>
+
     <div class="b-page-section">
-        <div class="row m-lr-padding">
-            <aside class="large-2 columns">
+        <div class="row">
+            <aside class="large-2 large-offset-1 columns">
                 Summary
             </aside>
-            <div class="large-10 columns">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                </p>
+            <div class="large-8 columns end">
                 <div class="e-expandable">
+                    <p>Lorem ipsum<a href="#" data-open="#reference-1">1</a> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
                     <div class="b-button m-more m-naked js-more-toggle">More <i class="material-icons"><i class="material-icons">keyboard_arrow_down</i></i></div>
                     <div class="b-button m-less m-naked js-more-toggle">Less <i class="material-icons"><i class="material-icons">keyboard_arrow_up</i></i></div>
                 </div>
@@ -114,78 +132,110 @@
     </div>
 
     <div class="b-page-section">
-        <div class="row m-lr-padding">
-            <aside class="large-2 columns">
+        <div class="row">
+            <aside class="large-2 large-offset-1 columns">
                 Takeaways
             </aside>
-            <p class="large-10 columns">
+            <p class="large-8 columns end">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </div>
     </div>
 
     <div class="b-page-section">
-        <div class="row m-lr-padding">
-            <aside class="large-2 columns">
+        <div class="row">
+            <aside class="large-2 large-offset-1 columns">
                 Background
             </aside>
-            <p class="large-10 columns">
+            <p class="large-8 columns end">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </div>
     </div>
 
     <div class="b-page-section">
-        <div class="row m-lr-padding">
-            <aside class="large-2 columns">
+        <div class="row">
+            <aside class="large-2 large-offset-1 columns">
                 Project
             </aside>
-            <p class="large-10 columns">
+            <p class="large-8 columns end">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </div>
     </div>
 
     <div class="b-page-section">
-        <div class="row m-lr-padding">
-            <aside class="large-2 columns">
+        <div class="row">
+            <aside class="large-2 large-offset-1 columns">
                 Impact
             </aside>
-            <p class="large-10 columns">
+            <p class="large-8 columns end">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </div>
     </div>
 
     <div class="b-page-section">
-        <div class="row m-lr-padding">
-            <aside class="large-2 columns">
+        <div class="row">
+            <aside class="large-2 large-offset-1 columns">
                 Challenges
             </aside>
-            <p class="large-10 columns">
+            <p class="large-8 columns end">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </div>
     </div>
 
     <div class="b-page-section">
-        <div class="row m-lr-padding">
-            <aside class="large-2 columns">
+        <div class="row">
+            <aside class="large-2 large-offset-1 columns">
                 Looking Forward
             </aside>
-            <p class="large-10 columns">
+            <p class="large-8 columns end">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </div>
     </div>
 
+    <div class="b-page-section">
+        <div class="row">
+            <div class="large-10 large-offset-1 columns">
+                <p class="e-last">Learn about our <a href="about.html">methodology</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-divider m-teal m-next">
+        <h1>Read Next: </h1>
+        
+        
+            
+            
+                
+            
+        
+            
+                
+                    <a href="#">
+                        <h2>Open Education Information in Tanzania</h2>
+                    </a>
+                    
+                
+            
+            
+        
+    </div>
 </main>
 
-<script type="text/javascript">
-$('.js-more-toggle').click(function() {
-    $(this).parent().toggleClass('m-active');
-})
-</script>
+<div class="b-sticky m-purple m-closed" id="reference-1">
+    <div class="e-wrap">
+        <i class="material-icons e-close js-close-sticky" data-close="#reference-1">close</i>
+        <h3 class="e-title">1. reference title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+</div>
+
+<script src="/static/js/case-study-scripts.js"></script>
 
 
 
