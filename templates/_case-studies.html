@@ -158,9 +158,9 @@
         </div>
     </div>
 
-    <div class="b-divider m-teal m-next">
+    <div class="b-divider m-teal m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
         <h1>Read Next: </h1>
-        {% set next = false %}
+<!--         {% set next = false %}
         {% for casestudy in allcases %}
             {% if next %}
                 {% if casestudy.impact_type is equalto case.impact_type %}
@@ -169,6 +169,17 @@
                     </a>
                     {% set next = false %}
                 {% endif %}
+            {% endif %}
+            {% if casestudy.title is equalto case.title %}
+                {% set next = true %}
+            {% endif %}
+        {% endfor %} -->
+        {% set next = false %}
+        {% for casestudy in allcases %}
+            {% if next %}
+                <a href="{{casestudy.title|slug}}.html" class="impact-{{casestudy.impact_type}} sector-{{casestudy.sector}}">
+                    <h2>{{casestudy.title}}</h2>
+                </a>
             {% endif %}
             {% if casestudy.title is equalto case.title %}
                 {% set next = true %}

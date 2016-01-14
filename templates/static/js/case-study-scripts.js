@@ -30,4 +30,16 @@ $(function() {
         }
     });
 
+    // hash based 'next' case study filtering
+    var nextParameter = document.location.hash.replace('#', ''); // should be either 'impact' or 'sector'
+    var caseImpact = $('.js-next').attr('js-impact');
+    var caseSector = $('.js-next').attr('js-sector');
+    $('.js-next a').hide();
+    if (nextParameter === 'impact') {
+        $('.js-next a.' + nextParameter + '-' + caseImpact).first().show();
+    } else if (nextParameter === 'sector') {
+        $('.js-next a.' + nextParameter + '-' + caseSector).first().show();
+    } else {
+        $('.js-next a').first().show();
+    }
 });
