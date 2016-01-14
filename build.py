@@ -26,6 +26,7 @@ _DATAPATH = path.join(getcwd(), 'data')
 # Load the data we want to use in the templates.
 _TEAM = path.join(_DATAPATH, 'team.yaml')
 _FUNDERS = path.join(_DATAPATH, 'funders.yaml')
+_CASE_STUDIES = path.join(_DATAPATH, 'case-studies.yaml')
 
 _SLUG = lambda x: slugify(unicode(unidecode(unicode(x).lower())) if x else u'')
 
@@ -130,6 +131,7 @@ class ReloadingContext(FileSystemEventHandler):
 
         dic['team'] = load(open(_TEAM))
         dic['funders'] = load(open(_FUNDERS))
+        dic['allcases'] = load(open(_CASE_STUDIES))
 
         return dic
 
