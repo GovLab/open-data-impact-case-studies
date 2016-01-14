@@ -160,9 +160,20 @@
 
     <div class="b-divider m-teal m-next">
         <h1>Read Next: </h1>
-        <a href="#">
-            <h2>Open Education Information in Tanzania</h2>
-        </a>
+        {% set next = false %}
+        {% for casestudy in allcases %}
+            {% if next %}
+                {% if casestudy.impact_type is equalto case.impact_type %}
+                    <a href="#">
+                        <h2>{{casestudy.title}}</h2>
+                    </a>
+                    {% set next = false %}
+                {% endif %}
+            {% endif %}
+            {% if casestudy.title is equalto case.title %}
+                {% set next = true %}
+            {% endif %}
+        {% endfor %}
     </div>
 </main>
 
