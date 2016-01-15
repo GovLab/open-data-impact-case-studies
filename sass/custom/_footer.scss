@@ -1,8 +1,12 @@
 .b-footer {
+    padding: 30px 0 45px 0;
     .e-content {
+        h4 {
+            text-align: center;
+        }
         .e-partner-logo {
-            display: block;
-            text-align: left;
+            // display: block;
+            text-align: center;
 
             > img {
                 max-width: 90%;
@@ -20,6 +24,26 @@
 
             &.m-lg > img {
                 max-height: 100px;
+            }
+        }
+    }
+}
+
+.b-copyright {
+    position: relative;
+    .e-partner-logo {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        > img {
+            max-width: 90%;
+            padding: 10px 0;
+            max-height: 60px;
+            opacity: .5;
+            @include transition;
+            &:hover {
+                opacity: 1;
+                @include transition;
             }
         }
     }
