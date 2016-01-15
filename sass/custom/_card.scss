@@ -1,0 +1,56 @@
+.grid {
+    max-width: 990px;
+    margin: 0 auto;
+
+    .e-card {
+
+        .e-card-inner {
+            position: relative;
+            vertical-align: top;
+            color: $white;
+            width: 300px;
+            height: 350px;
+            margin: 15px;
+            display: inline-block;
+
+            p {
+                padding: 15px;
+                &.e-case-name {
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+
+                &.e-case-description {
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+
+            .e-case-image {
+                height: 150px;
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+
+            &:hover {
+                box-shadow: 0 0 12px $gray-30;
+            }
+        }
+
+
+        &.impact-citizens .e-card-inner { background-color: $blue; }
+        &.impact-government .e-card-inner { background-color: $orange; }
+        &.impact-economic .e-card-inner { background-color: $yellow; }
+        &.impact-public .e-card-inner { background-color: $fuschia; }
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+}
+
+// .gutter-sizer { width: 4%; }

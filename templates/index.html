@@ -174,37 +174,37 @@
             <div class="tabs-panel is-active" id="panel1">
                 <div class="row">
                     <div class="large-2 columns">
-                        <a href="#" class="b-button">
+                        <a href="#" class="b-button js-filter" data-filter="sector-public">
                             <!-- <i class="material-icons m-lg">domain</i> -->
                             Public Sector
                         </a>
                     </div>
                     <div class="large-2 columns">
-                        <a href="#" class="b-button">
+                        <a href="#" class="b-button js-filter" data-filter="sector-philantrophy">
                             <!-- <i class="material-icons m-lg">accessibility</i> -->
                             Philantrophy &amp; Aid
                         </a>
                     </div>
                     <div class="large-2 columns">
-                        <a href="#" class="b-button" >
+                        <a href="#" class="b-button js-filter" data-filter="sector-geospatial">
                             <!-- <i class="material-icons m-lg">add_location</i> -->
                             Geospatial Services
                         </a>
                     </div>
                     <div class="large-2 columns">
-                        <a href="#" class="b-button" >
+                        <a href="#" class="b-button js-filter" data-filter="sector-politics">
                             <!-- <i class="material-icons m-lg">done</i> -->
                             Politics &amp; Elections
                         </a>
                     </div>
                     <div class="large-2 columns">
-                        <a href="#" class="b-button" >
+                        <a href="#" class="b-button js-filter" data-filter="sector-health">
                             <!-- <i class="material-icons m-lg">healing</i> -->
                             Health
                         </a>
                     </div>
                     <div class="large-2 columns">
-                        <a href="#" class="b-button" >
+                        <a href="#" class="b-button js-filter" data-filter="sector-education">
                             <!-- <i class="material-icons m-lg">school</i> -->
                             Education
                         </a>
@@ -240,64 +240,24 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <section class="b-slide m-teal">
-            <div class="e-content row">
-                <div class="large-6 columns">
-                    <h2 class="e-project-name">Kenya's Open Duka</h2>
-                    <h3 class="e-question">Open Data for Transactional Transparency</h3>
-                </div>
-                <div class="large-6 columns">
-                    <p>Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
-                </div>
-            </div>
-            <div class="e-content row">
-                <div class="large-6 large-offset-6 columns">
-                    <div class="e-action">
-                        <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a>
+    <div class="b-page-section" id="#results">
+        <div class="grid">
+            {% for case in cases %}
+            <div class="gutter-sizer">
+            <div class="e-card impact-{{case.impact_type}} sector-{{case.sector}}">
+                <a href="#">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url('{{case.image}}')"></div>
+                        <p class="e-case-name">{{case.title | truncate(60)}}</p>
+                        <p class="e-case-description">{{case.description | truncate(200)}}</p>
                     </div>
-                </div>
+                </a>
             </div>
-        </section>
-
-        <section class="b-slide m-blue">
-            <div class="e-content row">
-                <div class="large-6 columns">
-                    <h2 class="e-project-name">Open Education Information in Tanzania</h2>
-                    <h3 class="e-question">A Tale of Two Dashboards</h3>
-                </div>
-                <div class="large-6 columns">
-                    <p>Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
-                </div>
-            </div>
-            <div class="e-content row">
-                <div class="large-6 large-offset-6 columns">
-                    <div class="e-action">
-                        <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="b-slide m-orange">
-            <div class="e-content row">
-                <div class="large-6 columns">
-                    <h2 class="e-project-name">Kenya's Open Duka</h2>
-                    <h3 class="e-question">Open Data for Transactional Transparency</h3>
-                </div>
-                <div class="large-6 columns">
-                    <p>Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
-                </div>
-            </div>
-            <div class="e-content row">
-                <div class="large-6 large-offset-6 columns">
-                    <div class="e-action">
-                        <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            {% endfor %}
+        </div>
     </div>
 
 </main><!--@main-->
@@ -307,6 +267,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
 <script src="static/js/tweens.js"></script>
+<script src="static/js/filters.js"></script>
 
 {% endblock %}

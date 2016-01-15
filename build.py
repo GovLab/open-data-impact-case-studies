@@ -131,7 +131,7 @@ class ReloadingContext(FileSystemEventHandler):
 
         dic['team'] = load(open(_TEAM))
         dic['funders'] = load(open(_FUNDERS))
-        dic['allcases'] = load(open(_CASE_STUDIES))
+        dic['cases'] = load(open(_CASE_STUDIES))
 
         return dic
 
