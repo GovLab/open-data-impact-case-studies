@@ -4537,7 +4537,8 @@ main .b-divider {
 .b-footer {
   padding: 30px 0 45px 0; }
   .b-footer .e-content h4 {
-    text-align: center; }
+    text-align: center;
+    font-size: 18px; }
   .b-footer .e-content .e-partner-logo {
     text-align: center; }
     .b-footer .e-content .e-partner-logo > img {
@@ -4549,8 +4550,10 @@ main .b-divider {
       .b-footer .e-content .e-partner-logo > img:hover {
         opacity: 1;
         transition: all .4s ease; }
-    .b-footer .e-content .e-partner-logo.m-lg > img {
-      max-height: 100px; }
+    .b-footer .e-content .e-partner-logo.m-lg.m-lg > img {
+      min-height: 160px;
+      min-width: 500px;
+      margin: -40px 0; }
 
 .b-copyright {
   position: relative; }
