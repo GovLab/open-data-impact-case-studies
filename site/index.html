@@ -21,7 +21,7 @@
 <body id="odi-landing">
     
 
-    <header class="b-top-nav m-negative">
+    <header class="b-top-nav m-transparent">
 
         <div class="e-nav-group m-left">
             <span class="e-nav-item js-nav-trigger e-nav-trigger">
@@ -33,9 +33,6 @@
         <input class="js-search-submit js-search-trigger e-search-trigger material-icons" type="submit" value="search">
     </form>
             </span> -->
-            <a class="e-nav-item e-side-logo" href="http://thegovlab.org">
-                <img src="static/img/govlab-logo.png" alt="The GovLab">
-            </a>
         </div>
 
 <!--         <div class="e-nav-group m-right e-social-media">
@@ -49,8 +46,8 @@
             <a href="#" class="e-nav-item" id="nav-about">About</a>
         </div>
 
-        <a class="e-title" href="./">
-            Open Data Impact Case Studies
+        <a class="e-logo" href="./">
+            <img src="static/img/govlab-logo-white.png" alt="">
         </a>
 
     </header>
@@ -68,23 +65,25 @@
     
 <main role="main">
 
-    <div class="b-top-section m-hires-1 m-center m-flush-top">
+    <div class="b-top-section m-hires-1 m-center m-landing-page m-flush-top">
         <div class="b-shader">
-            <h1 class="m-sm m-space-1">Today, Open Data is changing the world in 4 unique ways...</h1>
-            <a href="#" class="b-button m-teal m-space-3" id="explore-button">Explore Case Studies</a>
-            <p class="m-lg m-space-3">&mdash; or &mdash;</p>
-            <a id="top-section-arrow"><i class="material-icons m-lg-faded m-space-3">arrow_drop_down_circle</i></a>
+            <h1 class="m-sm m-space-1">Open Data Impact Case Studies</h1>
+            <h2 class="m-lg">Today, Open Data is changing the world in 4 unique ways...</h2>
+            <a href="#" class="b-button m-dark-blue m-bottom-overlap" id="explore-button">Explore Case Studies</a>
+            <!-- <p class="m-lg m-space-3">&mdash; or &mdash;</p> -->
+            <!-- <a id="top-section-arrow"><i class="material-icons m-lg-faded m-space-3">arrow_drop_down_circle</i></a> -->
         </div>
     </div>
 
-    <div class="b-page-section m-impact-section">
+    <div class="b-page-section m-impact-section m-blue">
         <div class="row m-spaced"></div>
-        <div class="row m-spaced">
+        <div class="row">
             <a name="section-1" id="a-section-1"></a>
+            <span id="trigger-1"></span>
             <div class="large-5 large-offset-1 columns">
                 <h2>Empowering Citizens</h2>
                 <p>6 case studies</p>
-                <i class="material-icons m-xl-badge m-gray" id="badge-1">person_pin</i>
+                <i class="material-icons m-xl-badge" id="badge-1">person_pin</i>
             </div>
             <div class="large-5 columns end">
                 <p class="b-description">
@@ -92,11 +91,14 @@
                 </p>
             </div>
         </div>
-        <div class="row m-spaced">
+    </div>
+    <div class="b-page-section m-impact-section m-orange">
+        <div class="row">
+            <span id="trigger-2"></span>
             <div class="large-5 large-offset-1 columns">
                 <h2>Improving Government</h2>
                 <p>6 case studies</p>
-                <i class="material-icons m-xl-badge m-gray" id="badge-2">account_balance</i>
+                <i class="material-icons m-xl-badge  m-gray" id="badge-2">account_balance</i>
             </div>
             <div class="large-5 columns end">
                 <p class="b-description">
@@ -104,7 +106,10 @@
                 </p>
             </div>
         </div>
-        <div class="row m-spaced">
+    </div>
+    <div class="b-page-section m-impact-section m-yellow">
+        <div class="row">
+            <span id="trigger-3"></span>
             <div class="large-5 large-offset-1 columns">
                 <h2>Creating New Opportunities</h2>
                 <p>6 case studies</p>
@@ -116,11 +121,14 @@
                 </p>
             </div>
         </div>
+    </div>
+    <div class="b-page-section m-impact-section m-fuschia">
         <div class="row">
+            <span id="trigger-4"></span>
             <div class="large-5 large-offset-1 columns">
                 <h2>Solving Public Problems</h2>
                 <p>6 case studies</p>
-                <i class="material-icons m-xl-badge m-gray" id="badge-4">public</i>
+                <i class="material-icons m-xl-badge" id="badge-4">public</i>
             </div>
             <div class="large-5 columns end">
                 <p class="b-description">
@@ -130,30 +138,33 @@
         </div>
     </div>
 
-    <div class="b-page-section">
-        <div class="row m-spaced m-center">
-            <h2 class="">The level of impact depends on 4 enabling conditions</h2>
+    <div class="b-divider">
+        <div class="row m-center">
+            <h2 class="m-upper">The level of impact depends on 4 enabling conditions</h2>
         </div>
-        <div class="row m-center" data-equalizer>
-            <div class="large-3 columns m-spaced">
+    </div>
+
+    <div class="b-page-section m-no-padding" id="enabler-icons" data-equalizer>
+        <div class="row">
+            <div class="large-3 columns m-no-padding">
                 <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
                     <i class="material-icons m-xl m-black">speaker_notes</i>
                     <p>Strong Problem Definition</p>
                 </a>
             </div>
-            <div class="large-3 columns m-spaced">
+            <div class="large-3 columns m-no-padding">
                 <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
                     <i class="material-icons m-xl m-black">directions_transit</i>
                     <p>Right Infrastructure</p>
                 </a>
             </div>
-            <div class="large-3 columns m-spaced">
+            <div class="large-3 columns m-no-padding">
                 <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
                     <i class="material-icons m-xl m-black">people_outline</i>
                     <p>Working Partnerships</p>
                 </a>
             </div>
-            <div class="large-3 columns m-spaced">
+            <div class="large-3 columns m-no-padding">
                 <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
                     <i class="material-icons m-xl m-black">assessment</i>
                     <p>Clear Policies &amp; Metrics</p>
@@ -162,97 +173,101 @@
         </div>
     </div>
 
-    <div class="b-page-section">
-        <div class="row m-spaced m-center">
-            <h2>Yet, there are challenges that must be overcome for Open Data projects to reach their highest potential</h2>
+    <div class="b-divider">
+        <div class="row m-center">
+            <h2 class="m-upper">Yet, there are challenges that must be overcome for Open Data projects to reach their highest potential</h2>
         </div>
-        <div class="row m-center" data-equalizer>
-            <div class="large-6 columns b-divider m-blue m-padded" data-equalizer-watch>
+    </div>
+
+    <div class="b-page-section m-no-padding" id="challenges-section" data-equalizer>
+        <div class="row m-center">
+            <div class="large-6 columns b-divider m-dark-blue m-padded" data-equalizer-watch>
                 <h3>Readiness</h3>
                 <p>Low technical and human capacity often pose inhospitable environments for open data projects</p>
             </div>
-            <div class="large-6 columns b-divider m-purple m-padded" data-equalizer-watch>
+            <div class="large-6 columns b-divider m-dark-blue-2 m-padded" data-equalizer-watch>
                 <h3>Responsiveness</h3>
                 <p>Success is limited when projects are unresponsive to feedback and user needs</p>
             </div>
         </div>
         <div class="row m-center" data-equalizer>
-            <div class="large-6 columns b-divider m-teal m-padded" data-equalizer-watch>
+            <div class="large-6 columns b-divider m-dark-blue-2 m-padded" data-equalizer-watch>
                 <h3>Risks</h3>
                 <p>Major challenges arise from the tradeoffs between the potential of open data and the risks posed by privacy and security violations</p>
             </div>
-            <div class="large-6 columns b-divider m-orange m-padded" data-equalizer-watch>
+            <div class="large-6 columns b-divider m-dark-blue m-padded" data-equalizer-watch>
                 <h3>Resources</h3>
                 <p>Inadequate resource allocation is one of the most common reasons for limited success or outright failure</p>
             </div>
         </div>
     </div>
 
-    <div class="b-page-section m-center">
-        <div class="row m-spaced">
-            <p class="m-xl"><strong>Follow our 10 Recommendations for Open Data Impact</strong> in order to overcome the challenges and ensure highest impact from your open data projects</p>
-        </div>
-        <div class="row m-spaced">
-            <p>
-                <a href="#" class="b-button m-icon-only">
-                    <i class="material-icons">file_download</i>
-                    <br />
-                    Download the Report
-                </a>
-            </p>
+    <div class="b-page-section m-center m-purple" id="download-section">
+        <div class="row">
+            <h2>Follow our 10 Recommendations for Open Data Impact</h2>
+            <p>in order to overcome the challenges and ensure highest impact from your open data projects</p>
         </div>
         <div class="row">
-            <p>&mdash; or &mdash;</p>
+            <a href="#" class="b-button m-wide-padding">
+                Download the Report
+                <i class="material-icons">file_download</i>
+            </a>
+        </div>
+    </div>
+
+    <a name="explore" id="a-explore"></a>
+
+    <div class="b-divider">
+        <div class="row m-center">
+            <h2 class="m-upper"><strong>Explore the Impact of Open Data</strong> around the world</h2>
         </div>
     </div>
 
     <div class="b-page-section">
-        <div class="row m-center m-spaced">
-            <a name="explore" id="a-explore"></a>
-            <p class="m-xl"><strong>Explore the Impact of Open Data</strong> around the world</p>
+        <div class="row m-center">
+            <ul class="tabs" data-tabs id="explore-tabs">
+                <li class="tabs-title is-active"><a href="#panel1">Sector</a></li>
+                <li class="tabs-title"><a href="#panel2">Impact</a></li>
+                <!-- <a href="#" class="e-side-link">Download all case studies</a> -->
+            </ul>
         </div>
-        <ul class="tabs" data-tabs id="explore-tabs">
-            <li class="tabs-title is-active"><a href="#panel1">Sector</a></li>
-            <li class="tabs-title"><a href="#panel2">Impact</a></li>
-            <a href="#" class="e-side-link">Download all case studies</a>
-        </ul>
-        <div class="tabs-content" data-tabs-content="explore-tabs" id="explore-content" data-equalizer>
+        <div class="tabs-content" data-tabs-content="explore-tabs" id="explore-content">
             <div class="tabs-panel is-active" id="panel1">
-                <div class="row tab-equalizer">
+                <div class="row">
                     <div class="large-2 columns">
-                        <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
-                            <i class="material-icons m-lg">domain</i>
-                            <br>Public Sector
+                        <a href="#" class="b-button js-filter" data-filter="sector-public">
+                            <!-- <i class="material-icons m-lg">domain</i> -->
+                            Public Sector
                         </a>
                     </div>
                     <div class="large-2 columns">
-                        <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
-                            <i class="material-icons m-lg">accessibility</i>
-                            <br>Philantrophy &amp; Aid
+                        <a href="#" class="b-button js-filter" data-filter="sector-philantrophy">
+                            <!-- <i class="material-icons m-lg">accessibility</i> -->
+                            Philantrophy &amp; Aid
                         </a>
                     </div>
                     <div class="large-2 columns">
-                        <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
-                            <i class="material-icons m-lg">add_location</i>
-                            <br>Geospatial Services
+                        <a href="#" class="b-button js-filter" data-filter="sector-geospatial">
+                            <!-- <i class="material-icons m-lg">add_location</i> -->
+                            Geospatial Services
                         </a>
                     </div>
                     <div class="large-2 columns">
-                        <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
-                            <i class="material-icons m-lg">done</i>
-                            <br>Politics &amp; Elections
+                        <a href="#" class="b-button js-filter" data-filter="sector-politics">
+                            <!-- <i class="material-icons m-lg">done</i> -->
+                            Politics &amp; Elections
                         </a>
                     </div>
                     <div class="large-2 columns">
-                        <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
-                            <i class="material-icons m-lg">healing</i>
-                            <br>Health
+                        <a href="#" class="b-button js-filter" data-filter="sector-health">
+                            <!-- <i class="material-icons m-lg">healing</i> -->
+                            Health
                         </a>
                     </div>
                     <div class="large-2 columns">
-                        <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
-                            <i class="material-icons m-lg">school</i>
-                            <br>Education
+                        <a href="#" class="b-button js-filter" data-filter="sector-education">
+                            <!-- <i class="material-icons m-lg">school</i> -->
+                            Education
                         </a>
                     </div>
                 </div>
@@ -260,100 +275,87 @@
             <div class="tabs-panel" id="panel2">
                 <div class="row">
                     <div class="large-3 columns">
-                        <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
-                            <i class="material-icons m-lg">person_pin</i>
-                            <br>Empowering Citizens
+                        <a href="#" class="b-button">
+                            <!-- <i class="material-icons m-lg">person_pin</i> -->
+                            Empowering Citizens
                         </a>
                     </div>
                     <div class="large-3 columns">
-                        <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
-                            <i class="material-icons m-lg">account_balance</i>
-                            <br>Improving Government
+                        <a href="#" class="b-button">
+                            <!-- <i class="material-icons m-lg">account_balance</i> -->
+                            Improving Government
                         </a>
                     </div>
                     <div class="large-3 columns">
-                        <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
-                            <i class="material-icons m-lg">trending_up</i>
-                            <br>New Economic Opportunities
+                        <a href="#" class="b-button">
+                            <!-- <i class="material-icons m-lg">trending_up</i> -->
+                            New Economic Opportunities
                         </a>
                     </div>
                     <div class="large-3 columns">
-                        <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
-                            <i class="material-icons m-lg">public</i>
-                            <br>Solving Public Problems
+                        <a href="#" class="b-button">
+                            <!-- <i class="material-icons m-lg">public</i> -->
+                            Solving Public Problems
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <section class="b-slide m-teal">
-            <div class="e-content row">
-                <div class="large-6 columns">
-                    <h2 class="e-project-name">Kenya's Open Duka</h2>
-                    <h3 class="e-question">Open Data for Transactional Transparency</h3>
-                </div>
-                <div class="large-6 columns">
-                    <p>Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
-                </div>
-            </div>
-            <div class="e-content row">
-                <div class="large-6 large-offset-6 columns">
-                    <div class="e-action">
-                        <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a>
+    <div class="b-page-section" id="#results">
+        <div class="grid">
+            
+            <div class="gutter-sizer">
+            <div class="e-card impact-government sector-public">
+                <a href="#">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url('/static/img/nairobi.jpg')"></div>
+                        <p class="e-case-name">Kenya's Open Duka</p>
+                        <p class="e-case-description">Open Data for Transactional Transparency</p>
                     </div>
-                </div>
+                </a>
             </div>
-        </section>
-
-        <section class="b-slide m-blue">
-            <div class="e-content row">
-                <div class="large-6 columns">
-                    <h2 class="e-project-name">Open Education Information in Tanzania</h2>
-                    <h3 class="e-question">A Tale of Two Dashboards</h3>
-                </div>
-                <div class="large-6 columns">
-                    <p>Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
-                </div>
-            </div>
-            <div class="e-content row">
-                <div class="large-6 large-offset-6 columns">
-                    <div class="e-action">
-                        <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="gutter-sizer">
+            <div class="e-card impact-citizens sector-philantrophy">
+                <a href="#">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url('/static/img/citybg.jpg')"></div>
+                        <p class="e-case-name">Open Education Information in Tanzania</p>
+                        <p class="e-case-description">Open Data for Transactional Transparency</p>
                     </div>
-                </div>
+                </a>
             </div>
-        </section>
-
-        <section class="b-slide m-orange">
-            <div class="e-content row">
-                <div class="large-6 columns">
-                    <h2 class="e-project-name">Kenya's Open Duka</h2>
-                    <h3 class="e-question">Open Data for Transactional Transparency</h3>
-                </div>
-                <div class="large-6 columns">
-                    <p>Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint recusandae nostrum eos saepe officia vero illum fuga quae at, corporis unde quas sit adipisci neque doloremque fugiat possimus nisi minima.</p>
-                </div>
-            </div>
-            <div class="e-content row">
-                <div class="large-6 large-offset-6 columns">
-                    <div class="e-action">
-                        <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="gutter-sizer">
+            <div class="e-card impact-government sector-geospatial">
+                <a href="#">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url('/static/img/nairobi.jpg')"></div>
+                        <p class="e-case-name">Case Study 3</p>
+                        <p class="e-case-description">Open Data for Transactional Transparency</p>
                     </div>
-                </div>
+                </a>
             </div>
-        </section>
-
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+        </div>
     </div>
 
 </main><!--@main-->
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
 
-    <script src="static/js/tweens.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
+<script src="static/js/tweens.js"></script>
+<script src="static/js/filters.js"></script>
 
 
 
@@ -405,20 +407,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.js"></script>
 
     <script>
-        $(document).foundation();
-    </script>
+    $(document).foundation();
+</script>
 
-    <script src="static/js/scripts.js"></script>
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<script src="static/js/scripts.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-40012093-4', 'auto');
-    ga('send', 'pageview');
+ga('create', 'UA-40012093-4', 'auto');
+ga('send', 'pageview');
 
-    </script>
+</script>
 
 </body>
 </html>
