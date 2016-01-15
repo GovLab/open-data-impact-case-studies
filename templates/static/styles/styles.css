@@ -4216,6 +4216,9 @@ table {
 .m-center {
   text-align: center; }
 
+div[disabled] {
+  display: none; }
+
 p.m-lg {
   font-size: 20px; }
 p.m-xl {
@@ -4230,7 +4233,9 @@ p.m-underline {
   text-decoration: underline; }
 
 i.m-xl {
-  font-size: 150px; }
+  font-size: 100px;
+  margin-bottom: 40px;
+  margin-top: 20px; }
 i.m-xl-badge {
   width: 100px;
   font-size: 100px;
@@ -4336,11 +4341,12 @@ h2.m-upper {
 .b-page-section.m-no-padding {
   padding: 0; }
   .b-page-section.m-no-padding .row {
-    max-width: 100rem;
     margin-left: 0;
     margin-right: 0; }
   .b-page-section.m-no-padding .columns.m-no-padding {
     padding: 0; }
+.b-page-section.m-no-bottom-padding {
+  padding-bottom: 0; }
 .b-page-section.m-impact-section h2 {
   font-size: 60px;
   font-weight: 200;
@@ -4384,6 +4390,14 @@ h2.m-upper {
     line-height: .9; }
   .b-page-section#download-section .b-button, .b-page-section#download-section .b-form input[type="submit"], .b-form .b-page-section#download-section input[type="submit"] {
     margin: 40px 0 0 0; }
+.b-page-section#upcoming-section {
+  padding: 60px 0; }
+  .b-page-section#upcoming-section h2 {
+    font-size: 28px;
+    font-weight: 800; }
+  .b-page-section#upcoming-section p {
+    font-size: 22px;
+    line-height: 1.62; }
 .b-page-section#results {
   max-width: 75rem; }
 
@@ -4441,7 +4455,7 @@ main .b-divider {
   .b-button.m-panel i.m-lg, .b-form input.m-panel[type="submit"] i.m-lg {
     font-size: 50px; }
   .b-button.m-panel i.m-xl, .b-form input.m-panel[type="submit"] i.m-xl {
-    font-size: 150px; }
+    font-size: 100px; }
 .b-button.m-transparent, .b-form input.m-transparent[type="submit"] {
   background-color: transparent; }
   .b-button.m-transparent:hover, .b-form input.m-transparent[type="submit"]:hover {

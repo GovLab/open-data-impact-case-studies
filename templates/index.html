@@ -84,29 +84,29 @@
     </div>
 
     <div class="b-page-section m-no-padding" id="enabler-icons" data-equalizer>
-        <div class="row">
+        <div class="expanded row">
             <div class="large-3 columns m-no-padding">
                 <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
-                    <i class="material-icons m-xl m-black">speaker_notes</i>
-                    <p>Strong Problem Definition</p>
+                    <i class="material-icons m-xl m-black">fullscreen</i>
+                    <p>Problem Definition</p>
                 </a>
             </div>
             <div class="large-3 columns m-no-padding">
                 <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
-                    <i class="material-icons m-xl m-black">directions_transit</i>
-                    <p>Right Infrastructure</p>
+                    <i class="material-icons m-xl m-black">language</i>
+                    <p>Public Infrastructure</p>
                 </a>
             </div>
             <div class="large-3 columns m-no-padding">
                 <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
                     <i class="material-icons m-xl m-black">people_outline</i>
-                    <p>Working Partnerships</p>
+                    <p>Partnerships</p>
                 </a>
             </div>
             <div class="large-3 columns m-no-padding">
                 <a href="#" class="b-button m-panel m-icon-only" data-equalizer-watch>
                     <i class="material-icons m-xl m-black">assessment</i>
-                    <p>Clear Policies &amp; Metrics</p>
+                    <p>Policies &amp; Metrics</p>
                 </a>
             </div>
         </div>
@@ -119,7 +119,7 @@
     </div>
 
     <div class="b-page-section m-no-padding" id="challenges-section" data-equalizer>
-        <div class="row m-center">
+        <div class="expanded row m-center">
             <div class="large-6 columns b-divider m-dark-blue m-padded" data-equalizer-watch>
                 <h3>Readiness</h3>
                 <p>Low technical and human capacity often pose inhospitable environments for open data projects</p>
@@ -129,7 +129,7 @@
                 <p>Success is limited when projects are unresponsive to feedback and user needs</p>
             </div>
         </div>
-        <div class="row m-center" data-equalizer>
+        <div class="expanded row m-center" data-equalizer>
             <div class="large-6 columns b-divider m-dark-blue-2 m-padded" data-equalizer-watch>
                 <h3>Risks</h3>
                 <p>Major challenges arise from the tradeoffs between the potential of open data and the risks posed by privacy and security violations</p>
@@ -141,7 +141,7 @@
         </div>
     </div>
 
-    <div class="b-page-section m-center m-purple" id="download-section">
+    <div class="b-page-section m-center m-purple" id="download-section" disabled>
         <div class="row">
             <h2>Follow our 10 Recommendations for Open Data Impact</h2>
             <p>in order to overcome the challenges and ensure highest impact from your open data projects</p>
@@ -154,6 +154,15 @@
         </div>
     </div>
 
+    <div class="b-page-section m-center m-purple" id="upcoming-section">
+        <div class="row">
+            <h2>Upcoming Report</h2>
+            <p>
+                Bacon ipsum dolor amet salami short ribs frankfurter drumstick, kevin picanha strip steak pastrami spare ribs porchetta. Jerky pork swine landjaeger sausage picanha boudin meatloaf ham hock doner pork chop chuck shankle. Cupim tail corned beef pancetta. Tongue ribeye pork loin tail, kielbasa drumstick ground round landjaeger.
+            </p>
+        </div>
+    </div>
+
     <a name="explore" id="a-explore"></a>
 
     <div class="b-divider">
@@ -162,7 +171,7 @@
         </div>
     </div>
 
-    <div class="b-page-section">
+    <div class="b-page-section m-no-bottom-padding">
         <div class="row m-center">
             <ul class="tabs" data-tabs id="explore-tabs">
                 <li class="tabs-title is-active"><a href="#panel1">Sector</a></li>
@@ -242,7 +251,7 @@
         </div>
     </div>
 
-    <div class="b-page-section" id="#results">
+    <div class="b-page-section m-no-padding" id="#results">
         <div class="grid">
             {% for case in cases %}
             <div class="e-card impact-{{case.impact_type}} sector-{{case.sector}}">

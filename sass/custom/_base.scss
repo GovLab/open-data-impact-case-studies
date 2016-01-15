@@ -5,3 +5,7 @@
 #explore-content {
     // min-height: 200px;
 }
+
+div[disabled] {
+    display: none;
+}
