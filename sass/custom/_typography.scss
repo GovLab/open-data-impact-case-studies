@@ -29,12 +29,13 @@ i {
         font-size: 150px;
     }
     &.m-xl-badge {
-        display: block;
-        width: 150px;
-        margin: 0 auto 50px auto;
-        font-size: 150px;
+        width: 100px;
+        font-size: 100px;
+        color: $white-10;
+        opacity: 0;
+        margin: 30px 0 0 0;
     }
-    &.m-gray { color: $gray-20; }
+    &.m-gray { color: $gray-10; }
     &.m-black { color: $gray-60; }
 }
 

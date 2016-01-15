@@ -4232,12 +4232,13 @@ p.m-underline {
 i.m-xl {
   font-size: 150px; }
 i.m-xl-badge {
-  display: block;
-  width: 150px;
-  margin: 0 auto 50px auto;
-  font-size: 150px; }
+  width: 100px;
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  margin: 30px 0 0 0; }
 i.m-gray {
-  color: rgba(0, 0, 0, 0.2); }
+  color: rgba(0, 0, 0, 0.1); }
 i.m-black {
   color: rgba(0, 0, 0, 0.6); }
 
@@ -4294,7 +4295,20 @@ i.m-black {
 .b-page-section .row.m-padded, .b-page-section .columns.m-padded {
   padding-top: 50px;
   padding-bottom: 50px; }
+.b-page-section.m-impact-section h2 {
+  font-size: 60px;
+  font-weight: 200;
+  text-transform: none;
+  line-height: 1.1; }
+  .b-page-section.m-impact-section h2 ~ p {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 30px 0 0 0; }
 .b-page-section.m-impact-section p.b-description {
+  font-weight: 300;
+  font-size: 24px;
   margin-top: 5px; }
 .b-page-section aside {
   color: rgba(0, 0, 0, 0.4);
@@ -4334,6 +4348,12 @@ i.m-black {
   color: rgba(0, 0, 0, 0.3); }
   .b-page-section p.e-last a {
     text-decoration: underline; }
+.b-page-section.m-yellow {
+  background-color: #C2C33B;
+  color: white; }
+.b-page-section.m-fuschia {
+  background-color: #AD0054;
+  color: white; }
 
 .b-top-section {
   position: relative;
@@ -4341,7 +4361,7 @@ i.m-black {
   height: 580px; }
   .b-top-section h1.m-space-1 {
     margin-top: 250px;
-    margin-bottom: 20px; }
+    margin-bottom: 40px; }
   .b-top-section h1.m-sm {
     font-size: 28px;
     font-weight: 600; }
@@ -4351,7 +4371,7 @@ i.m-black {
   .b-top-section h2.m-lg {
     max-width: 850px;
     font-size: 38px;
-    font-weight: 200;
+    font-weight: 300;
     margin: 0 auto; }
   .b-top-section .b-shader {
     position: absolute;
@@ -4408,6 +4428,8 @@ i.m-black {
   background-color: #164A7A; }
   .b-button.m-dark-blue:hover, .b-form input.m-dark-blue[type="submit"]:hover {
     background-color: #103456; }
+  .b-button.m-dark-blue:focus, .b-form input.m-dark-blue[type="submit"]:focus {
+    color: white; }
 
 .b-lower-top-buttons {
   position: relative; }

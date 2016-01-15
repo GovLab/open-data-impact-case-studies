@@ -49,6 +49,9 @@
         &:hover {
             background-color: $dark-blue-2;
         }
+        &:focus {
+            color: $white;
+        }
     }
 }
 
