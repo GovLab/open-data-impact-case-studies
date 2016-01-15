@@ -12,6 +12,8 @@ $(document).ready(function(){
         TweenLite.to(window, 0.5, {scrollTo:$('#a-section-1').offset().top, ease:Power2.easeOut});
     });
 
+    // enabling
+
     var trigger1 = $('#trigger-1');
     var trigger2 = $('#trigger-2');
     var trigger3 = $('#trigger-3');
