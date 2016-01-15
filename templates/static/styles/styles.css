@@ -3036,9 +3036,9 @@ table.hover tr:nth-of-type(even):hover {
   background-color: #ededed; }
 
 .tabs {
-  margin: 0;
+  margin: 10px;
   list-style-type: none;
-  background: #999;
+  background: transparent;
   border: 1px solid #fff; }
   .tabs::before, .tabs::after {
     content: ' ';
@@ -3067,14 +3067,14 @@ table.hover tr:nth-of-type(even):hover {
   float: left; }
   .tabs-title > a {
     display: block;
-    padding: 1.25rem 1.5rem;
+    padding: 10px 20px;
     line-height: 1;
     font-size: 12px;
     color: #fff; }
     .tabs-title > a:hover {
-      background: #ccc; }
+      background: #999; }
     .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
-      background: #523080; }
+      background: #164A7A; }
 
 .tabs-content {
   background: #fff;
@@ -4490,27 +4490,32 @@ main .b-divider {
         transition: all .4s ease; }
 
 .tabs {
-  border: 0;
-  position: relative; }
-  .tabs > .tabs-title > a {
-    font-size: 18px;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-decoration: none; }
-    .tabs > .tabs-title > a:hover {
-      color: white; }
+  display: inline-block;
+  position: relative;
+  border: 0; }
+  .tabs > .tabs-title {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 10px; }
+    .tabs > .tabs-title > a {
+      font-size: 18px;
+      font-weight: 300;
+      text-transform: uppercase;
+      text-decoration: none; }
+      .tabs > .tabs-title > a:hover {
+        color: white; }
   .tabs .e-side-link {
     padding: 17px 0;
     position: absolute;
-    right: 25px;
-    color: white; }
+    right: 25px; }
 
-.tabs-content .tabs-panel {
-  padding: 0; }
-  .tabs-content .tabs-panel .row {
-    max-width: none; }
-    .tabs-content .tabs-panel .row .columns {
-      padding: 0; }
+.tabs-content .tabs-panel .row .columns {
+  text-align: center; }
+.tabs-content .b-button, .tabs-content .b-form input[type="submit"], .b-form .tabs-content input[type="submit"] {
+  background-color: transparent;
+  font-size: 12px;
+  text-transform: none; }
+  .tabs-content .b-button:hover, .tabs-content .b-form input[type="submit"]:hover, .b-form .tabs-content input[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
 
 .b-footer .e-content .e-partner-logo {
   display: block;
