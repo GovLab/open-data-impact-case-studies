@@ -4684,9 +4684,9 @@ ul.b-sidebar {
     .grid .e-card .e-card-inner:hover {
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.3); }
   .grid .e-card.impact-citizens .e-card-inner {
-    background-color: #008ab3; }
-  .grid .e-card.impact-government .e-card-inner {
     background-color: #ee5b43; }
+  .grid .e-card.impact-government .e-card-inner {
+    background-color: #008ab3; }
   .grid .e-card.impact-economic .e-card-inner {
     background-color: #C2C33B; }
   .grid .e-card.impact-public .e-card-inner {
