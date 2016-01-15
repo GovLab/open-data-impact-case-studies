@@ -3,6 +3,7 @@
     .e-content {
         h4 {
             text-align: center;
+            font-size: 18px;
         }
         .e-partner-logo {
             // display: block;
@@ -22,8 +23,12 @@
 
             }
 
-            &.m-lg > img {
-                max-height: 100px;
+            &.m-lg {
+                &.m-lg > img {
+                    min-height: 160px;
+                    min-width: 500px;
+                    margin: -40px 0;
+                }
             }
         }
     }
