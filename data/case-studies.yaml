@@ -1,5 +1,5 @@
 - title: "Kenya's Open Duka"
-  image: '/static/img/nairobi.jpg'
+  image: 'static/img/nairobi.jpg'
   authors: 'Andrew Young &amp; Stefaan Verhulst'
   description: 'Open Data for Transactional Transparency'
   impact_type: government # citizens | government | economic | public
@@ -19,7 +19,7 @@
   looking_forward: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
 - title: "Open Education Information in Tanzania"
-  image: '/static/img/citybg.jpg'
+  image: 'static/img/citybg.jpg'
   authors: "Andrew Young &amp; Stefaan Verhulst"
   description: 'Open Data for Transactional Transparency'
   impact_type: citizens # citizens | government | economic | public
@@ -39,7 +39,7 @@
   looking_forward: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
 - title: "Case Study 3"
-  image: '/static/img/nairobi.jpg'
+  image: 'static/img/nairobi.jpg'
   authors: "Andrew Young &amp; Stefaan Verhulst"
   description: 'Open Data for Transactional Transparency'
   impact_type: government # citizens | government | economic | public
