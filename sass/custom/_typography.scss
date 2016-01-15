@@ -39,17 +39,21 @@ i {
     &.m-black { color: $gray-60; }
 }
 
-.m-space-1 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+h2.m-upper {
+    text-transform: uppercase;
 }
 
-.m-space-2 {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+// .m-space-1 {
+//     margin-top: 100px;
+//     margin-bottom: 100px;
+// }
 
-.m-space-3 {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
+// .m-space-2 {
+//     margin-top: 50px;
+//     margin-bottom: 50px;
+// }
+
+// .m-space-3 {
+//     margin-top: 25px;
+//     margin-bottom: 25px;
+// }
