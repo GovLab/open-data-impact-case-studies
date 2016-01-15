@@ -1,16 +1,16 @@
 /* import site specific rules */
 
+@import 'custom/variables';
 @import 'custom/base';
 @import 'custom/typography';
 @import 'custom/topnav';
 @import 'custom/page-section';
 @import 'custom/page-top-section';
 @import 'custom/button';
-@import 'custom/aux';
 @import 'custom/tabs';
 @import 'custom/footer';
 @import 'custom/slide';
-@import 'custom/variables';
 @import 'custom/sidebar';
 @import 'custom/divider';
 @import 'custom/sticky';
+@import 'custom/aux';

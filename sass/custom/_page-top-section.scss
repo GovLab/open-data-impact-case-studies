@@ -1,10 +1,16 @@
 .b-top-section {
-    padding: 100px 0;
+    position: relative;
+    padding: 0;
+    height: 580px;
 
     h1 {
         &.m-space-1 {
-            margin-top: 0;
-            margin-bottom: 50px;
+            margin-top: 250px;
+            margin-bottom: 20px;
+        }
+        &.m-sm {
+            font-size: 28px;
+            font-weight: 600;
         }
     }
 
@@ -13,11 +19,23 @@
             margin-top: 100px;
             margin-bottom: 100px;
         }
+        &.m-lg {
+            max-width: 850px;
+            font-size: 38px;
+            font-weight: 200;
+            margin: 0 auto;
+        }
     }
 
     .b-shader {
+        position: absolute;
+        top: 0;
         padding: 50px 0;
-        background-color: $gray-50;
+        height: 100%;
+        width: 100%;
+        // background-color: $gray-50;
+        background: linear-gradient($gray-10, $gray-90);
+        z-index: 0;
     }
 
     i.m-lg-faded {
@@ -30,7 +48,7 @@
     }
 
     &.m-hires-1 {
-        background: url('../img/citybg.jpg') no-repeat center top;
+        background: url('../img/citybg.jpg') no-repeat center center;
         background-size: cover;
     }
 
@@ -40,5 +58,6 @@
     }
 
     &.m-light   { background-color: transparent;  color: $black;  }
+
 
 }

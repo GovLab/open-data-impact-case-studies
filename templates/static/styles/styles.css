@@ -4254,20 +4254,40 @@ i.m-black {
   margin-bottom: 25px; }
 
 .b-top-nav {
-  padding: 5px 5px 10px 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
   padding: 10px 20px 20px 20px; }
+  @media screen and (min-width: 64.0625em) {
+    .b-top-nav {
+      padding: 5px 5px 10px 5px; } }
   .b-top-nav .e-title {
     padding: 11px 0 0 0;
     text-align: center;
     display: block; }
-  .b-top-nav.m-negative {
-    background-color: transparent;
-    color: #333; }
-  .b-top-nav .e-nav-group .e-side-logo {
-    position: relative;
-    top: -8px; }
-    .b-top-nav .e-nav-group .e-side-logo img {
-      max-width: 75px; }
+  .b-top-nav .e-logo {
+    max-width: 300px;
+    margin: 0 auto; }
+  .b-top-nav.m-transparent {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white; }
+  .b-top-nav .e-nav-group {
+    color: rgba(255, 255, 255, 0.5);
+    transition: all .4s ease; }
+    .b-top-nav .e-nav-group i.material-icons {
+      font-size: 30px;
+      cursor: pointer; }
+    .b-top-nav .e-nav-group.m-left .e-nav-item {
+      padding-top: 15px; }
+    .b-top-nav .e-nav-group .e-side-logo {
+      position: relative;
+      top: -8px; }
+      .b-top-nav .e-nav-group .e-side-logo img {
+        max-width: 75px; }
+    .b-top-nav .e-nav-group:hover {
+      color: white;
+      transition: all .4s ease; }
 
 .b-page-section .row.m-spaced, .b-page-section .columns.m-spaced {
   margin-bottom: 50px; }
@@ -4316,16 +4336,31 @@ i.m-black {
     text-decoration: underline; }
 
 .b-top-section {
-  padding: 100px 0; }
+  position: relative;
+  padding: 0;
+  height: 580px; }
   .b-top-section h1.m-space-1 {
-    margin-top: 0;
-    margin-bottom: 50px; }
+    margin-top: 250px;
+    margin-bottom: 20px; }
+  .b-top-section h1.m-sm {
+    font-size: 28px;
+    font-weight: 600; }
   .b-top-section h2.m-space-1 {
     margin-top: 100px;
     margin-bottom: 100px; }
+  .b-top-section h2.m-lg {
+    max-width: 850px;
+    font-size: 38px;
+    font-weight: 200;
+    margin: 0 auto; }
   .b-top-section .b-shader {
+    position: absolute;
+    top: 0;
     padding: 50px 0;
-    background-color: rgba(0, 0, 0, 0.5); }
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
+    z-index: 0; }
   .b-top-section i.m-lg-faded {
     font-size: 50px;
     color: rgba(255, 255, 255, 0.4); }
@@ -4333,7 +4368,7 @@ i.m-black {
       color: white;
       transition: all .4s ease; }
   .b-top-section.m-hires-1 {
-    background: url("../img/citybg.jpg") no-repeat center top;
+    background: url("../img/citybg.jpg") no-repeat center center;
     background-size: cover; }
   .b-top-section.m-hires-2 {
     background: url("../img/nairobi.jpg") no-repeat center top;
@@ -4360,6 +4395,19 @@ i.m-black {
 .b-button.m-box, .b-form input.m-box[type="submit"] {
   max-width: 150px;
   border: solid 1px white; }
+.b-button.m-bottom-overlap, .b-form input.m-bottom-overlap[type="submit"] {
+  display: block;
+  position: absolute;
+  bottom: -25px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 250px; }
+.b-button.m-dark-blue, .b-form input.m-dark-blue[type="submit"] {
+  background-color: #164A7A; }
+  .b-button.m-dark-blue:hover, .b-form input.m-dark-blue[type="submit"]:hover {
+    background-color: #103456; }
 
 .b-lower-top-buttons {
   position: relative; }
@@ -4380,10 +4428,6 @@ i.m-black {
       .b-lower-top-buttons .b-button.m-more-info:hover .e-more, .b-lower-top-buttons .b-form input.m-more-info[type="submit"]:hover .e-more, .b-form .b-lower-top-buttons input.m-more-info[type="submit"]:hover .e-more {
         opacity: 1;
         transition: all .4s ease; }
-
-#overlay {
-  background-color: transparent;
-  opacity: 0.0; }
 
 .tabs {
   border: 0;
@@ -4510,5 +4554,9 @@ ul.b-sidebar {
   margin: 0 auto; }
 .b-sticky.m-closed {
   opacity: 0; }
+
+#overlay {
+  background-color: transparent;
+  opacity: 0.0; }
 
 /*# sourceMappingURL=styles.css.map */

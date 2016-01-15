@@ -1,7 +1,11 @@
 .b-top-nav {
-    padding: 5px 5px 10px 5px;
-
-    @include breakpoint($tablet) { padding: 10px 20px 20px 20px; }
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    // height: 40px;
+    @include breakpoint($desktop) { padding: 5px 5px 10px 5px; }
+    @include breakpoint($mobile-only) { padding: 10px 20px 20px 20px; }
 
     // for text-only title
     .e-title {
@@ -9,19 +13,39 @@
         text-align: center;
         display: block;
     }
+    .e-logo {
+        max-width: 300px;
+        margin: 0 auto;
+    }
 
-    &.m-negative {
-        background-color: transparent;
-        color: $black;
+    &.m-transparent {
+        background-color: $gray-30;
+        color: $white;
     }
 
     .e-nav-group {
+        color: $white-50;
+        @include transition;
+
+        i.material-icons {
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        &.m-left .e-nav-item {
+            padding-top: 15px;
+        }
+
         .e-side-logo {
             position: relative;
             top: -8px;
             img {
                 max-width: 75px;
             }
+        }
+        &:hover {
+            color: $white;
+            @include transition;
         }
     }
 }
