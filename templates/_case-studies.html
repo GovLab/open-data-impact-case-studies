@@ -5,7 +5,7 @@
 
     <div class="b-top-section m-hires-2 m-center">
         <div class="b-shader">
-            <h1>{{case.title}}</h1>
+            <h1 class="m-space-1">{{case.title}}</h1>
             <h2>{{case.description}}</h2>
             <h4>by {{case.authors}}</h4>
             <p class="m-space-only-top">Impact |
@@ -42,18 +42,10 @@
             <p class="m-no-space">Location | {{case.location | upper}}</p>
             <p class="m-space-only-top"><b>Read Time</b></p>
             <p class="m-no-space">Brief View {{case.read_time}} MINS &nbsp;&nbsp;&nbsp;&nbsp; Full Story {{case.full_read_time}} MINS</p>
-            <p class="m-space-top b-lower-top-buttons">
-                <a href="#" class="b-button m-icon-only m-transparent m-negative m-right">
-                    <i class="material-icons m-space">file_download</i>
-                    <br>
-                    Download
-                    <br>Full Story
-                </a>
-                <a href="#" class="b-button m-icon-only m-transparent m-negative m-left m-more-info">
-                    12 Shares
-                    <i class="material-icons e-more m-space">more_horiz</i>
-                </a>
-            </p>
+            <a href="#" class="b-button m-bottom-overlap m-orange m-detail-page">
+                <i class="material-icons m-space">file_download</i>
+                Download The Report
+            </a>
         </div>
     </div>
 
@@ -173,29 +165,29 @@
             {% if casestudy.title is equalto case.title %}
                 {% set next = true %}
             {% endif %}
-        {% endfor %} -->
-        {% set next = false %}
-        {% for casestudy in allcases %}
+            {% endfor %} -->
+            {% set next = false %}
+            {% for casestudy in allcases %}
             {% if next %}
-                <a href="{{casestudy.title|slug}}.html" class="impact-{{casestudy.impact_type}} sector-{{casestudy.sector}}">
-                    <h2>{{casestudy.title}}</h2>
-                </a>
+            <a href="{{casestudy.title|slug}}.html" class="impact-{{casestudy.impact_type}} sector-{{casestudy.sector}}">
+                <h2>{{casestudy.title}}</h2>
+            </a>
             {% endif %}
             {% if casestudy.title is equalto case.title %}
-                {% set next = true %}
+            {% set next = true %}
             {% endif %}
-        {% endfor %}
+            {% endfor %}
+        </div>
+    </main>
+
+    <div class="b-sticky m-purple m-closed" id="reference-1">
+        <div class="e-wrap">
+            <i class="material-icons e-close js-close-sticky" data-close="#reference-1">close</i>
+            <h3 class="e-title">1. reference title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
     </div>
-</main>
 
-<div class="b-sticky m-purple m-closed" id="reference-1">
-    <div class="e-wrap">
-        <i class="material-icons e-close js-close-sticky" data-close="#reference-1">close</i>
-        <h3 class="e-title">1. reference title</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-</div>
+    <script src="static/js/case-study-scripts.js"></script>
 
-<script src="static/js/case-study-scripts.js"></script>
-
-{% endblock %}
+    {% endblock %}

@@ -44,12 +44,30 @@
         left: 0;
         right: 0;
         width: 280px;
+        &.m-detail-page {
+            padding-right: 40px;
+            padding-left: 40px;
+            width: 350px;
+            i {
+                line-height: 1;
+            }
+        }
     }
 
     &.m-dark-blue {
         background-color: $dark-blue;
         &:hover {
             background-color: $dark-blue-2;
+        }
+        &:focus {
+            color: $white;
+        }
+    }
+
+    &.m-orange {
+        background-color: $orange;
+        &:hover {
+            background-color: $orange-20k;
         }
         &:focus {
             color: $white;

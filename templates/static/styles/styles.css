@@ -4475,11 +4475,23 @@ main .b-divider {
   left: 0;
   right: 0;
   width: 280px; }
+  .b-button.m-bottom-overlap.m-detail-page, .b-form input.m-bottom-overlap.m-detail-page[type="submit"] {
+    padding-right: 40px;
+    padding-left: 40px;
+    width: 350px; }
+    .b-button.m-bottom-overlap.m-detail-page i, .b-form input.m-bottom-overlap.m-detail-page[type="submit"] i {
+      line-height: 1; }
 .b-button.m-dark-blue, .b-form input.m-dark-blue[type="submit"] {
   background-color: #164A7A; }
   .b-button.m-dark-blue:hover, .b-form input.m-dark-blue[type="submit"]:hover {
     background-color: #103456; }
   .b-button.m-dark-blue:focus, .b-form input.m-dark-blue[type="submit"]:focus {
+    color: white; }
+.b-button.m-orange, .b-form input.m-orange[type="submit"] {
+  background-color: #ee5b43; }
+  .b-button.m-orange:hover, .b-form input.m-orange[type="submit"]:hover {
+    background-color: #be4936; }
+  .b-button.m-orange:focus, .b-form input.m-orange[type="submit"]:focus {
     color: white; }
 .b-button.m-wide-padding, .b-form input.m-wide-padding[type="submit"] {
   padding-left: 80px;
