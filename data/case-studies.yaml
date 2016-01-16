@@ -1,6 +1,6 @@
 - title: "Kenya's Open Duka"
   image: 'static/img/nairobi.jpg'
-  authors: 'Andrew Young &amp; Stefaan Verhulst'
+  authors: 'Andrew Young and Stefaan Verhulst'
   description: 'Open Data for Transactional Transparency'
   impact_type: government # citizens | government | economic | public
   sector: public # public | philantrophy | geospatial | politics | health | education

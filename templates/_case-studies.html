@@ -5,43 +5,58 @@
 
     <div class="b-top-section m-hires-2 m-center">
         <div class="b-shader">
-            <h1 class="m-space-1">{{case.title}}</h1>
-            <h2>{{case.description}}</h2>
+            <h1 class="m-space-2 m-sm-2">{{case.title}}</h1>
+            <h2 class="m-sm">{{case.description}}</h2>
             <h4>by {{case.authors}}</h4>
-            <p class="m-space-only-top">Impact |
-                {% if case.impact_type is equalto 'citizens' %}
-                EMPOWERING CITIZENS
-                {% elif case.impact_type is equalto 'government' %}
-                IMPROVING GOVERNMENT
-                {% elif case.impact_type is equalto 'economic' %}
-                CREATING NEW ECONOMIC OPPORTUNITIES
-                {% elif case.impact_type is equalto 'public' %}
-                SOLVING PUBLIC PROBLEMS
-                {% else %}
-                {{case.impact_type | upper}}
-                {% endif %}
-            </p>
-            <p class="m-no-space">
-                Sector |
-                {% if case.sector is equalto 'public' %}
-                PUBLIC SECTOR
-                {% elif case.sector is equalto 'philantrophy' %}
-                PHILANTROPHY &AMP; AID
-                {% elif case.sector is equalto 'geospatial' %}
-                GEOSPATIAL SERVICES
-                {% elif case.sector is equalto 'politics' %}
-                POLITICS &AMP; ELECTIONS
-                {% elif case.sector is equalto 'health' %}
-                HEALTH
-                {% elif case.sector is equalto 'education' %}
-                EDUCATION
-                {% else %}
-                {{case.impact | upper}}
-                {% endif %}
-            </p>
-            <p class="m-no-space">Location | {{case.location | upper}}</p>
-            <p class="m-space-only-top"><b>Read Time</b></p>
-            <p class="m-no-space">Brief View {{case.read_time}} MINS &nbsp;&nbsp;&nbsp;&nbsp; Full Story {{case.full_read_time}} MINS</p>
+            <div class="e-left-box">
+                <div class="e-left">
+                    <p>Impact</p>
+                    <p>Sector</p>
+                    <p>Location</p>
+                </div>
+                <div class="e-right">
+                    <p>
+                        {% if case.impact_type is equalto 'citizens' %}
+                        EMPOWERING CITIZENS
+                        {% elif case.impact_type is equalto 'government' %}
+                        IMPROVING GOVERNMENT
+                        {% elif case.impact_type is equalto 'economic' %}
+                        CREATING NEW ECONOMIC OPPORTUNITIES
+                        {% elif case.impact_type is equalto 'public' %}
+                        SOLVING PUBLIC PROBLEMS
+                        {% else %}
+                        {{case.impact_type | upper}}
+                        {% endif %}
+                    </p>
+                    <p>
+                        {% if case.sector is equalto 'public' %}
+                        PUBLIC SECTOR
+                        {% elif case.sector is equalto 'philantrophy' %}
+                        PHILANTROPHY &AMP; AID
+                        {% elif case.sector is equalto 'geospatial' %}
+                        GEOSPATIAL SERVICES
+                        {% elif case.sector is equalto 'politics' %}
+                        POLITICS &AMP; ELECTIONS
+                        {% elif case.sector is equalto 'health' %}
+                        HEALTH
+                        {% elif case.sector is equalto 'education' %}
+                        EDUCATION
+                        {% else %}
+                        {{case.impact | upper}}
+                        {% endif %}
+                    </p>
+                    <p>{{case.location | upper}}</p>
+                </div>
+            </div>
+            <div class="e-right-box">
+                <p>Read Time</p>
+                <p>
+                    Brief View <b>{{case.read_time}} MINS</b>
+                </p>
+                <p>
+                    Full Story <b>{{case.full_read_time}} MINS</b>
+                </p>
+            </div>
             <a href="#" class="b-button m-bottom-overlap m-orange m-detail-page">
                 <i class="material-icons m-space">file_download</i>
                 Download The Report

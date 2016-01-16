@@ -4411,9 +4411,15 @@ main .b-divider {
   .b-top-section h1.m-space-1 {
     margin-top: 250px;
     margin-bottom: 40px; }
+  .b-top-section h1.m-space-2 {
+    margin-top: 200px;
+    margin-bottom: 0; }
   .b-top-section h1.m-sm {
     font-size: 28px;
     font-weight: 600; }
+  .b-top-section h1.m-sm-2 {
+    font-size: 48px;
+    font-weight: 300; }
   .b-top-section h2.m-space-1 {
     margin-top: 100px;
     margin-bottom: 100px; }
@@ -4422,6 +4428,12 @@ main .b-divider {
     font-size: 38px;
     font-weight: 300;
     margin: 0 auto; }
+  .b-top-section h2.m-sm {
+    font-size: 25px;
+    font-weight: 300; }
+  .b-top-section h4 {
+    font-size: 18px;
+    font-weight: 600; }
   .b-top-section .b-shader {
     position: absolute;
     top: 0;
@@ -4430,6 +4442,32 @@ main .b-divider {
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
     z-index: 0; }
+  .b-top-section .e-left-box {
+    position: absolute;
+    left: 130px;
+    bottom: 80px; }
+    .b-top-section .e-left-box p {
+      margin: 0; }
+    .b-top-section .e-left-box div {
+      display: inline-block; }
+      .b-top-section .e-left-box div.e-left {
+        width: 80px;
+        text-align: right;
+        margin-right: 15px; }
+      .b-top-section .e-left-box div.e-right {
+        width: 200px;
+        text-align: left;
+        font-weight: 600; }
+  .b-top-section .e-right-box {
+    position: absolute;
+    right: 170px;
+    bottom: 80px;
+    text-align: right; }
+    .b-top-section .e-right-box p {
+      margin: 0; }
+      .b-top-section .e-right-box p:first-child {
+        font-weight: 800;
+        text-transform: uppercase; }
   .b-top-section i.m-lg-faded {
     font-size: 50px;
     color: rgba(255, 255, 255, 0.4); }
