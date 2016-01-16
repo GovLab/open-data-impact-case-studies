@@ -4600,8 +4600,9 @@ main .b-divider {
   .tabs-content .b-button:hover, .tabs-content .b-form input[type="submit"]:hover, .b-form .tabs-content input[type="submit"]:hover {
     background-color: rgba(0, 0, 0, 0.1); }
   .tabs-content .b-button:focus, .tabs-content .b-form input[type="submit"]:focus, .b-form .tabs-content input[type="submit"]:focus {
-    background-color: rgba(0, 0, 0, 0.05);
     outline: none; }
+  .tabs-content .b-button.selected, .tabs-content .b-form input.selected[type="submit"], .b-form .tabs-content input.selected[type="submit"] {
+    background-color: rgba(0, 0, 0, 0.05); }
 
 .b-footer {
   padding: 30px 0 45px 0; }
