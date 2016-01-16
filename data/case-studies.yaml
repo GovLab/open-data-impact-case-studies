@@ -3,7 +3,7 @@
   authors: 'Andrew Young and Stefaan Verhulst'
   description: 'Open Data for Transactional Transparency'
   impact_type: government # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education
+  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Kenya
   read_time: 5 #minutes
   full_read_time: 20

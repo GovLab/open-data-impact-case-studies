@@ -43,5 +43,9 @@
         &:hover {
             background-color: $gray-10;
         }
+        &:focus {
+            background-color: $gray-05;
+            outline: none;
+        }
     }
 }

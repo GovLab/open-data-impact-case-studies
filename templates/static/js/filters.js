@@ -9,8 +9,16 @@ $(function() {
         layoutMode: 'fitRows'
     });
 
+    $('#see-all-btn').focus();
+
     $('.js-filter').click(function(){
         event.preventDefault();
-        $grid.isotope({ filter : '.' + $(this).attr('data-filter')})
+        var filterParam = $(this).attr('data-filter');
+        if (filterParam === '*') {
+            $grid.isotope({ filter : '*' })
+        }
+        else {
+            $grid.isotope({ filter : '.' + filterParam })
+        }
     });
 });
