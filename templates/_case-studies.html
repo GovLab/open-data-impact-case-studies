@@ -163,24 +163,11 @@
         </div>
     </div>
 
-    <div class="b-divider m-teal m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
-        <h1>Read Next: </h1>
-<!--         {% set next = false %}
-        {% for casestudy in allcases %}
-            {% if next %}
-                {% if casestudy.impact_type is equalto case.impact_type %}
-                    <a href="#">
-                        <h2>{{casestudy.title}}</h2>
-                    </a>
-                    {% set next = false %}
-                {% endif %}
-            {% endif %}
-            {% if casestudy.title is equalto case.title %}
-                {% set next = true %}
-            {% endif %}
-            {% endfor %} -->
+    <div class="b-divider m-orange m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
+        <div>
+            <h1>Read Next</h1>
             {% set next = false %}
-            {% for casestudy in allcases %}
+            {% for casestudy in cases %}
             {% if next %}
             <a href="{{casestudy.title|slug}}.html" class="impact-{{casestudy.impact_type}} sector-{{casestudy.sector}}">
                 <h2>{{casestudy.title}}</h2>
@@ -191,16 +178,17 @@
             {% endif %}
             {% endfor %}
         </div>
-    </main>
-
-    <div class="b-sticky m-purple m-closed" id="reference-1">
-        <div class="e-wrap">
-            <i class="material-icons e-close js-close-sticky" data-close="#reference-1">close</i>
-            <h3 class="e-title">1. reference title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
     </div>
+</main>
 
-    <script src="static/js/case-study-scripts.js"></script>
+<div class="b-sticky m-purple m-closed" id="reference-1">
+    <div class="e-wrap">
+        <i class="material-icons e-close js-close-sticky" data-close="#reference-1">close</i>
+        <h3 class="e-title">1. reference title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+</div>
 
-    {% endblock %}
+<script src="static/js/case-study-scripts.js"></script>
+
+{% endblock %}
