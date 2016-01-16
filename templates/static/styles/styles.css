@@ -4432,6 +4432,8 @@ main .b-divider {
   .b-top-section h1.m-sm-2 {
     font-size: 48px;
     font-weight: 300; }
+  .b-top-section h1 a:focus {
+    color: white; }
   .b-top-section h2.m-space-1 {
     margin-top: 100px;
     margin-bottom: 100px; }
@@ -4443,6 +4445,8 @@ main .b-divider {
   .b-top-section h2.m-sm {
     font-size: 25px;
     font-weight: 300; }
+  .b-top-section h2 a:focus {
+    color: white; }
   .b-top-section h4 {
     font-size: 18px;
     font-weight: 600; }

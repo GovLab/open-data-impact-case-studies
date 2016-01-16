@@ -20,6 +20,9 @@
             font-size: 48px;
             font-weight: 300;
         }
+        & a:focus {
+            color: $white;
+        }
     }
 
     h2 {
@@ -36,6 +39,9 @@
         &.m-sm {
             font-size: 25px;
             font-weight: 300;
+        }
+        & a:focus {
+            color: $white;
         }
     }
 
