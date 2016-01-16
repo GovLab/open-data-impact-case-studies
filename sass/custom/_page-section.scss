@@ -152,7 +152,8 @@
                     color: $white-40;
                 }
                 &:hover {
-                    background-color: $teal-20k;
+                    // background-color: $teal-20k;
+                    cursor: default;
                 }
             }
         }

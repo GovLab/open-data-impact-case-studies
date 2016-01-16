@@ -4385,7 +4385,7 @@ a[data-open] {
   .b-page-section#enabler-icons .columns .b-button i, .b-page-section#enabler-icons .columns .b-form input[type="submit"] i, .b-form .b-page-section#enabler-icons .columns input[type="submit"] i {
     color: rgba(255, 255, 255, 0.4); }
   .b-page-section#enabler-icons .columns .b-button:hover, .b-page-section#enabler-icons .columns .b-form input[type="submit"]:hover, .b-form .b-page-section#enabler-icons .columns input[type="submit"]:hover {
-    background-color: #00616b; }
+    cursor: default; }
 .b-page-section#challenges-section .columns h3 {
   font-size: 26px;
   font-weight: 500; }
