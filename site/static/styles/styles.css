@@ -4385,7 +4385,7 @@ a[data-open] {
   .b-page-section#enabler-icons .columns .b-button i, .b-page-section#enabler-icons .columns .b-form input[type="submit"] i, .b-form .b-page-section#enabler-icons .columns input[type="submit"] i {
     color: rgba(255, 255, 255, 0.4); }
   .b-page-section#enabler-icons .columns .b-button:hover, .b-page-section#enabler-icons .columns .b-form input[type="submit"]:hover, .b-form .b-page-section#enabler-icons .columns input[type="submit"]:hover {
-    background-color: #00616b; }
+    cursor: default; }
 .b-page-section#challenges-section .columns h3 {
   font-size: 26px;
   font-weight: 500; }
@@ -4432,6 +4432,8 @@ main .b-divider {
   .b-top-section h1.m-sm-2 {
     font-size: 48px;
     font-weight: 300; }
+  .b-top-section h1 a:focus {
+    color: white; }
   .b-top-section h2.m-space-1 {
     margin-top: 100px;
     margin-bottom: 100px; }
@@ -4443,6 +4445,8 @@ main .b-divider {
   .b-top-section h2.m-sm {
     font-size: 25px;
     font-weight: 300; }
+  .b-top-section h2 a:focus {
+    color: white; }
   .b-top-section h4 {
     font-size: 18px;
     font-weight: 600; }
@@ -4595,6 +4599,9 @@ main .b-divider {
   width: 100%; }
   .tabs-content .b-button:hover, .tabs-content .b-form input[type="submit"]:hover, .b-form .tabs-content input[type="submit"]:hover {
     background-color: rgba(0, 0, 0, 0.1); }
+  .tabs-content .b-button:focus, .tabs-content .b-form input[type="submit"]:focus, .b-form .tabs-content input[type="submit"]:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+    outline: none; }
 
 .b-footer {
   padding: 30px 0 45px 0; }
