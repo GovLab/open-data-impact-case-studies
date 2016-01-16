@@ -13,14 +13,34 @@
         &.m-dark-blue-2 {
             background-color: $dark-blue-2;
         }
-    }
 
+    }
 
     aside {
         color: $gray-40;
         font-size: 22px;
         text-transform: uppercase;
     }
+
+    &.m-condensed {
+        aside {
+            font-size: 18px;
+            text-align: right;
+            margin: 0 50px 0 0;
+            min-width: 200px;
+        }
+        .row {
+            max-width: 65rem;
+        }
+
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.62;
+        }
+    }
+
 
     .m-lr-padding {
         margin-left: 100px;
@@ -52,6 +72,7 @@
         &.m-active p { display: block; }
 
         .b-button { color: $purple; }
+
     }
 
     p.e-last {
@@ -108,6 +129,10 @@
                 margin-top: 5px;
             }
         }
+    }
+
+    &.m-margin-lead {
+        margin-top: 60px;
     }
 
     &#enabler-icons {
