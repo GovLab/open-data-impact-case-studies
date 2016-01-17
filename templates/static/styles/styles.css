@@ -4396,7 +4396,7 @@ a[data-open] {
   padding: 60px 0; }
   .b-page-section#download-section h2 {
     font-size: 28px;
-    font-weight: 800; }
+    font-weight: 600; }
   .b-page-section#download-section p {
     font-size: 22px;
     line-height: .9; }
@@ -4594,7 +4594,7 @@ main .b-divider {
   text-align: center; }
 .tabs-content .b-button, .tabs-content .b-form input[type="submit"], .b-form .tabs-content input[type="submit"] {
   background-color: transparent;
-  font-size: 12px;
+  font-size: 15px;
   text-transform: none;
   width: 100%; }
   .tabs-content .b-button:hover, .tabs-content .b-form input[type="submit"]:hover, .b-form .tabs-content input[type="submit"]:hover {
@@ -4747,7 +4747,7 @@ ul.b-sidebar {
     margin: 15px;
     display: inline-block; }
     .grid .e-card .e-card-inner p {
-      padding: 15px; }
+      padding: 20px; }
       .grid .e-card .e-card-inner p.e-case-name {
         font-size: 18px;
         font-weight: 600;
