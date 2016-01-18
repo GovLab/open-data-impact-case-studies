@@ -4811,6 +4811,9 @@ ul.b-sidebar {
       line-height: 1;
       font-weight: 600; }
 
+.b-page-section aside h3 {
+  text-align: right;
+  padding-right: 30px; }
 .b-page-section .e-expandable * {
   font-size: 1.1rem;
   font-weight: 300; }
