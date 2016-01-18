@@ -1,7 +1,9 @@
+$od-blue: #164A7A;
+
 // Modifier to add the main blue color
 
 .m-od-blue {
-    background-color: #164A7A;
+    background-color: $od-blue;
 }
 
 // This should probably become a component. 
@@ -57,6 +59,38 @@
     }
 }
 
+.b-page-section {
+    .e-expandable {
+
+        * { 
+            font-size: 1.1rem; 
+            font-weight: 300;
+        }
+
+        > p:only-of-type + .e-read-more { display: none; }
+
+        .m-show { display: block; }
+
+        .e-read-more {
+            display: inline;
+            cursor: pointer;
+            color: $od-blue;
+            font-weight: 600;
+
+            &:hover { text-decoration: underline; }
+
+        }
+
+
+
+    }
+}
+
+.case-study-page {
+    .b-top-section {
+        margin-bottom: 60px;
+    }
+}
 
 // This is the custom CSS for the about page. 
 // Note that it is properly scoped inside the #about-page ID, so these styles won't leak anywhere else,
@@ -83,3 +117,4 @@
         min-height: 240px;
     }
 }
+

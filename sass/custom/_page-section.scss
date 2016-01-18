@@ -28,7 +28,14 @@
             text-align: right;
             margin: 0 50px 0 0;
             min-width: 200px;
+
+            @include breakpoint($mobile-only) { 
+                text-align: center; 
+                padding: 30px;
+                font-size: 30px;
+            }
         }
+
         .row {
             max-width: 65rem;
         }
@@ -55,7 +62,7 @@
 
         .b-button.m-less { display: none; }
 
-        :not(.b-button) { display: none; }
+        > *:not(.b-button) { display: none; }
 
         .b-button.m-more i { display: inline }
 
@@ -71,11 +78,11 @@
 
         // p:not(:first-of-type) { display: none; }
 
-        p:first-of-type { display: block; }
+        > p:first-of-type { display: block; }
 
-        p:only-of-type ~ .b-button { display: none; }
+        > p:only-of-type ~ .b-button { display: none; }
 
-        &.m-active *:not(.b-button) { display: block; }
+        &.m-active > *:not(.b-button) { display: block; }
         // &.m-active li { display: list-item; }
 
         .b-button { color: $purple; }
