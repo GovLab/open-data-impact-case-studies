@@ -34,7 +34,7 @@
         }
 
 
-        p {
+        p, ul {
             font-size: 18px;
             font-weight: 400;
             line-height: 1.62;
@@ -48,15 +48,19 @@
     }
 
     .e-expandable {
-        @include breakpoint($desktop) { max-height: 500px;}
-        @include breakpoint($mobile-only) { max-height: 1000px;}
+        // @include breakpoint($desktop) { max-height: 500px;}
+        // @include breakpoint($mobile-only) { max-height: 1000px;}
         height: auto;
         @include transition;
 
         .b-button.m-less { display: none; }
 
+        :not(.b-button) { display: none; }
+
+        .b-button.m-more i { display: inline }
+
         &.m-active {
-            max-height: 4000px;
+            // max-height: 4000px;
             @include transition;
 
             .b-button.m-more { display: none; }
@@ -65,11 +69,14 @@
 
         p { margin-bottom: 15px; }
 
-        p:not(:first-of-type) { display: none; }
+        // p:not(:first-of-type) { display: none; }
+
+        p:first-of-type { display: block; }
 
         p:only-of-type ~ .b-button { display: none; }
 
-        &.m-active p { display: block; }
+        &.m-active *:not(.b-button) { display: block; }
+        // &.m-active li { display: list-item; }
 
         .b-button { color: $purple; }
 

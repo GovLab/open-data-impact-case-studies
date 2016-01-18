@@ -4305,7 +4305,7 @@ a[data-open] {
   min-width: 200px; }
 .b-page-section.m-condensed .row {
   max-width: 65rem; }
-.b-page-section.m-condensed p {
+.b-page-section.m-condensed p, .b-page-section.m-condensed ul {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.62; }
@@ -4313,16 +4313,15 @@ a[data-open] {
   margin-left: 100px;
   margin-right: 100px; }
 .b-page-section .e-expandable {
-  max-height: 1000px;
   height: auto;
   transition: all .4s ease; }
-  @media screen and (min-width: 64.0625em) {
-    .b-page-section .e-expandable {
-      max-height: 500px; } }
   .b-page-section .e-expandable .b-button.m-less, .b-page-section .e-expandable .b-form input.m-less[type="submit"], .b-form .b-page-section .e-expandable input.m-less[type="submit"] {
     display: none; }
+  .b-page-section .e-expandable :not(.b-button) {
+    display: none; }
+  .b-page-section .e-expandable .b-button.m-more i, .b-page-section .e-expandable .b-form input.m-more[type="submit"] i, .b-form .b-page-section .e-expandable input.m-more[type="submit"] i {
+    display: inline; }
   .b-page-section .e-expandable.m-active {
-    max-height: 4000px;
     transition: all .4s ease; }
     .b-page-section .e-expandable.m-active .b-button.m-more, .b-page-section .e-expandable.m-active .b-form input.m-more[type="submit"], .b-form .b-page-section .e-expandable.m-active input.m-more[type="submit"] {
       display: none; }
@@ -4330,11 +4329,11 @@ a[data-open] {
       display: inline-block; }
   .b-page-section .e-expandable p {
     margin-bottom: 15px; }
-  .b-page-section .e-expandable p:not(:first-of-type) {
-    display: none; }
+  .b-page-section .e-expandable p:first-of-type {
+    display: block; }
   .b-page-section .e-expandable p:only-of-type ~ .b-button, .b-page-section .e-expandable .b-form p:only-of-type ~ input[type="submit"], .b-form .b-page-section .e-expandable p:only-of-type ~ input[type="submit"] {
     display: none; }
-  .b-page-section .e-expandable.m-active p {
+  .b-page-section .e-expandable.m-active *:not(.b-button) {
     display: block; }
   .b-page-section .e-expandable .b-button, .b-page-section .e-expandable .b-form input[type="submit"], .b-form .b-page-section .e-expandable input[type="submit"] {
     color: #523080; }
