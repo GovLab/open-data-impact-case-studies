@@ -300,7 +300,7 @@
     <div class="grid">
         {% for case in cases %}
         <div class="e-card impact-{{case.impact_type}} sector-{{case.sector}}">
-            <a href="#">
+            <a href="case-{{case.title | slug}}.html">
                 <div class="e-card-inner">
                     <div class="e-case-image" style="background-image: url('{{case.image}}')"></div>
                     <p class="e-case-name">{{case.title | truncate(60)}}</p>
