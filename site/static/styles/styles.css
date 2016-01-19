@@ -4812,7 +4812,10 @@ ul.b-sidebar {
     opacity: .2; }
   .b-quote-slide p {
     font-size: 24px;
-    color: white; }
+    color: white;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto; }
   .b-quote-slide .e-author {
     font-size: 16px;
     font-style: italic; }
