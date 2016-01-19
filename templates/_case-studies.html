@@ -8,7 +8,7 @@
             <h1 class="m-space-2 m-sm-2">{{case.title}}</h1>
             <h2 class="m-sm">{{case.description}}</h2>
             <h4>by {{case.authors}}</h4>
-            
+
             <div class="row">
                 <div class="column medium-6">
                     <div class="e-left-box">
@@ -52,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="column medium-6">
                     <div class="e-right-box">
                         <p>Read Time</p>
@@ -217,13 +217,15 @@
     </div>
 </main>
 
-<div class="b-sticky m-purple m-closed" id="reference-1">
+{% for reference in case.references %}
+<div class="b-sticky m-purple m-closed" id="reference-{{reference.number}}">
     <div class="e-wrap">
-        <i class="material-icons e-close js-close-sticky" data-close="#reference-1">close</i>
-        <h3 class="e-title">1. reference title</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <i class="material-icons e-close js-close-sticky" data-close="#reference-{{reference.number}}">close</i>
+        <h3 class="e-title">{{reference.number}}. {{reference.title}}</h3>
+        <p>{{reference.text}}</p>
     </div>
 </div>
+{% endfor %}
 
 <script src="static/js/case-study-scripts.js"></script>
 

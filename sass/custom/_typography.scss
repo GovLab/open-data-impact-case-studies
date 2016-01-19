@@ -45,11 +45,3 @@ h2.m-upper {
     text-transform: uppercase;
 }
 
-a[data-open] {
-    background-color: $cool-gray-10;
-    text-decoration: none;
-    color: $black;
-    sup {
-        font-size: 11px;
-    }
-}

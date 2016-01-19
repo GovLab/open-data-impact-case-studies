@@ -87,6 +87,21 @@
 
         .b-button { color: $purple; }
 
+
+        a[data-open] {
+            background-color: $cool-gray-10;
+            text-decoration: none;
+            color: $black;
+            sup {
+                font-size: 11px;
+                padding: 0 4px;
+            }
+            &:hover {
+                background-color: $cool-gray-20;
+                @include transition;
+            }
+        }
+
     }
 
     p.e-last {

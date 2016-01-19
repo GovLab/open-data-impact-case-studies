@@ -3,6 +3,7 @@ $(function() {
     $('.b-sticky').hide();
     $('a[data-open]').click(function() {
         event.preventDefault();
+        $('.b-sticky').hide();
         $($(this).attr('data-open')).removeClass('m-closed');
         $($(this).attr('data-open')).fadeIn('fast');
     });
