@@ -4243,13 +4243,6 @@ i.m-black {
 h2.m-upper {
   text-transform: uppercase; }
 
-a[data-open] {
-  background-color: #E8EBF2;
-  text-decoration: none;
-  color: #333; }
-  a[data-open] sup {
-    font-size: 11px; }
-
 .b-top-nav {
   width: 100%;
   position: absolute;
@@ -4340,6 +4333,16 @@ a[data-open] {
     display: block; }
   .b-page-section .e-expandable .b-button, .b-page-section .e-expandable .b-form input[type="submit"], .b-form .b-page-section .e-expandable input[type="submit"] {
     color: #523080; }
+  .b-page-section .e-expandable a[data-open] {
+    background-color: #E8EBF2;
+    text-decoration: none;
+    color: #333; }
+    .b-page-section .e-expandable a[data-open] sup {
+      font-size: 11px;
+      padding: 0 4px; }
+    .b-page-section .e-expandable a[data-open]:hover {
+      background-color: #ced5e3;
+      transition: all .4s ease; }
 .b-page-section p.e-last {
   text-align: right;
   color: rgba(0, 0, 0, 0.3); }
