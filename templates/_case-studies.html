@@ -110,6 +110,38 @@
     </div>
     {% endif %}
 
+    {% if case.numbers %}
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="medium-3 columns">
+                <h3>The Case in Numbers</h3>
+            </aside>
+            <div class="large-8 columns end">
+                <div class="e-expandable">
+                    {{case.numbers}}
+                    <span class="e-read-more js-more-toggle">Read More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if case.quotes %}
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="medium-3 columns">
+                <h3>Quotes</h3>
+            </aside>
+            <div class="large-8 columns end">
+                <div class="e-expandable">
+                    {{case.quotes}}
+                    <span class="e-read-more js-more-toggle">Read More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
     {% if case.background %}
     <div class="b-page-section">
         <div class="row">
@@ -119,6 +151,55 @@
             <div class="large-8 columns end">
                 <div class="e-expandable">
                     {{case.background}}
+                    <span class="e-read-more js-more-toggle">Read More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if case.path_to_impact %}
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="medium-3 columns">
+                <h3>The Path to Impact</h3>
+            </aside>
+            <div class="large-8 columns end">
+                <div class="e-expandable">
+                    {{case.path_to_impact}}
+                    <span class="e-read-more js-more-toggle">Read More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if case.data %}
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="medium-3 columns">
+                <h3>The Data</h3>
+            </aside>
+            <div class="large-8 columns end">
+                <div class="e-expandable">
+                    {{case.data}}
+                    <span class="e-read-more js-more-toggle">Read More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+
+    {% if case.outcome %}
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="medium-3 columns">
+                <h3>Outcome</h3>
+            </aside>
+            <div class="large-8 columns end">
+                <div class="e-expandable">
+                    {{case.outcome}}
                     <span class="e-read-more js-more-toggle">Read More</span>
                 </div>
             </div>
@@ -151,6 +232,39 @@
             <div class="large-8 columns end">
                 <div class="e-expandable">
                     {{case.impact}}
+                    <span class="e-read-more js-more-toggle">Read More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% if case.discussion %}
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="medium-3 columns">
+                <h3>Discussion</h3>
+            </aside>
+            <div class="large-8 columns end">
+                <div class="e-expandable">
+                    {{case.discussion}}
+                    <span class="e-read-more js-more-toggle">Read More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+
+    {% if case.action %}
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="medium-3 columns">
+                <h3>Calls to Action</h3>
+            </aside>
+            <div class="large-8 columns end">
+                <div class="e-expandable">
+                    {{case.action}}
                     <span class="e-read-more js-more-toggle">Read More</span>
                 </div>
             </div>
