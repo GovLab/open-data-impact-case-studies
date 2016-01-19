@@ -4339,7 +4339,7 @@ h2.m-upper {
     color: #333; }
     .b-page-section .e-expandable a[data-open] sup {
       font-size: 11px;
-      padding: 0 4px; }
+      padding: 0 0 0 4px; }
     .b-page-section .e-expandable a[data-open]:hover {
       background-color: #ced5e3;
       transition: all .4s ease; }
