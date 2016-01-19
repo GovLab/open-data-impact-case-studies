@@ -6,7 +6,7 @@ $od-blue: #164A7A;
     background-color: $od-blue;
 }
 
-// This should probably become a component. 
+// This should probably become a component.
 // Note that it @extends the b-slide component, so maybe they should be somehow linked to each other.
 
 .b-quote-slide {
@@ -17,7 +17,7 @@ $od-blue: #164A7A;
     margin: 0;
     min-height: 310px;
 
-    // This <img> could be transformed into a ::before, for easier reuse.    
+    // This <img> could be transformed into a ::before, for easier reuse.
     > img {
         max-width: 50px;
         margin: 30px auto;
@@ -28,7 +28,9 @@ $od-blue: #164A7A;
         // text-align: center;
         font-size: 24px;
         color: $white;
-
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .e-author {
@@ -37,17 +39,17 @@ $od-blue: #164A7A;
     }
 }
 
-// This should probably become a component. 
+// This should probably become a component.
 .b-list-of-names {
     margin: 0;
-    
+
     li {
         font-size: 14px;
         list-style-type: none;
         margin-bottom: 10px;
         color: $gray-60;
         font-style: italic;
-        
+
         strong {
             display: block;
             font-size: 16px;
@@ -67,8 +69,8 @@ $od-blue: #164A7A;
 
     .e-expandable {
 
-        * { 
-            font-size: 1.1rem; 
+        * {
+            font-size: 1.1rem;
             font-weight: 300;
         }
 
@@ -97,7 +99,7 @@ $od-blue: #164A7A;
     }
 }
 
-// This is the custom CSS for the about page. 
+// This is the custom CSS for the about page.
 // Note that it is properly scoped inside the #about-page ID, so these styles won't leak anywhere else,
 // and will also be applied with a high specificity, over the component base styles.
 
@@ -109,7 +111,7 @@ $od-blue: #164A7A;
 
     .b-page-section {
         padding-top: 50px;
-        
+
         h3 {
             font-size: 18px;
             text-align: right;
