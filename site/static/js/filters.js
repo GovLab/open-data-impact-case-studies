@@ -22,5 +22,11 @@ $(function() {
         else {
             $grid.isotope({ filter : '.' + filterParam })
         }
+
+        if ($grid.data('isotope').filteredItems.length === 0) {
+            $('#no-results').removeClass('m-hidden');
+        } else {
+            $('#no-results').addClass('m-hidden');
+        }
     });
 });
