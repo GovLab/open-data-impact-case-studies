@@ -4360,6 +4360,8 @@ a[data-open] {
     padding: 0; }
 .b-page-section.m-no-bottom-padding {
   padding-bottom: 0; }
+.b-page-section.m-no-top-padding {
+  padding-top: 0; }
 .b-page-section.m-impact-section h2 {
   font-size: 60px;
   font-weight: 200;
@@ -4377,6 +4379,8 @@ a[data-open] {
   margin-top: 5px; }
 .b-page-section.m-margin-lead {
   margin-top: 60px; }
+.b-page-section.m-hidden {
+  display: none; }
 .b-page-section#enabler-icons .columns:nth-child(odd) .b-button, .b-page-section#enabler-icons .columns:nth-child(odd) .b-form input[type="submit"], .b-form .b-page-section#enabler-icons .columns:nth-child(odd) input[type="submit"] {
   background-color: #008895; }
 .b-page-section#enabler-icons .columns:nth-child(even) .b-button, .b-page-section#enabler-icons .columns:nth-child(even) .b-form input[type="submit"], .b-form .b-page-section#enabler-icons .columns:nth-child(even) input[type="submit"] {
@@ -4407,14 +4411,30 @@ a[data-open] {
     margin: 40px 0 0 0; }
 .b-page-section#upcoming-section {
   padding: 60px 0; }
+  .b-page-section#upcoming-section a {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all .4s ease; }
+    .b-page-section#upcoming-section a:hover {
+      color: white;
+      transition: all .4s ease; }
   .b-page-section#upcoming-section h2 {
     font-size: 28px;
     font-weight: 800; }
   .b-page-section#upcoming-section p {
+    margin: 35px 50px;
     font-size: 22px;
     line-height: 1.62; }
-.b-page-section#results {
-  max-width: 75rem; }
+    .b-page-section#upcoming-section p:last-child {
+      margin-bottom: 0; }
+.b-page-section#no-results {
+  text-align: center; }
+  .b-page-section#no-results h3 {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 25px;
+    margin: 100px 0; }
 
 main .b-divider {
   padding: 60px 0; }
@@ -4678,6 +4698,8 @@ ul.b-sidebar {
     right: 0;
     top: 0; }
 
+.b-divider div {
+  max-width: 95%; }
 .b-divider.m-next {
   position: relative; }
   .b-divider.m-next div {

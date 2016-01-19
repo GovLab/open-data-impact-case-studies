@@ -29,8 +29,8 @@
             margin: 0 50px 0 0;
             min-width: 200px;
 
-            @include breakpoint($mobile-only) { 
-                text-align: center; 
+            @include breakpoint($mobile-only) {
+                text-align: center;
                 padding: 30px;
                 font-size: 30px;
             }
@@ -122,6 +122,10 @@
         padding-bottom: 0;
     }
 
+    &.m-no-top-padding {
+        padding-top: 0;
+    }
+
     &.m-impact-section {
         h2 {
             font-size: 60px;
@@ -147,6 +151,10 @@
 
     &.m-margin-lead {
         margin-top: 60px;
+    }
+
+    &.m-hidden {
+        display: none;
     }
 
     &#enabler-icons {
@@ -203,18 +211,42 @@
 
     &#upcoming-section {
         padding: 60px 0;
+        a {
+            text-decoration: none;
+            font-style: italic;
+            font-weight: 700;
+            color: $white-70;
+            @include transition;
+            &:hover {
+                color: $white;
+                @include transition;
+            }
+        }
         h2 {
             font-size: 28px;
             font-weight: 800;
         }
         p {
+            margin: 35px 50px;
             font-size: 22px;
             line-height: 1.62;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
     &#results {
-        max-width: 75rem;
+        // max-width: 75rem;
+    }
+
+    &#no-results {
+        text-align: center;
+        h3 {
+            color: $gray-40;
+            font-size: 25px;
+            margin: 100px 0;
+        }
     }
 }
 
