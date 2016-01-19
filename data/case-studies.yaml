@@ -108,9 +108,123 @@
     <p>Some efforts have already taken place to involve civil society. For instance, in 2012, in an effort to encourage interest and build skills among coders and the media, the World Bank Institute and the Africa Media Initiative combined to offer the Data Bootcamp in Dar es Salaam.  A similar initiative was offered by Twaweza in 2013, and community groups such as the Open Knowledge Foundation Network TZ have attempted to promote open data meetups in Dar es Salaam. In 2015, the Africa Open Data Conference was organized by a group that included both civil society organizations such as Code for Africa and the Open Knowledge Foundation, and the World Bank. These collaborations, and smaller informal meetups, provide an opportunity to bring together atypical combinations of stakeholders to meet and work with data. </p>
     <p>Such efforts are likely to become more frequent in the coming years – and, as they do, the impact of open data on education and many other sectors will begin to be felt more widely. Greater impact will also increase awareness, thus creating a virtuous cycle of change and empowerment. For the moment, significant challenges remain. But the two projects studied here indicate the clear potential of open data to, application by application, sector by sector, chip away at those challenges.  </p>
   references:
-    - number:
-      title:
-      text:
+    - number: 1
+      title: ''
+      text: 'Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to the <a target="_blank" href="http://govlab.github.io/open-data-impact-case-studies/about.html">peer reviewers</a> who provided input on a pre-published draft.'
+    - number: 2
+      title: 'Kimboy, Frank. High pass rate greeted as good as well as bad news. The Citizen. July 23, 2014.'
+      text: '<a target="_blank" href="http://www.thecitizen.co.tz/magazine/political-reforms/High-pass-rate-greeted-as-good/-/1843776/2394162/-/umh9xl/-/index.html">http://www.thecitizen.co.tz/magazine/political-reforms/High-pass-rate-greeted-as-good/-/1843776/2394162/-/umh9xl/-/index.html</a>'
+    - number: 3
+      title: 'World Data on Education (Revised Version). UNESCO. August 2010.'
+      text: '<a target="_blank" href="http://www.ibe.unesco.org/fileadmin/user_upload/Publications/WDE/2010/pdf-versions/United_Republic_of_Tanzania.pdf">http://www.ibe.unesco.org/fileadmin/user_upload/Publications/WDE/2010/pdf-versions/United_Republic_of_Tanzania.pdf</a>'
+    - number: 4
+      title: 'Tanzania: World Bank Development Indicators. Accessed August 28, 2015.'
+      text: '<a target="_blank" href="http://databank.worldbank.org/data//reports.aspx?source=2&country=TZA&series=&period=">http://databank.worldbank.org/data//reports.aspx?source=2&country=TZA&series=&period=</a>'
+    - number: 5
+      title: 'Magolanga, Elisha. “No more Div. Zero as govt guts national grading system.” The Citizen. November 1, 2013.'
+      text: '<a target="_blank" href="http://www.thecitizen.co.tz/News/Govt-in-major-change-of-national-exam-grading/-/1840392/2055404/-/3kae76z/-/index.html">http://www.thecitizen.co.tz/News/Govt-in-major-change-of-national-exam-grading/-/1840392/2055404/-/3kae76z/-/index.html</a>'
+    - number: 6
+      title: 'Kimboy, Frank. "High pass rate greeted as good as well as bad news.” The Citizen. July 23, 2014.'
+      text: '<a target="_blank" href="http://www.thecitizen.co.tz/magazine/political-reforms/High-pass-rate-greeted-as-good/-/1843776/2394162/-/umh9xl/-/index.html">http://www.thecitizen.co.tz/magazine/political-reforms/High-pass-rate-greeted-as-good/-/1843776/2394162/-/umh9xl/-/index.html</a>'
+    - number: 7
+      title: 'The Citizen Reporter. “Teachers shortage hurting Tanzania.” The Citizen. October 14, 2014.'
+      text: '<a target="_blank" href="http://www.thecitizen.co.tz/News/Teachers-shortage-hurting-Tanzania/-/1840340/2485582/-/tpeqyi/-/index.html">http://www.thecitizen.co.tz/News/Teachers-shortage-hurting-Tanzania/-/1840340/2485582/-/tpeqyi/-/index.html</a>'
+    - number: 8
+      title: 'Qorro, Edward. “Education Policy: What lies ahead for teachers.” The Citizen. February 24, 2015.'
+      text: '<a target="_blank" href="http://www.thecitizen.co.tz/magazine/success/-/1843788/2633842/-/item/3/-/7gk0yk/-/index.html">http://www.thecitizen.co.tz/magazine/success/-/1843788/2633842/-/item/3/-/7gk0yk/-/index.html</a>'
+    - number: 9
+      title: ''
+      text: '<a target="_blank" href="https://freedomhouse.org/country/tanzania#.VaQZFvlViko">https://freedomhouse.org/country/tanzania#.VaQZFvlViko</a>'
+    - number: 10
+      title: ''
+      text: '<a target="_blank" href="http://index.rsf.org/#!/index-details/TZA">http://index.rsf.org/#!/index-details/TZA</a>'
+    - number: 11
+      title: 'In 2010, the African Media Barometer did report, however, that the state-run Radio Tanzania has demonstrated more balanced views within recent years'
+    - number: 12
+      title: 'Tanzania Country Report – Freedom of the Press 2011. Freedom House. Accessed August 28, 2015.'
+      text: '<a target="_blank" href="https://freedomhouse.org/report/freedom-press/2011/tanzania#.VaARQ_lVikp">https://freedomhouse.org/report/freedom-press/2011/tanzania#.VaARQ_lVikp</a>'
+    - number: 13
+      title: ''
+      text: '<a target="_blank" href="http://www.africaopendata.net">http://www.africaopendata.net</a>'
+    - number: 14
+      title: ''
+      text: '<a target="_blank" href="http://www.opendatabarometer.org/report/analysis/index.html">http://www.opendatabarometer.org/report/analysis/index.html</a>'
+    - number: 15
+      title: ''
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/country/tanzania/action-plan">http://www.opengovpartnership.org/country/tanzania/action-plan</a>'
+    - number: 16
+      title: ''
+      text: '<a target="_blank" href="http://opendata.go.tz/dataset">http://opendata.go.tz/dataset</a>'
+    - number: 17
+      title: 'xyz'
+      text: 'Available at <a target="_blank" href="http://www.necta.go.tz/opendata/">http://www.necta.go.tz/opendata/</a>, and subsequently updated at <a target="_blank" href="http://www.necta.go.tz/opendata/brn/">http://www.necta.go.tz/opendata/brn/</a>'
+    - number: 18
+      title: ''
+      text: '<a target="_blank" href="http://the Education Open Data Dashboard.org/#/">http://the Education Open Data Dashboard.org/#/</a>'
+    - number: 19
+      title: ''
+      text: '<a target="_blank" href="http://www.shule.info/about">http://www.shule.info/about</a>'
+    - number: 20
+      title: ''
+      text: '<a target="_blank" href="http://www.shule.info/about">http://www.shule.info/about</a>'
+    - number: 21
+      title: 'GovLab Interview with Arnold Minde, Founder, Shule, July 9, 2015.'
+    - number: 22
+      title: 'GovLab Interview with Arnold Minde, Founder, Shule, July 9, 2015.'
+    - number: 23
+      title: 'ICT Statistics. ITU. Accessed August 28, 2015.'
+      text: '<a target="_blank" href="http://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx">http://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx</a>'
+    - number: 24
+      title: 'GovLab Interview with Arnold Minde, Founder, Shule, July 9, 2015.'
+    - number: 25
+      title: 'GovLab Interview with Arnold Minde, Founder, Shule, July 9, 2015.'
+    - number: 26
+      title: 'GovLab Interview with Arnold Minde, Founder, Shule, July 9, 2015.'
+    - number: 27
+      title: 'GovLab Interview with Aidan Eyakuze, Executive Director, Twaweza. July 14, 2015.'
+    - number: 28
+      title: 'Bauer, Michael. “The Data Bootcamp in Tanzania.” Open Knowledge Blog. October 25, 2012.'
+      text: '<a target="_blank" href="http://blog.okfn.org/2012/10/25/the-data-bootcamp-in-tanzania/">http://blog.okfn.org/2012/10/25/the-data-bootcamp-in-tanzania/</a>'
+    - number: 29
+      title: 'Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.'
+    - number: 30
+      title: 'Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.'
+    - number: 31
+      title: 'Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.'
+    - number: 32
+      title: '“Social Justice.” Open Data for Tanzania. Accessed August 28, 2015.'
+      text: '<a target="_blank" href="http://tanzania.opendataforafrica.org/igcpumb/social-justice">http://tanzania.opendataforafrica.org/igcpumb/social-justice</a>'
+    - number: 33
+      title: 'Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.'
+    - number: 34
+      title: '“Tanzania: Old Media, New Media.” AfricaFocus. April 5, 2011.'
+      text: '<a target="_blank" href="http://www.africafocus.org/docs11/tan1104.php">http://www.africafocus.org/docs11/tan1104.php</a>'
+    - number: 35
+      title: 'ICT Statistics. ITU. Accessed August 28, 2015.'
+      text: '<a target="_blank" href="http://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx">http://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx</a>'
+    - number: 36
+      title: 'GovLab Interview with Aidan Eyakuze, Executive Director, Twaweza. July 14, 2015.'
+      text: '<a target="_blank" href="xyz">xyz</a>'
+    - number: 37
+      title: 'GovLab Interview with Arnold Minde, Founder, Shule. July 9, 2015.'
+    - number: 38
+      title: 'Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.'
+    - number: 39
+      title: 'Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.'
+    - number: 40
+      title: 'GovLab Interview with Arnold Minde, Founder, Shule. July 9, 2015.'
+    - number: 41
+      title: ''
+      text: '<a target="_blank" href="http://www.shule.info/about">http://www.shule.info/about</a>'
+    - number: 42
+      title: 'GovLab Interview with Arnold Minde, Founder, Shule. July 9, 2015.'
+    - number: 43
+      title: 'It is worth noting, however, that even among such groups, awareness of the potential of open data remains at best nascent. Like the public at large, civil society groups also need to be trained to analyze and visualize data.'
+    - number: 44
+      title: 'Bauer, Michael. “The Data Bootcamp in Tanzania.” Open Knowledge Blog. October 25, 2012.'
+      text: '<a target="_blank" href="http://blog.okfn.org/2012/10/25/the-data-bootcamp-in-tanzania/">http://blog.okfn.org/2012/10/25/the-data-bootcamp-in-tanzania/</a>'
+    - number: 45
+      title: 'Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.'
 
 - title: "Kenya's Open Duka"
   image:
@@ -661,7 +775,7 @@
       text:
 
 
-- title: 'OPENAID IN SWEDEN'
+- title: 'Openaid In Sweden'
   image:
   authors: 'Ali Clare, Stefaan Verhulst and Andrew Young'
   description: 'Enhanced Transparency and Accountability in Development Cooperation'
@@ -827,7 +941,7 @@
     <p>Until now, public pressure has often stood in for the state and enforced accountability when formal institutions have refused to take action. The public (including citizens, NGOs, watchdog groups and media organizations) will remain critical in ensuring accountability, and must thus receive support and encouragement. In part, this means maintaining a broader ecosystem of free expression, dissent and the right to demonstrate, a goal toward which Slovakia continues to make progress, though challenges remain – such as the wide use of defamation suits by the powerful to silence dissent and whistle-blowing. Robust protections for such civil liberties are a vital part of ensuring political accountability in any society.</p>
     <p>Slovakia has unquestionably taken significant steps toward combating corruption through a dual-pronged approach built around legislation and technology. While the actions taken to date have shown great promise and, indeed, appear to be having an impact on corruption in the country, they should be seen as first steps along a much longer path of openness, accountability and citizen involvement. </p>
 
-- title: 'INDONESIA’S KAWAL PEMILU'
+- title: 'Indonesia’s Kawal Pemilu'
   image:
   authors: 'Auralice Graft, Stefaan Verhulst and Andrew Young'
   description: 'Elections: Free, Fair and Open Data'
