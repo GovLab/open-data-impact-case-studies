@@ -32,11 +32,11 @@
   image:
   authors: '<a href="#" data-open="#reference-1">Juliet McMurren, Stefaan Verhulst, Andrew Young and David Sangokoya<sup>1</sup></a>'
   description: 'A Tale of Two Dashboards'
-  impact_type: government # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
-  location:
-  read_time:
-  full_read_time:
+  impact_type: citizens # citizens | government | economic | public
+  sector: education # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location: Tanzania
+  read_time: 5
+  full_read_time: 20
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   summary: >
@@ -230,11 +230,11 @@
   image:
   authors: 'Andrew Young and Stefaan Verhulst'
   description: 'Open Data for Transactional Transparency'
-  impact_type: government # citizens | government | economic | public
+  impact_type: citizens # citizens | government | economic | public
   sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
-  location:
-  read_time:
-  full_read_time:
+  location: Kenya
+  read_time: 5
+  full_read_time: 20
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   summary: >
@@ -329,11 +329,11 @@
   image:
   authors: '<a href="#" data-open="#reference-1">David Sangokoya, Ali Clare, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
   description: 'Empowering Citizens to Make Data-Driven Decisions on Health Care'
-  impact_type: government # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
-  location:
-  read_time:
-  full_read_time:
+  impact_type: citizens # citizens | government | economic | public
+  sector: health # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location: Uruguay
+  read_time: 5
+  full_read_time: 20
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   summary: >
@@ -495,9 +495,9 @@
   description: 'Taking the long view'
   impact_type: government # citizens | government | economic | public
   sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
-  location:
-  read_time:
-  full_read_time:
+  location: UK
+  read_time: 5
+  full_read_time: 20
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   summary: >
@@ -598,10 +598,10 @@
   authors:
   description: 'new strategies to close the data gap'
   impact_type: government # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
-  location:
-  read_time:
-  full_read_time:
+  sector: education # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location: UK
+  read_time: 5
+  full_read_time: 20
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   summary: >
@@ -683,10 +683,10 @@
   authors:
   description: 'Open data as one small part of the picture'
   impact_type: government # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
-  location:
-  read_time:
-  full_read_time:
+  sector: business # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location: UK
+  read_time: 5
+  full_read_time: 20
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   summary: >
@@ -770,11 +770,11 @@
   image:
   authors: 'Andrew Young and Stefaan Verhulst'
   description: 'Empowering Citizens to Make Data-Driven Decisions About Education'
-  impact_type: government # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  impact_type: citizens # citizens | government | economic | public
+  sector: education # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Mexico
-  read_time:
-  full_read_time:
+  read_time: 5
+  full_read_time: 20
 # reference format
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   summary: >
@@ -866,13 +866,13 @@
 
 - title: 'Openaid In Sweden'
   image:
-  authors: 'Ali Clare, Stefaan Verhulst and Andrew Young'
+  authors: '<a href="#" data-open="#reference-1">Ali Clare, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
   description: 'Enhanced Transparency and Accountability in Development Cooperation'
   impact_type: government # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
-  location:
-  read_time:
-  full_read_time:
+  sector: philantrophy # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location: Sweden
+  read_time: 5
+  full_read_time: 20
   summary: >
     <p>Sweden has a long tradition of openness, democracy and public access to information. In 2010, a reform agenda for Swedish development cooperation (“Openaid”) was launched by the government to bring increased transparency to donor funding through opportunities created by technological advances. Part of this reform agenda included an Aid Transparency Guarantee that required public actors to make available all documentation and public information related to international development cooperation. This spurred the development of the <i>openaid.se</i> site by the Swedish Ministry of Foreign Affairs and the Swedish International Development Cooperation Agency (Sida) in April 2011. The data hub, built on open government data, visualizes <i>when, </i>to <i>whom </i>and <i>why </i>aid funding was paid out and <i>what </i>the results were. The reforms are seen to be an important force for enhanced transparency and accountability in development cooperation at an international level and increased cooperation and involvement of more actors in Swedish development policy.</p>
   takeaways: >
@@ -883,7 +883,7 @@
     <li>A lack of clearly defined, high-level political commitments to publishing open data and enabling reuse can create major, but not insurmountable challenges. While Sweden now boasts such high-level commitments, throughout much of <i>openaid.se</i>’s development, no such policy existed.</li>
     </ul></p>
   background: >
-    <p>Transparency and access to public information has a long-standing tradition in Sweden. The government was the first country in the world to enact a bill enforcing the principle of public access to information (“offentlighetsprincipen”) in 1776. This made it a requirement for all authorities to publish documents unless ad hoc legislation restricted their access. An unimpeded view by the public and media into governmental activities is still prioritized today in Bill 2009/10:175 on <i>Public Administration for Democracy, Participation and Growth</i>. Underlying this legislation is the belief that more accessible information provides a better basis for decisions and limits the scope for corruption and misuse of resources. Sweden’s commitment to openness and public scrutiny often places it near the top of transparency rankings. </p>
+    <p>Transparency and access to public information has a long-standing tradition in Sweden. The government was the first country in the world to enact a bill enforcing the principle of public access to information (“offentlighetsprincipen”) in 1776. This made it a requirement for all authorities to publish documents <a href="#" data-open="#reference-2">unless ad hoc legislation restricted their access.<sup>2</sup></a> An unimpeded view by the public and media into governmental activities is still prioritized today in <a href="#" data-open="#reference-3">Bill 2009/10:175 on <i>Public Administration for Democracy, Participation and Growth</i>.<sup>3</sup></a> Underlying this legislation is the belief that <a href="#" data-open="#reference-4">more accessible information provides a better basis for decisions and limits the scope for corruption and misuse of resources.<sup>4</sup></a> Sweden’s commitment to openness and public scrutiny often places it <a href="#" data-open="#reference-5">near the top of transparency rankings.<sup>5</sup></a> </p>
     <p>As part of its commitment to public access, Sweden launched an Aid Transparency Guarantee in 2010. Pursuant to the guarantee, all public actors that are allocated funds under international development cooperation are required to publish related information and documentation in an open format online. This includes an explanation of when, to whom and why money was made available, and what results have been achieved. In theory, such information enables relevant stakeholders to follow the whole chain of aid from overall decisions to implementation and monitoring. </p>
     <p>The manifestation of the Transparency Guarantee is the Openaid website (www.openaid.se) jointly launched in April 2011 by the Swedish Ministry of Foreign Affairs and the Swedish International Development Cooperation Agency (Sida). The <i>openaid.se</i> data hub has several policy objectives: to promote active transparency, provide a better knowledge base for planning, steering and making decisions about Swedish aid allocations and aid policy priorities, increase participation in Swedish development cooperation, strengthen the preconditions for true accountability, restrict the space for corruption, duplication and inefficient use of resources and promote innovative thinking across different sectors related to development. </p>
     <p>The reform of aid development cooperation was inspired in part by commitments that had been made in the international fora, including IATI and the Paris Declaration, Accra Agenda for Action. The platform was also a core component of Sweden’s Open Government Partnership (OGP) National Action Plan, signed in September 2011. The Action Plan was focused on enabling the government to stay on track with planned proposals, as well as increasing the amount of input from civil society and committing to publish standardized data in the IATI format. Sweden’s commitment to reform in this sector also led the government to sign the Busan Partnership Agreement for Effective Development Cooperation, which sets time-bound commitments to fully publish aid information to a common, open standard. It also offers a framework for “continued dialogue and efforts to enhance the effectiveness of development cooperation” through information access on aid flows and activities in both donor and partner countries. </p>
@@ -933,6 +933,207 @@
     <p>Greater collaboration with other donors and local partnerships in recipient countries for the development and rollout of the <i>openaid.se </i>platform would be hugely beneficial and overcome some of the structural challenges the site currently faces. To that end, Sweden could work with organizations in developing countries to combine with other recipient systems for contextualized applications to enhance transparency and accountability – i.e., applications to increase citizen access to governmental aid budgets and recipients. </p>
     <p>The Swedish legal barriers to reuse the data must also be addressed to create greater impacts. Reuse has the potential to enable interested citizens to create innovative new means of combining, displaying and otherwise reusing data, which has a huge potential for rethinking and reconfiguring the way aid is currently implemented. Efforts at various levels must harmonize their efforts in order to avoid fragmentation. In order to avoid fragmentation, though, it is necessary for actors at various levels – from grassroots to ministries – to harmonize their efforts while not cutting off creative potential.</p>
     <p>Sweden’s efforts to open aid data to the public have made major strides toward increasing transparency and accountability in the field. Given the fact that much of this effort occurred during a time when Sweden lacked the type of high-level policy commitments toward enabling the reuse of open data such as those found in many other countries is particularly notable. By focusing on the usability of the aid data hub, deploying more forward-thinking data and better collaborating with partnering stakeholders, <i>openaid.se</i>’s impacts should continue to grow and broaden in the coming years. </p>
+    sweden
+  references:
+    - number: 1
+      title: ''
+      text: 'Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to the <a target="_blank" href="http://govlab.github.io/open-data-impact-case-studies/about.html">peer reviewers</a> who provided input on a pre-published draft.'
+    - number: 2
+      title: 'Östling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014.'
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/country/sweden/progress-report/report">http://www.opengovpartnership.org/country/sweden/progress-report/report</a>'
+    - number: 3
+      title: '“Open Government Partnership – Sweden’s 2012 National Action Plan – Self-Assessment Report.” and “Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership.'
+      text: >
+        <a target="_blank" href="http://www.opengovpartnership.org/sites/default/files/OGP%20Sweden's%20Self-assessment%20Report%20-%20FINAL.pdf">http://www.opengovpartnership.org/sites/default/files/OGP%20Sweden's%20Self-assessment%20Report%20-%20FINAL.pdf</a> and <a target="_blank" href="http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download">http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</a>
+    - number: 4
+      title: '“Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership.'
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download">http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</a>'
+    - number: 5
+      title: ''
+      text: 'Sweden is ranked sixth out of 68 aid donors by Publish What You Fund, third among bilateral donors and in the top-performing group in the 2014 Aid Transparency Index. “Sweden and Sida ranks high in aid transparency index.” Sida. October 16, 2014. <a target="_blank" href="http://www.sida.se/English/press/current-topics-archive/2014/sweden-and-sida-ranks-high-in-aid-transparency-index/">http://www.sida.se/English/press/current-topics-archive/2014/sweden-and-sida-ranks-high-in-aid-transparency-index/</a>'
+    - number: 6
+      title: '“A transparency guarantee in Swedish development assistance.” Regeringskansliet. 2010.'
+      text: '<a target="_blank" href="http://www.regeringen.se/contentassets/38eb101044b640b6b25677b714ed302e/a-transparency-guarantee-in-swedish-development-assistance">http://www.regeringen.se/contentassets/38eb101044b640b6b25677b714ed302e/a-transparency-guarantee-in-swedish-development-assistance</a>'
+    - number: 7
+      title: '“Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership.'
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download">http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</a>'
+    - number: 8
+      title: '“Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership.'
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download">http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</a>'
+    - number: 9
+      title: 'GovLab interview with Hanna Hellquist, former State Secretary for International Development, Sweden, September 30, 2015.'
+    - number: 10
+      title: 'GovLab interview with Hanna Hellquist, former State Secretary for International Development, Sweden, September 30, 2015.'
+    - number: 11
+      title: ''
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/country/sweden">http://www.opengovpartnership.org/country/sweden</a>'
+    - number: 12
+      title: '“The Busan Partnership for Effective Development Cooperation.” OECD. July 2012.'
+      text: '<a target="_blank" href="http://www.oecd.org/dac/effectiveness/Busan%20partnership.pdf">http://www.oecd.org/dac/effectiveness/Busan%20partnership.pdf</a>'
+    - number: 13
+      title: '“The Busan Partnership for Effective Development Cooperation.” OECD. July 2012.'
+      text: '<a target="_blank" href="http://www.oecd.org/dac/effectiveness/Busan%20partnership.pdf">http://www.oecd.org/dac/effectiveness/Busan%20partnership.pdf</a>'
+    - number: 14
+      title: ''
+      text: '<a target="_blank" href="http://www.openaid.se/about/">http://www.openaid.se/about/</a>'
+    - number: 15
+      title: ''
+      text: '<a target="_blank" href="http://www.openaid.se/about/">http://www.openaid.se/about/</a>'
+    - number: 16
+      title: ''
+      text: '<a target="_blank" href="http://www.openaid.se/about/">http://www.openaid.se/about/</a>'
+    - number: 17
+      title: ''
+      text: '<a target="_blank" href="http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se/">http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se/</a>'
+    - number: 18
+      title: 'Peterson, Karl. “The making of Openaid.se.” Publish What You Fund. September 23, 2014.'
+      text: '<a target="_blank" href="http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se">http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se</a>'
+    - number: 19
+      title: 'GovLab Interview with Carl Elmstam, Transparency Manager, Sida, October 8, 2015.'
+    - number: 20
+      title: 'Ostling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014.'
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/country/sweden/progress-report/report">http://www.opengovpartnership.org/country/sweden/progress-report/report</a>'
+    - number: 21
+      title: 'Ostling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014.'
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/country/sweden/progress-report/report">http://www.opengovpartnership.org/country/sweden/progress-report/report</a>'
+    - number: 22
+      title: 'Ostling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014.'
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/country/sweden/progress-report/report">http://www.opengovpartnership.org/country/sweden/progress-report/report</a>'
+    - number: 23
+      title: 'Ostling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014.'
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/country/sweden/progress-report/report">http://www.opengovpartnership.org/country/sweden/progress-report/report</a>'
+    - number: 24
+      title: 'GovLab interview with Karl Peterson, Project Manager, Aid Transparency, Sida, September 23, 2015.'
+    - number: 25
+      title: 'Peterson, Karl. “The making of Openaid.se.” Publish What You Fund. September 23, 2014.'
+      text: '<a target="_blank" href="http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se/">http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se/</a>'
+    - number: 26
+      title: 'GovLab Interview with Carl Elmstam, Transparency Manager, Sida, October 8, 2015.'
+    - number: 27
+      title: 'GovLab Interview. Karl Peterson. September 23, 2015; IRM, Sweden: Östling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014.'
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/country/sweden/progress-report/report">http://www.opengovpartnership.org/country/sweden/progress-report/report</a>'
+    - number: 28
+      title: 'Östling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014.'
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/country/sweden/progress-report/report">http://www.opengovpartnership.org/country/sweden/progress-report/report</a>'
+    - number: 29
+      title: '“Open Government Partnership – Sweden’s 2012 National Action Plan – Self-Assessment Report.” and “Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership.'
+      text: >
+        <a target="_blank" href="http://www.opengovpartnership.org/sites/default/files/OGP%20Sweden's%20Self-assessment%20Report%20-%20FINAL.pdf">http://www.opengovpartnership.org/sites/default/files/OGP%20Sweden's%20Self-assessment%20Report%20-%20FINAL.pdf</a> and <a target="_blank" href="http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download">http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</a>
+    - number: 30
+      title: 'Peterson, Karl. “The making of Openaid.se.” Publish What You Fund. September 23, 2014.'
+      text: '<a target="_blank" href="http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se/">http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se/</a>'
+    - number: 31
+      title: '“Open Government Partnership – Sweden’s 2012 National Action Plan – Self-Assessment Report.” and “Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership.'
+      text: >
+        <a target="_blank" href="http://www.opengovpartnership.org/sites/default/files/OGP%20Sweden's%20Self-assessment%20Report%20-%20FINAL.pdf">http://www.opengovpartnership.org/sites/default/files/OGP%20Sweden's%20Self-assessment%20Report%20-%20FINAL.pdf</a> and <a target="_blank" href="http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download">http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</a>
+    - number: 32
+      title: '“Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership.'
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download">http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</a>'
+    - number: 33
+      title: ''
+      text: '<a target="_blank" href="http://www.transparency.org/cpi2014">http://www.transparency.org/cpi2014</a>'
+    - number: 34
+      title: ''
+      text: 'Sweden was ranked “Very Good” with an indicator score of 83.27 percent, a significant increase over its 2013 ranking. <a target="_blank" href="http://ati.publishwhatyoufund.org/donor/sweden/Sweden">http://ati.publishwhatyoufund.org/donor/sweden/Sweden</a>'
+    - number: 35
+      title: 'Faust, Jörg. “Donor Transparency and Aid Allocation.” German Development Institute Discussion Paper. December 2011.'
+      text: '<a target="_blank" href="http://edoc.vifapol.de/opus/volltexte/2012/3552/pdf/DP_12.2011.pdf">http://edoc.vifapol.de/opus/volltexte/2012/3552/pdf/DP_12.2011.pdf</a>'
+    - number: 36
+      title: 'Rådelius, Elias. “White paper, part 4: Keys to success and the road ahead.” Openaid.se Blog. May 28, 2015.'
+      text: '<a target="_blank" href="http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/">http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/</a>'
+    - number: 37
+      title: 'Rådelius, Elias. “White paper, part 4: Keys to success and the road ahead.” Openaid.se Blog. May 28, 2015.'
+      text: '<a target="_blank" href="http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/">http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/</a>'
+    - number: 38
+      title: 'Rådelius, Elias. “White paper, part 4: Keys to success and the road ahead.” Openaid.se Blog. May 28, 2015.'
+      text: '<a target="_blank" href="http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/">http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/</a>'
+    - number: 39
+      title: 'GovLab interview with Hanna Hellquist, Former Secretary of State, Sweden, September 30, 2015.'
+    - number: 40
+      title: 'Rådelius, Elias. “Implementing aid transparency in Sweden – white paper, part 1: Why do we care about aid transparency and IATI?” Openaid.se Blog. May 25, 2015.'
+      text: '<a target="_blank" href="http://www.openaid.se/blog/implementing-aid-transparency-in-sweden-white-paper-part-1-why-do-we-care-about-aid-transparency-and-iati/">http://www.openaid.se/blog/implementing-aid-transparency-in-sweden-white-paper-part-1-why-do-we-care-about-aid-transparency-and-iati/</a>'
+    - number: 41
+      title: 'GovLab interview with Hanna Hellquist, former State Secretary for International Development, Sweden, September 30, 2015.'
+    - number: 42
+      title: ''
+      text: '<a target="_blank" href="http://www.government.se/about-the-website/psi-data/">http://www.government.se/about-the-website/psi-data/</a>'
+    - number: 43
+      title: 'GovLab Interview. Carl Elmstam. September 23, 2015.'
+      text: '<a target="_blank" href="http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/">http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/</a>'
+    - number: 44
+      title: 'Rådelius, Elias. “White paper, part 2: How to get started publishing using the IATI standard as a bilateral donor agency” Openaid.se Blog. May 26, 2015.'
+      text: '<a target="_blank" href="http://www.openaid.se/blog/part-2-how-to-get-started-publishing-using-the-iati-standard-as-a-bilateral-donor-agency/">http://www.openaid.se/blog/part-2-how-to-get-started-publishing-using-the-iati-standard-as-a-bilateral-donor-agency/</a>'
+    - number: 45
+      title: 'Hanna Hellquist, GovLab interview with author. 30 September 2015.'
+    - number: 46
+      title: '“Guest blog from OpenAid – Sweden embraces the transparency agenda.” AidInfo. July, 21, 2010.'
+      text: '<a target="_blank" href="http://www.aidinfo.org/guest-blog-from-openaid-sweden-embraces-the-transparency-agenda.html">http://www.aidinfo.org/guest-blog-from-openaid-sweden-embraces-the-transparency-agenda.html</a>'
+    - number: 47
+      title: ''
+      text: '<a target="_blank" href="http://openaid.um.dk/en/">http://openaid.um.dk/en/</a>'
+    - number: 48
+      title: 'Rådelius, Elias. “Implementing aid transparency in Sweden – white paper, part 1: Why do we care about aid transparency and IATI?” Openaid.se Blog. May 25, 2015.'
+      text: '<a target="_blank" href="http://www.openaid.se/blog/implementing-aid-transparency-in-sweden-white-paper-part-1-why-do-we-care-about-aid-transparency-and-iati/">http://www.openaid.se/blog/implementing-aid-transparency-in-sweden-white-paper-part-1-why-do-we-care-about-aid-transparency-and-iati/</a>'
+    - number: 49
+      title: 'Bjelkeman-Pettersson, Thomas. “OpenAid.se, Swedish Development Aid Transparency.” Open for Change, April 4, 2011.'
+      text: '<a target="_blank" href="http://openforchange.info/contant/openaidse-swedish-development-aid-transparency">http://openforchange.info/contant/openaidse-swedish-development-aid-transparency</a>'
+    - number: 50
+      title: 'GovLab Interview with Carl Elmstam, Transparency Manager, Sida, October 8, 2015.'
+    - number: 51
+      title: 'Bjelkeman-Pettersson, Thomas. “OpenAid.se, Swedish Development Aid Transparency.” Open for Change, April 4, 2011.'
+      text: '<a target="_blank" href="http://openforchange.info/contant/openaidse-swedish-development-aid-transparency">http://openforchange.info/contant/openaidse-swedish-development-aid-transparency</a>'
+    - number: 52
+      title: 'Dietrich, Daniel. “Open Data in Development Aid.” European Public Sector Information Platform Topic Report No. 2012 / 02. March 2012.'
+      text: '<a target="_blank" href="http://www.epsiplatform.eu/sites/default/files/Final%20TR%20Open%20Aid%20Data.pdf">http://www.epsiplatform.eu/sites/default/files/Final%20TR%20Open%20Aid%20Data.pdf</a>'
+    - number: 53
+      title: 'GovLab interview with Karl Peterson, Project Manager, Aid Transparency, Sida, September 23, 2015.'
+    - number: 54
+      title: 'GovLab interview with Karl Peterson, Project Manager, Aid Transparency, Sida, September 23, 2015.'
+    - number: 55
+      title: 'Ostling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014.'
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/country/sweden/progress-report/report">http://www.opengovpartnership.org/country/sweden/progress-report/report</a>'
+    - number: 56
+      title: 'Rådelius, Elias. “White paper, part 3: Challenges” Openaid.se Blog. May 27, 2015.'
+      text: '<a target="_blank" href="http://www.openaid.se/blog/part-3-challenges/">http://www.openaid.se/blog/part-3-challenges/</a>'
+    - number: 57
+      title: 'Månsson, Christer, et al. “From Bureaucracy to Innovation: An introduction to How to Work with Open Data,” March 2013. http://luii.lu.se/new-report-on-open-data/'
+      text: '<a target="_blank" href="http://luii.lu.se/new-report-on-open-data/">http://luii.lu.se/new-report-on-open-data/</a>'
+    - number: 58
+      title: 'Heacock, Rebekah and David Sasaki, “ICT4 Transparency in Sub-Saharan Africa. In Increasing Transparency and Fighting Corruption through ICT Empowering People and Communities,” The Swedish Program for ICT in Developing Regions (SPIDER) ICT4D Series No. 3, 2010. Stockholm: Stockholm University. IRM, Sweden: Progress Report 2012-13. '
+      text: '<a target="_blank" href="http://spidercenter.org/polopoly_fs/1.163640.1390315885!/menu/standard/file/Spider%20ICT4D%20series%203%20Increasing%20transparency%20and%20fighting%20corruption%20through%20ICT.pdf">http://spidercenter.org/polopoly_fs/1.163640.1390315885!/menu/standard/file/Spider%20ICT4D%20series%203%20Increasing%20transparency%20and%20fighting%20corruption%20through%20ICT.pdf</a>'
+    - number: 59
+      title: ''
+      text: 'FLOW is a “system to collect, manage, analyze, and display geographically-referenced monitoring and evaluation data,” mainly used for water points to date. <a target="_blank" href="https://www.waterforpeople.org/what-we-do">https://www.waterforpeople.org/what-we-do</a>'
+    - number: 60
+      title: ''
+      text: 'Akvo Really Simple Reporting is a “web and Android-based system that makes it easy for development aid teams to bring complex networks of projects online and instantly share progress with everyone involved and interested.” <a target="_blank" href="http://akvo.org/products/rsr/">http://akvo.org/products/rsr/</a>'
+    - number: 61
+      title: 'Bjelkeman-Pettersson, Thomas. “OpenAid.se, Swedish Development Aid Transparency.” Open for Change, April 4, 2011.'
+      text: '<a target="_blank" href="http://openforchange.info/contant/openaidse-swedish-development-aid-transparency">http://openforchange.info/contant/openaidse-swedish-development-aid-transparency</a>'
+    - number: 62
+      title: 'GovLab Interview with Carl Elmstam, Transparency Manager, Sida, October 8, 2015.'
+    - number: 63
+      title: 'GovLab Interview with Carl Elmstam, Transparency Manager, Sida, October 8, 2015.'
+    - number: 64
+      title: ''
+      text: '<a target="_blank" href="http://ati.publishwhatyoufund.org/donor/sweden/">http://ati.publishwhatyoufund.org/donor/sweden/</a>'
+    - number: 65
+      title: '“Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership.'
+      text: '<a target="_blank" href="http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download">http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</a>'
+    - number: 66
+      title: '“Why Transparency Matters Part 5: Where Do We Go Next?” InterAction. January 10, 2014.'
+      text: '<a target="_blank" href="http://www.interaction.org/blog/why-transparency-matters-part-5-where-do-we-go-next">http://www.interaction.org/blog/why-transparency-matters-part-5-where-do-we-go-next</a>'
+    - number: 67
+      title: 'GovLab interview with Karl Peterson, Project Manager, Aid Transparency, Sida, September 23, 2015.'
+    - number: 68
+      title: 'Heacock, Rebekah and David Sasaki, “ICT4 Transparency in Sub-Saharan Africa. In Increasing Transparency and Fighting Corruption through ICT Empowering People and Communities,” The Swedish Program for ICT in Developing Regions (SPIDER) ICT4D Series No. 3, 2010. Stockholm: Stockholm University. IRM, Sweden: Progress Report 2012-13.'
+      text: '<a target="_blank" href="http://spidercenter.org/polopoly_fs/1.163640.1390315885!/menu/standard/file/Spider%20ICT4D%20series%203%20Increasing%20transparency%20and%20fighting%20corruption%20through%20ICT.pdf">http://spidercenter.org/polopoly_fs/1.163640.1390315885!/menu/standard/file/Spider%20ICT4D%20series%203%20Increasing%20transparency%20and%20fighting%20corruption%20through%20ICT.pdf</a>'
+    - number: 69
+      title: 'Dietrich, Daniel. “Open Data in Development Aid.” European Public Sector Information Platform Topic Report No. 2012 / 02. March 2012. '
+      text: '<a target="_blank" href="http://www.epsiplatform.eu/sites/default/files/Final%20TR%20Open%20Aid%20Data.pdf">http://www.epsiplatform.eu/sites/default/files/Final%20TR%20Open%20Aid%20Data.pdf</a>'
+    - number: 70
+      title: 'Dietrich, Daniel. “Open Data in Development Aid.” European Public Sector Information Platform Topic Report No. 2012 / 02. March 2012. '
+      text: '<a target="_blank" href="http://www.epsiplatform.eu/sites/default/files/Final%20TR%20Open%20Aid%20Data.pdf">http://www.epsiplatform.eu/sites/default/files/Final%20TR%20Open%20Aid%20Data.pdf</a>'
 
 - title: 'Open Contracting And Procurement In Slovakia'
   image:
@@ -941,8 +1142,8 @@
   impact_type: government # citizens | government | economic | public
   sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Slovakia
-  read_time:
-  full_read_time:
+  read_time: 5
+  full_read_time: 20
   summary: >
     <p>Corruption has been a long-standing problem in Slovakia, especially in the area of public procurement. In January 2011, Slovakia introduced a regime of unprecedented openness, requiring that all documents related to public procurement (including receipts and contracts) be published online, and making the validity of public contracts contingent on their publication. These reforms appear to have had a dramatic effect on corruption and, equally important for the business climate, perceptions of corruption. More generally, they are among the chief pillars of an effort – within Slovakia and the European Union at large – to reform governance and make it more responsive, transparent and efficient.  </p>
   takeaways: >
@@ -1182,10 +1383,10 @@
   authors: 'Auralice Graft, Stefaan Verhulst and Andrew Young'
   description: 'Elections: Free, Fair and Open Data'
   impact_type: government # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: politics # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Indonesia
-  read_time:
-  full_read_time:
+  read_time: 5
+  full_read_time: 20
   summary: >
     <p>Kawal Pemilu (“guard the election,” in Indonesian) was launched in the immediate aftermath of the 2014 presidential elections, as the country was riven by political polarization and the two leading contenders for the presidency traded allegations of vote rigging. Faced with this delicate moment in Indonesia’s ongoing process of democratization, a globally dispersed group of technologists, activists and volunteers came together to create a website that would allow citizens to compare official vote tallies with the original tabulations from polling stations. These tabulations were already made public as part of the Elections General Commission’s (KPU) commitment to openness and transparency. However, Kawal Pemilu’s organizers played a critical role in assembling a team of over 700 volunteers to digitize the often handwritten forms and make the data more legible and accessible. The site was assembled in a mere two days, with a total budget of just $54. Its overall impact was to enable citizen participation in monitoring the election results, increase public trust in official tallies, and more generally, help ease an important democratic transition.</p>
   takeaways: >
@@ -1258,10 +1459,10 @@
   authors: 'Juliet McMurren, Stefaan Verhulst and Andrew Young'
   description: 'Consolidating and freeing-up address data'
   impact_type: government # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: geospatial # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Denmark
-  read_time:
-  full_read_time:
+  read_time: 5
+  full_read_time: 20
   summary: >
     <p>A broad variety of services depend on accurate, up-to-date address data, including emergency services; the police; postal and transport services; and GPS systems. In 2005, the Building and Dwelling Register of Denmark started to release its address data to the public free of charge. Prior to that date, each municipality charged a separate fee for access, rendering the data practically inaccessible. Other entities, such as the Cadastre, the Land Registry, the Central Business Register and the utilities sector, collected their own address information, leading to significant discrepancies between the content held across different databases. A follow-up study commissioned by the Danish government estimated the direct financial benefits alone for the period 2005-2009 at EUR 62 million, at a cost of only EUR 2 million.</p>
   takeaways: >
@@ -1336,10 +1537,10 @@
   authors: '<a href="#" data-open="#reference-1">Juliet McMurren, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
   description: 'Accountability of Charities through Open Data'
   impact_type: government # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: philantrophy # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Canada
-  read_time:
-  full_read_time:
+  read_time: 5
+  full_read_time: 20
   summary: >
     <p>Charitable data from the Canada Revenue Agency’s information return has been available to the public since 1975. In 2000, the Charities Directorate of the Canada Revenue Agency (CRA) began making information from the T3010 Registered Charity Information Return from organizations with charitable status available online and by CD-ROM on request, and, in 2013, all data sets since 2000 were transcribed and made available online via the government’s data portal under a commercial open data license. The resulting data set has been used on its own and in combination with other data by sector groups and academic researchers to explore the state of the nonprofit sector, improve advocacy by creating a common understanding between regulators and charities, and create intelligence products for donors, fundraisers and grant-makers.</p>
   takeaways: >
