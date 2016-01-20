@@ -44,6 +44,16 @@
                                 HEALTH
                                 {% elif case.sector is equalto 'education' %}
                                 EDUCATION
+                                {% elif case.sector is equalto 'emergency' %}
+                                EMERGENCY SERVICES / CRISIS RESPONSE
+                                {% elif case.sector is equalto 'law' %}
+                                LAW
+                                {% elif case.sector is equalto 'business' %}
+                                BUSINESS
+                                {% elif case.sector is equalto 'transportation' %}
+                                TRANSPORTATION
+                                {% elif case.sector is equalto 'weather' %}
+                                WEATHER
                                 {% else %}
                                 {{case.impact | upper}}
                                 {% endif %}
@@ -220,7 +230,7 @@
         </div>
     </div>
     {% endif %}
-    
+
     {% if self.discussion() %}
     <div class="b-page-section">
         <div class="row">
