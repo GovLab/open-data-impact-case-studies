@@ -2,7 +2,7 @@
     position: relative;
     padding: 0;
     height: 580px;
-    
+
 
     h1 {
         &.m-space-1 {
@@ -68,7 +68,7 @@
 
         div {
             display: inline-block;
-           
+
             &.e-left {
                 width: 80px;
                 text-align: right;
@@ -85,10 +85,10 @@
     .e-right-box {
         margin-top: 30px;
         text-align: right;
-        
+
         p {
             margin: 0;
-        
+
             &:first-child {
                 font-weight: 800;
                 text-transform: uppercase;
@@ -108,7 +108,7 @@
     }
 
     &.m-hires-1 {
-        background: url('../img/citybg.jpg') no-repeat center center;
+        background: url('../img/home.jpg') no-repeat center center;
         background-size: cover;
     }
 

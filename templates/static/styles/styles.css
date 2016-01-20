@@ -4512,7 +4512,7 @@ main .b-divider {
       color: white;
       transition: all .4s ease; }
   .b-top-section.m-hires-1 {
-    background: url("../img/citybg.jpg") no-repeat center center;
+    background: url("../img/home.jpg") no-repeat center center;
     background-size: cover; }
   .b-top-section.m-hires-2 {
     background: url("../img/nairobi.jpg") no-repeat center top;
