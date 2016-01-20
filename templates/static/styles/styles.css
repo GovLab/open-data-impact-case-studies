@@ -4248,7 +4248,8 @@ h2.m-upper {
   text-transform: uppercase; }
 
 h5 {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  font-style: italic; }
 
 .b-top-nav {
   width: 100%;
