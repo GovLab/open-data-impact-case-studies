@@ -4847,8 +4847,8 @@ ul.b-sidebar {
 .b-page-section .e-expandable * {
   font-size: 1.1rem;
   font-weight: 300; }
-.b-page-section .e-expandable > *:only-of-type {
-  display: block; }
+.b-page-section .e-expandable > *:not(:first-child) {
+  display: none; }
 .b-page-section .e-expandable > *:only-of-type + .e-read-more {
   display: none; }
 .b-page-section .e-expandable .m-show {

@@ -74,8 +74,8 @@ $od-blue-05: rgba(22,74,122,.05);
             font-size: 1.1rem;
             font-weight: 300;
         }
-
-        > *:only-of-type { display: block; }
+        
+        > *:not(:first-child) {display: none;}
         > *:only-of-type + .e-read-more { display: none; }
 
         .m-show { display: block; }
