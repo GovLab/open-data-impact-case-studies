@@ -225,6 +225,22 @@
     </div>
     {% endif %}
 
+    {% if self.path_open() %}
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="medium-3 columns">
+                <h3>Path to Open</h3>
+            </aside>
+            <div class="large-8 columns end">
+                <div class="e-expandable">
+                    {% block path_open %}{% endblock %}
+                    <span class="e-read-more js-more-toggle">Read More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
     {% if self.outcome() %}
     <div class="b-page-section">
         <div class="row">
