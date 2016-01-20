@@ -70,7 +70,7 @@
         <div class="b-shader">
             <h1 class="m-space-2 m-sm-2">Kenya's Open Duka</h1>
             <h2 class="m-sm">Open Data for Transactional Transparency</h2>
-            <h4>by Andrew Young and Stefaan Verhulst</h4>
+            <h4>by <a href="#" data-open="#reference-1">Andrew Young and Stefaan Verhulst<sup>1</sup></a></h4>
 
             <div class="row">
                 <div class="column medium-6">
@@ -115,11 +115,7 @@
 
     <div class="row">
         <ul class="b-sidebar">
-            <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a>
-            <a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a>
-            <a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a>
-            <a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a>
-            <a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
+            <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
         </ul>
     </div>
 
@@ -430,11 +426,11 @@
 </main>
 
 
-<div class="b-sticky m-closed" id="reference-None">
+<div class="b-sticky m-closed" id="reference-1">
     <div class="e-wrap">
-        <i class="material-icons e-close js-close-sticky" data-close="#reference-None">close</i>
-        <h3 class="e-title">None. None</h3>
-        <p>None</p>
+        <i class="material-icons e-close js-close-sticky" data-close="#reference-1">close</i>
+        <h3 class="e-title">1. </h3>
+        <p>Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to the peer reviewers [LINK TO BE ADDED] who provided input on a pre-published draft.</p>
     </div>
 </div>
 
