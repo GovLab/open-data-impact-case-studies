@@ -10,7 +10,7 @@
 <ul class="small"><li>Open data initiatives can be resource- and time-intensive. Cleaning data, building partnerships, tech development and other important steps can require more effort than originally planned, leading to long stretches of time before any real impacts are felt. </li>
     <li>Opening data is not always sufficient. Citizen engagement, outreach and training efforts – regardless of the tech capacity or data literacy of the targeted community of users – can be important drivers of use for open data platforms. </li>
     <li>Political and cultural changes can throw open data initiatives into upheaval, even if they do not, on the surface, seem to directly affect the project at hand. Developing an open data platform, application or service often requires a supportive open data ecosystem to reach its full potential.</li>
-    </ul>
+</ul>
 {% endblock %}
 
 
@@ -28,14 +28,17 @@
     <h5>Figure 1: Kenya’s Open Data Portal</h5>
     <p>The political and legal climate in Kenya also remains somewhat ambiguous when it comes to open data. In 2013, President Uhuru Kenyatta was elected as the fourth president of Kenya. His Jubilee Party’s election manifesto had “pledged to increase transparency in government as well as promote information-sharing within public institutions.”  The manifesto also highlighted the importance of improved digitization of government, including “cleaning up and managing databases that will be stored in a secure and centralized location and which can be accessed and used by all ministries and branches of government … to make government more efficient.”  </p>
     <p>All of this led to hopes among open data and government transparency activists. Immediately following that initial optimism, hopes began to deflate. In 2013, the Sunlight Foundation published an article on “why Kenya’s open data portal is failing.” Many of the reasons cited – like government’s reluctance to open all potentially useful data and challenges related to the country’s constitutional devolution – created similar issues for Open Duka, as discussed below. It is worth noting, however, that much has changed for the portal since 2013, and even at the time, the piece’s author still expressed reasons for longer-term optimism.  The situation surrounding the open data portal isn’t helped by the absence of a legal framework to enforce a constitutionally guaranteed freedom of information. Although the Bill of Rights includes this freedom, in fact there are no clear guidelines to guide how public bodies should make information available, what types of information should be released, and what remedies exist for violations. With that said, the surge in use of the portal – culminating in the milestones in site visits and data downloads witnessed in 2015 – is a lesson in the need for both iteration and persistence in order for open data efforts to take hold. </p>
-    
+
 {% endblock %}
 
 {% block project %}
     <p>Even as the government has launched its open data initiatives, civil society in Kenya has become increasingly active in the field. According to Jay Bhalla, director of the Open Institute, a civil society organization that works “to open up government to the citizens,” the government’s own open data initiative “acted as a catalyst for organizations [like the Open Institute] to begin working around open data.”  He cites the example of Code4Kenya, which works to catalyze demand for open data by embedding fellows with data skills into African newsrooms and civic organizations, as an example, stating that it was at least in part “spun out of the fact that there was the Kenya Open Data Initiative.” </p>
     <p>Open Duka (“duka” means “shop” in Swahili) grew out of this civil society interest in open data. Launched in 2014, it contains data pertaining to the relationships among Kenyan institutions, individuals and other entities with an impact on public life. The project is driven by the Open Institute in partnership with the National Council of Law Reporting, with funding from the African Technology & Transparency Initiative. </p>
     <p>Open Duka is built on a simple principle: Its founders believe that giving citizens information that enables them to draw connections among individuals and organizations can uncover and possibly remedy many instances of corruption. Al Kags, a founding trustee of the Open Institute, notes that every time a new corruption scandal hits Kenya, citizens begin asking questions about connections. Who is connected to whom? Who owns the companies involved, and how do those individuals relate to government entities or other power players? Prior to Open Duka, he says, there was no way to uncover this type of “relational data,” which can “enable citizens to make connections between people, issues, companies and public organizations.”  </p>
-    box
+    <div class="e-box">
+        <p>Open Duka’s Mission Statement:</p>
+        <p>“Providing citizens, journalists, and civic activists with a practical and easy-to-use tool to understand the ownership structure of the world they live in, demonstrating the practical applications of open information for normal citizens.”</p>
+    </div>
     <p>The platform does not itself seek to draw any connection; it just posts data, relying on its users’ investigative skills (and serendipity) to draw out the links that underlie public life in Kenya, and that often drive corruption. As Bhalla puts it: “We’re just getting all the data that is out there … and we’re putting it up there for people to make their decisions. … We’re just getting the data, scraping it, putting it up, and seeing what connections come up … and what stories can then be taught.”  </p>
     <p>Kags cites the following hypothetical example of how Open Duka might be used. Using the platform, a citizen could discover that Individual A is the director of two companies; she could then uncover the fact that Individual A’s brother directs a third company, and also happens to work with a government agency; in addition, the citizen might determine that both brothers went to school with Judge C.  In this way, the citizen-user of Open Duka could possibly determine whether Individual A has used his connections (via the brother or the judge) to improperly benefit from government contracting, or engage in any other form of corruption.  </p>
     <p>At its core, Open Duka is a platform that enables citizens to peer behind the veil of previously unknown (and unknowable) relationships that drive a variety of economic and political activities, including land purchases, tendering contracts and other regulatory decisions. When selecting a person, organization, tender, contract, court case or piece of land on the site, Open Duka provides a simple visualization of how that entity connects with others found on the platform, with additional categorized data about each entity found in the visualization displayed below. These relationships, adds Kags, “have an impact on the integrity of a country.”  </p>
@@ -53,7 +56,31 @@
 
 {% block impact %}
 <h3>Intended Beneficiaries</h3>
-    table
+
+<table>
+    <colgroup>
+    <col style="width:25%">
+    <col style="width:50%">
+</colgroup>
+<tbody>
+    <tr>
+        <td>Average Citizens</td>
+        <td>Provides citizens with the ability to recognize and avoid potentially corrupt dealings in areas like contracts, land purchases.</td>
+    </tr>
+    <tr>
+        <td>Media and Research Community</td>
+        <td>
+            <p>Uncovers connections between stakeholders and power players in the country to help in the identification of corruption or conflicts of interest.</p>
+            <p>Enables large-scale analyses of data found on the platform to uncover high-level insights.</p>
+        </td>
+    </tr>
+    <tr>
+        <td>Developers and Civic Activists and Researchers</td>
+        <td>An API enables interested parties to incorporate Open Duka’s data into other applications focused on transparency and accountability in the public and private sectors.</td>
+    </tr>
+</tbody>
+</table>
+
     <p>Despite considerable promise and excitement about the potential of Open Duka, its impact has in fact been quite limited to date. No systematic study has been done of the project’s impact, and the success stories that do exist have been largely anecdotal (Bhalla, for instance, refers to the “the odd success story” where “some person managed to figure out that someone was trying to con him with selling a piece of land, for example, and he managed to use Open Duka as the platform to find out that this guy is the fraudster” ). Bhalla also notes that the media has benefitted from the platform, but establishing direct ties between news pieces on corruption and journalists’ use of Open Duka is a challenge (and, as of 2015, the site does not offer any illustrative examples of such uses). Ndemo believes that more effort needs to be expended to improve the media’s data literacy and capacity to create impacts as infomediaries for the public. Rather than focusing on providing sensationalistic headlines, there should be a greater focus in the media on, “[doing] the analysis that can help people understand to make decisions. … The media does not just have to look at headlines, they must synthesize the data and make it much simpler, and to do that, we need to do a lot of capacity-building on data science, data visualization.”  </p>
     <p>Open Duka’s limited success can in large part be attributed to the many challenges the project has encountered since its launch, notably the difficulty of sourcing data and the obstacles raised by a recent move to devolve governmental authority (explained further below).  </p>
     <h3>Seeding the Notion of Openness</h3>

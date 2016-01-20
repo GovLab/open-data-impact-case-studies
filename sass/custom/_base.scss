@@ -6,6 +6,13 @@
     // min-height: 200px;
 }
 
-div[disabled] {
-    display: none;
+div {
+    &[disabled] {
+        display: none;
+    }
+    &.e-box {
+        border: solid 1px $black;
+        padding: 30px;
+        margin-bottom: 15px;
+    }
 }
