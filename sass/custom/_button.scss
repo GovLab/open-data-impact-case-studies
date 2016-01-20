@@ -74,6 +74,36 @@
         }
     }
 
+    &.m-blue {
+        background-color: $blue;
+        &:hover {
+            background-color: $blue-20k;
+        }
+        &:focus {
+            color: $white;
+        }
+    }
+
+    &.m-yellow {
+        background-color: $yellow;
+        &:hover {
+            background-color: $yellow-20k;
+        }
+        &:focus {
+            color: $white;
+        }
+    }
+
+    &.m-fuschia {
+        background-color: $fuschia;
+        &:hover {
+            background-color: $fuschia-20k;
+        }
+        &:focus {
+            color: $white;
+        }
+    }
+
     &.m-wide-padding {
         padding-left: 80px;
         padding-right: 80px;

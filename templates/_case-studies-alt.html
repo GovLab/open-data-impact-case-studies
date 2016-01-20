@@ -69,7 +69,17 @@
                         <p>Brief View <strong>{{case.read_time}} MINS</strong></p>
                         <p>Full Story <strong>{{case.full_read_time}} MINS</strong></p>
                     </div>
+                                {% if case.impact_type is equalto 'citizens' %}
                     <a href="./static/files/{{case.download}}" target="_blank" class="b-button m-bottom-overlap m-orange m-detail-page">
+                                {% elif case.impact_type is equalto 'government' %}
+                    <a href="./static/files/{{case.download}}" target="_blank" class="b-button m-bottom-overlap m-blue m-detail-page">
+                                {% elif case.impact_type is equalto 'economic' %}
+                    <a href="./static/files/{{case.download}}" target="_blank" class="b-button m-bottom-overlap m-yellow m-detail-page">
+                                {% elif case.impact_type is equalto 'public' %}
+                    <a href="./static/files/{{case.download}}" target="_blank" class="b-button m-bottom-overlap m-fuschia m-detail-page">
+                                {% else %}
+                    <a href="./static/files/{{case.download}}" target="_blank" class="b-button m-bottom-overlap m-detail-page">
+                                {% endif %}
                         <i class="material-icons m-space">file_download</i>
                         Download The Report
                     </a>
@@ -273,7 +283,17 @@
 
 
 
+                                        {% if case.impact_type is equalto 'citizens' %}
     <div class="b-divider m-orange m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
+                                {% elif case.impact_type is equalto 'government' %}
+    <div class="b-divider m-blue m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
+                                {% elif case.impact_type is equalto 'economic' %}
+    <div class="b-divider m-yellow m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
+                                {% elif case.impact_type is equalto 'public' %}
+    <div class="b-divider m-fuschia m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
+                                {% else %}
+    <div class="b-divider m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
+                                {% endif %}
         <div>
             <h1>Read Next</h1>
             {% set next = false %}
