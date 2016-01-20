@@ -74,7 +74,8 @@ $od-blue: #164A7A;
             font-weight: 300;
         }
 
-        > p:only-of-type + .e-read-more { display: none; }
+        > *:only-of-type { display: block; }
+        > *:only-of-type + .e-read-more { display: none; }
 
         .m-show { display: block; }
 

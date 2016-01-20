@@ -60,12 +60,6 @@
         height: auto;
         @include transition;
 
-        .b-button.m-less { display: none; }
-
-        > *:not(.b-button) { display: none; }
-
-        .b-button.m-more i { display: inline }
-
         &.m-active {
             // max-height: 4000px;
             @include transition;
