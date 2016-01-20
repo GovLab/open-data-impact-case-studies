@@ -1199,7 +1199,7 @@
 
 - title: 'TheyWorkForYou'
   image: united-kingdom.jpg
-  authors:
+  authors: Becky Hogge
   description: 'Taking the long view'
   impact_type: government # citizens | government | economic | public
   sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
@@ -1216,7 +1216,7 @@
 
 - title: 'The Open Public Services Network'
   image: open-public-service-network.jpg
-  authors:
+  authors: Becky Hogge
   description: 'new strategies to close the data gap'
   impact_type: government # citizens | government | economic | public
   sector: education # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
