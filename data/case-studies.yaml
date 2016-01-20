@@ -833,7 +833,7 @@
 - title: "Denmark’s Open Address Data Set"
   image: denmark.jpg
   authors: '<a href="#" data-open="#reference-1">Juliet McMurren, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
-  description: 'Consolidating and freeing-up address data'
+  description: 'Consolidating and Freeing-up Address Data'
   impact_type: government # citizens | government | economic | public
   sector: geospatial # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Denmark
@@ -1208,7 +1208,7 @@
 - title: 'TheyWorkForYou'
   image: united-kingdom.jpg
   authors: Becky Hogge
-  description: 'Taking the long view'
+  description: 'Taking the Long View'
   impact_type: government # citizens | government | economic | public
   sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
@@ -1225,7 +1225,7 @@
 - title: 'The Open Public Services Network'
   image: open-public-service-network.jpg
   authors: Becky Hogge
-  description: 'new strategies to close the data gap'
+  description: 'New Strategies to Close the Data Gap'
   impact_type: government # citizens | government | economic | public
   sector: education # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
@@ -1242,7 +1242,7 @@
 - title: 'OpenCorporates'
   image: opencorporates.jpg
   authors: 'Becky Hogge'
-  description: 'Open data as one small part of the picture'
+  description: 'Open Data as One Small Part of the Picture'
   impact_type: government # citizens | government | economic | public
   sector: business # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
