@@ -29,7 +29,7 @@
 #       text:
 
 - title: "Brazil’s Open Budget Transparency Portal"
-  image: 'static/img/nairobi.jpg'
+  image: 'brazil.jpg'
   authors: '<a href="#" data-open="#reference-1">Auralice Graft, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
   description: 'Making Public How Public Money Is Spent'
   impact_type: government # citizens | government | economic | public
@@ -174,7 +174,7 @@
 
 
 - title: 'Open Education Information In Tanzania'
-  image:
+  image: tanzania.jpg
   authors: '<a href="#" data-open="#reference-1">Juliet McMurren, Stefaan Verhulst, Andrew Young and David Sangokoya<sup>1</sup></a>'
   description: 'A Tale of Two Dashboards'
   impact_type: citizens # citizens | government | economic | public
@@ -305,7 +305,7 @@
       title: 'Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.'
 
 - title: "Kenya's Open Duka"
-  image:
+  image: kenya.jpg
   authors: 'Andrew Young and Stefaan Verhulst'
   description: 'Open Data for Transactional Transparency'
   impact_type: citizens # citizens | government | economic | public
@@ -322,7 +322,7 @@
       text:
 
 - title: 'Mexico’s Mejora Tu Escuela'
-  image:
+  image: mexico.jpg
   authors: 'Andrew Young and Stefaan Verhulst'
   description: 'Empowering Citizens to Make Data-Driven Decisions About Education'
   impact_type: citizens # citizens | government | economic | public
@@ -339,7 +339,7 @@
       text:
 
 - title: "Uruguay's A Tu Servicio"
-  image:
+  image: uruguay.jpg
   authors: '<a href="#" data-open="#reference-1">David Sangokoya, Ali Clare, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
   description: 'Empowering Citizens to Make Data-Driven Decisions on Health Care'
   impact_type: citizens # citizens | government | economic | public
@@ -446,7 +446,7 @@
 
 
 - title: 'Openaid In Sweden'
-  image:
+  image: sweden.jpg
   authors: '<a href="#" data-open="#reference-1">Ali Clare, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
   description: 'Enhanced Transparency and Accountability in Development Cooperation'
   impact_type: government # citizens | government | economic | public
@@ -658,7 +658,7 @@
 
 
 - title: 'Open Contracting And Procurement In Slovakia'
-  image:
+  image: slovakia.jpg
   authors: '<a href="#" data-open="#reference-1">Ali Clare, David Sangokoya, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
   description: 'Establishing Trust in Government through Open Data'
   impact_type: government # citizens | government | economic | public
@@ -816,7 +816,7 @@
       text: '<a target="_blank" href="http://www.refworld.org/topic,50ffbce582,50ffbce5be,55929ef315,0,,,SVK.html">http://www.refworld.org/topic,50ffbce582,50ffbce5be,55929ef315,0,,,SVK.html</a>'
 
 - title: 'Indonesia’s Kawal Pemilu'
-  image:
+  image: indonesia.jpg
   authors: 'Auralice Graft, Stefaan Verhulst and Andrew Young'
   description: 'Elections: Free, Fair and Open Data'
   impact_type: government # citizens | government | economic | public
@@ -827,7 +827,7 @@
   download: case-study-indonesia.pdf
 
 - title: "Denmark’s Open Address Data Set"
-  image:
+  image: denmark.jpg
   authors: 'Juliet McMurren, Stefaan Verhulst and Andrew Young'
   description: 'Consolidating and freeing-up address data'
   impact_type: government # citizens | government | economic | public
@@ -838,7 +838,7 @@
   download: case-study-denmark.pdf
 
 - title: "Opening Canada’s T3010 Charity Information Return Data"
-  image:
+  image: canada.jpg
   authors: '<a href="#" data-open="#reference-1">Juliet McMurren, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
   description: 'Accountability of Charities through Open Data'
   impact_type: government # citizens | government | economic | public
@@ -1198,7 +1198,7 @@
       text: '<a href="https://torontofoundation.ca/news/reflections-ckx-%E2%80%93-community-knowledge-exchange-summit" target="_blank">https://torontofoundation.ca/news/reflections-ckx-%E2%80%93-community-knowledge-exchange-summit</a>'
 
 - title: 'TheyWorkForYou'
-  image:
+  image: united-kingdom.jpg
   authors:
   description: 'Taking the long view'
   impact_type: government # citizens | government | economic | public
@@ -1215,7 +1215,7 @@
       text:
 
 - title: 'The Open Public Services Network'
-  image:
+  image: open-public-service-network.jpg
   authors:
   description: 'new strategies to close the data gap'
   impact_type: government # citizens | government | economic | public
@@ -1232,7 +1232,7 @@
       text:
 
 - title: 'OpenCorporates'
-  image:
+  image: opencorporates.jpg
   authors:
   description: 'Open data as one small part of the picture'
   impact_type: government # citizens | government | economic | public
