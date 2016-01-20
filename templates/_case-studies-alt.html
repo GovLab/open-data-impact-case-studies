@@ -177,6 +177,22 @@
     </div>
     {% endif %}
 
+    {% if self.path_above() %}
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="medium-3 columns">
+                <h3>Path to Impact</h3>
+            </aside>
+            <div class="large-8 columns end">
+                <div class="e-expandable">
+                    {% block path_above %}{% endblock %}
+                    <span class="e-read-more js-more-toggle">Read More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
     {% if self.data() %}
     <div class="b-page-section">
         <div class="row">
