@@ -1233,7 +1233,7 @@
 
 - title: 'OpenCorporates'
   image: opencorporates.jpg
-  authors:
+  authors: 'Becky Hogge'
   description: 'Open data as one small part of the picture'
   impact_type: government # citizens | government | economic | public
   sector: business # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
