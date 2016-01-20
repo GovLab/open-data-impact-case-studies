@@ -4247,6 +4247,9 @@ i.m-black {
 h2.m-upper {
   text-transform: uppercase; }
 
+h5 {
+  margin-bottom: 15px; }
+
 .b-top-nav {
   width: 100%;
   position: absolute;
