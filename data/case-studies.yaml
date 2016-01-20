@@ -37,6 +37,7 @@
   location: Brazil
   read_time: 5 #minutes
   full_read_time: 20
+  download: case-study-brazil.pdf
   references:
     - number: 1
       title: ''
@@ -181,6 +182,7 @@
   location: Tanzania
   read_time: 5
   full_read_time: 20
+  download: case-study-tanzania.pdf
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   references:
@@ -311,6 +313,7 @@
   location: Kenya
   read_time: 5
   full_read_time: 20
+  download: case-study-kenya.pdf
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   references:
@@ -327,6 +330,7 @@
   location: Mexico
   read_time: 5
   full_read_time: 20
+  download: case-study-mexico.pdf
 # reference format
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   references:
@@ -343,6 +347,7 @@
   location: Uruguay
   read_time: 5
   full_read_time: 20
+  download: case-study-uruguay.pdf
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   references:
@@ -449,6 +454,7 @@
   location: Sweden
   read_time: 5
   full_read_time: 20
+  download: case-study-sweden.pdf
   references:
     - number: 1
       title: ''
@@ -660,6 +666,7 @@
   location: Slovakia
   read_time: 5
   full_read_time: 20
+  download: case-study-slovakia.pdf
   references:
     - number: 1
       title: ''
@@ -817,7 +824,7 @@
   location: Indonesia
   read_time: 5
   full_read_time: 20
-
+  download: case-study-indonesia.pdf
 
 - title: "Denmark’s Open Address Data Set"
   image:
@@ -828,6 +835,7 @@
   location: Denmark
   read_time: 5
   full_read_time: 20
+  download: case-study-denmark.pdf
 
 - title: "Opening Canada’s T3010 Charity Information Return Data"
   image:
@@ -838,6 +846,7 @@
   location: Canada
   read_time: 5
   full_read_time: 20
+  download: case-study-canada.pdf
   references:
     - number: 1
       title: ''
@@ -1199,8 +1208,7 @@
   full_read_time: 20
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
-  challenges: >
-  looking_forward: >
+  download: case-study-theyworkforyou.pdf
   references:
     - number:
       title:
@@ -1215,6 +1223,7 @@
   location: UK
   read_time: 5
   full_read_time: 20
+  download: case-study-public-service-network.pdf
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   references:
@@ -1231,6 +1240,7 @@
   location: UK
   read_time: 5
   full_read_time: 20
+  download: case-study-opencorporates.pdf
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
 

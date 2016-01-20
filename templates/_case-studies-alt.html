@@ -59,7 +59,7 @@
                         <p>Brief View <strong>{{case.read_time}} MINS</strong></p>
                         <p>Full Story <strong>{{case.full_read_time}} MINS</strong></p>
                     </div>
-                    <a href="#" class="b-button m-bottom-overlap m-orange m-detail-page">
+                    <a href="./static/files/{{case.download}}" target="_blank" class="b-button m-bottom-overlap m-orange m-detail-page">
                         <i class="material-icons m-space">file_download</i>
                         Download The Report
                     </a>
@@ -77,7 +77,7 @@
             <a href="#"><li class="email"><i class="fa fa-envelope"></i></li></a>
         </ul>
     </div>
-
+    {% if self.summary() %}
     <section class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
@@ -91,7 +91,9 @@
             </div>
         </div>
     </section>
+    {% endif %}
 
+    {% if self.takeaways() %}
     <div class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
@@ -105,7 +107,9 @@
             </div>
         </div>
     </div>
+    {% endif %}
 
+    {% if self.numbers() %}
     <div class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
@@ -119,7 +123,9 @@
             </div>
         </div>
     </div>
+    {% endif %}
 
+    {% if self.quotes() %}
     <div class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
@@ -133,7 +139,9 @@
             </div>
         </div>
     </div>
+    {% endif %}
 
+    {% if self.background() %}
     <div class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
@@ -147,7 +155,9 @@
             </div>
         </div>
     </div>
+    {% endif %}
 
+    {% if self.data() %}
     <div class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
@@ -161,7 +171,9 @@
             </div>
         </div>
     </div>
+    {% endif %}
 
+    {% if self.path() %}
     <div class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
@@ -175,7 +187,9 @@
             </div>
         </div>
     </div>
+    {% endif %}
 
+    {% if self.outcome() %}
     <div class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
@@ -189,7 +203,9 @@
             </div>
         </div>
     </div>
+    {% endif %}
 
+    {% if self.impact() %}
     <div class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
@@ -203,6 +219,9 @@
             </div>
         </div>
     </div>
+    {% endif %}
+    
+    {% if self.discussion() %}
     <div class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
@@ -216,6 +235,9 @@
             </div>
         </div>
     </div>
+    {% endif %}
+
+    {% if self.action() %}
     <div class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
@@ -229,6 +251,7 @@
             </div>
         </div>
     </div>
+    {% endif %}
 
     <div class="b-page-section">
         <div class="row">
