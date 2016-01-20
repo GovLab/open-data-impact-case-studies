@@ -48,4 +48,18 @@ $(function() {
     } else {
         $('.js-next a').first().show();
     }
+
+    // social
+    $('#facebook').click(function () {
+        location.href = 'http://www.facebook.com/sharer.php?u=' + encodeURIComponent(location.href);
+    });
+    $('#linkedin').click(function () {
+        location.href = 'http://www.linkedin.com/shareArticle?url=' + encodeURIComponent(location.href);
+    });
+    $('#google-plus').click(function () {
+        location.href = 'https://plus.google.com/share?url=' + encodeURIComponent(location.href);
+    });
+    $('#twitter').click(function () {
+        location.href = 'https://twitter.com/share?url=' + encodeURIComponent(location.href);
+    });
 });
