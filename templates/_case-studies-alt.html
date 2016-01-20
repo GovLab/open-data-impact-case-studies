@@ -109,6 +109,34 @@
     <div class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
+                <h3>Numbers</h3>
+            </aside>
+            <div class="large-8 columns end">
+                <div class="e-expandable">
+                    {% block numbers %}{% endblock %}
+                    <span class="e-read-more js-more-toggle">Read More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="medium-3 columns">
+                <h3>Quotes</h3>
+            </aside>
+            <div class="large-8 columns end">
+                <div class="e-expandable">
+                    {% block quotes %}{% endblock %}
+                    <span class="e-read-more js-more-toggle">Read More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="medium-3 columns">
                 <h3>Background</h3>
             </aside>
             <div class="large-8 columns end">
@@ -123,11 +151,39 @@
     <div class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
-                <h3>Project</h3>
+                <h3>Data</h3>
             </aside>
             <div class="large-8 columns end">
                 <div class="e-expandable">
-                    {% block project %}{% endblock %}
+                    {% block data %}{% endblock %}
+                    <span class="e-read-more js-more-toggle">Read More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="medium-3 columns">
+                <h3>Path to Impact</h3>
+            </aside>
+            <div class="large-8 columns end">
+                <div class="e-expandable">
+                    {% block path %}{% endblock %}
+                    <span class="e-read-more js-more-toggle">Read More</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-page-section">
+        <div class="row">
+            <aside class="medium-3 columns">
+                <h3>Outcome</h3>
+            </aside>
+            <div class="large-8 columns end">
+                <div class="e-expandable">
+                    {% block outcome %}{% endblock %}
                     <span class="e-read-more js-more-toggle">Read More</span>
                 </div>
             </div>
@@ -147,29 +203,27 @@
             </div>
         </div>
     </div>
-
     <div class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
-                <h3>Challenges</h3>
+                <h3>Discussion</h3>
             </aside>
             <div class="large-8 columns end">
                 <div class="e-expandable">
-                    {% block challenges %}{% endblock %}
+                    {% block discussion %}{% endblock %}
                     <span class="e-read-more js-more-toggle">Read More</span>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="b-page-section">
         <div class="row">
             <aside class="medium-3 columns">
-                <h3>Looking Forward</h3>
+                <h3>Action</h3>
             </aside>
             <div class="large-8 columns end">
                 <div class="e-expandable">
-                    {% block forward %}{% endblock %}
+                    {% block action %}{% endblock %}
                     <span class="e-read-more js-more-toggle">Read More</span>
                 </div>
             </div>
@@ -183,6 +237,8 @@
             </div>
         </div>
     </div>
+
+
 
     <div class="b-divider m-orange m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
         <div>
