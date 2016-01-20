@@ -155,9 +155,9 @@ if __name__ == '__main__':
             (r'.*.html', context.get),
             (r'.*.custom', context.get),
         ],
-        rules=[
-            (r'.*.custom', render_detail_pages)
-        ],
+        # rules=[
+        #     (r'.*.custom', render_detail_pages)
+        # ],
         searchpath=_SEARCHPATH,
         staticpaths=['static']
     )
