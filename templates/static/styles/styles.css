@@ -4247,10 +4247,6 @@ i.m-black {
 h2.m-upper {
   text-transform: uppercase; }
 
-h5 {
-  margin-bottom: 15px;
-  font-style: italic; }
-
 .b-top-nav {
   width: 100%;
   position: absolute;
@@ -4847,6 +4843,8 @@ ul.b-sidebar {
 .b-page-section .e-expandable * {
   font-size: 1.1rem;
   font-weight: 300; }
+.b-page-section .e-expandable > *:not(:first-child) {
+  display: none; }
 .b-page-section .e-expandable > *:only-of-type + .e-read-more {
   display: none; }
 .b-page-section .e-expandable .m-show {
@@ -4864,9 +4862,10 @@ ul.b-sidebar {
   .b-page-section .e-expandable h3:not(:first-child) {
     margin-top: 30px; }
 .b-page-section .e-expandable h5 {
-  text-align: center;
-  font-size: 14px;
-  font-style: italic; }
+  text-align: left;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 15px; }
 .b-page-section .e-expandable b {
   font-weight: bold; }
 .b-page-section .e-expandable img {
