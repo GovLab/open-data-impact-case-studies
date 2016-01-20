@@ -4858,10 +4858,9 @@ ul.b-sidebar {
     text-decoration: underline; }
 .b-page-section .e-expandable h3 {
   font-weight: bold;
-  color: #164A7A;
-  margin-top: 30px; }
-  .b-page-section .e-expandable h3:first-child {
-    margin-top: 0; }
+  color: #164A7A; }
+  .b-page-section .e-expandable h3:not(:first-child) {
+    margin-top: 30px; }
 .b-page-section .e-expandable h5 {
   text-align: left;
   font-size: 16px;
