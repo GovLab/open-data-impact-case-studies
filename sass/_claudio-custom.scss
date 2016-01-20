@@ -75,7 +75,7 @@ $od-blue-05: rgba(22,74,122,.05);
             font-weight: 300;
         }
         
-        > *:not(:first-child) {display: none;}
+        // > *:not(:first-child) {display: none;}
         > *:only-of-type + .e-read-more { display: none; }
 
         .m-show { display: block; }
@@ -92,7 +92,7 @@ $od-blue-05: rgba(22,74,122,.05);
         h3 {
             font-weight: bold;
             color: $od-blue;
-            margin-top: 30px;
+            &:not(:first-child) { margin-top: 30px; }
         }
 
         h5 {

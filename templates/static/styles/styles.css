@@ -4847,8 +4847,6 @@ ul.b-sidebar {
 .b-page-section .e-expandable * {
   font-size: 1.1rem;
   font-weight: 300; }
-.b-page-section .e-expandable > *:not(:first-child) {
-  display: none; }
 .b-page-section .e-expandable > *:only-of-type + .e-read-more {
   display: none; }
 .b-page-section .e-expandable .m-show {
@@ -4862,8 +4860,9 @@ ul.b-sidebar {
     text-decoration: underline; }
 .b-page-section .e-expandable h3 {
   font-weight: bold;
-  color: #164A7A;
-  margin-top: 30px; }
+  color: #164A7A; }
+  .b-page-section .e-expandable h3:not(:first-child) {
+    margin-top: 30px; }
 .b-page-section .e-expandable h5 {
   text-align: center;
   font-size: 14px;
