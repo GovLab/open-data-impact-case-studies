@@ -4933,6 +4933,10 @@ ul.b-sidebar {
     font-size: 18px;
     text-align: right;
     color: rgba(0, 0, 0, 0.6); }
+  #about-page .b-page-section h4 {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600; }
 #about-page .b-form textarea {
   min-height: 240px; }
 

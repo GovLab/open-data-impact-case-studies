@@ -74,7 +74,7 @@ $od-blue-05: rgba(22,74,122,.05);
             font-size: 1.1rem;
             font-weight: 300;
         }
-        
+
         > *:not(:first-child) {display: none;}
         > *:only-of-type + .e-read-more { display: none; }
 
@@ -158,6 +158,12 @@ $od-blue-05: rgba(22,74,122,.05);
             font-size: 18px;
             text-align: right;
             color: $gray-60;
+        }
+
+        h4 {
+            font-size: 16px;
+            color: $gray-60;
+            font-weight: 600;
         }
 
     }
