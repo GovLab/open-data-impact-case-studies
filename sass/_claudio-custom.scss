@@ -1,4 +1,5 @@
 $od-blue: #164A7A;
+$od-blue-05: rgba(22,74,122,.05);
 
 // Modifier to add the main blue color
 
@@ -86,6 +87,45 @@ $od-blue: #164A7A;
             font-weight: 600;
 
             &:hover { text-decoration: underline; }
+        }
+
+        h3 {
+            font-weight: bold;
+            color: $od-blue;
+            margin-top: 30px;
+        }
+
+        h5 {
+            text-align: center;
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        b { font-weight: bold; }
+
+        img {
+            box-shadow: 0 0 8px $gray-10;
+            margin: 30px 0;
+        }
+
+        blockquote {
+            background-color: $od-blue-05;
+            padding: 20px 20px 20px 40px;
+            position: relative;
+
+            &:before {
+                background-image: url("../img/quote.svg");
+                background-repeat: no-repeat;
+                background-size: 50%;
+                background-position: center;
+                @include circle;
+                height: 34px;
+                width: 34px;
+                background-color: $od-blue;
+                content: '';
+                position: absolute;
+                left: -17px;
+            }
 
         }
 
