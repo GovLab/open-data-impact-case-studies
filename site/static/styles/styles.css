@@ -4568,6 +4568,24 @@ main .b-divider {
     background-color: #be4936; }
   .b-button.m-orange:focus, .b-form input.m-orange[type="submit"]:focus {
     color: white; }
+.b-button.m-blue, .b-form input.m-blue[type="submit"] {
+  background-color: #008ab3; }
+  .b-button.m-blue:hover, .b-form input.m-blue[type="submit"]:hover {
+    background-color: #006e8f; }
+  .b-button.m-blue:focus, .b-form input.m-blue[type="submit"]:focus {
+    color: white; }
+.b-button.m-yellow, .b-form input.m-yellow[type="submit"] {
+  background-color: #C2C33B; }
+  .b-button.m-yellow:hover, .b-form input.m-yellow[type="submit"]:hover {
+    background-color: #9c9d2f; }
+  .b-button.m-yellow:focus, .b-form input.m-yellow[type="submit"]:focus {
+    color: white; }
+.b-button.m-fuschia, .b-form input.m-fuschia[type="submit"] {
+  background-color: #AD0054; }
+  .b-button.m-fuschia:hover, .b-form input.m-fuschia[type="submit"]:hover {
+    background-color: #80003e; }
+  .b-button.m-fuschia:focus, .b-form input.m-fuschia[type="submit"]:focus {
+    color: white; }
 .b-button.m-wide-padding, .b-form input.m-wide-padding[type="submit"] {
   padding-left: 80px;
   padding-right: 80px; }
@@ -4751,6 +4769,10 @@ ul.b-sidebar {
       .b-divider.m-next div a:hover h2 {
         color: white;
         transition: all .4s ease; }
+.b-divider.m-yellow {
+  background-color: #C2C33B; }
+.b-divider.m-fuschia {
+  background-color: #AD0054; }
 
 .b-sticky .e-wrap {
   max-width: 850px;
