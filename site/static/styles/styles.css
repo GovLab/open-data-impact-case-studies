@@ -4860,6 +4860,36 @@ ul.b-sidebar {
   font-weight: 600; }
   .b-page-section .e-expandable .e-read-more:hover {
     text-decoration: underline; }
+.b-page-section .e-expandable h3 {
+  font-weight: bold;
+  color: #164A7A;
+  margin-top: 30px; }
+.b-page-section .e-expandable h5 {
+  text-align: center;
+  font-size: 14px;
+  font-style: italic; }
+.b-page-section .e-expandable b {
+  font-weight: bold; }
+.b-page-section .e-expandable img {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin: 30px 0; }
+.b-page-section .e-expandable blockquote {
+  background-color: rgba(22, 74, 122, 0.05);
+  padding: 20px 20px 20px 40px;
+  position: relative; }
+  .b-page-section .e-expandable blockquote:before {
+    background-image: url("../img/quote.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 34px;
+    width: 34px;
+    background-color: #164A7A;
+    content: '';
+    position: absolute;
+    left: -17px; }
 
 .case-study-page .b-top-section {
   margin-bottom: 60px; }

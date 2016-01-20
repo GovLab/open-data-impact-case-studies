@@ -426,7 +426,7 @@
 </main>
 
 
-<div class="b-sticky m-purple m-closed" id="reference-None">
+<div class="b-sticky m-closed" id="reference-None">
     <div class="e-wrap">
         <i class="material-icons e-close js-close-sticky" data-close="#reference-None">close</i>
         <h3 class="e-title">None. None</h3>
