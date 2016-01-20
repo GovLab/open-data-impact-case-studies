@@ -4215,6 +4215,8 @@ div.e-box {
   border: solid 1px #333;
   padding: 30px;
   margin-bottom: 15px; }
+  div.e-box.m-borderless {
+    border: none; }
 
 p.m-lg {
   font-size: 20px; }
