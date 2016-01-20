@@ -11,6 +11,11 @@ $(function() {
     // more button
     $('.js-more-toggle').click(function() {
         $(this).parent().toggleClass('m-active');
+        if ($(this).parent().hasClass('m-active')) {
+            $(this).text('Show Less');
+        } else {
+            $(this).text('Read More');
+        }
     });
 
     // sidebar dynamic position behavior
