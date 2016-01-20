@@ -306,7 +306,7 @@
 
 - title: "Kenya's Open Duka"
   image: kenya.jpg
-  authors: 'Andrew Young and Stefaan Verhulst'
+  authors: '<a href="#" data-open="#reference-1">Andrew Young and Stefaan Verhulst<sup>1</sup></a>'
   description: 'Open Data for Transactional Transparency'
   impact_type: citizens # citizens | government | economic | public
   sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
@@ -317,13 +317,13 @@
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   references:
-    - number:
-      title:
-      text:
+    - number: 1
+      title: ''
+      text: 'Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to the peer reviewers [LINK TO BE ADDED] who provided input on a pre-published draft.'
 
 - title: 'Mexico’s Mejora Tu Escuela'
   image: mexico.jpg
-  authors: 'Andrew Young and Stefaan Verhulst'
+  authors: '<a href="#" data-open="#reference-1">Andrew Young and Stefaan Verhulst<sup>1</sup></a>'
   description: 'Empowering Citizens to Make Data-Driven Decisions About Education'
   impact_type: citizens # citizens | government | economic | public
   sector: education # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
@@ -334,9 +334,9 @@
 # reference format
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   references:
-    - number:
-      title:
-      text:
+    - number: 1
+      title: ''
+      text: 'Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to the peer reviewers [LINK TO BE ADDED] who provided input on a pre-published draft.'
 
 - title: "Uruguay's A Tu Servicio"
   image: uruguay.jpg
@@ -817,7 +817,7 @@
 
 - title: 'Indonesia’s Kawal Pemilu'
   image: indonesia.jpg
-  authors: 'Auralice Graft, Stefaan Verhulst and Andrew Young'
+  authors: '<a href="#" data-open="#reference-1">Auralice Graft, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
   description: 'Elections: Free, Fair and Open Data'
   impact_type: government # citizens | government | economic | public
   sector: politics # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
@@ -825,10 +825,14 @@
   read_time: 5
   full_read_time: 20
   download: case-study-indonesia.pdf
+  references:
+    - number: 1
+      title: ''
+      text: 'Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to the <a target="_blank" href="http://govlab.github.io/open-data-impact-case-studies/about.html">peer reviewers</a> who provided input on a pre-published draft.'
 
 - title: "Denmark’s Open Address Data Set"
   image: denmark.jpg
-  authors: 'Juliet McMurren, Stefaan Verhulst and Andrew Young'
+  authors: '<a href="#" data-open="#reference-1">Juliet McMurren, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
   description: 'Consolidating and freeing-up address data'
   impact_type: government # citizens | government | economic | public
   sector: geospatial # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
@@ -836,6 +840,10 @@
   read_time: 5
   full_read_time: 20
   download: case-study-denmark.pdf
+  references:
+    - number: 1
+      title: ''
+      text: 'Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to the <a target="_blank" href="http://govlab.github.io/open-data-impact-case-studies/about.html">peer reviewers</a> who provided input on a pre-published draft.'
 
 - title: "Opening Canada’s T3010 Charity Information Return Data"
   image: canada.jpg
