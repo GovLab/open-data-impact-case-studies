@@ -227,6 +227,7 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <div class="b-footnotes">
         <div class="row">
             <div class="medium-11">
@@ -239,6 +240,18 @@
         </div>
     </div>
 </main>
+=======
+<!-- {% for reference in case.references %}
+<div class="b-sticky m-closed" id="reference-{{reference.number}}">
+    <div class="e-wrap">
+        <i class="material-icons e-close js-close-sticky" data-close="#reference-{{reference.number}}">close</i>
+        <h3 class="e-title">{{reference.number}}. {{reference.title}}</h3>
+        <p>{{reference.text}}</p>
+    </div>
+</div>
+{% endfor %} -->
+{% block footnotes %}{% endblock %}
+>>>>>>> da50844d27ce5bf1322b87dc265d74b6ec6cabeb
 
 <script src="static/js/case-study-scripts.js"></script>
 

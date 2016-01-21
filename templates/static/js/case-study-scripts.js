@@ -1,11 +1,24 @@
 $(function() {
     // inline references
-    $('.b-sticky').hide();
-    $('a[data-open]').click(function() {
+    // $('.b-sticky').hide();
+    // $('a[data-open]').click(function() {
+    //     event.preventDefault();
+    //     $('.b-sticky').hide();
+    //     $($(this).attr('data-open')).removeClass('m-closed');
+    //     $($(this).attr('data-open')).fadeIn('fast');
+    // });
+
+    $('a._idFootnoteLink').click(function() {
         event.preventDefault();
-        $('.b-sticky').hide();
-        $($(this).attr('data-open')).removeClass('m-closed');
-        $($(this).attr('data-open')).fadeIn('fast');
+        var footnote = $(this).attr('href').replace(/^[^#]*/, '');
+        $('._idFootnote.m-active').removeClass('m-active');
+        $('.b-footnotes').addClass('m-active');
+        $(footnote).addClass('m-active');
+    });
+
+    $('#overlay').click(function(){
+        $('.b-footnotes').removeClass('m-active');
+        $('._idFootnote.m-active').removeClass('m-active');
     });
 
     // more button
