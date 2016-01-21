@@ -228,7 +228,7 @@
     </div>
 </main>
 
-{% for reference in case.references %}
+<!-- {% for reference in case.references %}
 <div class="b-sticky m-closed" id="reference-{{reference.number}}">
     <div class="e-wrap">
         <i class="material-icons e-close js-close-sticky" data-close="#reference-{{reference.number}}">close</i>
@@ -236,7 +236,8 @@
         <p>{{reference.text}}</p>
     </div>
 </div>
-{% endfor %}
+{% endfor %} -->
+{% block footnotes %}{% endblock %}
 
 <script src="static/js/case-study-scripts.js"></script>
 
