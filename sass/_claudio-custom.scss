@@ -40,6 +40,48 @@ $od-blue-05: rgba(22,74,122,.05);
     }
 }
 
+.b-footnotes {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    bottom: 0;
+    z-index: 10;
+    background-color: $black;
+    box-shadow: 0 0 10px $gray-40;
+    display: none;
+
+    &.m-active { display: block; }
+
+    h4 {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $white-80;
+        font-size: 16px;
+    }
+
+    ._idFootnote.m-active { display: block; }
+
+    ._idFootnote { 
+        display: none;
+        color: $white-70;
+    }
+
+    ._idFootnoteAnchor {
+        display: inline-block;
+        margin: -7px 10px;
+        padding: 2px 4px;
+        text-align: center;
+        text-decoration: none;
+        background-color: $white-30;
+        color: $white;
+        min-width: 24px;
+        height: 24px;
+        font-size: 14px;
+        border-radius: 12px;
+    }
+}
+
 // This should probably become a component.
 .b-list-of-names {
     margin: 0;
