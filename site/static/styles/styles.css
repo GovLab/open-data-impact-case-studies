@@ -4274,7 +4274,7 @@ sup.e-beta {
     max-width: 300px;
     margin: 0 auto; }
   .b-top-nav.m-transparent {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white; }
   .b-top-nav .e-nav-group {
     color: rgba(255, 255, 255, 0.5);
@@ -4852,6 +4852,41 @@ ul.b-sidebar {
   .b-quote-slide .e-author {
     font-size: 16px;
     font-style: italic; }
+
+.b-footnotes {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  bottom: 0;
+  z-index: 10;
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  display: none; }
+  .b-footnotes.m-active {
+    display: block; }
+  .b-footnotes h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px; }
+  .b-footnotes ._idFootnote.m-active {
+    display: block; }
+  .b-footnotes ._idFootnote {
+    display: none;
+    color: rgba(255, 255, 255, 0.7); }
+  .b-footnotes ._idFootnoteAnchor {
+    display: inline-block;
+    margin: -7px 10px;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    min-width: 24px;
+    height: 24px;
+    font-size: 14px;
+    border-radius: 12px; }
 
 .b-list-of-names {
   margin: 0; }
