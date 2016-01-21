@@ -1,0 +1,5 @@
+# triggers custom page generation, see /build.py
+
+# defines the context used in the template file
+# use: in the generator template file, variables should be prefixed as (context).(variable)
+context: 'case'
