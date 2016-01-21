@@ -12,9 +12,7 @@ $(function() {
     $('a._idFootnoteLink').click(function() {
         event.preventDefault();
         $('._idFootnote').hide();
-        // $($(this).attr('data-open')).removeClass('m-closed');
         var footnote = $(this).attr('href').replace(/^[^#]*/, '');
-        console.log(footnote);
         $(footnote).fadeIn('fast');
     });
 
