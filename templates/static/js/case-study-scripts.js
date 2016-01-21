@@ -1,11 +1,21 @@
 $(function() {
     // inline references
-    $('.b-sticky').hide();
-    $('a[data-open]').click(function() {
+    // $('.b-sticky').hide();
+    // $('a[data-open]').click(function() {
+    //     event.preventDefault();
+    //     $('.b-sticky').hide();
+    //     $($(this).attr('data-open')).removeClass('m-closed');
+    //     $($(this).attr('data-open')).fadeIn('fast');
+    // });
+
+    $('._idFootnote').hide();
+    $('a._idFootnoteLink').click(function() {
         event.preventDefault();
-        $('.b-sticky').hide();
-        $($(this).attr('data-open')).removeClass('m-closed');
-        $($(this).attr('data-open')).fadeIn('fast');
+        $('._idFootnote').hide();
+        // $($(this).attr('data-open')).removeClass('m-closed');
+        var footnote = $(this).attr('href').replace(/^[^#]*/, '');
+        console.log(footnote);
+        $(footnote).fadeIn('fast');
     });
 
     // more button
