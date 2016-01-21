@@ -3,15 +3,15 @@ $(document).ready(function($) {
 
     // Modal Logic
     $overlay.click(function() {
-        $('.m-active').removeClass('m-active');
+        // $('.m-active').removeClass('m-active');
         $(this).removeClass('m-active');
     });
 
 
     // Logic for Sticky
-    $('.js-close-sticky').click(function() {
-        $($(this).attr('data-close')).fadeOut('fast');
-    });
+    // $('.js-close-sticky').click(function() {
+    //     $($(this).attr('data-close')).fadeOut('fast');
+    // });
 
 
     // Main nav logic

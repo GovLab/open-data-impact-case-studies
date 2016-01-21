@@ -4867,7 +4867,7 @@ ul.b-sidebar {
   right: 0;
   padding: 20px;
   bottom: 0;
-  z-index: 10;
+  z-index: 11;
   background-color: #164A7A;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   display: none; }
