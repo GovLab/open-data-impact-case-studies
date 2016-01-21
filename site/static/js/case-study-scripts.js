@@ -8,14 +8,17 @@ $(function() {
     //     $($(this).attr('data-open')).fadeIn('fast');
     // });
 
-    $('._idFootnote').hide();
     $('a._idFootnoteLink').click(function() {
         event.preventDefault();
-        $('._idFootnote').hide();
-        // $($(this).attr('data-open')).removeClass('m-closed');
         var footnote = $(this).attr('href').replace(/^[^#]*/, '');
-        console.log(footnote);
-        $(footnote).fadeIn('fast');
+        $('._idFootnote.m-active').removeClass('m-active');
+        $('.b-footnotes').addClass('m-active');
+        $(footnote).addClass('m-active');
+    });
+
+    $('#overlay').click(function(){
+        $('.b-footnotes').removeClass('m-active');
+        $('._idFootnote.m-active').removeClass('m-active');
     });
 
     // more button
