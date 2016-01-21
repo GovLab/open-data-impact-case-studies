@@ -10,10 +10,10 @@ $od-blue-05: rgba(22,74,122,.05);
 .e-fn-ref {
     vertical-align: super;
     line-height: 0;
-    
+
     span { line-height: 0; }
 
-    a { 
+    a {
         font-size: 12px !important;
     }
 }
@@ -57,15 +57,15 @@ $od-blue-05: rgba(22,74,122,.05);
     right: 0;
     padding: 20px;
     bottom: 0;
-    z-index: 10;
+    z-index: 11;
     background-color: $od-blue;
     box-shadow: 0 0 10px $gray-40;
     display: none;
 
     &.m-active { display: block; }
 
-    .e-close { 
-        color: $white-60; 
+    .e-close {
+        color: $white-60;
         cursor: pointer;
     }
     .e-close:hover { color: $white; }
@@ -79,7 +79,7 @@ $od-blue-05: rgba(22,74,122,.05);
 
     ._idFootnote.m-active { display: block; }
 
-    ._idFootnote { 
+    ._idFootnote {
         display: none;
         color: $white-70;
         a { text-decoration: none; }
@@ -196,7 +196,7 @@ $od-blue-05: rgba(22,74,122,.05);
             padding: 0 20px 20px 40px;
             position: relative;
             text-align: right;
-            
+
             span {
                 font-weight: bold;
                 font-size: 14px;

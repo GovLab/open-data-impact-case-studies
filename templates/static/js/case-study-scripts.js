@@ -14,11 +14,19 @@ $(function() {
         $('._idFootnote.m-active').removeClass('m-active');
         $('.b-footnotes').addClass('m-active');
         $(footnote).addClass('m-active');
+        $('#overlay').addClass('m-active');
     });
 
     $('#overlay').click(function(){
         $('.b-footnotes').removeClass('m-active');
         $('._idFootnote.m-active').removeClass('m-active');
+        $('#overlay').removeClass('m-active');
+    });
+
+    $('.e-close').click(function(){
+        $('.b-footnotes').removeClass('m-active');
+        $('._idFootnote.m-active').removeClass('m-active');
+        $('#overlay').removeClass('m-active');
     });
 
     // more button
