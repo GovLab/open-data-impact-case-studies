@@ -7,6 +7,17 @@ $od-blue-05: rgba(22,74,122,.05);
     background-color: $od-blue;
 }
 
+.e-fn-ref {
+    vertical-align: super;
+    line-height: 0;
+    
+    span { line-height: 0; }
+
+    a { 
+        font-size: 12px !important;
+    }
+}
+
 // This should probably become a component.
 // Note that it @extends the b-slide component, so maybe they should be somehow linked to each other.
 
@@ -47,11 +58,17 @@ $od-blue-05: rgba(22,74,122,.05);
     padding: 20px;
     bottom: 0;
     z-index: 10;
-    background-color: $black;
+    background-color: $od-blue;
     box-shadow: 0 0 10px $gray-40;
     display: none;
 
     &.m-active { display: block; }
+
+    .e-close { 
+        color: $white-60; 
+        cursor: pointer;
+    }
+    .e-close:hover { color: $white; }
 
     h4 {
         text-transform: uppercase;
@@ -65,6 +82,8 @@ $od-blue-05: rgba(22,74,122,.05);
     ._idFootnote { 
         display: none;
         color: $white-70;
+        a { text-decoration: none; }
+        a:hover { text-decoration: underline; }
     }
 
     ._idFootnoteAnchor {
@@ -131,13 +150,13 @@ $od-blue-05: rgba(22,74,122,.05);
             &:hover { text-decoration: underline; }
         }
 
-        h3 {
+        .e-h2 {
             font-weight: bold;
             color: $od-blue;
             &:not(:first-child) { margin-top: 30px; }
         }
 
-        h5 {
+        .e-caption {
             text-align: left;
             font-size: 16px;
             font-style: italic;
@@ -151,7 +170,7 @@ $od-blue-05: rgba(22,74,122,.05);
             margin: 30px 0;
         }
 
-        blockquote {
+        .e-quote {
             background-color: $od-blue-05;
             padding: 20px 20px 20px 40px;
             position: relative;
@@ -169,7 +188,21 @@ $od-blue-05: rgba(22,74,122,.05);
                 position: absolute;
                 left: -17px;
             }
+        }
 
+        .e-quote-author {
+            margin-top: -15px;
+            background-color: $od-blue-05;
+            padding: 0 20px 20px 40px;
+            position: relative;
+            text-align: right;
+            
+            span {
+                font-weight: bold;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: $od-blue;
+            }
         }
 
 
