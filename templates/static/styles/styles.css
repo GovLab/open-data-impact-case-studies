@@ -4497,7 +4497,7 @@ main .b-divider {
       .b-top-section .e-left-box div.e-right {
         width: 200px;
         text-align: left;
-        font-weight: 600; }
+        font-weight: bold; }
   .b-top-section .e-right-box {
     margin-top: 30px;
     text-align: right; }
@@ -4999,6 +4999,11 @@ ul.b-sidebar {
   padding-top: 130px; }
 #about-page .b-page-section {
   padding-top: 50px; }
+  #about-page .b-page-section a {
+    color: #164A7A;
+    text-decoration: none; }
+    #about-page .b-page-section a:hover {
+      text-decoration: underline; }
   #about-page .b-page-section h3 {
     font-size: 18px;
     text-align: right;
