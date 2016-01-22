@@ -4825,6 +4825,10 @@ ul.b-sidebar {
     background-color: #C2C33B; }
   .grid .e-card.impact-public .e-card-inner {
     background-color: #AD0054; }
+  .grid .e-card.m-unreleased .e-card-inner {
+    background-color: rgba(0, 0, 0, 0.3); }
+    .grid .e-card.m-unreleased .e-card-inner:hover {
+      box-shadow: none; }
   .grid a:hover {
     text-decoration: none; }
 

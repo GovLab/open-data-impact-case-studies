@@ -66,8 +66,8 @@
                     </div>
                     <div class="large-5 columns end">
                         <p class="b-description">
-                           Open data is empowering citizens to take control of their lives and demand change by enabling <strong>more informed decision making</strong> and <strong>new forms of social mobilization,</strong> both in turn facilitated by new ways of communicating and accessing information.
-                           <div class="e-action">
+                         Open data is empowering citizens to take control of their lives and demand change by enabling <strong>more informed decision making</strong> and <strong>new forms of social mobilization,</strong> both in turn facilitated by new ways of communicating and accessing information.
+                         <div class="e-action">
                             <a class="b-button m-naked" href="#" id="citizens-button">Read the Case Studies<i class="material-icons">arrow_forward</i></a>
                         </div>
                     </p>
@@ -343,7 +343,14 @@
     <div class="b-page-section m-no-top-padding" id="results">
         <div class="grid">
             {% for case in cases %}
-            <div class="e-card impact-{{case.impact_type}} sector-{{case.sector}}">
+            <div class="e-card impact-{{case.impact_type}} sector-{{case.sector}} {% if case.unreleased %} m-unreleased {% endif %}">
+                {% if case.unreleased %}
+                <div class="e-card-inner">
+                    <div class="e-case-image" style="background-image: url(./static/img/banners/{{case.image}})"></div>
+                    <p class="e-case-name">{{case.title | truncate(60)}}</p>
+                    <p class="e-case-description">{{case.description | truncate(200)}}</p>
+                </div>
+                {% else %}
                 <a href="case-{{case.title | slug}}.html">
                     <div class="e-card-inner">
                         <div class="e-case-image" style="background-image: url(./static/img/banners/{{case.image}})"></div>
@@ -351,6 +358,7 @@
                         <p class="e-case-description">{{case.description | truncate(200)}}</p>
                     </div>
                 </a>
+                {% endif %}
             </div>
             <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
             {% endfor %}
