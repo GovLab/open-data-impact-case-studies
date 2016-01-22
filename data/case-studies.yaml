@@ -30,7 +30,7 @@
 
 - title: "Brazil’s Open Budget Transparency Portal"
   image: 'brazil.jpg'
-  authors: '<a href="#" data-open="#reference-1">Auralice Graft, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
+  authors: 'Auralice Graft, Stefaan Verhulst and Andrew Young'
   description: 'Making Public How Public Money Is Spent'
   impact_type: government # citizens | government | economic | public
   sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
@@ -175,7 +175,7 @@
 
 - title: 'Open Education Information In Tanzania'
   image: tanzania.jpg
-  authors: '<a href="#" data-open="#reference-1">Juliet McMurren, Stefaan Verhulst, Andrew Young and David Sangokoya<sup>1</sup></a>'
+  authors: 'Juliet McMurren, Stefaan Verhulst, Andrew Young and David Sangokoya'
   description: 'A Tale of Two Dashboards'
   impact_type: citizens # citizens | government | economic | public
   sector: education # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
@@ -306,7 +306,7 @@
 
 - title: "Kenya's Open Duka"
   image: kenya.jpg
-  authors: '<a href="#" data-open="#reference-1">Andrew Young and Stefaan Verhulst<sup>1</sup></a>'
+  authors: 'Andrew Young and Stefaan Verhulst'
   description: 'Open Data for Transactional Transparency'
   impact_type: citizens # citizens | government | economic | public
   sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
@@ -323,7 +323,7 @@
 
 - title: 'Mexico’s Mejora Tu Escuela'
   image: mexico.jpg
-  authors: '<a href="#" data-open="#reference-1">Andrew Young and Stefaan Verhulst<sup>1</sup></a>'
+  authors: 'Andrew Young and Stefaan Verhulst'
   description: 'Empowering Citizens to Make Data-Driven Decisions About Education'
   impact_type: citizens # citizens | government | economic | public
   sector: education # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
@@ -340,7 +340,7 @@
 
 - title: "Uruguay's A Tu Servicio"
   image: uruguay.jpg
-  authors: '<a href="#" data-open="#reference-1">David Sangokoya, Ali Clare, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
+  authors: 'David Sangokoya, Ali Clare, Stefaan Verhulst and Andrew Young'
   description: 'Empowering Citizens to Make Data-Driven Decisions on Health Care'
   impact_type: citizens # citizens | government | economic | public
   sector: health # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
@@ -447,7 +447,7 @@
 
 - title: 'Openaid In Sweden'
   image: sweden.jpg
-  authors: '<a href="#" data-open="#reference-1">Ali Clare, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
+  authors: 'Ali Clare, Stefaan Verhulst and Andrew Young'
   description: 'Enhanced Transparency and Accountability in Development Cooperation'
   impact_type: government # citizens | government | economic | public
   sector: philantrophy # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
@@ -659,7 +659,7 @@
 
 - title: 'Open Contracting And Procurement In Slovakia'
   image: slovakia.jpg
-  authors: '<a href="#" data-open="#reference-1">Ali Clare, David Sangokoya, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
+  authors: 'Ali Clare, David Sangokoya, Stefaan Verhulst and Andrew Young'
   description: 'Establishing Trust in Government through Open Data'
   impact_type: government # citizens | government | economic | public
   sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
@@ -817,7 +817,7 @@
 
 - title: 'Indonesia’s Kawal Pemilu'
   image: indonesia.jpg
-  authors: '<a href="#" data-open="#reference-1">Auralice Graft, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
+  authors: 'Auralice Graft, Stefaan Verhulst and Andrew Young'
   description: 'Elections: Free, Fair and Open Data'
   impact_type: government # citizens | government | economic | public
   sector: politics # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
@@ -832,7 +832,7 @@
 
 - title: "Denmark’s Open Address Data Set"
   image: denmark.jpg
-  authors: '<a href="#" data-open="#reference-1">Juliet McMurren, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
+  authors: 'Juliet McMurren, Stefaan Verhulst and Andrew Young'
   description: 'Consolidating and Freeing-up Address Data'
   impact_type: government # citizens | government | economic | public
   sector: geospatial # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
@@ -847,7 +847,7 @@
 
 - title: "Opening Canada’s T3010 Charity Information Return Data"
   image: canada.jpg
-  authors: '<a href="#" data-open="#reference-1">Juliet McMurren, Stefaan Verhulst and Andrew Young<sup>1</sup></a>'
+  authors: 'Juliet McMurren, Stefaan Verhulst and Andrew Young'
   description: 'Accountability of Charities through Open Data'
   impact_type: government # citizens | government | economic | public
   sector: philantrophy # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
