@@ -248,3 +248,146 @@ $od-blue-05: rgba(22,74,122,.05);
     }
 }
 
+
+.b-footer .e-content {
+
+    h4 { 
+        @include breakpoint($mobile-only) { text-align: center; } 
+    }
+    
+    .e-partner-logo {
+        text-align: center;
+    }
+    .e-partner-logo > img {
+        
+        @include breakpoint($mobile-only) {
+            width: 80%;
+            max-height: 300px;
+        }
+
+        width: 40%;
+    }
+}
+
+.b-copyright {
+    .e-partner-logo {
+        text-align: center;
+    }
+    .e-partner-logo > img {
+        width: 50%;
+        max-height: 200px;
+    }
+
+    .e-cc-badge {
+        // @include breakpoint($mobile-only) { margin-top: 30px; }
+    }
+}
+
+.b-copyright {
+    position: relative;
+    .e-partner-logo {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        > img {
+            max-width: 400px;
+            padding: 10px 0;
+            // max-height: 60px;
+            opacity: .5;
+            @include transition;
+            &:hover {
+                opacity: 1;
+                @include transition;
+            }
+        }
+    }
+}
+
+
+
+// .b-top-nav .e-nav-group.m-right,
+// .e-right-box,
+// ul.b-sidebar,
+// div h2::after { 
+//     @include breakpoint($mobile-only) {
+//         display: none !important; }    
+//     }
+    
+
+// .b-top-section {
+    
+
+//     h1.m-space-2,
+//     h1.m-space-1 {
+//         @include breakpoint($mobile-only) {
+//             margin-top: 80px;
+//             font-size: 30px;
+//         }
+//     }
+
+//     h2.m-sm {
+//         @include breakpoint($mobile-only) {
+//             font-size: 18px;
+//             margin: 30px 20px 20px;
+//             text-transform: capitalize;
+//         }
+//     }
+
+//     .e-left-box { 
+//         @include breakpoint($mobile-only) {
+//             text-align: center; 
+//         }
+//     }
+
+// }
+
+// .b-page-section aside h3 {
+//     @include breakpoint($mobile-only) {
+//         text-align: left;
+//         font-size: 30px;
+//     }
+// }
+
+// .b-page-section .e-last { 
+//     @include breakpoint($mobile-only) { margin: 0; }
+// }
+
+// .b-divider.m-next {
+//     @include breakpoint($mobile-only) { padding: 20px; }
+    
+//     > div {
+//         @include breakpoint($mobile-only) {
+//             width: 100%;
+//             position: static;
+//             text-align: center;
+//         }
+//     }
+
+//     h1, h2 { 
+//         @include breakpoint($mobile-only) { text-align: right; }
+//     }
+// }
+
+// .b-page-section.m-impact-section {
+//     @include breakpoint($mobile-only) { text-align: center; }
+// }
+
+// .b-page-section#enabler-icons .columns .b-button,
+// .b-page-section .columns.m-padded {
+//     @include breakpoint($mobile-only) { padding: 30px; }
+// }
+
+// .grid .e-card {
+//     @include breakpoint($mobile-only) {
+//         width: 100% !important;
+//         margin: 0 !important;
+//         text-align: center;
+//     }
+// }
+
+// .tabs-panel .b-button {
+//     @include breakpoint($mobile-only) { padding: 10px; }
+// }
+
+
+

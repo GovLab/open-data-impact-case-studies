@@ -7,7 +7,8 @@
         <div class="b-shader">
             <h1 class="m-space-2 m-sm-2">{{case.title}}</h1>
             <h2 class="m-sm">{{case.description}}</h2>
-            <h4>by {{case.authors}}</h4>
+            <h4>by {{case.authors}}<a class="_idFootnoteLink" href="#footnote-999">*</a></h4>
+            <h5></h5>
 
             <div class="row">
                 <div class="column medium-6">
@@ -395,6 +396,9 @@
                                             <div class="medium-8 large-offset-3 column">
                                                 <h4>Reference</h4>
                                                 {% block footnotes %}{% endblock %}
+                                                <div id="footnote-999" class="_idFootnote">
+                                                    <p class="e-footnote-text">{% block special_thanks %}Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to the peer reviewers <a href="odimpact.org/about">odimpact.org/about</a> who provided input on a pre-published draft.{% endblock %}</p>
+                                                </div>
                                             </div>
                                             <div class="medium-1 column">
                                                 <div class="e-close"><i class="material-icons">close</i></div>
