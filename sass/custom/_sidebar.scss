@@ -25,10 +25,10 @@ ul.b-sidebar {
     }
 
     @include breakpoint($desktop) {
-        margin: 30px 30px 0 0;
+        margin: 80px 30px 0 0;
     }
     @include breakpoint($mobile-only) {
-        margin: 0 30px 0 0;
+        margin: 73px 0 0 0;
     }
 
     &.js-scroll-fixed {

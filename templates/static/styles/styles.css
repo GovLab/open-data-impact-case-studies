@@ -4258,6 +4258,8 @@ h2.m-upper {
   @media screen and (min-width: 64.0625em) {
     .b-top-nav {
       padding: 5px 5px 10px 5px; } }
+  .b-top-nav.m-fixed {
+    position: fixed; }
   .b-top-nav .e-title {
     padding: 11px 0 0 0;
     text-align: center;
@@ -4672,7 +4674,7 @@ ul.b-sidebar {
   list-style: none;
   text-align: center;
   z-index: 2;
-  margin: 0 30px 0 0; }
+  margin: 73px 0 0 0; }
   ul.b-sidebar li {
     padding: 10px;
     color: white;
@@ -4694,7 +4696,7 @@ ul.b-sidebar {
         display: block; } }
   @media screen and (min-width: 64.0625em) {
     ul.b-sidebar {
-      margin: 30px 30px 0 0; } }
+      margin: 80px 30px 0 0; } }
   ul.b-sidebar.js-scroll-fixed {
     position: fixed;
     right: 0;

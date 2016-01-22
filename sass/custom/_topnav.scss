@@ -7,6 +7,10 @@
     @include breakpoint($desktop) { padding: 5px 5px 10px 5px; }
     @include breakpoint($mobile-only) { padding: 10px 20px 20px 20px; }
 
+    &.m-fixed {
+        position: fixed;
+    }
+
     // for text-only title
     .e-title {
         padding: 11px 0 0 0;
