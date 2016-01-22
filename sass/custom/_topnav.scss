@@ -24,7 +24,7 @@
     }
 
     .e-nav-group {
-        color: $white-50;
+        color: $white-70;
         @include transition;
 
         i.material-icons {
@@ -34,6 +34,10 @@
 
         &.m-left .e-nav-item {
             padding-top: 20px;
+        }
+
+        &.m-right {
+            font-weight: 700;
         }
 
         .e-side-logo {

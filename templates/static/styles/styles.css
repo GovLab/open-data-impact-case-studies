@@ -4269,13 +4269,15 @@ h2.m-upper {
     background-color: rgba(0, 0, 0, 0.5);
     color: white; }
   .b-top-nav .e-nav-group {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.7);
     transition: all .4s ease; }
     .b-top-nav .e-nav-group i.material-icons {
       font-size: 30px;
       cursor: pointer; }
     .b-top-nav .e-nav-group.m-left .e-nav-item {
       padding-top: 20px; }
+    .b-top-nav .e-nav-group.m-right {
+      font-weight: 700; }
     .b-top-nav .e-nav-group .e-side-logo {
       position: relative;
       top: -8px; }
