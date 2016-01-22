@@ -218,33 +218,6 @@
         }
     }
 
-    &#upcoming-section {
-        padding: 60px 0;
-        a {
-            text-decoration: none;
-            font-style: italic;
-            font-weight: 700;
-            color: $white-70;
-            @include transition;
-            &:hover {
-                color: $white;
-                @include transition;
-            }
-        }
-        h2 {
-            font-size: 28px;
-            font-weight: 800;
-        }
-        p {
-            margin: 35px 50px;
-            font-size: 22px;
-            line-height: 1.62;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
-
     &#results {
         // max-width: 75rem;
     }
