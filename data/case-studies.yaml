@@ -1264,8 +1264,8 @@
   authors:
   unreleased: true
   description: 'Coming Soon'
-  impact_type: health # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  impact_type: public # citizens | government | economic | public
+  sector: health # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location:
   read_time:
   full_read_time:
