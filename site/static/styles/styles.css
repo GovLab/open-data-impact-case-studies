@@ -4276,10 +4276,11 @@ h2.m-upper {
     .b-top-nav .e-nav-group i.material-icons {
       font-size: 30px;
       cursor: pointer; }
-    .b-top-nav .e-nav-group.m-left .e-nav-item {
-      padding-top: 20px; }
     .b-top-nav .e-nav-group.m-right {
       font-weight: 700; }
+    .b-top-nav .e-nav-group.e-social-media .e-nav-item {
+      padding-top: 15px;
+      font-size: 20px; }
     .b-top-nav .e-nav-group .e-side-logo {
       position: relative;
       top: -8px; }
@@ -4825,6 +4826,10 @@ ul.b-sidebar {
     background-color: #C2C33B; }
   .grid .e-card.impact-public .e-card-inner {
     background-color: #AD0054; }
+  .grid .e-card.m-unreleased .e-card-inner {
+    background-color: rgba(0, 0, 0, 0.3); }
+    .grid .e-card.m-unreleased .e-card-inner:hover {
+      box-shadow: none; }
   .grid a:hover {
     text-decoration: none; }
 

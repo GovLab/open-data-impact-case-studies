@@ -551,6 +551,17 @@
             </div>
             <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
             
+            <div class="e-card impact-health sector-public">
+                <a href="case-battling-ebola-in-sierra-leone.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/coming-soon.jpg)"></div>
+                        <p class="e-case-name">Battling Ebola in Sierra Leone</p>
+                        <p class="e-case-description">Coming Soon</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
         </div>
     </div>
 
