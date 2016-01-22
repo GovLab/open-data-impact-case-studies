@@ -1,5 +1,5 @@
 # footnote cleanup
-Use the following regex commands in Vim or a plugin like Vintageous to clean up broken links in the footnote section:
+Use the following regex commands in Vim or a plugin like Vintageous to clean up broken links in the footnote section.  Select the text in the footnote section, hit `:`, and paste in the following commands, in order:
 ```
 s:</span></a>([^<]*)</p>:\1</span></a></p>:g
 
