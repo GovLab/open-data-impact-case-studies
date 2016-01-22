@@ -4,14 +4,16 @@ $(document).ready(function($) {
     // Modal Logic
     $overlay.click(function() {
         // $('.m-active').removeClass('m-active');
+        $('.b-sticky').fadeOut('fast');
         $(this).removeClass('m-active');
     });
 
 
-    // Logic for Sticky
-    // $('.js-close-sticky').click(function() {
-    //     $($(this).attr('data-close')).fadeOut('fast');
-    // });
+    //Logic for Sticky
+    $overlay.addClass('m-active');
+    $('.js-close-sticky').click(function() {
+        $('.b-sticky').fadeOut('fast');
+    });
 
 
     // Main nav logic
@@ -57,12 +59,12 @@ $(document).ready(function($) {
         autoplay: true,
         autoplaySpeed: 3000,
         responsive: [
-            {
-                breakpoint: 800,
-                settings: {
-                    draggable: true,
-                }
+        {
+            breakpoint: 800,
+            settings: {
+                draggable: true,
             }
+        }
         ]
     });
 
@@ -153,12 +155,12 @@ $(document).ready(function($) {
         autoplay: true,
         autoplaySpeed: 3000,
         responsive: [
-            {
-                breakpoint: 800,
-                settings: {
-                    draggable: true,
-                }
+        {
+            breakpoint: 800,
+            settings: {
+                draggable: true,
             }
+        }
         ]
     });
 
@@ -180,13 +182,13 @@ $(document).ready(function($) {
         focusOnSelect: true,
         swipeToSlide: true,
         responsive: [
-            {
-                breakpoint: 800,
-                settings: {
-                    draggable: true,
-                    slidesToShow: 1,
-                }
+        {
+            breakpoint: 800,
+            settings: {
+                draggable: true,
+                slidesToShow: 1,
             }
+        }
         ]
     });
 });
@@ -202,7 +204,7 @@ function stripHTML(dirtyString) {
 var render = function(posts) {
     posts.feed.entries.forEach(function (element, index) {
         var title = element.title,
-            content = stripHTML(element.content);
+        content = stripHTML(element.content);
 
         if (title.length > 100) {
             title = title.substr(0, 100) + '...';
@@ -220,11 +222,11 @@ var render = function(posts) {
 
     $('.e-banner-container').each(function() {
         var $wraps = $(this).find('.b-featured-content > div.e-wrap'),
-            max = Math.max.apply(
-                null,
-                $wraps.map(function() {
-                    return $(this).outerHeight(true);
-                }).get()
+        max = Math.max.apply(
+            null,
+            $wraps.map(function() {
+                return $(this).outerHeight(true);
+            }).get()
             );
 
         $wraps.height(max);
@@ -268,8 +270,8 @@ window.Feed({
         for (var x = 0; x < width; x = x + width / 20) {
             for (var y = 0; y < height; y = y + height / 20) {
                 var px = x + Math.random() * width / 20,
-                    py = y + Math.random() * height / 20,
-                    p = {x: px, originX: px, y: py, originY: py};
+                py = y + Math.random() * height / 20,
+                p = {x: px, originX: px, y: py, originY: py};
 
                 points.push(p);
             }
@@ -278,7 +280,7 @@ window.Feed({
         // for each point find the 5 closest points
         for (var i = 0; i < points.length; i++) {
             var p1 = points[i],
-                closest = [];
+            closest = [];
 
             for(var j = 0; j < points.length; j++) {
                 var p2 = points[j];
@@ -328,7 +330,7 @@ window.Feed({
 
     function mouseMove(e) {
         var posx = 0,
-            posy = 0;
+        posy = 0;
 
         if (e.pageX || e.pageY) {
             posx = e.pageX;
