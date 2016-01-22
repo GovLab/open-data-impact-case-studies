@@ -33,7 +33,7 @@
         }
 
         &.m-left .e-nav-item {
-            padding-top: 15px;
+            padding-top: 20px;
         }
 
         .e-side-logo {
@@ -43,6 +43,7 @@
                 max-width: 75px;
             }
         }
+
         &:hover {
             color: $white;
             @include transition;
