@@ -345,37 +345,71 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             <div class="tabs-panel" id="panel2">
                 <div class="row">
-                    <div class="medium-2 large-offset-1 columns">
+                    <div class="large-2 large-offset-1 columns">
                         <a href="#" class="b-button js-filter" data-filter="*" id="see-all-btn-2">
                             See All
                         </a>
                     </div>
-                    <div class="medium-2 columns">
+                    <div class="large-2 columns">
                         <a href="#" class="b-button js-filter" id="government-filter" data-filter="impact-government">
                             <!-- <i class="material-icons m-lg">account_balance</i> -->
                             Improving Government
                         </a>
                     </div>
-                    <div class="medium-2 columns">
+                    <div class="large-2 columns">
                         <a href="#" class="b-button js-filter" id="citizens-filter" data-filter="impact-citizens">
                             <!-- <i class="material-icons m-lg">person_pin</i> -->
                             Empowering Citizens
                         </a>
                     </div>
-                    <div class="medium-2 columns">
+                    <div class="large-2 columns">
                         <a href="#" class="b-button js-filter" id="economic-filter" data-filter="impact-economic">
                             <!-- <i class="material-icons m-lg">trending_up</i> -->
                             Creating Opportunity
                         </a>
                     </div>
-                    <div class="medium-2 columns end">
+                    <div class="large-2 columns end">
                         <a href="#" class="b-button js-filter" id="public-filter" data-filter="impact-public">
                             <!-- <i class="material-icons m-lg">public</i> -->
                             Solving Public Problems
                         </a>
                     </div>
+=======
+        </div>
+        <div class="tabs-panel" id="panel2">
+            <div class="row">
+                <div class="medium-2 large-offset-1 columns">
+                    <a href="#" class="b-button js-filter" data-filter="*" id="see-all-btn-2">
+                        See All
+                    </a>
+                </div>
+                <div class="medium-2 columns">
+                    <a href="#" class="b-button js-filter" data-filter="impact-government">
+                        <!-- <i class="material-icons m-lg">account_balance</i> -->
+                        Improving Government
+                    </a>
+                </div>
+                <div class="medium-2 columns">
+                    <a href="#" class="b-button js-filter" data-filter="impact-citizens">
+                        <!-- <i class="material-icons m-lg">person_pin</i> -->
+                        Empowering Citizens
+                    </a>
+                </div>
+                <div class="medium-2 columns">
+                    <a href="#" class="b-button js-filter" data-filter="impact-economic">
+                        <!-- <i class="material-icons m-lg">trending_up</i> -->
+                        Creating Opportunity
+                    </a>
+                </div>
+                <div class="medium-2 columns end">
+                    <a href="#" class="b-button js-filter" data-filter="impact-public">
+                        <!-- <i class="material-icons m-lg">public</i> -->
+                        Solving Public Problems
+                    </a>
+>>>>>>> 2e3c2bfa0fe4655ea227dd1108df7157c1cb2ad2
                 </div>
             </div>
         </div>

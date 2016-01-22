@@ -4659,43 +4659,6 @@ main .b-divider {
   .tabs-content .b-button.selected, .tabs-content .b-form input.selected[type="submit"], .b-form .tabs-content input.selected[type="submit"] {
     background-color: rgba(0, 0, 0, 0.05); }
 
-.b-footer {
-  padding: 30px 0 45px 0; }
-  .b-footer .e-content h4 {
-    text-align: center;
-    font-size: 18px; }
-  .b-footer .e-content .e-partner-logo {
-    text-align: center; }
-    .b-footer .e-content .e-partner-logo > img {
-      max-width: 90%;
-      padding: 10px 0;
-      max-height: 60px;
-      opacity: .5;
-      transition: all .4s ease; }
-      .b-footer .e-content .e-partner-logo > img:hover {
-        opacity: 1;
-        transition: all .4s ease; }
-    .b-footer .e-content .e-partner-logo.m-lg.m-lg > img {
-      min-height: 160px;
-      min-width: 500px;
-      margin: -40px 0; }
-
-.b-copyright {
-  position: relative; }
-  .b-copyright .e-partner-logo {
-    position: absolute;
-    right: 0;
-    top: 10px; }
-    .b-copyright .e-partner-logo > img {
-      max-width: 90%;
-      padding: 10px 0;
-      max-height: 60px;
-      opacity: .5;
-      transition: all .4s ease; }
-      .b-copyright .e-partner-logo > img:hover {
-        opacity: 1;
-        transition: all .4s ease; }
-
 .b-slide .m-lr-padding, .b-quote-slide .m-lr-padding {
   margin-left: 150px;
   margin-right: 150px; }
@@ -5010,5 +4973,35 @@ ul.b-sidebar {
     font-weight: 600; }
 #about-page .b-form textarea {
   min-height: 240px; }
+
+.b-footer .e-content h4 {
+  text-align: center; }
+.b-footer .e-content .e-partner-logo {
+  text-align: center; }
+.b-footer .e-content .e-partner-logo > img {
+  width: 80%;
+  max-height: 300px;
+  width: 40%; }
+
+.b-copyright .e-partner-logo {
+  text-align: center; }
+.b-copyright .e-partner-logo > img {
+  width: 50%;
+  max-height: 200px; }
+
+.b-copyright {
+  position: relative; }
+  .b-copyright .e-partner-logo {
+    position: absolute;
+    right: 0;
+    top: 10px; }
+    .b-copyright .e-partner-logo > img {
+      max-width: 400px;
+      padding: 10px 0;
+      opacity: .5;
+      transition: all .4s ease; }
+      .b-copyright .e-partner-logo > img:hover {
+        opacity: 1;
+        transition: all .4s ease; }
 
 /*# sourceMappingURL=styles.css.map */
