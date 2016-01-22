@@ -2,3 +2,4 @@
 .sass-cache
 venv
 support/*
+templates/static/styles/styles.css.map
