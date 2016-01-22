@@ -9,6 +9,22 @@ $(function() {
         layoutMode: 'fitRows'
     });
 
+    $('#government-button').click(function() {
+        TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
+        $('#impact-tab').click();
+        $('.js-filter').removeClass('selected');
+        $('#government-filter').addClass('selected');
+        $grid.isotope({ filter : '.impact-government' });
+    });
+
+    $('#citizens-button').click(function() {
+        TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
+        $('#impact-tab').click();
+        $('.js-filter').removeClass('selected');
+        $('#citizens-filter').addClass('selected');
+        $grid.isotope({ filter : '.impact-citizens' });
+    });
+
     $('#see-all-btn').addClass('selected');
 
     $('.js-filter').click(function(){
