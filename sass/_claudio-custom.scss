@@ -123,6 +123,139 @@ $od-blue-05: rgba(22,74,122,.05);
     }
 }
 
+.b-top-section {
+    position: relative;
+    padding: 0;
+    height: 580px;
+
+
+    h1 {
+        &.m-space-1 {
+            margin-top: 250px;
+            margin-bottom: 40px;
+        }
+        &.m-space-2 {
+            margin-top: 200px;
+            margin-bottom: 0;
+        }
+        &.m-sm {
+            font-size: 28px;
+            font-weight: 600;
+        }
+        &.m-sm-2 {
+            font-size: 48px;
+            font-weight: 300;
+        }
+        & a:focus {
+            color: $white;
+        }
+    }
+
+    h2 {
+        &.m-space-1 {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+        &.m-lg {
+            max-width: 850px;
+            font-size: 38px;
+            font-weight: 300;
+            margin: 0 auto;
+        }
+        &.m-sm {
+            font-size: 25px;
+            font-weight: 300;
+        }
+        & a:focus {
+            color: $white;
+        }
+    }
+
+    h4 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .b-shader {
+        position: absolute;
+        top: 0;
+        padding: 50px 0;
+        height: 100%;
+        width: 100%;
+        // background-color: $gray-50;
+        background: linear-gradient($gray-10, $gray-90);
+        z-index: 0;
+    }
+
+    .e-left-box {
+        margin-top: 30px;
+        text-align: left;
+
+        div {
+            display: inline-block;
+
+            &.e-left {
+                width: 80px;
+                text-align: right;
+                margin-right: 15px;
+            }
+            &.e-right {
+                width: 200px;
+                text-align: left;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .e-right-box {
+        margin-top: 30px;
+        text-align: right;
+
+        p {
+            margin: 0;
+
+            &:first-child {
+                font-weight: 800;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+
+
+    i.m-lg-faded {
+        font-size: 50px;
+        color: $white-40;
+        &:hover {
+            color: $white;
+            @include transition;
+        }
+    }
+
+    &.m-hires-1 {
+        background: url('../img/home.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    &.m-hires-2 {
+        background: url('../img/nairobi.jpg') no-repeat center top;
+        background-size: cover;
+    }
+
+    &.m-light   { background-color: transparent;  color: $black;  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
 .b-page-section {
     aside h3 {
         text-align: right;
@@ -209,6 +342,24 @@ $od-blue-05: rgba(22,74,122,.05);
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .case-study-page {
     .b-top-section {

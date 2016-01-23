@@ -4427,101 +4427,6 @@ h2.m-upper {
 main .b-divider {
   padding: 60px 0; }
 
-.b-top-section {
-  position: relative;
-  padding: 0;
-  height: 580px; }
-  .b-top-section h1 {
-    display: inline-block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto; }
-    .b-top-section h1 sup.e-beta {
-      position: absolute;
-      right: -30px;
-      top: 20px;
-      color: rgba(255, 255, 255, 0.6);
-      font-size: 12px;
-      text-transform: uppercase;
-      vertical-align: super; }
-    .b-top-section h1.m-space-1 {
-      margin-top: 250px;
-      margin-bottom: 40px; }
-    .b-top-section h1.m-space-2 {
-      margin-top: 200px;
-      margin-bottom: 0; }
-    .b-top-section h1.m-sm {
-      font-size: 28px;
-      font-weight: 600; }
-    .b-top-section h1.m-sm-2 {
-      font-size: 48px;
-      font-weight: 300; }
-    .b-top-section h1 a:focus {
-      color: white; }
-    .b-top-section h1#e-main-title {
-      font-size: 48px;
-      font-weight: 600; }
-  .b-top-section h2.m-space-1 {
-    margin-top: 100px;
-    margin-bottom: 100px; }
-  .b-top-section h2.m-lg {
-    max-width: 850px;
-    font-size: 38px;
-    font-weight: 300;
-    margin: 0 auto; }
-  .b-top-section h2.m-sm {
-    font-size: 25px;
-    font-weight: 300; }
-  .b-top-section h2 a:focus {
-    color: white; }
-  .b-top-section h4 {
-    font-size: 18px;
-    font-weight: 600; }
-  .b-top-section .b-shader {
-    position: absolute;
-    top: 0;
-    padding: 50px 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
-    z-index: 0; }
-  .b-top-section .e-left-box {
-    margin-top: 30px;
-    text-align: left; }
-    .b-top-section .e-left-box div {
-      display: inline-block; }
-      .b-top-section .e-left-box div.e-left {
-        width: 80px;
-        text-align: right;
-        margin-right: 15px; }
-      .b-top-section .e-left-box div.e-right {
-        width: 200px;
-        text-align: left;
-        font-weight: bold; }
-  .b-top-section .e-right-box {
-    margin-top: 30px;
-    text-align: right; }
-    .b-top-section .e-right-box p {
-      margin: 0; }
-      .b-top-section .e-right-box p:first-child {
-        font-weight: 800;
-        text-transform: uppercase; }
-  .b-top-section i.m-lg-faded {
-    font-size: 50px;
-    color: rgba(255, 255, 255, 0.4); }
-    .b-top-section i.m-lg-faded:hover {
-      color: white;
-      transition: all .4s ease; }
-  .b-top-section.m-hires-1 {
-    background: url("../img/home.jpg") no-repeat center center;
-    background-size: cover; }
-  .b-top-section.m-hires-2 {
-    background: url("../img/nairobi.jpg") no-repeat center top;
-    background-size: cover; }
-  .b-top-section.m-light {
-    background-color: transparent;
-    color: #333; }
-
 .b-button i.m-space, .b-form input[type="submit"] i.m-space {
   line-height: 1.5; }
 .b-button.m-panel, .b-form input.m-panel[type="submit"] {
@@ -4927,6 +4832,85 @@ ul.b-sidebar {
       font-style: normal;
       line-height: 1;
       font-weight: 600; }
+
+.b-top-section {
+  position: relative;
+  padding: 0;
+  height: 580px; }
+  .b-top-section h1.m-space-1 {
+    margin-top: 250px;
+    margin-bottom: 40px; }
+  .b-top-section h1.m-space-2 {
+    margin-top: 200px;
+    margin-bottom: 0; }
+  .b-top-section h1.m-sm {
+    font-size: 28px;
+    font-weight: 600; }
+  .b-top-section h1.m-sm-2 {
+    font-size: 48px;
+    font-weight: 300; }
+  .b-top-section h1 a:focus {
+    color: white; }
+  .b-top-section h2.m-space-1 {
+    margin-top: 100px;
+    margin-bottom: 100px; }
+  .b-top-section h2.m-lg {
+    max-width: 850px;
+    font-size: 38px;
+    font-weight: 300;
+    margin: 0 auto; }
+  .b-top-section h2.m-sm {
+    font-size: 25px;
+    font-weight: 300; }
+  .b-top-section h2 a:focus {
+    color: white; }
+  .b-top-section h4 {
+    font-size: 18px;
+    font-weight: 600; }
+  .b-top-section .b-shader {
+    position: absolute;
+    top: 0;
+    padding: 50px 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
+    z-index: 0; }
+  .b-top-section .e-left-box {
+    margin-top: 30px;
+    text-align: left; }
+    .b-top-section .e-left-box div {
+      display: inline-block; }
+      .b-top-section .e-left-box div.e-left {
+        width: 80px;
+        text-align: right;
+        margin-right: 15px; }
+      .b-top-section .e-left-box div.e-right {
+        width: 200px;
+        text-align: left;
+        font-weight: 600; }
+  .b-top-section .e-right-box {
+    margin-top: 30px;
+    text-align: right; }
+    .b-top-section .e-right-box p {
+      margin: 0; }
+      .b-top-section .e-right-box p:first-child {
+        font-weight: 800;
+        text-transform: uppercase; }
+  .b-top-section i.m-lg-faded {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.4); }
+    .b-top-section i.m-lg-faded:hover {
+      color: white;
+      transition: all .4s ease; }
+  .b-top-section.m-hires-1 {
+    background: url("../img/home.jpg") no-repeat center center;
+    background-size: cover; }
+  .b-top-section.m-hires-2 {
+    background: url("../img/nairobi.jpg") no-repeat center top;
+    background-size: cover; }
+  .b-top-section.m-light {
+    background-color: transparent;
+    color: #333; }
 
 .b-page-section aside h3 {
   text-align: right;
