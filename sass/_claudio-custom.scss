@@ -51,15 +51,14 @@
     }
 
     .b-page-section {
-        .e-box, .e-box-title {
-            padding: 15px;
-            margin: 0 20px;
-            .e-bold {
-                font-weight: 600;
-            }
+        .e-bold {
+            font-weight: 600;
         }
-        .e-box-title { background-color: $od-blue-10; }
-        .e-box { background-color: $od-blue-05; }
+        .e-box {
+            padding: 30px;
+            background-color: $od-blue-05;
+        }
+        .e-box-title { font-style: italic; }
     }
 }
 
