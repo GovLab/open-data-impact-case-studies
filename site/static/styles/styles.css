@@ -4864,6 +4864,16 @@ ul.b-sidebar {
     padding: 5px 8px;
     background-color: #523080;
     font-weight: 400; }
+#case-study-page .b-page-section .e-bold,
+#open-data-impact-homepage .b-page-section .e-bold {
+  font-weight: 600; }
+#case-study-page .b-page-section .e-box,
+#open-data-impact-homepage .b-page-section .e-box {
+  padding: 30px;
+  background-color: rgba(22, 74, 122, 0.05); }
+#case-study-page .b-page-section .e-box-title,
+#open-data-impact-homepage .b-page-section .e-box-title {
+  font-style: italic; }
 
 #download-button,
 #explore-button {
