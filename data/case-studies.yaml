@@ -185,8 +185,7 @@
   read_time: 5
   full_read_time: 20
   download: case-study-tanzania.pdf
-# reference format:
-# <a href="#" data-open="#reference-n"> <sup>n</sup></a>
+
   references:
     - number: 1
       title: ''
@@ -316,8 +315,7 @@
   read_time: 5
   full_read_time: 20
   download: case-study-kenya.pdf
-# reference format:
-# <a href="#" data-open="#reference-n"> <sup>n</sup></a>
+
   references:
     - number: 1
       title: ''
@@ -333,8 +331,6 @@
   read_time: 5
   full_read_time: 20
   download: case-study-mexico.pdf
-# reference format
-# <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   references:
     - number: 1
       title: ''
@@ -350,8 +346,7 @@
   read_time: 5
   full_read_time: 20
   download: case-study-uruguay.pdf
-# reference format:
-# <a href="#" data-open="#reference-n"> <sup>n</sup></a>
+
   references:
     - number: 1
       title: ''
@@ -1207,7 +1202,7 @@
       title: 'Rose, Lee. “Reflections on CKX – The Community Knowledge Exchange Summit.” Toronto Foundation. December 2, 2014.'
       text: '<a href="https://torontofoundation.ca/news/reflections-ckx-%E2%80%93-community-knowledge-exchange-summit" target="_blank">https://torontofoundation.ca/news/reflections-ckx-%E2%80%93-community-knowledge-exchange-summit</a>'
 
-- title: 'TheyWorkForYou'
+- title: "United Kingdom's TheyWorkForYou"
   image: united-kingdom.jpg
   authors: Becky Hogge
   description: 'Taking the Long View'
@@ -1216,8 +1211,6 @@
   location: UK
   read_time: 5
   full_read_time: 20
-# reference format:
-# <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   special_thanks: false
   download: case-study-theyworkforyou.pdf
   references:
@@ -1225,7 +1218,7 @@
       title:
       text:
 
-- title: 'The Open Public Services Network'
+- title: "United Kingdom's Open Public Services Network"
   image: open-public-service-network.jpg
   authors: Becky Hogge
   description: 'New Strategies to Close the Data Gap'
@@ -1235,15 +1228,13 @@
   read_time: 5
   full_read_time: 20
   download: case-study-public-services-network.pdf
-# reference format:
-# <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   special_thanks: false
   references:
     - number:
       title:
       text:
 
-- title: 'OpenCorporates'
+- title: "United Kingdom's OpenCorporates"
   image: opencorporates.jpg
   authors: 'Becky Hogge'
   description: 'Open Data as One Small Part of the Picture'
@@ -1253,8 +1244,6 @@
   read_time: 5
   full_read_time: 20
   download: case-study-opencorporates.pdf
-# reference format:
-# <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   special_thanks: false
   references:
     - number:
@@ -1271,8 +1260,6 @@
   location:
   read_time:
   full_read_time:
-# reference format:
-# <a href="#" data-open="#reference-n"> <sup>n</sup></a>
   summary: >
   takeaways: >
   numbers: >
