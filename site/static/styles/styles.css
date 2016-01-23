@@ -4283,7 +4283,7 @@ sup.e-beta {
       font-size: 30px;
       cursor: pointer; }
     .b-top-nav .e-nav-group.m-left .e-nav-item {
-      padding-top: 15px; }
+      padding-top: 20px; }
     .b-top-nav .e-nav-group .e-side-logo {
       position: relative;
       top: -8px; }
@@ -4450,85 +4450,6 @@ sup.e-beta {
 main .b-divider {
   padding: 60px 0; }
 
-.b-top-section {
-  position: relative;
-  padding: 0;
-  height: 580px; }
-  .b-top-section h1.m-space-1 {
-    margin-top: 250px;
-    margin-bottom: 40px; }
-  .b-top-section h1.m-space-2 {
-    margin-top: 200px;
-    margin-bottom: 0; }
-  .b-top-section h1.m-sm {
-    font-size: 28px;
-    font-weight: 600; }
-  .b-top-section h1.m-sm-2 {
-    font-size: 48px;
-    font-weight: 300; }
-  .b-top-section h1 a:focus {
-    color: white; }
-  .b-top-section h2.m-space-1 {
-    margin-top: 100px;
-    margin-bottom: 100px; }
-  .b-top-section h2.m-lg {
-    max-width: 850px;
-    font-size: 38px;
-    font-weight: 300;
-    margin: 0 auto; }
-  .b-top-section h2.m-sm {
-    font-size: 25px;
-    font-weight: 300; }
-  .b-top-section h2 a:focus {
-    color: white; }
-  .b-top-section h4 {
-    font-size: 18px;
-    font-weight: 600; }
-  .b-top-section .b-shader {
-    position: absolute;
-    top: 0;
-    padding: 50px 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
-    z-index: 0; }
-  .b-top-section .e-left-box {
-    margin-top: 30px;
-    text-align: left; }
-    .b-top-section .e-left-box div {
-      display: inline-block; }
-      .b-top-section .e-left-box div.e-left {
-        width: 80px;
-        text-align: right;
-        margin-right: 15px; }
-      .b-top-section .e-left-box div.e-right {
-        width: 200px;
-        text-align: left;
-        font-weight: 600; }
-  .b-top-section .e-right-box {
-    margin-top: 30px;
-    text-align: right; }
-    .b-top-section .e-right-box p {
-      margin: 0; }
-      .b-top-section .e-right-box p:first-child {
-        font-weight: 800;
-        text-transform: uppercase; }
-  .b-top-section i.m-lg-faded {
-    font-size: 50px;
-    color: rgba(255, 255, 255, 0.4); }
-    .b-top-section i.m-lg-faded:hover {
-      color: white;
-      transition: all .4s ease; }
-  .b-top-section.m-hires-1 {
-    background: url("../img/home.jpg") no-repeat center center;
-    background-size: cover; }
-  .b-top-section.m-hires-2 {
-    background: url("../img/nairobi.jpg") no-repeat center top;
-    background-size: cover; }
-  .b-top-section.m-light {
-    background-color: transparent;
-    color: #333; }
-
 .b-button i.m-space, .b-form input[type="submit"] i.m-space {
   line-height: 1.5; }
 .b-button.m-panel, .b-form input.m-panel[type="submit"] {
@@ -4650,43 +4571,6 @@ main .b-divider {
     outline: none; }
   .tabs-content .b-button.selected, .tabs-content .b-form input.selected[type="submit"], .b-form .tabs-content input.selected[type="submit"] {
     background-color: rgba(0, 0, 0, 0.05); }
-
-.b-footer {
-  padding: 30px 0 45px 0; }
-  .b-footer .e-content h4 {
-    text-align: center;
-    font-size: 18px; }
-  .b-footer .e-content .e-partner-logo {
-    text-align: center; }
-    .b-footer .e-content .e-partner-logo > img {
-      max-width: 90%;
-      padding: 10px 0;
-      max-height: 60px;
-      opacity: .5;
-      transition: all .4s ease; }
-      .b-footer .e-content .e-partner-logo > img:hover {
-        opacity: 1;
-        transition: all .4s ease; }
-    .b-footer .e-content .e-partner-logo.m-lg.m-lg > img {
-      min-height: 160px;
-      min-width: 500px;
-      margin: -40px 0; }
-
-.b-copyright {
-  position: relative; }
-  .b-copyright .e-partner-logo {
-    position: absolute;
-    right: 0;
-    top: 10px; }
-    .b-copyright .e-partner-logo > img {
-      max-width: 90%;
-      padding: 10px 0;
-      max-height: 60px;
-      opacity: .5;
-      transition: all .4s ease; }
-      .b-copyright .e-partner-logo > img:hover {
-        opacity: 1;
-        transition: all .4s ease; }
 
 .b-slide .m-lr-padding, .b-quote-slide .m-lr-padding {
   margin-left: 150px;
@@ -4921,6 +4805,85 @@ ul.b-sidebar {
       line-height: 1;
       font-weight: 600; }
 
+.b-top-section {
+  position: relative;
+  padding: 0;
+  height: 580px; }
+  .b-top-section h1.m-space-1 {
+    margin-top: 250px;
+    margin-bottom: 40px; }
+  .b-top-section h1.m-space-2 {
+    margin-top: 200px;
+    margin-bottom: 0; }
+  .b-top-section h1.m-sm {
+    font-size: 28px;
+    font-weight: 600; }
+  .b-top-section h1.m-sm-2 {
+    font-size: 48px;
+    font-weight: 300; }
+  .b-top-section h1 a:focus {
+    color: white; }
+  .b-top-section h2.m-space-1 {
+    margin-top: 100px;
+    margin-bottom: 100px; }
+  .b-top-section h2.m-lg {
+    max-width: 850px;
+    font-size: 38px;
+    font-weight: 300;
+    margin: 0 auto; }
+  .b-top-section h2.m-sm {
+    font-size: 25px;
+    font-weight: 300; }
+  .b-top-section h2 a:focus {
+    color: white; }
+  .b-top-section h4 {
+    font-size: 18px;
+    font-weight: 600; }
+  .b-top-section .b-shader {
+    position: absolute;
+    top: 0;
+    padding: 50px 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
+    z-index: 0; }
+  .b-top-section .e-left-box {
+    margin-top: 30px;
+    text-align: left; }
+    .b-top-section .e-left-box div {
+      display: inline-block; }
+      .b-top-section .e-left-box div.e-left {
+        width: 80px;
+        text-align: right;
+        margin-right: 15px; }
+      .b-top-section .e-left-box div.e-right {
+        width: 200px;
+        text-align: left;
+        font-weight: 600; }
+  .b-top-section .e-right-box {
+    margin-top: 30px;
+    text-align: right; }
+    .b-top-section .e-right-box p {
+      margin: 0; }
+      .b-top-section .e-right-box p:first-child {
+        font-weight: 800;
+        text-transform: uppercase; }
+  .b-top-section i.m-lg-faded {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.4); }
+    .b-top-section i.m-lg-faded:hover {
+      color: white;
+      transition: all .4s ease; }
+  .b-top-section.m-hires-1 {
+    background: url("../img/home.jpg") no-repeat center center;
+    background-size: cover; }
+  .b-top-section.m-hires-2 {
+    background: url("../img/nairobi.jpg") no-repeat center top;
+    background-size: cover; }
+  .b-top-section.m-light {
+    background-color: transparent;
+    color: #333; }
+
 .b-page-section aside h3 {
   text-align: right;
   padding-right: 30px; }
@@ -5002,5 +4965,35 @@ ul.b-sidebar {
     font-weight: 600; }
 #about-page .b-form textarea {
   min-height: 240px; }
+
+.b-footer .e-content h4 {
+  text-align: center; }
+.b-footer .e-content .e-partner-logo {
+  text-align: center; }
+.b-footer .e-content .e-partner-logo > img {
+  width: 80%;
+  max-height: 300px;
+  width: 40%; }
+
+.b-copyright .e-partner-logo {
+  text-align: center; }
+.b-copyright .e-partner-logo > img {
+  width: 50%;
+  max-height: 200px; }
+
+.b-copyright {
+  position: relative; }
+  .b-copyright .e-partner-logo {
+    position: absolute;
+    right: 0;
+    top: 10px; }
+    .b-copyright .e-partner-logo > img {
+      max-width: 400px;
+      padding: 10px 0;
+      opacity: .5;
+      transition: all .4s ease; }
+      .b-copyright .e-partner-logo > img:hover {
+        opacity: 1;
+        transition: all .4s ease; }
 
 /*# sourceMappingURL=styles.css.map */
