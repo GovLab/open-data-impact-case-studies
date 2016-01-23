@@ -18,32 +18,18 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<body id="">
+<body id="case-study-page">
     
 
-    <header class="b-top-nav m-transparent">
+<!--     <header class="b-top-nav m-transparent">
 
         <div class="e-nav-group m-left e-social-media">
-<!--             <span class="e-nav-item js-nav-trigger e-nav-trigger">
-                <i class="material-icons">menu</i>
-            </span> -->
-<!--             <span class="e-nav-item m-container e-search-container">
-                <form class="b-search " action="">
-        <input class="js-search-value" type="text">
-        <input class="js-search-submit js-search-trigger e-search-trigger material-icons" type="submit" value="search">
-    </form>
-            </span> -->
             <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
         </div>
 
-<!--         <div class="e-nav-group m-right e-social-media">
-            <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
-            <a href="https://www.youtube.com/user/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-youtube-play"></i></a>
-        </div> -->
-
         <div class="e-nav-group m-right">
             <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
-            <a href="index.html#explore" class="e-nav-item" id="nav-explore"><strong>Explore</strong></a>
+            <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
             <a href="about.html" class="e-nav-item" id="nav-about">About</a>
         </div>
 
@@ -51,7 +37,27 @@
             <img src="static/img/govlab-logo-white.png" alt="">
         </a>
 
-    </header>
+    </header> -->
+
+    
+<header class="b-top-nav m-transparent m-fixed">
+
+    <div class="e-nav-group m-left e-social-media hide-for-small-only">
+        <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
+    </div>
+
+    <div class="e-nav-group m-right hide-for-small-only">
+        <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
+        <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
+        <a href="about.html" class="e-nav-item" id="nav-about">About</a>
+    </div>
+
+    <a class="e-logo" href="./">
+        <img src="static/img/govlab-logo-white.png" alt="">
+    </a>
+
+</header>
+
 
     <!-- Main Menu (Off Canvas) -->
     <nav class="b-main-menu">
@@ -64,61 +70,50 @@
 
     
 
+
 <main class="case-study-page" role="main">
 
-    <div class="b-top-section m-hires-2 m-center" style="background-image: url(./static/img/banners/kenya.jpg)">
-        <div class="b-shader">
-            <h1 class="m-space-2 m-sm-2">Kenya's Open Duka</h1>
-            <h2 class="m-sm">Open Data for Transactional Transparency</h2>
+    <div class="b-top-section" style="background-image: url(./static/img/banners/kenya.jpg)">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">Kenya's Open Duka</h1>
+            <h2 class="e-tagline">Open Data for Transactional Transparency</h2>
             <h4>by Andrew Young and Stefaan Verhulst<a class="_idFootnoteLink" href="#footnote-999">*</a></h4>
-            <h5></h5>
+            <div class="e-tags hide-for-small-only">
+                <div class="e-left">
+                    <p>Impact</p>
+                    <p>Sector</p>
+                    <p>Location</p>
+                </div>
+                <div class="e-right">
+                    <p>
+                        EMPOWERING CITIZENS
+                        
+                    </p>
+                    <p>
+                        PUBLIC SECTOR
+                        
+                    </p>
+                    <p>KENYA</p>
+                </div>
+            </div>
+            <div class="e-read-times hide-for-small-only">
+                <p>Read Time</p>
+                <p>Brief View <strong>5 MINS</strong></p>
+                <p>Full Story <strong>20 MINS</strong></p>
+            </div>
+        </hgroup>
+        <div id="download-button">
+            <a href="#explore-the-data" class="b-button m-citizens">Download The Report<i class="material-icons m-space">file_download</i></a>
+        </div>
+    </div>
 
-            <div class="row">
-                <div class="column medium-6">
-                    <div class="e-left-box">
-                        <div class="e-left">
-                            <p>Impact</p>
-                            <p>Sector</p>
-                            <p>Location</p>
-                        </div>
-                        <div class="e-right">
-                            <p>
-                                
-                                EMPOWERING CITIZENS
-                                
-                            </p>
-                            <p>
-                                
-                                PUBLIC SECTOR
-                                
-                            </p>
-                            <p>KENYA</p>
-                        </div>
-                    </div>
+                <div class="row hide-for-small-only">
+                    <ul class="b-sidebar">
+                        <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
+                    </ul>
                 </div>
 
-                <div class="column medium-6">
-                    <div class="e-right-box">
-                        <p>Read Time</p>
-                        <p>Brief View <strong>5 MINS</strong></p>
-                        <p>Full Story <strong>20 MINS</strong></p>
-                    </div>
-                    
-                    <a href="./static/files/case-study-kenya.pdf" target="_blank" class="b-button m-bottom-overlap m-orange m-detail-page">
-                        
-                                        <i class="material-icons m-space">file_download</i>
-                                        Download The Report
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <ul class="b-sidebar">
-                            <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
-                        </ul>
-                    </div>
                     
                     <section class="b-page-section">
                         <div class="row">
@@ -172,15 +167,17 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
+<div>
 <p class="e-h2">Corruption in Kenya</p>
 <p class="text">Corruption in Kenya is a major and by many indications worsening problem. In 2014, Transparency International ranked the country 145 (out of 175) in its annual Corruption Perceptions Index, down from 136 two years earlier.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-042-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-042">1</a></span></span> Recently, an official audit found that just 1 percent of government spending was properly accounted for.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-041-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-041">2</a></span></span> The average urban Kenyan pays 16 bribes a month.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-040-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-040">3</a></span></span> When Barack Obama visited the country in mid-2015, he warned of a “cancer of corruption” that was blighting the nation.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-039-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-039">4</a></span></span></p>
+</div>
 <p class="e-h2">Open Data and Technology in Kenya</p>
 <p class="text">Can open data – and technology more generally – offer a solution? Kenya is generally considered one of the most technologically advanced countries in Africa. As of 2014, Kenya had the fourth-highest Internet penetration rate in Africa with 21.3 million users, trailing only Nigeria, Egypt and South Africa.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-038-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-038">5</a></span><br /></span> Also as of 2014, almost 80 percent of Kenyans who owned cell phones (around three-quarters of the population) used them for mobile payments and banking.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-037-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-037">6</a></span></span></p>
 <p class="text">The country had an early taste of open data’s potential in combating corruption in 2005. Dr. Bitange Ndemo, a lecturer on entrepreneurship and research methods at the University of Nairobi’s Business School, worked with then-President Mwai Kibaki’s government to uncover illicit allocation of government funds by mapping distributions of the Constituency Development Funds (CDF). CDFs were supposed to spur grassroots development and distribute resources equitably across the nation. The mapping exercise, built on previously closed data, showed that funds were heavily allocated to rich areas of the country over more deserving areas. Despite its promising results, however, this initial effort to use open data met with political opposition and was soon shut down.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-036-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-036">7</a></span></span> “[The politicians] were very angry with me,” Ndemo recalls, “and within a very short time, we pulled down the website.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-035-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-035">8</a></span></span></p>
 <p class="text">In 2011, Ndemo, by then the Permanent Secretary of Information and Communications in the government, worked with a volunteer task force of technical personnel and World Bank officials to launch a new project – the Kenyan Open Data Initiative. The centerpiece of the initiative was the Kenyan Open Data Portal (<a href="https://opendata.go.ke/)"><span class="e-link">https://opendata.go.ke/)</span></a>,<span class="e-bold"> </span>the first comprehensive open data platform in sub-Saharan Africa (and the second in Africa, after Morocco’s). The portal hosts over 400 data sets from across the government, including data from the national census, data pertaining to national and regional expenditure, and information on key public services such as education, health and agriculture.</p>
 <p class="text">Determining whether the broad Kenyan Open Data Initiative, and the Data Portal in particular, had any impact is difficult given conflicting signals. On the one hand, the portal’s 44 million page views as of August 2015, for example, point to a widely used, impactful platform. Even more important than the number of page views, Linet Kwamboka, the Open Data project coordinator, announced that users have interacted with the data found on the portal – through downloads and embeds&#160;– 2.6 million times.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-034-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-034">9</a></span></span></p>
 <p class="text">That being said, prior to these milestones, critics questioned how well the information available on the platform was targeted to the needs of users. For example, a 2014 survey of relevant users found that approximately 50 percent of desired education data does not exist on the portal.<span id="footnote-033-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-033">10</a></span> The lack of many types of potentially useful data is not surprising when considering the number of government departments that have not yet opened their data. As of 2015, four years after the portal’s official launch, the site has only received data from 26 of over 83 government departments.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-032-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-032">11</a></span></span></p>
-<p class="e-caption"><img class="_idGenObjectAttribute-1" src="case-study-kenya-web-resources/image/Image3227.png" alt="" /><br /><span class="e-italic">Figure 1: Kenya’s Open Data Portal</span></p>
+<p class="e-caption"><img class="_idGenObjectAttribute-1" src="static/img/studies/kenya-0.png" alt="" /><br /><span class="e-italic">Figure 1: Kenya’s Open Data Portal</span></p>
 <p class="text">The political and legal climate in Kenya also remains somewhat ambiguous when it comes to open data. In 2013, President Uhuru Kenyatta was elected as the fourth president of Kenya. His Jubilee Party’s election manifesto had “pledged to increase transparency in government as well as promote information-sharing within public institutions.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-031-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-031">12</a></span></span> The manifesto also highlighted the importance of improved digitization of government, including “cleaning up and managing databases that will be stored in a secure and centralized location and which can be accessed and used by all ministries and branches of government … to make government more efficient.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-030-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-030">13</a></span></span></p>
 <p class="text">All of this led to hopes among open data and government transparency activists. Immediately following that initial optimism, hopes began to deflate. In 2013, the Sunlight Foundation published an article on “why Kenya’s open data portal is failing.” Many of the reasons cited – like government’s reluctance to open all potentially useful data and challenges related to the country’s constitutional devolution –&#160;created similar issues for Open Duka, as discussed below. It is worth noting, however, that much has changed for the portal since 2013, and even at the time, the piece’s author still expressed reasons for longer-term optimism.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-029-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-029">14</a></span></span> The situation surrounding the open data portal isn’t helped by the absence of a legal framework to enforce a constitutionally guaranteed freedom of information. Although the Bill of Rights includes this freedom, in fact there are no clear guidelines to guide how public bodies should make information available, what types of information should be released, and what remedies exist for violations. With that said, the surge in use of the portal – culminating in the milestones in site visits and data downloads witnessed in 2015 –&#160;is a lesson in the need for both iteration and persistence in order for open data efforts to take hold.</p>
 
@@ -218,11 +215,11 @@
 <p class="text">The platform does not itself seek to draw any connection; it just posts data, relying on its users’ investigative skills (and serendipity) to draw out the links that underlie public life in Kenya, and that often drive corruption. As Bhalla puts it: “We’re just getting all the data that is out there … and we’re putting it up there for people to make their decisions. … We’re just getting the data, scraping it, putting it up, and seeing what connections come up … and what stories can then be taught.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-026-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-026">17</a></span></span></p>
 <p class="text">Kags cites the following hypothetical example of how Open Duka might be used. Using the platform, a citizen could discover that Individual A is the director of two companies; she could then uncover the fact that Individual A’s brother directs a third company, and also happens to work with a government agency; in addition, the citizen might determine that both brothers went to school with Judge C.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-025-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-025">18</a></span></span> In this way, the citizen-user of Open Duka could possibly determine whether Individual A has used his connections (via the brother or the judge) to improperly benefit from government contracting, or engage in any other form of corruption.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-024-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-024">19</a></span></span></p>
 <p class="text">At its core, Open Duka is a platform that enables citizens to peer behind the veil of previously unknown (and unknowable) relationships that drive a variety of economic and political activities, including land purchases, tendering contracts and other regulatory decisions. When selecting a person, organization, tender, contract, court case or piece of land on the site, Open Duka provides a simple visualization of how that entity connects with others found on the platform, with additional categorized data about each entity found in the visualization displayed below. These relationships, adds Kags, “have an impact on the integrity of a country.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-023-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-023">20</a></span></span></p>
-<p class="e-img"><img class="_idGenObjectAttribute-2" src="case-study-kenya-web-resources/image/Image3267.png" alt="" /></p>
+<p class="e-img"><img class="_idGenObjectAttribute-2" src="static/img/studies/kenya-1.png" alt="" /></p>
 <p class="e-caption"><span class="e-italic">Figure 2: Visualization of an Organization’s Connections found on Open Duka</span></p>
 <p class="e-h2">Data Sources</p>
 <p class="text">As of August 2015, Open Duka includes information on 30,955 people, 3,832 organizations, 1,800 tenders, 226 contracts, 22,011 court cases and 4,418 pieces of land.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-022-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-022">21</a></span></span> The user can search across each of these six areas from a simple search bar on the main page, or enter into the platform by clicking on one of the six categories of content, at which point she is presented with a long, searchable, alphabetical list of relevant entities.</p>
-<p class="e-img"><img class="_idGenObjectAttribute-3" src="case-study-kenya-web-resources/image/Image3274.png" alt="" /></p>
+<p class="e-img"><img class="_idGenObjectAttribute-3" src="static/img/studies/kenya-2.png" alt="" /></p>
 <p class="e-caption"><span class="e-italic">Figure 3: Land Use Information Hub on Open Duka</span></p>
 <p class="text">Increased transparency around land records is seen as a particularly important piece of Open Duka’s value proposition. The goal is to allow individuals to draw connections between land parcels (where illicit funds are often parked) and entities or individuals who might not be direct owners but nonetheless have connections to the owners of the land. In addition, Open Duka’s organizers have also taken steps to include information not just on governmental stakeholders, but also private corporations. This data is often harder to access, but it is essential to drawing the necessary connections. Thus, Open Duka comprises data related, for example, to contract information, tender information and company directors (including whether the directors are involved in any court cases and whether they own land). Kags notes that Open Duka’s focus expands beyond government because “if you don’t know what a company, civil society organization, school, etc. is doing, you don’t know what they’re doing wrong and you have no way to add value.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-021-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-021">22</a></span></span></p>
 <p class="text">While some of this information originates from publicly available government databases, Open Duka’s organizers also employ a number of additional measures to supplement the information and make their databases more comprehensive. In particular, Open Duka scrapes a considerable amount of information from the media, particularly from the <span class="e-italic">Kenyan Gazette</span> (which contains near-comprehensive information on land transfers and purchases). Prior to Open Duka’s launch, the <span class="e-italic">Gazette</span> had partnered with Google to digitize all its editions; however, while the information was accessible in digital format, it was not categorized or searchable in any meaningful way. So Open Duka’s organizers approached the government and asked them for access to the digital archives of the Gazette, which was then imported into the platform.</p>
@@ -244,6 +241,7 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
+<div>
 <p class="e-h2">Intended Beneficiaries</p>
 <table id="table001" class="No-Table-Style TableOverride-1">
     <colgroup>
@@ -278,6 +276,7 @@
     </tr>
 </tbody>
 </table>
+</div>
 <p class="text">Despite considerable promise and excitement about the potential of Open Duka, its impact has in fact been quite limited to date. No systematic study has been done of the project’s impact, and the success stories that do exist have been largely anecdotal (Bhalla, for instance, refers to the “the odd success story” where “some person managed to figure out that someone was trying to con him with selling a piece of land, for example, and he managed to use Open Duka as the platform to find out that this guy is the fraudster”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-018-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-018">25</a></span></span>). Bhalla also notes that the media has benefitted from the platform, but establishing direct ties between news pieces on corruption and journalists’ use of Open Duka is a challenge (and, as of 2015, the site does not offer any illustrative examples of such uses). Ndemo believes that more effort needs to be expended to improve the media’s data literacy and capacity to create impacts as infomediaries for the public. Rather than focusing on providing sensationalistic headlines, there should be a greater focus in the media on, “[doing] the analysis that can help people understand to make decisions. … The media does not just have to look at headlines, they must synthesize the data and make it much simpler, and to do that, we need to do a lot of capacity-building on data science, data visualization.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-017-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-kenya.html#footnote-017">26</a></span></span></p>
 <p class="text">Open Duka’s limited success can in large part be attributed to the many challenges the project has encountered since its launch, notably the difficulty of sourcing data and the obstacles raised by a recent move to devolve governmental authority (explained further below).</p>
 <p class="e-h2">Seeding the Notion of Openness</p>
@@ -359,6 +358,8 @@
                     </div>
                     
 
+                    
+
                     <div class="b-page-section">
                         <div class="row">
                             <div class="large-10 large-offset-1 columns">
@@ -373,24 +374,29 @@
                     <div class="b-divider m-orange m-next js-next" js-impact="citizens" js-sector="public">
                         
                                         <div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
                                             <h1>Read Next</h1>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
                                             
                                             
                                             <a href="case-mexicos-mejora-tu-escuela.html" class="impact-citizens sector-education">
                                                 <h2>Mexico’s Mejora Tu Escuela</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -402,9 +408,11 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-openaid-in-sweden.html" class="impact-government sector-philantrophy">
                                                 <h2>Openaid In Sweden</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -416,9 +424,11 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-indonesias-kawal-pemilu.html" class="impact-government sector-politics">
                                                 <h2>Indonesia’s Kawal Pemilu</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -430,9 +440,11 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-opening-canadas-t3010-charity-information-return-data.html" class="impact-government sector-philantrophy">
                                                 <h2>Opening Canada’s T3010 Charity Information Return Data</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -444,6 +456,7 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-the-open-public-services-network.html" class="impact-government sector-education">
                                                 <h2>The Open Public Services Network</h2>
                                             </a>
@@ -451,9 +464,13 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-opencorporates.html" class="impact-government sector-business">
                                                 <h2>OpenCorporates</h2>
                                             </a>
+                                            
+                                            
+                                            
                                             
                                             
                                             
@@ -600,7 +617,7 @@
 </div>
 
                                                 <div id="footnote-999" class="_idFootnote">
-                                                    <p class="e-footnote-text">Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to the peer reviewers <a href="odimpact.org/about">odimpact.org/about</a> who provided input on a pre-published draft.</p>
+                                                    <p class="e-footnote-text">Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to <a href="odimpact.org/about">the peer reviewers</a> who provided input on a pre-published draft.</p>
                                                 </div>
                                             </div>
                                             <div class="medium-1 column">

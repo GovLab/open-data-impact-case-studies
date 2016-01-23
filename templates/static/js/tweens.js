@@ -1,16 +1,18 @@
 $(document).ready(function(){
 
-    $('#nav-explore').click(function() {
-        TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
-    });
+    // $('#nav-explore').click(function() {
+    //     TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
+    // });
 
-    $('#explore-button').click(function() {
-        TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
-    });
+$('#explore-button').click(function() {
+    TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
+});
 
-    $('#top-section-arrow').click(function() {
-        TweenLite.to(window, 0.5, {scrollTo:$('#a-section-1').offset().top, ease:Power2.easeOut});
-    });
+
+
+    // $('#top-section-arrow').click(function() {
+    //     TweenLite.to(window, 0.5, {scrollTo:$('#a-section-1').offset().top, ease:Power2.easeOut});
+    // });
 
     // enabling
 
@@ -26,10 +28,18 @@ $(document).ready(function(){
     var badge2Done = false;
     var badge3Done = false;
     var badge4Done = false;
+    var stickyDone = false;
 
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height(); // inside handler because window size could have changed between events, prob. not the fastest way
+
+        if (!stickyDone) {
+            if (scroll > 100) {
+                $('.b-sticky').fadeOut('fast');
+                $('#overlay').removeClass('m-active');
+            }
+        }
 
         if (!badge1Done) {
             // if center of window is scrolled past the top of the element

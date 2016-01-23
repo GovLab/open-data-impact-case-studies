@@ -45,6 +45,13 @@
         &.impact-government .e-card-inner { background-color: $blue; }
         &.impact-economic .e-card-inner { background-color: $yellow; }
         &.impact-public .e-card-inner { background-color: $fuschia; }
+
+        &.m-unreleased .e-card-inner {
+            background-color: $gray-30;
+            &:hover {
+                box-shadow: none;
+            }
+        }
     }
 
     a:hover {

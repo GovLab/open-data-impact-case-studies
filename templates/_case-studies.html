@@ -1,99 +1,86 @@
 {% extends "_base.html" %}
+{% block page_id %}case-study-page{% endblock %}
+{% block header %}
+<header class="b-top-nav m-transparent m-fixed">
+
+    <div class="e-nav-group m-left e-social-media hide-for-small-only">
+        <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
+    </div>
+
+    <div class="e-nav-group m-right hide-for-small-only">
+        <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
+        <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
+        <a href="about.html" class="e-nav-item" id="nav-about">About</a>
+    </div>
+
+    <a class="e-logo" href="./">
+        <img src="static/img/govlab-logo-white.png" alt="">
+    </a>
+
+</header>
+{% endblock %}
+
 {% block content %}
+
 
 <main class="case-study-page" role="main">
 
-    <div class="b-top-section m-hires-2 m-center" style="background-image: url(./static/img/banners/{{case.image}})">
-        <div class="b-shader">
-            <h1 class="m-space-2 m-sm-2">{{case.title}}</h1>
-            <h2 class="m-sm">{{case.description}}</h2>
+    <div class="b-top-section" style="background-image: url(./static/img/banners/{{case.image}})">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">{{case.title}}</h1>
+            <h2 class="e-tagline">{{case.description}}</h2>
             <h4>by {{case.authors}}<a class="_idFootnoteLink" href="#footnote-999">*</a></h4>
-            <h5></h5>
+            <div class="e-tags hide-for-small-only">
+                <div class="e-left">
+                    <p>Impact</p>
+                    <p>Sector</p>
+                    <p>Location</p>
+                </div>
+                <div class="e-right">
+                    <p>
+                        {% if case.impact_type is equalto 'citizens' %}EMPOWERING CITIZENS
+                        {% elif case.impact_type is equalto 'government' %}IMPROVING GOVERNMENT
+                        {% elif case.impact_type is equalto 'economic' %}CREATING NEW ECONOMIC OPPORTUNITIES
+                        {% elif case.impact_type is equalto 'public' %}SOLVING PUBLIC PROBLEMS
+                        {% else %}{{case.impact_type | upper}}
+                        {% endif %}
+                    </p>
+                    <p>
+                        {% if case.sector is equalto 'public' %}PUBLIC SECTOR
+                        {% elif case.sector is equalto 'philantrophy' %}PHILANTROPHY &AMP; AID
+                        {% elif case.sector is equalto 'geospatial' %}GEOSPATIAL SERVICES
+                        {% elif case.sector is equalto 'politics' %}POLITICS &AMP; ELECTIONS
+                        {% elif case.sector is equalto 'health' %}HEALTH
+                        {% elif case.sector is equalto 'education' %}EDUCATION
+                        {% elif case.sector is equalto 'emergency' %}EMERGENCY SERVICES / CRISIS RESPONSE
+                        {% elif case.sector is equalto 'law' %}LAW
+                        {% elif case.sector is equalto 'business' %}BUSINESS
+                        {% elif case.sector is equalto 'transportation' %}TRANSPORTATION
+                        {% elif case.sector is equalto 'weather' %}WEATHER
+                        {% else %}{{case.impact | upper}}
+                        {% endif %}
+                    </p>
+                    <p>{{case.location | upper}}</p>
+                </div>
+            </div>
+            <div class="e-read-times hide-for-small-only">
+                <p>Read Time</p>
+                <p>Brief View <strong>{{case.read_time}} MINS</strong></p>
+                <p>Full Story <strong>{{case.full_read_time}} MINS</strong></p>
+            </div>
+        </hgroup>
+        <div id="download-button">
+            <a href="#explore-the-data" class="b-button m-{{case.impact_type}}">Download The Report<i class="material-icons m-space">file_download</i></a>
+        </div>
+    </div>
 
-            <div class="row">
-                <div class="column medium-6">
-                    <div class="e-left-box">
-                        <div class="e-left">
-                            <p>Impact</p>
-                            <p>Sector</p>
-                            <p>Location</p>
-                        </div>
-                        <div class="e-right">
-                            <p>
-                                {% if case.impact_type is equalto 'citizens' %}
-                                EMPOWERING CITIZENS
-                                {% elif case.impact_type is equalto 'government' %}
-                                IMPROVING GOVERNMENT
-                                {% elif case.impact_type is equalto 'economic' %}
-                                CREATING NEW ECONOMIC OPPORTUNITIES
-                                {% elif case.impact_type is equalto 'public' %}
-                                SOLVING PUBLIC PROBLEMS
-                                {% else %}
-                                {{case.impact_type | upper}}
-                                {% endif %}
-                            </p>
-                            <p>
-                                {% if case.sector is equalto 'public' %}
-                                PUBLIC SECTOR
-                                {% elif case.sector is equalto 'philantrophy' %}
-                                PHILANTROPHY &AMP; AID
-                                {% elif case.sector is equalto 'geospatial' %}
-                                GEOSPATIAL SERVICES
-                                {% elif case.sector is equalto 'politics' %}
-                                POLITICS &AMP; ELECTIONS
-                                {% elif case.sector is equalto 'health' %}
-                                HEALTH
-                                {% elif case.sector is equalto 'education' %}
-                                EDUCATION
-                                {% elif case.sector is equalto 'emergency' %}
-                                EMERGENCY SERVICES / CRISIS RESPONSE
-                                {% elif case.sector is equalto 'law' %}
-                                LAW
-                                {% elif case.sector is equalto 'business' %}
-                                BUSINESS
-                                {% elif case.sector is equalto 'transportation' %}
-                                TRANSPORTATION
-                                {% elif case.sector is equalto 'weather' %}
-                                WEATHER
-                                {% else %}
-                                {{case.impact | upper}}
-                                {% endif %}
-                            </p>
-                            <p>{{case.location | upper}}</p>
-                        </div>
-                    </div>
+                <div class="row hide-for-small-only">
+                    <ul class="b-sidebar">
+                        <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
+                    </ul>
                 </div>
 
-                <div class="column medium-6">
-                    <div class="e-right-box">
-                        <p>Read Time</p>
-                        <p>Brief View <strong>{{case.read_time}} MINS</strong></p>
-                        <p>Full Story <strong>{{case.full_read_time}} MINS</strong></p>
-                    </div>
-                    {% if case.impact_type is equalto 'citizens' %}
-                    <a href="./static/files/{{case.download}}" target="_blank" class="b-button m-bottom-overlap m-orange m-detail-page">
-                        {% elif case.impact_type is equalto 'government' %}
-                        <a href="./static/files/{{case.download}}" target="_blank" class="b-button m-bottom-overlap m-blue m-detail-page">
-                            {% elif case.impact_type is equalto 'economic' %}
-                            <a href="./static/files/{{case.download}}" target="_blank" class="b-button m-bottom-overlap m-yellow m-detail-page">
-                                {% elif case.impact_type is equalto 'public' %}
-                                <a href="./static/files/{{case.download}}" target="_blank" class="b-button m-bottom-overlap m-fuschia m-detail-page">
-                                    {% else %}
-                                    <a href="./static/files/{{case.download}}" target="_blank" class="b-button m-bottom-overlap m-detail-page">
-                                        {% endif %}
-                                        <i class="material-icons m-space">file_download</i>
-                                        Download The Report
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <ul class="b-sidebar">
-                            <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
-                        </ul>
-                    </div>
                     {% if self.summary() %}
                     <section class="b-page-section">
                         <div class="row">
@@ -353,6 +340,16 @@
                     </div>
                     {% endif %}
 
+                    {% if self.full_report() %}
+                    <div class="b-page-section m-no-bottom-padding m-no-top-padding ">
+                        <div class="row">
+                            <div class="large-10 large-offset-1 columns">
+                                <p class="e-last"><a href="{% block full_report %}{% endblock %}" target="_blank"><strong>READ THE FULL REPORT</strong></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
                     <div class="b-page-section">
                         <div class="row">
                             <div class="large-10 large-offset-1 columns">
@@ -375,10 +372,14 @@
                                     <div class="b-divider m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
                                         {% endif %}
                                         <div>
-                                            <h1>Read Next</h1>
                                             {% set next = false %}
+                                            {% set first = true %}
                                             {% for casestudy in cases %}
-                                            {% if next %}
+                                            {% if next and not casestudy.unreleased %}
+                                            {% if first %}
+                                            <h1>Read Next</h1>
+                                            {% set first = false %}
+                                            {% endif %}
                                             <a href="case-{{casestudy.title|slug}}.html" class="impact-{{casestudy.impact_type}} sector-{{casestudy.sector}}">
                                                 <h2>{{casestudy.title}}</h2>
                                             </a>
@@ -397,7 +398,7 @@
                                                 <h4>Reference</h4>
                                                 {% block footnotes %}{% endblock %}
                                                 <div id="footnote-999" class="_idFootnote">
-                                                    <p class="e-footnote-text">{% block special_thanks %}Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to the peer reviewers <a href="odimpact.org/about">odimpact.org/about</a> who provided input on a pre-published draft.{% endblock %}</p>
+                                                    <p class="e-footnote-text">{% block special_thanks %}Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to <a href="odimpact.org/about">the peer reviewers</a> who provided input on a pre-published draft.{% endblock %}</p>
                                                 </div>
                                             </div>
                                             <div class="medium-1 column">

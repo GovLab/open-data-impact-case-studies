@@ -1,0 +1,391 @@
+{% extends "_base.html" %}
+{% block page_id %}odi-landing{% endblock %}
+
+{% block content %}
+<main role="main">
+
+    <div class="b-top-section m-hires-1 m-center m-landing-page m-flush-top">
+        <div class="b-shader">
+            <h1 class="m-space-1" id="e-main-title">Open Data’s Impact<sup class="e-beta">beta</sup></h1>
+            <h2 class="m-lg">Open Data is Changing the World in Four Ways</h2>
+            <a href="#" class="b-button m-dark-blue m-bottom-overlap" id="explore-button">Explore Case Studies</a>
+        </div>
+    </div>
+
+    <div class="b-page-section m-impact-section m-blue">
+        <div class="row m-spaced"></div>
+        <div class="row">
+            <span id="trigger-1"></span>
+            <div class="large-5 large-offset-1 columns">
+                <h2>Improving Government</h2>
+                <p>
+                    {{ cases | selectattr("impact_type", "equalto", "government") | list | count() }}
+                    case studies</p>
+                    <i class="material-icons m-xl-badge" id="badge-1">account_balance</i>
+                </div>
+                <div class="large-5 columns end">
+                    <p class="b-description">
+                        Open data is improving government, primarily by <strong>tackling corruption and increasing transparency,</strong> and <strong>enhancing public services</strong> and resource allocation.
+                        <div class="e-action">
+                            <a class="b-button m-naked" href="#" id="government-button">Read the Case Studies<i class="material-icons">arrow_forward</i></a>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-page-section m-impact-section m-orange">
+            <div class="row">
+                <span id="trigger-2"></span>
+                <div class="large-5 large-offset-1 columns">
+                    <h2>Empowering Citizens</h2>
+                    <p>
+                        {{ cases | selectattr("impact_type", "equalto", "citizens") | list | count() }}
+                        case studies</p>
+                        <i class="material-icons m-xl-badge m-gray" id="badge-2">person_pin</i>
+                    </div>
+                    <div class="large-5 columns end">
+                        <p class="b-description">
+                         Open data is empowering citizens to take control of their lives and demand change by enabling <strong>more informed decision making</strong> and <strong>new forms of social mobilization,</strong> both in turn facilitated by new ways of communicating and accessing information.
+                         <div class="e-action">
+                            <a class="b-button m-naked" href="#" id="citizens-button">Read the Case Studies<i class="material-icons">arrow_forward</i></a>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-page-section m-impact-section m-yellow">
+            <div class="row">
+                <span id="trigger-3"></span>
+                <div class="large-5 large-offset-1 columns">
+                    <h2>Creating Opportunity</h2>
+<!--             <p>
+                {{ cases | selectattr("impact_type", "equalto", "economic") | list | count() }}
+                case studies</p> -->
+                <p>Coming Soon</p>
+                <i class="material-icons m-xl-badge m-gray" id="badge-3">trending_up</i>
+            </div>
+            <div class="large-5 columns end">
+                <p class="b-description">
+                    Open data is creating new opportunities for citizens and organizations, by <strong>fostering innovation</strong> and <strong>promoting economic growth</strong> and job creation.<!--
+                    <div class="e-action">
+                        <a class="b-button m-naked" href="#">Read the Case Studies<i class="material-icons">arrow_forward</i></a>
+                    </div> -->
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="b-page-section m-impact-section m-fuschia">
+        <div class="row">
+            <span id="trigger-4"></span>
+            <div class="large-5 large-offset-1 columns">
+                <h2>Solving Public Problems</h2>
+<!--             <p>
+                {{ cases | selectattr("impact_type", "equalto", "public") | list | count() }}
+                case studies</p> -->
+                <p>Coming Soon</p>
+                <i class="material-icons m-xl-badge" id="badge-4">public</i>
+            </div>
+            <div class="large-5 columns end">
+                <p class="b-description">
+                    Open data is playing an increasingly important role in solving big public problems, primarily by allowing citizens and policymakers access to <strong>new forms of data-driven assessment</strong> of the problems at hand. It also <strong>enables data-driven engagement</strong> producing more targeted interventions and enhanced collaboration.
+<!--                     <div class="e-action">
+                        <a class="b-button m-naked" href="#">Read the Case Studies<i class="material-icons">arrow_forward</i></a>
+                    </div> -->
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-divider">
+        <div class="row m-center">
+            <h2 class="m-upper">The level of impact depends on four enabling conditions</h2>
+        </div>
+    </div>
+
+    <div class="b-page-section m-no-padding" id="enabler-icons" data-equalizer>
+        <div class="expanded row">
+            <div class="large-3 columns m-no-padding">
+                <a class="b-button m-panel m-icon-only" data-equalizer-watch>
+                    <i class="material-icons m-xl m-black">fullscreen</i>
+                    <p>Problem Definition</p>
+                </a>
+            </div>
+            <div class="large-3 columns m-no-padding">
+                <a class="b-button m-panel m-icon-only" data-equalizer-watch>
+                    <i class="material-icons m-xl m-black">language</i>
+                    <p>Public Infrastructure</p>
+                </a>
+            </div>
+            <div class="large-3 columns m-no-padding">
+                <a class="b-button m-panel m-icon-only" data-equalizer-watch>
+                    <i class="material-icons m-xl m-black">people_outline</i>
+                    <p>Partnerships</p>
+                </a>
+            </div>
+            <div class="large-3 columns m-no-padding">
+                <a class="b-button m-panel m-icon-only" data-equalizer-watch>
+                    <i class="material-icons m-xl m-black">assessment</i>
+                    <p>Policies &amp; Metrics</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-divider">
+        <div class="row m-center">
+            <h2 class="m-upper">Yet, there are challenges that must be overcome for Open Data projects to reach their highest potential</h2>
+        </div>
+    </div>
+
+    <div class="b-page-section m-no-padding" id="challenges-section" data-equalizer>
+        <div class="expanded row m-center">
+            <div class="large-6 columns b-divider m-dark-blue m-padded" id="readiness-button" data-equalizer-watch>
+                <h3>Readiness</h3>
+                <p>Lack of technical and human capacity at both the supply and demand side of open data hampers its impact</p>
+            </div>
+            <div class="large-6 columns b-divider m-dark-blue-2 m-padded" id="responsiveness-button" data-equalizer-watch>
+                <h3>Responsiveness</h3>
+                <p>Open data could be significantly more impactful if its release would be complemented with a commitment to act upon insights generated</p>
+            </div>
+        </div>
+        <div class="expanded row m-center" data-equalizer>
+            <div class="large-6 columns b-divider m-dark-blue-2 m-padded" id="risks-button" data-equalizer-watch>
+                <h3>Risks</h3>
+                <p>Opening up data poses risks, notably to privacy and security, that if not mitigated properly can have harmful consequences</p>
+            </div>
+            <div class="large-6 columns b-divider m-dark-blue m-padded" id="resources-button" data-equalizer-watch>
+                <h3>Resources</h3>
+                <p>Inadequate or unsustained resource allocation is one of the most common reasons for limited success or outright failure</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-page-section m-center m-purple" id="download-section" disabled>
+        <div class="row">
+            <h2>Follow our 10 Recommendations for Open Data Impact</h2>
+            <p>in order to overcome the challenges and ensure highest impact from your open data projects</p>
+        </div>
+        <div class="row">
+            <a href="#" class="b-button m-wide-padding">
+                Download the Report
+                <i class="material-icons">file_download</i>
+            </a>
+        </div>
+    </div>
+
+    <div class="b-page-section m-center m-purple" id="upcoming-section">
+        <div class="row">
+            <h2>Coming Soon</h2>
+            <p>
+                Full detail on the enabling conditions and remaining challenges as well recommendations based upon lessons learned across all case studies will be shared in our forthcoming report.
+            </p>
+            <p>
+                We will release the case studies and findings in a staged approach. Batch 1 is now available focusing on open data’s impact on government performance and citizen empowerment. Next batches, including the key findings paper will be released in February and March.
+            </p>
+            <p>
+                Follow us via <a target="_blank" href="https://twitter.com/thegovlab">@thegovlab</a> for more details. <a target="_blank" href="https://twitter.com/#odimpact">#ODimpact</a>
+            </p>
+        </div>
+    </div>
+
+    <a name="explore" id="a-explore"></a>
+
+    <div class="b-divider">
+        <div class="row m-center">
+            <h2 class="m-upper"><strong>Explore the Impact of Open Data</strong> around the world</h2>
+        </div>
+    </div>
+
+    <div class="b-page-section m-no-bottom-padding">
+        <div class="row m-center">
+            <ul class="tabs" data-tabs id="explore-tabs">
+                <li class="tabs-title is-active" id="sector-tab"><a href="#panel1">Sector</a></li>
+                <li class="tabs-title" id="impact-tab"><a href="#panel2">Impact</a></li>
+                <!-- <a href="#" class="e-side-link">Download all case studies</a> -->
+            </ul>
+        </div>
+        <div class="tabs-content" data-tabs-content="explore-tabs" id="explore-content">
+            <div class="tabs-panel is-active" id="panel1">
+                <div class="row">
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="*" id="see-all-btn">
+                            See All
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-business">
+                            Business
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-education">
+                            <!-- <i class="material-icons m-lg">school</i> -->
+                            Education
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-emergency">
+                            Emergency Services
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-geospatial">
+                            <!-- <i class="material-icons m-lg">add_location</i> -->
+                            Geospatial Services
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-health">
+                            <!-- <i class="material-icons m-lg">healing</i> -->
+                            Health
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-law">
+                            Law
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-philantrophy">
+                            <!-- <i class="material-icons m-lg">accessibility</i> -->
+                            Philantrophy &amp; Aid
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-politics">
+                            <!-- <i class="material-icons m-lg">done</i> -->
+                            Politics &amp; Elections
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-public">
+                            <!-- <i class="material-icons m-lg">domain</i> -->
+                            Public Sector
+                        </a>
+                    </div>
+
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-transportation">
+                            Transportation
+                        </a>
+                    </div>
+
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-weather">
+                            Weather
+                        </a>
+                    </div>
+                </div>
+            </div>
+<<<<<<< HEAD
+            <div class="tabs-panel" id="panel2">
+                <div class="row">
+                    <div class="large-2 large-offset-1 columns">
+                        <a href="#" class="b-button js-filter" data-filter="*" id="see-all-btn-2">
+                            See All
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" id="government-filter" data-filter="impact-government">
+                            <!-- <i class="material-icons m-lg">account_balance</i> -->
+                            Improving Government
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" id="citizens-filter" data-filter="impact-citizens">
+                            <!-- <i class="material-icons m-lg">person_pin</i> -->
+                            Empowering Citizens
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" id="economic-filter" data-filter="impact-economic">
+                            <!-- <i class="material-icons m-lg">trending_up</i> -->
+                            Creating Opportunity
+                        </a>
+                    </div>
+                    <div class="large-2 columns end">
+                        <a href="#" class="b-button js-filter" id="public-filter" data-filter="impact-public">
+                            <!-- <i class="material-icons m-lg">public</i> -->
+                            Solving Public Problems
+                        </a>
+                    </div>
+=======
+        </div>
+        <div class="tabs-panel" id="panel2">
+            <div class="row">
+                <div class="medium-2 large-offset-1 columns">
+                    <a href="#" class="b-button js-filter" data-filter="*" id="see-all-btn-2">
+                        See All
+                    </a>
+                </div>
+                <div class="medium-2 columns">
+                    <a href="#" class="b-button js-filter" data-filter="impact-government">
+                        <!-- <i class="material-icons m-lg">account_balance</i> -->
+                        Improving Government
+                    </a>
+                </div>
+                <div class="medium-2 columns">
+                    <a href="#" class="b-button js-filter" data-filter="impact-citizens">
+                        <!-- <i class="material-icons m-lg">person_pin</i> -->
+                        Empowering Citizens
+                    </a>
+                </div>
+                <div class="medium-2 columns">
+                    <a href="#" class="b-button js-filter" data-filter="impact-economic">
+                        <!-- <i class="material-icons m-lg">trending_up</i> -->
+                        Creating Opportunity
+                    </a>
+                </div>
+                <div class="medium-2 columns end">
+                    <a href="#" class="b-button js-filter" data-filter="impact-public">
+                        <!-- <i class="material-icons m-lg">public</i> -->
+                        Solving Public Problems
+                    </a>
+>>>>>>> 2e3c2bfa0fe4655ea227dd1108df7157c1cb2ad2
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-page-section m-no-top-padding" id="results">
+        <div class="grid">
+            {% for case in cases %}
+            <div class="e-card impact-{{case.impact_type}} sector-{{case.sector}}">
+                <a href="case-{{case.title | slug}}.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/{{case.image}})"></div>
+                        <p class="e-case-name">{{case.title | truncate(60)}}</p>
+                        <p class="e-case-description">{{case.description | truncate(200)}}</p>
+                    </div>
+                </a>
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="b-page-section m-hidden" id="no-results">
+        <h3>More Case Studies Coming Soon</h3>
+    </div>
+
+
+</main><!--@main-->
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
+<script src="static/js/filters.js"></script>
+<script src="static/js/tweens.js"></script>
+
+{% endblock %}

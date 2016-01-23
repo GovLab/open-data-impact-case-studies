@@ -18,32 +18,18 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<body id="">
+<body id="case-study-page">
     
 
-    <header class="b-top-nav m-transparent">
+<!--     <header class="b-top-nav m-transparent">
 
         <div class="e-nav-group m-left e-social-media">
-<!--             <span class="e-nav-item js-nav-trigger e-nav-trigger">
-                <i class="material-icons">menu</i>
-            </span> -->
-<!--             <span class="e-nav-item m-container e-search-container">
-                <form class="b-search " action="">
-        <input class="js-search-value" type="text">
-        <input class="js-search-submit js-search-trigger e-search-trigger material-icons" type="submit" value="search">
-    </form>
-            </span> -->
             <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
         </div>
 
-<!--         <div class="e-nav-group m-right e-social-media">
-            <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
-            <a href="https://www.youtube.com/user/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-youtube-play"></i></a>
-        </div> -->
-
         <div class="e-nav-group m-right">
             <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
-            <a href="index.html#explore" class="e-nav-item" id="nav-explore"><strong>Explore</strong></a>
+            <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
             <a href="about.html" class="e-nav-item" id="nav-about">About</a>
         </div>
 
@@ -51,7 +37,27 @@
             <img src="static/img/govlab-logo-white.png" alt="">
         </a>
 
-    </header>
+    </header> -->
+
+    
+<header class="b-top-nav m-transparent m-fixed">
+
+    <div class="e-nav-group m-left e-social-media hide-for-small-only">
+        <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
+    </div>
+
+    <div class="e-nav-group m-right hide-for-small-only">
+        <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
+        <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
+        <a href="about.html" class="e-nav-item" id="nav-about">About</a>
+    </div>
+
+    <a class="e-logo" href="./">
+        <img src="static/img/govlab-logo-white.png" alt="">
+    </a>
+
+</header>
+
 
     <!-- Main Menu (Off Canvas) -->
     <nav class="b-main-menu">
@@ -64,61 +70,50 @@
 
     
 
+
 <main class="case-study-page" role="main">
 
-    <div class="b-top-section m-hires-2 m-center" style="background-image: url(./static/img/banners/mexico.jpg)">
-        <div class="b-shader">
-            <h1 class="m-space-2 m-sm-2">Mexico’s Mejora Tu Escuela</h1>
-            <h2 class="m-sm">Empowering Citizens to Make Data-Driven Decisions About Education</h2>
+    <div class="b-top-section" style="background-image: url(./static/img/banners/mexico.jpg)">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">Mexico’s Mejora Tu Escuela</h1>
+            <h2 class="e-tagline">Empowering Citizens to Make Data-Driven Decisions About Education</h2>
             <h4>by Andrew Young and Stefaan Verhulst<a class="_idFootnoteLink" href="#footnote-999">*</a></h4>
-            <h5></h5>
+            <div class="e-tags hide-for-small-only">
+                <div class="e-left">
+                    <p>Impact</p>
+                    <p>Sector</p>
+                    <p>Location</p>
+                </div>
+                <div class="e-right">
+                    <p>
+                        EMPOWERING CITIZENS
+                        
+                    </p>
+                    <p>
+                        EDUCATION
+                        
+                    </p>
+                    <p>MEXICO</p>
+                </div>
+            </div>
+            <div class="e-read-times hide-for-small-only">
+                <p>Read Time</p>
+                <p>Brief View <strong>5 MINS</strong></p>
+                <p>Full Story <strong>20 MINS</strong></p>
+            </div>
+        </hgroup>
+        <div id="download-button">
+            <a href="#explore-the-data" class="b-button m-citizens">Download The Report<i class="material-icons m-space">file_download</i></a>
+        </div>
+    </div>
 
-            <div class="row">
-                <div class="column medium-6">
-                    <div class="e-left-box">
-                        <div class="e-left">
-                            <p>Impact</p>
-                            <p>Sector</p>
-                            <p>Location</p>
-                        </div>
-                        <div class="e-right">
-                            <p>
-                                
-                                EMPOWERING CITIZENS
-                                
-                            </p>
-                            <p>
-                                
-                                EDUCATION
-                                
-                            </p>
-                            <p>MEXICO</p>
-                        </div>
-                    </div>
+                <div class="row hide-for-small-only">
+                    <ul class="b-sidebar">
+                        <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
+                    </ul>
                 </div>
 
-                <div class="column medium-6">
-                    <div class="e-right-box">
-                        <p>Read Time</p>
-                        <p>Brief View <strong>5 MINS</strong></p>
-                        <p>Full Story <strong>20 MINS</strong></p>
-                    </div>
-                    
-                    <a href="./static/files/case-study-mexico.pdf" target="_blank" class="b-button m-bottom-overlap m-orange m-detail-page">
-                        
-                                        <i class="material-icons m-space">file_download</i>
-                                        Download The Report
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <ul class="b-sidebar">
-                            <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
-                        </ul>
-                    </div>
                     
                     <section class="b-page-section">
                         <div class="row">
@@ -173,8 +168,10 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
+<div>
 <p class="e-h2">Education in Mexico</p>
 <p class="text">For years, education in Mexico has been substandard and generally lagged behind standards in other, comparable countries. This poor performance cannot be attributed to a lack of budgetary resources – Mexico spends a larger portion of its budget on education than any other member of the Organization of Economic Cooperation and Development (OECD). It is important to note, though, that, at least in part, this is due to the higher number of Mexican children who pass through the public school system than other OECD countries.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-055-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-055">1</a></span> </span>But while that money has led to nearly universal basic education, outcomes remain stubbornly poor. Mexico’s graduation rates are near the bottom of OECD countries, with fewer than half of students earning a high school diploma.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-054-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-054">2</a></span> </span>In addition, Mexican students perform poorly in international comparative tests of math, science and reading skills<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-053-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-053">3</a></span></span>, and, according to a recent study, 80 percent of teachers failed an evaluation exam designed to test their competencies.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-052-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-052">4</a></span></span></p>
+</div>
 <p class="text">While Mexico’s education system has been generously funded, it has suffered over the years from endemic corruption. The scale of corruption is difficult to calculate, but it is by all accounts massive. Last year, an “abuse meter” – a giant electronic signboard erected in the capital by activists that tries to update in real time the amount of waste&#160;–&#160;estimated that at least $2.8 billion are lost to corruption every year in the education sector. The year the billboard was erected, it showed more than $33 million lost in just the first week of the school year.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-051-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-051">5</a></span></span></p>
 <p class="text"><a id="_idTextAnchor000"></a>The corruption takes many forms: ghost teachers on payrolls, preselling of exam results, officials with lavish lifestyles, teachers demanding bribes to give good grades and candidate teachers bribing to pass training tests. The rot is widespread and, increasingly, widely recognized. One activist recently referred to corruption in the education system as “the robbery of the century.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-050-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-050">6</a></span></span> A 2009 report from Transparency International found that the average household paid an additional $30 per year for their children’s education, despite that education being “constitutionally free.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-049-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-049">7</a></span> </span>In 2010, Transparencia Mexicana’s National Index on Corruption and Governance found that parents paid a bribe 3.5 percent of the time when seeking an enrollment form for a public school.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-048-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-048">8</a></span></span></p>
 <p class="e-h2">Information and Open Data in Mexico</p>
@@ -221,7 +218,7 @@
 <p class="text">Compare Your School –&#160;allows parents to compare their child’s school to others in the same area, complete with an assigned school grade. The hope is that this piece of the platform will “get competition going between public schools.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-032-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-032">24</a></span></span></p>
 <p class="text">Grade Your School – asks parents and other members of the school community to rate different aspects of a school on a scale of one-to-ten, and leave comments. This information is then fed into the Get to Know Your School stream of information.</p>
 <p class="text">Improve Your School – in its current form, Improve Your School provides “concrete tools and suggestions to parents on how to participate in addressing problems in their child’s school.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-031-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-031">25</a></span></span> In the future, this section will also be able to suggest concrete actions to parents or teachers based on the hyper-local needs identified (through crowdsourced reporting and/or existing data) for a given school.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-030-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-030">26</a></span></span></p>
-<p class="text"><span class="e-bold"><img class="_idGenObjectAttribute-1" src="case-study-mexico-web-resources/image/Image3951.png" alt="../Desktop/Screen%20Shot%202015-08-20%20at%207.13.00%20PM.png" /></span></p>
+<p class="text"><span class="e-bold"><img class="_idGenObjectAttribute-1" src="static/img/studies/mexico-0.png" alt="Figure 1" /></span></p>
 <p class="e-caption">Figure 1: Mejora Tu Escuela</p>
 <p class="e-h2">Get to Know Your School and Compare Your School</p>
 <p class="text">C<a id="_idTextAnchor001"></a>urrently, Mejora Tu Escuela is populated by around 25 databases, with new databases being added as they are made available by the Ministry of Education. Pablo Clark, a content developer at IMCO, notes that likely the most important database is the 2013 census, which includes information about school infrastructure, the number of students in schools, the number of teachers, the names of principals, school locations and contact details (including phone number and email address, if they have one).<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-029-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-029">27</a></span> </span>Additional information is drawn from standardized test results, teacher assessments and other data focused on the educational proficiency of schools.</p>
@@ -267,7 +264,7 @@
     <li class="e-list">The report uncovered 536 telesecundarias, or secondary and high school programs available in rural areas via satellite, that apparently operated without electricity. The report also showed that there existed a large number of “phantom schools” that were unregistered (and thus possibly nonexistent), yet that had several teachers on payroll.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-013-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-013">43</a></span></span></li>
     <li class="e-list">Prior to the report’s public release, 10 states initiated audits, and teacher payrolls are now being funded by the federal government instead of state governments. Zapata Hojel hopes to see more “very clear policy results.” She adds: “We remain optimistic that things will slowly start to change. Our hope is that more monitoring of these information sources will begin to change how money is spent in this sector in Mexico.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-012-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-012">44</a></span></span></li>
 </ul>
-<p class="e-img"><img class="_idGenObjectAttribute-2" src="case-study-mexico-web-resources/image/Image3995.png" alt="https://lh3.googleusercontent.com/PaxMEZWMRT5OGilRZsrA4DLAJbEvtLyYfsUT-llj0qDAfxKpEAVjpESWXamK8sv90r8yezsbi8GNFgQYhBSVWxxmGq9X8P0ztr2vaYUeF7o2NsDm2UkfybLZVveXXWqdRDnCW3U" /></p>
+<p class="e-img"><img class="_idGenObjectAttribute-2" src="static/img/studies/mexico-1.png" alt="Figure 2" /></p>
 <p class="e-caption">Figure 2: A parent thanks Mejora Tu Escuela for granting access to school information</p>
 
                                     <span class="e-read-more js-more-toggle">Read More</span>
@@ -338,6 +335,8 @@
                     </div>
                     
 
+                    
+
                     <div class="b-page-section">
                         <div class="row">
                             <div class="large-10 large-offset-1 columns">
@@ -352,27 +351,32 @@
                     <div class="b-divider m-orange m-next js-next" js-impact="citizens" js-sector="education">
                         
                                         <div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
                                             <h1>Read Next</h1>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
                                             
                                             
                                             <a href="case-uruguays-a-tu-servicio.html" class="impact-citizens sector-health">
                                                 <h2>Uruguay's A Tu Servicio</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -384,9 +388,11 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-open-contracting-and-procurement-in-slovakia.html" class="impact-government sector-public">
                                                 <h2>Open Contracting And Procurement In Slovakia</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -398,9 +404,11 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-denmarks-open-address-data-set.html" class="impact-government sector-geospatial">
                                                 <h2>Denmark’s Open Address Data Set</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -412,9 +420,11 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-theyworkforyou.html" class="impact-government sector-public">
                                                 <h2>TheyWorkForYou</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -426,9 +436,13 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-opencorporates.html" class="impact-government sector-business">
                                                 <h2>OpenCorporates</h2>
                                             </a>
+                                            
+                                            
+                                            
                                             
                                             
                                             
@@ -615,7 +629,7 @@
 
                                                 <div id="footnote-999" class="_idFootnote">
                                                     <p class="e-footnote-text">
-Special thanks to Akash Kapur who provided crucial editorial support for this case study, Rebecca Young and Irene Tello-Arista who provided important research support, and the peer reviewers <a href="odimpact.org/about">odimpact.org/about</a> who provided input on a pre-published draft.
+Special thanks to Akash Kapur who provided crucial editorial support for this case study, Rebecca Young and Irene Tello-Arista who provided important research support, and <a href="odimpact.org/about">the peer reviewers</a> who provided input on a pre-published draft.
 </p>
                                                 </div>
                                             </div>

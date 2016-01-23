@@ -18,32 +18,18 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<body id="">
+<body id="case-study-page">
     
 
-    <header class="b-top-nav m-transparent">
+<!--     <header class="b-top-nav m-transparent">
 
         <div class="e-nav-group m-left e-social-media">
-<!--             <span class="e-nav-item js-nav-trigger e-nav-trigger">
-                <i class="material-icons">menu</i>
-            </span> -->
-<!--             <span class="e-nav-item m-container e-search-container">
-                <form class="b-search " action="">
-        <input class="js-search-value" type="text">
-        <input class="js-search-submit js-search-trigger e-search-trigger material-icons" type="submit" value="search">
-    </form>
-            </span> -->
             <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
         </div>
 
-<!--         <div class="e-nav-group m-right e-social-media">
-            <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
-            <a href="https://www.youtube.com/user/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-youtube-play"></i></a>
-        </div> -->
-
         <div class="e-nav-group m-right">
             <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
-            <a href="index.html#explore" class="e-nav-item" id="nav-explore"><strong>Explore</strong></a>
+            <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
             <a href="about.html" class="e-nav-item" id="nav-about">About</a>
         </div>
 
@@ -51,7 +37,27 @@
             <img src="static/img/govlab-logo-white.png" alt="">
         </a>
 
-    </header>
+    </header> -->
+
+    
+<header class="b-top-nav m-transparent m-fixed">
+
+    <div class="e-nav-group m-left e-social-media hide-for-small-only">
+        <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
+    </div>
+
+    <div class="e-nav-group m-right hide-for-small-only">
+        <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
+        <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
+        <a href="about.html" class="e-nav-item" id="nav-about">About</a>
+    </div>
+
+    <a class="e-logo" href="./">
+        <img src="static/img/govlab-logo-white.png" alt="">
+    </a>
+
+</header>
+
 
     <!-- Main Menu (Off Canvas) -->
     <nav class="b-main-menu">
@@ -64,61 +70,50 @@
 
     
 
+
 <main class="case-study-page" role="main">
 
-    <div class="b-top-section m-hires-2 m-center" style="background-image: url(./static/img/banners/uruguay.jpg)">
-        <div class="b-shader">
-            <h1 class="m-space-2 m-sm-2">Uruguay's A Tu Servicio</h1>
-            <h2 class="m-sm">Empowering Citizens to Make Data-Driven Decisions on Health Care</h2>
+    <div class="b-top-section" style="background-image: url(./static/img/banners/uruguay.jpg)">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">Uruguay's A Tu Servicio</h1>
+            <h2 class="e-tagline">Empowering Citizens to Make Data-Driven Decisions on Health Care</h2>
             <h4>by David Sangokoya, Ali Clare, Stefaan Verhulst and Andrew Young<a class="_idFootnoteLink" href="#footnote-999">*</a></h4>
-            <h5></h5>
+            <div class="e-tags hide-for-small-only">
+                <div class="e-left">
+                    <p>Impact</p>
+                    <p>Sector</p>
+                    <p>Location</p>
+                </div>
+                <div class="e-right">
+                    <p>
+                        EMPOWERING CITIZENS
+                        
+                    </p>
+                    <p>
+                        HEALTH
+                        
+                    </p>
+                    <p>URUGUAY</p>
+                </div>
+            </div>
+            <div class="e-read-times hide-for-small-only">
+                <p>Read Time</p>
+                <p>Brief View <strong>5 MINS</strong></p>
+                <p>Full Story <strong>20 MINS</strong></p>
+            </div>
+        </hgroup>
+        <div id="download-button">
+            <a href="#explore-the-data" class="b-button m-citizens">Download The Report<i class="material-icons m-space">file_download</i></a>
+        </div>
+    </div>
 
-            <div class="row">
-                <div class="column medium-6">
-                    <div class="e-left-box">
-                        <div class="e-left">
-                            <p>Impact</p>
-                            <p>Sector</p>
-                            <p>Location</p>
-                        </div>
-                        <div class="e-right">
-                            <p>
-                                
-                                EMPOWERING CITIZENS
-                                
-                            </p>
-                            <p>
-                                
-                                HEALTH
-                                
-                            </p>
-                            <p>URUGUAY</p>
-                        </div>
-                    </div>
+                <div class="row hide-for-small-only">
+                    <ul class="b-sidebar">
+                        <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
+                    </ul>
                 </div>
 
-                <div class="column medium-6">
-                    <div class="e-right-box">
-                        <p>Read Time</p>
-                        <p>Brief View <strong>5 MINS</strong></p>
-                        <p>Full Story <strong>20 MINS</strong></p>
-                    </div>
-                    
-                    <a href="./static/files/case-study-uruguay.pdf" target="_blank" class="b-button m-bottom-overlap m-orange m-detail-page">
-                        
-                                        <i class="material-icons m-space">file_download</i>
-                                        Download The Report
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <ul class="b-sidebar">
-                            <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
-                        </ul>
-                    </div>
                     
                     <section class="b-page-section">
                         <div class="row">
@@ -203,10 +198,10 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
-<p class="e-img"><img class="_idGenObjectAttribute-1" src="case-study-uruguay-web-resources/image/Image5696.png" alt="Screen Shot 2015-07-14 at 12.38.53 PM.png" /></p>
+<p class="e-img"><img class="_idGenObjectAttribute-1" src="static/img/studies/uruguay-0.png" alt="Figure 1" /></p>
 <p class="e-caption">Figure 1: A Tu Servicio home page</p>
 <p class="text">First launched as a pilot program in February 2015 by DATA Uruguay and the Ministry of Health, A Tu Servicio is a Web application based on open government data that provides easily digestible, searchable and visualized infographics of key performance indicators such as facility type, available medical specialties, procedures performed, wait times, goals of care, patient rights and human resources. This platform allows users to compare these indicators across all health care providers in the country, enabling users to make well-informed decisions about their health care providers through machine-readable, interoperable and accessible data that was previously unavailable. For example, users can search across public health care providers (such as Medica Uruguaya and CAMCEL) and private providers (such as Blue Cross Blue Shield) in Montevideo and compare data on the cost of birth control, average wait times and patient satisfaction. Such comparisons can allow a citizen to decide whether to stick with his or her current provider or switch to a new one. Enabling this type of comparison was not always easy, however, since, as Scrollini notes, “private providers were the worst in terms of compliance when sending the data to the Ministry.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-029-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-uruguay.html#footnote-029">7</a></span></span></p>
-<p class="e-img"><img class="_idGenObjectAttribute-2" src="case-study-uruguay-web-resources/image/Image5706.png" alt="Screen Shot 2015-07-14 at 12.52.40 PM.png" /></p>
+<p class="e-img"><img class="_idGenObjectAttribute-2" src="static/img/studies/uruguay-1.png" alt="Figure 2" /></p>
 <p class="e-caption">Figure 2: A Tu Servicio health service comparisons</p>
 <p class="text">The project emerged from a public consultation between the government and DATA Uruguay, a volunteer-based civil society organization committed to promoting open data, transparency, and access to information (<a href="http://datauy.org/"><span class="e-link">http://datauy.org/</span></a>). In 2013, DATA Uruguay had begun working with 180 Ciencia, a journalism portal, to create the application “Temporada de pases”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-028-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-uruguay.html#footnote-028">8</a></span></span> (“Transfer season”) as part of a public service project to inform and empower citizens considering changing health care providers. The application relied on existing data published by the Ministry of Health; however, that data was generally of poor quality, often available only in closed formats, and included little metadata. The need for more open health care data quickly became apparent.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-027-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-uruguay.html#footnote-027">9</a></span></span></p>
 <p class="text">Spurred by the evident shortcomings of the “Temporada de pases” application, the Ministry of Health initiated a discussion with Data Uruguay about ways to make more data available to citizens. This discussion, held under the auspices of the ongoing Open Government Partnership (OGP) roundtable discussions about the Alliance for Open Government, soon resulted in a modest government grant (about $13,000) to create a pilot application that later became A Tu Servicio.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-026-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-uruguay.html#footnote-026">10</a></span></span> DATA Uruguay also won additional funding from Avina Americas, an organization promoting sustainable development,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-025-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-uruguay.html#footnote-025">11</a></span></span> and the Iniciativa Latinoamericana por los Datos Abiertos (“Latin American Open Data Initiative,” ILDA), a network of organizations seeking to promote research on and use of open data in the region.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-024-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-uruguay.html#footnote-024">12</a></span></span></p>
@@ -358,6 +353,8 @@
                     </div>
                     
 
+                    
+
                     <div class="b-page-section">
                         <div class="row">
                             <div class="large-10 large-offset-1 columns">
@@ -372,30 +369,35 @@
                     <div class="b-divider m-orange m-next js-next" js-impact="citizens" js-sector="health">
                         
                                         <div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
                                             <h1>Read Next</h1>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
                                             
                                             
                                             <a href="case-openaid-in-sweden.html" class="impact-government sector-philantrophy">
                                                 <h2>Openaid In Sweden</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -407,9 +409,11 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-indonesias-kawal-pemilu.html" class="impact-government sector-politics">
                                                 <h2>Indonesia’s Kawal Pemilu</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -421,9 +425,11 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-opening-canadas-t3010-charity-information-return-data.html" class="impact-government sector-philantrophy">
                                                 <h2>Opening Canada’s T3010 Charity Information Return Data</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -435,6 +441,7 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-the-open-public-services-network.html" class="impact-government sector-education">
                                                 <h2>The Open Public Services Network</h2>
                                             </a>
@@ -442,9 +449,13 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-opencorporates.html" class="impact-government sector-business">
                                                 <h2>OpenCorporates</h2>
                                             </a>
+                                            
+                                            
+                                            
                                             
                                             
                                             
@@ -569,7 +580,7 @@
 </div>
 
                                                 <div id="footnote-999" class="_idFootnote">
-                                                    <p class="e-footnote-text">Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to the peer reviewers <a href="odimpact.org/about">odimpact.org/about</a> who provided input on a pre-published draft.</p>
+                                                    <p class="e-footnote-text">Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to <a href="odimpact.org/about">the peer reviewers</a> who provided input on a pre-published draft.</p>
                                                 </div>
                                             </div>
                                             <div class="medium-1 column">

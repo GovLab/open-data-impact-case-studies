@@ -1,9 +1,79 @@
 .b-sticky {
-    .e-wrap {
-        max-width: 850px;
-        margin: 0 auto;
+    z-index: 11;
+    &#upcoming-section {
+        background-color: $purple-90;
+        color: $white;
+        @include breakpoint($mobile-only) {
+            padding: 20px 0;
+        }
+        @include breakpoint($desktop) {
+            padding: 60px 0;
+        }
+        .row {
+            max-width: 85%;
+            a {
+                text-decoration: none;
+                font-style: italic;
+                font-weight: 700;
+                color: $white-70;
+                @include transition;
+                &:hover {
+                    color: $white;
+                    @include transition;
+                }
+            }
+            h2 {
+                font-size: 28px;
+                font-weight: 800;
+            }
+            p {
+                margin: 35px 50px;
+                font-size: 20px;
+                line-height: 1.62;
+                &:last-of-type:not(:only-of-type) {
+                    font-size: 18px;
+                    margin-bottom: 0;
+                }
+            }
+
+
+            @include breakpoint($mobile-only) {
+                text-align: left;
+                p, h2 {
+                    display: block;
+                    &:last-of-type:not(:only-of-type) {
+                        display: none;
+                    }
+                }
+                h2 {
+                    margin: 35px 50px;
+                }
+            }
+
+            @include breakpoint($desktop) {
+                text-align: right;
+                p {
+                    display: inline;
+                    &:last-of-type:not(:only-of-type) {
+                        display: block;
+                        margin: 0 40px;
+                    }
+                }
+                h2 {
+                    display: inline;
+                    margin: 0;
+                }
+            }
+        }
     }
-    &.m-closed {
-        opacity: 0;
+
+    i.e-close {
+        position: absolute;
+        right: 50px;
+        cursor: pointer;
     }
+
+
+
+
 }

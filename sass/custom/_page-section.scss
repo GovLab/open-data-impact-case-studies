@@ -72,7 +72,7 @@
 
         // p:not(:first-of-type) { display: none; }
 
-        > p:first-of-type { display: block; }
+        // > p:first-of-type { display: block; }
 
         > p:only-of-type ~ .b-button { display: none; }
 
@@ -215,33 +215,6 @@
         }
         .b-button {
             margin: 40px 0 0 0;
-        }
-    }
-
-    &#upcoming-section {
-        padding: 60px 0;
-        a {
-            text-decoration: none;
-            font-style: italic;
-            font-weight: 700;
-            color: $white-70;
-            @include transition;
-            &:hover {
-                color: $white;
-                @include transition;
-            }
-        }
-        h2 {
-            font-size: 28px;
-            font-weight: 800;
-        }
-        p {
-            margin: 35px 50px;
-            font-size: 22px;
-            line-height: 1.62;
-            &:last-child {
-                margin-bottom: 0;
-            }
         }
     }
 

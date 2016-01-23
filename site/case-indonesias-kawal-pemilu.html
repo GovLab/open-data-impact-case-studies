@@ -18,32 +18,18 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<body id="">
+<body id="case-study-page">
     
 
-    <header class="b-top-nav m-transparent">
+<!--     <header class="b-top-nav m-transparent">
 
         <div class="e-nav-group m-left e-social-media">
-<!--             <span class="e-nav-item js-nav-trigger e-nav-trigger">
-                <i class="material-icons">menu</i>
-            </span> -->
-<!--             <span class="e-nav-item m-container e-search-container">
-                <form class="b-search " action="">
-        <input class="js-search-value" type="text">
-        <input class="js-search-submit js-search-trigger e-search-trigger material-icons" type="submit" value="search">
-    </form>
-            </span> -->
             <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
         </div>
 
-<!--         <div class="e-nav-group m-right e-social-media">
-            <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
-            <a href="https://www.youtube.com/user/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-youtube-play"></i></a>
-        </div> -->
-
         <div class="e-nav-group m-right">
             <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
-            <a href="index.html#explore" class="e-nav-item" id="nav-explore"><strong>Explore</strong></a>
+            <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
             <a href="about.html" class="e-nav-item" id="nav-about">About</a>
         </div>
 
@@ -51,7 +37,27 @@
             <img src="static/img/govlab-logo-white.png" alt="">
         </a>
 
-    </header>
+    </header> -->
+
+    
+<header class="b-top-nav m-transparent m-fixed">
+
+    <div class="e-nav-group m-left e-social-media hide-for-small-only">
+        <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
+    </div>
+
+    <div class="e-nav-group m-right hide-for-small-only">
+        <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
+        <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
+        <a href="about.html" class="e-nav-item" id="nav-about">About</a>
+    </div>
+
+    <a class="e-logo" href="./">
+        <img src="static/img/govlab-logo-white.png" alt="">
+    </a>
+
+</header>
+
 
     <!-- Main Menu (Off Canvas) -->
     <nav class="b-main-menu">
@@ -64,61 +70,50 @@
 
     
 
+
 <main class="case-study-page" role="main">
 
-    <div class="b-top-section m-hires-2 m-center" style="background-image: url(./static/img/banners/indonesia.jpg)">
-        <div class="b-shader">
-            <h1 class="m-space-2 m-sm-2">Indonesia’s Kawal Pemilu</h1>
-            <h2 class="m-sm">Elections: Free, Fair and Open Data</h2>
+    <div class="b-top-section" style="background-image: url(./static/img/banners/indonesia.jpg)">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">Indonesia’s Kawal Pemilu</h1>
+            <h2 class="e-tagline">Elections: Free, Fair and Open Data</h2>
             <h4>by Auralice Graft, Stefaan Verhulst and Andrew Young<a class="_idFootnoteLink" href="#footnote-999">*</a></h4>
-            <h5></h5>
+            <div class="e-tags hide-for-small-only">
+                <div class="e-left">
+                    <p>Impact</p>
+                    <p>Sector</p>
+                    <p>Location</p>
+                </div>
+                <div class="e-right">
+                    <p>
+                        IMPROVING GOVERNMENT
+                        
+                    </p>
+                    <p>
+                        POLITICS &AMP; ELECTIONS
+                        
+                    </p>
+                    <p>INDONESIA</p>
+                </div>
+            </div>
+            <div class="e-read-times hide-for-small-only">
+                <p>Read Time</p>
+                <p>Brief View <strong>5 MINS</strong></p>
+                <p>Full Story <strong>20 MINS</strong></p>
+            </div>
+        </hgroup>
+        <div id="download-button">
+            <a href="#explore-the-data" class="b-button m-government">Download The Report<i class="material-icons m-space">file_download</i></a>
+        </div>
+    </div>
 
-            <div class="row">
-                <div class="column medium-6">
-                    <div class="e-left-box">
-                        <div class="e-left">
-                            <p>Impact</p>
-                            <p>Sector</p>
-                            <p>Location</p>
-                        </div>
-                        <div class="e-right">
-                            <p>
-                                
-                                IMPROVING GOVERNMENT
-                                
-                            </p>
-                            <p>
-                                
-                                POLITICS &AMP; ELECTIONS
-                                
-                            </p>
-                            <p>INDONESIA</p>
-                        </div>
-                    </div>
+                <div class="row hide-for-small-only">
+                    <ul class="b-sidebar">
+                        <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
+                    </ul>
                 </div>
 
-                <div class="column medium-6">
-                    <div class="e-right-box">
-                        <p>Read Time</p>
-                        <p>Brief View <strong>5 MINS</strong></p>
-                        <p>Full Story <strong>20 MINS</strong></p>
-                    </div>
-                    
-                        <a href="./static/files/case-study-indonesia.pdf" target="_blank" class="b-button m-bottom-overlap m-blue m-detail-page">
-                            
-                                        <i class="material-icons m-space">file_download</i>
-                                        Download The Report
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <ul class="b-sidebar">
-                            <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
-                        </ul>
-                    </div>
                     
                     <section class="b-page-section">
                         <div class="row">
@@ -173,8 +168,10 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
+<div>
 <p class="e-h2">Corruption in Indonesia</p>
 <p class="text">Public demand for transparency, accountability and better government in Indonesia has been growing rapidly since the “Reformasi,” a movement for political reformation that began in the 90s.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-035-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-indonesia.html#footnote-035">1</a></span></span> In spite of this, corruption remains a problem in the country. According to Transparency International’s Corruption Perceptions Index, Indonesia ranked 107 out of 175 countries in 2014. Its Bribe Payers Index ranked Indonesia 25 out of 28 countries in 2011.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-034-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-indonesia.html#footnote-034">2</a></span></span>&#160;According to the World Democracy Audit, Indonesia ranked 88 out of 150 countries in terms of corruption in 2014.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-033-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-indonesia.html#footnote-033">3</a></span></span></p>
+</div>
 <p class="text">Corruption has also been evident in the electoral process, and both the 2004 and 2009 elections were characterized by alleged irregularities. Perludem (<a href="http://www.perludem.org"><span class="e-link">www.perludem.org</span></a>), a nongovernmental association for election and democracy in Indonesia, reported instances of money politics, manipulation of vote counts, intimidation and officials taking advantage of government positions to add candidates or campaigns. As Diah Setiawaty, Perludem program manager for election application programming interface, puts it: “Candidates used to routinely bribe voters. They bribed them with money, with rice and with other food products.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-032-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-indonesia.html#footnote-032">4</a></span></span> Observers also note that Indonesia’s electoral process is particularly prone to vote manipulation, due in large part to its size and complexity.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-031-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-indonesia.html#footnote-031">5</a></span></span> “Our election system is one of the most complex in the world,” says Setiawaty. “It has to accommodate over 100,000,000 registered voters and a complicated geography that includes over 17,000 different islands. It is huge and it all happens in one day.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-030-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-indonesia.html#footnote-030">6</a></span></span></p>
 <p class="e-h2">Open Data and Indonesian Elections</p>
 <p class="text">In 2011, Indonesia joined the Open Government Partnership (OGP), emphasizing a national commitment to budget transparency and more efficient public service delivery. In 2014, Mardianto Jatna, Assistant to the Head of the Presidential Delivery Unit for Development Monitoring and Oversight (UKP4), declared a “Year of Open Data.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-029-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-indonesia.html#footnote-029">7</a></span></span> &#160;Several initiatives were undertaken as part of this Year of Open Data. One was the launch of the Indonesia Data Portal, which publishes approximately 700 sets of data from 23 government institutions.</p>
@@ -217,9 +214,9 @@
 <p class="text">The Kawal Pemilu application consists of two main components. At the back-end, it includes a private, walled-off website, where volunteers and site administrators can enter polling data based on scanned forms (Figure 1). In addition, there is a public-facing site that allows citizens to view the data, broken down by polling station and candidate (Figure 2). Visitors can choose to view results for different levels of the tabulation process. For example, a visitor can choose to examine just C1 results. Results can also be viewed by region.</p>
 <p class="text">The underlying data for the site was generated from KPU data through a network of volunteers spread across the globe. Volunteers were recruited through a closed, secret Facebook group, which ensured that only trusted people were included. To start the process of recruiting volunteers, each founder chose 10 trustworthy friends, each of whom was asked to recruit 10 more, and each of those was also asked to recruit another 10 friends – and so on. Over 700 volunteers were recruited in this way in just three days. Volunteer names and identities were initially kept hidden, to prevent any efforts at bribing or intimidation.</p>
 <p class="text">Each recruit received a secret link to the nonpublic component of the website, where scanned C1 forms were presented with an accompanying form for the volunteer to fill in with extracted data.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-020-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-indonesia.html#footnote-020">16</a></span></span> The form also allowed for the reporting of errors. The results of this work were posted every 10 minutes to the public-facing website, which was read-only. In addition to allowing citizens to monitor election results in near real-time, this data also allowed them to compare vote tallies listed on the site to official numbers released by polling stations.</p>
-<p class="e-img"><img class="_idGenObjectAttribute-1" src="case-study-indonesia-web-resources/image/Image2362.png" alt="Figure%201.png" /></p>
+<p class="e-img"><img class="_idGenObjectAttribute-1" src="static/img/studies/indonesia-0.png" alt="Figure%201.png" /></p>
 <p class="e-caption">Figure 1: Screen used by volunteers to digitize scanned C1 forms (translated into English by Google)</p>
-<p class="e-img"><img class="_idGenObjectAttribute-2" src="case-study-indonesia-web-resources/image/Image2371.png" alt="Figure%202.png" /></p>
+<p class="e-img"><img class="_idGenObjectAttribute-2" src="static/img/studies/indonesia-1.png" alt="Figure%202.png" /></p>
 <p class="e-caption">Figure 2: Screenshot of the public-facing Kawal Pemilu website (translated into English by Google)</p>
 <p class="text">The entire process of building the site and gathering all the data was performed with remarkable efficiency. Because the co-founders were spread around the world (California, Sydney, Singapore, Indonesia, Netherlands, Germany), they were able to work round-the-clock, taking maximum advantage of different time zones. This enabled them to create the website and counting system in just two days. In addition, all the recruited volunteers and founders worked without pay. The total capital investment for the setup was, as a result, just $54; these funds were used to purchase the website’s domain and space on a hosting server.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-019-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-indonesia.html#footnote-019">17</a></span></span> Overall, Kawal Pemilu is an impressive example of a “public-service startup”: Despite never benefiting from seed capital or a Silicon Valley-style business ecosystem, it was put together with all the agility and speed that are the hallmarks of far more lavishly funded business ventures.</p>
 
@@ -318,6 +315,8 @@
                     </div>
                     
 
+                    
+
                     <div class="b-page-section">
                         <div class="row">
                             <div class="large-10 large-offset-1 columns">
@@ -332,39 +331,44 @@
                         <div class="b-divider m-blue m-next js-next" js-impact="government" js-sector="politics">
                             
                                         <div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
                                             <h1>Read Next</h1>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
                                             
                                             
                                             <a href="case-denmarks-open-address-data-set.html" class="impact-government sector-geospatial">
                                                 <h2>Denmark’s Open Address Data Set</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -376,9 +380,11 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-theyworkforyou.html" class="impact-government sector-public">
                                                 <h2>TheyWorkForYou</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -390,9 +396,13 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-opencorporates.html" class="impact-government sector-business">
                                                 <h2>OpenCorporates</h2>
                                             </a>
+                                            
+                                            
+                                            
                                             
                                             
                                             
@@ -517,7 +527,7 @@
 </div>
 
                                                 <div id="footnote-999" class="_idFootnote">
-                                                    <p class="e-footnote-text">Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to the peer reviewers <a href="odimpact.org/about">odimpact.org/about</a> who provided input on a pre-published draft.</p>
+                                                    <p class="e-footnote-text">Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to <a href="odimpact.org/about">the peer reviewers</a> who provided input on a pre-published draft.</p>
                                                 </div>
                                             </div>
                                             <div class="medium-1 column">

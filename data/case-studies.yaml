@@ -28,6 +28,8 @@
 #       title:
 #       text:
 
+
+
 - title: "Brazil’s Open Budget Transparency Portal"
   image: 'brazil.jpg'
   authors: 'Auralice Graft, Stefaan Verhulst and Andrew Young'
@@ -1252,6 +1254,37 @@
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
 
+  references:
+    - number:
+      title:
+      text:
+
+- title: Battling Ebola in Sierra Leone
+  image: 'coming-soon.jpg'
+  authors:
+  unreleased: true
+  description: 'Coming Soon'
+  impact_type: public # citizens | government | economic | public
+  sector: health # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location:
+  read_time:
+  full_read_time:
+# reference format:
+# <a href="#" data-open="#reference-n"> <sup>n</sup></a>
+  summary: >
+  takeaways: >
+  numbers: >
+  quotes: >
+  background: >
+  data: >
+  path_to_impact: >
+  outcome: >
+  project: >
+  impact: >
+  discussion: >
+  action: >
+  challenges: >
+  looking_forward: >
   references:
     - number:
       title:

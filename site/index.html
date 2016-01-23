@@ -18,32 +18,18 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<body id="odi-landing">
+<body id="open-data-impact-homepage">
     
 
-    <header class="b-top-nav m-transparent">
+<!--     <header class="b-top-nav m-transparent">
 
         <div class="e-nav-group m-left e-social-media">
-<!--             <span class="e-nav-item js-nav-trigger e-nav-trigger">
-                <i class="material-icons">menu</i>
-            </span> -->
-<!--             <span class="e-nav-item m-container e-search-container">
-                <form class="b-search " action="">
-        <input class="js-search-value" type="text">
-        <input class="js-search-submit js-search-trigger e-search-trigger material-icons" type="submit" value="search">
-    </form>
-            </span> -->
             <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
         </div>
 
-<!--         <div class="e-nav-group m-right e-social-media">
-            <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
-            <a href="https://www.youtube.com/user/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-youtube-play"></i></a>
-        </div> -->
-
         <div class="e-nav-group m-right">
             <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
-            <a href="index.html#explore" class="e-nav-item" id="nav-explore"><strong>Explore</strong></a>
+            <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
             <a href="about.html" class="e-nav-item" id="nav-about">About</a>
         </div>
 
@@ -51,7 +37,27 @@
             <img src="static/img/govlab-logo-white.png" alt="">
         </a>
 
-    </header>
+    </header> -->
+
+    
+<header class="b-top-nav m-transparent">
+
+    <div class="e-nav-group m-left e-social-media hide-for-small-only">
+        <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
+    </div>
+
+    <div class="e-nav-group m-right hide-for-small-only">
+        <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
+        <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
+        <a href="about.html" class="e-nav-item" id="nav-about">About</a>
+    </div>
+
+    <a class="e-logo" href="./">
+        <img src="static/img/govlab-logo-white.png" alt="">
+    </a>
+
+</header>
+
 
     <!-- Main Menu (Off Canvas) -->
     <nav class="b-main-menu">
@@ -65,14 +71,14 @@
     
 <main role="main">
 
-    <div class="b-top-section m-hires-1 m-center m-landing-page m-flush-top">
-        <div class="b-shader">
-            <h1 class="m-sm m-space-1"><a target="_blank" href="https://twitter.com/#odimpact">#ODimpact</a> &mdash; Open Data’s Impact<sup class="e-beta">beta</sup></h1>
-            <h2 class="m-lg">Open Data is Changing the World in Four Unique Ways</h2>
-            <a href="#" class="b-button m-dark-blue m-bottom-overlap" id="explore-button">Explore Case Studies</a>
-            <!-- <p class="m-lg m-space-3">&mdash; or &mdash;</p> -->
-            <!-- <a id="top-section-arrow"><i class="material-icons m-lg-faded m-space-3">arrow_drop_down_circle</i></a> -->
-        </div>
+    <div class="b-top-section">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">Open Data’s Impact</h1>
+            <h2 class="e-tagline">Open Data is Changing the World in Four Ways</h2>
+            <h3><span>beta</span></h3>
+        </hgroup>
+        <div id="explore-button"><a href="#explore-the-data" class="b-button m-dark-blue">Explore Case Studies</a></div>
     </div>
 
     <div class="b-page-section m-impact-section m-blue">
@@ -89,6 +95,9 @@
                 <div class="large-5 columns end">
                     <p class="b-description">
                         Open data is improving government, primarily by <strong>tackling corruption and increasing transparency,</strong> and <strong>enhancing public services</strong> and resource allocation.
+                        <div class="e-action">
+                            <a class="b-button m-naked" href="#" id="government-button">Read the Case Studies<i class="material-icons">arrow_forward</i></a>
+                        </div>
                     </p>
                 </div>
             </div>
@@ -106,13 +115,16 @@
                     </div>
                     <div class="large-5 columns end">
                         <p class="b-description">
-                           Open data is empowering citizens to take control of their lives and demand change by enabling <strong>more informed decision making</strong> and <strong>new forms of social mobilization,</strong> both in turn facilitated by new ways of communicating and accessing information.
-                       </p>
-                   </div>
-               </div>
-           </div>
+                         Open data is empowering citizens to take control of their lives and demand change by enabling <strong>more informed decision making</strong> and <strong>new forms of social mobilization,</strong> both in turn facilitated by new ways of communicating and accessing information.
+                         <div class="e-action">
+                            <a class="b-button m-naked" href="#" id="citizens-button">Read the Case Studies<i class="material-icons">arrow_forward</i></a>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
 
-           <div class="b-page-section m-impact-section m-yellow">
+        <div class="b-page-section m-impact-section m-yellow">
             <div class="row">
                 <span id="trigger-3"></span>
                 <div class="large-5 large-offset-1 columns">
@@ -125,7 +137,10 @@
             </div>
             <div class="large-5 columns end">
                 <p class="b-description">
-                    Open data is creating new opportunities for citizens and organizations, by <strong>fostering innovation</strong> and <strong>promoting economic growth</strong> and job creation.
+                    Open data is creating new opportunities for citizens and organizations, by <strong>fostering innovation</strong> and <strong>promoting economic growth</strong> and job creation.<!--
+                    <div class="e-action">
+                        <a class="b-button m-naked" href="#">Read the Case Studies<i class="material-icons">arrow_forward</i></a>
+                    </div> -->
                 </p>
             </div>
         </div>
@@ -136,394 +151,454 @@
             <div class="large-5 large-offset-1 columns">
                 <h2>Solving Public Problems</h2>
 <!--             <p>
-                0
+                1
                 case studies</p> -->
                 <p>Coming Soon</p>
                 <i class="material-icons m-xl-badge" id="badge-4">public</i>
             </div>
             <div class="large-5 columns end">
                 <p class="b-description">
-                   Open data is playing an increasingly important role in solving big public problems, primarily by allowing citizens and policymakers access to <strong>new forms of data-driven assessment</strong> of the problems at hand. It also <strong>enables data-driven engagement</strong> producing more targeted interventions and enhanced collaboration.
-               </p>
-           </div>
-       </div>
-   </div>
-
-   <div class="b-divider">
-    <div class="row m-center">
-        <h2 class="m-upper">The level of impact depends on four enabling conditions</h2>
-    </div>
-</div>
-
-<div class="b-page-section m-no-padding" id="enabler-icons" data-equalizer>
-    <div class="expanded row">
-        <div class="large-3 columns m-no-padding">
-            <a class="b-button m-panel m-icon-only" data-equalizer-watch>
-                <i class="material-icons m-xl m-black">fullscreen</i>
-                <p>Problem Definition</p>
-            </a>
-        </div>
-        <div class="large-3 columns m-no-padding">
-            <a class="b-button m-panel m-icon-only" data-equalizer-watch>
-                <i class="material-icons m-xl m-black">language</i>
-                <p>Public Infrastructure</p>
-            </a>
-        </div>
-        <div class="large-3 columns m-no-padding">
-            <a class="b-button m-panel m-icon-only" data-equalizer-watch>
-                <i class="material-icons m-xl m-black">people_outline</i>
-                <p>Partnerships</p>
-            </a>
-        </div>
-        <div class="large-3 columns m-no-padding">
-            <a class="b-button m-panel m-icon-only" data-equalizer-watch>
-                <i class="material-icons m-xl m-black">assessment</i>
-                <p>Policies &amp; Metrics</p>
-            </a>
-        </div>
-    </div>
-</div>
-
-<div class="b-divider">
-    <div class="row m-center">
-        <h2 class="m-upper">Yet, there are challenges that must be overcome for Open Data projects to reach their highest potential</h2>
-    </div>
-</div>
-
-<div class="b-page-section m-no-padding" id="challenges-section" data-equalizer>
-    <div class="expanded row m-center">
-        <div class="large-6 columns b-divider m-dark-blue m-padded" id="readiness-button" data-equalizer-watch>
-            <h3>Readiness</h3>
-            <p>Lack of technical and human capacity at both the supply and demand side of open data hampers its impact</p>
-        </div>
-        <div class="large-6 columns b-divider m-dark-blue-2 m-padded" id="responsiveness-button" data-equalizer-watch>
-            <h3>Responsiveness</h3>
-            <p>Open data could be significantly more impactful if its release would be complemented with a commitment to act upon insights generated</p>
-        </div>
-    </div>
-    <div class="expanded row m-center" data-equalizer>
-        <div class="large-6 columns b-divider m-dark-blue-2 m-padded" id="risks-button" data-equalizer-watch>
-            <h3>Risks</h3>
-            <p>Opening up data poses risks, notably to privacy and security, that if not mitigated properly can have harmful consequences</p>
-        </div>
-        <div class="large-6 columns b-divider m-dark-blue m-padded" id="resources-button" data-equalizer-watch>
-            <h3>Resources</h3>
-            <p>Inadequate or unsustained resource allocation is one of the most common reasons for limited success or outright failure</p>
-        </div>
-    </div>
-</div>
-
-<div class="b-page-section m-center m-purple" id="download-section" disabled>
-    <div class="row">
-        <h2>Follow our 10 Recommendations for Open Data Impact</h2>
-        <p>in order to overcome the challenges and ensure highest impact from your open data projects</p>
-    </div>
-    <div class="row">
-        <a href="#" class="b-button m-wide-padding">
-            Download the Report
-            <i class="material-icons">file_download</i>
-        </a>
-    </div>
-</div>
-
-<div class="b-page-section m-center m-purple" id="upcoming-section">
-    <div class="row">
-        <h2>Coming Soon</h2>
-        <p>
-            Full detail on the enabling conditions and remaining challenges as well recommendations based upon lessons learned across all case studies will be shared in our forthcoming report.
-        </p>
-        <p>
-            We will release the case studies and findings in a staged approach. Batch 1 is now available focusing on open data’s impact on government performance and citizen empowerment. Next batches, including the key findings paper will be released in February and March.
-        </p>
-        <p>
-            Follow us via <a target="_blank" href="https://twitter.com/thegovlab">@thegovlab</a> for more details. <a target="_blank" href="https://twitter.com/#odimpact">#ODimpact</a>
-        </p>
-    </div>
-</div>
-
-<a name="explore" id="a-explore"></a>
-
-<div class="b-divider">
-    <div class="row m-center">
-        <h2 class="m-upper"><strong>Explore the Impact of Open Data</strong> around the world</h2>
-    </div>
-</div>
-
-<div class="b-page-section m-no-bottom-padding">
-    <div class="row m-center">
-        <ul class="tabs" data-tabs id="explore-tabs">
-            <li class="tabs-title is-active"><a href="#panel1">Sector</a></li>
-            <li class="tabs-title"><a href="#panel2">Impact</a></li>
-            <!-- <a href="#" class="e-side-link">Download all case studies</a> -->
-        </ul>
-    </div>
-    <div class="tabs-content" data-tabs-content="explore-tabs" id="explore-content">
-        <div class="tabs-panel is-active" id="panel1">
-            <div class="row">
-                <div class="large-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="*" id="see-all-btn">
-                        See All
-                    </a>
-                </div>
-                <div class="large-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="sector-business">
-                        Business
-                    </a>
-                </div>
-                <div class="large-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="sector-education">
-                        <!-- <i class="material-icons m-lg">school</i> -->
-                        Education
-                    </a>
-                </div>
-                <div class="large-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="sector-emergency">
-                        Emergency Services
-                    </a>
-                </div>
-                <div class="large-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="sector-geospatial">
-                        <!-- <i class="material-icons m-lg">add_location</i> -->
-                        Geospatial Services
-                    </a>
-                </div>
-                <div class="large-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="sector-health">
-                        <!-- <i class="material-icons m-lg">healing</i> -->
-                        Health
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="row">
-
-                <div class="large-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="sector-law">
-                        Law
-                    </a>
-                </div>
-                <div class="large-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="sector-philantrophy">
-                        <!-- <i class="material-icons m-lg">accessibility</i> -->
-                        Philantrophy &amp; Aid
-                    </a>
-                </div>
-                <div class="large-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="sector-politics">
-                        <!-- <i class="material-icons m-lg">done</i> -->
-                        Politics &amp; Elections
-                    </a>
-                </div>
-                <div class="large-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="sector-public">
-                        <!-- <i class="material-icons m-lg">domain</i> -->
-                        Public Sector
-                    </a>
-                </div>
-
-                <div class="large-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="sector-transportation">
-                        Transportation
-                    </a>
-                </div>
-
-                <div class="large-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="sector-weather">
-                        Weather
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="tabs-panel" id="panel2">
-            <div class="row">
-                <div class="medium-2 large-offset-1 columns">
-                    <a href="#" class="b-button js-filter" data-filter="*" id="see-all-btn-2">
-                        See All
-                    </a>
-                </div>
-                <div class="medium-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="impact-government">
-                        <!-- <i class="material-icons m-lg">account_balance</i> -->
-                        Improving Government
-                    </a>
-                </div>
-                <div class="medium-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="impact-citizens">
-                        <!-- <i class="material-icons m-lg">person_pin</i> -->
-                        Empowering Citizens
-                    </a>
-                </div>
-                <div class="medium-2 columns">
-                    <a href="#" class="b-button js-filter" data-filter="impact-economic">
-                        <!-- <i class="material-icons m-lg">trending_up</i> -->
-                        Creating Opportunity
-                    </a>
-                </div>
-                <div class="medium-2 columns end">
-                    <a href="#" class="b-button js-filter" data-filter="impact-public">
-                        <!-- <i class="material-icons m-lg">public</i> -->
-                        Solving Public Problems
-                    </a>
-                </div>
+                    Open data is playing an increasingly important role in solving big public problems, primarily by allowing citizens and policymakers access to <strong>new forms of data-driven assessment</strong> of the problems at hand. It also <strong>enables data-driven engagement</strong> producing more targeted interventions and enhanced collaboration.
+<!--                     <div class="e-action">
+                        <a class="b-button m-naked" href="#">Read the Case Studies<i class="material-icons">arrow_forward</i></a>
+                    </div> -->
+                </p>
             </div>
         </div>
     </div>
-</div>
 
-<div class="b-page-section m-no-top-padding" id="results">
-    <div class="grid">
-        
-        <div class="e-card impact-government sector-public">
-            <a href="case-brazils-open-budget-transparency-portal.html">
-                <div class="e-card-inner">
-                    <div class="e-case-image" style="background-image: url(./static/img/banners/brazil.jpg)"></div>
-                    <p class="e-case-name">Brazil’s Open Budget Transparency Portal</p>
-                    <p class="e-case-description">Making Public How Public Money Is Spent</p>
-                </div>
-            </a>
+    <div class="b-divider" disabled>
+        <div class="row m-center">
+            <h2 class="m-upper">Impact Depends on Four Factors</h2>
         </div>
-        <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
-        
-        <div class="e-card impact-citizens sector-education">
-            <a href="case-open-education-information-in-tanzania.html">
-                <div class="e-card-inner">
-                    <div class="e-case-image" style="background-image: url(./static/img/banners/tanzania.jpg)"></div>
-                    <p class="e-case-name">Open Education Information In Tanzania</p>
-                    <p class="e-case-description">A Tale of Two Dashboards</p>
-                </div>
-            </a>
-        </div>
-        <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
-        
-        <div class="e-card impact-citizens sector-public">
-            <a href="case-kenyas-open-duka.html">
-                <div class="e-card-inner">
-                    <div class="e-case-image" style="background-image: url(./static/img/banners/kenya.jpg)"></div>
-                    <p class="e-case-name">Kenya's Open Duka</p>
-                    <p class="e-case-description">Open Data for Transactional Transparency</p>
-                </div>
-            </a>
-        </div>
-        <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
-        
-        <div class="e-card impact-citizens sector-education">
-            <a href="case-mexicos-mejora-tu-escuela.html">
-                <div class="e-card-inner">
-                    <div class="e-case-image" style="background-image: url(./static/img/banners/mexico.jpg)"></div>
-                    <p class="e-case-name">Mexico’s Mejora Tu Escuela</p>
-                    <p class="e-case-description">Empowering Citizens to Make Data-Driven Decisions About Education</p>
-                </div>
-            </a>
-        </div>
-        <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
-        
-        <div class="e-card impact-citizens sector-health">
-            <a href="case-uruguays-a-tu-servicio.html">
-                <div class="e-card-inner">
-                    <div class="e-case-image" style="background-image: url(./static/img/banners/uruguay.jpg)"></div>
-                    <p class="e-case-name">Uruguay's A Tu Servicio</p>
-                    <p class="e-case-description">Empowering Citizens to Make Data-Driven Decisions on Health Care</p>
-                </div>
-            </a>
-        </div>
-        <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
-        
-        <div class="e-card impact-government sector-philantrophy">
-            <a href="case-openaid-in-sweden.html">
-                <div class="e-card-inner">
-                    <div class="e-case-image" style="background-image: url(./static/img/banners/sweden.jpg)"></div>
-                    <p class="e-case-name">Openaid In Sweden</p>
-                    <p class="e-case-description">Enhanced Transparency and Accountability in Development Cooperation</p>
-                </div>
-            </a>
-        </div>
-        <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
-        
-        <div class="e-card impact-government sector-public">
-            <a href="case-open-contracting-and-procurement-in-slovakia.html">
-                <div class="e-card-inner">
-                    <div class="e-case-image" style="background-image: url(./static/img/banners/slovakia.jpg)"></div>
-                    <p class="e-case-name">Open Contracting And Procurement In Slovakia</p>
-                    <p class="e-case-description">Establishing Trust in Government through Open Data</p>
-                </div>
-            </a>
-        </div>
-        <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
-        
-        <div class="e-card impact-government sector-politics">
-            <a href="case-indonesias-kawal-pemilu.html">
-                <div class="e-card-inner">
-                    <div class="e-case-image" style="background-image: url(./static/img/banners/indonesia.jpg)"></div>
-                    <p class="e-case-name">Indonesia’s Kawal Pemilu</p>
-                    <p class="e-case-description">Elections: Free, Fair and Open Data</p>
-                </div>
-            </a>
-        </div>
-        <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
-        
-        <div class="e-card impact-government sector-geospatial">
-            <a href="case-denmarks-open-address-data-set.html">
-                <div class="e-card-inner">
-                    <div class="e-case-image" style="background-image: url(./static/img/banners/denmark.jpg)"></div>
-                    <p class="e-case-name">Denmark’s Open Address Data Set</p>
-                    <p class="e-case-description">Consolidating and Freeing-up Address Data</p>
-                </div>
-            </a>
-        </div>
-        <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
-        
-        <div class="e-card impact-government sector-philantrophy">
-            <a href="case-opening-canadas-t3010-charity-information-return-data.html">
-                <div class="e-card-inner">
-                    <div class="e-case-image" style="background-image: url(./static/img/banners/canada.jpg)"></div>
-                    <p class="e-case-name">Opening Canada’s T3010 Charity Information Return Data</p>
-                    <p class="e-case-description">Accountability of Charities through Open Data</p>
-                </div>
-            </a>
-        </div>
-        <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
-        
-        <div class="e-card impact-government sector-public">
-            <a href="case-theyworkforyou.html">
-                <div class="e-card-inner">
-                    <div class="e-case-image" style="background-image: url(./static/img/banners/united-kingdom.jpg)"></div>
-                    <p class="e-case-name">TheyWorkForYou</p>
-                    <p class="e-case-description">Taking the Long View</p>
-                </div>
-            </a>
-        </div>
-        <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
-        
-        <div class="e-card impact-government sector-education">
-            <a href="case-the-open-public-services-network.html">
-                <div class="e-card-inner">
-                    <div class="e-case-image" style="background-image: url(./static/img/banners/open-public-service-network.jpg)"></div>
-                    <p class="e-case-name">The Open Public Services Network</p>
-                    <p class="e-case-description">New Strategies to Close the Data Gap</p>
-                </div>
-            </a>
-        </div>
-        <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
-        
-        <div class="e-card impact-government sector-business">
-            <a href="case-opencorporates.html">
-                <div class="e-card-inner">
-                    <div class="e-case-image" style="background-image: url(./static/img/banners/opencorporates.jpg)"></div>
-                    <p class="e-case-name">OpenCorporates</p>
-                    <p class="e-case-description">Open Data as One Small Part of the Picture</p>
-                </div>
-            </a>
-        </div>
-        <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
-        
     </div>
-</div>
 
-<div class="b-page-section m-hidden" id="no-results">
-    <h3>More Case Studies Coming Soon</h3>
-</div>
+    <div class="b-page-section m-no-padding" id="enabler-icons" data-equalizer disabled>
+        <div class="expanded row">
+            <div class="large-3 columns m-no-padding">
+                <a class="b-button m-panel m-icon-only" data-equalizer-watch>
+                    <i class="material-icons m-xl m-black">fullscreen</i>
+                    <p>Problem Definition</p>
+                </a>
+            </div>
+            <div class="large-3 columns m-no-padding">
+                <a class="b-button m-panel m-icon-only" data-equalizer-watch>
+                    <i class="material-icons m-xl m-black">language</i>
+                    <p>Public Infrastructure</p>
+                </a>
+            </div>
+            <div class="large-3 columns m-no-padding">
+                <a class="b-button m-panel m-icon-only" data-equalizer-watch>
+                    <i class="material-icons m-xl m-black">people_outline</i>
+                    <p>Partnerships</p>
+                </a>
+            </div>
+            <div class="large-3 columns m-no-padding">
+                <a class="b-button m-panel m-icon-only" data-equalizer-watch>
+                    <i class="material-icons m-xl m-black">assessment</i>
+                    <p>Policies &amp; Metrics</p>
+                </a>
+            </div>
+        </div>
+    </div>
 
+    <div class="b-divider" disabled>
+        <div class="row m-center">
+            <h2 class="m-upper">Yet, there are challenges that must be overcome for Open Data projects to reach their highest potential</h2>
+        </div>
+    </div>
+
+    <div class="b-page-section m-no-padding" id="challenges-section" data-equalizer disabled>
+        <div class="expanded row m-center">
+            <div class="large-6 columns b-divider m-dark-blue m-padded" id="readiness-button" data-equalizer-watch>
+                <h3>Readiness</h3>
+                <p>Lack of technical and human capacity at both the supply and demand side of open data hampers its impact</p>
+            </div>
+            <div class="large-6 columns b-divider m-dark-blue-2 m-padded" id="responsiveness-button" data-equalizer-watch>
+                <h3>Responsiveness</h3>
+                <p>Open data could be significantly more impactful if its release would be complemented with a commitment to act upon insights generated</p>
+            </div>
+        </div>
+        <div class="expanded row m-center" data-equalizer>
+            <div class="large-6 columns b-divider m-dark-blue-2 m-padded" id="risks-button" data-equalizer-watch>
+                <h3>Risks</h3>
+                <p>Opening up data poses risks, notably to privacy and security, that if not mitigated properly can have harmful consequences</p>
+            </div>
+            <div class="large-6 columns b-divider m-dark-blue m-padded" id="resources-button" data-equalizer-watch>
+                <h3>Resources</h3>
+                <p>Inadequate or unsustained resource allocation is one of the most common reasons for limited success or outright failure</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-page-section m-center m-purple" id="download-section" disabled>
+        <div class="row">
+            <h2>Follow our 10 Recommendations for Open Data Impact</h2>
+            <p>in order to overcome the challenges and ensure highest impact from your open data projects</p>
+        </div>
+        <div class="row">
+            <a href="#" class="b-button m-wide-padding">
+                Download the Report
+                <i class="material-icons">file_download</i>
+            </a>
+        </div>
+    </div>
+
+    <div class="b-page-section m-center m-purple" id="upcoming-section" disabled>
+        <div class="row">
+            <h2>Coming Soon</h2>
+            <p>
+                Full detail on the enabling conditions and remaining challenges as well recommendations based upon lessons learned across all case studies will be shared in our forthcoming report.
+            </p>
+            <p>
+                We will release the case studies and findings in a staged approach. Batch 1 is now available focusing on open data’s impact on government performance and citizen empowerment. Next batches, including the key findings paper will be released in February and March.
+            </p>
+            <p>
+                Follow us via <a target="_blank" href="https://twitter.com/thegovlab">@thegovlab</a> for more details. <a target="_blank" href="https://twitter.com/#odimpact">#ODimpact</a>
+            </p>
+        </div>
+    </div>
+
+    <a name="explore" id="a-explore"></a>
+
+    <div id="explore-the-data" class="b-divider">
+        <div class="row m-center">
+            <h2 class="m-upper"><strong>Explore the Impact of Open Data</strong> around the world</h2>
+        </div>
+    </div>
+
+    <div class="b-page-section m-no-bottom-padding">
+        <div class="row m-center">
+            <ul class="tabs" data-tabs id="explore-tabs">
+                <li class="tabs-title is-active" id="sector-tab"><a href="#panel1">Sector</a></li>
+                <li class="tabs-title" id="impact-tab"><a href="#panel2">Impact</a></li>
+                <!-- <a href="#" class="e-side-link">Download all case studies</a> -->
+            </ul>
+        </div>
+        <div class="tabs-content" data-tabs-content="explore-tabs" id="explore-content">
+            <div class="tabs-panel is-active" id="panel1">
+                <div class="row">
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="*" id="see-all-btn">
+                            See All
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-business">
+                            Business
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-education">
+                            <!-- <i class="material-icons m-lg">school</i> -->
+                            Education
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-emergency">
+                            Emergency Services
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-geospatial">
+                            <!-- <i class="material-icons m-lg">add_location</i> -->
+                            Geospatial Services
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-health">
+                            <!-- <i class="material-icons m-lg">healing</i> -->
+                            Health
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-law">
+                            Law
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-philantrophy">
+                            <!-- <i class="material-icons m-lg">accessibility</i> -->
+                            Philantrophy &amp; Aid
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-politics">
+                            <!-- <i class="material-icons m-lg">done</i> -->
+                            Politics &amp; Elections
+                        </a>
+                    </div>
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-public">
+                            <!-- <i class="material-icons m-lg">domain</i> -->
+                            Public Sector
+                        </a>
+                    </div>
+
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-transportation">
+                            Transportation
+                        </a>
+                    </div>
+
+                    <div class="large-2 columns">
+                        <a href="#" class="b-button js-filter" data-filter="sector-weather">
+                            Weather
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-panel" id="panel2">
+                <div class="row">
+                    <div class="medium-2 large-offset-1 columns">
+                        <a href="#" class="b-button js-filter" data-filter="*" id="see-all-btn-2">
+                            See All
+                        </a>
+                    </div>
+                    <div class="medium-2 columns">
+                        <a href="#" class="b-button js-filter" id="government-filter" data-filter="impact-government">
+                            <!-- <i class="material-icons m-lg">account_balance</i> -->
+                            Improving Government
+                        </a>
+                    </div>
+                    <div class="medium-2 columns">
+                        <a href="#" class="b-button js-filter" id="citizens-filter" data-filter="impact-citizens">
+                            <!-- <i class="material-icons m-lg">person_pin</i> -->
+                            Empowering Citizens
+                        </a>
+                    </div>
+                    <div class="medium-2 columns">
+                        <a href="#" class="b-button js-filter" id="economic-filter" data-filter="impact-economic">
+                            <!-- <i class="material-icons m-lg">trending_up</i> -->
+                            Creating Opportunity
+                        </a>
+                    </div>
+                    <div class="medium-2 columns end">
+                        <a href="#" class="b-button js-filter" id="public-filter" data-filter="impact-public">
+                            <!-- <i class="material-icons m-lg">public</i> -->
+                            Solving Public Problems
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-page-section m-no-top-padding" id="results">
+        <div class="grid">
+            
+            <div class="e-card impact-government sector-public ">
+                
+                <a href="case-brazils-open-budget-transparency-portal.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/brazil.jpg)"></div>
+                        <p class="e-case-name">Brazil’s Open Budget Transparency Portal</p>
+                        <p class="e-case-description">Making Public How Public Money Is Spent</p>
+                    </div>
+                </a>
+                
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-citizens sector-education ">
+                
+                <a href="case-open-education-information-in-tanzania.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/tanzania.jpg)"></div>
+                        <p class="e-case-name">Open Education Information In Tanzania</p>
+                        <p class="e-case-description">A Tale of Two Dashboards</p>
+                    </div>
+                </a>
+                
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-citizens sector-public ">
+                
+                <a href="case-kenyas-open-duka.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/kenya.jpg)"></div>
+                        <p class="e-case-name">Kenya's Open Duka</p>
+                        <p class="e-case-description">Open Data for Transactional Transparency</p>
+                    </div>
+                </a>
+                
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-citizens sector-education ">
+                
+                <a href="case-mexicos-mejora-tu-escuela.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/mexico.jpg)"></div>
+                        <p class="e-case-name">Mexico’s Mejora Tu Escuela</p>
+                        <p class="e-case-description">Empowering Citizens to Make Data-Driven Decisions About Education</p>
+                    </div>
+                </a>
+                
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-citizens sector-health ">
+                
+                <a href="case-uruguays-a-tu-servicio.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/uruguay.jpg)"></div>
+                        <p class="e-case-name">Uruguay's A Tu Servicio</p>
+                        <p class="e-case-description">Empowering Citizens to Make Data-Driven Decisions on Health Care</p>
+                    </div>
+                </a>
+                
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-government sector-philantrophy ">
+                
+                <a href="case-openaid-in-sweden.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/sweden.jpg)"></div>
+                        <p class="e-case-name">Openaid In Sweden</p>
+                        <p class="e-case-description">Enhanced Transparency and Accountability in Development Cooperation</p>
+                    </div>
+                </a>
+                
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-government sector-public ">
+                
+                <a href="case-open-contracting-and-procurement-in-slovakia.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/slovakia.jpg)"></div>
+                        <p class="e-case-name">Open Contracting And Procurement In Slovakia</p>
+                        <p class="e-case-description">Establishing Trust in Government through Open Data</p>
+                    </div>
+                </a>
+                
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-government sector-politics ">
+                
+                <a href="case-indonesias-kawal-pemilu.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/indonesia.jpg)"></div>
+                        <p class="e-case-name">Indonesia’s Kawal Pemilu</p>
+                        <p class="e-case-description">Elections: Free, Fair and Open Data</p>
+                    </div>
+                </a>
+                
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-government sector-geospatial ">
+                
+                <a href="case-denmarks-open-address-data-set.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/denmark.jpg)"></div>
+                        <p class="e-case-name">Denmark’s Open Address Data Set</p>
+                        <p class="e-case-description">Consolidating and Freeing-up Address Data</p>
+                    </div>
+                </a>
+                
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-government sector-philantrophy ">
+                
+                <a href="case-opening-canadas-t3010-charity-information-return-data.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/canada.jpg)"></div>
+                        <p class="e-case-name">Opening Canada’s T3010 Charity Information Return Data</p>
+                        <p class="e-case-description">Accountability of Charities through Open Data</p>
+                    </div>
+                </a>
+                
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-government sector-public ">
+                
+                <a href="case-theyworkforyou.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/united-kingdom.jpg)"></div>
+                        <p class="e-case-name">TheyWorkForYou</p>
+                        <p class="e-case-description">Taking the Long View</p>
+                    </div>
+                </a>
+                
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-government sector-education ">
+                
+                <a href="case-the-open-public-services-network.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/open-public-service-network.jpg)"></div>
+                        <p class="e-case-name">The Open Public Services Network</p>
+                        <p class="e-case-description">New Strategies to Close the Data Gap</p>
+                    </div>
+                </a>
+                
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-government sector-business ">
+                
+                <a href="case-opencorporates.html">
+                    <div class="e-card-inner">
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/opencorporates.jpg)"></div>
+                        <p class="e-case-name">OpenCorporates</p>
+                        <p class="e-case-description">Open Data as One Small Part of the Picture</p>
+                    </div>
+                </a>
+                
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+            <div class="e-card impact-public sector-health  m-unreleased ">
+                
+                <div class="e-card-inner">
+                    <div class="e-case-image" style="background-image: url(./static/img/banners/coming-soon.jpg)"></div>
+                    <p class="e-case-name">Battling Ebola in Sierra Leone</p>
+                    <p class="e-case-description">Coming Soon</p>
+                </div>
+                
+            </div>
+            <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
+            
+        </div>
+    </div>
+
+    <div class="b-page-section m-hidden" id="no-results">
+        <h3>More Case Studies Coming Soon</h3>
+    </div>
+
+    <div class="b-page-section">
+        <div class="row">
+            <div class="large-10 large-offset-1 columns">
+                <p class="e-last">Learn about our <a href="about.html">methodology</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="b-sticky m-purple" id="upcoming-section">
+        <div class="row">
+            <i class="material-icons e-close js-close-sticky">close</i>
+            <h2>Coming Soon</h2>
+            <p>
+                Additional case studies and our Key Findings paper will be released in February and March.
+            </p>
+            <p>
+                Follow us via <a target="_blank" href="https://twitter.com/thegovlab">@thegovlab</a> for more details. <a target="_blank" href="https://twitter.com/#odimpact">#ODimpact</a>
+            </p>
+        </div>
+    </div> -->
 
 </main><!--@main-->
 

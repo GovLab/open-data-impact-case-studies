@@ -18,32 +18,18 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<body id="">
+<body id="case-study-page">
     
 
-    <header class="b-top-nav m-transparent">
+<!--     <header class="b-top-nav m-transparent">
 
         <div class="e-nav-group m-left e-social-media">
-<!--             <span class="e-nav-item js-nav-trigger e-nav-trigger">
-                <i class="material-icons">menu</i>
-            </span> -->
-<!--             <span class="e-nav-item m-container e-search-container">
-                <form class="b-search " action="">
-        <input class="js-search-value" type="text">
-        <input class="js-search-submit js-search-trigger e-search-trigger material-icons" type="submit" value="search">
-    </form>
-            </span> -->
             <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
         </div>
 
-<!--         <div class="e-nav-group m-right e-social-media">
-            <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
-            <a href="https://www.youtube.com/user/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-youtube-play"></i></a>
-        </div> -->
-
         <div class="e-nav-group m-right">
             <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
-            <a href="index.html#explore" class="e-nav-item" id="nav-explore"><strong>Explore</strong></a>
+            <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
             <a href="about.html" class="e-nav-item" id="nav-about">About</a>
         </div>
 
@@ -51,7 +37,27 @@
             <img src="static/img/govlab-logo-white.png" alt="">
         </a>
 
-    </header>
+    </header> -->
+
+    
+<header class="b-top-nav m-transparent m-fixed">
+
+    <div class="e-nav-group m-left e-social-media hide-for-small-only">
+        <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
+    </div>
+
+    <div class="e-nav-group m-right hide-for-small-only">
+        <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
+        <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
+        <a href="about.html" class="e-nav-item" id="nav-about">About</a>
+    </div>
+
+    <a class="e-logo" href="./">
+        <img src="static/img/govlab-logo-white.png" alt="">
+    </a>
+
+</header>
+
 
     <!-- Main Menu (Off Canvas) -->
     <nav class="b-main-menu">
@@ -64,61 +70,50 @@
 
     
 
+
 <main class="case-study-page" role="main">
 
-    <div class="b-top-section m-hires-2 m-center" style="background-image: url(./static/img/banners/tanzania.jpg)">
-        <div class="b-shader">
-            <h1 class="m-space-2 m-sm-2">Open Education Information In Tanzania</h1>
-            <h2 class="m-sm">A Tale of Two Dashboards</h2>
+    <div class="b-top-section" style="background-image: url(./static/img/banners/tanzania.jpg)">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">Open Education Information In Tanzania</h1>
+            <h2 class="e-tagline">A Tale of Two Dashboards</h2>
             <h4>by Juliet McMurren, Stefaan Verhulst, Andrew Young and David Sangokoya<a class="_idFootnoteLink" href="#footnote-999">*</a></h4>
-            <h5></h5>
+            <div class="e-tags hide-for-small-only">
+                <div class="e-left">
+                    <p>Impact</p>
+                    <p>Sector</p>
+                    <p>Location</p>
+                </div>
+                <div class="e-right">
+                    <p>
+                        EMPOWERING CITIZENS
+                        
+                    </p>
+                    <p>
+                        EDUCATION
+                        
+                    </p>
+                    <p>TANZANIA</p>
+                </div>
+            </div>
+            <div class="e-read-times hide-for-small-only">
+                <p>Read Time</p>
+                <p>Brief View <strong>5 MINS</strong></p>
+                <p>Full Story <strong>20 MINS</strong></p>
+            </div>
+        </hgroup>
+        <div id="download-button">
+            <a href="#explore-the-data" class="b-button m-citizens">Download The Report<i class="material-icons m-space">file_download</i></a>
+        </div>
+    </div>
 
-            <div class="row">
-                <div class="column medium-6">
-                    <div class="e-left-box">
-                        <div class="e-left">
-                            <p>Impact</p>
-                            <p>Sector</p>
-                            <p>Location</p>
-                        </div>
-                        <div class="e-right">
-                            <p>
-                                
-                                EMPOWERING CITIZENS
-                                
-                            </p>
-                            <p>
-                                
-                                EDUCATION
-                                
-                            </p>
-                            <p>TANZANIA</p>
-                        </div>
-                    </div>
+                <div class="row hide-for-small-only">
+                    <ul class="b-sidebar">
+                        <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
+                    </ul>
                 </div>
 
-                <div class="column medium-6">
-                    <div class="e-right-box">
-                        <p>Read Time</p>
-                        <p>Brief View <strong>5 MINS</strong></p>
-                        <p>Full Story <strong>20 MINS</strong></p>
-                    </div>
-                    
-                    <a href="./static/files/case-study-tanzania.pdf" target="_blank" class="b-button m-bottom-overlap m-orange m-detail-page">
-                        
-                                        <i class="material-icons m-space">file_download</i>
-                                        Download The Report
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <ul class="b-sidebar">
-                            <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
-                        </ul>
-                    </div>
                     
                     <section class="b-page-section">
                         <div class="row">
@@ -128,7 +123,7 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
-<p class="text">Sweden has a long tradition of openness, democracy and public access to information. In 2010, a reform agenda for Swedish development cooperation (“Openaid”) was launched by the government to bring increased transparency to donor funding through opportunities created by technological advances. Part of this reform agenda included an Aid Transparency Guarantee that required public actors to make available all documentation and public information related to international development cooperation. This spurred the development of t<a id="_idTextAnchor000"></a>he <a href="http://openaid.se"><span class="e-link">openaid.se</span></a> site by the Swedish Ministry of Foreign Affairs and the Swedish International Development Cooperation Agency (Sida) in April 2011. The data hub, built on open government data, visualizes when, to whom and why aid funding was paid out and what the results were. The reforms are seen to be an important force for enhanced transparency and accountability in development cooperation at an international level and increased cooperation and involvement of more actors in Swedish development policy.</p>
+<p class="text">Low national examination pass rates in 2012 caused a public outcry in Tanzania, but the public’s understanding of the broader context (and thus ability to demand accountability) was limited by a lack of information about the country’s education sector. Two recently established portals are trying to remedy that situation, providing the public with more data on examination pass rates and other information related to schools. The first, the Education Open Data Dashboard (<a href="http://educationdashboard.org"><span class="e-link">educationdashboard.org</span></a>), is a project established by the Tanzania Open Data Initiative, a government program supported by the World Bank and the United Kingdom Department for International Development (DFID) to support open data publication, accessibility and use. The second, Shule (<a href="http://shule.info"><span class="e-link">shule.info</span></a>), was spearheaded by Arnold Minde, a programmer, entrepreneur and open data enthusiast who has developed a number of technologies and businesses focused on catalyzing social change in Tanzania. Despite the challenges posed by Tanzania’s low Internet penetration rates, these sites are slowly changing the way citizens access information and make decisions. More generally, these projects are encouraging citizens to demand greater accountability from their school system and public officials.</p>
 
                                     <span class="e-read-more js-more-toggle">Read More</span>
                                 </div>
@@ -146,10 +141,11 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
-<p class="text">Open data can be used to increase the transparency and accountability of distinct groups simultaneously. While traditionally viewed as a means for holding government to account, <a href="http://openaid.se"><span class="e-link">openaid.se</span></a> demonstrates the capability of holding, for example, both donors and recipients accountable for aid expenditures. The <a href="http://openaid.se"><span class="e-link">openaid.se</span></a> platform also illustrates how the Swedish principle of open access to information can be updated in the age of digitization.</p>
 <ul>
-    <li class="e-list"><span class="e-bold">International standards</span> – such as the International Aid Transparency Initiative (IATI) – can help governments and other bodies releasing data do so in a manner that enables the highest levels of comparability and broad use. Metadata – in this case, project documentation and geocoding – can further improve the usefulness of standardized data sets.</li>
-    <li class="e-list">A lack of clearly defined, high-level political commitments to publishing open data and enabling reuse can create major, but not insurmountable challenges. While Sweden now boasts such high-level commitments, throughout much of <a href="http://openaid.se"><span class="e-link">openaid.se</span></a>’s development, no such policy existed.</li>
+    <li class="e-list">Dashboards like Shule and the Education Open Data Dashboard are cheaply repurposable tools that can be quickly and readily implemented by local programmers. Both dashboards were built and launched in two to three weeks, although the data set used to build Shule had been scraped in increments over several years.</li>
+    <li class="e-list">In countries with low Internet penetration, raising awareness among infomediaries, particularly in the media, about the availability and use of open data can be critical in bridging the access gap and successfully engaging the public. Civil society organizations, both local and international, can play a vital role in spurring the use of open data by raising awareness among infomediaries.</li>
+    <li class="e-list">Shule and the Education Open Data Dashboard illustrate the benefits of coordination and collaboration between government open data initiatives and those developed by civil society and private organizations. Shule was developed by a single dedicated programmer with little outside help; the Education Open Data Dashboard was developed by a local developer in coordination with government data practitioners, NGOs and programmers (including the man behind Shule). Taken together, the information these sites provide about Tanzanian education is richer and more interesting than either site alone.</li>
+    <li class="e-list">The collaboration between open data champions like Arnold Minde and civil society organizations such as Twaweza can radically increase the value and impact of open data initiatives.</li>
 </ul>
 
                                     <span class="e-read-more js-more-toggle">Read More</span>
@@ -172,10 +168,13 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
-<p class="text">Transparency and access to public information has a long-standing tradition in Sweden. The government was the first country in the world to enact a bill enforcing the principle of public access to information (“offentlighetsprincipen”) in 1776. This made it a requirement for all authorities to publish documents unless ad hoc legislation restricted their access.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-068-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-068">1</a></span></span> An unimpeded view by the public and media into governmental activities is still prioritized today in Bill 2009/10:175 on Public Administration for Democracy, Participation and Growth.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-067-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-067">2</a></span></span> Underlying this legislation is the belief that more accessible information provides a better basis for decisions and limits the scope for corruption and misuse of resources.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-066-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-066">3</a></span></span> Sweden’s commitment to openness and public scrutiny often places it near the top of transparency rankings.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-065-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-065">4</a></span></span></p>
-<p class="text">As part of its commitment to public access, Sweden launched an Aid Transparency Guarantee in 2010. Pursuant to the guarantee, all public actors that are allocated funds under international development cooperation are required to publish related information and documentation in an open format online.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-064-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-064">5</a></span></span> This includes an explanation of when, to whom and why money was made available, and what results have been achieved.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-063-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-063">6</a></span></span> In theory, such information enables relevant stakeholders to follow the whole chain of aid from overall decisions to implementation and monitoring.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-062-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-062">7</a></span></span></p>
-<p class="text">The manifestation of the Transparency Guarantee is the Openaid website (<a href="http://www.openaid.se"><span class="e-link">www.openaid.se</span></a>) jointly launched in April 2011 by the Swedish Ministry of Foreign Affairs and the Swedish International Development Cooperation Agency (Sida). The <a href="http://openaid.se"><span class="e-link">openaid.se</span></a> data hub has several policy objectives: to promote active transparency, provide a better knowledge base for planning, steering and making decisions about Swedish aid allocations and aid policy priorities, increase participation in Swedish development cooperation, strengthen the preconditions for true accountability, restrict the space for corruption, duplication and inefficient use of resources and promote innovative thinking across different sectors related to development.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-061-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-061">8</a></span></span></p>
-<p class="text">The reform of aid development cooperation was inspired in part by commitments that had been made in the international fora, including IATI and the Paris Declaration, Accra Agenda for Action.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-060-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-060">9</a></span></span> The platform was also a core component of Sweden’s Open Government Partnership (OGP) National Action Plan, signed in September 2011. The Action Plan was focused on enabling the government to stay on track with planned proposals, as well as increasing the amount of input from civil society and committing to publish standardized data in the IATI format.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-059-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-059">10</a></span></span> Sweden’s commitment to reform in this sector also led the government to sign the Busan Partnership Agreement for Effective Development Cooperation, which sets time-bound commitments to fully publish aid information to a common, open standard.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-058-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-058">11</a></span></span> It also offers a framework for “continued dialogue and efforts to enhance the effectiveness of development cooperation” through information access on aid flows and activities in both donor and partner countries.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-057-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-057">12</a></span></span></p>
+<p class="text">Since 2012, education in Tanzania has become the subject of significant public discontent and controversy. That year, six out of every 10 Tanzanian students failed the standardized national secondary-level examination, resulting in significant public discontent and demand for reforms.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-043-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-043">1</a></span></span> The poor results were in many ways the outcome of recent changes to the Tanzanian education system. In 2002, tuition fees for government primary schools were eliminated in an effort to raise school enrolment and literacy rates. The move triggered rapid growth in net primary enrollment, from 66 percent in 2001 to 90 percent in 2004,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-042-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-042">2</a></span></span> but this growth was not matched by a proportional increase in school funding, hence the education sector’s problems a few years later.</p>
+<p class="text">As the Tanzanian school system strained under the burden of the additional enrollments, examination pass rates among the 30 percent of secondary-aged children enrolled in school<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-041-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-041">3</a></span></span> began to decline. After the particularly bad set of results in 2012, the government introduced changes to the grading system<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-040-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-040">4</a></span></span> that appeared to raise the pass rate in 2013 and 2014.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-039-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-039">5</a></span></span> However, the root causes of the nation’s education problems – inadequately funded and supplied schools, a shortage of trained teachers,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-038-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-038">6</a></span></span> limited teacher training and professional development, delays in the payment of teachers’ salaries,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-037-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-037">7</a></span></span> and stubborn regional, economic and social inequalities – remained unaddressed.</p>
+<p class="text">At the same time, information about the state of public education was not easy to come by, making it hard for citizens to understand the true state of the education sector and demand accountability from government officials. The Tanzanian media is considered only partly free by Freedom House,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-036-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-036">8</a></span></span> and the country was ranked 75th out of 180 countries in the 2015 World Press Freedom Index.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-035-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-035">9</a></span></span> Although several Access to Information bills have gone before the Tanzanian Parliament, none has yet been enacted, while other legislation, including the country’s defamation law, constrains the media’s capacity to function critically and independently.</p>
+<p class="text">In addition, there exists a noticeable lack of independent voices in the Tanzanian media. While media ownership is transparent, it remains concentrated among a few proprietors. All four radio stations with national reach are regarded as favoring the ruling party.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-034-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-034">10</a></span> </span>Media outlets favorable to the opposition reportedly have government advertising contracts withheld.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-033-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-033">11</a></span></span> Consequently, when stories about the state of education do make it to press, they tend to favor the official version of events, and often lack balance or context.</p>
+<p class="text">Citizens were for the most part unable to turn to the Internet or open data as substitutes for the information they needed. Open data use in Tanzania is still in its infancy, although recent initiatives such as the Africa Open Data Conference, convened by the president of Tanzania, are encouraging development.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-032-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-032">12</a></span></span> The Open Data Barometer places Tanzania in the “capacity constrained” cluster of countries whose open data initiatives are challenged by limits in government, civil society or private sector capacity, Internet penetration, and data collection and management.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-031-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-031">13</a></span></span> Tanzania joined the Open Government Partnership (OGP) Initiative in September 2011. The second phase of its OGP action plan, currently being implemented, commits the government to establishing an open data portal (open<a href="http://www.opendata.go.tz/">data.go.tz</a>) that would release key data sets in the education, health and water sectors in machine-readable form.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-030-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-030">14</a></span></span> Publicly launched in September 2015, the portal at that date had 81 data sets available for download.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-029-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-029">15</a></span></span></p>
+<p class="e-quote">“Data is frightening for many people, so raw data is going to appeal to a vanishing few. Open data needs to be open plus curated plus chewed plus digested to appeal to most people, including policymakers.”</p>
+<p class="e-quote-author">Aidan Eyakuze, Twaweza</p>
 
                                     <span class="e-read-more js-more-toggle">Read More</span>
                                 </div>
@@ -204,16 +203,17 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
-<p class="text">First launched in April 2011, <a href="http://openaid.se"><span class="e-link">openaid.se</span></a> is a Web-based information service about Swedish aid built on open government data.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-056-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-056">13</a></span></span> The site enables the public, aid actors and other stakeholders to follow when, to whom and for what purposes aid funds have been disbursed, and with what results.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-055-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-055">14</a></span></span> The interface of the platform is extremely simple and intuitive, enabling anyone to use it.</p>
-<p class="text">The website is built using public data at the activity level of individual aid contributions from the Ministry for Foreign Affairs, the Swedish International Development Cooperation Agency (Sida) and other authorities and ministries that handle aid funds.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-054-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-054">15</a></span></span> The data is visualized as treemaps and graphs showing how and where aid is distributed by recipient type.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-053-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-053">16</a></span></span> Depending on the choice of filter, users also have the option of viewing a list of all activities, ranging from one to several thousand for each recipient.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-052-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-052">17</a></span></span> These activities can then be downloaded in an Excel compatible comma separated values (CSV) file and used to develop new applications.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-051-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-051">18</a></span></span></p>
-<p class="text">Other functionalities include visibility of the entire aid chain and activity structure displaying the link between, for example, a policy decision and a disbursement.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-050-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-050">19</a></span></span> A contact form is also available on the site in Swedish and English, allowing for citizens to directly share feedback and concerns with Sida. There is also an interface for mobile devices with customized interaction and design and a mobile app.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-049-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-049">20</a></span></span> One of the key features for this mobile app is a whistle-blower function, enabling users to report suspicions of fraud directly.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-048-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-048">21</a></span></span></p>
-<p class="e-h2">Underlying Data</p>
-<p class="text">The data available on the website is published according to the IATI standard on a monthly basis, making it easier to analyze and compare data sets from various sources. This commitment to a common standard of data is part of Sweden’s move toward implementing the Busan Outcome Document, which aims to have the full range of information publicly available in one open aid standard.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-047-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-047">22</a></span></span></p>
-<p class="e-img"><img class="_idGenObjectAttribute-1" src="case-study-tanzania-web-resources/image/Image4423.png" alt="" /></p>
-<p class="e-caption"><span class="e-italic">Figure 1: Sweden’s </span><a href="http://Openaid.se"><span class="e-link">Openaid.se</span></a></p>
-<p class="text">Over 80 percent of the data is currently available in a machine-readable format, with fully automated data collection each night.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-046-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-046">23</a></span></span> This includes all data provided by the 16 CSOs that have framework agreements with Sida.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-045-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-045">24</a></span></span> The first version of the site published over 100,000 documents at the activity level that could be sorted by disbursing agency or implementing partner.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-044-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-044">25</a></span></span> Since the launch, there have been over 15 additional updates, and the government has constantly sought to improve the quality of the data – including a focus on publishing results and evaluations data.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-043-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-043">26</a></span></span> There has also been a focus on adding new types of data in a form that can be aggregated. By the end of 2015, Sweden aimed to have 95 percent data compatibility with the IATI standard.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-042-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-042">27</a></span></span> There is also an ongoing integration between the CSO database and <a href="http://openaid.se"><span class="e-link">openaid.se</span></a> that will eventually enable the government to show more detailed data and results for CSO activities funded by Sida.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-041-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-041">28</a></span></span></p>
-<p class="text">Open Format</p>
-<p class="text"><a href="http://Openaid.se"><span class="e-link">Openaid.se</span></a> is built as an open source WordPress site enabling other aid donors and recipients to make their own aid tracker installations using their own data and themes.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-040-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-040">29</a></span></span> This has huge potential value in terms of spreading transparency across the aid ecosystem as a whole. Sida has also enhanced the use of the <a href="http://openaid.se"><span class="e-link">openaid.se</span></a> open format (API) so that consumers are able to reuse the data for third-party online API collections. Because of Sweden’s public access principles, this data belongs to the public domain by default. However, some restrictions are applied to sensitive or classified materials that are filtered out or materials where copyright is owned by someone else. In the case of the latter, the data is still available on openaid.se; however, it may not be republished without permission from the original copyright holder.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-039-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-039">30</a></span></span></p>
+<p class="text">In 2013, the National Examinations Council of Tanzania (NECTA) rolled out a dashboard<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-028-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-028">16</a></span></span> offering data downloads, searches, and visualizations of primary and secondary examination results by district, with statistics on annual and average pass rates, national ranking and changes in pass rates since 2011.</p>
+<p class="text">The launch of its Big Results Now (BRN) program in 2012 committed the Government of Tanzania to publishing key data sets, powered by its parallel open data and OGP agendas, for public consumption. To support this, Tanzania Open Data Initiative launched the prototype Education Open Data Dashboard in 2015 (available at <a href="http://educationdashboard.org"><span class="e-link">educationdashboard.org</span></a>).<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-027-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-027">17</a></span></span></p>
+<p class="text">The Education Open Data Dashboard offers indicators such as pupil-teacher ratios, regional and district rankings, and improvement rankings over time, all of which are navigated via a clickable map and drop-down menu of schools. Although the site represents a significant advance by bringing together data from several sources, the dashboard’s remit limits its scope to BRN data, which does not include pass rates before 2012, average pass rates over time, or pass rates by gender or region. The Education Open Data Dashboard also offers no analysis of its data visualizations.</p>
+<p class="e-img"><img class="_idGenObjectAttribute-1" src="static/img/studies/tanzania-0.png" alt="Figure 1" /></p>
+<p class="e-caption">Figure 1: Mapping of school performance on the <a href="http://educationdashboard.org"><span class="e-link">educationdashboard.org</span></a></p>
+<p class="text">Many of these gaps have been filled in recent years by a pioneering project named Shule (<a href="http://shule.info"><span class="e-link">shule.info</span></a>). Shule is the brainchild of the Tanzanian programmer Arnold Minde. It was released shortly after NECTA’s own original dashboard, and was conceived when Minde, an entrepreneur and open data enthusiast, became aware that NECTA had been publishing individual exam results online since 2004. Although this data was available in isolated reports and websites, usually intended for individual students, it had never been made fully open in searchable and machine-readable format for citizens at large.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-026-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-026">18</a></span></span></p>
+<p class="text">Intrigued by the possibilities, Minde began scraping, cleaning and consolidating this data from the examination results as they were released each year. It wasn’t until 2012, however, when poor examination pass rates prompted nationwide soul-searching, that Minde began working on the project in earnest. At that point, he realized the potential value of a single, readily usable source of national examination data.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-025-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-025">19</a></span></span> Such data needed to be online, he concluded, so that citizens could see that the low pass rate of 2012 was not a new phenomenon, but part of a trend of worsening results over the past six to seven years. Minde had previously been involved in data visualization through his work for the Tanzanian development policy think tank <a href="http://www.repoa.or.tz/">REPOA</a> (formerly Research on Poverty Alleviation); that work convinced him of the power of data visualization to communicate data trends and linkages, and helped shape the development of Shule.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-024-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-024">20</a></span></span></p>
+<p class="e-img"><img class="_idGenObjectAttribute-2" src="static/img/studies/tanzania-1.png" alt="Figure 2" /></p>
+<p class="e-caption">Figure 2: Education results by region on <a href="http://Shule.info"><span class="e-link">Shule.info</span></a></p>
+<p class="text">Minde states that his aim in developing Shule was to make information available to everyone with a potential interest in it: parents choosing schools for their children; students looking up examination results; policymakers seeking to track educational trends and progress; and journalists wanting to improve their educational coverage. The original pilot of the site was ready in three weeks, but was revised and improved after Twaweza, a Tanzanian civil society organization promoting effective and transparent governance, became interested in Minde’s project. Twaweza’s advice prompted Minde to modify the design of his site for increased appeal and usability, and to double the number of indicators.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-023-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-023">21</a></span></span></p>
+<p class="text">The site currently presents data for Form 4 examination results from 2004 to 2013 at candidate, school, regional and national levels, and offers data visualizations of results by regions and gender, average performance over time, the number of candidates in each grading division over time, and the impact of the government’s controversial revision of the 2012 results. All data used to build the site is available for download. In addition, and in contrast to NECTA’s dashboards, Shule offers commentary on its data visualizations, making it easier for users to understand the significance of the data they are accessing.</p>
 
                                     <span class="e-read-more js-more-toggle">Read More</span>
                                 </div>
@@ -231,17 +231,63 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
-<p class="text">Transparency is crucial to drive improvements in the way development cooperation is delivered internationally, especially for generous aid donors like Sweden who allocate 1 percent of their estimated gross national income (GNI) toward development assistance.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-038-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-038">31</a></span></span> In terms of impact, Sweden is playing a leading role among major donors through its innovative openaid.se platform which has received wide acclaim for publishing information that goes well beyond traditional reporting to include project documentation, geocoding and aid results data. These efforts have borne fruit – Sweden is one of the highest-ranked countries in the Transparency International’s 2014 Corruption Perception Index<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-037-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-037">32</a></span></span> and is one of the highest-ranked donors in the Publish What You Fund 2014 Aid Transparency Index.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-036-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-036">33</a></span></span> Impact can be gauged according to increased donor transparency and accountability with follow-on effects to data quality as well as funding and management efficiencies:</p>
-<p class="e-h2">Increased Transparency and Accountability</p>
-<p class="text">By opening access to the chain of aid delivery and expenditures, citizens and other key stakeholders have been able to hold the Swedish government to account and aid processes have become more efficient through improved service delivery, reduced opportunities for diversion and therefore corruption.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-035-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-035">34</a></span></span> The increased transparency has also enabled donor recipients to plan and manage the resources coming into their country more effectively in settings where multiple actors are active, thereby decreasing the incentive to provide inferior services.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-034-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-034">35</a></span></span> As such, the openaid.se platform has received strong political and management support and organization involvement at all levels.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-033-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-033">36</a></span></span></p>
-<p class="text">By opening aid data to public scrutiny, the demand on the government to improve and maintain high-quality data has also increased. According to Carl Elmstam, the transparency manager at Sida, “The process of implementing transparency and the IATI standard drives quality as it has forced us to take a hard look at our own data and learn from it.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-032-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-032">37</a></span></span> According to Hanna Hellquist, former State Secretary for International Development, opening the data also enabled the government to fully understand the underlying problems and challenges that were built into Swedish aid reporting and IT systems.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-031-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-031">38</a></span></span> This understanding, coupled with external pressure, has forced Sida to constantly improve reporting processes and ameliorate any data flaws.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-030-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-030">39</a></span></span></p>
-<p class="text">This sort of transparency has the potential to radically decrease the incentive structure for corruption by enabling external stakeholders to pinpoint problems and support their demands for reform. It has also enabled aid to be targeted more specifically and in some cases, it has led to funds being earmarked for improving recipient-country governance, including projects that combat corruption.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-029-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-029">40</a></span></span></p>
-<p class="text">This would not have been possible without active engagement and strategic communication both internally with employees and externally with the public and recipient countries. Internally, the MFA and Sida started to design the site before any formal decisions had been made. To push the decision through, they held regular meetings with different actors within the government to address objections and link the initiative to broader commitments made in other parts of government, such as the PSI Directive, which calls for public authorities to release their data for reuse at no charge.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-028-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-028">41</a></span></span> In doing so, staffs were reminded of the importance of good and reliable data, not only for the organization but also for global development cooperation and partner countries.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-027-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-027">42</a></span></span> Externally, Sida worked to increase general awareness of the values of transparency, open data and data quality through communication and facilitation of reporting and data conversion for the CSOs they support.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-026-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-026">43</a></span></span> According to Hellquist, the opening of data has facilitated a cultural and attitude shift in the aid administration (MFA and Sida) regarding its relation to the public.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-025-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-025">44</a></span></span></p>
-<p class="e-h2">Improved Management Efficiency</p>
-<p class="text">The openaid.se platform has also shown substantial impact in terms of having more efficient reporting mechanisms, including improved information management systems and reduced costs for duplicate manual reporting of aid information, particularly at the country office level. These improved reporting mechanisms, in part spurred by the commitment to make their data available in the IATI standard, have enabled the government to save around US$7 million annually. It has also had follow-on benefits in terms of aid effectiveness, as the government has been able to analyze and compare data sets from partner country budget classifications, enabling stakeholders to see where aid is supporting their own priorities and increasing accountability. According to conservative estimates from IATI, approximately US$18 billion in aid is lost annually through corruption. Cost-benefit analyses show that greater aid transparency has the potential to reduce such corruption and improve predictability by US$1.6 billion annually.</p>
-<p class="e-h2">Enabling Collaboration with Beneficiaries</p>
-<p class="text">Making aid information open is just the start. For transparency to be transformational, beneficiaries must actually use the aid data. One impact of the newly freed data on the openaid.se platform has been the ability of Sida to tap into the knowledge and creativity of a wide variety of stakeholders in Swedish society to come up with new ideas for tools, activities and functionalities for the site.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-024-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-024">45</a></span></span></p>
-<p class="text">It has also facilitated substantial and complex forms of collaboration with CSOs including PWYF, in pursuit of increased aid transparency. This has shifted the power dynamics between NGOs and the government, bringing the practice of the organization nearer to its principles of participation, accountability and empowerment. In this respect, Sida’s efforts have also served to improve other donors’ and partner countries’ development efforts by acting as a model for countries like Denmark, which recently launched a similar platform – Danida Open Aid.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-023-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-023">46</a></span></span> While it is difficult to assess whether the idea was explicitly emulated, the fact that openaid.se uses an open source Wordpress site removes the need for other countries to start from scratch when building their own initiatives.</p>
+<p class="text">Tanzania is a country with low Internet penetration rates (4.9 percent in 2014, according to ITU, the United Nations specialized agency for information and communication technologies<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-022-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-022">22</a></span></span>), and a general lack of familiarity with the concept and potential of open data. As such, the impact of Shule and the Education Open Data Dashboard has been more modest and difficult to assess than it might have been in another country. Nonetheless, early signs of impact by these two education data dashboards are discernible. Impact can be gauged in three ways: engagement and use by both citizens and infomediaries; data quality and diversity; and spillover effects on other open data projects.</p>
+<p class="e-box-title">Intended Beneficiaries</p>
+<table id="table001" class="No-Table-Style TableOverride-1">
+    <colgroup>
+    <col class="_idGenTableRowColumn-1" />
+    <col class="_idGenTableRowColumn-2" />
+</colgroup>
+<tbody>
+    <tr class="No-Table-Style _idGenTableRowColumn-3">
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">Parents</p>
+        </td>
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">Able to visualize and compare school performance before choosing a school for their children</p>
+            <p class="text">Able to hold schools to account for performance</p>
+        </td>
+    </tr>
+    <tr class="No-Table-Style _idGenTableRowColumn-4">
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">Students</p>
+        </td>
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">Can access examination results using candidate number and examination center</p>
+        </td>
+    </tr>
+    <tr class="No-Table-Style _idGenTableRowColumn-5">
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">Policymakers and planners</p>
+        </td>
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">Data archives and visualizations allow the tracking of trends in education over time and by region</p>
+            <p class="text">Data visualization encourages better allocation of resources according to need</p>
+        </td>
+    </tr>
+    <tr class="No-Table-Style _idGenTableRowColumn-5">
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">Journalists</p>
+        </td>
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">Data visualizations and analysis offer context and prompt questions to improve depth of coverage of education stories</p>
+            <p class="text">Able to translate and digest data for general public, improving penetration</p>
+        </td>
+    </tr>
+</tbody>
+</table>
+<p class="e-h2">Engagement and use</p>
+<p class="text">Since Shule went live in June 2013, the site has averaged around 1,500 visits per month, according to Arnold Minde.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-021-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-021">23</a></span></span> Feedback directly on the site and through Twaweza suggests that visitors fall into two categories. The first consists of data sophisticates, typically programmers or employees of civil society organizations, who are already aware of the potential of open data to inform decision-making, and visit the site to research education in Tanzania and better understand the overall educational context. These visitors may have become aware of the site through Twaweza, REPOA’s network of civil society partners, or the emerging open data community in Dar es Salaam.</p>
+<p class="text">The second category of site visitors consists of former students making use of the site’s archive of examination results to look up their scores.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-020-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-020">24</a></span></span> These students may not initially be interested in or even aware of open data, but they are nonetheless exposed to Shule’s visualizations and other tools when they access the site.</p>
+<p class="text">Engaging the ordinary Tanzanian families Minde had originally hoped to reach has been more challenging. Low rates of Internet penetration and a lack of experience using the Internet have suppressed the amount of casual traffic received through search engines. Minde says he fears that average Tanzanians don’t have much interest yet in looking at data visualizations, preferring to get their information predigested by the media. “I don’t see people asking the real questions,” says Minde. “I don’t see discussions around the issues, even among people I know.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-019-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-019">25</a></span></span> Aidan Eyakuze, Executive Director of Twaweza, believes both the public and policymakers are looking for the insight contained in the data, not the data itself. “Data is frightening for many people, so raw data is going to appeal to a vanishing few. Open data needs to be open plus curated plus chewed plus digested to appeal to most people, including policymakers.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-018-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-018">26</a></span></span> Few in the media, however, have the knowledge and skills to digest Shule’s data offerings, despite initiatives like the Data Bootcamp, which was designed to introduce members of the Tanzanian media to open data.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-017-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-017">27</a></span></span></p>
+<p class="text">The Education Open Data Dashboard’s use is similarly constrained by Tanzania’s low rate of Internet use. Nonetheless, the site’s developers point out that Tanzanians don’t necessarily need Internet access to benefit from the information stored on the site. Members of civil society organizations, for example, including Tanzania’s active parent-teacher organizations, can potentially act as infomediaries, printing out information about school performance to share on a community notice board or at meetings.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-016-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-016">28</a></span></span> For its part, the government of Tanzania has recognized the potential impact of this tool. Using the open-source code of <a href="http://educationdashboard.org"><span class="e-link">educationdashboard.org</span></a>, a second iteration of the Education Open Data Dashboard – <a href="http://elimu.takwimu.org"><span class="e-link">elimu.takwimu.org</span></a> – will soon be integrated directly into the Tanzanian open data portal to help build demand for additional data set availability and use.</p>
+<p class="e-h2">Data Quality and Diversity</p>
+<p class="text">The combination of the Education Open Data Dashboard and Shule increases the diversity and thus the usefulness of available data on education in Tanzania. Taken together, the information they provide is richer and more interesting than either site would be on its own. The Education Open Data Dashboard offers indicators such as pupil-teacher ratios, regional and district rankings, and improvement rankings over time, all of which are navigated via a clickable map and drop-down menu of schools. Shule captures a much longer span of data, with examination results going back to 2004. In addition to results by gender, Shule offers average performance over time, and looks at the breakdown of candidate numbers per grading division over time. It also models the effect of the 2012 grading revision to examine how it changed candidate pass rates.</p>
+<p class="text">Although based on government data, the data set used to build Shule is not completely identical to that used for the government dashboard because of differences in their methods of data collection. Perhaps as a result, Shule’s figures can depart in significant ways from the government version. For example, NECTA has traditionally published an annual list of the 10 government and secondary schools with the highest examination results. In 2012, Minde reports that NECTA’s official list contained a number of government schools, but Shule’s analysis showed that all 10 of the top-performing schools were private.</p>
+<p class="text">For the developers of the Education Open Data Dashboard, one of the more surprising discoveries was the dashboard itself became a potent tool for teaching and understanding data management, publication, cleaning and licensing. Regional officials and head teachers were excited by finding their school or region in the dashboard, and by seeing what the data they submitted was creating, and this excitement encouraged increased understanding of data management. This suggests that the novelty of open data and data visualization, as manifested in a dashboard, can be a valuable entry point in building data management capacity.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-015-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-015">29</a></span></span></p>
+<p class="e-h2">Impact on Other Data Projects</p>
+<p class="text">As the developers of the latest version of the Education Open Data Dashboard have indicated, Shule forms part of a nascent data ecosystem of which they were very much aware during the development and refinement of their own site. The existence of such independent projects validated both the demand for the kinds of open data portal they were building and provided evidence that the local technical and other capacity existed to build it.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-014-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-014">30</a></span></span> Their own dashboard was, in turn, a powerful tool in demonstrating the potential and uses of open data to a nontechnical audience, particularly among policymakers. In addition, the data visualizations and linkages it made possible ignited interest in, and impetus for, the development of dashboards in other sectors, such as water and health, both priorities for the BRN initiative.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-013-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-013">31</a></span></span></p>
+<p class="text">Outside Tanzania, Shule has been used as an example of the potential and use of open data in education. Both it and the Education Open Data Dashboard illustrate the power of a deceptively simple tool, one that can be cheaply and easily produced in a matter of a few weeks by local programmers, then refined through user feedback. As one of the developers of the Education Open Data Dashboard put it: “Get a minimum viable product out there … and provoke a response.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-012-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-012">32</a></span></span></p>
 
                                     <span class="e-read-more js-more-toggle">Read More</span>
                                 </div>
@@ -260,16 +306,23 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
-<p class="text">Sweden has made huge strides toward more open, inclusive, accountable and responsive development through the openaid.se site, driving both political debate and opinion about aid priorities. Development coordination and spending between donors and partner countries have also improved, enabling greater impact with finite resources. Nonetheless, the government still faces numerous challenges in making the data easily comprehensible with the right tools to facilitate understanding, analysis and use by general audiences.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-022-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-022">47</a></span></span> If Sweden is to continue along the path to aid transparency on which it has set itself, several areas should be addressed:</p>
-<p class="e-h2">Structural Challenges</p>
-<p class="text">Openaid.se is a proprietary system with a funder-centric view.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-021-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-021">48</a></span></span> This means that there are often challenges in accessing and aggregating information and activities from recipient systems, given the software was tailor-made for Sweden.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-020-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-020">49</a></span></span> Accordingly, it is often difficult to get a true understanding of the impact of development aid and much of the data on the platform hasn’t been reused, for example, for building applications.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-019-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-019">50</a></span></span> To overcome these structural problems, openaid.se could create novel ways to combine data with other systems through the integration of new tools. Easily comparable data would lead to better impact analyses to understand the effects of aid, to more targeted and efficient innovations, more openness and accountability.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-018-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-018">51</a></span></span></p>
-<p class="e-h2">Data Privacy</p>
-<p class="text">The active and instant nature of publishing aid data has exposed privacy concerns among Sida staff, despite the fact that the information was publicly available before the development of openaid.se.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-017-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-017">52</a></span></span> This has raised the need to think about how transparent the site should be and what tools could be implemented to mitigate apprehensions about data privacy, including the use of unofficial notes and comments only available to staff.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-016-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-016">53</a></span></span> Staff buy-in is essential for the continued growth of the site. As such, Sida should continue to prioritize communication to staff about the values of transparency and accountability while remaining responsive to their concerns for data privacy.</p>
-<p class="e-h2">Usability and Citizen Engagement</p>
-<p class="text">When Sida first launched openaid.se in 2011, user experience wasn’t a key priority. As such, the site offers limited opportunities for citizen engagement or interaction. The only feedback channel is an opinion button which people use for reporting bugs.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-015-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-015">54</a></span></span></p>
-<p class="text">Usability is also a concern, and project titles often contain cryptic terms that are interpretable only to those who work internally on projects, making them difficult to understand for a wider audience.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-014-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-014">55</a></span></span> As such, there is a need to raise awareness among staff to ensure the accessibility of data with outside users.</p>
-<p class="e-h2">Data Licensing</p>
-<p class="text">During the initial development and deployment of openaid.se, Sweden’s data policy environment presented numerous challenges. Until May 2015, there were no specific regulations regarding open data and open data sources.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-013-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-013">56</a></span></span> The PSI Directive helped to fill this juridical vacuum in relation to the reuse of data within Sweden. Prior to the PSI Directive’s introduction, however, openaid.se had neither high-level policy support nor clearly defined licensing guidelines or standards. As Sweden continues to take steps to enshrine the legal right to access and reuse public data, early challenges related to clear, legal data licensing structures for openaid.se data should continue to wane.</p>
+<p class="text">Shule and the Education Open Data Dashboard are both young projects, launched into a society and country that is only beginning to grasp the potential of open data. Their most influential years could well lie ahead. However, if they are to grow and disseminate further among the population, they will need to overcome some challenges. This section examines two of the most important challenges they are likely to face.</p>
+<p class="e-h2">Lack of Internet Penetration and Use</p>
+<p class="text"><a id="_idTextAnchor001"></a>Perhaps the most important challenge stems from Tanzania’s low Internet penetration and usage rates. The two dashboards take as a given that providing information to target audiences will lead to improved conditions on the ground. It will be difficult to prove this, particularly in rural areas, where Internet penetration rates are estimated to be about a quarter of those in urban areas.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-011-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-011">33</a></span></span> This clearly limits the reach of education-related data, and open data more broadly. Furthermore, of the 4.9 percent of Tanzanians who used the Internet in 2014, the great majority do so only by mobile phone; only 0.2 percent of Tanzanians had a fixed broadband subscription.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-010-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-010">34</a></span></span> In order to appeal more widely, any open data site clearly needs to consider launching a mobile application to appeal to “the retail user of data sitting in a bus shelter with a mobile phone.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-009-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-009">35</a></span></span></p>
+<p class="text">The barriers may be even higher, in fact, when it comes to using data and technology as instruments of change. Minde notes that, in general, the Tanzanian public is deeply unfamiliar with the potential of the Internet, and perhaps not yet inclined to trust it. He adds that Tanzanians have yet to embrace or commit to digital solutions for the problems of everyday life, whether complex or mundane. As an example, he cites the difficulty he experienced in convincing bus operators to adopt an earlier application he developed that allowed passengers to purchase tickets by phone. “It will only take one [company], and then people will see the benefit,” he says. “But first you have to convince the one.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-008-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-008">36</a></span></span></p>
+<p class="text">Meanwhile, as Internet penetration slowly expands, civil society organizations like parent-teacher organizations or NGOs have an important role to play as infomediaries who can share information with parents directly or through low-tech solutions like community notice boards. A recent study notes, for instance, that ultra low-tech solutions like posting printouts of information drawn from open data dashboards on school or community noticeboards can be effective in getting information to the people who can use it.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-007">37</a></span></span></p>
+<p class="e-h2">Fragmentation</p>
+<p class="text">Given low Internet penetration rates, the existence of two separate dashboards for education information could also prove confusing to parents, and limit the effectiveness of both platforms. Indeed, the greatest impact on education in Tanzania could very well come from integrating the two platforms and cooperatively advancing a single project, rather than providing a limited user base with two separate entry points for accessing essentially the same information. Moves toward greater coordination have been made, however, including notably Minde’s involvement in development strategy workshops for the Education Open Data Dashboard,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-006-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-006">38</a></span></span> where government education specialists worked with Minde and with their own data to better understand opportunities and techniques to prepare and publish open data.</p>
+<p class="e-h1">V. Looking Forward</p>
+<p class="text">Both the platforms under study here have begun a process of transformation that is likely to be slow and gradual. Ultimately, if they are successful in overcoming their various challenges and scaling up usage, their impact is likely to be felt far beyond the education sector.</p>
+<p class="text">In the near term, the individuals and groups behind the platforms have two main strategies for extending their reach.</p>
+<p class="e-h2">Improving User Engagement through Expanded Functionality</p>
+<p class="text">One of the key goals in coming years, according to Minde, is to engage more average families and schools as users. Ordinary citizens want to know how schools are performing, he argues; they have a stake in the education data. Schools, especially private ones, also have a stake – they want to understand how their competitors are doing, and the data provided on Shule can help benchmark their own performance.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-005-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-005">39</a></span></span></p>
+<p class="text">In order to expand his user base, Minde plans to include a wider variety of data and new services. For example, he hopes to expand the site in the future to include Form 4 examination results, as well as the Form 2 and 6 results already included.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-004-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-004">40</a></span></span> In addition, he would also like to increase the range of information about schools, for example mapping their locations and showing contact details, performance over time and sample student profiles. He is also considering offering an online application system that would give schools a better and more efficient way of connecting with potential students.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-003-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-003">41</a></span></span></p>
+<p class="e-h2">Education of Infomediaries</p>
+<p class="text">As noted, infomediaries and civil society groups have a key role to play in overcoming the challenge posed by low Internet usage. Such groups can help disseminate insights gleaned from open data among citizens who would otherwise not have access to the data.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-002-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-002">42</a></span></span></p>
+<p class="text"><a id="_idTextAnchor002"></a>Some efforts have already taken place to involve civil society. For instance, in 2012, in an effort to encourage interest and build skills among coders and the media, the World Bank Institute and the Africa Media Initiative combined to offer the Data Bootcamp in Dar es Salaam.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-001-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-001">43</a></span></span> A similar initiative was offered by Twaweza in 2013, and community groups such as the Open Knowledge Foundation Network TZ have attempted to promote open data meetups in Dar es Salaam. In 2015, the Africa Open Data Conference was organized by a group that included both civil society organizations such as Code for Africa and the Open Knowledge Foundation, and the World Bank. These collaborations, and smaller informal meetups, provide an opportunity to bring together atypical combinations of stakeholders to meet and work with data.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-000">44</a></span></span></p>
+<p class="text">Such efforts are likely to become more frequent in the coming years – and, as they do, the impact of open data on education and many other sectors will begin to be felt more widely. Greater impact will also increase awareness, thus creating a virtuous cycle of change and empowerment. For the moment, significant challenges remain. But the two projects studied here indicate the clear potential of open data to, application by application, sector by sector, chip away at those challenges.</p>
 
                                     <span class="e-read-more js-more-toggle">Read More</span>
                                 </div>
@@ -284,31 +337,7 @@
                     
 
                     
-                    <div class="b-page-section">
-                        <div class="row">
-                            <aside class="medium-3 columns">
-                                <h3>Looking Forward</h3>
-                            </aside>
-                            <div class="large-8 columns end">
-                                <div class="e-expandable">
-                                    
-<p class="text">In order to address the above challenges and continue to expand upon the success of the openaid.se hub in terms of meaningfully increasing transparency, Sweden should consider implementation of more forward-planning data and increase the functionality of the site.</p>
-<p class="e-h2">Usability and functionality</p>
-<p class="text">While Sweden has taken significant steps to improve the usability and functionality of the openaid.se platform since its launch in 2011, much of the information is still too complex for lay citizens to digest in a meaningful way. Furthermore, given the funder-centric nature of the site, the opportunities for citizens to engage and interact are limited. To continue to improve upon the functionality, more intuitive data visualization and storytelling should be employed to present the large amounts of information available in a way that illustrates the impact of aid funding for the public.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-012-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-012">57</a></span></span> Tools developed by other organizations could be integrated into the current system to enable better field monitoring and evaluation. For example, tools like Water for People’s Field Level Observations Watch (FLOW)<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-011-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-011">58</a></span></span> or distributed publishing tools like&#160;Akvo Really Simple Reporting (RSR)<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-010-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-010">59</a></span></span> could be extremely effective.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-009-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-009">60</a></span></span></p>
-<p class="text">In terms of the distributed publishing and feedback functions, Sida should ensure they remain responsive to the data privacy concerns of staff and potentially launch functionalities to relieve tensions such as unofficial comments and notes that are only internally available.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-008-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-008">61</a></span></span></p>
-<p class="e-h2">Forward-Planning Data</p>
-<p class="text">The publication of more and more detailed forward-planning data by Sweden would have a huge impact on recipient countries.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-007">62</a></span></span> This could include links to project documents as well as results and conditions data for all planned activities in IATI files to promote access and use by others.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-006-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-006">63</a></span></span> This would enable greater local ownership over development results and have follow-on effects for increased accountability and governance. In its Open Government Partnership Action Plan, Sweden posits that this aid transparency will also enable full use of the available financial resources for poverty eradication and facilitate better division of labor.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-005-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-005">64</a></span> </span>According to Samantha Custer of AidData, “Equipping CSOs and government ministries to use this in program planning, advocacy and research is also essential to sustaining practice.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-004-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-004">65</a></span></span></p>
-<p class="text">Openaid.se should also improve the publication and use of monitoring and performance data. Currently this data is only available in PDF format. In the future, having this data available in the IATI standard would enable the information to be integrated into an ecosystem of tools for field monitoring and evaluation, leading to a more streamlined flow.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-003-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-003">66</a></span></span></p>
-<p class="e-h2">Collaboration with Other Partners</p>
-<p class="text">Greater collaboration with other donors and local partnerships in recipient countries for the development and rollout of the openaid.se platform would be hugely beneficial and overcome some of the structural challenges the site currently faces. To that end, Sweden could work with organizations in developing countries to combine with other recipient systems for contextualized applications to enhance transparency and accountability – i.e., applications to increase citizen access to governmental aid budgets and recipients.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-002-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-002">67</a></span></span></p>
-<p class="text">The Swedish legal barriers to reuse the data must also be addressed to create greater impacts. Reuse has the potential to enable interested citizens to create innovative new means of combining, displaying and otherwise reusing data, which has a huge potential for rethinking and reconfiguring the way aid is currently implemented.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-001-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-001">68</a></span></span> Efforts at various levels must harmonize their efforts in order to avoid fragmentation.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-tanzania.html#footnote-000">69</a></span></span> In order to avoid fragmentation, though, it is necessary for actors at various levels – from grassroots to ministries – to harmonize their efforts while not cutting off creative potential.</p>
-<p class="text">Sweden’s efforts to open aid data to the public have made major strides toward increasing transparency and accountability in the field. Given the fact that much of this effort occurred during a time when Sweden lacked the type of high-level policy commitments toward enabling the reuse of open data such as those found in many other countries is particularly notable. By focusing on the usability of the aid data hub, deploying more forward-thinking data and better collaborating with partnering stakeholders, openaid.se’s impacts should continue to grow and broaden in the coming years.</p>
 
-                                    <span class="e-read-more js-more-toggle">Read More</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     
 
                     <div class="b-page-section">
@@ -325,21 +354,26 @@
                     <div class="b-divider m-orange m-next js-next" js-impact="citizens" js-sector="education">
                         
                                         <div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
                                             <h1>Read Next</h1>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
                                             
                                             
                                             <a href="case-kenyas-open-duka.html" class="impact-citizens sector-public">
                                                 <h2>Kenya's Open Duka</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -351,9 +385,11 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-uruguays-a-tu-servicio.html" class="impact-citizens sector-health">
                                                 <h2>Uruguay's A Tu Servicio</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -365,9 +401,11 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-open-contracting-and-procurement-in-slovakia.html" class="impact-government sector-public">
                                                 <h2>Open Contracting And Procurement In Slovakia</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -379,9 +417,11 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-denmarks-open-address-data-set.html" class="impact-government sector-geospatial">
                                                 <h2>Denmark’s Open Address Data Set</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -393,9 +433,11 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-theyworkforyou.html" class="impact-government sector-public">
                                                 <h2>TheyWorkForYou</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -407,9 +449,13 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-opencorporates.html" class="impact-government sector-business">
                                                 <h2>OpenCorporates</h2>
                                             </a>
+                                            
+                                            
+                                            
                                             
                                             
                                             
@@ -423,217 +469,142 @@
                                                 <h4>Reference</h4>
                                                 
 <div class="_idFootnotes">
-    <div id="footnote-068" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-068-backlink">1</a> Östling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014. <a href="http://www.opengovpartnership.org/country/sweden/progress-report/report"><span class="e-link">http://www.opengovpartnership.org/country/sweden/progress-report/report</span></a></p>
-    </div>
-    <div id="footnote-067" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-067-backlink">2</a> “Open Government Partnership –&#160;Sweden’s 2012 National Action Plan – Self-Assessment Report.” <a href="http://www.opengovpartnership.org/sites/default/files/OGP"><span class="e-link">http://www.opengovpartnership.org/sites/default/files/OGP</span></a>%20Sweden’s%20Self-assessment%20Report%20-%<a href="http://20FINAL.pdf"><span class="e-link">20FINAL.pdf</span></a>; “Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership. <a href="http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download"><span class="e-link">http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</span></a></p>
-    </div>
-    <div id="footnote-066" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-066-backlink">3</a> “Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership. <a href="http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download "><span class="e-link">http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download </span></a></p>
-    </div>
-    <div id="footnote-065" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-065-backlink">4</a> Sweden is ranked sixth out of 68 aid donors by Publish What You Fund, third among bilateral donors and in the top-performing group in the 2014 Aid Transparency Index. “Sweden and Sida ranks high in aid transparency index.” Sida. October 16, 2014. <a href="http://www.sida.se/English/press/current-topics-archive/2014/sweden-and-sida-ranks-high-in-aid-transparency-index/"><span class="e-link">http://www.sida.se/English/press/current-topics-archive/2014/sweden-and-sida-ranks-high-in-aid-transparency-index/</span></a></p>
-    </div>
-    <div id="footnote-064" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-064-backlink">5</a> “A transparency guarantee in Swedish development assistance.” Regeringskansliet. 2010. <a href="http://www.regeringen.se/contentassets/38eb101044b640b6b25677b714ed302e/a-transparency-guarantee-in-swedish-development-assistance">http://www.regeringen.se/contentassets/38eb101044b640b6b25677b714ed302e/a-transparency-guarantee-in-swedish-development-assistance</a> </p>
-    </div>
-    <div id="footnote-063" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-063-backlink">6</a> “Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership. <a href="http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download"><span class="e-link">http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</span></a></p>
-    </div>
-    <div id="footnote-062" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-062-backlink">7</a> “Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership. <a href="http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download"><span class="e-link">http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</span></a></p>
-    </div>
-    <div id="footnote-061" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-061-backlink">8</a> GovLab interview with Hanna Hellquist, former State Secretary for International Development, Sweden, September 30, 2015.</p>
-    </div>
-    <div id="footnote-060" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-060-backlink">9</a> GovLab interview with Hanna Hellquist, former State Secretary for International Development, Sweden, September 30, 2015.</p>
-    </div>
-    <div id="footnote-059" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-059-backlink">10</a> <a href="http://www.opengovpartnership.org/country/sweden"><span class="e-link">http://www.opengovpartnership.org/country/sweden</span></a></p>
-    </div>
-    <div id="footnote-058" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-058-backlink">11</a> “The Busan Partnership for Effective Development Cooperation.” OECD. July 2012. <a href="http://www.oecd.org/dac/effectiveness/Busan"><span class="e-link">http://www.oecd.org/dac/effectiveness/Busan</span></a>%<a href="http://20partnership.pdf"><span class="e-link">20partnership.pdf</span></a></p>
-    </div>
-    <div id="footnote-057" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-057-backlink">12</a> “The Busan Partnership for Effective Development Co-operation.” OECD. <a href="http://www.oecd.org/development/effectiveness/busanpartnership.htm">http://www.oecd.org/development/effectiveness/busanpartnership.htm</a> </p>
-    </div>
-    <div id="footnote-056" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-056-backlink">13</a> <a href="http://www.openaid.se/about/">http://www.openaid.se/about/</a> </p>
-    </div>
-    <div id="footnote-055" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-055-backlink">14</a> <a href="http://www.openaid.se/about/">http://www.openaid.se/about/</a></p>
-    </div>
-    <div id="footnote-054" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-054-backlink">15</a> <a href="http://www.openaid.se/about/">http://www.openaid.se/about/</a> </p>
-    </div>
-    <div id="footnote-053" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-053-backlink">16</a> <a href="http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se/">http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se/</a> </p>
-    </div>
-    <div id="footnote-052" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-052-backlink">17</a> Peterson, Karl. “The making of <a href="http://Openaid.se"><span class="e-link">Openaid.se</span></a>.” Publish What You Fund. September 23, 2014. <a href="http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se/ "><span class="e-link">http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se/ </span></a></p>
-    </div>
-    <div id="footnote-051" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-051-backlink">18</a> GovLab Interview with Carl Elmstam, Transparency Manager, Sida, October 8, 2015. </p>
-    </div>
-    <div id="footnote-050" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-050-backlink">19</a> Östling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014. <a href="http://www.opengovpartnership.org/country/sweden/progress-report/report"><span class="e-link">http://www.opengovpartnership.org/country/sweden/progress-report/report</span></a></p>
-    </div>
-    <div id="footnote-049" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-049-backlink">20</a> Östling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014. <a href="http://www.opengovpartnership.org/country/sweden/progress-report/report"><span class="e-link">http://www.opengovpartnership.org/country/sweden/progress-report/report</span></a></p>
-    </div>
-    <div id="footnote-048" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-048-backlink">21</a> Östling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014. <a href="http://www.opengovpartnership.org/country/sweden/progress-report/report"><span class="e-link">http://www.opengovpartnership.org/country/sweden/progress-report/report</span></a></p>
-    </div>
-    <div id="footnote-047" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-047-backlink">22</a> Östling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014. <a href="http://www.opengovpartnership.org/country/sweden/progress-report/report"><span class="e-link">http://www.opengovpartnership.org/country/sweden/progress-report/report</span></a></p>
-    </div>
-    <div id="footnote-046" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-046-backlink">23</a> GovLab interview with Karl Peterson, Project Manager, Aid Transparency, Sida, September 23, 2015.</p>
-    </div>
-    <div id="footnote-045" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-045-backlink">24</a> Peterson, Karl. “The making of <a href="http://Openaid.se"><span class="e-link">Openaid.se</span></a>.” Publish What You Fund. September 23, 2014. <a href="http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se/ "><span class="e-link">http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se/ </span></a></p>
-    </div>
-    <div id="footnote-044" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-044-backlink">25</a> GovLab Interview with Carl Elmstam, Transparency Manager, Sida, October 8, 2015.</p>
-    </div>
     <div id="footnote-043" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-043-backlink">26</a> GovLab Interview. Karl Peterson. September 23, 2015; IRM, Sweden: Östling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014. <a href="http://www.opengovpartnership.org/country/sweden/progress-report/report"><span class="e-link">http://www.opengovpartnership.org/country/sweden/progress-report/report</span></a></p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-043-backlink">1</a>Kimboy, Frank. “High pass rate greeted as good as well as bad news.” The Citizen. July 23, 2014<br /><a href="http://www.thecitizen.co.tz/magazine/political-reforms/High-pass-rate-greeted-as-good/-/1843776/2394162/-/umh9xl/-/index.html"><span class="e-link">http://www.thecitizen.co.tz/magazine/political-reforms/High-pass-rate-greeted-as-good/-/1843776/2394162/-/umh9xl/-/index.html</span></a></p>
     </div>
     <div id="footnote-042" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-042-backlink">27</a> Östling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014. <a href="http://www.opengovpartnership.org/country/sweden/progress-report/report"><span class="e-link">http://www.opengovpartnership.org/country/sweden/progress-report/report</span></a></p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-042-backlink">2</a>“World Data on Education (Revised Version).” UNESCO. August 2010.<br /><a href="http://www.ibe.unesco.org/fileadmin/user_upload/Publications/WDE/2010/pdf-versions/United_Republic_of_Tanzania.pdf"><span class="e-link">http://www.ibe.unesco.org/fileadmin/user_upload/Publications/WDE/2010/pdf-versions/United_Republic_of_Tanzania.pdf</span></a></p>
     </div>
     <div id="footnote-041" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-041-backlink">28</a> “Open Government Partnership –&#160;Sweden’s 2012 National Action Plan – Self-Assessment Report.” <a href="http://www.opengovpartnership.org/sites/default/files/OGP"><span class="e-link">http://www.opengovpartnership.org/sites/default/files/OGP</span></a>%20Sweden’s%20Self-assessment%20Report%20-%<a href="http://20FINAL.pdf"><span class="e-link">20FINAL.pdf</span></a>; “Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership. <a href="http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download"><span class="e-link">http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</span></a></p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-041-backlink">3</a>“Tanzania: World Bank Development Indicators.” Accessed August 28, 2015<br /><a href="http://databank.worldbank.org/data"><span class="e-link">http://databank.worldbank.org/data</span></a>//<a href="http://reports.aspx"><span class="e-link">reports.aspx?source=2&amp;country=TZA&amp;series=&amp;period=</span></a></p>
     </div>
     <div id="footnote-040" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-040-backlink">29</a> Peterson, Karl. “The making of <a href="http://Openaid.se"><span class="e-link">Openaid.se</span></a>.” Publish What You Fund. September 23, 2014. <a href="http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se/ "><span class="e-link">http://www.publishwhatyoufund.org/updates/by-country/sweden/making-openaid-se/ </span></a></p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-040-backlink">4</a>Magolanga, Elisha. “No more Div. Zero as govt guts national grading system.” The Citizen. November 1, 2013.<br /><a href="http://www.thecitizen.co.tz/News/Govt-in-major-change-of-national-exam-grading/-/1840392/2055404/-/3kae76z/-/index.html"><span class="e-link">http://www.thecitizen.co.tz/News/Govt-in-major-change-of-national-exam-grading/-/1840392/2055404/-/3kae76z/-/index.html</span></a></p>
     </div>
     <div id="footnote-039" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-039-backlink">30</a> “Open Government Partnership –&#160;Sweden’s 2012 National Action Plan – Self-Assessment Report.” http://www.opengovpartnership.org/sites/default/files/OGP%20Sweden’s%20Self-assessment%20Report%20-%20FINAL.pdf; “Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership. http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-039-backlink">5</a>Kimboy, Frank. “High pass rate greeted as good as well as bad news.” The Citizen. July 23, 2014.<br /><a href="http://www.thecitizen.co.tz/magazine/political-reforms/High-pass-rate-greeted-as-good/-/1843776/2394162/-/umh9xl/-/index.html"><span class="e-link">http://www.thecitizen.co.tz/magazine/political-reforms/High-pass-rate-greeted-as-good/-/1843776/2394162/-/umh9xl/-/index.html</span></a></p>
     </div>
     <div id="footnote-038" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-038-backlink">31</a> “Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership. http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-038-backlink">6</a>The Citizen Reporter. “Teachers shortage hurting Tanzania.” The Citizen. October 14, 2014<br /><a href="http://www.thecitizen.co.tz/News/Teachers-shortage-hurting-Tanzania/-/1840340/2485582/-/tpeqyi/-/index.html"><span class="e-link">http://www.thecitizen.co.tz/News/Teachers-shortage-hurting-Tanzania/-/1840340/2485582/-/tpeqyi/-/index.html</span></a></p>
     </div>
     <div id="footnote-037" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-037-backlink">32</a> <a href="http://www.transparency.org/cpi2014">http://www.transparency.org/cpi2014</a> </p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-037-backlink">7</a>Qorro, Edward. “Education Policy: What lies ahead for teachers.” The Citizen. February 24, 2015.<br /><a href="http://www.thecitizen.co.tz/magazine/success/-/1843788/2633842/-/item/3/-/7gk0yk/-/index.html"><span class="e-link">http://www.thecitizen.co.tz/magazine/success/-/1843788/2633842/-/item/3/-/7gk0yk/-/index.html</span></a></p>
     </div>
     <div id="footnote-036" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-036-backlink">33</a> Sweden was ranked “Very Good” with an indicator score of 83.27 percent, a significant increase over its 2013 ranking. <a href="http://ati.publishwhatyoufund.org/donor/sweden/Sweden">http://ati.publishwhatyoufund.org/donor/sweden/Sweden</a> </p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-036-backlink">8</a><a href="https://freedomhouse.org/country/tanzania#.VaQZFvlViko"><span class="e-link">https://freedomhouse.org/country/tanzania#.VaQZFvlViko</span></a></p>
     </div>
     <div id="footnote-035" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-035-backlink">34</a> Faust, Jörg. “Donor Transparency and Aid Allocation.” German Development Institute Discussion Paper. December 2011. http://edoc.vifapol.de/opus/volltexte/2012/3552/pdf/DP_12.2011.pdf</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-035-backlink">9</a><a href="http://index.rsf.org/#!/index-details/TZA"><span class="e-link">http://index.rsf.org/#!/index-details/TZA</span></a></p>
     </div>
     <div id="footnote-034" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-034-backlink">35</a> Rådelius, Elias. “White paper, part 4: Keys to success and the road ahead.” Openaid.se Blog. May 28, 2015. <a href="http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/">http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/</a> </p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-034-backlink">10</a>In 2010, the African Media Barometer did report, however, that the state-run Radio Tanzania has demonstrated more balanced views within recent years</p>
     </div>
     <div id="footnote-033" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-033-backlink">36</a> Rådelius, Elias. “White paper, part 4: Keys to success and the road ahead.” Openaid.se Blog. May 28, 2015. <a href="http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/">http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/</a></p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-033-backlink">11</a>Tanzania Country Report – Freedom of the Press 2011. Freedom House. Accessed August 28, 2015. <a href="https://freedomhouse.org/report/freedom-press/2011/tanzania#.VaARQ_lVikp"><span class="e-link">https://freedomhouse.org/report/freedom-press/2011/tanzania#.VaARQ_lVikp</span></a></p>
     </div>
     <div id="footnote-032" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-032-backlink">37</a> Rådelius, Elias. “White paper, part 4: Keys to success and the road ahead.” Openaid.se Blog. May 28, 2015. <a href="http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/">http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/</a></p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-032-backlink">12</a><a href="http://www.africaopendata.net"><span class="e-link">http://www.africaopendata.net</span></a></p>
     </div>
     <div id="footnote-031" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-031-backlink">38</a> GovLab interview with Hanna Hellquist, Former Secretary of State, Sweden, September 30, 2015.</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-031-backlink">13</a><a href="http://www.opendatabarometer.org/report/analysis/index.html"><span class="e-link">http://www.opendatabarometer.org/report/analysis/index.html</span></a></p>
     </div>
     <div id="footnote-030" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-030-backlink">39</a> Rådelius, Elias. “Implementing aid transparency in Sweden – white paper, part 1: Why do we care about aid transparency and IATI?” Openaid.se Blog. May 25, 2015. <a href="http://www.openaid.se/blog/implementing-aid-transparency-in-sweden-white-paper-part-1-why-do-we-care-about-aid-transparency-and-iati/">http://www.openaid.se/blog/implementing-aid-transparency-in-sweden-white-paper-part-1-why-do-we-care-about-aid-transparency-and-iati/</a> </p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-030-backlink">14</a><a href="http://www.opengovpartnership.org/country/tanzania/action-plan"><span class="e-link">http://www.opengovpartnership.org/country/tanzania/action-plan</span></a></p>
     </div>
     <div id="footnote-029" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-029-backlink">40</a> GovLab interview with Hanna Hellquist, former State Secretary for International Development, Sweden, September 30, 2015.</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-029-backlink">15</a><a href="http://opendata.go.tz/dataset"><span class="e-link">http://opendata.go.tz/dataset</span></a></p>
     </div>
     <div id="footnote-028" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-028-backlink">41</a> http://www.government.se/about-the-website/psi-data/</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-028-backlink">16</a> Available at <a href="http://www.necta.go.tz/opendata/">http://www.necta.go.tz/opendata/</a>, and subsequently updated at <a href="http://www.necta.go.tz/opendata/brn">http://www.necta.go.tz/opendata/brn</a>/ </p>
     </div>
     <div id="footnote-027" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-027-backlink">42</a> GovLab Interview. Carl Elmstam. September 23, 2015. <a href="http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/">http://www.openaid.se/blog/part-4-keys-to-success-and-the-road-ahead/</a> </p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-027-backlink">17</a> http://the Education Open Data <a href="http://Dashboard.org"><span class="e-link">Dashboard.org/#/</span></a></p>
     </div>
     <div id="footnote-026" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-026-backlink">43</a> Rådelius, Elias. “White paper, part 2: How to get started publishing using the IATI standard as a bilateral donor agency” Openaid.se Blog. May 26, 2015. <a href="http://www.openaid.se/blog/part-2-how-to-get-started-publishing-using-the-iati-standard-as-a-bilateral-donor-agency/">http://www.openaid.se/blog/part-2-how-to-get-started-publishing-using-the-iati-standard-as-a-bilateral-donor-agency/</a> </p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-026-backlink">18</a> <a href="http://www.shule.info/about"><span class="e-link">http://www.shule.info/about</span></a></p>
     </div>
     <div id="footnote-025" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-025-backlink">44</a> Hanna Hellquist, GovLab interview with author. 30 September 2015. </p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-025-backlink">19</a> <a href="http://www.shule.info/about"><span class="e-link">http://www.shule.info/about</span></a></p>
     </div>
     <div id="footnote-024" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-024-backlink">45</a> “Guest blog from OpenAid – Sweden embraces the transparency agenda.” AidInfo. July, 21, 2010. <a href="http://www.aidinfo.org/guest-blog-from-openaid-sweden-embraces-the-transparency-agenda.html">http://www.aidinfo.org/guest-blog-from-openaid-sweden-embraces-the-transparency-agenda.html</a> </p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-024-backlink">20</a> GovLab Interview with Arnold Minde, Founder, Shule, July 9, 2015.</p>
     </div>
     <div id="footnote-023" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-023-backlink">46</a> <a href="http://openaid.um.dk/en/">http://openaid.um.dk/en/</a> </p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-023-backlink">21</a> GovLab Interview with Arnold Minde, Founder, Shule, July 9, 2015.</p>
     </div>
     <div id="footnote-022" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-022-backlink">47</a> Rådelius, Elias. “Implementing aid transparency in Sweden – white paper, part 1: Why do we care about aid transparency and IATI?” Openaid.se Blog. May 25, 2015. <a href="http://www.openaid.se/blog/implementing-aid-transparency-in-sweden-white-paper-part-1-why-do-we-care-about-aid-transparency-and-iati/">http://www.openaid.se/blog/implementing-aid-transparency-in-sweden-white-paper-part-1-why-do-we-care-about-aid-transparency-and-iati/</a></p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-022-backlink">22</a> ICT Statistics. ITU. Accessed August 28, 2015. <a href="http://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx"><span class="e-link">http://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx</span></a></p>
     </div>
     <div id="footnote-021" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-021-backlink">48</a> Bjelkeman-Pettersson, Thomas. “OpenAid.se, Swedish Development Aid Transparency.” Open for Change, April 4, 2011. <a href="http://openforchange.info/contant/openaidse-swedish-development-aid-transparency">http://openforchange.info/contant/openaidse-swedish-development-aid-transparency</a>.</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-021-backlink">23</a> GovLab Interview with Arnold Minde, Founder, Shule. July 9, 2015.</p>
     </div>
     <div id="footnote-020" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-020-backlink">49</a> GovLab Interview with Carl Elmstam, Transparency Manager, Sida, October 8, 2015.</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-020-backlink">24</a> GovLab Interview with Arnold Minde, Founder, Shule. July 9, 2015.</p>
     </div>
     <div id="footnote-019" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-019-backlink">50</a> Bjelkeman-Pettersson, Thomas. “OpenAid.se, Swedish Development Aid Transparency.” Open for Change, April 4, 2011. <a href="http://openforchange.info/contant/openaidse-swedish-development-aid-transparency">http://openforchange.info/contant/openaidse-swedish-development-aid-transparency</a>. </p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-019-backlink">25</a> GovLab Interview with Arnold Minde, Founder, Shule. July 9, 2015.</p>
     </div>
     <div id="footnote-018" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-018-backlink">51</a> Dietrich, Daniel. “Open Data in Development Aid.” European Public Sector Information Platform Topic Report No. 2012 / 02. March 2012. http://www.epsiplatform.eu/sites/default/files/Final%20TR%20Open%20Aid%20Data.pdf</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-018-backlink">26</a> GovLab Interview with Aidan Eyakuze, Executive Director, Twaweza. July 14, 2015.</p>
     </div>
     <div id="footnote-017" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-017-backlink">52</a> GovLab interview with Karl Peterson, Project Manager, Aid Transparency, Sida, September 23, 2015.</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-017-backlink">27</a> Bauer, Michael. “The Data Bootcamp in Tanzania.” Open Knowledge Blog. October 25, 2012. <br /><a href="http://blog.okfn.org/2012/10/25/the-data-bootcamp-in-tanzania/"><span class="e-link">http://blog.okfn.org/2012/10/25/the-data-bootcamp-in-tanzania/</span></a></p>
     </div>
     <div id="footnote-016" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-016-backlink">53</a> GovLab interview with Karl Peterson, Project Manager, Aid Transparency, Sida, September 23, 2015.</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-016-backlink">28</a> Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.</p>
     </div>
     <div id="footnote-015" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-015-backlink">54</a> Östling, Alina. “Independent Reporting Mechanism Sweden: Progress Report 2012-13.” Open Government Partnership. 2014. http://www.opengovpartnership.org/country/sweden/progress-report/report</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-015-backlink">29</a> Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.</p>
     </div>
     <div id="footnote-014" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-014-backlink">55</a> Rådelius, Elias. “White paper, part 3: Challenges” Openaid.se Blog. May 27, 2015. <a href="http://www.openaid.se/blog/part-3-challenges/"><span class="e-link CharOverride-1">http://www.openaid.se/blog/part-3-challenges/</span></a><span class="CharOverride-1"> </span></p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-014-backlink">30</a> Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.</p>
     </div>
     <div id="footnote-013" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-013-backlink">56</a> Månsson, Christer, et al. “From Bureaucracy to Innovation: An introduction to How to Work with Open Data,” March 2013. http://luii.lu.se/new-report-on-open-data/</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-013-backlink">31</a> “Social Justice.” Open Data for Tanzania. Accessed August 28, 2015. <a href="http://tanzania.opendataforafrica.org/igcpumb/social-justice"><span class="e-link">http://tanzania.opendataforafrica.org/igcpumb/social-justice</span></a></p>
     </div>
     <div id="footnote-012" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-012-backlink">57</a> Heacock, Rebekah and David Sasaki, “ICT4 Transparency in Sub-Saharan Africa. In Increasing Transparency and Fighting Corruption through ICT Empowering People and Communities,” The Swedish Program for ICT in Developing Regions (SPIDER) ICT4D Series No. 3, 2010. Stockholm: Stockholm University. IRM, Sweden: Progress Report 2012-13. http://spidercenter.org/polopoly_fs/1.163640.1390315885!/menu/standard/file/Spider%20ICT4D%20series%203%20Increasing%20transparency%20and%20fighting%20corruption%20through%20ICT.pdf</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-012-backlink">32</a> Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.</p>
     </div>
     <div id="footnote-011" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-011-backlink">58</a> FLOW is a “system to collect, manage, analyze, and display geographically-referenced monitoring and evaluation data,” mainly used for water points to date. https://www.waterforpeople.org/what-we-do</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-011-backlink">33</a> “Tanzania: Old Media, New Media.” AfricaFocus. April 5, 2011. <a href="http://www.africafocus.org/docs11/tan1104.php"><span class="e-link">http://www.africafocus.org/docs11/tan1104.php</span></a></p>
     </div>
     <div id="footnote-010" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-010-backlink">59</a> Akvo Really Simple Reporting is a “web and Android-based system that makes it easy for development aid teams to bring complex networks of projects online and instantly share progress with everyone involved and interested.” <a href="http://akvo.org/products/rsr/">http://akvo.org/products/rsr/</a> </p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-010-backlink">34</a> ICT Statistics. ITU. Accessed August 28, 2015. <a href="http://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx"><span class="e-link">http://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx</span></a></p>
     </div>
     <div id="footnote-009" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-009-backlink">60</a> Bjelkeman-Pettersson, Thomas. “OpenAid.se, Swedish Development Aid Transparency.” Open for Change, April 4, 2011. http://openforchange.info/contant/openaidse-swedish-development-aid-transparency. </p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-009-backlink">35</a> GovLab Interview with Aidan Eyakuze, Executive Director, Twaweza. July 14, 2015.</p>
     </div>
     <div id="footnote-008" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-008-backlink">61</a> GovLab Interview with Carl Elmstam, Transparency Manager, Sida, October 8, 2015.</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-008-backlink">36</a> GovLab Interview with Arnold Minde, Founder, Shule. July 9, 2015.</p>
     </div>
     <div id="footnote-007" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-007-backlink">62</a> GovLab Interview with Carl Elmstam, Transparency Manager, Sida, October 8, 2015.</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-007-backlink">37</a> Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.</p>
     </div>
     <div id="footnote-006" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-006-backlink">63</a> <a href="http://ati.publishwhatyoufund.org/donor/sweden/">http://ati.publishwhatyoufund.org/donor/sweden/</a> </p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-006-backlink">38</a> Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.</p>
     </div>
     <div id="footnote-005" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-005-backlink">64</a> “Sweden’s OGP Action Plan 2014-2016.” Open Government Partnership. http://www.opengovpartnership.org/es/files/swedens-ogp-action-plan-2014-2016-pdf/download</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-005-backlink">39</a> GovLab Interview with Arnold Minde, Founder, Shule. July 9, 2015.</p>
     </div>
     <div id="footnote-004" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-004-backlink">65</a> “Why Transparency Matters Part 5: Where Do We Go Next?” InterAction. January 10, 2014. <a href="http://www.interaction.org/blog/why-transparency-matters-part-5-where-do-we-go-next">http://www.interaction.org/blog/why-transparency-matters-part-5-where-do-we-go-next</a> </p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-004-backlink">40</a> <a href="http://www.shule.info/about"><span class="e-link">http://www.shule.info/about</span></a></p>
     </div>
     <div id="footnote-003" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-003-backlink">66</a> GovLab interview with Karl Peterson, Project Manager, Aid Transparency, Sida, September 23, 2015.</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-003-backlink">41</a> GovLab Interview with Arnold Minde, Founder, Shule. July 9, 2015.</p>
     </div>
     <div id="footnote-002" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-002-backlink">67</a> Heacock, Rebekah and David Sasaki, “ICT4 Transparency in Sub-Saharan Africa. In Increasing Transparency and Fighting Corruption through ICT Empowering People and Communities,” The Swedish Program for ICT in Developing Regions (SPIDER) ICT4D Series No. 3, 2010. Stockholm: Stockholm University. IRM, Sweden: Progress Report 2012-13. http://spidercenter.org/polopoly_fs/1.163640.1390315885!/menu/standard/file/Spider%20ICT4D%20series%203%20Increasing%20transparency%20and%20fighting%20corruption%20through%20ICT.pdf</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-002-backlink">42</a> It is worth noting, however, that even among such groups, awareness of the potential of open data remains at best nascent. Like the public at large, civil society groups also need to be trained to analyze and visualize data.</p>
     </div>
     <div id="footnote-001" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-001-backlink">68</a> Dietrich, Daniel. “Open Data in Development Aid.” European Public Sector Information Platform Topic Report No. 2012 / 02. March 2012. http://www.epsiplatform.eu/sites/default/files/Final%20TR%20Open%20Aid%20Data.pdf</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-001-backlink">43</a> Bauer, Michael. “The Data Bootcamp in Tanzania.” Open Knowledge Blog. October 25, 2012. <a href="http://blog.okfn.org/2012/10/25/the-data-bootcamp-in-tanzania/"><span class="e-link">http://blog.okfn.org/2012/10/25/the-data-bootcamp-in-tanzania/</span></a></p>
     </div>
     <div id="footnote-000" class="_idFootnote">
-        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-000-backlink">69</a> Dietrich, Daniel. “Open Data in Development Aid.” European Public Sector Information Platform Topic Report No. 2012 / 02. March 2012. http://www.epsiplatform.eu/sites/default/files/Final%20TR%20Open%20Aid%20Data.pdf</p>
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-study-tanzania.html#footnote-000-backlink">44</a> Interview with Samhir Vasdev, ICT Sector Unit, World Bank Group and Verena Luise Knippel, Senior Governance Specialist, World Bank June 30, 2015.</p>
     </div>
 </div>
 
                                                 <div id="footnote-999" class="_idFootnote">
-                                                    <p class="e-footnote-text">Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to the peer reviewers <a href="odimpact.org/about">odimpact.org/about</a> who provided input on a pre-published draft.</p>
+                                                    <p class="e-footnote-text">Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to <a href="odimpact.org/about">the peer reviewers</a> who provided input on a pre-published draft.</p>
                                                 </div>
                                             </div>
                                             <div class="medium-1 column">

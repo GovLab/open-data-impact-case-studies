@@ -1,369 +1,111 @@
-$od-blue: #164A7A;
-$od-blue-05: rgba(22,74,122,.05);
-
-// Modifier to add the main blue color
-
-.m-od-blue {
-    background-color: $od-blue;
+.m-citizens { 
+    @extend .m-orange;
 }
 
-.e-fn-ref {
-    vertical-align: super;
-    line-height: 0;
-
-    span { line-height: 0; }
-
-    a {
-        font-size: 12px !important;
-    }
+.m-government {
+    @extend .m-blue;
 }
 
-// This should probably become a component.
-// Note that it @extends the b-slide component, so maybe they should be somehow linked to each other.
-
-.b-quote-slide {
-    @extend .b-slide;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-    margin: 0;
-    min-height: 310px;
-
-    // This <img> could be transformed into a ::before, for easier reuse.
-    > img {
-        max-width: 50px;
-        margin: 30px auto;
-        opacity: .2;
-    }
-
-    p {
-        // text-align: center;
-        font-size: 24px;
-        color: $white;
-        max-width: 85%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .e-author {
-        font-size: 16px;
-        font-style: italic;
-    }
+.m-economic {
+    @extend .m-yellow;
 }
 
-.b-footnotes {
-    position: fixed;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    bottom: 0;
-    z-index: 11;
-    background-color: $od-blue;
-    box-shadow: 0 0 10px $gray-40;
-    display: none;
-
-    &.m-active { display: block; }
-
-    .e-close {
-        color: $white-60;
-        cursor: pointer;
-    }
-    .e-close:hover { color: $white; }
-
-    h4 {
-        text-transform: uppercase;
-        font-weight: 600;
-        color: $white-80;
-        font-size: 16px;
-    }
-
-    ._idFootnote.m-active { display: block; }
-
-    ._idFootnote {
-        display: none;
-        color: $white-70;
-        a { text-decoration: none; }
-        a:hover { text-decoration: underline; }
-    }
-
-    ._idFootnoteAnchor {
-        display: inline-block;
-        margin: -7px 10px;
-        padding: 2px 4px;
-        text-align: center;
-        text-decoration: none;
-        background-color: $white-30;
-        color: $white;
-        min-width: 24px;
-        height: 24px;
-        font-size: 14px;
-        border-radius: 12px;
-    }
+.m-public {
+    @extend .m-fuschia;
 }
 
-// This should probably become a component.
-.b-list-of-names {
-    margin: 0;
-
-    li {
-        font-size: 14px;
-        list-style-type: none;
-        margin-bottom: 10px;
-        color: $gray-60;
-        font-style: italic;
-
-        strong {
-            display: block;
-            font-size: 16px;
-            color: $black;
-            font-style: normal;
-            line-height: 1;
-            font-weight: 600;
-        }
-    }
-}
-
-.b-top-section {
-    position: relative;
-    padding: 0;
-    height: 580px;
-
-
-    h1 {
-        &.m-space-1 {
-            margin-top: 250px;
-            margin-bottom: 40px;
-        }
-        &.m-space-2 {
-            margin-top: 200px;
-            margin-bottom: 0;
-        }
-        &.m-sm {
-            font-size: 28px;
-            font-weight: 600;
-        }
-        &.m-sm-2 {
-            font-size: 48px;
-            font-weight: 300;
-        }
-        & a:focus {
-            color: $white;
-        }
-    }
-
-    h2 {
-        &.m-space-1 {
-            margin-top: 100px;
-            margin-bottom: 100px;
-        }
-        &.m-lg {
-            max-width: 850px;
-            font-size: 38px;
-            font-weight: 300;
-            margin: 0 auto;
-        }
-        &.m-sm {
-            font-size: 25px;
-            font-weight: 300;
-        }
-        & a:focus {
-            color: $white;
-        }
-    }
-
-    h4 {
-        font-size: 18px;
-        font-weight: 600;
-    }
-
-    .b-shader {
-        position: absolute;
-        top: 0;
-        padding: 50px 0;
-        height: 100%;
-        width: 100%;
-        // background-color: $gray-50;
-        background: linear-gradient($gray-10, $gray-90);
-        z-index: 0;
-    }
-
-    .e-left-box {
-        margin-top: 30px;
-        text-align: left;
-
-        div {
-            display: inline-block;
-
-            &.e-left {
-                width: 80px;
-                text-align: right;
-                margin-right: 15px;
-            }
-            &.e-right {
-                width: 200px;
-                text-align: left;
-                font-weight: 600;
-            }
-        }
-    }
-
-    .e-right-box {
-        margin-top: 30px;
-        text-align: right;
-
-        p {
-            margin: 0;
-
-            &:first-child {
-                font-weight: 800;
-                text-transform: uppercase;
-            }
-        }
-    }
-
-
-
-    i.m-lg-faded {
-        font-size: 50px;
-        color: $white-40;
-        &:hover {
-            color: $white;
-            @include transition;
-        }
-    }
-
-    &.m-hires-1 {
+#case-study-page,
+#open-data-impact-homepage {
+    .b-top-section {
+        height: 75vh;
+        position: relative;
         background: url('../img/home.jpg') no-repeat center center;
         background-size: cover;
+        
+        .e-shade {
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: linear-gradient($gray-10, $gray-80); 
+        }
     }
 
-    &.m-hires-2 {
-        background: url('../img/nairobi.jpg') no-repeat center top;
-        background-size: cover;
-    }
+    .e-titles {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        padding: 20px;
 
-    &.m-light   { background-color: transparent;  color: $black;  }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-.b-page-section {
-    aside h3 {
-        text-align: right;
-        padding-right: 30px;
-    }
-
-    .e-expandable {
-
-        * {
-            font-size: 1.1rem;
-            font-weight: 300;
-        }
-
-        > *:not(:first-child) {display: none;}
-        > *:only-of-type + .e-read-more { display: none; }
-
-        .m-show { display: block; }
-
-        .e-read-more {
-            display: inline;
-            cursor: pointer;
-            color: $od-blue;
-            font-weight: 600;
-
-            &:hover { text-decoration: underline; }
-        }
-
-        .e-h2 {
-            font-weight: bold;
-            color: $od-blue;
-            &:not(:first-child) { margin-top: 30px; }
-        }
-
-        .e-caption {
-            text-align: left;
+        h3 span {
+            text-transform: uppercase;
             font-size: 16px;
-            font-style: italic;
-            margin-bottom: 15px;
+            margin: 0;
+            width: auto;
+            padding: 5px 8px;
+            background-color: $purple;
+            font-weight: 400;
         }
-
-        b { font-weight: bold; }
-
-        img {
-            box-shadow: 0 0 8px $gray-10;
-            margin: 30px 0;
-        }
-
-        .e-quote {
-            background-color: $od-blue-05;
-            padding: 20px 20px 20px 40px;
-            position: relative;
-
-            &:before {
-                background-image: url("../img/quote.svg");
-                background-repeat: no-repeat;
-                background-size: 50%;
-                background-position: center;
-                @include circle;
-                height: 34px;
-                width: 34px;
-                background-color: $od-blue;
-                content: '';
-                position: absolute;
-                left: -17px;
-            }
-        }
-
-        .e-quote-author {
-            margin-top: -15px;
-            background-color: $od-blue-05;
-            padding: 0 20px 20px 40px;
-            position: relative;
-            text-align: right;
-
-            span {
-                font-weight: bold;
-                font-size: 14px;
-                text-transform: uppercase;
-                color: $od-blue;
-            }
-        }
-
-
-
     }
 }
 
 
+#download-button,
+#explore-button {
+    bottom: -27px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 
+    a { box-shadow: 0 0 5px $gray-20; }
+    .material-icons {
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.case-study-page {
+#case-study-page {
     .b-top-section {
+        text-align: center;
         margin-bottom: 60px;
+
+        .e-titles {
+            padding: 30px;
+        }
+    }
+
+    .e-tags {
+        overflow: hidden;
+        float: left;
+        width: 40%;
+
+        p { margin: 0; }
+        
+        .e-left { 
+            float: left;
+            width: 30%;
+            text-align: right;
+            padding: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .e-right {
+            float: right;
+            width: 70%;
+            text-align: left;
+            padding: 10px;
+        }
+    }
+
+
+    .e-read-times {
+        float: right;
+        width: 60%;
+        text-align: right;
+        p { margin: 0; }
     }
 }
 
@@ -379,6 +121,14 @@ $od-blue-05: rgba(22,74,122,.05);
 
     .b-page-section {
         padding-top: 50px;
+
+        a {
+            color: $od-blue;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
 
         h3 {
             font-size: 18px;
@@ -402,15 +152,15 @@ $od-blue-05: rgba(22,74,122,.05);
 
 .b-footer .e-content {
 
-    h4 { 
-        @include breakpoint($mobile-only) { text-align: center; } 
+    h4 {
+        @include breakpoint($mobile-only) { text-align: center; }
     }
-    
+
     .e-partner-logo {
         text-align: center;
     }
     .e-partner-logo > img {
-        
+
         @include breakpoint($mobile-only) {
             width: 80%;
             max-height: 300px;
@@ -459,14 +209,14 @@ $od-blue-05: rgba(22,74,122,.05);
 // .b-top-nav .e-nav-group.m-right,
 // .e-right-box,
 // ul.b-sidebar,
-// div h2::after { 
+// div h2::after {
 //     @include breakpoint($mobile-only) {
-//         display: none !important; }    
+//         display: none !important; }
 //     }
-    
+
 
 // .b-top-section {
-    
+
 
 //     h1.m-space-2,
 //     h1.m-space-1 {
@@ -484,9 +234,9 @@ $od-blue-05: rgba(22,74,122,.05);
 //         }
 //     }
 
-//     .e-left-box { 
+//     .e-left-box {
 //         @include breakpoint($mobile-only) {
-//             text-align: center; 
+//             text-align: center;
 //         }
 //     }
 
@@ -499,13 +249,13 @@ $od-blue-05: rgba(22,74,122,.05);
 //     }
 // }
 
-// .b-page-section .e-last { 
+// .b-page-section .e-last {
 //     @include breakpoint($mobile-only) { margin: 0; }
 // }
 
 // .b-divider.m-next {
 //     @include breakpoint($mobile-only) { padding: 20px; }
-    
+
 //     > div {
 //         @include breakpoint($mobile-only) {
 //             width: 100%;
@@ -514,7 +264,7 @@ $od-blue-05: rgba(22,74,122,.05);
 //         }
 //     }
 
-//     h1, h2 { 
+//     h1, h2 {
 //         @include breakpoint($mobile-only) { text-align: right; }
 //     }
 // }
@@ -542,3 +292,224 @@ $od-blue-05: rgba(22,74,122,.05);
 
 
 
+// .b-top-section {
+//     // position: relative;
+//     // padding: 0;
+//     height: 75vh;
+
+
+//     // h1 {
+//     //     &.m-space-1 {
+//     //         margin-top: 250px;
+//     //         margin-bottom: 40px;
+//     //     }
+//     //     &.m-space-2 {
+//     //         margin-top: 200px;
+//     //         margin-bottom: 0;
+//     //     }
+//     //     &.m-sm {
+//     //         font-size: 28px;
+//     //         font-weight: 600;
+//     //     }
+//     //     &.m-sm-2 {
+//     //         font-size: 48px;
+//     //         font-weight: 300;
+//     //     }
+//     //     & a:focus {
+//     //         color: $white;
+//     //     }
+//     // }
+
+//     // h2 {
+//     //     &.m-space-1 {
+//     //         margin-top: 100px;
+//     //         margin-bottom: 100px;
+//     //     }
+//     //     &.m-lg {
+//     //         max-width: 850px;
+//     //         font-size: 38px;
+//     //         font-weight: 300;
+//     //         margin: 0 auto;
+//     //     }
+//     //     &.m-sm {
+//     //         font-size: 25px;
+//     //         font-weight: 300;
+//     //     }
+//     //     & a:focus {
+//     //         color: $white;
+//     //     }
+//     // }
+
+//     h4 {
+//         font-size: 18px;
+//         font-weight: 600;
+//     }
+
+//     .b-shader {
+//         position: absolute;
+//         top: 0;
+//         padding: 50px 0;
+//         height: 100%;
+//         width: 100%;
+//         // background-color: $gray-50;
+//         background: linear-gradient($gray-10, $gray-90);
+//         z-index: 0;
+//     }
+
+//     .e-left-box {
+//         margin-top: 30px;
+//         text-align: left;
+
+//         div {
+//             display: inline-block;
+
+//             &.e-left {
+//                 width: 80px;
+//                 text-align: right;
+//                 margin-right: 15px;
+//             }
+//             &.e-right {
+//                 width: 200px;
+//                 text-align: left;
+//                 font-weight: 600;
+//             }
+//         }
+//     }
+
+//     .e-right-box {
+//         margin-top: 30px;
+//         text-align: right;
+
+//         p {
+//             margin: 0;
+
+//             &:first-child {
+//                 font-weight: 800;
+//                 text-transform: uppercase;
+//             }
+//         }
+//     }
+
+
+
+//     i.m-lg-faded {
+//         font-size: 50px;
+//         color: $white-40;
+//         &:hover {
+//             color: $white;
+//             @include transition;
+//         }
+//     }
+
+//     &.m-hires-1 {
+//         background: url('../img/home.jpg') no-repeat center center;
+//         background-size: cover;
+//     }
+
+//     &.m-hires-2 {
+//         background: url('../img/nairobi.jpg') no-repeat center top;
+//         background-size: cover;
+//     }
+
+//     &.m-light   { background-color: transparent;  color: $black;  }
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+.b-page-section {
+    aside h3 {
+        text-align: left;
+        @include breakpoint($desktop) { text-align: right; }
+        padding-right: 30px;
+    }
+
+    .e-expandable {
+
+        * {
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        > *:not(:first-child) {display: none;}
+        > *:only-of-type + .e-read-more { display: none; }
+
+        .m-show { display: block; }
+
+        .e-read-more {
+            display: inline;
+            cursor: pointer;
+            color: $od-blue;
+            font-weight: 600;
+
+            &:hover { text-decoration: underline; }
+        }
+
+        .e-h2 {
+            font-weight: bold;
+            color: $od-blue;
+            &:not(:first-child) { margin-top: 30px; }
+        }
+
+        .e-caption {
+            text-align: center;
+            font-size: 16px;
+            font-style: italic;
+            margin-bottom: 15px;
+            color: $gray-50;
+        }
+
+        b { font-weight: bold; }
+
+        img {
+            box-shadow: 0 0 8px $gray-10;
+            margin: 30px 0;
+        }
+
+        .e-quote {
+            background-color: $od-blue-05;
+            padding: 20px 20px 20px 40px;
+            position: relative;
+
+            &:before {
+                background-image: url("../img/quote.svg");
+                background-repeat: no-repeat;
+                background-size: 50%;
+                background-position: center;
+                @include circle;
+                height: 34px;
+                width: 34px;
+                background-color: $od-blue;
+                content: '';
+                position: absolute;
+                left: -17px;
+            }
+        }
+
+        .e-quote-author {
+            margin-top: -15px;
+            background-color: $od-blue-05;
+            padding: 0 20px 20px 40px;
+            position: relative;
+            text-align: right;
+
+            span {
+                font-weight: bold;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: $od-blue;
+            }
+        }
+
+
+
+    }
+}

@@ -18,32 +18,18 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<body id="">
+<body id="case-study-page">
     
 
-    <header class="b-top-nav m-transparent">
+<!--     <header class="b-top-nav m-transparent">
 
         <div class="e-nav-group m-left e-social-media">
-<!--             <span class="e-nav-item js-nav-trigger e-nav-trigger">
-                <i class="material-icons">menu</i>
-            </span> -->
-<!--             <span class="e-nav-item m-container e-search-container">
-                <form class="b-search " action="">
-        <input class="js-search-value" type="text">
-        <input class="js-search-submit js-search-trigger e-search-trigger material-icons" type="submit" value="search">
-    </form>
-            </span> -->
             <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
         </div>
 
-<!--         <div class="e-nav-group m-right e-social-media">
-            <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
-            <a href="https://www.youtube.com/user/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-youtube-play"></i></a>
-        </div> -->
-
         <div class="e-nav-group m-right">
             <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
-            <a href="index.html#explore" class="e-nav-item" id="nav-explore"><strong>Explore</strong></a>
+            <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
             <a href="about.html" class="e-nav-item" id="nav-about">About</a>
         </div>
 
@@ -51,7 +37,27 @@
             <img src="static/img/govlab-logo-white.png" alt="">
         </a>
 
-    </header>
+    </header> -->
+
+    
+<header class="b-top-nav m-transparent m-fixed">
+
+    <div class="e-nav-group m-left e-social-media hide-for-small-only">
+        <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
+    </div>
+
+    <div class="e-nav-group m-right hide-for-small-only">
+        <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
+        <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
+        <a href="about.html" class="e-nav-item" id="nav-about">About</a>
+    </div>
+
+    <a class="e-logo" href="./">
+        <img src="static/img/govlab-logo-white.png" alt="">
+    </a>
+
+</header>
+
 
     <!-- Main Menu (Off Canvas) -->
     <nav class="b-main-menu">
@@ -64,61 +70,50 @@
 
     
 
+
 <main class="case-study-page" role="main">
 
-    <div class="b-top-section m-hires-2 m-center" style="background-image: url(./static/img/banners/canada.jpg)">
-        <div class="b-shader">
-            <h1 class="m-space-2 m-sm-2">Opening Canada’s T3010 Charity Information Return Data</h1>
-            <h2 class="m-sm">Accountability of Charities through Open Data</h2>
+    <div class="b-top-section" style="background-image: url(./static/img/banners/canada.jpg)">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">Opening Canada’s T3010 Charity Information Return Data</h1>
+            <h2 class="e-tagline">Accountability of Charities through Open Data</h2>
             <h4>by Juliet McMurren, Stefaan Verhulst and Andrew Young<a class="_idFootnoteLink" href="#footnote-999">*</a></h4>
-            <h5></h5>
+            <div class="e-tags hide-for-small-only">
+                <div class="e-left">
+                    <p>Impact</p>
+                    <p>Sector</p>
+                    <p>Location</p>
+                </div>
+                <div class="e-right">
+                    <p>
+                        IMPROVING GOVERNMENT
+                        
+                    </p>
+                    <p>
+                        PHILANTROPHY &AMP; AID
+                        
+                    </p>
+                    <p>CANADA</p>
+                </div>
+            </div>
+            <div class="e-read-times hide-for-small-only">
+                <p>Read Time</p>
+                <p>Brief View <strong>5 MINS</strong></p>
+                <p>Full Story <strong>20 MINS</strong></p>
+            </div>
+        </hgroup>
+        <div id="download-button">
+            <a href="#explore-the-data" class="b-button m-government">Download The Report<i class="material-icons m-space">file_download</i></a>
+        </div>
+    </div>
 
-            <div class="row">
-                <div class="column medium-6">
-                    <div class="e-left-box">
-                        <div class="e-left">
-                            <p>Impact</p>
-                            <p>Sector</p>
-                            <p>Location</p>
-                        </div>
-                        <div class="e-right">
-                            <p>
-                                
-                                IMPROVING GOVERNMENT
-                                
-                            </p>
-                            <p>
-                                
-                                PHILANTROPHY &AMP; AID
-                                
-                            </p>
-                            <p>CANADA</p>
-                        </div>
-                    </div>
+                <div class="row hide-for-small-only">
+                    <ul class="b-sidebar">
+                        <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
+                    </ul>
                 </div>
 
-                <div class="column medium-6">
-                    <div class="e-right-box">
-                        <p>Read Time</p>
-                        <p>Brief View <strong>5 MINS</strong></p>
-                        <p>Full Story <strong>20 MINS</strong></p>
-                    </div>
-                    
-                        <a href="./static/files/case-study-canada.pdf" target="_blank" class="b-button m-bottom-overlap m-blue m-detail-page">
-                            
-                                        <i class="material-icons m-space">file_download</i>
-                                        Download The Report
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <ul class="b-sidebar">
-                            <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
-                        </ul>
-                    </div>
                     
                     <section class="b-page-section">
                         <div class="row">
@@ -228,8 +223,10 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
+<div>
 <p class="e-h2">Benefits to Charities</p>
 <p class="text">Outside of government, probably the heaviest users of the T3010 data set have been charities themselves. One of the earliest nonprofit users of the data set, Imagine Canada, has been working with the data since the early 1990s.<span class="e-fn-ref CharOverride-3"><span id="footnote-083-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-083">32</a></span></span> In the beginning, the data was used as a population count of charitable organizations, and an indicator of the key areas covered by the T3010, such as the charitable activities, revenues, expenditure, size, location and distribution – enabling a macro-level view of the philanthropic sector that still provides value today. Over time, Imagine Canada’s use of the data has become both heavier and more complex. “I use [the T3010 data] for everything from a sampling frame for survey work, to … a data source for answering policy-relevant questions, to being able to tell people what’s going on in the charitable sector in a given province. It looms large in every data-driven thing we do. You’re essentially talking about the vital statistics of every organization that’s in our key stakeholder area. … We use it in our business processes; we use it to understand what’s going on in organizations we don’t have direct contact with, but are actually responsible for … as a charity that seeks to serve the interests of other charities. Basically, almost every person in the organization on a daily basis touches the data, [although] a lot of the time they don’t realize it. ... I have the T3010 database open probably nine days out of 10.”<span class="e-fn-ref CharOverride-3"><span id="footnote-082-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-082">33</a></span></span></p>
+</div>
 <p class="text">A typical research project involving the data set for Imagine Canada was an examination of charity financing and its variability according to the size, subsector and activity type, and region. The project provided a benchmark for the organizations themselves, and allowed them to describe their particular situation to stakeholders and policymakers.</p>
 <p class="e-quote">“Policymakers look at the charitable sector and they see the data in the aggregate: where all of the money comes from and where it goes to. Organization leaders see it more from the perspective of where their specific organization gets its funding, and what the norms are. So policymakers look at the sector and say, wow, government funding plays a huge role. Charitable leaders look at the sector and say … well, most of that funding actually goes to a relatively small number of organizations: most of us are highly dependent on earned income and gifts and donations.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-081-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-081">34</a></span></span></p>
 <p class="text">Imagine Canada has also combined the T3010 data set with other data, including IRS 990s, foundation annual reports, social media and data mined from websites, to create a by-subscription Canadian directory to foundations and corporations, now called Grant Connect.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-080-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-080">35</a></span></span></p>
@@ -268,8 +265,10 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
+<div>
 <p class="e-h2">Mismatch Between Expectations and Reality</p>
 <p class="text">Without exception, those interviewed about their work with the T3010 data set describe a gap between the apparent promise of the data and what it can actually deliver. Because the T3010 is intended primarily for compliance and administration rather than research, it does not provide all of the information that users would like. It can help give a better high-level view of the financial and human resources of the sector, but has little to say about the clients, networks and funders of charities.<span class="e-fn-ref CharOverride-3"><span id="footnote-041-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-041">74</a></span></span> Hilary Pearson, President of PFC, notes, in addition, that the T3010 shows where grants came from, but not what they were used for.<span class="e-fn-ref CharOverride-3"><span id="footnote-040-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-040">75</a></span></span></p>
+</div>
 <p class="text">Significantly, the T3010 also says nothing at all about nonprofits without charitable status, which make up nearly half of the sector. Because nonprofit organizations without charitable status are covered by different legislation and legal requirements, they are not required to file an annual return.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-039-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-039">76</a></span></span> As a result, relatively little is known about Canadian nonprofits, although they make up at least 44 percent of the nonprofit sector, according to the National Survey of Non-profit and Voluntary Organisations (NSNVO).<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-038-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-038">77</a></span></span> Brouard notes the absence of a directorate devoted to nonprofits without charitable status: “CRA isn’t interested in nonprofits [without charitable status] because they don’t pay tax.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-037-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-037">78</a></span></span></p>
 <p class="text">Noting that many of those using the T3010 data set tend to fall in love with its possibilities, and then out of love with it as they encounter its limitations, Lasby cautions that it needs to be treated as a foundation, rather than as a complete source. “If you treat it as a found, high-quality data set you’re pretty much inevitably going to be disappointed. The number of research questions you can answer [without gathering more data] is actually pretty limited. People [think], ‘Oh, there’s this tremendously rich source of data that’s going to answer all my questions!’ Well, no: You’ve got a tremendously rich source of data that can provide you with a framework to work from in going out and gathering more data to answer your questions.”<span class="e-fn-ref CharOverride-3"><span id="footnote-036-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-036">79</a></span></span></p>
 <p class="e-h2">Data Quality: Transcription and Reporting Errors</p>
@@ -306,8 +305,10 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
+<div>
 <p class="e-h2">Improving the Usability of the Data</p>
 <p class="text">Users are equivocal about the usefulness of the current T3010 data release on the government’s open data portal. Lasby says that some of the ways the data has been processed for release on the open data portal do not make sense to him, and make the data harder to work with. He prefers to get data updates on CD-ROM, which are more frequent, with disc releases taking place roughly once a month, and containing a couple of years’ worth of both newly released data and updates and corrections to previously released data.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-009-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-009">106</a></span></span> CRA has expressed interest in creating an official research database, which Elson believes would be a boon for the comparability of research,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-008-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-008">107</a></span></span> but Lasby is concerned that accuracy would suffer without the continual updating of the CD-ROM releases.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-007">108</a></span></span></p>
+</div>
 <p class="text">Some parts of the data set remain largely unexplored territory. Lenczner notes that no one has made much use of the newly complete records of charitable gifts, since the entire list of gifts has only been made available since 2013. Overall, he believes that there is still a lot of value to be extracted from the entire data set. “It takes time for innovation to happen. It takes the market knowing what’s available and people knowing how to exploit what’s available.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-006-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-006">109</a></span></span> Lasby believes the use of the data is increasing as its availability has become better known. “One of the changes I’ve observed over the past couple of years is more and more journalists working with it, as a completely standard thing … and they work with it as a data set, not [by] going in and looking at a single organization.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-005-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-canada.html#footnote-005">110</a></span></span></p>
 <p class="text">Both Pearson and Brouard believe that separating the regulation of charities from tax collection would improve data quality and coverage. Pearson suggests that the solution may ultimately lie in separating the collection of charities data from CRA. “I think the fundamental issue … is one that the U.K. tackled some time ago: Should the regulation of the sector be handled out of the [tax] department? The U.K. created the Charities Commission for very good reason. An independent organization is able to regulate and collect data on charities outside of the requirements of revenue collection. I think that’s really fundamental, but that’s not an issue for CRA: It’s a political issue, and a policy issue.”</p>
 <p class="e-h2">IT Support for Nonprofits</p>
@@ -325,6 +326,8 @@
                     </div>
                     
 
+                    
+
                     <div class="b-page-section">
                         <div class="row">
                             <div class="large-10 large-offset-1 columns">
@@ -339,45 +342,50 @@
                         <div class="b-divider m-blue m-next js-next" js-impact="government" js-sector="philantrophy">
                             
                                         <div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
                                             <h1>Read Next</h1>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            
                                             
                                             
                                             <a href="case-theyworkforyou.html" class="impact-government sector-public">
                                                 <h2>TheyWorkForYou</h2>
                                             </a>
+                                            
                                             
                                             
                                             
@@ -389,9 +397,13 @@
                                             
                                             
                                             
+                                            
                                             <a href="case-opencorporates.html" class="impact-government sector-business">
                                                 <h2>OpenCorporates</h2>
                                             </a>
+                                            
+                                            
+                                            
                                             
                                             
                                             
@@ -753,7 +765,7 @@
 </div>
 
                                                 <div id="footnote-999" class="_idFootnote">
-                                                    <p class="e-footnote-text">Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to the peer reviewers <a href="odimpact.org/about">odimpact.org/about</a> who provided input on a pre-published draft.</p>
+                                                    <p class="e-footnote-text">Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to <a href="odimpact.org/about">the peer reviewers</a> who provided input on a pre-published draft.</p>
                                                 </div>
                                             </div>
                                             <div class="medium-1 column">
