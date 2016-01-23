@@ -30,7 +30,7 @@
         <hgroup class="e-titles">
             <h1 class="e-main-title">{{case.title}}</h1>
             <h2 class="e-tagline">{{case.description}}</h2>
-            <h4>by {{case.authors}}<a class="_idFootnoteLink" href="#footnote-999">*</a></h4>
+            <h4>by {{case.authors}}{% if case.special_thanks == true or case.special_thanks is not defined %}<a class="_idFootnoteLink" href="#footnote-999">*</a>{% endif %}</h4>
             <div class="e-tags hide-for-small-only">
                 <div class="e-left">
                     <p>Impact</p>
@@ -397,9 +397,11 @@
                                             <div class="medium-8 large-offset-3 column">
                                                 <h4>Reference</h4>
                                                 {% block footnotes %}{% endblock %}
+                                                {% if case.special_thanks == true or case.special_thanks is not defined %}
                                                 <div id="footnote-999" class="_idFootnote">
                                                     <p class="e-footnote-text">{% block special_thanks %}Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to <a href="odimpact.org/about">the peer reviewers</a> who provided input on a pre-published draft.{% endblock %}</p>
                                                 </div>
+                                                {% endif %}
                                             </div>
                                             <div class="medium-1 column">
                                                 <div class="e-close"><i class="material-icons">close</i></div>

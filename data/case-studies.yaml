@@ -1218,6 +1218,7 @@
   full_read_time: 20
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
+  special_thanks: false
   download: case-study-theyworkforyou.pdf
   references:
     - number:
@@ -1236,6 +1237,7 @@
   download: case-study-public-services-network.pdf
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
+  special_thanks: false
   references:
     - number:
       title:
@@ -1253,7 +1255,7 @@
   download: case-study-opencorporates.pdf
 # reference format:
 # <a href="#" data-open="#reference-n"> <sup>n</sup></a>
-
+  special_thanks: false
   references:
     - number:
       title:
