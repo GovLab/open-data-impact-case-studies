@@ -1,3 +1,5 @@
+@import 'assets/breakpoint';
+
 /* Importing Foundation Stuff */
 @import 'foundation-components';
 @include foundation-everything;
@@ -32,4 +34,5 @@
 
 // custom site rules
 @import 'custom';
+@import 'claudio-custom-components';
 @import 'claudio-custom';

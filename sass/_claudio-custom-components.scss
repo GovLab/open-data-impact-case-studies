@@ -1,0 +1,124 @@
+// Modifier to add the main blue color
+
+.m-od-blue {
+    background-color: $od-blue;
+}
+
+
+
+// This should probably become a component.
+// Note that it @extends the b-slide component, so maybe they should be somehow linked to each other.
+
+.b-quote-slide {
+    @extend .b-slide;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin: 0;
+    min-height: 310px;
+
+    // This <img> could be transformed into a ::before, for easier reuse.
+    > img {
+        max-width: 50px;
+        margin: 30px auto;
+        opacity: .2;
+    }
+
+    p {
+        // text-align: center;
+        font-size: 24px;
+        color: $white;
+        max-width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .e-author {
+        font-size: 16px;
+        font-style: italic;
+    }
+}
+
+.e-fn-ref {
+    vertical-align: super;
+    line-height: 0;
+
+    span { line-height: 0; }
+
+    a {
+        font-size: 12px !important;
+    }
+}
+
+
+.b-footnotes {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    bottom: 0;
+    z-index: 11;
+    background-color: $od-blue;
+    box-shadow: 0 0 10px $gray-40;
+    display: none;
+
+    &.m-active { display: block; }
+
+    .e-close {
+        color: $white-60;
+        cursor: pointer;
+    }
+    .e-close:hover { color: $white; }
+
+    h4 {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $white-80;
+        font-size: 16px;
+    }
+
+    ._idFootnote.m-active { display: block; }
+
+    ._idFootnote {
+        display: none;
+        color: $white-70;
+        a { text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    }
+
+    ._idFootnoteAnchor {
+        display: inline-block;
+        margin: -7px 10px;
+        padding: 2px 4px;
+        text-align: center;
+        text-decoration: none;
+        background-color: $white-30;
+        color: $white;
+        min-width: 24px;
+        height: 24px;
+        font-size: 14px;
+        border-radius: 12px;
+    }
+}
+
+// This should probably become a component.
+.b-list-of-names {
+    margin: 0;
+
+    li {
+        font-size: 14px;
+        list-style-type: none;
+        margin-bottom: 10px;
+        color: $gray-60;
+        font-style: italic;
+
+        strong {
+            display: block;
+            font-size: 16px;
+            color: $black;
+            font-style: normal;
+            line-height: 1;
+            font-weight: 600;
+        }
+    }
+}

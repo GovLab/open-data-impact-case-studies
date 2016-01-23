@@ -72,7 +72,7 @@
 
         // p:not(:first-of-type) { display: none; }
 
-        > p:first-of-type { display: block; }
+        // > p:first-of-type { display: block; }
 
         > p:only-of-type ~ .b-button { display: none; }
 
