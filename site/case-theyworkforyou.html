@@ -18,7 +18,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<body id="">
+<body id="case-study-page">
     
 
 <!--     <header class="b-top-nav m-transparent">
@@ -42,11 +42,11 @@
     
 <header class="b-top-nav m-transparent m-fixed">
 
-    <div class="e-nav-group m-left e-social-media">
+    <div class="e-nav-group m-left e-social-media hide-for-small-only">
         <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
     </div>
 
-    <div class="e-nav-group m-right">
+    <div class="e-nav-group m-right hide-for-small-only">
         <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
         <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
         <a href="about.html" class="e-nav-item" id="nav-about">About</a>
@@ -73,59 +73,47 @@
 
 <main class="case-study-page" role="main">
 
-    <div class="b-top-section m-hires-2 m-center" style="background-image: url(./static/img/banners/united-kingdom.jpg)">
-        <div class="b-shader">
-            <h1 class="m-space-2 m-sm-2">TheyWorkForYou</h1>
-            <h2 class="m-sm">Taking the Long View</h2>
+    <div class="b-top-section" style="background-image: url(./static/img/banners/united-kingdom.jpg)">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">TheyWorkForYou</h1>
+            <h2 class="e-tagline">Taking the Long View</h2>
             <h4>by Becky Hogge<a class="_idFootnoteLink" href="#footnote-999">*</a></h4>
-            <h5></h5>
+            <div class="e-tags hide-for-small-only">
+                <div class="e-left">
+                    <p>Impact</p>
+                    <p>Sector</p>
+                    <p>Location</p>
+                </div>
+                <div class="e-right">
+                    <p>
+                        IMPROVING GOVERNMENT
+                        
+                    </p>
+                    <p>
+                        PUBLIC SECTOR
+                        
+                    </p>
+                    <p>UK</p>
+                </div>
+            </div>
+            <div class="e-read-times hide-for-small-only">
+                <p>Read Time</p>
+                <p>Brief View <strong>5 MINS</strong></p>
+                <p>Full Story <strong>20 MINS</strong></p>
+            </div>
+        </hgroup>
+        <div id="download-button">
+            <a href="#explore-the-data" class="b-button m-government">Download The Report<i class="material-icons m-space">file_download</i></a>
+        </div>
+    </div>
 
-            <div class="row">
-                <div class="column medium-6">
-                    <div class="e-left-box">
-                        <div class="e-left">
-                            <p>Impact</p>
-                            <p>Sector</p>
-                            <p>Location</p>
-                        </div>
-                        <div class="e-right">
-                            <p>
-                                
-                                IMPROVING GOVERNMENT
-                                
-                            </p>
-                            <p>
-                                
-                                PUBLIC SECTOR
-                                
-                            </p>
-                            <p>UK</p>
-                        </div>
-                    </div>
+                <div class="row hide-for-small-only">
+                    <ul class="b-sidebar">
+                        <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
+                    </ul>
                 </div>
 
-                <div class="column medium-6">
-                    <div class="e-right-box">
-                        <p>Read Time</p>
-                        <p>Brief View <strong>5 MINS</strong></p>
-                        <p>Full Story <strong>20 MINS</strong></p>
-                    </div>
-                    
-                        <a href="./static/files/case-study-theyworkforyou.pdf" target="_blank" class="b-button m-bottom-overlap m-blue m-detail-page">
-                            
-                                        <i class="material-icons m-space">file_download</i>
-                                        Download The Report
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <ul class="b-sidebar">
-                            <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
-                        </ul>
-                    </div>
                     
                     <section class="b-page-section">
                         <div class="row">
@@ -177,10 +165,12 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
+<div>
 <p class="text">Average monthly visits to <a href="http://TheyWorkForYou.com"><span class="e-link">TheyWorkForYou.com</span></a>: 200,000-300,000</p>
 <p class="text">Average monthly visits to <a href="http://TheyWorkForYou.com"><span class="e-link">TheyWorkForYou.com</span></a> from people working at the Houses of Parliament: 4,000-6,000</p>
 <p class="text">Proportion of users surveyed who say they are using it as part of their job: 30%</p>
 <p class="text">Proportion of users surveyed who say they are getting information on their elected representative for the first time: 21%</p>
+</div>
 
                                     <span class="e-read-more js-more-toggle">Read More</span>
                                 </div>
@@ -198,10 +188,12 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
+<div>
 <p class="e-quote">“I don’t think the political classes have got used to the idea of news or information that sticks.” </p>
 <p class="e-quote-author">Tom Steinberg, mySociety</p>
 <p class="e-quote">“It is a hundred times easier to search than Hansard itself. I’ve spent two hours on Hansard before coming here and have just found what I want in under a minute.”</p>
 <p class="e-quote-author">Anonymous site user</p>
+</div>
 
                                     <span class="e-read-more js-more-toggle">Read More</span>
                                 </div>
@@ -325,8 +317,10 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
+<div>
 <p class="text">Tom Steinberg thinks that the site’s impact on elected members is probably greater than on any other of its stakeholders:</p>
 <p class="e-quote">I don’t think the political classes have got used to the idea of news or information that sticks. They’re very habituated to the idea that there’s a bad news story today and it’s gone tomorrow. All politicians can cope with that. However, a Wikipedia page or a TheyWorkForYou page … they’re sort of permanent. They mean that if you’re going to go and meet someone who doesn’t know you, in the future, then you have every reason to suspect that that person will find out about you from this. So what these static pages say I believe influences what politicians do<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-009-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-they-work-for-you.html#footnote-009">16</a></span></span>.</p>
+</div>
 <p class="text">Several anecdotes support the claim that Parliamentarians are becoming increasingly aware of how their activities are reflected on <a href="http://TheyWorkForYou.com"><span class="e-link">TheyWorkForYou.com</span></a>. In 2006 The Times newspaper speculated that some MPs were making interventions in House of Commons debates simply to keep their “appearances” tally on <a href="http://TheyWorkForYou.com"><span class="e-link">TheyWorkForYou.com</span></a> sufficiently high, an event which prompted mySociety to rethink how it represented MPs’ activity<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-008-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-they-work-for-you.html#footnote-008">17</a></span></span>. Steinberg relates a story he heard from someone who once had a meeting with an MP cut short so that the MP could go and vote in the House of Commons. When they asked whether the vote really mattered, the MP replied “They all matter since TheyWorkForYou”. In 2008, Gordon Prentice MP complained to the leader of the House of Commons that <a href="http://TheyWorkForYou.com"><span class="e-link">TheyWorkForYou.com</span></a> did not cover MPs’ work on committees and therefore gave a “distorted impression” of the efforts MPs make at Westminster<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-they-work-for-you.html#footnote-007">18</a></span></span>.</p>
 <p class="text">Philip Cowley, Professor of Parliamentary Government at the University of Nottingham, has published data showing that “rebellion” (that is, MPs voting against the party line, or—specific to Cowley’s data—government MPs voting against government policy) is on the up in British politics. An Economist article from 2012 cites this data<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-006-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-they-work-for-you.html#footnote-006">19</a></span></span> and argues that vote-tracking websites are part of the reason why, as they allow voters and constituency parties to keep better track of their MPs:</p>
 <p class="e-quote">One ringleader of [2011]’s huge Conservative rebellion over a referendum on EU membership says that it was “incredibly easy” to persuade MPs to join because they were already under intense pressure from their constituency associations. Gone are the days when an MP could vote with the government, then sign a contradictory early-day motion or two to muddy the waters, he adds. These days it is “harder to bluff”.</p>
@@ -387,8 +381,10 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
-<p class="e-h3">For open data advocates</p>
+<div>
+<p class="e-h2">For open data advocates</p>
 <p class="text">The Deloitte study on the impact of TfL data on transport users, and its analysis that TfL are delivering transport users annual monetised time savings of between £15m and £58m, is one of the most quoted stories of open data impact in policy circles. The Deloitte methodology can be borrowed to discuss impact in other spheres too.</p>
+</div>
 <p class="e-h3">For open data developers</p>
 <p class="text">Shiny new projects are fun and inspiring, but established sites like <a href="http://TheyWorkForYou.com"><span class="e-link">TheyWorkForYou.com</span></a> need volunteer developers too. Open data developers should consider whether knowing you’re contributing work to a project that is having long-term positive impacts for representative democracy makes up for some of the hassle of working on someone else’s code.</p>
 <p class="e-h3">For funders</p>

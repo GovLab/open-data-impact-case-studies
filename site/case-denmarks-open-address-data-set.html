@@ -18,7 +18,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<body id="">
+<body id="case-study-page">
     
 
 <!--     <header class="b-top-nav m-transparent">
@@ -42,11 +42,11 @@
     
 <header class="b-top-nav m-transparent m-fixed">
 
-    <div class="e-nav-group m-left e-social-media">
+    <div class="e-nav-group m-left e-social-media hide-for-small-only">
         <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
     </div>
 
-    <div class="e-nav-group m-right">
+    <div class="e-nav-group m-right hide-for-small-only">
         <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
         <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
         <a href="about.html" class="e-nav-item" id="nav-about">About</a>
@@ -73,59 +73,47 @@
 
 <main class="case-study-page" role="main">
 
-    <div class="b-top-section m-hires-2 m-center" style="background-image: url(./static/img/banners/denmark.jpg)">
-        <div class="b-shader">
-            <h1 class="m-space-2 m-sm-2">Denmark’s Open Address Data Set</h1>
-            <h2 class="m-sm">Consolidating and Freeing-up Address Data</h2>
+    <div class="b-top-section" style="background-image: url(./static/img/banners/denmark.jpg)">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">Denmark’s Open Address Data Set</h1>
+            <h2 class="e-tagline">Consolidating and Freeing-up Address Data</h2>
             <h4>by Juliet McMurren, Stefaan Verhulst and Andrew Young<a class="_idFootnoteLink" href="#footnote-999">*</a></h4>
-            <h5></h5>
+            <div class="e-tags hide-for-small-only">
+                <div class="e-left">
+                    <p>Impact</p>
+                    <p>Sector</p>
+                    <p>Location</p>
+                </div>
+                <div class="e-right">
+                    <p>
+                        IMPROVING GOVERNMENT
+                        
+                    </p>
+                    <p>
+                        GEOSPATIAL SERVICES
+                        
+                    </p>
+                    <p>DENMARK</p>
+                </div>
+            </div>
+            <div class="e-read-times hide-for-small-only">
+                <p>Read Time</p>
+                <p>Brief View <strong>5 MINS</strong></p>
+                <p>Full Story <strong>20 MINS</strong></p>
+            </div>
+        </hgroup>
+        <div id="download-button">
+            <a href="#explore-the-data" class="b-button m-government">Download The Report<i class="material-icons m-space">file_download</i></a>
+        </div>
+    </div>
 
-            <div class="row">
-                <div class="column medium-6">
-                    <div class="e-left-box">
-                        <div class="e-left">
-                            <p>Impact</p>
-                            <p>Sector</p>
-                            <p>Location</p>
-                        </div>
-                        <div class="e-right">
-                            <p>
-                                
-                                IMPROVING GOVERNMENT
-                                
-                            </p>
-                            <p>
-                                
-                                GEOSPATIAL SERVICES
-                                
-                            </p>
-                            <p>DENMARK</p>
-                        </div>
-                    </div>
+                <div class="row hide-for-small-only">
+                    <ul class="b-sidebar">
+                        <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
+                    </ul>
                 </div>
 
-                <div class="column medium-6">
-                    <div class="e-right-box">
-                        <p>Read Time</p>
-                        <p>Brief View <strong>5 MINS</strong></p>
-                        <p>Full Story <strong>20 MINS</strong></p>
-                    </div>
-                    
-                        <a href="./static/files/case-study-denmark.pdf" target="_blank" class="b-button m-bottom-overlap m-blue m-detail-page">
-                            
-                                        <i class="material-icons m-space">file_download</i>
-                                        Download The Report
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <ul class="b-sidebar">
-                            <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
-                        </ul>
-                    </div>
                     
                     <section class="b-page-section">
                         <div class="row">
@@ -284,8 +272,10 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
+<div>
 <p class="e-h2">Data Quality</p>
 <p class="text">Once the decision to open data for the Danish Data Program was made, the challenges became those of data quality and governance across the range of agencies and registers. Jetzek notes that the nature of the data collection has created significant variability in quality.</p>
+</div>
 <p class="e-quote">“In Denmark, data collection is very distributed, and in most cases the data is just a part of what they do: a necessary part, but not the main part. Making some standards or blueprints for the organizations to follow when they’re going to model or open the data is very important. Some agencies like the Geodata Agency are very professional data custodians: They’ve done it for a long time, and there are standards across Europe, and there’s a lot of knowledge and professionalism. ... Whereas others … don’t even know what the data model is. The data is just something that someone is keying in somewhere, and then they have this register. It’s very important to have some common understanding and some common skills about how … we handle all this data ... [but] this skill [isn’t] common in the public sector. …. We haven’t really focused on data as a key resource.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-015-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-denmark.html#footnote-015">68</a></span></span></p>
 <p class="text">Overgaard and Fischer observe that accuracy appears to be higher in areas where data collection is directly connected with government revenue by comparison with areas in which data is an incidental by-product of another activity. “If money is directly involved, the quality tends to be good. The building and dwelling register, for example, is involved in taxation, and it’s pretty precise.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-014-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-denmark.html#footnote-014">69</a></span></span> The business registers, by contrast, which are not directly involved in revenue collection, are much more error-prone. Both Jetzek and Overgaard and Fischer cite weaknesses in the register of companies where the nature of the business is described: The company itself is listed, but the nature of its commercial activity is wrong. “In the business register, the businesses are supposed to say what they do, to classify the business, but you can look at the register and see that a pizza shop is classified as a shoemaker because the house used to belong to a shoemaker, and then it changed … and nobody [corrected] the data.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-013-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-denmark.html#footnote-013">70</a></span></span> Some uses that Septima had hoped to make of the data from the business register, for example, turned out not to be possible because of deficiencies in the quality of the data.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-012-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-denmark.html#footnote-012">71</a></span></span></p>
 <p class="text">Having been open longer, the address data set has had longer to address these quality concerns. The aim of the address data subprogram was “to further improve the quality and accessibility of address data, and enrich … the infrastructure behind the distribution of address data.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-011-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-denmark.html#footnote-011">72</a></span></span> The Geodata Agency has also collaborated with OpenStreetMap to identify and correct address errors in the data set. One of the greatest boons to accuracy, however, is simply opening the data and having it used, which provides opportunities for scrutiny and correction – what de Vries calls a partial outsourcing of quality control<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-010-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-denmark.html#footnote-010">73</a></span></span> – and raises the quality of the data set.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-009-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-denmark.html#footnote-009">74</a></span></span> “Address data is very good in Denmark, and that’s because so many are using them. If no one uses the data, then no one finds the errors,” note Overgaard and Fischer.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-008-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-denmark.html#footnote-008">75</a></span></span> Centralization of registration also allows for easier and faster correction, since users only have to report errors and omissions once,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-denmark.html#footnote-007">76</a></span></span> through a portal that connects users with the responsible municipality.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-006-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-denmark.html#footnote-006">77</a></span></span> With the Basic Data Program, the address data set also “took an extra step toward the open,” according to Lind, by removing the earlier distribution costs and making the data easier and cheaper to access and use. “Every citizen can now download a data set of every address free of charge, or access our services for a Web application.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-005-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-denmark.html#footnote-005">78</a></span></span></p>
@@ -313,8 +303,10 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
+<div>
 <p class="e-h2">Expected Benefits of the Basic Data Program</p>
 <p class="text">At launch, the expected benefits of the Basic Data Program were efficiencies to government of about EUR 34.8 million from 2020 through decreased administrative costs, of which two-thirds of the benefit (EUR 23.5 million) would be to municipalities. The release of the data was also expected to generate returns in the private sector of up to EUR 67 million, through the encouragement of new digital services and products, and the removal of bureaucratic barriers and data costs. Finally, individuals would benefit from increasingly improved and integrated public services.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-002-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-denmark.html#footnote-002">81</a></span></span></p>
+</div>
 <p class="e-h2">Addressing Capacity Issues</p>
 <p class="text">Lind identifies secure funding as the main future challenge of the Basic Data Program and projects like it. “One of the issues with open data is that you have to have a stable, sustainable source of funding … to be able to update, and to ensure the long-term quality of the open data. We [were] lucky that the Danish Basic Data Program came at a time when we needed funding of this kind. If we could have done anything differently or better, we should have focused on getting better [long-term] funding. This reorganization of government process we have just been through shows how easily things can change, and suddenly you can be without any source of funding.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-001-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-denmark.html#footnote-001">82</a></span></span></p>
 <p class="text">For Jetzek, the major future challenge is developing skills in data collection among public servants. “Getting the data to be really clear and easy to use, so that it’s used widely across the public and private sectors and in business-critical processes, is a huge accomplishment on its own. If you want the data to be really used across the public and private sectors for more than just creating an interesting visualization or one-off something, I think you really need to focus on [data collection].”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-denmark.html#footnote-000">83</a></span></span></p>

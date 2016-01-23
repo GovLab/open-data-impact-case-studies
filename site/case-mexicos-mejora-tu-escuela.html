@@ -18,7 +18,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<body id="">
+<body id="case-study-page">
     
 
 <!--     <header class="b-top-nav m-transparent">
@@ -42,11 +42,11 @@
     
 <header class="b-top-nav m-transparent m-fixed">
 
-    <div class="e-nav-group m-left e-social-media">
+    <div class="e-nav-group m-left e-social-media hide-for-small-only">
         <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
     </div>
 
-    <div class="e-nav-group m-right">
+    <div class="e-nav-group m-right hide-for-small-only">
         <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
         <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
         <a href="about.html" class="e-nav-item" id="nav-about">About</a>
@@ -73,59 +73,47 @@
 
 <main class="case-study-page" role="main">
 
-    <div class="b-top-section m-hires-2 m-center" style="background-image: url(./static/img/banners/mexico.jpg)">
-        <div class="b-shader">
-            <h1 class="m-space-2 m-sm-2">Mexico’s Mejora Tu Escuela</h1>
-            <h2 class="m-sm">Empowering Citizens to Make Data-Driven Decisions About Education</h2>
+    <div class="b-top-section" style="background-image: url(./static/img/banners/mexico.jpg)">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">Mexico’s Mejora Tu Escuela</h1>
+            <h2 class="e-tagline">Empowering Citizens to Make Data-Driven Decisions About Education</h2>
             <h4>by Andrew Young and Stefaan Verhulst<a class="_idFootnoteLink" href="#footnote-999">*</a></h4>
-            <h5></h5>
+            <div class="e-tags hide-for-small-only">
+                <div class="e-left">
+                    <p>Impact</p>
+                    <p>Sector</p>
+                    <p>Location</p>
+                </div>
+                <div class="e-right">
+                    <p>
+                        EMPOWERING CITIZENS
+                        
+                    </p>
+                    <p>
+                        EDUCATION
+                        
+                    </p>
+                    <p>MEXICO</p>
+                </div>
+            </div>
+            <div class="e-read-times hide-for-small-only">
+                <p>Read Time</p>
+                <p>Brief View <strong>5 MINS</strong></p>
+                <p>Full Story <strong>20 MINS</strong></p>
+            </div>
+        </hgroup>
+        <div id="download-button">
+            <a href="#explore-the-data" class="b-button m-citizens">Download The Report<i class="material-icons m-space">file_download</i></a>
+        </div>
+    </div>
 
-            <div class="row">
-                <div class="column medium-6">
-                    <div class="e-left-box">
-                        <div class="e-left">
-                            <p>Impact</p>
-                            <p>Sector</p>
-                            <p>Location</p>
-                        </div>
-                        <div class="e-right">
-                            <p>
-                                
-                                EMPOWERING CITIZENS
-                                
-                            </p>
-                            <p>
-                                
-                                EDUCATION
-                                
-                            </p>
-                            <p>MEXICO</p>
-                        </div>
-                    </div>
+                <div class="row hide-for-small-only">
+                    <ul class="b-sidebar">
+                        <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
+                    </ul>
                 </div>
 
-                <div class="column medium-6">
-                    <div class="e-right-box">
-                        <p>Read Time</p>
-                        <p>Brief View <strong>5 MINS</strong></p>
-                        <p>Full Story <strong>20 MINS</strong></p>
-                    </div>
-                    
-                    <a href="./static/files/case-study-mexico.pdf" target="_blank" class="b-button m-bottom-overlap m-orange m-detail-page">
-                        
-                                        <i class="material-icons m-space">file_download</i>
-                                        Download The Report
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <ul class="b-sidebar">
-                            <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email"><li class="email"><i class="fa fa-envelope"></i></li></a>
-                        </ul>
-                    </div>
                     
                     <section class="b-page-section">
                         <div class="row">
@@ -180,8 +168,10 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     
+<div>
 <p class="e-h2">Education in Mexico</p>
 <p class="text">For years, education in Mexico has been substandard and generally lagged behind standards in other, comparable countries. This poor performance cannot be attributed to a lack of budgetary resources – Mexico spends a larger portion of its budget on education than any other member of the Organization of Economic Cooperation and Development (OECD). It is important to note, though, that, at least in part, this is due to the higher number of Mexican children who pass through the public school system than other OECD countries.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-055-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-055">1</a></span> </span>But while that money has led to nearly universal basic education, outcomes remain stubbornly poor. Mexico’s graduation rates are near the bottom of OECD countries, with fewer than half of students earning a high school diploma.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-054-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-054">2</a></span> </span>In addition, Mexican students perform poorly in international comparative tests of math, science and reading skills<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-053-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-053">3</a></span></span>, and, according to a recent study, 80 percent of teachers failed an evaluation exam designed to test their competencies.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-052-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-052">4</a></span></span></p>
+</div>
 <p class="text">While Mexico’s education system has been generously funded, it has suffered over the years from endemic corruption. The scale of corruption is difficult to calculate, but it is by all accounts massive. Last year, an “abuse meter” – a giant electronic signboard erected in the capital by activists that tries to update in real time the amount of waste&#160;–&#160;estimated that at least $2.8 billion are lost to corruption every year in the education sector. The year the billboard was erected, it showed more than $33 million lost in just the first week of the school year.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-051-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-051">5</a></span></span></p>
 <p class="text"><a id="_idTextAnchor000"></a>The corruption takes many forms: ghost teachers on payrolls, preselling of exam results, officials with lavish lifestyles, teachers demanding bribes to give good grades and candidate teachers bribing to pass training tests. The rot is widespread and, increasingly, widely recognized. One activist recently referred to corruption in the education system as “the robbery of the century.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-050-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-050">6</a></span></span> A 2009 report from Transparency International found that the average household paid an additional $30 per year for their children’s education, despite that education being “constitutionally free.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-049-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-049">7</a></span> </span>In 2010, Transparencia Mexicana’s National Index on Corruption and Governance found that parents paid a bribe 3.5 percent of the time when seeking an enrollment form for a public school.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-048-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-study-mexico.html#footnote-048">8</a></span></span></p>
 <p class="e-h2">Information and Open Data in Mexico</p>
