@@ -1260,23 +1260,187 @@
   location:
   read_time:
   full_read_time:
-  summary: >
-  takeaways: >
-  numbers: >
-  quotes: >
-  background: >
-  data: >
-  path_to_impact: >
-  outcome: >
-  project: >
-  impact: >
-  discussion: >
-  action: >
-  challenges: >
-  looking_forward: >
   references:
     - number:
       title:
       text:
 
+- title: Battling Ebola in Sierra Leone
+  image: 'coming-soon.jpg'
+  authors:
+  unreleased: true
+  description: 'Coming Soon'
+  impact_type: public # citizens | government | economic | public
+  sector: health # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location:
+  read_time:
+  full_read_time:
+  references:
+    - number:
+      title:
+      text:
 
+- title: "New Zealand's Christchurch Earthquake Clusters"
+  image: 'coming-soon.jpg'
+  authors:
+  unreleased: true
+  description: 'Coming Soon'
+  impact_type: public # citizens | government | economic | public
+  sector: emergency # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location:
+  read_time:
+  full_read_time:
+  references:
+    - number:
+      title:
+      text:
+
+- title: "Singapore's Dengue Cluster Map"
+  image: 'coming-soon.jpg'
+  authors:
+  unreleased: true
+  description: 'Coming Soon'
+  impact_type: public # citizens | government | economic | public
+  sector: health # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location:
+  read_time:
+  full_read_time:
+  references:
+    - number:
+      title:
+      text:
+
+- title: "United States' Eightmaps"
+  image: 'coming-soon.jpg'
+  authors:
+  unreleased: true
+  description: 'Coming Soon'
+  impact_type: public # citizens | government | economic | public
+  sector: politics # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location:
+  read_time:
+  full_read_time:
+  references:
+    - number:
+      title:
+      text:
+
+- title: "Kennedy vs. the City of Zanesville, United States"
+  image: 'coming-soon.jpg'
+  authors:
+  unreleased: true
+  description: 'Coming Soon'
+  impact_type: public # citizens | government | economic | public
+  sector: law # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location:
+  read_time:
+  full_read_time:
+  references:
+    - number:
+      title:
+      text:
+
+- title: "United Kingdom's Coeliac UK and Brandbank"
+  image: 'coming-soon.jpg'
+  authors:
+  unreleased: true
+  description: 'Coming Soon'
+  impact_type: public # citizens | government | economic | public
+  sector: health # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location:
+  read_time:
+  full_read_time:
+  references:
+    - number:
+      title:
+      text:
+
+- title: "United Kingdom's Ordnance Survey OpenData"
+  image: 'coming-soon.jpg'
+  authors:
+  unreleased: true
+  description: 'Coming Soon'
+  impact_type: economic # citizens | government | economic | public
+  sector: geospatial # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location:
+  read_time:
+  full_read_time:
+  references:
+    - number:
+      title:
+      text:
+
+- title: "United States' New York City Business Atlas"
+  image: 'coming-soon.jpg'
+  authors:
+  unreleased: true
+  description: 'Coming Soon'
+  impact_type: economic # citizens | government | economic | public
+  sector: business # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location:
+  read_time:
+  full_read_time:
+  references:
+    - number:
+      title:
+      text:
+
+- title: "United States' NOAA: Opening Up Global Weather Data in Collaboration with Businesses"
+  image: 'coming-soon.jpg'
+  authors:
+  unreleased: true
+  description: 'Coming Soon'
+  impact_type: economic # citizens | government | economic | public
+  sector: weather # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location:
+  read_time:
+  full_read_time:
+  references:
+    - number:
+      title:
+      text:
+
+- title: "United States Opening GPS Data for Civilian Use"
+  image: 'coming-soon.jpg'
+  authors:
+  unreleased: true
+  description: 'Coming Soon'
+  impact_type: economic # citizens | government | economic | public
+  sector: geospatial # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location:
+  read_time:
+  full_read_time:
+  references:
+    - number:
+      title:
+      text:
+
+- title: "United Kingdom's Transport for London"
+  image: 'coming-soon.jpg'
+  authors:
+  unreleased: true
+  description: 'Coming Soon'
+  impact_type: economic # citizens | government | economic | public
+  sector: transportation # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location:
+  read_time:
+  full_read_time:
+  references:
+    - number:
+      title:
+      text:
+
+- title: "United Kingdom's HM Land Registry Price Paid Data"
+  image: 'coming-soon.jpg'
+  authors:
+  unreleased: true
+  description: 'Coming Soon'
+  impact_type: economic # citizens | government | economic | public
+  sector: geospatial # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  location:
+  read_time:
+  full_read_time:
+  references:
+    - number:
+      title:
+      text:
