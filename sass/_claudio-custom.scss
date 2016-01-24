@@ -16,8 +16,8 @@
 
 .grid {
     .e-card {
-        @include breakpoint(max-width 500px) { transform: translateX(9vw); }
-        @include breakpoint(501px) { transform: initial; }
+        // @include breakpoint(max-width 500px) { transform: translateX(9vw); }
+        // @include breakpoint(501px) { transform: initial; }
         // @include breakpoint($desktop) { transform: initial; }
     }
 }
