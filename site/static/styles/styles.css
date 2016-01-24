@@ -4954,13 +4954,16 @@ ul.b-sidebar {
 .b-copyright .e-partner-logo > img {
   width: 50%;
   max-height: 200px; }
+.b-copyright .e-cc-badge {
+  margin: 30px 0; }
+  @media screen and (min-width: 64.0625em) {
+    .b-copyright .e-cc-badge {
+      margin: 5px 25px 0 0; } }
 
 .b-copyright {
   position: relative; }
   .b-copyright .e-partner-logo {
-    position: absolute;
-    right: 0;
-    top: 10px; }
+    position: static; }
     .b-copyright .e-partner-logo > img {
       max-width: 400px;
       padding: 10px 0;
@@ -4969,6 +4972,11 @@ ul.b-sidebar {
       .b-copyright .e-partner-logo > img:hover {
         opacity: 1;
         transition: all .4s ease; }
+    @media screen and (min-width: 64.0625em) {
+      .b-copyright .e-partner-logo {
+        position: absolute;
+        right: 0;
+        top: 10px; } }
 
 .b-page-section aside h3 {
   text-align: left;
