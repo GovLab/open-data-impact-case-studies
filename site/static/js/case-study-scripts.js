@@ -83,4 +83,8 @@ $(function() {
     $('#twitter').click(function () {
         location.href = 'https://twitter.com/share?url=' + encodeURIComponent(location.href);
     });
+    $('#email').click(function (event) {
+        event.preventDefault();
+        location.href = $(this).attr('href') + encodeURIComponent(location.href);
+    });
 });
