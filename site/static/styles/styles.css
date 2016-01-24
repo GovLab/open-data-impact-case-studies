@@ -4834,12 +4834,6 @@ ul.b-sidebar {
       line-height: 1;
       font-weight: 600; }
 
-.grid .e-card {
-  transform: translateX(9vw); }
-  @media screen and (min-width: 31.3125em) {
-    .grid .e-card {
-      transform: initial; } }
-
 #case-study-page .b-top-section,
 #open-data-impact-homepage .b-top-section {
   height: 75vh;
