@@ -8,7 +8,7 @@ $(function() {
     //     $($(this).attr('data-open')).fadeIn('fast');
     // });
 
-    $('a._idFootnoteLink').click(function() {
+    $('a._idFootnoteLink').click(function(event) {
         event.preventDefault();
         var footnote = $(this).attr('href').replace(/^[^#]*/, '');
         $('._idFootnote.m-active').removeClass('m-active');

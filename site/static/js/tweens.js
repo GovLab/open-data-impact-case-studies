@@ -4,7 +4,8 @@ $(document).ready(function(){
     //     TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
     // });
 
-$('#explore-button').click(function() {
+$('#explore-link').click(function(event) {
+    event.preventDefault();
     TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
 });
 

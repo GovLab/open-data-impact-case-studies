@@ -27,7 +27,7 @@ $(function() {
 
     $('#see-all-btn').addClass('selected');
 
-    $('.js-filter').click(function(){
+    $('.js-filter').click(function(event){
         event.preventDefault();
         $('.js-filter').removeClass('selected');
         $(this).addClass('selected');
