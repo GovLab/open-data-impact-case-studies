@@ -191,16 +191,14 @@
     }
 
     .e-cc-badge {
-        // @include breakpoint($mobile-only) { margin-top: 30px; }
+        @include breakpoint($desktop) { margin: 5px 25px 0 0; }
+        @include breakpoint($mobile-only) { margin: 30px 0; }
     }
 }
 
 .b-copyright {
     position: relative;
     .e-partner-logo {
-        position: absolute;
-        right: 0;
-        top: 10px;
         > img {
             max-width: 400px;
             padding: 10px 0;
@@ -211,6 +209,14 @@
                 opacity: 1;
                 @include transition;
             }
+        }
+        @include breakpoint($desktop) {
+            position: absolute;
+            right: 0;
+            top: 10px;
+        }
+        @include breakpoint($mobile-only) {
+            position: static;
         }
     }
 }
