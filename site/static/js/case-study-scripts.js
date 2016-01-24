@@ -85,6 +85,6 @@ $(function() {
     });
     $('#email').click(function (event) {
         event.preventDefault();
-        location.href = $(this).attr('data-message') + encodeURIComponent(location.href);
+        location.href = $(this).attr('message') + encodeURIComponent(location.href);
     });
 });
