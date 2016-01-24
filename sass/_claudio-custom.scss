@@ -556,3 +556,26 @@
 
     }
 }
+
+
+// $mobile-only: max-width 767px;
+// $tablet: min-width 768px;
+// $touch: max-width 1024px;
+// $desktop: 1025px;
+
+// MOBILE
+@media (max-width 767px) {
+    .e-card-inner {
+        width: 90%;
+    }
+}
+
+// TABLET
+@media (min-width 768px) {
+
+}
+
+// DESKTOP
+@media (min-width: 1025px) {
+
+}

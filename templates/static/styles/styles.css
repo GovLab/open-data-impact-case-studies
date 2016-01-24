@@ -5057,4 +5057,8 @@ ul.b-sidebar {
     text-transform: uppercase;
     color: #164A7A; }
 
+@media (max-width 767px) {
+  .e-card-inner {
+    width: 90%; } }
+
 /*# sourceMappingURL=styles.css.map */
