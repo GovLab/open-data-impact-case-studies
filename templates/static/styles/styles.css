@@ -4894,6 +4894,18 @@ ul.b-sidebar {
   margin-bottom: 60px; }
   #case-study-page .b-top-section .e-titles {
     padding: 30px; }
+    #case-study-page .b-top-section .e-titles .e-main-title {
+      font-size: 40px;
+      font-weight: 200; }
+      @media screen and (min-width: 64.0625em) {
+        #case-study-page .b-top-section .e-titles .e-main-title {
+          font-size: 60px;
+          font-weight: 100; } }
+    #case-study-page .b-top-section .e-titles .e-tagline {
+      font-size: 22px; }
+      @media screen and (min-width: 64.0625em) {
+        #case-study-page .b-top-section .e-titles .e-tagline {
+          font-size: 30px; } }
 #case-study-page .e-tags {
   overflow: hidden;
   float: left;

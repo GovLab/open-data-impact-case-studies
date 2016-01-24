@@ -84,6 +84,24 @@
 
         .e-titles {
             padding: 30px;
+            .e-main-title {
+                @include breakpoint($desktop) {
+                    font-size: 60px;
+                    font-weight: 100;
+                }
+                @include breakpoint($mobile-only) {
+                    font-size: 40px;
+                    font-weight: 200;
+                }
+            }
+            .e-tagline {
+                @include breakpoint($desktop) {
+                    font-size: 30px;
+                }
+                @include breakpoint($mobile-only) {
+                    font-size: 22px;
+                }
+            }
         }
     }
 
