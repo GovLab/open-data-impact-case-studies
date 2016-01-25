@@ -4671,17 +4671,16 @@ ul.b-sidebar {
         font-weight: 800; }
       .b-sticky#upcoming-section .row p {
         margin: 35px 50px;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.62; }
         .b-sticky#upcoming-section .row p:last-of-type:not(:only-of-type) {
           font-size: 18px;
           margin-bottom: 0; }
       .b-sticky#upcoming-section .row p, .b-sticky#upcoming-section .row h2 {
+        margin: 20px;
         display: block; }
         .b-sticky#upcoming-section .row p:last-of-type:not(:only-of-type), .b-sticky#upcoming-section .row h2:last-of-type:not(:only-of-type) {
           display: none; }
-      .b-sticky#upcoming-section .row h2 {
-        margin: 35px 50px; }
       @media screen and (min-width: 64.0625em) {
         .b-sticky#upcoming-section .row {
           text-align: right; }

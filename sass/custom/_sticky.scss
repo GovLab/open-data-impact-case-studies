@@ -28,7 +28,7 @@
             }
             p {
                 margin: 35px 50px;
-                font-size: 20px;
+                font-size: 18px;
                 line-height: 1.62;
                 &:last-of-type:not(:only-of-type) {
                     font-size: 18px;
@@ -40,13 +40,11 @@
             @include breakpoint($mobile-only) {
                 text-align: left;
                 p, h2 {
+                    margin: 20px;
                     display: block;
                     &:last-of-type:not(:only-of-type) {
                         display: none;
                     }
-                }
-                h2 {
-                    margin: 35px 50px;
                 }
             }
 
