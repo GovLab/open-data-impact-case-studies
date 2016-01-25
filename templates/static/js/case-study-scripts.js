@@ -41,7 +41,7 @@ $(function() {
 
     // sidebar dynamic position behavior
     var sidebar = $('.b-sidebar');
-    var offset = sidebar.offset().top;
+    var offset = sidebar.offset().top - 80;
 
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
