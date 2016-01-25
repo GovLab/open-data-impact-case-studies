@@ -4,6 +4,15 @@
   #{$property}: calc(#{$expression});
 }
 
+.slick-track {
+    @include breakpoint($desktop) { height: auto; }
+    @include breakpoint($mobile-only) { height: 100vh; }
+
+    .b-quote-slide {
+        height: 100%;
+    }
+}
+
 .m-citizens {
     @extend .m-orange;
 }
@@ -222,8 +231,9 @@
 
 #about-page {
     .b-top-section {
-        height: 300px;
         padding-top: 130px;
+        @include breakpoint($desktop) { height: 300px; }
+        @include breakpoint($mobile-only) { height: 65vh; }
     }
 
     .b-page-section {
