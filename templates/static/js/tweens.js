@@ -37,7 +37,8 @@ $('#explore-link').click(function(event) {
         var windowHeight = $(window).height(); // inside handler because window size could have changed between events, prob. not the fastest way
 
         if (!stickyDone) {
-            if (scroll > 500) {
+            if (scroll > 400) {
+                $('.b-sticky').removeClass('m-hidden');
                 $('.b-sticky').fadeIn('fast');
                 $('#overlay').addClass('m-active');
             }

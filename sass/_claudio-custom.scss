@@ -20,6 +20,10 @@
     @extend .m-fuschia;
 }
 
+.m-hidden {
+    visibility: hidden;
+}
+
 #about-page,
 #case-study-page,
 #open-data-impact-homepage {

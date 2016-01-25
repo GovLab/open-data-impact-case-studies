@@ -4834,6 +4834,9 @@ ul.b-sidebar {
       line-height: 1;
       font-weight: 600; }
 
+.m-hidden {
+  visibility: hidden; }
+
 #about-page .b-footer .e-partner-logo > img,
 #case-study-page .b-footer .e-partner-logo > img,
 #open-data-impact-homepage .b-footer .e-partner-logo > img {
