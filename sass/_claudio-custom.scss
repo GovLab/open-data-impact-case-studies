@@ -1,3 +1,9 @@
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
 .m-citizens {
     @extend .m-orange;
 }
@@ -14,11 +20,16 @@
     @extend .m-fuschia;
 }
 
-.grid {
-    .e-card {
-        // @include breakpoint(max-width 500px) { transform: translateX(9vw); }
-        // @include breakpoint(501px) { transform: initial; }
-        // @include breakpoint($desktop) { transform: initial; }
+#about-page,
+#case-study-page,
+#open-data-impact-homepage {
+    .b-footer {
+        .e-partner-logo {
+            & > img {
+                @include breakpoint($desktop) { width: 40%; }
+                @include breakpoint($mobile-only) { width: 80%;}
+            }
+        }
     }
 }
 
@@ -85,6 +96,64 @@
     }
 }
 
+#open-data-impact-homepage {
+    .b-top-section {
+        .e-main-title {
+            @include breakpoint($desktop) {
+                font-size: 60px;
+                font-weight: 100;
+            }
+            @include breakpoint($mobile-only) {
+                font-size: 2.6rem;
+                font-weight: 400;
+            }
+        }
+        .e-tagline {
+            @include breakpoint($desktop) {
+                font-size: 30px;
+                font-weight: 100;
+            }
+            @include breakpoint($mobile-only) {
+                font-size: 1.25rem;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .b-page-section {
+        &.m-impact-section {
+            h2 {
+                @include breakpoint($desktop) { font-size: 60px; }
+                @include breakpoint($mobile-only) { font-size: 45px;}
+            }
+        }
+    }
+
+    .grid {
+        .e-card {
+            @include breakpoint($desktop) {
+                width: auto;
+                text-align: start;
+            }
+            @include breakpoint($mobile-only) {
+                width: 100%;
+                text-align: center;
+            }
+            .e-card-inner {
+                text-align: left;
+                @include breakpoint($desktop) {
+                    margin: 15px;
+                }
+                @include breakpoint($mobile-only) {
+                    margin: 15px 0;
+                }
+            }
+        }
+    }
+
+
+}
+
 #case-study-page {
     .b-top-section {
         text-align: center;
@@ -98,17 +167,18 @@
                     font-weight: 100;
                 }
                 @include breakpoint($mobile-only) {
-                    font-size: 40px;
-                    font-weight: 200;
+                    font-size: 5vh;
+                    font-weight: 300;
                 }
             }
             .e-tagline {
-                @include breakpoint($desktop) {
-                    font-size: 30px;
-                }
-                @include breakpoint($mobile-only) {
-                    font-size: 22px;
-                }
+                @include breakpoint($desktop) { font-size: 30px; }
+                @include breakpoint($mobile-only) { font-size: 1.1rem; }
+            }
+
+            h4 {
+                @include breakpoint($desktop) { font-size: 1.125rem; }
+                @include breakpoint($mobile-only) { font-size: 0.85rem; }
             }
         }
     }
