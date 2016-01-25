@@ -4834,14 +4834,6 @@ ul.b-sidebar {
       line-height: 1;
       font-weight: 600; }
 
-.slick-track {
-  height: 100vh; }
-  @media screen and (min-width: 64.0625em) {
-    .slick-track {
-      height: auto; } }
-  .slick-track .b-quote-slide {
-    height: 100%; }
-
 #about-page .b-footer .e-partner-logo > img,
 #case-study-page .b-footer .e-partner-logo > img,
 #open-data-impact-homepage .b-footer .e-partner-logo > img {
@@ -5002,12 +4994,22 @@ ul.b-sidebar {
       text-decoration: underline; }
   #about-page .b-page-section h3 {
     font-size: 18px;
-    text-align: right;
-    color: rgba(0, 0, 0, 0.6); }
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left; }
+    @media screen and (min-width: 64.0625em) {
+      #about-page .b-page-section h3 {
+        text-align: right; } }
   #about-page .b-page-section h4 {
     font-size: 16px;
     color: rgba(0, 0, 0, 0.6);
     font-weight: 600; }
+#about-page .slick-track {
+  height: 100vh; }
+  @media screen and (min-width: 64.0625em) {
+    #about-page .slick-track {
+      height: auto; } }
+  #about-page .slick-track .b-quote-slide {
+    height: 100%; }
 #about-page .b-form textarea {
   min-height: 240px; }
 
