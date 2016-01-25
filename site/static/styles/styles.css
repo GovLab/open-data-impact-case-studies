@@ -4561,7 +4561,7 @@ ul.b-sidebar {
   list-style: none;
   text-align: center;
   z-index: 2;
-  margin: 73px 0 0 0; }
+  margin: 0; }
   ul.b-sidebar li {
     padding: 10px;
     color: white;
@@ -4583,8 +4583,9 @@ ul.b-sidebar {
         display: block; } }
   @media screen and (min-width: 64.0625em) {
     ul.b-sidebar {
-      margin: 80px 30px 0 0; } }
+      margin-right: 30px; } }
   ul.b-sidebar.js-scroll-fixed {
+    margin-top: 80px;
     position: fixed;
     right: 0;
     top: 0; }
