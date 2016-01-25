@@ -4,15 +4,6 @@
   #{$property}: calc(#{$expression});
 }
 
-.slick-track {
-    @include breakpoint($desktop) { height: auto; }
-    @include breakpoint($mobile-only) { height: 100vh; }
-
-    .b-quote-slide {
-        height: 100%;
-    }
-}
-
 .m-citizens {
     @extend .m-orange;
 }
@@ -249,8 +240,9 @@
 
         h3 {
             font-size: 18px;
-            text-align: right;
             color: $gray-60;
+            @include breakpoint($desktop) { text-align: right; }
+            @include breakpoint($mobile-only) { text-align: left; }
         }
 
         h4 {
@@ -259,6 +251,15 @@
             font-weight: 600;
         }
 
+    }
+
+    .slick-track {
+        @include breakpoint($desktop) { height: auto; }
+        @include breakpoint($mobile-only) { height: 100vh; }
+
+        .b-quote-slide {
+            height: 100%;
+        }
     }
 
     .b-form textarea {
