@@ -4834,6 +4834,14 @@ ul.b-sidebar {
       line-height: 1;
       font-weight: 600; }
 
+.slick-track {
+  height: 100vh; }
+  @media screen and (min-width: 64.0625em) {
+    .slick-track {
+      height: auto; } }
+  .slick-track .b-quote-slide {
+    height: 100%; }
+
 #about-page .b-footer .e-partner-logo > img,
 #case-study-page .b-footer .e-partner-logo > img,
 #open-data-impact-homepage .b-footer .e-partner-logo > img {
@@ -4980,8 +4988,11 @@ ul.b-sidebar {
     margin: 0; }
 
 #about-page .b-top-section {
-  height: 300px;
-  padding-top: 130px; }
+  padding-top: 130px;
+  height: 65vh; }
+  @media screen and (min-width: 64.0625em) {
+    #about-page .b-top-section {
+      height: 300px; } }
 #about-page .b-page-section {
   padding-top: 50px; }
   #about-page .b-page-section a {
