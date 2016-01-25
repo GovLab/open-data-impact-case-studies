@@ -347,10 +347,10 @@
                     <div class="column medium-8 end">
                         We’d love to hear from you. Please fill out the below form to provide feedback on Open Data’s Impacts, or to share other examples of open data having an impact on the world.
                         <form class="b-form" action="http://formspree.io/info@thegovlab.org" method="POST">
-                            <input type="text" placeholder="Name">
-                            <input type="text" placeholder="Organization">
-                            <input type="email" placeholder="Email">
-                            <textarea name="" id="" placeholder="Message"></textarea>
+                            <input id="name" type="text" placeholder="Name*" name="name" required>
+                            <input id="org" type="text" placeholder="Organization" name="organization">
+                            <input id="email" type="email" placeholder="Email" name="email">
+                            <textarea id="msg" placeholder="Message*" name="message" required></textarea>
                             <input type="submit" value="Send">
                         </form>
                     </div>
