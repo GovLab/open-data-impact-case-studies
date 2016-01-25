@@ -15,6 +15,7 @@ $(document).ready(function($) {
         // $overlay.addClass('m-active');
     // }
     $('.js-close-sticky').click(function() {
+        console.log('derp');
         $('.b-sticky').fadeOut('fast');
     });
 
