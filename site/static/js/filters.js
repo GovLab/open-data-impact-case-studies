@@ -30,6 +30,8 @@
     $('.js-filter').click(function(event){
         event.preventDefault();
         $('.js-filter').removeClass('selected');
+        // $('.region').removeClass('selected');
+        d3.selectAll('.region').classed('selected', false);
         $(this).addClass('selected');
         var filterParam = $(this).attr('data-filter');
         if (filterParam === '*') {
