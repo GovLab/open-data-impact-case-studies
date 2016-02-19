@@ -1,0 +1,53 @@
+.map {
+
+  width: 900px;
+  margin: 0 auto;
+
+  .background {
+    fill: none;
+    pointer-events: all;
+  }
+
+  .country {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .node {
+    &.fade circle {
+      opacity: .15;
+      transition: opacity 0.5s;
+    }
+
+    circle {
+      opacity: .75;
+      cursor: pointer;
+      transition: opacity 0.5s;
+
+      &.active {
+        opacity: .9;
+        fill: rgb(0, 138, 179) !important;
+        transition: opacity 0.1s;
+      }
+    }
+
+    text {
+      fill: #fff;
+      cursor: pointer;
+    }
+  }
+
+  .region {
+    fill: #ddd;
+    cursor: pointer;
+    transition: fill 0.1s;
+
+    &.active {
+      fill: #bbb;
+      transition: fill 0.1s;
+    }
+  }
+
+}
