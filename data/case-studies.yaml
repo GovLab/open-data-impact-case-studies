@@ -3,7 +3,7 @@
 #   authors:
 #   description:
 #   impact_type: government # citizens | government | economic | public
-#   sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+#   sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
 #   location:
 #   read_time:
 #   full_read_time:
@@ -15,7 +15,7 @@
   authors: 'Auralice Graft, Stefaan Verhulst and Andrew Young'
   description: 'Making Public How Public Money Is Spent'
   impact_type: government # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Brazil
   region: latinAmerica
   read_time: 5 #minutes
@@ -27,8 +27,9 @@
   authors: 'Juliet McMurren, Stefaan Verhulst, Andrew Young and David Sangokoya'
   description: 'A Tale of Two Dashboards'
   impact_type: citizens # citizens | government | economic | public
-  sector: education # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: education # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Tanzania
+  region: subSaharanAfrica
   read_time: 5
   full_read_time: 20
   download: case-study-tanzania.pdf
@@ -38,8 +39,9 @@
   authors: 'Andrew Young and Stefaan Verhulst'
   description: 'Open Data for Transactional Transparency'
   impact_type: citizens # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Kenya
+  region: subSaharanAfrica
   read_time: 5
   full_read_time: 20
   download: case-study-kenya.pdf
@@ -49,8 +51,9 @@
   authors: 'Andrew Young and Stefaan Verhulst'
   description: 'Empowering Citizens to Make Data-Driven Decisions About Education'
   impact_type: citizens # citizens | government | economic | public
-  sector: education # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: education # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Mexico
+  region: latinAmerica
   read_time: 5
   full_read_time: 20
   download: case-study-mexico.pdf
@@ -60,8 +63,9 @@
   authors: 'David Sangokoya, Ali Clare, Stefaan Verhulst and Andrew Young'
   description: 'Empowering Citizens to Make Data-Driven Decisions on Health Care'
   impact_type: citizens # citizens | government | economic | public
-  sector: health # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Uruguay
+  region: latinAmerica
   read_time: 5
   full_read_time: 20
   download: case-study-uruguay.pdf
@@ -71,8 +75,9 @@
   authors: 'Ali Clare, Stefaan Verhulst and Andrew Young'
   description: 'Enhanced Transparency and Accountability in Development Cooperation'
   impact_type: government # citizens | government | economic | public
-  sector: philantrophy # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: philantropy # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Sweden
+  region: westEurope
   read_time: 5
   full_read_time: 20
   download: case-study-sweden.pdf
@@ -83,8 +88,9 @@
   authors: 'Ali Clare, David Sangokoya, Stefaan Verhulst and Andrew Young'
   description: 'Establishing Trust in Government through Open Data'
   impact_type: government # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Slovakia
+  region: westEurope
   read_time: 5
   full_read_time: 20
   download: case-study-slovakia.pdf
@@ -94,8 +100,9 @@
   authors: 'Auralice Graft, Stefaan Verhulst and Andrew Young'
   description: 'Elections: Free, Fair and Open Data'
   impact_type: government # citizens | government | economic | public
-  sector: politics # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: politics # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Indonesia
+  region: eastAsia
   read_time: 5
   full_read_time: 20
   download: case-study-indonesia.pdf
@@ -105,8 +112,9 @@
   authors: 'Juliet McMurren, Stefaan Verhulst and Andrew Young'
   description: 'Consolidating and Freeing-up Address Data'
   impact_type: government # citizens | government | economic | public
-  sector: geospatial # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Denmark
+  region: westEurope
   read_time: 5
   full_read_time: 20
   download: case-study-denmark.pdf
@@ -116,8 +124,9 @@
   authors: 'Juliet McMurren, Stefaan Verhulst and Andrew Young'
   description: 'Accountability of Charities through Open Data'
   impact_type: government # citizens | government | economic | public
-  sector: philantrophy # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: philantropy # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Canada
+  region: northAmerica
   read_time: 5
   full_read_time: 20
   download: case-study-canada.pdf
@@ -127,48 +136,39 @@
   authors: Becky Hogge
   description: 'Taking the Long View'
   impact_type: government # citizens | government | economic | public
-  sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
+  region: westEurope
   read_time: 5
   full_read_time: 20
   special_thanks: false
   download: case-study-they-work-for-you.pdf
-  references:
-    - number:
-      title:
-      text:
 
 - title: "United Kingdom's Open Public Services Network"
   image: open-public-service-network.jpg
   authors: Becky Hogge
   description: 'New Strategies to Close the Data Gap'
   impact_type: government # citizens | government | economic | public
-  sector: education # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: education # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
+  region: westEurope
   read_time: 5
   full_read_time: 20
   download: case-study-open-public-services-network.pdf
   special_thanks: false
-  references:
-    - number:
-      title:
-      text:
 
 - title: "United Kingdom's OpenCorporates"
   image: opencorporates.jpg
   authors: 'Becky Hogge'
   description: 'Open Data as One Small Part of the Picture'
   impact_type: government # citizens | government | economic | public
-  sector: business # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: business # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
+  region: westEurope
   read_time: 5
   full_read_time: 20
   download: case-study-open-corporates.pdf
   special_thanks: false
-  references:
-    - number:
-      title:
-      text:
 
 - title: Battling Ebola in Sierra Leone
   image: 'coming-soon.jpg'
@@ -176,14 +176,10 @@
   unreleased: true
   description: 'Coming Soon'
   impact_type: public # citizens | government | economic | public
-  sector: health # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location:
   read_time:
   full_read_time:
-  references:
-    - number:
-      title:
-      text:
 
 - title: "New Zealand's Christchurch Earthquake Clusters"
   image: 'coming-soon.jpg'
@@ -191,14 +187,10 @@
   unreleased: true
   description: 'Coming Soon'
   impact_type: public # citizens | government | economic | public
-  sector: emergency # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: emergency # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location:
   read_time:
   full_read_time:
-  references:
-    - number:
-      title:
-      text:
 
 - title: "Singapore's Dengue Cluster Map"
   image: 'coming-soon.jpg'
@@ -206,14 +198,10 @@
   unreleased: true
   description: 'Coming Soon'
   impact_type: public # citizens | government | economic | public
-  sector: health # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location:
   read_time:
   full_read_time:
-  references:
-    - number:
-      title:
-      text:
 
 - title: "United States' Eightmaps"
   image: 'coming-soon.jpg'
@@ -221,14 +209,10 @@
   unreleased: true
   description: 'Coming Soon'
   impact_type: public # citizens | government | economic | public
-  sector: politics # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: politics # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location:
   read_time:
   full_read_time:
-  references:
-    - number:
-      title:
-      text:
 
 - title: "Kennedy vs. the City of Zanesville, United States"
   image: 'coming-soon.jpg'
@@ -236,14 +220,10 @@
   unreleased: true
   description: 'Coming Soon'
   impact_type: public # citizens | government | economic | public
-  sector: law # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: law # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location:
   read_time:
   full_read_time:
-  references:
-    - number:
-      title:
-      text:
 
 - title: "United Kingdom's Coeliac UK and Brandbank"
   image: 'coming-soon.jpg'
@@ -251,14 +231,10 @@
   unreleased: true
   description: 'Coming Soon'
   impact_type: public # citizens | government | economic | public
-  sector: health # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location:
   read_time:
   full_read_time:
-  references:
-    - number:
-      title:
-      text:
 
 - title: "United Kingdom's Ordnance Survey OpenData"
   image: 'coming-soon.jpg'
@@ -266,14 +242,10 @@
   unreleased: true
   description: 'Coming Soon'
   impact_type: economic # citizens | government | economic | public
-  sector: geospatial # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location:
   read_time:
   full_read_time:
-  references:
-    - number:
-      title:
-      text:
 
 - title: "United States' New York City Business Atlas"
   image: 'coming-soon.jpg'
@@ -281,14 +253,10 @@
   unreleased: true
   description: 'Coming Soon'
   impact_type: economic # citizens | government | economic | public
-  sector: business # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: business # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location:
   read_time:
   full_read_time:
-  references:
-    - number:
-      title:
-      text:
 
 - title: "United States' NOAA: Opening Up Global Weather Data in Collaboration with Businesses"
   image: 'coming-soon.jpg'
@@ -296,14 +264,10 @@
   unreleased: true
   description: 'Coming Soon'
   impact_type: economic # citizens | government | economic | public
-  sector: weather # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: weather # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location:
   read_time:
   full_read_time:
-  references:
-    - number:
-      title:
-      text:
 
 - title: "United States Opening GPS Data for Civilian Use"
   image: 'coming-soon.jpg'
@@ -311,14 +275,10 @@
   unreleased: true
   description: 'Coming Soon'
   impact_type: economic # citizens | government | economic | public
-  sector: geospatial # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location:
   read_time:
   full_read_time:
-  references:
-    - number:
-      title:
-      text:
 
 - title: "United Kingdom's Transport for London"
   image: 'coming-soon.jpg'
@@ -326,14 +286,10 @@
   unreleased: true
   description: 'Coming Soon'
   impact_type: economic # citizens | government | economic | public
-  sector: transportation # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: transportation # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location:
   read_time:
   full_read_time:
-  references:
-    - number:
-      title:
-      text:
 
 - title: "United Kingdom's HM Land Registry Price Paid Data"
   image: 'coming-soon.jpg'
@@ -341,11 +297,7 @@
   unreleased: true
   description: 'Coming Soon'
   impact_type: economic # citizens | government | economic | public
-  sector: geospatial # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
+  sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location:
   read_time:
   full_read_time:
-  references:
-    - number:
-      title:
-      text:

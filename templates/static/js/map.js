@@ -236,13 +236,13 @@ function ready(error, world, studies, names) {
     // (i.e. some of the bounding boxes don't make visual sense, so just
     // adjust those manually)
     if (d.location === 'northAmerica') {
-      x *= .45;
-      y *= 1.7;
+      x *= .5;
+      y *= 1.8;
     } else if (d.location === 'euCentralAsia') {
       x *= 1.5;
       y *= 1.5;
     } else if (d.location === 'eastAsia') {
-      x *= 1.7;
+      x *= 1.6;
       y *= .9;
     } else if (d.location === 'latinAmerica') {
       x *= 1.2;
@@ -312,6 +312,7 @@ function highlight(d) {
   var bubble = this.id.replace(/^(?!_bubble_|_text_)|_text_/, '_bubble_');
   d3.selectAll('.node').classed('fade', true);
   d3.select('.map-caption').text(verboseNames[region]);
+  d3.select('.map-caption').classed('default', false);
   d3.select('#' + region).classed('active', true);
   d3.select('#' + bubble).classed('active', true);
   zoomBubble('#' + bubble, 1.4);
@@ -323,6 +324,7 @@ function deHighlight(d) {
   var bubble = '#' + this.id.replace(/^(?!_bubble_|_text_)|_text_/, '_bubble_');
   d3.selectAll('.node').classed('fade', false);
   d3.select('.map-caption').text('Select a Region');
+  d3.select('.map-caption').classed('default', true);
   d3.select(region).classed('active', false);
   d3.select(bubble).classed('active', false);
   zoomBubble(bubble, -1);
