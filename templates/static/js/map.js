@@ -102,23 +102,6 @@ function ready(error, world, studies, names) {
   });
 
   // draw map
-  // g.selectAll('path')
-  // .data(countries)
-  // .enter()
-  // .enter().append('path')
-  // .attr('d', path)
-  // .attr('class', 'feature')
-  // .attr('id', function(d, i) {
-  //   // console.log (countries[i].name.replace(/\s+/g, '-'), d.id);
-  //   return countries[i].name.replace(/\s+/g, '-');
-  // })
-  // .on('click', clicked);
-
-  // add the countries from topojson i think this is faster in terms of drawing edges
-  // g.append('path')
-  // .datum(topojson.mesh(world, world.objects.countries, function(a, b) { return a !== b; }))
-  // .attr('class', 'country')
-  // .attr('d', path);
 
   // add regions
   g.append('path')
