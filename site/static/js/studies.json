@@ -4,8 +4,93 @@
     {
         "title" : "Brazil’s Open Budget Transparency Portal",
         "location" : "latinAmerica",
-        "sector" : "public",
-        "impact" : "government"
+        "impact" : "government",
+        "sector" : "public"
     }
+    ,
+    {
+        "title" : "Open Education Information In Tanzania",
+        "location" : "subSaharanAfrica",
+        "impact" : "citizens",
+        "sector" : "education"
+    }
+    ,
+    {
+        "title" : "Kenya's Open Duka",
+        "location" : "subSaharanAfrica",
+        "impact" : "citizens",
+        "sector" : "public"
+    }
+    ,
+    {
+        "title" : "Mexico’s Mejora Tu Escuela",
+        "location" : "latinAmerica",
+        "impact" : "citizens",
+        "sector" : "education"
+    }
+    ,
+    {
+        "title" : "Uruguay's A Tu Servicio",
+        "location" : "latinAmerica",
+        "impact" : "citizens",
+        "sector" : "health"
+    }
+    ,
+    {
+        "title" : "Openaid In Sweden",
+        "location" : "westEurope",
+        "impact" : "government",
+        "sector" : "philantropy"
+    }
+    ,
+    {
+        "title" : "Open Contracting And Procurement In Slovakia",
+        "location" : "westEurope",
+        "impact" : "government",
+        "sector" : "public"
+    }
+    ,
+    {
+        "title" : "Indonesia’s Kawal Pemilu",
+        "location" : "eastAsia",
+        "impact" : "government",
+        "sector" : "politics"
+    }
+    ,
+    {
+        "title" : "Denmark’s Open Address Data Set",
+        "location" : "westEurope",
+        "impact" : "government",
+        "sector" : "geospatial"
+    }
+    ,
+    {
+        "title" : "Opening Canada’s T3010 Charity Information Return Data",
+        "location" : "northAmerica",
+        "impact" : "government",
+        "sector" : "philantropy"
+    }
+    ,
+    {
+        "title" : "United Kingdom's TheyWorkForYou",
+        "location" : "westEurope",
+        "impact" : "government",
+        "sector" : "public"
+    }
+    ,
+    {
+        "title" : "United Kingdom's Open Public Services Network",
+        "location" : "westEurope",
+        "impact" : "government",
+        "sector" : "education"
+    }
+    ,
+    {
+        "title" : "United Kingdom's OpenCorporates",
+        "location" : "westEurope",
+        "impact" : "government",
+        "sector" : "business"
+    }
+
     ]
 }

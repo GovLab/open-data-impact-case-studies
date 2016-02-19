@@ -463,7 +463,7 @@
             </div>
             <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
             
-            <div class="e-card impact-government sector-philantrophy">
+            <div class="e-card impact-government sector-philantropy">
                 <a href="case-openaid-in-sweden.html">
                     <div class="e-card-inner">
                         <div class="e-case-image" style="background-image: url(./static/img/banners/sweden.jpg)"></div>
@@ -507,7 +507,7 @@
             </div>
             <!-- <a class="b-button m-naked" href="#">Read the case study<i class="material-icons">arrow_forward</i></a> -->
             
-            <div class="e-card impact-government sector-philantrophy">
+            <div class="e-card impact-government sector-philantropy">
                 <a href="case-opening-canadas-t3010-charity-information-return-data.html">
                     <div class="e-card-inner">
                         <div class="e-case-image" style="background-image: url(./static/img/banners/canada.jpg)"></div>

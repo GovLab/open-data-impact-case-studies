@@ -4778,6 +4778,9 @@ ul.b-sidebar {
     .map .region.selected {
       fill: #c1d8dd; }
 
+.map-caption.default {
+  color: rgba(0, 0, 0, 0.2); }
+
 .m-od-blue {
   background-color: #164A7A; }
 
