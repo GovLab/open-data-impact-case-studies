@@ -273,6 +273,7 @@
             <ul class="tabs" data-tabs id="explore-tabs">
                 <li class="tabs-title is-active" id="sector-tab"><a href="#panel1">Sector</a></li>
                 <li class="tabs-title" id="impact-tab"><a href="#panel2">Impact</a></li>
+                <li class="tabs-title" id="map-tab"><a href="#panel3">Map</a></li>
                 <!-- <a href="#" class="e-side-link">Download all case studies</a> -->
             </ul>
         </div>
@@ -384,6 +385,13 @@
                             <!-- <i class="material-icons m-lg">public</i> -->
                             Solving Public Problems
                         </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-panel" id="panel3">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <div class="map"></div>
                     </div>
                 </div>
             </div>
@@ -733,6 +741,12 @@
 
 <script src="static/js/filters.js"></script>
 <script src="static/js/tweens.js"></script>
+
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="//d3js.org/topojson.v1.min.js"></script>
+<script src="//d3js.org/d3.geo.projection.v0.min.js"></script>
+<script src="//d3js.org/queue.v1.min.js"></script>
+<script src="static/js/map.js"></script>
 
 
 

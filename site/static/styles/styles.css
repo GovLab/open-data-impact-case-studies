@@ -4743,6 +4743,39 @@ ul.b-sidebar {
   background-color: transparent;
   opacity: 0.0; }
 
+.map {
+  width: 900px;
+  margin: 0 auto; }
+  .map .background {
+    fill: none;
+    pointer-events: all; }
+  .map .country {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round; }
+  .map .node.fade circle {
+    opacity: .15;
+    transition: opacity 0.5s; }
+  .map .node circle {
+    opacity: .75;
+    cursor: pointer;
+    transition: opacity 0.5s; }
+    .map .node circle.active {
+      opacity: .9;
+      fill: #008ab3 !important;
+      transition: opacity 0.1s; }
+  .map .node text {
+    fill: #fff;
+    cursor: pointer; }
+  .map .region {
+    fill: #ddd;
+    cursor: pointer;
+    transition: fill 0.1s; }
+    .map .region.active {
+      fill: #bbb;
+      transition: fill 0.1s; }
+
 .m-od-blue {
   background-color: #164A7A; }
 
