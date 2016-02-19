@@ -48,6 +48,10 @@
       fill: #bbb;
       transition: fill 0.1s;
     }
+
+    &.selected {
+      fill: rgb(193,216,221);
+    }
   }
 
 }
