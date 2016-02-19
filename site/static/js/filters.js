@@ -1,4 +1,4 @@
-$(function() {
+// $(function() {
     var $grid = $('.grid').isotope({
         itemSelector: '.e-card',
         // masonry: {
@@ -45,4 +45,22 @@ $(function() {
             $('#no-results').addClass('m-hidden');
         }
     });
-});
+
+    function filterBy(param) {
+        $('.js-filter').removeClass('selected');
+        var filterParam = param;
+        if (filterParam === '*') {
+            $grid.isotope({ filter : '*' })
+        }
+        else {
+            $grid.isotope({ filter : '.' + filterParam })
+        }
+
+        if ($grid.data('isotope').filteredItems.length === 0) {
+            $('#no-results').removeClass('m-hidden');
+        } else {
+            $('#no-results').addClass('m-hidden');
+        }
+    }
+
+// });

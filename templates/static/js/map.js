@@ -21,8 +21,7 @@ var svg = d3.select('.map').append('svg')
 svg.append('rect')
 .attr('class', 'background')
 .attr('width', width)
-.attr('height', height)
-.on('click', reset);
+.attr('height', height);
 
 var g = svg.append('g')
 .style('stroke-width', '1.5px');
@@ -38,8 +37,6 @@ var northAmerica = d3.set([
   124, 840
   ]);
 
-// could not find:
-// Tuvalu
 var eastAsia = d3.set([
   16, 882, 104, 116, 585, 156, 598, 242, 608, 360, 296, 90, 408, 410, 764, 418,
   626, 458, 776, 584, 583, 548, 496, 704, 392, 36, 554, 540, 158
@@ -73,6 +70,17 @@ var westEurope = d3.set([
   304, 352, 752, 578, 246, 826, 372, 250, 724, 620, 56, 528, 276, 616, 203, 40, 380,
   300, 348, 703, 428, 233, 208, 756, 440, 191, 705
   ]);
+
+var verboseNames = {
+  'northAmerica'        : 'North America',
+  'eastAsia'            : 'East Asia & Pacific',
+  'euCentralAsia'       : 'East Europe & Central Asia',
+  'latinAmerica'        : 'Latin America & Caribbean',
+  'midEastNorthAfrica'  : 'Middle East & North Africa',
+  'southAsia'           : 'South Asia',
+  'subSaharanAfrica'    : 'Sub-Saharan Africa',
+  'westEurope'          : 'West Europe'
+}
 
 // this allows us to process multiple data sources in a single function using d3, e.g. instead of just d3.json()
 queue()
@@ -118,6 +126,7 @@ function ready(error, world, studies, names) {
   .attr('class', 'region')
   .attr('id', 'northAmerica')
   .attr('d', path)
+  .on("click", clicked)
   .on("mouseover", highlight)
   .on("mouseout", deHighlight);
 
@@ -126,6 +135,7 @@ function ready(error, world, studies, names) {
   .attr('class', 'region')
   .attr('id', 'eastAsia')
   .attr('d', path)
+  .on("click", clicked)
   .on("mouseover", highlight)
   .on("mouseout", deHighlight);
 
@@ -134,6 +144,7 @@ function ready(error, world, studies, names) {
   .attr('class', 'region')
   .attr('id', 'euCentralAsia')
   .attr('d', path)
+  .on("click", clicked)
   .on("mouseover", highlight)
   .on("mouseout", deHighlight);
 
@@ -142,6 +153,7 @@ function ready(error, world, studies, names) {
   .attr('class', 'region')
   .attr('id', 'latinAmerica')
   .attr('d', path)
+  .on("click", clicked)
   .on("mouseover", highlight)
   .on("mouseout", deHighlight);
 
@@ -150,6 +162,7 @@ function ready(error, world, studies, names) {
   .attr('class', 'region')
   .attr('id', 'midEastNorthAfrica')
   .attr('d', path)
+  .on("click", clicked)
   .on("mouseover", highlight)
   .on("mouseout", deHighlight);
 
@@ -158,6 +171,7 @@ function ready(error, world, studies, names) {
   .attr('class', 'region')
   .attr('id', 'southAsia')
   .attr('d', path)
+  .on("click", clicked)
   .on("mouseover", highlight)
   .on("mouseout", deHighlight);
 
@@ -166,6 +180,7 @@ function ready(error, world, studies, names) {
   .attr('class', 'region')
   .attr('id', 'subSaharanAfrica')
   .attr('d', path)
+  .on("click", clicked)
   .on("mouseover", highlight)
   .on("mouseout", deHighlight);
 
@@ -174,6 +189,7 @@ function ready(error, world, studies, names) {
   .attr('class', 'region')
   .attr('id', 'westEurope')
   .attr('d', path)
+  .on("click", clicked)
   .on("mouseover", highlight)
   .on("mouseout", deHighlight);
 
@@ -211,18 +227,6 @@ function ready(error, world, studies, names) {
     return 'node';
   })
   .attr('transform', function(d, i) {
-    // var country = g.select('#' + d.location.replace(/\s+/g, '-')).datum();
-    // var b = path.bounds(country),
-    // x = (b[0][0] + b[1][0]) / 2,
-    // y = (b[0][1] + b[1][1]) / 2;
-    // if (d.location === 'United States') {
-    //   // Translate the coords manually for USA
-    //   // This is a workaround to deal with the fact that the bounding box of
-    //   // USA expands to the entire width of the map due to Alaska's islands
-    //   x = x/2.15;
-    //   y = y*1.25;
-    // }
-
     var region = g.select('#' + d.location.replace(/\s+/g, '-')).datum();
     var b = path.bounds(region),
     x = (b[0][0] + b[1][0]) / 2,
@@ -279,6 +283,7 @@ function ready(error, world, studies, names) {
   .attr('id', function(d, i) {
     return '_bubble_' + d.location.replace(/\s+/g, '-');
   })
+  .on("click", clicked)
   .on("mouseover", highlight)
   .on("mouseout", deHighlight);
 
@@ -294,6 +299,7 @@ function ready(error, world, studies, names) {
   .attr('id', function(d, i) {
     return '_text_' + d.location.replace(/\s+/g, '-');
   })
+  .on("click", clicked)
   .on("mouseover", highlight)
   .on("mouseout", deHighlight);
 
@@ -302,12 +308,13 @@ function ready(error, world, studies, names) {
 }
 
 function highlight(d) {
-  var region = '#' + this.id.replace(/_bubble_|_text_/, '');
-  var bubble = '#' + this.id.replace(/^(?!_bubble_|_text_)|_text_/, '_bubble_');
+  var region = this.id.replace(/_bubble_|_text_/, '');
+  var bubble = this.id.replace(/^(?!_bubble_|_text_)|_text_/, '_bubble_');
   d3.selectAll('.node').classed('fade', true);
-  d3.select(region).classed('active', true);
-  d3.select(bubble).classed('active', true);
-  zoomBubble(bubble, 1.4);
+  d3.select('.map-caption').text(verboseNames[region]);
+  d3.select('#' + region).classed('active', true);
+  d3.select('#' + bubble).classed('active', true);
+  zoomBubble('#' + bubble, 1.4);
   // console.log('in', this.id); // debug
 }
 
@@ -315,6 +322,7 @@ function deHighlight(d) {
   var region = '#' + this.id.replace(/_bubble_|_text_/, '');
   var bubble = '#' + this.id.replace(/^(?!_bubble_|_text_)|_text_/, '_bubble_');
   d3.selectAll('.node').classed('fade', false);
+  d3.select('.map-caption').text('Select a Region');
   d3.select(region).classed('active', false);
   d3.select(bubble).classed('active', false);
   zoomBubble(bubble, -1);
@@ -323,6 +331,8 @@ function deHighlight(d) {
 
 var intervals = {};
 function zoomBubble(elem, zoom) {
+  if (d3.select(elem)[0][0] === null) { return -1; }
+
   var
   frames = 100,
   e = d3.select(elem),
@@ -362,26 +372,8 @@ function zoomBubble(elem, zoom) {
 }
 
 function clicked(d) {
-  console.log(this.id, d.id);
-  if (active.node() === this) return reset();
-  active.classed('active', false);
-  active = d3.select(this).classed('active', true);
-
-  var bounds = path.bounds(d),
-  dx = bounds[1][0] - bounds[0][0],
-  dy = bounds[1][1] - bounds[0][1],
-  x = (bounds[0][0] + bounds[1][0]) / 2,
-  y = (bounds[0][1] + bounds[1][1]) / 2,
-  scale = .9 / Math.max(dx / width, dy / height),
-  translate = [width / 2 - scale * x, height / 2 - scale * y];
-}
-
-function reset() {
-  active.classed('active', false);
-  active = d3.select(null);
-
-  g.transition()
-  .duration(750)
-  .style('stroke-width', '1.5px')
-  .attr('transform', '');
+  var region = this.id.replace(/_bubble_|_text_/, '');
+  d3.selectAll('.region').classed('selected', false);
+  d3.select('#' + region).classed('selected', true);
+  filterBy ('region-' + region);
 }

@@ -17,6 +17,7 @@
   impact_type: government # citizens | government | economic | public
   sector: public # public | philantrophy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Brazil
+  region: latinAmerica
   read_time: 5 #minutes
   full_read_time: 20
   download: case-study-brazil.pdf

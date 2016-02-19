@@ -4775,6 +4775,8 @@ ul.b-sidebar {
     .map .region.active {
       fill: #bbb;
       transition: fill 0.1s; }
+    .map .region.selected {
+      fill: #c1d8dd; }
 
 .m-od-blue {
   background-color: #164A7A; }
