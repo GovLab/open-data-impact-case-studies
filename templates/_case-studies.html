@@ -226,6 +226,22 @@
                     </div>
                     {% endif %}
 
+                    {% if self.users() %}
+                    <div class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Users</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    {% block users %}{% endblock %}
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
                     {% if self.outcome() %}
                     <div class="b-page-section">
                         <div class="row">
