@@ -4743,8 +4743,12 @@ ul.b-sidebar {
   opacity: 0.0; }
 
 .map {
-  width: 900px;
-  margin: 0 auto; }
+  width: 100%;
+  margin: 0; }
+  @media screen and (min-width: 64.0625em) {
+    .map {
+      width: 900px;
+      margin: 0 auto; } }
   .map .background {
     fill: none;
     pointer-events: all; }
