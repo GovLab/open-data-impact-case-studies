@@ -1,12 +1,13 @@
 .map {
 
+  width: 900px;
+  margin: 0 auto;
+
   @include breakpoint($desktop) {
-    width: 900px;
-    margin: 0 auto;
+    display: block;
   }
   @include breakpoint($mobile-only) {
-    width: 100%;
-    margin: 0;
+    display: none;
   }
 
   .background {
@@ -64,7 +65,24 @@
 
 
 .map-caption {
+  @include breakpoint($desktop) {
+    display: block;
+  }
+  @include breakpoint($mobile-only) {
+    display: none;
+  }
   &.default {
     color: $gray-20;
+  }
+}
+
+.map-alt {
+  display: none;
+
+  @include breakpoint($desktop) {
+    display: none;
+  }
+  @include breakpoint($mobile-only) {
+    display: block;
   }
 }
