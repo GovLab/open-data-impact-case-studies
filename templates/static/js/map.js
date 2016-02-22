@@ -196,7 +196,7 @@ function ready(error, world, studies, names) {
 
   // assign a size value to each datum based on the count
   var base = 4; // log base for bubbles size curve
-  var scale = 80; // multiplier for bubbles size curve
+  var scale = 60; // multiplier for bubbles size curve
   for (var i in studies.children) {
     var l = s[i].location.replace(/\s+/g, '-');
     studies.children[i].size = (Math.log(counts[l].count + 1)/Math.log(base))*scale;
@@ -256,7 +256,7 @@ function ready(error, world, studies, names) {
 
     // calculate the value of the shade (logarithmic)
     var base = 2; // log base for shade curve
-    var scale = 2; // multiplier for shade curve
+    var scale = 3; // multiplier for shade curve
     var c = counts[d.location.replace(/\s+/g, '-')].count;
     var v = (Math.log(c + 1)/Math.log(base))*scale/max;
     v = v > 1 ? 1 : v;
