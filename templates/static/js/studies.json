@@ -121,13 +121,6 @@
     }
     ,
     {
-        "title" : "Battling Ebola in Sierra Leone",
-        "location" : "subSaharanAfrica",
-        "impact" : "public",
-        "sector" : "health"
-    }
-    ,
-    {
         "title" : "Kennedy vs. the City of Zanesville, United States",
         "location" : "northAmerica",
         "impact" : "public",
