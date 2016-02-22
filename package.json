@@ -1,0 +1,25 @@
+{
+  "name": "odi",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/GovLab/open-data-impact-case-studies.svg?branch=master)](https://travis-ci.org/GovLab/open-data-impact-case-studies)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mocxd/open-data-impact-case-studies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mocxd/open-data-impact-case-studies/issues"
+  },
+  "homepage": "https://github.com/mocxd/open-data-impact-case-studies#readme",
+  "devDependencies": {
+    "gulp-cache": "^0.4.2",
+    "gulp-changed": "^1.3.0",
+    "gulp-image-resize": "^0.7.1",
+    "gulp-imagemin": "^2.4.0"
+  }
+}
