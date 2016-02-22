@@ -91,6 +91,98 @@
         "impact" : "government",
         "sector" : "business"
     }
+    ,
+    {
+        "title" : "Battling Ebola in Sierra Leone",
+        "location" : "subSaharanAfrica",
+        "impact" : "public",
+        "sector" : "health"
+    }
+    ,
+    {
+        "title" : "New Zealand's Christchurch Earthquake Clusters",
+        "location" : "eastAsia",
+        "impact" : "public",
+        "sector" : "emergency"
+    }
+    ,
+    {
+        "title" : "Singapore's Dengue Cluster Map",
+        "location" : "eastAsia",
+        "impact" : "public",
+        "sector" : "health"
+    }
+    ,
+    {
+        "title" : "United States' Eightmaps",
+        "location" : "northAmerica",
+        "impact" : "public",
+        "sector" : "politics"
+    }
+    ,
+    {
+        "title" : "Battling Ebola in Sierra Leone",
+        "location" : "subSaharanAfrica",
+        "impact" : "public",
+        "sector" : "health"
+    }
+    ,
+    {
+        "title" : "Kennedy vs. the City of Zanesville, United States",
+        "location" : "northAmerica",
+        "impact" : "public",
+        "sector" : "law"
+    }
+    ,
+    {
+        "title" : "United Kingdom's Coeliac UK and Brandbank",
+        "location" : "westEurope",
+        "impact" : "public",
+        "sector" : "health"
+    }
+    ,
+    {
+        "title" : "United Kingdom's Ordnance Survey OpenData",
+        "location" : "westEurope",
+        "impact" : "economic",
+        "sector" : "geospatial"
+    }
+    ,
+    {
+        "title" : "United States' New York City Business Atlas",
+        "location" : "northAmerica",
+        "impact" : "economic",
+        "sector" : "business"
+    }
+    ,
+    {
+        "title" : "United States' NOAA: Opening Up Global Weather Data in Collaboration with Businesses",
+        "location" : "northAmerica",
+        "impact" : "economic",
+        "sector" : "weather"
+    }
+    ,
+    {
+        "title" : "United Kingdom's Transport for London",
+        "location" : "westEurope",
+        "impact" : "economic",
+        "sector" : "transportation"
+    }
+    ,
+    {
+        "title" : "United States Opening GPS Data for Civilian Use",
+        "location" : "northAmerica",
+        "impact" : "economic",
+        "sector" : "geospatial"
+    }
+    ,
+    {
+        "title" : "United Kingdom's HM Land Registry Price Paid Data",
+        "location" : "westEurope",
+        "impact" : "economic",
+        "sector" : "geospatial"
+    }
+
 
     ]
 }
