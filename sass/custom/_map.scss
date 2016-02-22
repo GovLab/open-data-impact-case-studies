@@ -1,7 +1,13 @@
 .map {
 
-  width: 900px;
-  margin: 0 auto;
+  @include breakpoint($desktop) {
+    width: 900px;
+    margin: 0 auto;
+  }
+  @include breakpoint($mobile-only) {
+    width: 100%;
+    margin: 0;
+  }
 
   .background {
     fill: none;

@@ -1,15 +1,29 @@
 // Map II : Simplified bubble map
 
-var width = 900,
-height = 400,
-active = d3.select(null);
+var mobileOnly = '(max-width: 767px)'
 
-// var projection = d3.geo.albersUsa()
-// var projection = d3.geo.kavrayskiy7()
-// var projection = d3.geo.equirectangular()
-var projection = d3.geo.mercator()
-.scale(120)
-.translate([width / 2, height / 1.5]);
+// make it responsive
+if (window.matchMedia(mobileOnly).matches) {
+
+  var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
+  height = 300,
+  active = d3.select(null);
+
+  var projection = d3.geo.mercator()
+  .scale(60)
+  .translate([width * .2, height * .7]);
+
+} else { // desktop
+
+  var width = 900,
+  height = 400,
+  active = d3.select(null);
+
+  var projection = d3.geo.mercator()
+  .scale(120)
+  .translate([width / 2, height / 1.5]);
+
+}
 
 var path = d3.geo.path()
 .projection(projection);
@@ -220,7 +234,7 @@ function ready(error, world, studies, names) {
     // adjust those manually)
     if (d.location === 'northAmerica') {
       x *= .5;
-      y *= 1.8;
+      y *= 1.5;
     } else if (d.location === 'euCentralAsia') {
       x *= 1.5;
       y *= 1.5;
