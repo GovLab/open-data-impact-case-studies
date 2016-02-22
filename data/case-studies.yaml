@@ -313,7 +313,7 @@
   read_time: 5
   full_read_time: 20
   special_thanks: false
-  download:
+  download: case-studies-transport-for-london.pdf
 
 # 24
 - title: "United Kingdom's HM Land Registry Price Paid Data"
