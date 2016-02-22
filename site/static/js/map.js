@@ -2,43 +2,34 @@
 
 var mobileOnly = '(max-width: 767px)'
 
-// make it responsive
+// disable the map on mobile (ie replace with something else)
 if (window.matchMedia(mobileOnly).matches) {
 
-  var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
-  height = 300,
-  active = d3.select(null);
-
-  var projection = d3.geo.mercator()
-  .scale(60)
-  .translate([width * .2, height * .7]);
+console.log('Mobile, map disabled');
 
 } else { // desktop
+    var width = 900,
+    height = 400,
+    active = d3.select(null);
 
-  var width = 900,
-  height = 400,
-  active = d3.select(null);
+    var projection = d3.geo.mercator()
+    .scale(120)
+    .translate([width / 2, height / 1.5]);
 
-  var projection = d3.geo.mercator()
-  .scale(120)
-  .translate([width / 2, height / 1.5]);
+    var path = d3.geo.path()
+    .projection(projection);
 
-}
+    var svg = d3.select('.map').append('svg')
+    .attr('width', width)
+    .attr('height', height);
 
-var path = d3.geo.path()
-.projection(projection);
+    svg.append('rect')
+    .attr('class', 'background')
+    .attr('width', width)
+    .attr('height', height);
 
-var svg = d3.select('.map').append('svg')
-.attr('width', width)
-.attr('height', height);
-
-svg.append('rect')
-.attr('class', 'background')
-.attr('width', width)
-.attr('height', height);
-
-var g = svg.append('g')
-.style('stroke-width', '1.5px');
+    var g = svg.append('g')
+    .style('stroke-width', '1.5px');
 
 // create a shade based on array of rgb values and scalar
 function shade(rgb, v) {
@@ -375,4 +366,6 @@ function clicked(d) {
   d3.selectAll('.region').classed('selected', false);
   d3.select('#' + region).classed('selected', true);
   filterBy ('region-' + region);
+}
+
 }
