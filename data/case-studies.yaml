@@ -178,6 +178,7 @@
   impact_type: public # citizens | government | economic | public
   sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: 'Sierra Leone'
+  region: subSaharanAfrica
   read_time: 5
   full_read_time: 20
 
@@ -189,6 +190,7 @@
   impact_type: public # citizens | government | economic | public
   sector: emergency # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: 'New Zealand'
+  region: eastAsia
   read_time: 5
   full_read_time: 20
 
@@ -200,6 +202,7 @@
   impact_type: public # citizens | government | economic | public
   sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Singapore
+  region: eastAsia
   read_time: 5
   full_read_time: 20
 
@@ -211,6 +214,7 @@
   impact_type: public # citizens | government | economic | public
   sector: politics # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
+  region: northAmerica
   read_time: 5
   full_read_time: 20
 
@@ -222,6 +226,7 @@
   impact_type: public # citizens | government | economic | public
   sector: law # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
+  region: northAmerica
   read_time: 5
   full_read_time: 20
 
@@ -233,6 +238,7 @@
   impact_type: public # citizens | government | economic | public
   sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
+  region: westEurope
   read_time: 5
   full_read_time: 20
   special_thanks: false
@@ -245,6 +251,7 @@
   impact_type: economic # citizens | government | economic | public
   sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
+  region: westEurope
   read_time: 5
   full_read_time: 20
 
@@ -256,6 +263,7 @@
   impact_type: economic # citizens | government | economic | public
   sector: business # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
+  region: northAmerica
   read_time: 5
   full_read_time: 20
 
@@ -267,6 +275,7 @@
   impact_type: economic # citizens | government | economic | public
   sector: weather # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
+  region: northAmerica
   read_time: 5
   full_read_time: 20
 
@@ -278,6 +287,7 @@
   impact_type: economic # citizens | government | economic | public
   sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
+  region: northAmerica
   read_time: 5
   full_read_time: 20
 
@@ -289,6 +299,7 @@
   impact_type: economic # citizens | government | economic | public
   sector: transportation # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
+  region: westEurope
   read_time: 5
   full_read_time: 20
   special_thanks: false
@@ -301,6 +312,7 @@
   impact_type: economic # citizens | government | economic | public
   sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
+  region: westEurope
   read_time: 5
   full_read_time: 20
   special_thanks: false
