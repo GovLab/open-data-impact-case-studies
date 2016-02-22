@@ -47,3 +47,12 @@ Add link onto a naked span
 ```
 s:<span class="e-link">(https?.//[^\s<]*)</span>\s*</p>:<a href="\1"><span class="e-link">\1</span></a></p>:g
 ```
+
+from scratch
+```
+s:\n+\s*(.+):\n\n<div id="footnote-xxx" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-xxx-backlink">x</a>\1</p></div>:g
+
+s:\n+\s*(.+):\n\n\1</div>:g
+
+s:<div id="footnote-xxx" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-xxx-backlink">x</a>([0-9][0-9]?):<div id="footnote-\1" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-\1-backlink">\1</a>:g
+```
