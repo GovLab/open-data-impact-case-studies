@@ -49,7 +49,7 @@ var eastAsia = d3.set([
 
 var euCentralAsia = d3.set([
   8, 807, 51, 498, 31, 499, 112, 642, 70, 688, 100, 762, 268, 792, 398, 795, 804,
-  417, 860, 643
+  417, 860, 643, 703
   ]);
 
 var latinAmerica = d3.set([
@@ -73,7 +73,7 @@ var subSaharanAfrica = d3.set([
 
 var westEurope = d3.set([
   304, 352, 752, 578, 246, 826, 372, 250, 724, 620, 56, 528, 276, 616, 203, 40, 380,
-  300, 348, 703, 428, 233, 208, 756, 440, 191, 705
+  300, 348, 428, 233, 208, 756, 440, 191, 705
   ]);
 
 var verboseNames = {
@@ -227,7 +227,7 @@ function ready(error, world, studies, names) {
       x *= .5;
       y *= 1.5;
     } else if (d.location === 'euCentralAsia') {
-      x *= 1.5;
+      x *= 1.35;
       y *= 1.5;
     } else if (d.location === 'eastAsia') {
       x *= 1.6;

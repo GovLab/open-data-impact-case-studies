@@ -82,7 +82,6 @@
   full_read_time: 20
   download: case-study-sweden.pdf
 
-
 - title: 'Open Contracting And Procurement In Slovakia'
   image: slovakia.jpg
   authors: 'Ali Clare, David Sangokoya, Stefaan Verhulst and Andrew Young'
@@ -90,7 +89,7 @@
   impact_type: government # citizens | government | economic | public
   sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Slovakia
-  region: westEurope
+  region: euCentralAsia
   read_time: 5
   full_read_time: 20
   download: case-study-slovakia.pdf
