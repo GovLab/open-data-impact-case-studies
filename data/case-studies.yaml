@@ -273,7 +273,7 @@
   region: northAmerica
   read_time: 5
   full_read_time: 20
-  download:
+  download: case-studies-nyc-business-atlas.pdf
 
 # 21
 - title: "United States' NOAA: Opening Up Global Weather Data in Collaboration with Businesses"
