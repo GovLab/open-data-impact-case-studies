@@ -69,8 +69,8 @@
                     </div>
                     <div class="large-5 columns end">
                         <p class="b-description">
-                         Open data is empowering citizens to take control of their lives and demand change by enabling <strong>more informed decision making</strong> and <strong>new forms of social mobilization,</strong> both in turn facilitated by new ways of communicating and accessing information.
-                         <div class="e-action">
+                           Open data is empowering citizens to take control of their lives and demand change by enabling <strong>more informed decision making</strong> and <strong>new forms of social mobilization,</strong> both in turn facilitated by new ways of communicating and accessing information.
+                           <div class="e-action">
                             <a class="b-button m-naked" href="#" id="citizens-button">Read the Case Studies<i class="material-icons">arrow_forward</i></a>
                         </div>
                     </p>
@@ -226,6 +226,7 @@
             <ul class="tabs" data-tabs id="explore-tabs">
                 <li class="tabs-title is-active" id="sector-tab"><a href="#panel1">Sector</a></li>
                 <li class="tabs-title" id="impact-tab"><a href="#panel2">Impact</a></li>
+                <li class="tabs-title" id="map-tab"><a href="#panel3">Map</a></li>
                 <!-- <a href="#" class="e-side-link">Download all case studies</a> -->
             </ul>
         </div>
@@ -276,9 +277,9 @@
                         </a>
                     </div>
                     <div class="large-2 columns">
-                        <a href="#" class="b-button js-filter" data-filter="sector-philantrophy">
+                        <a href="#" class="b-button js-filter" data-filter="sector-philantropy">
                             <!-- <i class="material-icons m-lg">accessibility</i> -->
-                            Philantrophy &amp; Aid
+                            Philantropy &amp; Aid
                         </a>
                     </div>
                     <div class="large-2 columns">
@@ -340,23 +341,63 @@
                     </div>
                 </div>
             </div>
+            <div class="tabs-panel" id="panel3">
+                <div class="expanded row m-center">
+                    <div class="map"></div>
+                    <div class="map-caption default">Select a Region</div>
+                    <div class="map-alt">
+                        <div class="row">
+                            <div class="medium-2 large-offset-1 columns">
+                                <a href="#" class="b-button js-filter" data-filter="*" id="see-all-btn-3">
+                                    See All
+                                </a>
+                            </div>
+                            <div class="medium-2 columns">
+                                <a href="#" class="b-button js-filter" data-filter="region-northAmerica">
+                                    North America
+                                </a>
+                            </div>
+                            <div class="medium-2 columns">
+                                <a href="#" class="b-button js-filter" data-filter="region-westEurope">
+                                    West Europe
+                                </a>
+                            </div>
+                            <div class="medium-2 columns">
+                                <a href="#" class="b-button js-filter" data-filter="region-eastAsia">
+                                    East Asia &amp; Pacific
+                                </a>
+                            </div>
+                            <div class="medium-2 columns">
+                                <a href="#" class="b-button js-filter" data-filter="region-subSaharanAfrica">
+                                    Sub-Saharan Africa
+                                </a>
+                            </div>
+                            <div class="medium-2 columns">
+                                <a href="#" class="b-button js-filter" data-filter="region-latinAmerica">
+                                    Latin America
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="b-page-section m-no-top-padding" id="results">
         <div class="grid">
             {% for case in cases %}
-            <div class="e-card impact-{{case.impact_type}} sector-{{case.sector}} {% if case.unreleased %} m-unreleased {% endif %}">
+            <div class="e-card impact-{{case.impact_type}} sector-{{case.sector}} region-{{case.region}} {% if case.unreleased %} m-unreleased {% endif %}">
                 {% if case.unreleased %}
                 <div class="e-card-inner">
-                    <div class="e-case-image" style="background-image: url(./static/img/banners/{{case.image}})"></div>
+                    <div class="e-case-image" style="background-image: url(./static/img/banners/thumbs/{{case.image}})"></div>
                     <p class="e-case-name">{{case.title | truncate(60)}}</p>
                     <p class="e-case-description">{{case.description | truncate(200)}}</p>
                 </div>
                 {% else %}
                 <a href="case-{{case.title | slug}}.html">
                     <div class="e-card-inner">
-                        <div class="e-case-image" style="background-image: url(./static/img/banners/{{case.image}})"></div>
+                        <div class="e-case-image" style="background-image: url(./static/img/banners/thumbs/{{case.image}})"></div>
                         <p class="e-case-name">{{case.title | truncate(60)}}</p>
                         <p class="e-case-description">{{case.description | truncate(200)}}</p>
                     </div>
@@ -402,7 +443,13 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
 
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="//d3js.org/topojson.v1.min.js"></script>
+<script src="//d3js.org/d3.geo.projection.v0.min.js"></script>
+<script src="//d3js.org/queue.v1.min.js"></script>
+
 <script src="static/js/filters.js"></script>
 <script src="static/js/tweens.js"></script>
+<script src="static/js/map.js"></script>
 
 {% endblock %}

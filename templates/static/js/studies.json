@@ -1,0 +1,181 @@
+{
+    "name" : "studies",
+    "children" : [
+    {
+        "title" : "Brazil’s Open Budget Transparency Portal",
+        "location" : "latinAmerica",
+        "impact" : "government",
+        "sector" : "public"
+    }
+    ,
+    {
+        "title" : "Open Education Information In Tanzania",
+        "location" : "subSaharanAfrica",
+        "impact" : "citizens",
+        "sector" : "education"
+    }
+    ,
+    {
+        "title" : "Kenya's Open Duka",
+        "location" : "subSaharanAfrica",
+        "impact" : "citizens",
+        "sector" : "public"
+    }
+    ,
+    {
+        "title" : "Mexico’s Mejora Tu Escuela",
+        "location" : "latinAmerica",
+        "impact" : "citizens",
+        "sector" : "education"
+    }
+    ,
+    {
+        "title" : "Uruguay's A Tu Servicio",
+        "location" : "latinAmerica",
+        "impact" : "citizens",
+        "sector" : "health"
+    }
+    ,
+    {
+        "title" : "Openaid In Sweden",
+        "location" : "westEurope",
+        "impact" : "government",
+        "sector" : "philantropy"
+    }
+    ,
+    {
+        "title" : "Open Contracting And Procurement In Slovakia",
+        "location" : "westEurope",
+        "impact" : "government",
+        "sector" : "public"
+    }
+    ,
+    {
+        "title" : "Indonesia’s Kawal Pemilu",
+        "location" : "eastAsia",
+        "impact" : "government",
+        "sector" : "politics"
+    }
+    ,
+    {
+        "title" : "Denmark’s Open Address Data Set",
+        "location" : "westEurope",
+        "impact" : "government",
+        "sector" : "geospatial"
+    }
+    ,
+    {
+        "title" : "Opening Canada’s T3010 Charity Information Return Data",
+        "location" : "northAmerica",
+        "impact" : "government",
+        "sector" : "philantropy"
+    }
+    ,
+    {
+        "title" : "United Kingdom's TheyWorkForYou",
+        "location" : "westEurope",
+        "impact" : "government",
+        "sector" : "public"
+    }
+    ,
+    {
+        "title" : "United Kingdom's Open Public Services Network",
+        "location" : "westEurope",
+        "impact" : "government",
+        "sector" : "education"
+    }
+    ,
+    {
+        "title" : "United Kingdom's OpenCorporates",
+        "location" : "westEurope",
+        "impact" : "government",
+        "sector" : "business"
+    }
+    ,
+    {
+        "title" : "Battling Ebola in Sierra Leone",
+        "location" : "subSaharanAfrica",
+        "impact" : "public",
+        "sector" : "health"
+    }
+    ,
+    {
+        "title" : "New Zealand's Christchurch Earthquake Clusters",
+        "location" : "eastAsia",
+        "impact" : "public",
+        "sector" : "emergency"
+    }
+    ,
+    {
+        "title" : "Singapore's Dengue Cluster Map",
+        "location" : "eastAsia",
+        "impact" : "public",
+        "sector" : "health"
+    }
+    ,
+    {
+        "title" : "United States' Eightmaps",
+        "location" : "northAmerica",
+        "impact" : "public",
+        "sector" : "politics"
+    }
+    ,
+    {
+        "title" : "Kennedy vs. the City of Zanesville, United States",
+        "location" : "northAmerica",
+        "impact" : "public",
+        "sector" : "law"
+    }
+    ,
+    {
+        "title" : "United Kingdom's Coeliac UK and Brandbank",
+        "location" : "westEurope",
+        "impact" : "public",
+        "sector" : "health"
+    }
+    ,
+    {
+        "title" : "United Kingdom's Ordnance Survey OpenData",
+        "location" : "westEurope",
+        "impact" : "economic",
+        "sector" : "geospatial"
+    }
+    ,
+    {
+        "title" : "United States' New York City Business Atlas",
+        "location" : "northAmerica",
+        "impact" : "economic",
+        "sector" : "business"
+    }
+    ,
+    {
+        "title" : "United States' NOAA: Opening Up Global Weather Data in Collaboration with Businesses",
+        "location" : "northAmerica",
+        "impact" : "economic",
+        "sector" : "weather"
+    }
+    ,
+    {
+        "title" : "United Kingdom's Transport for London",
+        "location" : "westEurope",
+        "impact" : "economic",
+        "sector" : "transportation"
+    }
+    ,
+    {
+        "title" : "United States Opening GPS Data for Civilian Use",
+        "location" : "northAmerica",
+        "impact" : "economic",
+        "sector" : "geospatial"
+    }
+    ,
+    {
+        "title" : "United Kingdom's HM Land Registry Price Paid Data",
+        "location" : "westEurope",
+        "impact" : "economic",
+        "sector" : "geospatial"
+    }
+
+
+    ]
+}

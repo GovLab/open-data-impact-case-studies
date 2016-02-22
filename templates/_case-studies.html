@@ -26,7 +26,7 @@
 
 <main class="case-study-page" role="main">
 
-    <div class="b-top-section" style="background-image: url(./static/img/banners/{{case.image}})">
+    <div class="b-top-section" style="background-image: url(./static/img/banners/sm/{{case.image}})">
         <div class="e-shade"></div>
         <hgroup class="e-titles">
             <h1 class="e-main-title">{{case.title}}</h1>
@@ -219,6 +219,22 @@
                             <div class="large-8 columns end">
                                 <div class="e-expandable">
                                     {% block path_open %}{% endblock %}
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if self.users() %}
+                    <div class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Users</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    {% block users %}{% endblock %}
                                     <span class="e-read-more js-more-toggle">Read More</span>
                                 </div>
                             </div>
