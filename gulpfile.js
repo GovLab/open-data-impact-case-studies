@@ -22,4 +22,11 @@ gulp.task('thumbs', function () {
     .pipe(gulp.dest('templates/static/img/banners/thumbs/'));
 });
 
+gulp.task('2k', function () {
+  gulp.src('templates/static/img/banners/*.{png,jpg,jpeg}')
+    .pipe(changed('templates/static/img/banners/sm/'))
+    .pipe(imageResize({ width : 2000 }))
+    .pipe(gulp.dest('templates/static/img/banners/sm/'));
+});
+
 // gulp.task('default', ['images', 'thumbnails'], function (){ console.log ('running default task'); });
