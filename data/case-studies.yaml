@@ -228,13 +228,14 @@
 # 18
 - title: "United Kingdom's Coeliac UK and Brandbank"
   image: 'coeliac.jpg'
-  authors:
+  authors: 'Becky Hogge'
   description: 'A view from the other side of open'
   impact_type: public # citizens | government | economic | public
   sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   read_time: 5
   full_read_time: 20
+  special_thanks: false
 
 # 19
 - title: "United Kingdom's Ordnance Survey OpenData"
@@ -283,21 +284,23 @@
 # 23
 - title: "United Kingdom's Transport for London"
   image: 'transport.jpg'
-  authors:
+  authors: 'Becky Hogge'
   description: 'Get set, go!'
   impact_type: economic # citizens | government | economic | public
   sector: transportation # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   read_time: 5
   full_read_time: 20
+  special_thanks: false
 
 # 24
 - title: "United Kingdom's HM Land Registry Price Paid Data"
   image: 'land.jpg'
-  authors:
+  authors: 'Becky Hogge'
   description: 'The UK’s trading funds, and two futures for open data'
   impact_type: economic # citizens | government | economic | public
   sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   read_time: 5
   full_read_time: 20
+  special_thanks: false
