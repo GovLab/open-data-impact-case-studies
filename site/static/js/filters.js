@@ -25,6 +25,23 @@
         $grid.isotope({ filter : '.impact-citizens' });
     });
 
+    $('#economic-button').click(function() {
+        TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
+        $('#impact-tab').click();
+        $('.js-filter').removeClass('selected');
+        $('#economic-filter').addClass('selected');
+        $grid.isotope({ filter : '.impact-economic' });
+    });
+
+    $('#public-button').click(function() {
+        TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
+        $('#impact-tab').click();
+        $('.js-filter').removeClass('selected');
+        $('#public-filter').addClass('selected');
+        $grid.isotope({ filter : '.impact-public' });
+    });
+
+
     $('#see-all-btn').addClass('selected');
 
     $('.js-filter').click(function(event){
