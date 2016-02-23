@@ -5,31 +5,31 @@ var mobileOnly = '(max-width: 767px)'
 // disable the map on mobile (ie replace with something else)
 if (window.matchMedia(mobileOnly).matches) {
 
-console.log('Mobile, map disabled');
+  console.log('Mobile, map disabled');
 
 } else { // desktop
-    var width = 900,
-    height = 400,
-    active = d3.select(null);
+  var width = 900,
+  height = 400,
+  active = d3.select(null);
 
-    var projection = d3.geo.mercator()
-    .scale(120)
-    .translate([width / 2, height / 1.5]);
+  var projection = d3.geo.mercator()
+  .scale(120)
+  .translate([width / 2, height / 1.5]);
 
-    var path = d3.geo.path()
-    .projection(projection);
+  var path = d3.geo.path()
+  .projection(projection);
 
-    var svg = d3.select('.map').append('svg')
-    .attr('width', width)
-    .attr('height', height);
+  var svg = d3.select('.map').append('svg')
+  .attr('width', width)
+  .attr('height', height);
 
-    svg.append('rect')
-    .attr('class', 'background')
-    .attr('width', width)
-    .attr('height', height);
+  svg.append('rect')
+  .attr('class', 'background')
+  .attr('width', width)
+  .attr('height', height);
 
-    var g = svg.append('g')
-    .style('stroke-width', '1.5px');
+  var g = svg.append('g')
+  .style('stroke-width', '1.5px');
 
 // create a shade based on array of rgb values and scalar
 function shade(rgb, v) {
@@ -38,53 +38,96 @@ function shade(rgb, v) {
 }
 
 // set up regions based on the topojson geometry id of each country
-var northAmerica = d3.set([
-  124, 840
-  ]);
+// var northAmerica = d3.set([
+//   124, 840
+//   ]);
 
-var eastAsia = d3.set([
-  16, 882, 104, 116, 585, 156, 598, 242, 608, 360, 296, 90, 408, 410, 764, 418,
-  626, 458, 776, 584, 583, 548, 496, 704, 392, 36, 554, 540, 158
-  ]);
+// var eastAsia = d3.set([
+//   16, 882, 104, 116, 585, 156, 598, 242, 608, 360, 296, 90, 408, 410, 764, 418,
+//   626, 458, 776, 584, 583, 548, 496, 704, 392, 36, 554, 540, 158
+//   ]);
 
-var euCentralAsia = d3.set([
-  8, 807, 51, 498, 31, 499, 112, 642, 70, 688, 100, 762, 268, 792, 398, 795, 804,
-  417, 860, 643, 703
-  ]);
+// var euCentralAsia = d3.set([
+//   8, 807, 51, 498, 31, 499, 112, 642, 70, 688, 100, 762, 268, 792, 398, 795, 804,
+//   417, 860, 643, 703
+//   ]);
 
-var latinAmerica = d3.set([
-  84, 328, 68, 332, 76, 340, 170, 388, 188, 484, 192, 558, 212, 214, 591, 600, 218,
-  604, 222, 662, 308, 670, 320, 740, 862, 32, 858, 152, 238
-  ]);
+// var latinAmerica = d3.set([
+//   84, 328, 68, 332, 76, 340, 170, 388, 188, 484, 192, 558, 212, 214, 591, 600, 218,
+//   604, 222, 662, 308, 670, 320, 740, 862, 32, 858, 152, 238
+//   ]);
 
-var midEastNorthAfrica = d3.set([
-  12, 434, 262, 504, 818, 760, 364, 788, 368, 400, 887, 422, 682, 512, 784, 634, 414
-  ]);
+// var midEastNorthAfrica = d3.set([
+//   12, 434, 262, 504, 818, 760, 364, 788, 368, 400, 887, 422, 682, 512, 784, 634, 414
+//   ]);
 
-var southAsia = d3.set([
-  4, 462, 50, 524, 64, 586, 356, 144
-  ]);
+// var southAsia = d3.set([
+//   4, 462, 50, 524, 64, 586, 356, 144
+//   ]);
 
-var subSaharanAfrica = d3.set([
-  24, 450, 204, 454, 72, 466, 854, 478, 108, 480, 132, 508, 120, 516, 140, 562, 566,
-  174, 646, 180, 678, 178, 686, 384, 694, 232, 706, 231, 710, 266, 728, 729, 270,
-  288, 748, 226, 834, 624, 768, 404, 800, 426, 894, 430, 716, 148, 324, 732
-  ]);
+// var subSaharanAfrica = d3.set([
+//   24, 450, 204, 454, 72, 466, 854, 478, 108, 480, 132, 508, 120, 516, 140, 562, 566,
+//   174, 646, 180, 678, 178, 686, 384, 694, 232, 706, 231, 710, 266, 728, 729, 270,
+//   288, 748, 226, 834, 624, 768, 404, 800, 426, 894, 430, 716, 148, 324, 732
+//   ]);
 
-var westEurope = d3.set([
-  304, 352, 752, 578, 246, 826, 372, 250, 724, 620, 56, 528, 276, 616, 203, 40, 380,
-  300, 348, 428, 233, 208, 756, 440, 191, 705
-  ]);
+// var westEurope = d3.set([
+//   304, 352, 752, 578, 246, 826, 372, 250, 724, 620, 56, 528, 276, 616, 203, 40, 380,
+//   300, 348, 428, 233, 208, 756, 440, 191, 705
+//   ]);
 
-var verboseNames = {
-  'northAmerica'        : 'North America',
-  'eastAsia'            : 'East Asia & Pacific',
-  'euCentralAsia'       : 'East Europe & Central Asia',
-  'latinAmerica'        : 'Latin America & Caribbean',
-  'midEastNorthAfrica'  : 'Middle East & North Africa',
-  'southAsia'           : 'South Asia',
-  'subSaharanAfrica'    : 'Sub-Saharan Africa',
-  'westEurope'          : 'West Europe'
+// var verboseNames = {
+//   'northAmerica'        : 'North America',
+//   'eastAsia'            : 'East Asia & Pacific',
+//   'euCentralAsia'       : 'East Europe & Central Asia',
+//   'latinAmerica'        : 'Latin America & Caribbean',
+//   'midEastNorthAfrica'  : 'Middle East & North Africa',
+//   'southAsia'           : 'South Asia',
+//   'subSaharanAfrica'    : 'Sub-Saharan Africa',
+//   'westEurope'          : 'West Europe'
+// }
+
+var regions =
+{
+  'af' : {
+    'name' : 'Africa',
+    'geometries'  : [12, 24, 204, 72, 854, 108, 120, 132, 140, 148, 174, 178, 180, 262, 818,
+                    226, 232, 231, 266, 270, 288, 324, 624, 384, 404, 426, 430, 434, 450,
+                    454, 466, 478, 480, 504, 508, 516, 562, 566, 646, 678, 686, 690, 694,
+                    706, 710, 728, 729, 748, 834, 768, 788, 800, 894, 716],
+    'translate'   : {x: 1, y: .9}
+  },
+  'as' : {
+    'name' : 'Asia',
+    'geometries'  : [4, 48, 50, 64, 96, 116, 104, 156, 626, 86, 360, 364, 368, 376, 392, 400,
+                    398, 408, 410, 414, 417, 418, 422, 458, 462, 496, 524, 512, 586, 608,
+                    634, 643, 682, 702, 144, 760, 762, 764, 792, 795, 784, 860, 704, 887],
+    'translate'   : {x: 1.5, y: 1}
+  },
+  'eu' : {
+    'name' : 'Europe',
+    'geometries'  : [8, 20, 51, 40, 31, 112, 56, 70, 100, 191, 196, 203, 208, 233, 246, 250,
+                    268, 276, 300, 348, 352, 372, 380, 428, 438, 440, 442, 807, 470, 498, 492,
+                    499, 528, 578, 616, 620, 642, 674, 688, 703, 705, 724, 752, 756, 804, 826,
+                    336, 304, 352],
+    'translate'   : {x: 1, y: 1}
+  },
+  'na' : {
+    'name' : 'North America',
+    'geometries'  : [28, 44, 52, 84, 124, 188, 192, 212, 214, 222, 308, 320, 332, 340, 388, 484,
+                    558, 591, 659, 662, 670, 780, 840],
+    'translate'   : {x: .5, y: 1.5}
+  },
+  'oc' : {
+    'name' : 'Oceania',
+    'geometries'  : [36, 242, 296, 584, 583, 520, 554, 585, 598, 882, 90, 776, 548],
+    'translate'   : {x: 1.6, y: 1}
+  },
+  'sa' : {
+    'name' : 'South America',
+    'geometries'  : [32, 68, 76, 152, 170, 218, 328, 600, 604, 740, 858, 862],
+    'translate'   : {x: 1.1, y: .9}
+  }
 }
 
 // this allows us to process multiple data sources in a single function using d3, e.g. instead of just d3.json()
@@ -109,77 +152,16 @@ function ready(error, world, studies, names) {
   // draw map
 
   // add regions
-  g.append('path')
-  .datum(topojson.merge(world, world.objects.countries.geometries.filter( function(d, i) { return northAmerica.has(d.id); })))
-  .attr('class', 'region')
-  .attr('id', 'northAmerica')
-  .attr('d', path)
-  .on("click", clicked)
-  .on("mouseover", highlight)
-  .on("mouseout", deHighlight);
-
-  g.append('path')
-  .datum(topojson.merge(world, world.objects.countries.geometries.filter( function(d, i) { return eastAsia.has(d.id); })))
-  .attr('class', 'region')
-  .attr('id', 'eastAsia')
-  .attr('d', path)
-  .on("click", clicked)
-  .on("mouseover", highlight)
-  .on("mouseout", deHighlight);
-
-  g.append('path')
-  .datum(topojson.merge(world, world.objects.countries.geometries.filter( function(d, i) { return euCentralAsia.has(d.id); })))
-  .attr('class', 'region')
-  .attr('id', 'euCentralAsia')
-  .attr('d', path)
-  .on("click", clicked)
-  .on("mouseover", highlight)
-  .on("mouseout", deHighlight);
-
-  g.append('path')
-  .datum(topojson.merge(world, world.objects.countries.geometries.filter( function(d, i) { return latinAmerica.has(d.id); })))
-  .attr('class', 'region')
-  .attr('id', 'latinAmerica')
-  .attr('d', path)
-  .on("click", clicked)
-  .on("mouseover", highlight)
-  .on("mouseout", deHighlight);
-
-  g.append('path')
-  .datum(topojson.merge(world, world.objects.countries.geometries.filter( function(d, i) { return midEastNorthAfrica.has(d.id); })))
-  .attr('class', 'region')
-  .attr('id', 'midEastNorthAfrica')
-  .attr('d', path)
-  .on("click", clicked)
-  .on("mouseover", highlight)
-  .on("mouseout", deHighlight);
-
-  g.append('path')
-  .datum(topojson.merge(world, world.objects.countries.geometries.filter( function(d, i) { return southAsia.has(d.id); })))
-  .attr('class', 'region')
-  .attr('id', 'southAsia')
-  .attr('d', path)
-  .on("click", clicked)
-  .on("mouseover", highlight)
-  .on("mouseout", deHighlight);
-
-  g.append('path')
-  .datum(topojson.merge(world, world.objects.countries.geometries.filter( function(d, i) { return subSaharanAfrica.has(d.id); })))
-  .attr('class', 'region')
-  .attr('id', 'subSaharanAfrica')
-  .attr('d', path)
-  .on("click", clicked)
-  .on("mouseover", highlight)
-  .on("mouseout", deHighlight);
-
-  g.append('path')
-  .datum(topojson.merge(world, world.objects.countries.geometries.filter( function(d, i) { return westEurope.has(d.id); })))
-  .attr('class', 'region')
-  .attr('id', 'westEurope')
-  .attr('d', path)
-  .on("click", clicked)
-  .on("mouseover", highlight)
-  .on("mouseout", deHighlight);
+  for (var r in regions) {
+    g.append('path')
+    .datum(topojson.merge(world, world.objects.countries.geometries.filter( function(d, i) { return d3.set(regions[r].geometries).has(d.id); })))
+    .attr('class', 'region')
+    .attr('id', r)
+    .attr('d', path)
+    .on("click", clicked)
+    .on("mouseover", highlight)
+    .on("mouseout", deHighlight);
+  }
 
   // draw bubbles
   var s = studies.children; // quick shorthand copy because we still need the original structure with children for pack layout later
@@ -223,28 +205,34 @@ function ready(error, world, studies, names) {
     // manual adjustments
     // (i.e. some of the bounding boxes don't make visual sense, so just
     // adjust those manually)
-    if (d.location === 'northAmerica') {
-      x *= .5;
-      y *= 1.5;
-    } else if (d.location === 'euCentralAsia') {
-      x *= 1.35;
-      y *= 1.5;
-    } else if (d.location === 'eastAsia') {
-      x *= 1.6;
-      y *= .9;
-    } else if (d.location === 'latinAmerica') {
-      x *= 1.2;
-      y *= .95;
-    } else if (d.location === 'westEurope') {
-      x *= .95;
-      y *= .95;
-    } else if (d.location === 'subSaharanAfrica') {
-      x *= 1.05;
-      y *= .9;
-    } else if (d.location === 'midEastNorthAfrica') {
-      x *= 1.05;
-      y *= .9;
+      console.log(d.location);
+      console.log(regions);
+    if (d.location in regions) {
+      x *= regions[d.location].translate.x;
+      y *= regions[d.location].translate.y;
     }
+    // if (d.location === 'northAmerica') {
+    //   x *= .5;
+    //   y *= 1.5;
+    // } else if (d.location === 'euCentralAsia') {
+    //   x *= 1.35;
+    //   y *= 1.5;
+    // } else if (d.location === 'eastAsia') {
+    //   x *= 1.6;
+    //   y *= .9;
+    // } else if (d.location === 'latinAmerica') {
+    //   x *= 1.2;
+    //   y *= .95;
+    // } else if (d.location === 'westEurope') {
+    //   x *= .95;
+    //   y *= .95;
+    // } else if (d.location === 'subSaharanAfrica') {
+    //   x *= 1.05;
+    //   y *= .9;
+    // } else if (d.location === 'midEastNorthAfrica') {
+    //   x *= 1.05;
+    //   y *= .9;
+    // }
 
     return 'translate(' + x + ',' + y + ')';
   });
@@ -299,7 +287,7 @@ function highlight(d) {
   var region = this.id.replace(/_bubble_|_text_/, '');
   var bubble = this.id.replace(/^(?!_bubble_|_text_)|_text_/, '_bubble_');
   d3.selectAll('.node').classed('fade', true);
-  d3.select('.map-caption').text(verboseNames[region]);
+  d3.select('.map-caption').text(regions[region].name);
   d3.select('.map-caption').classed('default', false);
   d3.select('#' + region).classed('active', true);
   d3.select('#' + bubble).classed('active', true);

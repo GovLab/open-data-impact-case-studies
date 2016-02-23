@@ -17,7 +17,7 @@
   impact_type: government # citizens | government | economic | public
   sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Brazil
-  region: latinAmerica
+  region: sa
   read_time: 5 #minutes
   full_read_time: 20
   download: case-study-brazil.pdf
@@ -29,7 +29,7 @@
   impact_type: citizens # citizens | government | economic | public
   sector: education # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Tanzania
-  region: subSaharanAfrica
+  region: af
   read_time: 5
   full_read_time: 20
   download: case-study-tanzania.pdf
@@ -41,7 +41,7 @@
   impact_type: citizens # citizens | government | economic | public
   sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Kenya
-  region: subSaharanAfrica
+  region: af
   read_time: 5
   full_read_time: 20
   download: case-study-kenya.pdf
@@ -53,7 +53,7 @@
   impact_type: citizens # citizens | government | economic | public
   sector: education # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Mexico
-  region: latinAmerica
+  region: na
   read_time: 5
   full_read_time: 20
   download: case-study-mexico.pdf
@@ -65,7 +65,7 @@
   impact_type: citizens # citizens | government | economic | public
   sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Uruguay
-  region: latinAmerica
+  region: sa
   read_time: 5
   full_read_time: 20
   download: case-study-uruguay.pdf
@@ -77,7 +77,7 @@
   impact_type: government # citizens | government | economic | public
   sector: philantropy # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Sweden
-  region: westEurope
+  region: eu
   read_time: 5
   full_read_time: 20
   download: case-study-sweden.pdf
@@ -89,7 +89,7 @@
   impact_type: government # citizens | government | economic | public
   sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Slovakia
-  region: euCentralAsia
+  region: eu
   read_time: 5
   full_read_time: 20
   download: case-study-slovakia.pdf
@@ -101,7 +101,7 @@
   impact_type: government # citizens | government | economic | public
   sector: politics # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Indonesia
-  region: eastAsia
+  region: as
   read_time: 5
   full_read_time: 20
   download: case-study-indonesia.pdf
@@ -113,7 +113,7 @@
   impact_type: government # citizens | government | economic | public
   sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Denmark
-  region: westEurope
+  region: eu
   read_time: 5
   full_read_time: 20
   download: case-study-denmark.pdf
@@ -125,7 +125,7 @@
   impact_type: government # citizens | government | economic | public
   sector: philantropy # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Canada
-  region: northAmerica
+  region: na
   read_time: 5
   full_read_time: 20
   download: case-study-canada.pdf
@@ -137,7 +137,7 @@
   impact_type: government # citizens | government | economic | public
   sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
-  region: westEurope
+  region: eu
   read_time: 5
   full_read_time: 20
   special_thanks: false
@@ -150,7 +150,7 @@
   impact_type: government # citizens | government | economic | public
   sector: education # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
-  region: westEurope
+  region: eu
   read_time: 5
   full_read_time: 20
   download: case-study-open-public-services-network.pdf
@@ -163,7 +163,7 @@
   impact_type: government # citizens | government | economic | public
   sector: business # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
-  region: westEurope
+  region: eu
   read_time: 5
   full_read_time: 20
   download: case-study-open-corporates.pdf
@@ -177,7 +177,7 @@
   impact_type: public # citizens | government | economic | public
   sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: 'Sierra Leone'
-  region: subSaharanAfrica
+  region: af
   read_time: 5
   full_read_time: 20
   download: case-studies-sierra-leone.pdf
@@ -190,7 +190,7 @@
   impact_type: public # citizens | government | economic | public
   sector: emergency # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: 'New Zealand'
-  region: eastAsia
+  region: oc
   read_time: 5
   full_read_time: 20
   download: case-studies-new-zealand.pdf
@@ -203,7 +203,7 @@
   impact_type: public # citizens | government | economic | public
   sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Singapore
-  region: eastAsia
+  region: as
   read_time: 5
   full_read_time: 20
   download: case-studies-singapore.pdf
@@ -216,7 +216,7 @@
   impact_type: public # citizens | government | economic | public
   sector: politics # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
-  region: northAmerica
+  region: na
   read_time: 5
   full_read_time: 20
   download: case-studies-us-eightmaps.pdf
@@ -229,7 +229,7 @@
   impact_type: public # citizens | government | economic | public
   sector: law # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
-  region: northAmerica
+  region: na
   read_time: 5
   full_read_time: 20
   download: case-studies-us-kennedy.pdf
@@ -242,7 +242,7 @@
   impact_type: public # citizens | government | economic | public
   sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
-  region: westEurope
+  region: eu
   read_time: 5
   full_read_time: 20
   special_thanks: false
@@ -256,7 +256,7 @@
   impact_type: economic # citizens | government | economic | public
   sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
-  region: westEurope
+  region: eu
   read_time: 5
   full_read_time: 20
   download: case-studies-uk-ordinance.pdf
@@ -269,7 +269,7 @@
   impact_type: economic # citizens | government | economic | public
   sector: business # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
-  region: northAmerica
+  region: na
   read_time: 5
   full_read_time: 20
   download: case-studies-nyc-business-atlas.pdf
@@ -282,7 +282,7 @@
   impact_type: economic # citizens | government | economic | public
   sector: weather # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
-  region: northAmerica
+  region: na
   read_time: 5
   full_read_time: 20
   download: case-studies-noaa.pdf
@@ -295,7 +295,7 @@
   impact_type: economic # citizens | government | economic | public
   sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
-  region: northAmerica
+  region: na
   read_time: 5
   full_read_time: 20
   download: case-studies-gps.pdf
@@ -308,7 +308,7 @@
   impact_type: economic # citizens | government | economic | public
   sector: transportation # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
-  region: westEurope
+  region: eu
   read_time: 5
   full_read_time: 20
   special_thanks: false
@@ -322,7 +322,7 @@
   impact_type: economic # citizens | government | economic | public
   sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
-  region: westEurope
+  region: eu
   read_time: 5
   full_read_time: 20
   special_thanks: false
