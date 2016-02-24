@@ -130,12 +130,7 @@ var regions =
   }
 }
 
-// this allows us to process multiple data sources in a single function using d3, e.g. instead of just d3.json()
-queue()
-.defer(d3.json, 'static/js/world.json')
-.defer(d3.json, 'static/js/studies.json')
-.defer(d3.tsv, 'static/js/world-country-names.tsv')
-.await(ready);
+
 function ready(error, world, studies, names) {
   if (error) throw error;
 
@@ -282,6 +277,13 @@ function ready(error, world, studies, names) {
   // no one needs you antarctica
   g.select('#Antarctica').remove();
 }
+
+// this allows us to process multiple data sources in a single function using d3, e.g. instead of just d3.json()
+queue()
+.defer(d3.json, 'static/js/world.json')
+.defer(d3.json, 'static/js/studies.json')
+.defer(d3.tsv, 'static/js/world-country-names.tsv')
+.await(ready);
 
 function highlight(d) {
   var region = this.id.replace(/_bubble_|_text_/, '');
