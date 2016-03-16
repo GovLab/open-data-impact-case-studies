@@ -5244,144 +5244,31 @@ ul.b-sidebar {
   .b-projects-list-wrapper .e-project-list {
     -webkit-flex: 4;
     flex: 4; } }
-.b-projects-list-wrapper .e-project-item {
-  margin: 15px; }
-  .b-projects-list-wrapper .e-project-item:not(:last-child) {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
-  .b-projects-list-wrapper .e-project-item h2 {
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 1.2;
-    font-size: 18px; }
-  .b-projects-list-wrapper .e-project-item p {
-    font-size: 14px;
-    line-height: 1.4; }
-  .b-projects-list-wrapper .e-project-item .b-button, .b-projects-list-wrapper .e-project-item .b-form input[type="submit"], .b-form .b-projects-list-wrapper .e-project-item input[type="submit"] {
-    margin-left: -20px; }
-  .b-projects-list-wrapper .e-project-item.m-active-False {
-    pointer-events: none;
-    background-color: transparent !important; }
-    .b-projects-list-wrapper .e-project-item.m-active-False h2 {
-      opacity: .3; }
-  .b-projects-list-wrapper .e-project-item.m-active {
-    background-color: white; }
-    .b-projects-list-wrapper .e-project-item.m-active .e-project-tooltip {
-      transition: all .4s ease;
-      display: block;
-      height: auto;
-      max-height: 300px; }
-      .b-projects-list-wrapper .e-project-item.m-active .e-project-tooltip a {
-        color: white;
-        text-decoration: underline; }
 
 @media screen and (min-width: 64.0625em) {
-  .b-project-view.m-list .b-projects-list-wrapper .e-project-item {
-    background-color: white;
-    display: -webkit-flex;
-    display: flex;
-    border-bottom: 1px solid white;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap; }
-    .b-project-view.m-list .b-projects-list-wrapper .e-project-item.m-clickable {
-      cursor: pointer; } }
-.b-project-view.m-list .b-projects-list-wrapper .e-project-item h2 {
-  margin: 0 40px 0;
-  -webkit-flex: 1;
-  flex: 1; }
-.b-project-view.m-list .b-projects-list-wrapper .e-project-item p {
-  font-size: 16px;
-  color: white; }
-.b-project-view.m-list .b-projects-list-wrapper .e-project-item .e-project-tooltip {
-  max-height: 0;
-  overflow: hidden;
-  transition: all .4s ease; }
-.b-project-view.m-list .b-projects-list-wrapper .e-project-item.m-active {
-  background-color: white; }
-  .b-project-view.m-list .b-projects-list-wrapper .e-project-item.m-active .e-project-tooltip {
-    transition: all .4s ease; }
-    @media screen and (min-width: 64.0625em) {
-      .b-project-view.m-list .b-projects-list-wrapper .e-project-item.m-active .e-project-tooltip {
-        display: block;
-        height: auto;
-        max-height: 800px; } }
-
-@media screen and (min-width: 64.0625em) {
-  .b-project-view.m-grid .b-projects-list-wrapper .e-project-group {
+  .b-project-view.m-grid .e-project-group {
     padding: 15px; } }
-.b-project-view.m-grid .b-projects-list-wrapper .e-project-item:not(:last-child) {
+.b-project-view.m-grid .e-project-group.m-clickable {
+  cursor: crosshair; }
+.b-project-view.m-grid .e-project-item:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
 @media screen and (min-width: 64.0625em) {
-  .b-project-view.m-grid .b-projects-list-wrapper .e-project-item {
+  .b-project-view.m-grid .e-project-item {
     width: calc(33% - 30px);
     display: inline-block;
     background-color: white;
     height: 0;
     padding-bottom: calc(33% - 30px);
     margin: 15px;
-    vertical-align: top;
     position: relative;
-    border: 1px dotted rgba(0, 0, 0, 0.2); }
-    .b-project-view.m-grid .b-projects-list-wrapper .e-project-item.m-clickable {
+    border: 1px solid rgba(0, 0, 0, 0.2); }
+    .b-project-view.m-grid .e-project-item.m-clickable {
       cursor: pointer; }
-    .b-project-view.m-grid .b-projects-list-wrapper .e-project-item img {
+    .b-project-view.m-grid .e-project-item img {
       display: block;
       margin-left: auto;
       margin-right: auto;
+      padding: 10%;
       height: 100%; } }
-.b-project-view.m-grid .b-projects-list-wrapper .e-project-item h2 {
-  font-weight: 600;
-  text-transform: uppercase;
-  line-height: 1.2;
-  font-size: 18px; }
-  @media screen and (min-width: 64.0625em) {
-    .b-project-view.m-grid .b-projects-list-wrapper .e-project-item h2 {
-      font-size: 20px;
-      padding: 20px;
-      position: absolute;
-      top: 0; } }
-.b-project-view.m-grid .b-projects-list-wrapper .e-project-item .e-project-blurb {
-  font-size: 14px;
-  line-height: 1.4; }
-  @media screen and (min-width: 64.0625em) {
-    .b-project-view.m-grid .b-projects-list-wrapper .e-project-item .e-project-blurb {
-      padding: 20px;
-      position: absolute;
-      bottom: 0; } }
-.b-project-view.m-grid .b-projects-list-wrapper .e-project-item .e-project-tooltip {
-  display: none; }
-.b-project-view.m-grid .b-projects-list-wrapper .e-project-item.m-active .e-project-tooltip {
-  display: block; }
-  @media screen and (min-width: 64.0625em) {
-    .b-project-view.m-grid .b-projects-list-wrapper .e-project-item.m-active .e-project-tooltip {
-      position: absolute;
-      top: calc(100%);
-      width: calc(200% + 30px);
-      max-height: 800px;
-      z-index: 100;
-      background-color: #333;
-      box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.2);
-      padding: 30px;
-      left: 0;
-      color: white;
-      font-size: 18px; } }
-  @media screen and (min-width: 64.0625em) {
-    .b-project-view.m-grid .b-projects-list-wrapper .e-project-item.m-active .e-project-tooltip:before {
-      content: "";
-      width: 0;
-      height: 0;
-      border-bottom: 20px solid #333;
-      border-right: 20px solid transparent;
-      border-left: 20px solid transparent;
-      position: absolute;
-      top: -20px;
-      left: calc(18%); } }
-@media screen and (min-width: 64.0625em) {
-  .b-project-view.m-grid .b-projects-list-wrapper .e-project-item:nth-of-type(3n).m-active .e-project-tooltip {
-    left: auto;
-    right: 0 !important; } }
-@media screen and (min-width: 64.0625em) {
-  .b-project-view.m-grid .b-projects-list-wrapper .e-project-item:nth-of-type(3n).m-active .e-project-tooltip:before {
-    right: calc(18%);
-    left: auto; } }
 
 /*# sourceMappingURL=styles.css.map */
