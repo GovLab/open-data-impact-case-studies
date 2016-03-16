@@ -79,19 +79,24 @@ $(document).ready(function($) {
         ]
     });
 
+// Resources Page - Tiles and Modals pulled from Smarterstate
+    $('.js-tooltip-trigger').click(function(e) {
+        e.preventDefault();
+        $($(this).attr('data-open')).addClass('m-active');
+        $overlay.addClass('m-active');
+    });
 
+    $overlay.click(function() {
+        // $('.e-project-item').removeClass('m-active');
+        $('.b-modal').removeClass('m-active');
+        $overlay.removeClass('m-active');
+    });
 
-
-
-
-
-
-
-
-
-
-
-
+    $('.js-close-modal').click (function (e) {
+        e.preventDefault();
+        $('.b-modal').removeClass('m-active');
+        $overlay.removeClass('m-active');
+    });
 
 
 
@@ -103,7 +108,7 @@ $(document).ready(function($) {
 
     $('.js-bio-toggle').click(function() {
         $(this).parent().toggleClass('m-active');
-    })
+    });
 
 
     // Events Page
