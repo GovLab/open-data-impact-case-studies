@@ -4643,6 +4643,8 @@ ul.b-sidebar {
   background-color: #C2C33B; }
 .b-divider.m-fuschia, .b-divider.m-public {
   background-color: #AD0054; }
+.b-divider.m-resources {
+  text-align: center; }
 
 .b-sticky {
   z-index: 11; }
