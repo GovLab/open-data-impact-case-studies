@@ -72,14 +72,13 @@ $(document).ready(function($) {
     });
 
 // Resources Page - Tiles and Modals pulled from Smarterstate
-    $('.js-tooltip-trigger').click(function(e) {
+    $('.js-tooltip-trigger-resources').click(function(e) {
         e.preventDefault();
         $($(this).attr('data-open')).addClass('m-active');
         $overlay.addClass('m-active');
     });
 
     $overlay.click(function() {
-        // $('.e-project-item').removeClass('m-active');
         $('.b-modal').removeClass('m-active');
         $overlay.removeClass('m-active');
     });
