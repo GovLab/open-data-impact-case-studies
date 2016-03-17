@@ -2,7 +2,7 @@
 {% macro item(title, image) -%}
 <div class="e-project-item js-tooltip-trigger-resources m-clickable" data-open="#modal-{{title | slug}}">
     <div class="e-project-logo">
-        <img src="{{image}}">
+        <img src="{{image}}" alt="{{title}}">
     </div>
 </div>
 {%- endmacro %}
