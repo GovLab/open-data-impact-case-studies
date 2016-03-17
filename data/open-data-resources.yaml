@@ -1,4 +1,4 @@
-- title: '1. ePSIplatform’s Cases'
+- title: 'ePSIplatform’s Cases'
   image:  'static/img/resources/Image10187.png'
   who_html: 'ePSIplatform'
   what_html: 'A collection of examples on Public Sector Information (PSI) Re-use, with the main focus on Europe.'
@@ -8,7 +8,7 @@
   case_studies_url: "http://www.epsiplatform.eu/list/case?field_countries_tid=47&field_keywords_tid=&field_themes_tid=All&sort_by=created&sort_order=DESC"
 
 
-- title: "2. Follow the Money "
+- title: "Follow the Money "
   image:  "static/img/resources/Image10195.png"
   who_html: 'A global network of more than 100 organizations supported by ONE and the Open Knowledge Foundation. Other partners include the Transparency &amp; Accountability Initiative, the World Bank, Development Initiatives, and the Revenue Watch Institute.'
   what_html: 'The network enables organizations working on “various aspects of the Follow the Money agenda – from resource availability, to spending, to service delivery and results in particular sectors to share information, campaign for the inclusion of open data principles in transparency policies, and identify opportunities for collaboration to drive policy change, including through Follow the Money campaigns in specific countries.”<a href="http://followthemoney.net/open-government-partnership.pdf"><span class="CharOverride-2">1</span></a> The repository has a summary of each initiative including the stage of the project and its categorization.'
@@ -20,7 +20,7 @@
   case_studies_url: 
   database_url: 'https://docs.google.com/spreadsheets/d/1Rj47jJzF-lBoaF1_cvvY4rM9DIQ3Bw2b6dy-BEQuDno/edit#gid=1240396981'
 
-- title: '3. Open Data Partnership for Development (ODP4D) Case Studies: Open Data Institute (ODI), The World Bank and Open Knowledge Foundation'
+- title: 'Open Data Partnership for Development (ODP4D) Case Studies: Open Data Institute (ODI), The World Bank and Open Knowledge Foundation'
   image: "static/img/resources/Image10204.png"
   who_html: 'Partnership between ODI, The World Bank and Open Knowledge Foundation'
   what_html: 'As noted in the project announcement, the overall objectives of the partnership are to: “support developing countries to plan, execute and run open data initiatives; to increase re-use of open data in developing countries; to develop an ecosystem of skills, support and peer-learning; and grow the base of evidence on the impact of open data for development.”<a href="https://theodi.org/odp4d-faqs"><span class="CharOverride-2">3</span></a> Project activities include “scoping the state of open data; assessing the readiness of countries to open up – and use – their data; training government officials, other policy makers, and civil society; undertaking research and producing guidelines on the best use of open data; and producing case studies of impact.”<a href="http://www.worldbank.org/en/news/press-release/2013/09/18/new-partnership-seeks-bring-benefits-open-data-developing-countries"><span class="CharOverride-2">4</span></a>'
@@ -31,7 +31,7 @@
   case_studies_url: 'https://theodi.org/case-studies'
 
 
-- title: '4. Open Government Partnership Case Studies'
+- title: 'Open Government Partnership Case Studies'
   image:  'static/img/resources/Image10212.png'
   who_html: Open Government Partnerships
   what_html: 'The case studies are submitted by participating governments and give a concrete example of an initiative they have launched featuring open data. The case study provides a brief overview of the project, the challenges faced, results and the opportunities that could be maximized.'
@@ -42,7 +42,7 @@
   case_studies_url: 'http://www.opengovpartnership.org/topics?f%5b0%5d=type%3Acase_study&amp;f%5b1%5d=field_topic%3A1196'
 
 
-- title: '5. Open Knowledge Foundation’s Global Initiative for Fiscal Transparency Report (GIFT)'
+- title: 'Open Knowledge Foundation’s Global Initiative for Fiscal Transparency Report (GIFT)'
   image: "static/img/resources/Image10219.png"
   who_html: 'Open Knowledge Foundation with funding provided by Omidyar Network'
   what_html: 'The report examines two main areas: “technology for transparency and technology for accountability around public finance.” In particular it looks at “who builds these tools, who uses them, and who benefits from them.'
@@ -54,7 +54,7 @@
   case_studies_url: 
 
 
-- title: '6. Sunlight Foundation Case Studies on Social Impact of Open Data'
+- title: 'Sunlight Foundation Case Studies on Social Impact of Open Data'
   image:  "static/img/resources/Image10235.png"
   who_html: 'The Sunlight Foundation, with funding from the Open Data for Development Research Fund'
   what_html: 'The Sunlight Foundation has produced “a searchable repository of more than 100 examples on the outputs, outcomes and impacts of open data and digital technology projects.”<a href="https://sunlightfoundation.com/blog/2015/05/05/a-new-approach-to-measuring-the-impact-of-open-data/"><span class="CharOverride-2">8</span></a>'
@@ -66,7 +66,7 @@
   case_studies_url: https://docs.google.com/spreadsheets/d/1jP6WIkEPczb8MBn6DNOU2PhKp9Prwe4HokqhUQVsxE0/edit#gid=0
 
 
-- title: '7. Technology for Transparency Network'
+- title: 'Technology for Transparency Network'
   image:  "static/img/resources/Image10244.png"
   who_html: 'A project of <a href="http://rising.globalvoicesonline.org/"><span class="CharOverride-2">Rising Voices</span></a> and <a href="http://globalvoicesonline.org/"><span class="CharOverride-2">Global Voices</span></a>, sponsored by the Open Society Institute and the <a href="http://www.omidyar.com/"><span class="CharOverride-2">Omidyar Network</span></a>'
   what_html: 'As noted on the project site, “the Technology for Transparency Network is a research and mapping project that aims to improve understanding of the current state of online technology projects that increase transparency and accountability in Central &amp; Eastern Europe, East Asia, Latin America, the Middle East and North Africa, Sub-Saharan Africa, Southeast Asia, South Asia, and the former Soviet Union.”<a href="http://transparency.globalvoicesonline.org/about/"><span class="CharOverride-2">11</span></a>'
@@ -78,7 +78,7 @@
   case_studies_url: 'http://transparency.globalvoicesonline.org/projects/all'
 
 
-- title: '8. World Bank’s Pipeline Project'
+- title: 'World Bank’s Pipeline Project'
   image:  "static/img/resources/Image10253.png"
   who_html: 'The World Bank Group'
   what_html: 'A collection of examples of “open data companies in emerging markets, specifically in Latin America, Southeast Asia, Africa, as well as India and Russia.”'
@@ -88,7 +88,7 @@
   case_studies_url: 'https://finances.worldbank.org/dataset/Pipeline-research-open-data-driven-companies-in-em/u4wq-7b6m'
 
 
-- title: '9. The World Wide Web Foundation (WWWF): Exploring the Emerging Impacts of Open Data in Developing Countries (ODDC)'
+- title: 'The World Wide Web Foundation (WWWF): Exploring the Emerging Impacts of Open Data in Developing Countries (ODDC)'
   image:  'static/img/resources/Image10260.png'
   who_html: 'The WWWF, with funding from the International Development Research Centre (IDRC)'
   what_html: 'The ODDC Project is a multi-country, multi-year study led by the World Wide Web Foundation. As noted in the project announcement, the ODDC Project “explores how open data can foster improved governance, support citizens’ rights, and promote more inclusive development through looking at the emerging impacts of existing open data projects in developing countries.”<a href="http://www.opendataresearch.org/project/2013/oddc"><span class="CharOverride-2">13</span></a>'
@@ -99,7 +99,7 @@
   case_studies_url: "http://www.opendataresearch.org/emergingimpacts"
 
 
-- title: '10. Open Data 500 Global Network'
+- title: 'Open Data 500 Global Network'
   image:  'static/img/resources/Image10267.png'
   who_html: 'The Governance Lab at New York University'
   what_html: 'Network of organizations collecting case studies on open data use and impact by companies.'
