@@ -161,30 +161,33 @@
                     <div class="e-content">
                         <h2>{{resource.title}}</h2>
                         <h4>Who</h4>
-                        <p>{{resource.who}}</p>
+                        <p class="text">{{resource.who_html}}</p>
                         <h4>What</h4>
-                        <p>{{resource.what}}</p>
-                        {% if resource.rationale %}
+                        <p class="text">{{resource.what_html}}</p>
+                        {% if resource.rationale_html %}
                             <h4>Rationale</h4>
-                            <p>{{resource.rationale}}</p>
+                            <p class="text">{{resource.rationale_html}}</p>
                         {% endif %}
                         <h4>Number of Case Studies</h4>
-                        <p>{{resource.number_of_case_studies}}</p>
+                        <p class="text">{{resource.number_of_case_studies}}</p>
                         <h4>Countries Covered</h4>
-                        <p>{{resource.countries_covered}}</p>
+                        <p class="text">{{resource.countries_covered}}</p>
                         <h4>Contact</h4>
-                        <p>{{resource.contact}}</p>
+                        <p class="text">{{resource.contact_html}}</p>
                         {% if resource.url %}
                             <h4>URL</h4>
-                            <p>{{resource.url}}</p>
+                            <p class="text"><a href="{{resource.url}}">{{resource.url}}</p>
                         {% endif %}   
                         {% if resource.case_studies_url %}
                             <h4>Case Studies URL</h4>
-                            <p><a href="{{resource.case_studies_url}}">{{resource.cast_studies_url}}</a></p>
+                            <p class="text"><a href="{{resource.case_studies_url}}">{{resource.case_studies_url}}</a></p>
+                        {% endif %}
+                        {% if resource.database_url %}
+                            <h4>Database</h4>
+                            <p class="text"><a href="{{resource.database_url}}">{{ resource.database_url }}</a></p>
                         {% endif %}
                         <p class="e-buttons">
                             <a class="b-button js-close-modal m-dark m-icon-only" href="#">Close</a>
-                            <a class="b-button js-close-modal m-naked m-icon-only" href="#"><i class="material-icons">close</i></a>
                         </p>
                     </div>
                 </div>
