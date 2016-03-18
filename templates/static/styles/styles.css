@@ -1636,8 +1636,8 @@ kbd {
       border: 1px solid #777;
       color: #777; }
       .button.hollow.secondary:hover, .button.hollow.secondary:focus {
-        border-color: #3c3c3c;
-        color: #3c3c3c; }
+        border-color: #3b3b3b;
+        color: #3b3b3b; }
     .button.hollow.success {
       border: 1px solid #197d32;
       color: #197d32; }
@@ -1654,8 +1654,8 @@ kbd {
       border: 1px solid #ee5b43;
       color: #ee5b43; }
       .button.hollow.warning:hover, .button.hollow.warning:focus {
-        border-color: #8c1f0d;
-        color: #8c1f0d; }
+        border-color: #8c1e0d;
+        color: #8c1e0d; }
   .button.disabled, .button[disabled] {
     opacity: 0.25;
     cursor: not-allowed;
@@ -4795,6 +4795,33 @@ ul.b-sidebar {
   @media screen and (min-width: 64.0625em) {
     .map-alt {
       display: none; } }
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  font-weight: 100; }
+
+.wrapper {
+  width: 600px;
+  margin: 40px auto; }
+
+.accordion dt {
+  padding: 10px;
+  background-color: #eee;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd; }
+
+.accordion dd {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .8s ease;
+  padding: 0 15px;
+  background-color: #efefef;
+  box-sizing: border-box;
+  margin: 0; }
+
+.accordion-item.active dd {
+  max-height: 900px; }
 
 .m-od-blue {
   background-color: #164A7A; }

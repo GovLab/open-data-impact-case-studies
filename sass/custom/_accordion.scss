@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  font-weight: 100;
+}
+.wrapper {
+  width: 600px;
+  margin: 40px auto;
+}
+
+.accordion {
+
+}
+
+.accordion-item {
+
+}
+
+.accordion dt {
+  padding: 10px;
+  background-color: #eee;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion dd {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .8s ease;
+  padding: 0 15px;
+  background-color: #efefef;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.accordion-item.active dd {
+  max-height: 900px;
+}
