@@ -4810,7 +4810,6 @@ body {
 
 .accordion dt {
   padding: 10px;
-  background-color: #eee;
   font-weight: bold;
   border-bottom: 1px solid #ddd; }
 
@@ -4822,6 +4821,9 @@ body {
   background-color: #efefef;
   box-sizing: border-box;
   margin: 0; }
+
+.dt-1, .dt-3 {
+  background-color: #198ab0; }
 
 .accordion-item.active dd {
   max-height: 900px; }
