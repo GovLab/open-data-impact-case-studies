@@ -4805,6 +4805,9 @@ body {
   width: 600px;
   margin: 40px auto; }
 
+.accordion {
+  border: none; }
+
 .accordion dt {
   padding: 10px;
   background-color: #eee;
