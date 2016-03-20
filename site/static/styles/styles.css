@@ -5276,32 +5276,30 @@ ul.b-sidebar {
       height: 100%; } }
 =======
 .e-h1 {
-  text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
-  font-weight: bold; }
+  text-transform: uppercase;
+  font-weight: 400 !important;
+  font-size: 22px !important; }
 
 .e-scrollspy {
-  position: fixed;
-  top: 10%;
-  text-align: right;
-  padding-right: 4%; }
-
-aside li {
-  margin-left: 0;
-  color: rgba(0, 0, 0, 0.3);
-  text-align: right;
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  list-style: none; }
-
-.active {
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 14px; }
+  text-align: right; }
+  .e-scrollspy li {
+    color: rgba(0, 0, 0, 0.3);
+    text-align: right;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    list-style: none; }
+    .e-scrollspy li.active {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 14px;
+      line-height: 90%;
+      padding: 11px 0; }
 
 .fixed {
   position: fixed; }
 
+<<<<<<< 17df80e8e5ee2fdf31825315ff13f4d9f7990a9b
 .e-scrollspy {
   background-color: blue; }
 
@@ -5314,5 +5312,9 @@ aside li {
 =======
       padding: 10%; } }
 >>>>>>> Remove image height from appIII modal links
+=======
+.long-reading section {
+  padding-bottom: 5%; }
+>>>>>>> Format static placeholder for scrollspy
 
 /*# sourceMappingURL=styles.css.map */
