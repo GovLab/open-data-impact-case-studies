@@ -27,6 +27,7 @@ _DATAPATH = path.join(getcwd(), 'data')
 _TEAM = path.join(_DATAPATH, 'team.yaml')
 _FUNDERS = path.join(_DATAPATH, 'funders.yaml')
 _CASE_STUDIES = path.join(_DATAPATH, 'case-studies.yaml')
+_OPEN_DATA_RESOURCES = path.join(_DATAPATH, 'open-data-resources.yaml')
 
 _SLUG = lambda x: slugify(unicode(unidecode(unicode(x).lower())) if x else u'')
 
@@ -132,7 +133,8 @@ class ReloadingContext(FileSystemEventHandler):
         dic['team'] = load(open(_TEAM))
         dic['funders'] = load(open(_FUNDERS))
         dic['cases'] = load(open(_CASE_STUDIES))
-
+        dic['odr'] = load(open(_OPEN_DATA_RESOURCES))
+        
         return dic
 
 def deploy():

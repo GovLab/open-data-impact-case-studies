@@ -1,0 +1,53 @@
+.b-projects-list-wrapper {
+    @include breakpoint($desktop) {
+        display: -webkit-flex;
+        display: flex;
+    }
+    .e-project-list {
+        @include breakpoint($desktop) {
+            -webkit-flex: 4;
+            flex: 4;
+        }
+    }
+
+}
+
+.b-project-view.m-grid {
+    .e-project-group {
+        @include breakpoint($desktop) { 
+            padding: 15px; 
+        }
+        &.m-clickable {
+            cursor: crosshair;
+        }
+    }
+
+    .e-project-item {
+        &:not(:last-child) {
+            @include breakpoint($mobile-only) { 
+                border-bottom: 1px solid $gray-15;
+            }
+        }
+
+        @include breakpoint($desktop) {
+            width: calc(33% - 30px);
+            display: inline-block;
+            background-color: $white; 
+            height: 0;
+            padding-bottom: calc(33% - 30px);
+            margin: 15px;
+            position: relative;
+            border: 1px solid $gray-20;
+                        &.m-clickable {
+                cursor: pointer;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10%; 
+            }
+        }
+    }
+
+}
