@@ -5269,6 +5269,7 @@ ul.b-sidebar {
       display: block;
       margin-left: auto;
       margin-right: auto;
+<<<<<<< 9152c25a18e5dd1deda82e96591e4b5bd20ef59d
       padding: 10%;
       height: 100%; } }
 =======
@@ -5308,5 +5309,8 @@ aside li {
 .nav-row {
   background-color: purple; }
 >>>>>>> Add styling for scrollspy
+=======
+      padding: 10%; } }
+>>>>>>> Remove image height from appIII modal links
 
 /*# sourceMappingURL=styles.css.map */
