@@ -5236,6 +5236,7 @@ ul.b-sidebar {
 @media (max-width 767px) {
   .e-card-inner {
     width: 90%; } }
+<<<<<<< a97ad1d986d7c0bfc118c2755c606b1ebcc43b43
 @media screen and (min-width: 64.0625em) {
   .b-projects-list-wrapper {
     display: -webkit-flex;
@@ -5270,5 +5271,42 @@ ul.b-sidebar {
       margin-right: auto;
       padding: 10%;
       height: 100%; } }
+=======
+.e-h1 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold; }
+
+.e-scrollspy {
+  position: fixed;
+  top: 10%;
+  text-align: right;
+  padding-right: 4%; }
+
+aside li {
+  margin-left: 0;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: right;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  list-style: none; }
+
+.active {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px; }
+
+.fixed {
+  position: fixed; }
+
+.e-scrollspy {
+  background-color: blue; }
+
+.long-reading {
+  background-color: pink; }
+
+.nav-row {
+  background-color: purple; }
+>>>>>>> Add styling for scrollspy
 
 /*# sourceMappingURL=styles.css.map */
