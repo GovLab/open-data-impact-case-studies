@@ -5177,5 +5177,40 @@ ul.b-sidebar {
 @media (max-width 767px) {
   .e-card-inner {
     width: 90%; } }
+.e-h1 {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold; }
+
+.e-scrollspy {
+  position: fixed;
+  top: 10%;
+  text-align: right;
+  padding-right: 4%; }
+
+aside li {
+  margin-left: 0;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: right;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  list-style: none; }
+
+.active {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px; }
+
+.fixed {
+  position: fixed; }
+
+.e-scrollspy {
+  background-color: blue; }
+
+.long-reading {
+  background-color: pink; }
+
+.nav-row {
+  background-color: purple; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,43 @@
+.e-h1 {
+    text-transform: uppercase;
+    color: $gray-50;
+    font-weight: bold;
+}
+
+.e-scrollspy {
+    position:fixed;
+    top: 10%;
+    text-align: right;
+    padding-right: 4%;
+}
+aside li {
+    margin-left: 0;
+    color: $gray-30;
+    text-align: right;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    list-style: none;
+}
+.active {
+    color: $gray-50;
+    font-size: 14px;
+}
+
+.fixed {
+    position: fixed;
+}
+
+
+// COLORS FOR TESTING
+
+.e-scrollspy {
+    background-color: blue;
+}
+.long-reading {
+    background-color:pink;
+}
+
+.nav-row {
+    background-color:purple;
+}
