@@ -70,7 +70,7 @@
 <!-- Scroll Items Navigation -->
             <section class="b-page-section">
                 <div class="row nav-row">
-                    <aside class="medium-3 columns e-scrollspy">
+                    <div class="medium-3 columns e-scrollspy">
 
                             <ul>
                                 <li><a href="#executive-summary">EXECUTIVE SUMMARY</a></li>
@@ -78,14 +78,14 @@
                                 <li><a href="#what-is-open-data">I. WHAT IS OPEN DATA?</a></li>
                                 <li><a href="#the-case-studies">II. The Case Studies</a></li>
                                 <li><a href="#what-is-the-impact">III. What Is the Impact of Open Data on People’s Lives?</a></li>
-                                <li><a href="#what-are-the-enabling-conditions">IV. What Are the Enabling Conditions that Significantly Enhance the Impact of Open Data?</a></li>
+                                <li class='active'><a href="#what-are-the-enabling-conditions">IV. What Are the Enabling Conditions that Significantly Enhance the Impact of Open Data?</a></li>
                                 <li><a href="#what-are-the-challenges">V. What Are the Challenges to Open Data Making an Impact?</a></li>
                                 <li><a href="#recommendations">VI. Recommendations: Toward a Next Generation Open Data Roadmap</a></li>
                             </ul>
-                    </aside>
+                        </div>
 
                 {# NEED TO FIX COLUMNS _ NOT RESPONSIVE with the offset but collapses without #}
-            <div class="large-8 columns medium-offset-3 columns end long-reading">
+            <div class="large-8 columns end long-reading">
 <!-- EXECUTIVE SUMMARY -->
                         <section id="executive-summary-section">
                             <a name="executive-summary"></a>
@@ -708,7 +708,7 @@
                     </div> <!-- {# END ROW #} -->
                 </section> <!-- {# END SECTION #} -->
 
-{# LEARN ABOUT OUR METHODOLOGY #}
+<!-- {# LEARN ABOUT OUR METHODOLOGY #} -->
 
                     <div class="b-page-section">
                         <div class="row">
@@ -719,39 +719,14 @@
                     </div>
 <!-- WHERE SHOULD THE READ NEXT LINK DIRECT? RESOURCES? -->
 
-                {% if case.impact_type is equalto 'citizens' %}
-                 <div class="b-divider m-orange m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
-                     {% elif case.impact_type is equalto 'government' %}
-                     <div class="b-divider m-blue m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
-                         {% elif case.impact_type is equalto 'economic' %}
-                         <div class="b-divider m-yellow m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
-                             {% elif case.impact_type is equalto 'public' %}
-                             <div class="b-divider m-fuschia m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
-                                 {% else %}
-                                 <div class="b-divider m-next js-next" js-impact="{{case.impact_type}}" js-sector="{{case.sector}}">
-                                     {% endif %}
-                                     <div>
-                                         {% set next = false %}
-                                         {% set first = true %}
-                                         {% for casestudy in cases %}
-                                         {% if next and not casestudy.unreleased %}
-                                         {% if first %}
-                                         <h1>Read Next</h1>
-                                         {% set first = false %}
-                                         {% endif %}
-                                         <a href="case-{{casestudy.title|slug}}.html" class="impact-{{casestudy.impact_type}} sector-{{casestudy.sector}}">
-                                             <h2>{{casestudy.title}}</h2>
-                                         </a>
-                                         {% endif %}
-                                         {% if casestudy.title is equalto case.title %}
-                                         {% set next = true %}
-                                         {% endif %}
-                                         {% endfor %}
-                                     </div>
-                                 </div> 
-
-
-
+        <div class="b-divider m-fuschia m-next js-next" js-impact="public" js-sector="emergency">
+            <div>
+                <h1>Read Next</h1>
+                <a href="#" class="impact-economic sector-geospatial">
+                    <h2>Resources</h2>
+                </a>
+            </div>
+        </div>
 
 <!-- FOOTNOTES -->
 
