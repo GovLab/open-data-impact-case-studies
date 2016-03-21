@@ -4833,14 +4833,9 @@ body {
 .dd-2 {
   background-color: #137c9f; }
 
-p {
-  padding: 12px; }
-
 .material-icons {
   color: #52adc9;
-  font-family: 'Material Icons';
-  position: fixed;
-  right: 650px; }
+  font-family: 'Material Icons'; }
 
 .accordion-item.active dd {
   max-height: 900px; }
