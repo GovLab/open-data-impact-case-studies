@@ -4044,6 +4044,8 @@ table {
     background-color: #008ab3; }
   .b-top-section.m-teal {
     background-color: #008895; }
+  .b-top-section.m-dark-blue {
+    background-color: #164A7A; }
 
 .b-page-section {
   padding-top: 30px;
@@ -4643,6 +4645,8 @@ ul.b-sidebar {
   background-color: #C2C33B; }
 .b-divider.m-fuschia, .b-divider.m-public {
   background-color: #AD0054; }
+.b-divider.m-resources {
+  text-align: center; }
 
 .b-sticky {
   z-index: 11; }
@@ -5203,5 +5207,39 @@ ul.b-sidebar {
 
 .long-reading section {
   padding-bottom: 5%; }
+
+@media screen and (min-width: 64.0625em) {
+  .b-projects-list-wrapper {
+    display: -webkit-flex;
+    display: flex; } }
+@media screen and (min-width: 64.0625em) {
+  .b-projects-list-wrapper .e-project-list {
+    -webkit-flex: 4;
+    flex: 4; } }
+
+@media screen and (min-width: 64.0625em) {
+  .b-project-view.m-grid .e-project-group {
+    padding: 15px; } }
+.b-project-view.m-grid .e-project-group.m-clickable {
+  cursor: crosshair; }
+.b-project-view.m-grid .e-project-item:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+@media screen and (min-width: 64.0625em) {
+  .b-project-view.m-grid .e-project-item {
+    width: calc(33% - 30px);
+    display: inline-block;
+    background-color: white;
+    height: 0;
+    padding-bottom: calc(33% - 30px);
+    margin: 15px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.2); }
+    .b-project-view.m-grid .e-project-item.m-clickable {
+      cursor: pointer; }
+    .b-project-view.m-grid .e-project-item img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10%; } }
 
 /*# sourceMappingURL=styles.css.map */
