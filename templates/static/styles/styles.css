@@ -4835,7 +4835,8 @@ body {
 
 .material-icons {
   color: #52adc9;
-  font-family: 'Material Icons'; }
+  font-family: 'Material Icons';
+  float: right; }
 
 .accordion-item.active dd {
   max-height: 900px; }
