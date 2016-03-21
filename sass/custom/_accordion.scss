@@ -1,43 +1,39 @@
 
 .accordion {
 
-}
+  dt {
+    font-weight: bold;
+    overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+  dd {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .8s ease;
+    box-sizing: border-box;
+  }
 
-.accordion-item{
- color: $white;
- font-weight: 400;
-}
-.accordion dt {
-  font-weight: bold;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-.accordion dd {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .8s ease;
-  box-sizing: border-box;
-}
+  .accordion-item{
+    color: $white;
+    font-weight: 400;
+  }
+  .accordion-item:nth-child(odd){
+    background-color: $purple;
+  }
+  .accordion-item:nth-child(even){
+    background-color: $purple-20k;
+  }
+  .accordion-item.active dd {
+    max-height: 900px;
+  }
+  p{
+    padding: 10px 10px 0 30px;
+  }
+  .material-icons{
+    color: $white-60;
+    font-family: 'Material Icons';
+    float: right;
+  }
 
-.accordion-item:nth-child(odd){
-  background-color: $purple;
-}
-.accordion-item:nth-child(even){
-  background-color: $purple-20k;
-}
-
-p{
-  padding: 10px 10px 0 30px;
-}
-.material-icons{
-  color: $white-60;
-  font-family: 'Material Icons';
-  float: right;
-}
-.accordion-item.active .material-icons{
-
-}
-.accordion-item.active dd {
-  max-height: 900px;
 }

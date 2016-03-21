@@ -4796,38 +4796,31 @@ ul.b-sidebar {
     .map-alt {
       display: none; } }
 
-.accordion-item {
-  color: white;
-  font-weight: 400; }
-
 .accordion dt {
   font-weight: bold;
   overflow: hidden;
   margin: 0;
   padding: 0; }
-
 .accordion dd {
   max-height: 0;
   overflow: hidden;
   transition: max-height .8s ease;
   box-sizing: border-box; }
-
-.accordion-item:nth-child(odd) {
+.accordion .accordion-item {
+  color: white;
+  font-weight: 400; }
+.accordion .accordion-item:nth-child(odd) {
   background-color: #523080; }
-
-.accordion-item:nth-child(even) {
+.accordion .accordion-item:nth-child(even) {
   background-color: #47266f; }
-
-p {
+.accordion .accordion-item.active dd {
+  max-height: 900px; }
+.accordion p {
   padding: 10px 10px 0 30px; }
-
-.material-icons {
+.accordion .material-icons {
   color: rgba(255, 255, 255, 0.6);
   font-family: 'Material Icons';
   float: right; }
-
-.accordion-item.active dd {
-  max-height: 900px; }
 
 .m-od-blue {
   background-color: #164A7A; }
