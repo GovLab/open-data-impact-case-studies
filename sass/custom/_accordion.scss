@@ -7,14 +7,11 @@ $accordion-font: proxima-nova;
 
 
 .accordion {
- border: none;
- color: $accordion-font-color;
- font-family: $accordion-font;
- line-height: 1.6;
- font-weight: 400;
+
 }
 
 .accordion-item{
+ color: $accordion-font-color;
 }
 .accordion dt {
   font-weight: bold;
@@ -42,6 +39,7 @@ $accordion-font: proxima-nova;
   background-color: $accordion-even-bars-color;
 }
 p{
+  padding: 10px 10px 0 30px;
 }
 .material-icons{
   color: rgba(82,173,201,1);

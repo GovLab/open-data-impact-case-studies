@@ -4796,12 +4796,8 @@ ul.b-sidebar {
     .map-alt {
       display: none; } }
 
-.accordion {
-  border: none;
-  color: white;
-  font-family: proxima-nova;
-  line-height: 1.6;
-  font-weight: 400; }
+.accordion-item {
+  color: white; }
 
 .accordion dt {
   font-weight: bold;
@@ -4826,6 +4822,9 @@ ul.b-sidebar {
 
 .dd-2 {
   background-color: #137c9f; }
+
+p {
+  padding: 10px 10px 0 30px; }
 
 .material-icons {
   color: #52adc9;
