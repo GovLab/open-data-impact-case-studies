@@ -1,17 +1,10 @@
-$accordion-font-color: rgba(255,255,255,1);
-$accordion-odd-bars-color: rgba(31,137,176, 1);
-$accordion-even-bars-color: rgba(19,124,159, 1);
-$accordion-font: proxima-nova;
-
-
-
 
 .accordion {
 
 }
 
 .accordion-item{
- color: $accordion-font-color;
+ color: $white;
  font-weight: 400;
 }
 .accordion dt {
@@ -28,10 +21,10 @@ $accordion-font: proxima-nova;
 }
 
 .accordion-item:nth-child(odd){
-  background-color: $accordion-odd-bars-color;
+  background-color: $purple;
 }
 .accordion-item:nth-child(even){
-  background-color: $accordion-even-bars-color;
+  background-color: $purple-20k;
 }
 
 p{

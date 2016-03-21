@@ -4813,10 +4813,10 @@ ul.b-sidebar {
   box-sizing: border-box; }
 
 .accordion-item:nth-child(odd) {
-  background-color: #1f89b0; }
+  background-color: #523080; }
 
 .accordion-item:nth-child(even) {
-  background-color: #137c9f; }
+  background-color: #47266f; }
 
 p {
   padding: 10px 10px 0 30px; }
