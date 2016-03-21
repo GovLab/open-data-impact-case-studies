@@ -50,6 +50,12 @@ p{
   padding: 12px;
 }
 .material-icons{
+  color: rgba(82,173,201,1);
+  font-family: 'Material Icons';
+  position: fixed;
+  right: 650px;
+}
+.accordion-item.active .material-icons{
 
 }
 .accordion-item.active dd {

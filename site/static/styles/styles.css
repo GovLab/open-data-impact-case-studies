@@ -4836,6 +4836,12 @@ body {
 p {
   padding: 12px; }
 
+.material-icons {
+  color: #52adc9;
+  font-family: 'Material Icons';
+  position: fixed;
+  right: 650px; }
+
 .accordion-item.active dd {
   max-height: 900px; }
 
