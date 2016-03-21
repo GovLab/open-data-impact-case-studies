@@ -44,9 +44,9 @@ $(document).ready(function($) {
 
 
     // Logic for Accordion Component
-    $('.accordion-item').click(function() {
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
+    $('.js-open-accordion').click(function() {
+        $(this).siblings().removeClass('m-active');
+        $(this).addClass('m-active');
     });
 
 

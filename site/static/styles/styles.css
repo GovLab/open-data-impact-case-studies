@@ -4796,31 +4796,62 @@ ul.b-sidebar {
     .map-alt {
       display: none; } }
 
-.accordion dt {
-  font-weight: bold;
-  overflow: hidden;
-  margin: 0;
-  padding: 0; }
-.accordion dd {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .8s ease;
-  box-sizing: border-box; }
-.accordion .accordion-item {
-  color: white;
-  font-weight: 400; }
-.accordion .accordion-item:nth-child(odd) {
-  background-color: #523080; }
-.accordion .accordion-item:nth-child(even) {
-  background-color: #47266f; }
-.accordion .accordion-item.active dd {
-  max-height: 900px; }
-.accordion p {
-  padding: 10px 10px 0 30px; }
-.accordion .material-icons {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: 'Material Icons';
-  float: right; }
+.b-accordion {
+  border: 0; }
+  .b-accordion p {
+    padding: 10px 30px;
+    margin: 0; }
+  .b-accordion dt {
+    font-weight: bold;
+    overflow: hidden;
+    margin: 0;
+    padding: 0; }
+    .b-accordion dt p {
+      margin: 0; }
+  .b-accordion dd {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .8s ease;
+    box-sizing: border-box; }
+    .b-accordion dd p:last-child {
+      margin-bottom: 20px; }
+  .b-accordion .e-accordion-item {
+    color: white;
+    font-weight: 400; }
+  .b-accordion .e-accordion-item:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.2); }
+  .b-accordion .e-accordion-item.m-active dd {
+    max-height: 900px; }
+  .b-accordion dt:before {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 10px 20px;
+    float: right;
+    content: "expand_more"; }
+  .b-accordion .accordion-item.m-active dt:before {
+    content: "expand_less"; }
+  .b-accordion.m-purple {
+    background-color: #523080; }
+  .b-accordion.m-orange, .b-accordion.m-citizens {
+    background-color: #ee5b43; }
+  .b-accordion.m-blue, .b-accordion.m-government {
+    background-color: #008ab3; }
+  .b-accordion.m-teal {
+    background-color: #008895; }
+  .b-accordion.m-dark-blue {
+    background-color: #164A7A; }
 
 .m-od-blue {
   background-color: #164A7A; }
