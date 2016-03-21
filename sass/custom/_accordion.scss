@@ -4,19 +4,14 @@ $accordion-even-bars-color: rgba(19,124,159, 1);
 $accordion-font: proxima-nova;
 
 
-body{
-  font-family: $accordion-font;
-  color: $accordion-font-color;
-  line-height: 1.6;
-  font-weight: 100;
-}
-.wrapper {
-  width: 600px;
-  margin: 40px auto;
-}
+
 
 .accordion {
  border: none;
+ color: $accordion-font-color;
+ font-family: $accordion-font;
+ line-height: 1.6;
+ font-weight: 400;
 }
 
 .accordion-item{

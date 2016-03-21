@@ -4796,18 +4796,12 @@ ul.b-sidebar {
     .map-alt {
       display: none; } }
 
-body {
-  font-family: proxima-nova;
-  color: white;
-  line-height: 1.6;
-  font-weight: 100; }
-
-.wrapper {
-  width: 600px;
-  margin: 40px auto; }
-
 .accordion {
-  border: none; }
+  border: none;
+  color: white;
+  font-family: proxima-nova;
+  line-height: 1.6;
+  font-weight: 400; }
 
 .accordion dt {
   font-weight: bold;
