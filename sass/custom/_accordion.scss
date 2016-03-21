@@ -1,39 +1,66 @@
 
-.accordion {
+.b-accordion {
+  border: 0;
+
+  p { 
+    padding: 10px 30px;
+    margin: 0;
+  }
 
   dt {
     font-weight: bold;
     overflow: hidden;
-      margin: 0;
-      padding: 0;
-    }
+    margin: 0;
+    padding: 0;
+
+    p { margin: 0; }
+  }
+  
   dd {
     max-height: 0;
     overflow: hidden;
     transition: max-height .8s ease;
     box-sizing: border-box;
+
+    p:last-child {
+      margin-bottom: 20px;
+    }
   }
 
-  .accordion-item{
+  .e-accordion-item {
     color: $white;
     font-weight: 400;
   }
-  .accordion-item:nth-child(odd){
-    background-color: $purple;
+
+  .e-accordion-item:nth-child(even) {
+    background-color: $gray-20;
   }
-  .accordion-item:nth-child(even){
-    background-color: $purple-20k;
-  }
-  .accordion-item.active dd {
+  
+  .e-accordion-item.m-active dd {
     max-height: 900px;
   }
-  p{
-    padding: 10px 10px 0 30px;
-  }
-  .material-icons{
+
+  // Adds the arrow on the right
+  
+  dt:before {
+    @include material-icons;
     color: $white-60;
-    font-family: 'Material Icons';
+    margin: 10px 20px;
     float: right;
+    content: "expand_more";
   }
+
+  // Switches the 
+
+  .accordion-item.m-active dt:before { content: "expand_less"; }
+
+
+  // Adds different bg-colours modifiers
+
+  &.m-purple    { background-color: $purple; }
+  &.m-orange    { background-color: $orange; }
+  &.m-blue      { background-color: $blue; }
+  &.m-teal      { background-color: $teal; }
+  &.m-dark-blue { background-color: $dark-blue; }
 
 }
