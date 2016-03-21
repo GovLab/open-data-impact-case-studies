@@ -26,18 +26,13 @@ $accordion-font: proxima-nova;
   box-sizing: border-box;
 }
 
-.dt-1, .dt-3,{
+.accordion-item:nth-child(odd){
   background-color: $accordion-odd-bars-color;
 }
-.dd-1, .dd-3{
-  background-color: $accordion-odd-bars-color;
-}
-.dt-2{
+.accordion-item:nth-child(even){
   background-color: $accordion-even-bars-color;
 }
-.dd-2{
-  background-color: $accordion-even-bars-color;
-}
+
 p{
   padding: 10px 10px 0 30px;
 }
