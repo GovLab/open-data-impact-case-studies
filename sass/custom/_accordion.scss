@@ -3,10 +3,7 @@ $accordion-odd-bars-color: rgba(31,137,176, 1);
 $accordion-even-bars-color: rgba(19,124,159, 1);
 $accordion-font: proxima-nova;
 
-*{
-  margin: 0;
-  padding: 0;
-}
+
 body{
   font-family: $accordion-font;
   color: $accordion-font-color;
@@ -23,10 +20,12 @@ body{
 }
 
 .accordion-item{
-
 }
 .accordion dt {
   font-weight: bold;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 .accordion dd {
   max-height: 0;
@@ -49,7 +48,7 @@ body{
 }
 
 p{
-  padding: 10px;
+  padding: 12px;
 }
 .accordion-item.active dd {
   max-height: 900px;

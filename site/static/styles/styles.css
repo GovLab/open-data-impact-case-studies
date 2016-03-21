@@ -4796,10 +4796,6 @@ ul.b-sidebar {
     .map-alt {
       display: none; } }
 
-* {
-  margin: 0;
-  padding: 0; }
-
 body {
   font-family: proxima-nova;
   color: white;
@@ -4814,7 +4810,10 @@ body {
   border: none; }
 
 .accordion dt {
-  font-weight: bold; }
+  font-weight: bold;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
 
 .accordion dd {
   max-height: 0;
@@ -4835,7 +4834,7 @@ body {
   background-color: #137c9f; }
 
 p {
-  padding: 10px; }
+  padding: 12px; }
 
 .accordion-item.active dd {
   max-height: 900px; }
