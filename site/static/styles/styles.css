@@ -4797,7 +4797,7 @@ ul.b-sidebar {
       display: none; } }
 
 body {
-  font-family: sans-serif;
+  font-family: proxima-nova;
   color: white;
   line-height: 1.6;
   font-weight: 100; }
@@ -4819,7 +4819,6 @@ body {
   overflow: hidden;
   transition: max-height .8s ease;
   padding: 0 15px;
-  background-color: #efefef;
   box-sizing: border-box;
   margin: 0; }
 
@@ -4827,7 +4826,13 @@ body {
   background-color: #1f89b0; }
 
 .dt-2 {
-  background: #137c9f; }
+  background-color: #137c9f; }
+
+.dd-1, .dd-3 {
+  background-color: #1f89b0; }
+
+.dd-2 {
+  background-color: #137c9f; }
 
 .accordion-item.active dd {
   max-height: 900px; }

@@ -1,6 +1,12 @@
+$accordion-font-color: rgba(255,255,255,1);
+$accordion-odd-bars-color: rgba(31,137,176, 1);
+$accordion-even-bars-color: rgba(19,124,159, 1);
+$accordion-font: proxima-nova;
+
+
 body{
-  font-family: sans-serif;
-  color: rgba(255,255,255,1);
+  font-family: $accordion-font;
+  color: $accordion-font-color;
   line-height: 1.6;
   font-weight: 100;
 }
@@ -28,18 +34,21 @@ body{
   overflow: hidden;
   transition: max-height .8s ease;
   padding: 0 15px;
-  background-color: #efefef;
   box-sizing: border-box;
   margin: 0;
 }
 .dt-1, .dt-3,{
-  background-color:rgba(31,137,176, 1);
+  background-color: $accordion-odd-bars-color;
 }
 .dt-2{
-  background:rgba(19,124,159, 1);
+  background-color: $accordion-even-bars-color;
 }
 
 .dd-1, .dd-3{
+  background-color: $accordion-odd-bars-color;
+}
+.dd-2{
+  background-color: $accordion-even-bars-color;
 }
 
 .accordion-item.active dd {
