@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Data's Impact - The Govlab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="//use.typekit.net/zez3buj.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="static/vendor/normalize.css">
+    <link rel="stylesheet" href="static/vendor/slick.css">
+    <link rel="stylesheet" href="static/vendor/prism.css" />
+    <link rel="stylesheet" href="static/styles/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- needed up here because of scripts in child templates -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body id="case-study-page">
+    
+
+<!--     <header class="b-top-nav m-transparent">
+
+        <div class="e-nav-group m-left e-social-media">
+            <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
+        </div>
+
+        <div class="e-nav-group m-right">
+            <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
+            <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
+            <a href="about.html" class="e-nav-item" id="nav-about">About</a>
+        </div>
+
+        <a class="e-logo" href="./">
+            <img src="static/img/govlab-logo-white.png" alt="">
+        </a>
+
+    </header> -->
+
+    
+<header class="b-top-nav m-transparent m-fixed">
+
+    <div class="e-nav-group m-left e-social-media hide-for-small-only">
+        <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
+        <a href="http://thegovlab.org" class="e-nav-item" target="_blank">thegovlab.org</a>
+    </div>
+
+    <div class="e-nav-group m-right hide-for-small-only">
+        <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
+        <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
+        <a href="about.html" class="e-nav-item" id="nav-about">About</a>
+    </div>
+
+    <a class="e-logo" href="./">
+        <img src="static/img/govlab-logo-white.png" alt="">
+    </a>
+
+</header>
+
+
+    <!-- Main Menu (Off Canvas) -->
+    <nav class="b-main-menu">
+        <form class="b-search m-negative m-fixed" action="">
+        <input class="js-search-value" type="text">
+        <input class="js-search-submit js-search-trigger e-search-trigger material-icons" type="submit" value="search">
+    </form>
+        <a href="./">Home</a>
+    </nav>
+
+    
+
+
+<main class="case-study-page" role="main">
+
+    <div class="b-top-section" style="background-image: url(./static/img/banners/sm/new-zealand.jpg)">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">New Zealand's Christchurch Earthquake Clusters</h1>
+            <h2 class="e-tagline">Open Data for Improving Emergency Response</h2>
+            <h4>by Juliet McMurren, Stefaan Verhulst and Andrew Young<a class="_idFootnoteLink" href="#footnote-999">*</a></h4>
+            <div class="e-tags hide-for-small-only">
+                <div class="e-left">
+                    <p>Impact</p>
+                    <p>Sector</p>
+                    <p>Location</p>
+                </div>
+                <div class="e-right">
+                    <p>
+                        SOLVING PUBLIC PROBLEMS
+                        
+                    </p>
+                    <p>
+                        EMERGENCY SERVICES / CRISIS RESPONSE
+                        
+                    </p>
+                    <p>NEW ZEALAND</p>
+                </div>
+            </div>
+            <div class="e-read-times hide-for-small-only">
+                <p>Read Time</p>
+                <p>Brief View <strong>5 MINS</strong></p>
+                <p>Full Story <strong>20 MINS</strong></p>
+            </div>
+        </hgroup>
+        <div id="download-button">
+            <a href="./static/files/case-studies-new-zealand.pdf" class="b-button m-public">Download The Report<i class="material-icons m-space">file_download</i></a>
+        </div>
+    </div>
+
+                <div class="row hide-for-small-only">
+                    <ul class="b-sidebar">
+                        <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email" message="mailto:?subject=New%20Zealand%27s%20Christchurch%20Earthquake%20Clusters&body=Open Data for Improving Emergency Response%0A%0ARead%20More%3A%0A%0A"><li class="email"><i class="fa fa-envelope"></i></li></a>
+                    </ul>
+                </div>
+
+                    
+                    <section class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Summary</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    
+<p class="text">In February 2011, Christchurch was struck by a severe earthquake that killed 185 people and caused significant disruption and damage to large portions of a city already weakened by an earlier earthquake. In the response to the quake, volunteers and officials at the recovery agencies used open data, open source tools, trusted data sharing and crowdsourcing to develop a range of products and services required to respond successfully to emerging conditions. These included a crowdsourced emergency information Web app that generated 70,000 visits within the first 48 hours after the earthquake; a series of geographic information system (GIS) data sharing agreements between agencies that enabled the successful provision of mapping services throughout the response and recovery; websites using open property data that enabled citizens to check the status of their homes and land, and generated millions of hits within hours of release; a construction intention viewer built using open data and open source tools that saved NZ$4 million in construction costs within its first year of use; and a crowdsourced competition for school children that generated over 18,000 new building footprints for open property databases at a cost of $0.02 per footprint.</p>
+
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+
+                    
+                    <div class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Takeaways</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    
+<ul>
+    <li class="e-list">Open maps and property data can be paired with trusted data sharing and open-source tools to craft quick, cost-effective solutions for crisis response.</li>
+    <li class="e-list">The capacity to recover and rebuild quickly can benefit tremendously from a good pre-existing data infrastructure, and especially on a robust and authoritative property data set.</li>
+    <li class="e-list">Crises can provide excellent preconditions for innovation, including the freedom and permission to innovate.</li>
+    <li class="e-list">Agile development and management techniques are particularly well suited to emergency response.</li>
+    <li class="e-list">Crowdsourcing emergency information can provide a way of engaging would-be volunteers safely in disaster relief efforts.</li>
+</ul>
+
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+
+                    
+
+                    
+                    <div class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Background</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    
+<p class="text">New Zealand is a high-income Pacific Island nation with a population of 4.6 million.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-2">2</a></span></span> It was ranked seventh on the UN Human Development Index in 2013.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-3">3</a></span></span> The country is located on the Pacific Ring of Fire, where the Australian and Pacific plates meet, and is seismically active. It experiences about 14,000 earthquakes every year, of which around 150 to 200 are strong enough to be felt.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-4">4</a></span></span> Most of these earthquakes occur down the Alpine fault, which runs down the center of the South Island, and along another fault that runs from southwest to northeast through the central North Island. In the last 200 years, New Zealand has experienced 12 major earthquakes resulting in loss of life.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-5">5</a></span></span></p>
+<p class="text">Because of this seismic history, New Zealand is an acknowledged world leader in earthquake engineering, having applied itself to learning the lessons from a series of deadly earthquakes in the late nineteenth and early twentieth centuries.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-6">6</a></span></span> The country has some of the most stringent building standards in the world, which set requirements for how buildings must perform in earthquakes.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-7">7</a></span></span>                     Current New Zealand building codes require structures with a 50-year use life to be able to withstand the predicted loads generated by earthquakes of a magnitude expected to occur every 500 years. New Zealand is also one of the only countries in the world to have national government earthquake insurance for homeowners through the Earthquake Commission (EQC).<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-8">8</a></span></span></p>
+<p class="e-h2">Open Data in New Zealand</p>
+<p class="text">New Zealand has an excellent record of press freedom and government transparency. The New Zealand press is considered free according to Freedom House,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-9">9</a></span></span> and the country is ranked sixth on the 2015 World Press Freedom Index by Reporters without Borders.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-10">10</a></span></span> New Zealand was ranked second on Transparency International’s Corruption Perceptions Index in 2014, and first on the International Budget Partnership’s two most recent Open Budget Surveys (2012 and 2015).<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-11">11</a></span></span></p>
+<p class="text">New Zealand is ranked fourth on the Open Data Barometer,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-12">12</a></span></span> and is considered a “high capacity” country, meaning that the country has existing open data policies, political backing and a general culture of data openness. It announced its intention to join the Open Government Partnership (OGP) in 2013, and, in October 2014, released its first action plan, completing the process of joining OGP.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-13">13</a></span></span></p>
+<p class="text">In August 2011, the Declaration on Open and Transparent Government was passed by the New Zealand government.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-14">14</a></span></span>Under that policy, central government agencies were directed, state-owned enterprises encouraged, and local government invited, to actively release high-value, non-personal data for reuse. During 2011, the New Zealand government also implemented New Zealand Government Open Access and Licensing Framework (NZGOAL),<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-15">15</a></span></span>an open access and open licensing protocol for state agencies to use when releasing data for reuse. This protocol encourages the release of non-personal copyright data using the most open Creative Commons license, and the release of non-copyright data with no restrictions on its use, all in the interest of harnessing the economic and creative benefits of opening the data for reuse.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-16">16</a></span></span> As of December 2015, the New Zealand government data portal, data.govt.nz, offered a total of 3,813 data sets.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-17">17</a></span></span></p>
+
+
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+
+                    
+                    <div class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Project</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    
+<p class="text">In 2010 and 2011, the city of Christchurch, New Zealand’s third largest, with a population of 375,000, experienced a series of devastating earthquakes. On September 4, 2010, a magnitude 7.1 quake caused widespread property damage and minor injuries, but no deaths.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-18">18</a></span></span> Nearly six months later, on February 22, 2011, before the city had fully recovered from the first earthquake, it experienced a second severe quake. While weaker in magnitude than the first and a mere 12 seconds long, an unlucky combination of factors – shallow depth, steep angle, and an epicenter located a mere 10 kilometers from the city center<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-19">19</a></span></span> meant that the second earthquake produced some of the most intense and violent shaking ever recorded in an urban area. Peak ground acceleration during the earthquake approached 2g in parts of central Christchurch<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-20">20</a></span></span> (as compared to 0.5g in the 2010 Haiti earthquake), and eyewitness accounts reported people literally being thrown into the air.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-21">21</a></span></span></p>
+<p class="text">Julian Carver, former CIO of the Canterbury Earthquake Recovery Authority (CERA), describes the experience of the earthquake: </p>
+<p class="e-quote">“February 22nd 2011, 12:51 p.m., I’m working from home, lying on my bed, reading email on my iPhone. Thirty seconds later, my city, my life, and my future had changed irrevocably. Anything not bolted down was on the floor and half of it was smashed. Computer monitors, TVs, bookshelves, food from the fridge. The power went off, then stayed off for five days. Mobile calls worked for a few minutes, then failed. Texts became patchy after an hour. The only thing that was semi-reliable was Twitter over 3G.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-22">22</a></span></span></p>
+<p class="text">The quake caused significant structural damage to the city’s already weakened buildings. The country’s strict building codes and the mercifully short duration of the quake limited the damage,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-23">23</a></span></span> but 185 people were killed, half of them in a single building collapse, in what was New Zealand’s second-deadliest recorded natural disaster. As of April 2013, the cost of rebuilding stood at $40 billion NZD.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-24">24</a></span></span></p>
+<p class="text">The recovery was significantly aided by a number of projects making innovative use of open data, open source tools, crowdsourcing and trusted data sharing. These tools, which we describe below, were developed in a highly agile and iterative manner. They allowed the city to recover rapidly and cheaply; together, they suggest the tremendous potential of innovation and data-driven projects in the midst of a crisis and as responses to natural and other disasters.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-25">25</a></span></span></p>
+<p class="e-h2">Canterbury Recovery Map (Eq.org.nz)</p>
+<p class="text">Immediately after the 2011 earthquake, significant parts of the city were without water or sewerage for up to three weeks, since up to 80 percent of the city’s below-ground infrastructure had been damaged.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-26">26</a></span></span> Roads in some parts of the city were inaccessible because of damage or soil liquefaction, and normal channels of communication were significantly disrupted by power outages. One of the most immediate problems was a lack of information, as residents tried to work out where to go for essential goods and services. Official sources did exist: A cloud-hosted emergency information website (canterburyearthquake.govt.nz) had been set up immediately after the earthquake,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-27">27</a></span></span> when it became apparent that the City Council servers were not up to the task of handling demand for emergency information because of power outages, building damage, and inadequate capacity. However, this website didn’t have mapping capabilities, and depended on a small, overworked team – “four people sitting around a trestle table with laptops,” according to Carver<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-28">28</a></span></span> – physically located inside the emergency operations center in the heavily damaged city center.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-29">29</a></span></span></p>
+<p class="text">Within hours of the quake, a group of skilled volunteers in New Zealand and overseas responded to these shortcomings by using Ushahidi, an open source disaster response platform<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-30">30</a></span></span> using open map data that had been successfully deployed after the Haiti quake, to create Eq.org.nz, a crowdsourced disaster map.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-31">31</a></span></span></p>
+<p class="text">The site helped residents navigate the post-earthquake urban environment by crowdsourcing information about damage, road closures, and the availability of essential supplies and services, and offers or requests for help.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-32">32</a></span></span> At the time, Tim McNamara, one of the Eq.org.nz leads, summed up the project: “We’re asking people to tell us where they are and what they see – if roads are blocked, which [store] is open, which [hardware store] is open, which medical center, where there are phones working and Internet access.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-33">33</a></span></span> Contributors could enter information on a website form, or via email, SMS code, or Twitter with hashtags #eqnz or #helpme for emergency requests.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-34">34</a></span></span> Human curators categorized every incoming message that contained both a fact and a location, and plotted it on a map. Eq.org.nz’s volunteers were able to verify, categorize and publish reports within five minutes of receipt of a new message. The data was published via an open Web application programming interfacenomonstrated that a Set: Consolidating and Freeing Up Address Data.”.”oss the case studies will be released over the next two mo(API) that allowed third parties, including Environment Canterbury, to combine the site’s information with their own data.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-35">35</a></span></span></p>
+<p class="text">By February 24, 2011, two days after the earthquake, the site had amassed 779 reports, 781 different locations, and almost 70,000 unique visitors.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-36">36</a></span></span> It also helped inform the activities of local volunteers such as the Student Army and Farmy Army, which provided thousands of volunteers to help clear more than 360,000 tons of silt deposited by liquefaction from residential properties, over more than 80,000 volunteer working hours.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-37">37</a></span></span> The Ushahidi volunteers reported feedback from users such as a Christchurch diabetic, who thanked them for telling her where she could get insulin.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-38">38</a></span></span> The site was active for three weeks after the earthquake, until power and normal channels of communication were fully restored.</p>
+<p class="e-h2">GIS and Trusted Data Sharing</p>
+<p class="text">In the immediate aftermath of the second earthquake, officials responsible for GIS data at Christchurch City Council and Environment Canterbury found themselves overwhelmed with demands from Civil Defence and emergency services for maps to help with search and rescue and other emergency response.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-39">39</a></span></span> Requests quickly outstripped their capacity, and the team knew that it needed to call in outside help. Ultimately, they found solutions in various data-sharing initiatives.</p>
+<p class="text">Volunteer teams from the Wellington City Council and Greater Wellington Regional Council, and Eagle Technology, a Wellington-based IT firm offering open systems and GIS platforms, had all offered help, but the traditional solution –&#160;mailing data on DVD or hard drive to the Wellington volunteers –&#160;was too slow. The Christchurch GIS data team obtained permission to open their data so that it could be freely used under a Creative Commons license, enabling the Wellington teams to produce maps to help with emergency response.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-40">40</a></span></span> Static data, including aerial imagery of Christchurch taken within 48 hours of the quake, was uploaded to, and made freely available from the geodata distributor Koordinates.com,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-41">41</a></span></span>while dynamic data was made available to the emergency mapping data teams via open geospatial standards.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-42">42</a></span></span></p>
+<p class="text">Similar data sharing occurred after the establishment of CERA. Having been set up on a relatively ad hoc basis six weeks after the second earthquake, CERA’s office and IT solutions were basic, and had no mapping, GIS, or data functionality. Carver, the acting CIO, approached Land Information New Zealand (LINZ) for assistance with GIS data infrastructure: “They said, we’ve got a set of those services we could spin up for you, and then feed in all of the open data from LINZ data services, and that would get you started.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-43">43</a></span></span> Having established CERA’s mapping capacity, Carver began to get requests for help from the Christchurch City Council, which was facing heavy demands generating maps for CERA demolition crews working in the central city. Christchurch City Council provided CERA with a list of all of its data sets that it could open up as data services, which was then prioritized by CERA. The data was then opened through open or secure data feeds, and the CERA GIS team was able to do analysis and make maps for the Christchurch City Council.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-44">44</a></span></span></p>
+<p class="text">This began a pattern of GIS data sharing and opening between the earthquake recovery agencies. As Carver put it: </p>
+<p class="e-quote">“It was a New Zealand-scale, Christchurch-scale [solution]. You could get the four or five people … who understood the need, understood what users wanted, had the technical understanding and had the authority to make it happen … in a room, every two weeks, [saying] OK, now we need to add this, or change this, or open this up. ... It was very agile, very iterative.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-45">45</a></span></span></p>
+<p class="e-h2">Landcheck and My Property</p>
+<p class="text">By late June 2011, the Canterbury Earthquake Recovery Authority had completed its geotechnical assessment and zoning of residential property to indicate the level of risk for a given area in the event of an earthquake. Now it needed a way to communicate those zoning decisions to the people of Christchurch. As Carver recalled in a blog post: “Like everything in the recovery, time frames were tight. People want government decisions to be based on sound scientific and economic evidence. They also want to know where they stand (and can live), as soon as possible. CERA needed a way to let people see exactly which zone their house was in. That required an interactive website, capable of taking a massive initial load, which would be implemented in a very short time frame.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-46">46</a></span></span></p>
+<p class="text">The solution was a partnership between the engineering firm responsible for creating the earthquake zoning maps, and Trade Me, New Zealand’s largest online auction site. Carrying out the work pro bono, Trade Me built the Landcheck<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-47">47</a></span></span> site using open property and address data in four days, using their server farms in Auckland and Wellington. Carver reports that the site received 2 million page views in the first hour, and 5 million page views and 3.3 million individual property searches on the first day.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-48">48</a></span></span></p>
+<p class="text">Three months later, in October 2011, Landcheck was replaced by My Property,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-49">49</a></span></span>as CERA made public the results of citywide geotechnical studies. My Property allowed residents to check not only the zoning of their property, but also the technical category of the land, which defined how it was expected to perform in future earthquakes, and the foundation type required for new construction.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-50">50</a></span></span> The technical category maps on My Property were built on the same GIS viewer and open data as had been used for Landcheck, incorporating photographs, maps, zoning, and technical category data.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-51">51</a></span></span> Although Carver notes it would be difficult to place a monetary value on the benefit provided by these sites, they were an essential public service that was widely accessed by the public, giving assurance to citizens about the safety of their property as aftershocks continued, and authoritative information about the legal context for repairs and rebuilds.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-52">52</a></span></span></p>
+<p class="e-img"><img class="_idGenObjectAttribute-1" src="static/img/studies/nz-0.png" alt="" /></p>
+<p class="e-caption">Figure 1. <a id="_idTextAnchor000"></a>My Property Main Page</p>
+<p class="e-h2">Forward Works Viewer</p>
+<p class="text">During the repair and rebuild of the central city, which had been badly damaged by the February 2011 earthquake, CERA found itself tasked with the near-impossible: demolishing 1,200 commercial buildings, repairing all below-ground infrastructure (wastewater, stormwater, water supply, power, and broadband), and beginning the process of reconstructing new buildings, all within a small geographic area, at the same time. In an interview, Carver said that “the only way of viably doing that [was to enable] everyone to see everyone else’s forward construction intentions well enough in advance to avoid expensive clashes and delays.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-53">53</a></span></span></p>
+<p class="text">LINZ, CERA, and the other agencies coordinating the Canterbury rebuild responded with the Forward Works Viewer, a tool which gave those agencies and other public and private sector users a shared online view of horizontal infrastructure repair, planned buildings, and other construction.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-54">54</a></span></span> The viewer allowed users to manage and view projects and their impacts spatially and over time, and detect potential clashes and opportunities for collaboration.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-55">55</a></span></span></p>
+<p class="text">The development of Forward Works, which was carried out using the agile software development methodology Scrum, was subcontracted to companies with geospatial, engineering and Web development expertise.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-56">56</a></span></span> The site drew heavily on open property and road network data, open source tools, and open geospatial standards.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-57">57</a></span></span> The open public road network data, however, had significant limitations, according to Carver. </p>
+<p class="e-quote">“The road network data was simply road center-line … and didn’t tell you anything about lanes, directions, turns, and turn restrictions. We wanted to be able to build those things into Forward Works’ viewer because we wanted to be able to assess impact on the road network of vertical construction or road closures due to road repair. Is it this lane, or this lane? Is it total closure or reduced capacity? That was quite important to know for traffic modelling, but we didn’t have an open, freely reusable, routable roading network.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-58">58</a></span></span></p>
+<p class="text">The solution was to contract four postgraduate GIS students for two weeks to bring OpenStreetMap for the relevant area fully up to date, at a cost of NZ$10,000, and make it fully routable for Christchurch. They then integrated this data into the Forward Works viewer with an impact selector to enable planners to choose the best lane for closures.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-59">59</a></span></span></p>
+<p class="text">The total cost of constructing the Forward Works viewer was NZ$1.6 million. A LINZ assessment in 2014 showed that the Forward Works viewer had delivered NZ $4 million in benefits since its launch in 2013, with a total of more than NZ$20 million forecast.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-60">60</a></span></span> These benefits were the result of cost savings in reduced clashes and delays, shared roadworks and trenching, reduced impact on the travelling public and traffic modelling that allowed twice as many closures within the central city while maintaining the same traffic flows.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-61">61</a></span></span></p>
+<p class="e-h2">Building Our Footprints</p>
+<p class="text">During the recovery, the agencies involved in rebuilding had identified deficits in some of the geospatial and property data sets. Residential building footprint databases did not exist for the satellite municipalities of Selwyn and Waimakariri, and the Christchurch data set was incomplete, with potential consequences for emergency response and rebuilding. In 2014, Jeremy Severinson, a LINZ employee who had been conducting postgraduate research assessing the trustworthiness of crowdsourced data at the University of Canterbury, approached Environment Canterbury with an idea.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-62">62</a></span></span></p>
+<p class="text">Severinson proposed crowdsourcing the creation of a database, in the form of a competition for school students. “Building Our Footprints” was run by Environment Canterbury in collaboration with LINZ and the University of Canterbury. Environment Canterbury created a Web app<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-63">63</a></span></span> with instructions, registration, and login for participants, who digitized building outlines from open aerial photographs, attempting to achieve a trust metric above 75 percent. The first participant to achieve 75 percent or better was awarded the point for that building, and the participant with the greatest number of points won. LINZ provided a small amount of sponsorship for prizes, in the form of an iPad Mini for the eventual winner, cash, and movie tickets.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-64">64</a></span></span> The competition ran for a month and generated 18,789 building outlines,<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-65">65</a></span></span> which were integrated into the relevant council databases and OpenStreetMap.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-66">66</a></span></span></p>
+<p class="text">Carver admits that this competition was done “for fun, because we wanted to see what would work in terms of solving problems. ... Just as importantly, we got a bunch of kids, who might not have considered spatial or open data or technology … in their careers, engaged with that. So it was … just a little ‘Let’s see what happens!’ exemplar – and it worked really well.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-67">67</a></span></span> Iain Campion is also enthusiastic about the competition: “We were quite keen on it, not just for the building footprints, but to give us an insight on how we could use … the crowd for our other data sets, like water quality.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-68">68</a></span></span></p>
+<p class="e-img"><img class="_idGenObjectAttribute-2" src="static/img/studies/nz-1.png" alt="" /></p>
+<p class="e-caption">Figure 2. Building Our Footprints Main Page</p>
+<p class="text">Campion concedes, however, that not all of the objectives of the competition were met. Map areas were not randomly assigned, but were chosen by the participants, with the result that most chose the area in which they lived. The majority of participants came from a handful of schools within Christchurch itself, so the competition generated fewer building outlines from outlying towns, and duplicated some outlines already held by Christchurch City Council. The overall quality of the data, however, was good, and the cost per outline was a mere NZ$0.02.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-69">69</a></span></span></p>
+
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Impact</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    
+<p class="text">Those who lived and worked through the Christchurch earthquake response came away impressed by the potential of open data, open source tools, and data sharing to improve the efficiency and effectiveness of disaster response and recovery. Beyond the practical and financial impacts of the individual tools described above, there were several broader ways in which this impact was evident. Each holds valuable insights about the ways in which open data and open source tools can contribute to disaster response.</p>
+<p class="e-quote">
+    “Don’t be afraid to share [data]. If you can anonymize the data, share it, and people will make
+
+    use of it.”
+</p>
+<p class="e-quote-author">Iain Campion, former Application Team Leader, Environment Canterbury</p>
+<p class="e-h2">Higher-Quality Geospatial Data</p>
+<p class="text">Improvement of open data coverage and quality was an indirect benefit of at least two of the projects described above. The additional data captured during the development of Forward Works and through Building Our Footprints greatly increased the accuracy and granularity of OpenStreetMap data for Christchurch, which was then made available for subsequent reuse by other users. Although intended as a simple solution to an emergent need, the distribution of GIS data through Koordinates to facilitate distributed mapping also opened new, previously unavailable geographic data sets.</p>
+<table id="table001" class="No-Table-Style TableOverride-1">
+    <colgroup>
+    <col class="_idGenTableRowColumn-1" />
+    <col class="_idGenTableRowColumn-2" />
+</colgroup>
+<tbody>
+    <tr class="No-Table-Style _idGenTableRowColumn-3">
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">Canterbury Recovery Map (Eq.org.nz)</p>
+        </td>
+        <td class="No-Table-Style CellOverride-2">
+            <p class="text">In the two days after the earthquake, amassed 779 reports, 781 different locations, and almost 70,000 unique visitors; informed the activities of local volunteers who helped clear more than 360,000 tons of silt deposited by liquefaction from residential properties, over more than 80,000 volunteer working hours.</p>
+        </td>
+    </tr>
+    <tr class="No-Table-Style _idGenTableRowColumn-4">
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">CERA</p>
+        </td>
+        <td class="No-Table-Style CellOverride-2">
+            <p class="text">Created maps for Christchurch City Council and performance analysis on those maps to inform the activities of demolition crews, among other uses.</p>
+        </td>
+    </tr>
+    <tr class="No-Table-Style _idGenTableRowColumn-3">
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">Landcheck and My Property</p>
+        </td>
+        <td class="No-Table-Style CellOverride-2">
+            <p class="text">Provided citizens with information on safety of their property as aftershocks continued, and authoritative information about the legal context for repairs and rebuilds.</p>
+        </td>
+    </tr>
+    <tr class="No-Table-Style _idGenTableRowColumn-3">
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">Forward Works Viewer</p>
+        </td>
+        <td class="No-Table-Style CellOverride-2">
+            <p class="text">In its first year, the Forward Works viewer delivered NZ$4 million in benefits with a total of more than NZ$20 million forecast, as a result of reduced clashes and delays, shared roadworks and trenching, reduced impact on the travelling public and improved traffic modelling.</p>
+        </td>
+    </tr>
+    <tr class="No-Table-Style _idGenTableRowColumn-3">
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">Building Our Footprints</p>
+        </td>
+        <td class="No-Table-Style CellOverride-2">
+            <p class="text">The month-long competition generated 18,789 building outlines, which were integrated into the relevant council databases and OpenStreetMap.</p>
+        </td>
+    </tr>
+</tbody>
+</table>
+<p class="e-h2">Facilitating Collaboration</p>
+<p class="text">As with other examples in this series of case studies, a large part of the value of the data tools used in New Zealand came from the way in which they facilitated collaborative efforts and teamwork. In part, this was the result of an ability to work asynchronously and across geographies. McNamara summed up many of these benefits in a blog post from March 2011: “The open source model was critical for the success of [the Canterbury Recovery Map],” he wrote. “The open source community shares … practices and norms for effective remote communication and collaboration. This meant that it was simple to manage a software project that had developers working in multiple time zones in a very constrained timeframe. [A large] part of the success was due to the ability for multiple people and organizations [to collaborate].”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-017-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-017">70</a></span></span></p>
+<p class="text">Collaboration and teamwork were also facilitated by the neutrality of open data products and tools. McNamara points out that using open source tools allowed the Map to be vendor-neutral and ad-free, which made it easier for competitors to collaborate on the site. That neutrality also encouraged businesses to contribute data directly to the site, which shifted the burden of accuracy to those with the greatest interest in it: the businesses themselves.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-016-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-016">71</a></span></span></p>
+<p class="e-h2">Impact on Other Data Projects</p>
+<p class="text">Both Carver and Campion feel that the earthquake experience has advanced the cause of open data and accelerated data release in New Zealand. Carver notes that the earthquake provided a rapid and dramatic conversion to open data for the agencies involved in the recovery. </p>
+<p class="e-quote">“Those … organizations, that previously didn’t have much in the way of policy or practice around open data or social media, went from ‘Oh, no, we couldn’t possibly do that!’ to it being the only thing that would work over the span of a week – and then just never looked back. It wasn’t that it would be a good idea and incrementally value-adding, but then you had to persuade a bunch of naysayers. It was the only thing that would work.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-015-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-015">72</a></span></span> </p>
+<p class="text">Campion agrees that the Christchurch experience has changed attitudes toward open data. “I think it has opened up all the agencies involved, and some of the peripheral ones. There’s not so much pushback any more. They know that that’s what should be happening.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-014-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-014">73</a></span></span></p>
+<p class="text">Carver also believes that the Christchurch experience has probably accelerated the pace of data release by local governments in New Zealand, by demonstrating both the benefits and the manageability of associated risk.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-013-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-013">74</a></span></span> He observes that resistance to opening data has a similar pattern worldwide. “The fears … which are barriers to open data release, and therefore to realizing the value from open data release … are often just a slightly more explicit articulation of … ‘We can’t possibly do this because a bad thing will explode.’ [They] are almost always not especially evidence-based, and the risks are able quite easily to be managed. It’s primarily a change management process, not a risk management process.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-012-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-012">75</a></span></span> And “Crises give you an opportunity to go through that process of getting through those objections faster.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-011-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-011">76</a></span></span> Adds Campion, “Don’t be afraid to share [data]. If you can anonymize the data, share it, and people will make use of it.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-010-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-010">77</a></span></span></p>
+
+
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                    
+                    <div class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Challenges</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    
+<div>
+    <p class="e-h2">Data Infrastructure Challenges</p>
+    <p class="text">Christchurch recovered remarkably fast from its earthquake, and many reasons have been given for its resilience: the existence of comprehensive insurance cover, including compulsory earthquake insurance; the geography of the city, which did not experience any single points of failure that could have devastating broader impacts if affected by the quake; and a rapid injection from the New Zealand government of NZ$15 billion of the estimated NZ$40 billion needed to rebuild.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-009-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-009">78</a></span></span> A further reason offered for the city’s quick recovery was the existence of a robust data infrastructure that made it easy to resettle people in safe areas and enable the business community to continue to function.</p>
+</div>
+<p class="text">Although good, the data infrastructure was not perfect, and those involved in the recovery effort have pointed out several flaws that could be remedied to improve the response to future disasters. In particular, both Carver and Campion point to the absence of a single, comprehensive and authoritative property data set. Carver notes that different pieces of property-related data – land parcels, records related to building footprints, addresses data and ratings – existed in “separate systems, across different organizations, and were often duplicated or differently updated and inaccurate.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-008-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-008">79</a></span></span></p>
+<p class="e-h2">Lack of a Property Framework</p>
+<p class="text">Campion points to a related problem: the lack of a “good property framework” that would allow responders to confidently and comprehensively track, check and record response locations. “Relying on addresses that are not a standard or unique data set … was really problematic,” he said. “For instance, [search and rescue teams] would go to a building in the CBD and they would say, yes, I’ve checked 34 Chester St West – but there is no actual address of 34 Chester St West, although there is a building there. There may be two Smith Streets in Christchurch: Well, which one did you check? I don’t know!”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-007">80</a></span></span> A single comprehensive property data set might have reduced the cost of claims administration, allowing more money to go toward the rebuild. Such a standardized, public address data set exists in Denmark, resulting in improved public services, including emergency response.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-006-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-006">81</a></span></span></p>
+<p class="e-h2">Collaborations and Sharing Challenges</p>
+<p class="text">Finally, although the recovery effort was in many ways a testament to strong teamwork, there were some problems related to collaboration. In particular, Carver reports that the team behind Eq.org.nz developed certain tensions with some parts of the official emergency response teams. He says: </p>
+<p class="e-quote">“The people doing the Web and social media in the emergency operations center were much more communicative and friendly with the crisis mapping teams [of Eq.org.nz] than the ... civil defense and emergency management folks, who got quite concerned that there was all this information being published and it wasn’t authoritative. [The] citizen response was, well, you don’t have any maps or authoritative information, so even if this isn’t perfect, it’s a lot better than nothing! That interaction and conflict meant fairly substantial post-earthquake upgrading of the emergency services’ understanding of how to engage with online communities during a natural disaster.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-005-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-005">82</a></span></span> </p>
+<p class="text">Carver contrasts the Canterbury example with the more successful response of the Queensland police to the Brisbane floods in 2010 and 2011, who made extensive and successful use of social media.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-004-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-004">83</a></span></span></p>
+
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                    
+
+                    
+
+                    
+                    <div class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Looking Forward</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    
+<div>
+    <p class="e-h2">Advancing Data-Driven Innovation in New Zealand</p>
+    <p class="text">The experience of the Christchurch earthquake, which demonstrated that crises demanded innovative, highly cost-effective and rapid solutions, has pushed New Zealand to explore new uses and sources for data. Having embraced open data, the New Zealand government is now looking beyond it, to the possibilities of data-driven innovation. In August 2015, Statistics NZ, in partnership with the New Zealand Treasury and a group of expert stakeholders, announced the Data Futures Partnership,<span class="e-fn-ref" id="footnote-003-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-003">84</a></span> a cross-sector collaboration of influential individuals working to drive change in NZ’s data ecosystem. The partnership is intended to develop catalyst data-use projects and encourage increased trusted data sharing use of data that cannot be opened for reasons of privacy or commercial sensitivity between government agencies, and potentially between public and private sectors, to help promote data-driven innovation.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-002-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-002">85</a></span></span></p>
+</div>
+<div>
+    <p class="text">Carver believes the expansion from open data to data-driven innovation and data sharing was accelerated by the Christchurch experience. “If anything, this has happened faster because we’ve had lots of successes with open data in public, because we’ve had this earthquake context in which we had permission to innovate.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-001-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-001">86</a></span></span> Carver sees significant opportunity for innovation in crises. “The necessary preconditions for innovation are starvation, pressure, and perspective shift,” he says, quoting complexity theorist and management expert Dave Snowden. “Under significant time pressure, with fewer than normal resources, in a situation that’s really important to get right, [you’re] much more likely to come up with innovative solutions than … when everything is comfortable.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-000">87</a></span></span></p>
+
+</div>
+
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+
+                    <div class="b-page-section">
+                        <div class="row">
+                            <div class="large-10 large-offset-1 columns">
+                                <p class="e-last">Learn about our <a href="about.html">methodology</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    
+                                <div class="b-divider m-fuschia m-next js-next" js-impact="public" js-sector="emergency">
+                                    
+                                        <div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <h1>Read Next</h1>
+                                            
+                                            
+                                            <a href="case-singapores-dengue-cluster-map.html" class="impact-public sector-health">
+                                                <h2>Singapore's Dengue Cluster Map</h2>
+                                            </a>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <a href="case-united-states-eightmaps.html" class="impact-public sector-politics">
+                                                <h2>United States' Eightmaps</h2>
+                                            </a>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <a href="case-kennedy-vs-the-city-of-zanesville-united-states.html" class="impact-public sector-law">
+                                                <h2>Kennedy vs. the City of Zanesville, United States</h2>
+                                            </a>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <a href="case-united-kingdoms-coeliac-uk-and-brandbank.html" class="impact-public sector-health">
+                                                <h2>United Kingdom's Coeliac UK and Brandbank</h2>
+                                            </a>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <a href="case-united-kingdoms-ordnance-survey-opendata.html" class="impact-economic sector-geospatial">
+                                                <h2>United Kingdom's Ordnance Survey OpenData</h2>
+                                            </a>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <a href="case-united-states-new-york-city-business-atlas.html" class="impact-economic sector-business">
+                                                <h2>United States' New York City Business Atlas</h2>
+                                            </a>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <a href="case-united-states-noaa-opening-up-global-weather-data-in-collaboration-with-businesses.html" class="impact-economic sector-weather">
+                                                <h2>United States' NOAA: Opening Up Global Weather Data in Collaboration with Businesses</h2>
+                                            </a>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <a href="case-united-states-opening-gps-data-for-civilian-use.html" class="impact-economic sector-geospatial">
+                                                <h2>United States Opening GPS Data for Civilian Use</h2>
+                                            </a>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <a href="case-united-kingdoms-transport-for-london.html" class="impact-economic sector-transportation">
+                                                <h2>United Kingdom's Transport for London</h2>
+                                            </a>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <a href="case-united-kingdoms-hm-land-registry-price-paid-data.html" class="impact-economic sector-geospatial">
+                                                <h2>United Kingdom's HM Land Registry Price Paid Data</h2>
+                                            </a>
+                                            
+                                            
+                                            
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="b-footnotes">
+                                        <div class="row">
+                                            <div class="medium-8 large-offset-3 column">
+                                                <h4>Reference</h4>
+                                                
+<div class="_idFootnotes">
+
+
+
+    <div id="footnote-2" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-2-backlink">2</a> <a href="http://www.stats.govt.nz/infoshare/default.aspx?RedirectReason=session_expired"><span class="e-link">http://www.stats.govt.nz/infoshare/default.aspx?RedirectReason=session_expired</span></a></p></div>
+
+    <div id="footnote-3" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-3-backlink">3</a> <a href="http://hdr.undp.org/en/content/table-1-human-development-index-and-its-components"><span class="e-link">http://hdr.undp.org/en/content/table-1-human-development-index-and-its-components</span></a></p></div>
+
+    <div id="footnote-4" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-4-backlink">4</a> <a href="http://www.teara.govt.nz/en/earthquakes/page-1"><span class="e-link">http://www.teara.govt.nz/en/earthquakes/page-1</span></a></p></div>
+
+
+    <div id="footnote-5" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-5-backlink">5</a> <a href="https://en.wikipedia.org/wiki/List_of_earthquakes_in_New_Zealand#Earthquakes_resulting_in_fatalities"><span class="e-link">https://en.wikipedia.org/wiki/List_of_earthquakes_in_New_Zealand#Earthquakes_resulting_in_fatalities</span></a></p></div>
+
+    <div id="footnote-6" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-6-backlink">6</a> <a href="http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=10672097"><span class="e-link">http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1&objectid=10672097</span></a></p></div>
+
+    <div id="footnote-7" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-7-backlink">7</a> <a href="http://www.teara.govt.nz/en/earthquakes/page-4"><span class="e-link">http://www.teara.govt.nz/en/earthquakes/page-4</span></a></p></div>
+
+    <div id="footnote-8" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-8-backlink">8</a> <a href="http://www.teara.govt.nz/en/earthquakes/page-3"><span class="e-link">http://www.teara.govt.nz/en/earthquakes/page-3</span></a></p></div>
+
+    <div id="footnote-9" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-9-backlink">9</a> <a href="https://freedomhouse.org/country/new-zealand#.Vbo0evlViko"><span class="e-link">https://freedomhouse.org/country/new-zealand#.Vbo0evlViko</span></a></p></div>
+
+    <div id="footnote-10" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-10-backlink">10</a> <a href="http://index.rsf.org/#!/index-details"><span class="e-link">http://index.rsf.org/#!/index-details</span></a></p></div>
+
+    <div id="footnote-11" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-11-backlink">11</a> <a href="http://survey.internationalbudget.org/#timeline"><span class="e-link">http://survey.internationalbudget.org/#timeline</span></a></p></div>
+
+    <div id="footnote-12" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-12-backlink">12</a> <a href="http://www.opendatabarometer.org/report/analysis/rankings.html"><span class="e-link">http://www.opendatabarometer.org/report/analysis/rankings.html</span></a></p></div>
+
+    <div id="footnote-13" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-13-backlink">13</a> <a href="http://ssc.govt.nz/nz-ogp-action-plan"><span class="e-link">http://ssc.govt.nz/nz-ogp-action-plan</span></a></p></div>
+
+    <div id="footnote-14" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-14-backlink">14</a> <a href="https://www.ict.govt.nz/guidance-and-resources/open-government/declaration-open-and-transparent-government/"><span class="e-link">https://www.ict.govt.nz/guidance-and-resources/open-government/declaration-open-and-transparent-government/</span></a></p></div>
+
+    <div id="footnote-15" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-15-backlink">15</a> <a href="https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/"><span class="e-link">https://www.ict.govt.nz/guidance-and-resources/open-government/new-zealand-government-open-access-and-licensing-nzgoal-framework/</span></a></p></div>
+
+    <div id="footnote-16" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-16-backlink">16</a> <a href="http://www.ssc.govt.nz/nzgoal"><span class="e-link">http://www.ssc.govt.nz/nzgoal</span></a></p></div>
+
+    <div id="footnote-17" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-17-backlink">17</a> <a href="https://data.govt.nz/"><span class="e-link">https://data.govt.nz/</span></a></p></div>
+
+    <div id="footnote-18" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-18-backlink">18</a> http://web.archive.org/web/20100905033623/http://earthquake.usgs.gov/earthquakes/recenteqsww/Quakes/us2010atbj.php; “Why so few casualties in Canterbury quake?” Stuff.co.nz. September 4, 2010. <a href="http://www.stuff.co.nz/national/4096813/Why-so-few-casualties-in-Canterbury-quake"><span class="e-link">http://www.stuff.co.nz/national/4096813/Why-so-few-casualties-in-Canterbury-quake</span></a></p></div>
+
+    <div id="footnote-19" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-19-backlink">19</a> Office of the Prime Minister’s Science Advisory Committee. “The Canterbury Earthquakes: Scientific answers to critical questions.” The Royal Society of New Zealand. 2011. <a href="http://www.royalsociety.org.nz/media/Information-paperThe-Canterbury-Earthquakes.pdf"><span class="e-link">http://www.royalsociety.org.nz/media/Information-paperThe-Canterbury-Earthquakes.pdf</span></a></p></div>
+
+    <div id="footnote-20" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-20-backlink">20</a>Campbell, Hamish. “Technically it’s just an aftershock.” New Zealand Herald. February 24, 2011. <a href="http://www.nzherald.co.nz/opinion/news/article.cfm?c_id=466&objectid=10708275"><span class="e-link">http://www.nzherald.co.nz/opinion/news/article.cfm?c_id=466&objectid=10708275</span></a></p></div>
+
+    <div id="footnote-21" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-21-backlink">21</a> Lin II, Rong-Gong and Sam Allen. “New Zealand quake raises questions about L.A. buildings.” Los Angeles Times. February 26, 2011. <a href="http://www.latimes.com/local/la-me-quake-california-20110226-story.html"><span class="e-link">http://www.latimes.com/local/la-me-quake-california-20110226-story.html</span></a></p></div>
+
+    <div id="footnote-22" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-22-backlink">22</a> Carver, Julian. “Using the Web in Earthquake Recovery.” New Zealand Government Web Toolkit. March 25, 2013. <a href="https://webtoolkit.govt.nz/blog/2013/03/using-the-web-in-earthquake-recovery/"><span class="e-link">https://webtoolkit.govt.nz/blog/2013/03/using-the-web-in-earthquake-recovery/</span></a></p></div>
+
+    <div id="footnote-23" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-23-backlink">23</a> Clifton, Charles. “Christchurch Feb 22nd Earthquake: A Personal Report by Charles Clifton – March 2011.” HERA. March 2011. <a href="http://www.hera.org.nz/Story?Action=View&Story_id=1398"><span class="e-link">http://www.hera.org.nz/Story?Action=View&Story_id=1398</span></a></p></div>
+
+    <div id="footnote-24" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-24-backlink">24</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-25" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-25-backlink">25</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-26" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-26-backlink">26</a> Clifton, Charles. “Christchurch Feb 22nd Earthquake: A Personal Report by Charles Clifton – March 2011.” HERA. March 2011. <a href="http://www.hera.org.nz/Story?Action=View&Story_id=1398"><span class="e-link">http://www.hera.org.nz/Story?Action=View&Story_id=1398</span></a></p></div>
+
+    <div id="footnote-27" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-27-backlink">27</a> McNamara, Tim. “Eq.org.nz – The Power of Ushahidi.” Institute of IT Professionals TechBlog. March 18, 2011. <a href="http://techblog.nz/94-eqorgnzThePowerofUshahidi"><span class="e-link">http://techblog.nz/94-eqorgnzThePowerofUshahidi</span></a></p></div>
+
+    <div id="footnote-28" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-28-backlink">28</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-29" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-29-backlink">29</a> McNamara, Tim. “Eq.org.nz – The Power of Ushahidi.” Institute of IT Professionals TechBlog. March 18, 2011. <a href="http://techblog.nz/94-eqorgnzThePowerofUshahidi"><span class="e-link">http://techblog.nz/94-eqorgnzThePowerofUshahidi</span></a></p></div>
+
+    <div id="footnote-30" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-30-backlink">30</a> Carver, Julian. “Using the Web in Earthquake Recovery.” New Zealand Government Web Toolkit. March 25, 2013. <a href="https://webtoolkit.govt.nz/blog/2013/03/using-the-web-in-earthquake-recovery/"><span class="e-link">https://webtoolkit.govt.nz/blog/2013/03/using-the-web-in-earthquake-recovery/</span></a></p></div>
+
+    <div id="footnote-31" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-31-backlink">31</a> Bell, Stephen. “Tech volunteers quick to help in quake aftermath.” Computerworld. February 24, 2011. <a href="http://www.computerworld.co.nz/article/498626/tech_volunteers_quick_help_quake_aftermath/"><span class="e-link">http://www.computerworld.co.nz/article/498626/tech_volunteers_quick_help_quake_aftermath/</span></a></p></div>
+
+    <div id="footnote-32" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-32-backlink">32</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-33" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-33-backlink">33</a> Bell, Stephen. “Tech volunteers quick to help in quake aftermath.” Computerworld. February 24, 2011. <a href="http://www.computerworld.co.nz/article/498626/tech_volunteers_quick_help_quake_aftermath/"><span class="e-link">http://www.computerworld.co.nz/article/498626/tech_volunteers_quick_help_quake_aftermath/</span></a></p></div>
+
+    <div id="footnote-34" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-34-backlink">34</a> Bell, Stephen. “Tech volunteers quick to help in quake aftermath.” Computerworld. February 24, 2011. <a href="http://www.computerworld.co.nz/article/498626/tech_volunteers_quick_help_quake_aftermath/"><span class="e-link">http://www.computerworld.co.nz/article/498626/tech_volunteers_quick_help_quake_aftermath/</span></a></p></div>
+
+    <div id="footnote-35" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-35-backlink">35</a> McNamara, Tim. “Eq.org.nz – The Power of Ushahidi.” Institute of IT Professionals TechBlog. March 18, 2011. <a href="http://techblog.nz/94-eqorgnzThePowerofUshahidi"><span class="e-link">http://techblog.nz/94-eqorgnzThePowerofUshahidi</span></a></p></div>
+
+    <div id="footnote-36" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-36-backlink">36</a> Meyer, Patrick. “Launching Eq.org.nz for the New Zealand Earthquake.” Ushahidi. February 24, 2011. <a href="http://www.ushahidi.com/blog/2011/02/24/launching-eq-org-nz-for-the-new-zealand-earthquake/"><span class="e-link">http://www.ushahidi.com/blog/2011/02/24/launching-eq-org-nz-for-the-new-zealand-earthquake/</span></a></p></div>
+
+    <div id="footnote-37" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-37-backlink">37</a> “September 2010 Christchurch Earthquake.” Volunteer Army Foundation. <a href="http://www.volunteerarmy.org/history/"><span class="e-link">http://www.volunteerarmy.org/history/</span></a></p></div>
+
+    <div id="footnote-38" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-38-backlink">38</a> Meyer, Patrick. “Launching Eq.org.nz for the New Zealand Earthquake.” Ushahidi. February 24, 2011. <a href="http://www.ushahidi.com/blog/2011/02/24/launching-eq-org-nz-for-the-new-zealand-earthquake/"><span class="e-link">http://www.ushahidi.com/blog/2011/02/24/launching-eq-org-nz-for-the-new-zealand-earthquake/</span></a></p></div>
+
+    <div id="footnote-39" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-39-backlink">39</a> Carver, Julian. “Open_Data_Mini_Case_Studies.” Open New Zealand. February 6, 2013. <a href="https://wiki.open.org.nz/wiki/display/main/Open_Data_Mini_Case_Studies#Open_Data_Mini_Case_Studies-OpenDataSupportsEmergencyOperations"><span class="e-link">https://wiki.open.org.nz/wiki/display/main/Open_Data_Mini_Case_Studies#Open_Data_Mini_Case_Studies-OpenDataSupportsEmergencyOperations</span></a></p></div>
+
+    <div id="footnote-40" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-40-backlink">40</a> Carver, Julian. “Open_Data_Mini_Case_Studies.” Open New Zealand. February 6, 2013. <a href="https://wiki.open.org.nz/wiki/display/main/Open_Data_Mini_Case_Studies#Open_Data_Mini_Case_Studies-OpenDataSupportsEmergencyOperations"><span class="e-link">https://wiki.open.org.nz/wiki/display/main/Open_Data_Mini_Case_Studies#Open_Data_Mini_Case_Studies-OpenDataSupportsEmergencyOperations</span></a></p></div>
+
+    <div id="footnote-41" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-41-backlink">41</a> <a href="https://koordinates.com/"><span class="e-link">https://koordinates.com/</span></a></p></div>
+
+    <div id="footnote-42" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-42-backlink">42</a> Carver, Julian. “Open_Data_Mini_Case_Studies.” Open New Zealand. February 6, 2013. <a href="https://wiki.open.org.nz/wiki/display/main/Open_Data_Mini_Case_Studies#Open_Data_Mini_Case_Studies-OpenDataSupportsEmergencyOperations"><span class="e-link">https://wiki.open.org.nz/wiki/display/main/Open_Data_Mini_Case_Studies#Open_Data_Mini_Case_Studies-OpenDataSupportsEmergencyOperations</span></a></p></div>
+
+    <div id="footnote-43" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-43-backlink">43</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-44" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-44-backlink">44</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-45" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-45-backlink">45</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-46" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-46-backlink">46</a> Carver, Julian. “Using the Web in Earthquake Recovery.” New Zealand Government Web Toolkit. March 25, 2013. <a href="https://webtoolkit.govt.nz/blog/2013/03/using-the-web-in-earthquake-recovery/"><span class="e-link">https://webtoolkit.govt.nz/blog/2013/03/using-the-web-in-earthquake-recovery/</span></a></p></div>
+
+    <div id="footnote-47" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-47-backlink">47</a> <a href="http://www.landcheck.org.nz/"><span class="e-link">http://www.landcheck.org.nz/</span></a></p></div>
+
+    <div id="footnote-48" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-48-backlink">48</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-49" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-49-backlink">49</a> <a href="http://cera.govt.nz/my-property"><span class="e-link">http://cera.govt.nz/my-property</span></a></p></div>
+
+    <div id="footnote-50" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-50-backlink">50</a> <a href="http://cera.govt.nz/residential-green-zone-technical-categories/overview"><span class="e-link">http://cera.govt.nz/residential-green-zone-technical-categories/overview</span></a></p></div>
+
+    <div id="footnote-51" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-51-backlink">51</a> GovLab interview with Stephen Ferris, GIS and Data Manager, Canterbury Earthquake Recovery Authority, September 22, 2015.</p></div>
+
+    <div id="footnote-52" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-52-backlink">52</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-53" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-53-backlink">53</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-54" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-54-backlink">54</a> “Online tool enhances Canterbury rebuild.” Land Information New Zealand. July 29, 2014. <a href="http://www.linz.govt.nz/news/2014-07/online-tool-enhances-canterbury-rebuild"><span class="e-link">http://www.linz.govt.nz/news/2014-07/online-tool-enhances-canterbury-rebuild</span></a></p></div>
+
+    <div id="footnote-55" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-55-backlink">55</a> “Forward Works Viewer.” Media Suite. <a href="https://www.mediasuite.co.nz/forward-works.php"><span class="e-link">https://www.mediasuite.co.nz/forward-works.php</span></a></p></div>
+
+    <div id="footnote-56" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-56-backlink">56</a> “Forward Works Viewer.” Media Suite. <a href="https://www.mediasuite.co.nz/forward-works.php"><span class="e-link">https://www.mediasuite.co.nz/forward-works.php</span></a></p></div>
+
+    <div id="footnote-57" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-57-backlink">57</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-58" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-58-backlink">58</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-59" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-59-backlink">59</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-60" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-60-backlink">60</a> “Online tool enhances Canterbury rebuild.” Land Information New Zealand. July 29, 2014. <a href="http://www.linz.govt.nz/news/2014-07/online-tool-enhances-canterbury-rebuild"><span class="e-link">http://www.linz.govt.nz/news/2014-07/online-tool-enhances-canterbury-rebuild</span></a></p></div>
+
+    <div id="footnote-61" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-61-backlink">61</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-62" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-62-backlink">62</a> GovLab interview with Iain Campion, former Application Team Leader, Environment Canterbury, July 28, 2015.</p></div>
+
+    <div id="footnote-63" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-63-backlink">63</a> <a href="http://www.canterburymaps.govt.nz/buildingourfootprints/"><span class="e-link">http://www.canterburymaps.govt.nz/buildingourfootprints/</span></a></p></div>
+
+    <div id="footnote-64" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-64-backlink">64</a> <a href="http://www.canterburymaps.govt.nz/buildingourfootprints/Prizes"><span class="e-link">http://www.canterburymaps.govt.nz/buildingourfootprints/Prizes</span></a></p></div>
+
+    <div id="footnote-65" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-65-backlink">65</a> <a href="http://www.canterburymaps.govt.nz/buildingourfootprints/Results"><span class="e-link">http://www.canterburymaps.govt.nz/buildingourfootprints/Results</span></a></p></div>
+
+    <div id="footnote-66" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-66-backlink">66</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-67" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-67-backlink">67</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p></div>
+
+    <div id="footnote-68" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-68-backlink">68</a> GovLab interview with Iain Campion, former Application Team Leader, Environment Canterbury, July 28, 2015.</p></div>
+
+    <div id="footnote-69" class="_idFootnote">
+        <p class="e-footnote-text">
+            <a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-69-backlink">69</a>
+            GovLab interview with Iain Campion, former Application Team Leader, Environment Canterbury, July 28, 2015.
+        </p>
+    </div>
+
+    <div id="footnote-017" class="_idFootnote">
+        <p class="e-footnote-text">
+            <a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-017-backlink">70</a>
+            McNamara, Tim. “Eq.org.nz – The Power of Ushahidi.” Institute of IT Professionals TechBlog. March 18, 2011.
+            <a href="http://techblog.nz/94-eqorgnzThePowerofUshahidi"><span class="e-link">http://techblog.nz/94-eqorgnzThePowerofUshahidi</span></a>
+        </p>
+    </div>
+    <div id="footnote-016" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-016-backlink">71</a> McNamara, Tim. “Eq.org.nz – The Power of Ushahidi.” Institute of IT Professionals TechBlog. March 18, 2011. <a href="http://techblog.nz/94-eqorgnzThePowerofUshahidi"><span class="e-link">http://techblog.nz/94-eqorgnzThePowerofUshahidi</span></a></p>
+    </div>
+    <div id="footnote-015" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-015-backlink">72</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p>
+    </div>
+    <div id="footnote-014" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-014-backlink">73</a> GovLab interview with Iain Campion, former Application Team Leader, Environment Canterbury, July 28, 2015.</p>
+    </div>
+    <div id="footnote-013" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-013-backlink">74</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p>
+    </div>
+    <div id="footnote-012" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-012-backlink">75</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p>
+    </div>
+    <div id="footnote-011" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-011-backlink">76</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p>
+    </div>
+    <div id="footnote-010" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-010-backlink">77</a> GovLab interview with Iain Campion, former Application Team Leader, Environment Canterbury, July 28, 2015.</p>
+    </div>
+    <div id="footnote-009" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-009-backlink">78</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p>
+    </div>
+    <div id="footnote-008" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-008-backlink">79</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p>
+    </div>
+    <div id="footnote-007" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-007-backlink">80</a> GovLab interview with Iain Campion, former Application Team Leader, Environment Canterbury, July 28, 2015.</p>
+    </div>
+    <div id="footnote-006" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-006-backlink">81</a> McMurren, Juliet, Stefaan Verhulst and Andrew Young. “Denmark’s Open Address Data Set: Consolidating and Freeing Up Address Data.” Open Data’s Impact. January 2016. <a href="http://odimpact.org/case-denmarks-open-address-data-set.html"><span class="e-link">http://odimpact.org/case-denmarks-open-address-data-set.html</span></a></p>
+    </div>
+    <div id="footnote-005" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-005-backlink">82</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p>
+    </div>
+    <div id="footnote-004" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-004-backlink">83</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p>
+    </div>
+    <div id="footnote-003" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-003-backlink">84</a> <a href="http://m.stats.govt.nz/about_us/what-we-do/our-publications/cabinet-papers/data-futures-partnership-cabinet-paper"><span class="e-link">http://m.stats.govt.nz/about_us/what-we-do/our-publications/cabinet-papers/data-futures-partnership-cabinet-paper</span></a></p>
+    </div>
+    <div id="footnote-002" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-002-backlink">85</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p>
+    </div>
+    <div id="footnote-001" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-001-backlink">86</a> GovLab interview with Julian Carver, former Chief Information Officer, Canterbury Earthquake Recovery Authority, August 3, 2015.</p>
+    </div>
+    <div id="footnote-000" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-000-backlink">87</a> Carver, Julian. “Using the Web in Earthquake Recovery.” New Zealand Government Web Toolkit. March 25, 2013. <a href="https://webtoolkit.govt.nz/blog/2013/03/using-the-web-in-earthquake-recovery/"><span class="e-link">https://webtoolkit.govt.nz/blog/2013/03/using-the-web-in-earthquake-recovery/</span></a></p>
+    </div>
+</div>
+
+                                                
+                                                <div id="footnote-999" class="_idFootnote">
+                                                    <p class="e-footnote-text">Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to <a href="odimpact.org/about">the peer reviewers</a> who provided input on a pre-published draft.</p>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="medium-1 column">
+                                                <div class="e-close"><i class="material-icons">close</i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </main>
+
+                                <script src="static/js/case-study-scripts.js"></script>
+
+                                
+
+
+<!--     <div class="b-build-team">
+        <div class="e-wrap">
+            <div class="e-social-media">
+                <a href="#" class="e-nav-item"><i class="e-social-media-item fa fa-lg fa-twitter"></i></a>
+                <a href="#" class="e-nav-item"><i class="e-social-media-item fa fa-lg fa-facebook"></i></a>
+                <a href="#" class="e-nav-item"><i class="e-social-media-item fa fa-lg fa-medium"></i></a>
+            </div>
+            <p>This website was created by these <a href="#">GovLabbers</a>.</p>
+        </div>
+    </div> -->
+    <footer class='b-footer'>
+        <div class="e-content">
+            <h4>In collaboration with</h4>
+            <a class="e-partner-logo" href="https://www.omidyar.com/" tagret="_blank"><img src="static/img/partners/omidyar-logo-white.svg" alt="Omidyar Network"></a>
+        </div>
+    </footer>
+    <div class="b-copyright">
+        <div class="row">
+            <a class="e-partner-logo" href="http://engineering.nyu.edu/tandon" tagret="_blank"><img src="static/img/partners/nyu.png" alt="NYU Tandon School of Engineering - New York University"></a>
+            <a class="e-cc-badge" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+            This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> <br> <a href="#">Copyright Infringement Information</a>.
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <script src="static/vendor/slick.min.js"></script>
+    <script src="static/vendor/EasePack.min.js"></script>
+    <script src="static/vendor/rAF.js"></script>
+    <script src="static/vendor/TweenLite.min.js"></script>
+    <script src="static/vendor/feed.min.js"></script>
+    <script src="static/vendor/prism.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.js"></script>
+
+    <script>
+    $(document).foundation();
+</script>
+
+    <script type="text/javascript" src="./static/js/scripts.js"></script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-40012093-5', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+</body>
+</html>

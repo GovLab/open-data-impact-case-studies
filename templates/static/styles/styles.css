@@ -4215,7 +4215,6 @@ table {
 div[disabled] {
   display: none; }
 div.e-box {
-  border: solid 1px #333;
   padding: 30px;
   margin-bottom: 15px; }
   div.e-box.m-borderless {
@@ -4743,6 +4742,86 @@ ul.b-sidebar {
   background-color: transparent;
   opacity: 0.0; }
 
+.map {
+  width: 900px;
+  margin: 0 auto;
+  display: none; }
+  @media screen and (min-width: 64.0625em) {
+    .map {
+      display: block; } }
+  .map .background {
+    fill: none;
+    pointer-events: all; }
+  .map .country {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round; }
+  .map .node.fade circle {
+    opacity: .15;
+    transition: opacity 0.5s; }
+  .map .node circle {
+    opacity: .75;
+    cursor: pointer;
+    transition: opacity 0.5s; }
+    .map .node circle.active {
+      opacity: .9;
+      fill: #008ab3 !important;
+      transition: opacity 0.1s; }
+  .map .node text {
+    fill: #fff;
+    cursor: pointer; }
+  .map .region {
+    fill: #ddd;
+    cursor: pointer;
+    transition: fill 0.1s; }
+    .map .region.active {
+      fill: #bbb;
+      transition: fill 0.1s; }
+    .map .region.selected {
+      fill: #c1d8dd; }
+
+.map-caption {
+  display: none; }
+  @media screen and (min-width: 64.0625em) {
+    .map-caption {
+      display: block; } }
+  .map-caption.default {
+    color: rgba(0, 0, 0, 0.2); }
+
+.map-alt {
+  display: none;
+  display: block; }
+  @media screen and (min-width: 64.0625em) {
+    .map-alt {
+      display: none; } }
+
+.accordion dt {
+  font-weight: bold;
+  overflow: hidden;
+  margin: 0;
+  padding: 0; }
+.accordion dd {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .8s ease;
+  box-sizing: border-box; }
+.accordion .accordion-item {
+  color: white;
+  font-weight: 400; }
+.accordion .accordion-item:nth-child(odd) {
+  background-color: #523080; }
+.accordion .accordion-item:nth-child(even) {
+  background-color: #47266f; }
+.accordion .accordion-item.active dd {
+  max-height: 900px; }
+.accordion p {
+  padding: 10px 10px 0 30px; }
+.accordion .material-icons {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Material Icons';
+  float: right; }
+
 .m-od-blue {
   background-color: #164A7A; }
 
@@ -4851,7 +4930,7 @@ ul.b-sidebar {
 #open-data-impact-homepage .b-top-section {
   height: 75vh;
   position: relative;
-  background: url("../img/home.jpg") no-repeat center center;
+  background: url("../img/banners/sm/home.jpg") no-repeat center center;
   background-size: cover; }
   #case-study-page .b-top-section .e-shade,
   #open-data-impact-homepage .b-top-section .e-shade {

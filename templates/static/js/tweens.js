@@ -29,23 +29,28 @@ $('#explore-link').click(function(event) {
     var badge2Done = false;
     var badge3Done = false;
     var badge4Done = false;
-    var stickyDone = false;
+    var stickyAppeared = false;
+    var stickyDisappeared = false;
     $('.b-sticky').hide();
 
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height(); // inside handler because window size could have changed between events, prob. not the fastest way
 
-        if (!stickyDone) {
+        if (!stickyAppeared) {
             if (scroll > 400) {
                 $('.b-sticky').removeClass('m-hidden');
                 $('.b-sticky').fadeIn('fast');
                 $('#overlay').addClass('m-active');
+                stickyAppeared = true;
             }
+        }
+
+        if (!stickyDisappeared) {
             if (scroll >= $('#a-explore').offset().top) {
                 $('.b-sticky').fadeOut('fast');
                 $('#overlay').removeClass('m-active');
-                stickyDone = true;
+                stickyDisappeared = true;
             }
         }
 

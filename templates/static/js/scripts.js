@@ -32,6 +32,7 @@ $(document).ready(function($) {
         $overlay.addClass('m-active');
     });
 
+
     // Search Field Functionality
     $('.js-search-submit').click(function(event) {
         var param = $('.js-search-value').val();
@@ -39,6 +40,13 @@ $(document).ready(function($) {
         if (param != '') {
             window.location.href = "http://thegovlab.org/?s=" + param;
         }
+    });
+
+
+    // Logic for Accordion Component
+    $('.accordion-item').click(function() {
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
     });
 
 

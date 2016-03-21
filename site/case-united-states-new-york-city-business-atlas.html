@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Data's Impact - The Govlab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="//use.typekit.net/zez3buj.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="static/vendor/normalize.css">
+    <link rel="stylesheet" href="static/vendor/slick.css">
+    <link rel="stylesheet" href="static/vendor/prism.css" />
+    <link rel="stylesheet" href="static/styles/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- needed up here because of scripts in child templates -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body id="case-study-page">
+    
+
+<!--     <header class="b-top-nav m-transparent">
+
+        <div class="e-nav-group m-left e-social-media">
+            <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
+        </div>
+
+        <div class="e-nav-group m-right">
+            <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
+            <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
+            <a href="about.html" class="e-nav-item" id="nav-about">About</a>
+        </div>
+
+        <a class="e-logo" href="./">
+            <img src="static/img/govlab-logo-white.png" alt="">
+        </a>
+
+    </header> -->
+
+    
+<header class="b-top-nav m-transparent m-fixed">
+
+    <div class="e-nav-group m-left e-social-media hide-for-small-only">
+        <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
+        <a href="http://thegovlab.org" class="e-nav-item" target="_blank">thegovlab.org</a>
+    </div>
+
+    <div class="e-nav-group m-right hide-for-small-only">
+        <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
+        <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
+        <a href="about.html" class="e-nav-item" id="nav-about">About</a>
+    </div>
+
+    <a class="e-logo" href="./">
+        <img src="static/img/govlab-logo-white.png" alt="">
+    </a>
+
+</header>
+
+
+    <!-- Main Menu (Off Canvas) -->
+    <nav class="b-main-menu">
+        <form class="b-search m-negative m-fixed" action="">
+        <input class="js-search-value" type="text">
+        <input class="js-search-submit js-search-trigger e-search-trigger material-icons" type="submit" value="search">
+    </form>
+        <a href="./">Home</a>
+    </nav>
+
+    
+
+
+<main class="case-study-page" role="main">
+
+    <div class="b-top-section" style="background-image: url(./static/img/banners/sm/nyc.jpg)">
+        <div class="e-shade"></div>
+        <hgroup class="e-titles">
+            <h1 class="e-main-title">United States' New York City Business Atlas</h1>
+            <h2 class="e-tagline">Leveling the Playing Field</h2>
+            <h4>by Andrew Young, David Sangokoya and Stefaan Verhulst<a class="_idFootnoteLink" href="#footnote-999">*</a></h4>
+            <div class="e-tags hide-for-small-only">
+                <div class="e-left">
+                    <p>Impact</p>
+                    <p>Sector</p>
+                    <p>Location</p>
+                </div>
+                <div class="e-right">
+                    <p>
+                        CREATING NEW ECONOMIC OPPORTUNITIES
+                        
+                    </p>
+                    <p>
+                        BUSINESS
+                        
+                    </p>
+                    <p>US</p>
+                </div>
+            </div>
+            <div class="e-read-times hide-for-small-only">
+                <p>Read Time</p>
+                <p>Brief View <strong>5 MINS</strong></p>
+                <p>Full Story <strong>20 MINS</strong></p>
+            </div>
+        </hgroup>
+        <div id="download-button">
+            <a href="./static/files/case-studies-nyc-business-atlas.pdf" class="b-button m-economic">Download The Report<i class="material-icons m-space">file_download</i></a>
+        </div>
+    </div>
+
+                <div class="row hide-for-small-only">
+                    <ul class="b-sidebar">
+                        <a href="#" id="facebook"><li class="facebook"><i class="fa fa-facebook"></i></li></a><a href="#" id="linkedin"><li class="linkedin"><i class="fa fa-linkedin"></i></li></a><a href="#" id="google-plus"><li class="google-plus"><i class="fa fa-google-plus"></i></li></a><a href="#" id="twitter"><li class="twitter"><i class="fa fa-twitter"></i></li></a><a href="#" id="email" message="mailto:?subject=United%20States%27%20New%20York%20City%20Business%20Atlas&body=Leveling the Playing Field%0A%0ARead%20More%3A%0A%0A"><li class="email"><i class="fa fa-envelope"></i></li></a>
+                    </ul>
+                </div>
+
+                    
+                    <section class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Summary</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    
+<p class="text">While retail entrepreneurs are experts in their respective trades, they often lack access to high-quality information about economic conditions in the neighborhoods where they operate or are considering operating. The NYC Business Atlas is designed to alleviate that information gap by providing a public tool that gives small businesses access to high-quality data to help them decide where to establish a new business or expand an existing one. The tool brings together a diversity of data, including business-filing data from the Department of Consumer Affairs, sales tax data from the Department of Finance, demographic data from the census and traffic data from Placemeter, a New York City startup focusing on real-time traffic information.</p>
+
+
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+
+                    
+                    <div class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Takeaways</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    
+<ul>
+    <li class="e-list">The impact of open data can be amplified when government works directly with private business on targeted initiatives. Such “data collaboratives” represent a new form of collaboration, beyond the public-private partnership model, in which participants from different sectors – including private companies, research institutions and government agencies  –  can exchange data to help solve public problems.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-2">2</a></span></span></li>
+    <li class="e-list">Although a large number of early stage open data projects around the world focus on simply pushing information out, the next stage should revolve around targeted, user-centered release. In the example discussed here, the user-centered work done by the Department of Small Business Services helped ensure that the Business Atlas was designed in a way that made it particularly useful for the New York small business community. </li>
+    <li class="e-list">New York City’s Mayor’s Office of Data Analytics (MODA) provides an example of how governments can go beyond providing data in raw formats to the public by also performing the analytical work needed for those within and outside government to gain new insights from the data.</li>
+</ul>
+
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+
+                    
+
+                    
+                    <div class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Background</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    
+<div>
+<p class="text">In recent years there has been growing recognition that urban life is being transformed by data. From Chicago to London to Singapore, city administrators and planners are turning to data to help plan the future and address mundane, everyday issues like potholes and waste collection. Underlying such trends is an awareness of the vast amounts of data being generated (often passively) in urban centers, through devices like smartphones and sensors. In the words of <span class="e-italic">The Economist</span> magazine, cities today are “open air computers” and “data factories.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-3">3</a></span></span></p>
+<p class="text">In 2002, Michael Bloomberg assumed office as the 108th mayor of New York City. Bloomberg had made his fortune providing data and sophisticated analytics to financial traders. It was probably inevitable that, under his administration, New York would join the many cities around the world seeking to extract greater value from the terabytes of data being created every day by their citizens.</p>
+</div>
+<p class="text">In 2013, through Executive Order No. 306, New York City created the Mayor’s Office of Data Analytics (MODA).<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-4">4</a></span></span><span class="e-fn-ref _idGenCharOverride-1"> </span>The stated goal of the office was “leveraging City data for more effective, efficient, and transparent government.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-5">5</a></span></span> Today the office comprises a team of analysts, based in City Hall, who collect and analyze data from a wide variety of sources. Among other areas, MODA works on crime prevention, disaster response, improving public services, and economic development. MODA also played a key role in setting up New York’s Open Data Portal (https://nycopendata.socrata.com), which currently houses over 12,000 data sets related to health, business, public safety and much more. In addition, MODA helped establish DataBridge, a single, unified repository of information that aims to enhance data sharing and interoperability among various NYC organizations.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-6">6</a></span></span> In July 2015, the city released its updated “Open Data for All” strategy document, which focuses on two central “beliefs”: that every New Yorker can benefit from open data; and that open data can benefit from every New Yorker.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-7">7</a></span></span></p>
+<p class="e-img"><img class="_idGenObjectAttribute-1" src="static/img/studies/ny-0.png" alt="" /></p>
+<p class="e-caption"><span class="e-italic">Figure 1. New York City’s Open Data Portal</span></p>
+<p class="text">Because of these and other efforts, New York City is generally considered a leader in open data initiatives in the United States (itself the second-ranked country on the Open Data Barometer).<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-8">8</a></span></span> MODA, in particular, is a pioneering and increasingly emulated entity in the open data ecosystem. It has played an important role not only in releasing open data to increase accountability and innovation, but also in doing analytical work on that data. This work includes measuring the efficiency of city services, providing data-driven predictions and, as with the Business Atlas, combining high-value data sets from a diversity of sources to provide new insights and visualizations to government agencies and the public.</p>
+<p class="text">MODA’s analytics efforts, led at the time of writing by New York City’s Chief Analytics Officer, Dr. Amen Ra Mashariki, are deployed to aid disaster response and recovery, improve delivery of city agencies and services, enable data sharing among city agencies, crystallize best practices in data analysis and, as evidenced in the case described here, spur economic development.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-9">9</a></span></span></p>
+<p class="text">Within these domains of focus and types of analytical work, MODA subscribes to four central, overarching goals: improving awareness, measuring success, maximizing impact and increasing engagement.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-10">10</a></span></span></p>
+<p class="text">Mike Flowers, Mashariki’s predecessor and the first New York City chief analytics officer, described the integral role played by MODA in the city’s data operations in an annual report released after MODA’s first year of operations: “Over the last three terms, our agencies have developed information systems that they use to make our streets safer, our businesses vibrant, and our parks cleaner. Through a blend of statistical analysis, engineering skills, and deep investigation of the missions and organizational structure of the agencies – the why, what and how of city government – MODA ties these systems together, enabling the City to tap into our collective knowledge and experience to tackle our thorniest challenges.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-11">11</a></span></span></p>
+<p class="text">According to MODA officials, its mission and projects are focused on the “thorny” challenges at hand for New Yorkers while its efforts are using new analytical capabilities. Lindsay Mollineaux, director of analytics at MODA, for instance, notes that, “[Addressing real need] is very much how we think about things at MODA – every project is addressing need. We want to make sure what we’re doing is useful.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-12">12</a></span></span></p>
+
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+
+
+                    
+                    <div class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Project</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    
+<p class="text">The New York City Business Atlas, initiated in 2013, is part of a broader effort by MODA aimed at “driving small business growth with analytics.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-13">13</a></span></span><span class="e-fn-ref _idGenCharOverride-1"> </span>This broader effort also includes the Comprehensive Business Census, which arose in the aftermath of Superstorm Sandy, when the city struggled to assess the storm’s full impact on businesses and the economy. Before MODA began working in this area, there existed no comprehensive record of businesses in the city. MODA sought to fill this information gap by working with PLUTO, a database of land use and geographic data, to assemble a more “complete picture” of businesses and business activity in New York City.</p>
+<p class="e-img"><img class="_idGenObjectAttribute-2" src="static/img/studies/ny-1.png" alt="" /></p>
+<p class="e-caption"><span class="e-italic">Figure 2. New York City Business Atlas with Business Conditions Sidebar</span></p>
+<p class="text">The New York City Business Atlas grew out of a recognition among city officials that, when it comes to data, large businesses often have an edge over smaller ones. While large businesses can afford to hire expensive consultants and commission data-driven research, smaller businesses must rely on “gut feeling” to make important business decisions, such as where to open a new location or how to navigate regulatory challenges. Mike Flowers explains the advantages held by large businesses as follows: “In many parts of Manhattan, you can’t swing a dead cat without hitting a Starbucks. Those guys have robust infrastructure, capacity to help them figure out two things: a) where to open up in the first place; and b) the piece of this about navigating the regulatory challenges of opening a place.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-14">14</a></span></span><span class="e-fn-ref _idGenCharOverride-1"></span> He adds that, for small businesses in particular, data paucity is a “chronic” problem, and “probably [has] been chronic since Emperor Augustus was trying incentivize small business in Rome.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-15">15</a></span></span></p>
+<p class="text">Though followed by a number of twists and turns, work on the Business Atlas began following a discussion within MODA on how small business owners often feel under siege from the city government, rather than supported by it. Flowers noted that the city restaurant rating system, which assigns letter grades to restaurants based on their compliance with health regulations, tends to benefit large chains and restaurants, which typically have “the wherewithal and institutional experience and institutional resources to bake into their infrastructure code compliance.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-16">16</a></span></span> The Business Atlas represents a pivot away from the specific inspiration regarding code compliance, but remains in line with the focus on arming small business owners with new tools to compete with bigger chains.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-17">17</a></span></span></p>
+<p class="text">In the words of John Feinblatt, chief policy adviser to Mayor Bloomberg, the Business Atlas “democratizes” information, “putting quality research into the hands of small business owners.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-18">18</a></span></span> It is important to note that much (but not all) of the data included in the Business Atlas already existed – for example, through the city’s open data portal –&#160;and was theoretically at least available to small business owners. As noted, however, it was often in fragmentary form, and without the sophisticated analytics and visualization layer contained within the Business Atlas, both of which make the data far more accessible and useful for entrepreneurs. To use the tool, businesspeople visit maps.nyc.gov/businessatlas, and select a neighborhood. The data pulled up by the app includes population, population distribution by age, median household income, how many households have children, homeowners vs. renters, and much more specific to that neighborhood. Not only is the Business Atlas itself free to use, but users can also sign up for free training sessions, held in city business centers, that will help them derive the most from the tool.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-19">19</a></span></span></p>
+<p class="text">One of the platform’s most important pieces of data is the foot traffic in various neighborhoods. To collect this information, New York partnered with a local startup, Placemeter, a self-styled “urban intelligence platform.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-20">20</a></span></span> Placemeter uses cameras (including existing municipal street traffic cameras and sensor-laden IP cameras) to assess population movement through neighborhoods. The resulting information includes both pedestrian and vehicular traffic data. While much of the analytical work is done algorithmically, Placemeter also relies on humans to analyze videos and perform random quality checks of the work being done by the algorithms.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-21">21</a></span></span> The resulting data gives businesspeople an indication of prospective customer numbers, thus helping guide location-relevant business decisions.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-22">22</a></span></span> The city also has plans to supplement the data using crowdsourced information. Although an important piece of the Business Atlas, Placemeter’s work on quantifying public spaces could lead to privacy concerns directed at the city down the road. That said, Placemeter has taken concrete steps to mitigate those concerns by: a) processing video in real time so that less than 0.01 percent of all video is recorded or stored – and only for processing and quality assurance purposes; and b) only providing anonymized counts of pedestrians, with no specific identities attached. Former U.S. Deputy Chief Technology Officer Nicole Wong also acts as a privacy adviser to the company.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-23">23</a></span></span></p>
+<p class="text">In addition to Placemeter data, the Atlas includes data pulled from a variety of government departments and agencies. These include the Department of Consumer Affairs, the Department of Finance (e.g., sales tax information), and demographic data from census results. The Atlas supplements this data with information shared from the Department of Health and Mental Hygiene (DOHMH), Business Integrity Commission (BIC), Department of Environmental Protection (DEP), Department of City Planning (DCP) and Department of Buildings (DOB) in New York City, as well as state and national open data.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-24">24</a></span></span> In many cases, MODA’s task involved combining and analyzing data sets that were already open and accessible to the public. In other cases, additional effort was required from MODA in order to secure the release of data. Sales tax data from the Department of Finance, for example, is protected due to the inclusion of personally identifiable information. In order to include the data in the Atlas, MODA first had to strip away personal information through an anonymization process.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-25">25</a></span></span></p>
+<p class="e-quote">“Some of the needed data in designing the Atlas was obvious to us, but the question was what is useful to entrepreneurs versus information overload?”</p>
+<p class="e-quote-author">– Lindsay Mollineaux, Mayor’s Office of Data Analytics</p>
+<p class="text">In order to combine all this data in a single place, the team creating the Atlas had to overcome several technical and conceptual challenges. For example, while as much data as possible was pulled from the city’s DataBridge (described above), there were inevitable issues concerning the compatibility of data sets. Differences between data standards and formats create a major and time-consuming challenge in the effort to combine multiple data streams into one usable tool. In addition, finding accurate data for local businesses proved more challenging than anticipated. As Mollineaux explained, each industry has its own particular licensing regulations (and some businesses, for example bookstores, have no licensing requirements at all), making it difficult to accurately represent and synthesize local business information across sectors.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-025-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-025">26</a></span></span></p>
+<p class="e-h2">User-Centered Design and Partnering with Department of Small Business Services</p>
+<p class="text">Although the general value proposition of the NYC Business Atlas was clear from the outset, MODA decided to partner with the New York City Department of Small Business Services (SBS) to ensure that the needs of small businesses (its target audience) were truly met. As Mollineaux noted: “Some of the needed data in designing the Atlas was obvious to us, but the question was what is useful to entrepreneurs versus information overload? SBS served as our subject matter experts who interfaced with actual entrepreneurs (for example, people might come to them about opening a bakery) and could use the Atlas to directly serve these needs. ... We always partner with client agencies who are subject matter experts and can help define what success looks like.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-024-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-024">27</a></span></span></p>
+<p class="text"><a id="_idTextAnchor000"></a>Through ethnographic research and interviews, SBS was able to help MODA determine what was most relevant for various types of users. For example, MODA originally focused on displaying some of the business and demographic information as a score for a given geographic location. User feedback, gathered with the assistance of SBS, helped MODA to recognize that, in fact, entrepreneurs would be more interested in less-aggregated data; most businesspeople wanted the underlying data rather than a one-size-fits-all score.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-023-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-023">28</a></span></span> Rather than a simple score or grade, therefore, the data is now mapped in a disaggregated, “raw” form, allowing users to draw their own conclusions.</p>
+<p class="text">In addition to partnering with SBS to supplement the informational base of the platform, MODA partnered with the New York City library system to drive use. Research had indicated to Flowers and his team that many entrepreneurs rely on their local library to gain insight into how to start a new business. With this audience of potential users in mind, MODA worked with and trained library staff to introduce the platform to potential entrepreneurs and essentially serve as “small business counselors.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-022-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-022">29</a></span></span></p>
+<p class="text">Overall, MODA’s approach of partnering with different agencies and institutions has proven remarkably fruitful. According to Flowers, it is part of a well-thought-out strategy to ensure the longevity of the Business Atlas. As Flowers puts it:  “You have to get the civil service on board. … If you don’t have them on board as major participants, then in the next election everything you worked on is gone.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-021-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-021">30</a></span></span></p>
+
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                    <div class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Impact</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    
+<div>
+<p class="text">Like many data-driven urban projects around the world, the Business Atlas has benefited from the existence of copious amounts of data and a relatively sophisticated user base that is well-informed and aware about the potential of open data. This conducive ecosystem has translated into tangible – and almost immediate – impact for the project’s intended beneficiaries.</p>
+<p class="e-box-title">Intended Beneficiaries</p>
+<table id="table001" class="No-Table-Style TableOverride-1">
+    <colgroup>
+    <col class="_idGenTableRowColumn-1" />
+    <col class="_idGenTableRowColumn-2" />
+</colgroup>
+<tbody>
+    <tr class="No-Table-Style _idGenTableRowColumn-3">
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">Entrepreneurs and Sma<a id="_idTextAnchor001"></a>ll Business Owners</p>
+        </td>
+        <td class="No-Table-Style CellOverride-2">
+            <p class="text">Community that will make the most direct use of data housed in the Business Atlas.</p>
+            <p class="text">Improved decision-making capabilities engendered through free access to market research data and analytics that would normally come at great cost.</p>
+            <p class="text">Evidence of market opportunities provided by the Atlas can be useful for securing financing and investment for new businesses.  </p>
+        </td>
+    </tr>
+    <tr class="No-Table-Style _idGenTableRowColumn-4">
+        <td class="No-Table-Style CellOverride-1">
+            <p class="text">Citizens of New York City</p>
+        </td>
+        <td class="No-Table-Style CellOverride-2">
+            <p class="text">By providing small business entrepreneurs with decision-making support, the Business Atlas seeks to enable the creation of new jobs across New York City.</p>
+            <p class="text">As a result of the new businesses opened based on Business Atlas insights, consumers should see an influx of new businesses targeted to the needs of their communities.</p>
+            <p class="text">In particular, residents of traditionally underserved neighborhoods in the city stand to benefit from new businesses being opened in their area as a result of a greater understanding of community-level needs and opportunities.</p>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+<p class="e-h2">Leveling the Playing Field for Market Research</p>
+<p class="text">One of the most important impacts of the Business Atlas is the way in which it levels the playing field between large and small businesses. MODA’s 2013 annual report points out that, “When a major national retailer looks to open a new storefront, they often commission sophisticated neighborhood market research that helps the company decide where to locate the new business.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-020-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-020">31</a></span></span> That type of research is often too expensive for smaller businesses. But the Business Atlas, as John Feinblatt, former Mayor Bloomberg’s chief policy adviser, puts it, “democratizes ... research, putting quality research into the hands of small business owners.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-019-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-019">32</a></span></span></p>
+<p class="text">Even when small businesses do have access to data (for example, through public feeds or other sources), they may lack the analytical skills to process and understand it. Here, too, the Business Atlas plays a powerful role, its sophisticated analytics and visualization tools further leveling the playing field between larger and smaller players. At a meeting of municipal chief data officers, Amen Ra Mashariki, New York City’s chief analytics officer, pointed out the many ways in which such data and analysis can empower small businesses. He cited the example of an entrepreneur approaching a bank for a loan. With the information contained within the Business Atlas, the entrepreneur can make a far more compelling case, backed by real evidence, for the sustainability and potential of the business.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-018-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-018">33</a></span></span></p>
+<p class="e-h2">Enabling Business Improvement District (BID) Analysis</p>
+<p class="text">A further impact of the Business Atlas is evident in SBS’ intentions to deploy the Atlas for its own work. Currently, SBS is planning to use data contained within the Atlas to aid in the analysis of how Business Improvement Districts (BIDs) are fueling economic growth in New York. BIDs are public-private partnerships “in which property and business owners elect to make a collective contribution to the maintenance, development and promotion of their commercial district.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-017-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-017">34</a></span></span> The data now in place, thanks to the Business Atlas, will allow SBS to compare BID neighborhoods in terms of economic change, commercial investments and business activities; this will in turn permit SBS to identify which BIDs have been most impactful to date and develop best practices to replicate their success across the city.</p>
+<p class="text">The deployment of the Business Atlas to fuel the growth of BIDs points to another particular community that stands to benefit from new availability of market research data: residents of underserved NYC neighborhoods. As Mashariki has pointed out, “city agencies can also use Business Atlas to address large businesses and show them that there is good reason for them to open locations in neighborhoods which they may have otherwise avoided.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-016-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-016">35</a></span></span> Instead of making location-based decisions based purely on intuition (or media-driven biases), companies can now take a closer look at data and find underserved areas that offer a compelling business case. This is just one more way in which the Business Atlas holds potential to level the playing field – for consumers as well as for businesses.</p>
+<p class="e-h2">Influencing Data Analytics Innovation in New York and Abroad</p>
+<p class="text">As with many of the examples included in this series of case studies, MODA’s work has had important ripple effects, spurring the development of other similar open data projects. Flowers notes that the Business Atlas “certainly has this burst through the wall capacity to show that open data can mean a lot more than simply building a Yelp app.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-015-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-015">36</a></span></span> Recently, for example, the Fire Department of New York (FDNY) set up an analytics unit modeled on MODA’s own analytics team. The efforts of the FDNY team include the development and use of a Risk Based Inspection System (RBIS), which “enables the Department to identify buildings most at risk for fire and prioritizes those for fire inspections.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-014-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-014">37</a></span></span> Data is pooled using DataBridge from an FDNY data warehouse and other city databases including City Planning, Buildings and others.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-013-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-013">38</a></span></span> In setting up the unit and its analytics platform, FDNY worked directly with MODA, providing an example of a constructive partnership and synergy across city departments.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-012-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-012">39</a></span></span></p>
+<p class="text">Another example of MODA’s ripple effects within NYC can be found in a NYC Buildings Department project to manage complaints about illegal building conversions, a “311 City Pulse” program that live-feeds city 311 activities, and a data collection and sharing mechanism on disaster response.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-011-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-011">40</a></span></span> All of these programs used lessons and principles that have been applied and tested by MODA.</p>
+<p class="text">Other cities have also taken notice of New York’s open data efforts. The London-based Capital City Foundation has suggested, for instance, that London should look to projects like the Business Atlas in its efforts to become a “smart city.” In a recent report, the foundation argued: “If a business wanted to appeal to customers from certain parts of London, data from Transport for London (TfL) shows exactly where people touch in and touch out of the transport network. Maps can thereby be created showing where people move from and to. This could be helpful to know which tube or bus stops to place a business near. Creating an online tool to make these kinds of data sets available would build on ideas started in New York City.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-010-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-010">41</a></span></span> It is likely that the appetite for similar data analytics teams will continue to spread, as the lessons learned and best practices from MODA are increasingly shared with innovators and policymakers around the world.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-009-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-009">42</a></span></span></p>
+
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                    
+                    <div class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Challenges</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    
+<div>
+    <p class="e-h2">Communicating Opportunity</p>
+    <p class="text">A tool is only useful if people actually use it. So while the Business Atlas presents a major opportunity for giving more businesspeople an understanding of the contexts in which they might consider opening a business, communicating that opportunity to the public will be an important ongoing challenge to ensure wide use. As Mike Flowers put it: The Business Atlas is part of an effort to give (a hypothetical) “Nadine’s Burritos” the type of market research insights and capabilities that have been enjoyed by the likes of McDonald’s and Subway for years.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-008-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-008">43</a></span></span> But making sure that Nadine – and thousands of small entrepreneurs like her – is aware of the availability of this information remains something of a challenge.</p>
+</div>
+<p class="text">To that end, awareness-raising and the types of outreach already conducted with city libraries will be essential. In addition, Flowers believes that the creation of an application program interface (API) to enable developers to take the data housed on the Business Atlas and create new apps could also help disseminate that data more widely.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-007-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-007">44</a></span></span></p>
+<p class="e-h2">Addressing Technical Challenges</p>
+<p class="text">In order to achieve its many ambitions for growing the Business Atlas, MODA will also need to address a number of technical challenges that could serve as stumbling blocks. For example, as noted previously, different types of businesses typically have different licensing requirements. As Mollineaux points out, this is just one instance of a more general issue – the different “data contexts” that exist for different categories of businesses, and that make it challenging to pull together and meaningfully analyze data from disparate sources.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-006-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-006">45</a></span></span></p>
+<p class="text">In the past, MODA has written a number of proprietary algorithms to overcome such difficulties. But challenges remain, and as the agency plans to add more data, they could possibly grow. Finding new ways to synthesize and harmonize large sources of data, pulled from different agencies and groups, is one of the key tasks confronting the agency as it seeks to expand its reach and scale up its efforts.</p>
+<p class="e-h2">Improving Granularity of Data</p>
+<p class="text">The information contained on the Business Atlas has proven to be very helpful for businesspeople seeking to identify suitable (or unsuitable) neighborhoods in which to operate. But as Flowers points out, “a neighborhood in New York City is bigger than most towns in America.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-005-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-005">46</a></span></span> He adds that, to increase its usefulness, the Business Atlas could seek to provide a finer level of granularity in the analysis it provides its users. For example, it could move beyond neighborhood-level information and, perhaps, focus on areas that included five or 10 blocks.</p>
+
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                    
+
+                    
+
+                    
+                    <div class="b-page-section">
+                        <div class="row">
+                            <aside class="medium-3 columns">
+                                <h3>Looking Forward</h3>
+                            </aside>
+                            <div class="large-8 columns end">
+                                <div class="e-expandable">
+                                    
+<div>
+<p class="text">MODA has in many respects changed the way citizens and policymakers in New York make decisions. The Business Atlas is just one example, albeit one with particularly significant potential. Given the early success of and positive response to Business Atlas, MODA has plans to scale it up and extend its reach in the coming years.</p>
+<p class="e-h2">Business Atlas 2.0: New Tools and Features</p>
+<p class="text">Business Atlas 2.0 is the name being applied to a suite of new tools and enhancements MODA is currently planning to add to the original Business Atlas. Among the new features that may be included in the planned update:<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-004-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-004">47</a></span></span></p>
+</div>
+<ul>
+    <li class="e-list">a feature that will allow businesspeople to compare multiple locations;</li>
+    <li class="e-list">more traffic information, including daily subway rider information;</li>
+    <li class="e-list">crowdsourced data on foot and vehicular traffic, with the intention of adding accuracy and completeness to Placemeter’s traffic numbers; and</li>
+    <li class="e-list">a “solver” tool that will allow entrepreneurs to enter their needs or specifications and identify potentially suitable locations for their businesses.</li>
+</ul>
+<p class="text">MODA is also considering adding a predictive analytics tool that would identify businesses at risk of failure, and proactively target them by offering assistance from other small businesses. This “targeted assistance” would, for example, take the form of loan offers or other financial assistance.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-003-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-003">48</a></span></span></p>
+<p class="e-h2">Partnerships and Collaborations</p>
+<p class="text">In addition to rolling out new features, MODA also plans to enhance existing, and initiate new, partnerships designed to increase the reach and usefulness of the Business Atlas. As discussed above, MODA is already partnering with SBS to analyze the economic growth of Business Improvement Districts in New York. This partnership will be continued and extended, with a particular focus on identifying common traits and behaviors that are most conducive to economic growth. One of the goals is to identify a series of Best Practices that can guide economic growth in the city.</p>
+<p class="text">Additionally, MODA plans to continue and initiate partnerships with a number of outside agencies, institutions, businesses and individuals.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-002-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-002">49</a></span></span> In the academic and research sector, MODA already partners with New York University’s Center for Urban Science and Progress (CUSP), Columbia’s Center for Data Science and the Rensselaer Polytechnic Institute. MODA’s collaboration with Microsoft Labs is specifically focused on a project regarding automated responses to 311 SMS messages. MODA also works closely with average citizens through hackathons during which new projects are developed and feedback from users is collected.</p>
+<p class="text">Although much of the work with Placemeter occurred as a single, one-time collaboration, new work by the startup could lead to future opportunities to supplement the Business Atlas. The next big step for Placemeter “is the ability to actually measure in real time the speed of cars in your neighborhood, then gather that data for the benefit of your neighborhood and more widely than city officials.”<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-001-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-001">50</a></span></span> This could not only play a major role in Vision Zero – Mayor Bill de Blasio’s mission to reduce traffic deaths to zero in New York City – but also provide additional traffic flow information to businesses.</p>
+<p class="text"><a id="_idTextAnchor002"></a>These and other changes are either planned or already underway. But many of the most important changes and additions in the years ahead remain unforeseen, and will likely arise directly from users. MODA’s “Open Data for All” strategy document outlines a concerted effort to learn by watching how the site is used, and by whom.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-000">51</a></span></span> What types of data and analytical tools are most useful? What aspects of the site seem to pose difficulties or represent friction for users? How do people discover the site, and what converts them into repeat visitors (as opposed to single-occasion users)? These are some of the questions MODA will be asking – and building on – as it moves forward.</p>
+
+                                    <span class="e-read-more js-more-toggle">Read More</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+
+                    <div class="b-page-section">
+                        <div class="row">
+                            <div class="large-10 large-offset-1 columns">
+                                <p class="e-last">Learn about our <a href="about.html">methodology</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    
+                            <div class="b-divider m-yellow m-next js-next" js-impact="economic" js-sector="business">
+                                
+                                        <div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <h1>Read Next</h1>
+                                            
+                                            
+                                            <a href="case-united-states-noaa-opening-up-global-weather-data-in-collaboration-with-businesses.html" class="impact-economic sector-weather">
+                                                <h2>United States' NOAA: Opening Up Global Weather Data in Collaboration with Businesses</h2>
+                                            </a>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <a href="case-united-states-opening-gps-data-for-civilian-use.html" class="impact-economic sector-geospatial">
+                                                <h2>United States Opening GPS Data for Civilian Use</h2>
+                                            </a>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <a href="case-united-kingdoms-transport-for-london.html" class="impact-economic sector-transportation">
+                                                <h2>United Kingdom's Transport for London</h2>
+                                            </a>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <a href="case-united-kingdoms-hm-land-registry-price-paid-data.html" class="impact-economic sector-geospatial">
+                                                <h2>United Kingdom's HM Land Registry Price Paid Data</h2>
+                                            </a>
+                                            
+                                            
+                                            
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="b-footnotes">
+                                        <div class="row">
+                                            <div class="medium-8 large-offset-3 column">
+                                                <h4>Reference</h4>
+                                                
+<div class="_idFootnotes">
+
+
+<div id="footnote-2" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-2-backlink">2</a>  Verhulst, Stefaan and David Sangokoya. “Data Collaboratives: Exchanging Data to Improve People’s Lives,” Medium, April 22, 2015. <a href="https://medium.com/@sverhulst/data-collaboratives-exchanging-data-to-improve-people-s-lives-d0fcfc1bdd9a"><span class="e-link">https://medium.com/@sverhulst/data-collaboratives-exchanging-data-to-improve-people-s-lives-d0fcfc1bdd9a</span></a>.</p></div>
+
+<div id="footnote-3" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-3-backlink">3</a> "Open-air Computers," The Economist, October 27, 2012. Accessed July 14, 2015. <a href="http://www.economist.com/news/special-report/21564998-cities-are-turning-vast-data-factories-open-air-computers"><span class="e-link">http://www.economist.com/news/special-report/21564998-cities-are-turning-vast-data-factories-open-air-computers</span></a>.</p></div>
+
+<div id="footnote-4" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-4-backlink">4</a> Exec. Order No. 306, 3 C.F.R. (2013), <a href="http://www.nyc.gov/html/om/pdf/eo/eo_306.pdf"><span class="e-link">http://www.nyc.gov/html/om/pdf/eo/eo_306.pdf</span></a>.</p></div>
+
+<div id="footnote-5" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-5-backlink">5</a> Flowers, Michael. “NYC by the Numbers Annual Report.” New York City Government. December 2013. <a href="http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf"><span class="e-link">http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf</span></a>.</p></div>
+
+<div id="footnote-6" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-6-backlink">6</a> Yasin, Rutrell. “How analytics is making NYC’s streets and buildings safer.” GCN, October 4, 2013. <a href="http://gcn.com/articles/2013/10/04/gcn-award-nyc-databridge.aspx"><span class="e-link">http://gcn.com/articles/2013/10/04/gcn-award-nyc-databridge.aspx</span></a>.</p></div>
+
+<div id="footnote-7" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-7-backlink">7</a> “Open Data for All” New York City Government. 2015. <a href="http://www1.nyc.gov/assets/home/downloads/pdf/reports/2015/NYC-Open-Data-Plan-2015.pdf"><span class="e-link">http://www1.nyc.gov/assets/home/downloads/pdf/reports/2015/NYC-Open-Data-Plan-2015.pdf</span></a></p></div>
+
+<div id="footnote-8" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-8-backlink">8</a> <a href="http://barometer.opendataresearch.org/report/analysis/rankings.html"><span class="e-link">http://barometer.opendataresearch.org/report/analysis/rankings.html</span></a></p></div>
+
+<div id="footnote-9" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-9-backlink">9</a> Flowers, Michael. “NYC by the Numbers Annual Report.” New York City Government. December 2013. <a href="http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf"><span class="e-link">http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf</span></a>.</p></div>
+
+<div id="footnote-10" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-10-backlink">10</a> “NYC MODA Presentation Federal Summit.” New York City: NYC Analytics, February 2015. <a href="http://lnwprogram.org/sites/default/files/NYC_MODA_Presentation_Federal_Summit.pdf"><span class="e-link">http://lnwprogram.org/sites/default/files/NYC_MODA_Presentation_Federal_Summit.pdf</span></a></p></div>
+
+<div id="footnote-11" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-11-backlink">11</a> Flowers, Michael. “NYC by the Numbers Annual Report.” New York City Government. December 2013. <a href="http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf"><span class="e-link">http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf</span></a>.</p></div>
+
+<div id="footnote-12" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-12-backlink">12</a> GovLab interview with Lindsay Mollineaux, Director of Analytics, Mayor’s Office of Data Analytics, New York City, July 2, 2015.</p></div>
+
+<div id="footnote-13" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-13-backlink">13</a> Flowers, Michael. “NYC by the Numbers Annual Report.” New York City Government. December 2013. <a href="http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf"><span class="e-link">http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf</span></a>.</p></div>
+
+<div id="footnote-14" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-14-backlink">14</a> GovLab interview with Mike Flowers, former Chief Analytics Officer, Mayor’s Office of Data Analytics, New York City, August 14, 2015.</p></div>
+
+<div id="footnote-15" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-15-backlink">15</a> GovLab interview with Mike Flowers, former Chief Analytics Officer, Mayor’s Office of Data Analytics, New York City, August 14, 2015.</p></div>
+
+<div id="footnote-16" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-16-backlink">16</a> GovLab interview with Mike Flowers, former Chief Analytics Officer, Mayor’s Office of Data Analytics, New York City, August 14, 2015.</p></div>
+
+<div id="footnote-17" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-17-backlink">17</a> In a separate initiative, MODA is collaborating with the New York City Small Business Services “to reduce the regulatory burden on small businesses in New York City” by sending “trained client managers to neighborhoods across the five boroughs to provide business owners with targeted education informed by data showing the specific needs in a given neighborhood – including top violations, areas of noncompliance, new business growth data, 311 complaints, and more.” “Small Business Services Launches Proactive Education and Outreach Efforts to Help Ease Regulatory Burden on New York City Small Businesses.” New York City Small Business Services. May 27, 2015. <a href="http://www.nyc.gov/html/sbs/html/pr/2015_05_27_SB1.shtml"><span class="e-link">http://www.nyc.gov/html/sbs/html/pr/2015_05_27_SB1.shtml</span></a></p></div>
+
+<div id="footnote-18" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-18-backlink">18</a> Schweidel, D. A. Profiting from the data economy: Understanding the roles of consumers, innovators, and regulators in a data-driven world (Upper Saddle River, NJ: Pearson Education).</p></div>
+
+<div id="footnote-19" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-19-backlink">19</a> Furman, Phyllis. “Map this! New city tech tool lets small businesses compete with the big guys by dishing data.” New York Daily News. December 16, 2013. <a href="http://www.nydailynews.com/new-york/map-new-city-tech-tool-lets-small-businesses-compete-big-guys-dishing-data-article-1.1559044"><span class="e-link">http://www.nydailynews.com/new-york/map-new-city-tech-tool-lets-small-businesses-compete-big-guys-dishing-data-article-1.1559044</span></a></p></div>
+
+<div id="footnote-20" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-20-backlink">20</a> GovLab interview with Florent Peyre, Chief Operating Officer and Co-Founder, Placemeter, August 19, 2015.</p></div>
+
+<div id="footnote-21" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-21-backlink">21</a> GovLab interview with Florent Peyre, Chief Operating Officer and Co-Founder, Placemeter, August 19, 2015.</p></div>
+
+<div id="footnote-22" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-22-backlink">22</a> "Platform - How It Works." Placemeter. <a href="https://www.placemeter.com/platform"><span class="e-link">https://www.placemeter.com/platform</span></a></p></div>
+
+<div id="footnote-23" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-23-backlink">23</a> “Privacy by Design.” Placemeter. <a href="http://www.placemeter.com/privacy"><span class="e-link">http://www.placemeter.com/privacy</span></a></p></div>
+
+<div id="footnote-24" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-24-backlink">24</a> “NYC MODA Presentation Federal Summit.” New York City: NYC Analytics, February 2015. <a href="http://lnwprogram.org/sites/default/files/NYC_MODA_Presentation_Federal_Summit.pdf"><span class="e-link">http://lnwprogram.org/sites/default/files/NYC_MODA_Presentation_Federal_Summit.pdf</span></a></p></div>
+
+<div id="footnote-25" class="_idFootnote"><p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_New_Zealand_Christchurch_Earthquakes.html#footnote-25-backlink">25</a> GovLab interview with Mike Flowers, former Chief Analytics Officer, Mayor’s Office of Data Analytics, New York City, August 14, 2015.</p></div>
+
+    <div id="footnote-025" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-025-backlink">26</a> GovLab interview with Lindsay Mollineaux, Director of Analytics, Mayor’s Office of Data Analytics, New York City, July 2, 2015.</p>
+    </div>
+    <div id="footnote-024" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-024-backlink">27</a> GovLab interview with Lindsay Mollineaux, Director of Analytics, Mayor’s Office of Data Analytics, New York City, July 2, 2015.</p>
+    </div>
+    <div id="footnote-023" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-023-backlink">28</a> GovLab interview with Lindsay Mollineaux, Director of Analytics, Mayor’s Office of Data Analytics, New York City, July 2, 2015.</p>
+    </div>
+    <div id="footnote-022" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-022-backlink">29</a> GovLab interview with Mike Flowers, former Chief Analytics Officer, Mayor’s Office of Data Analytics, New York City, August 14, 2015.</p>
+    </div>
+    <div id="footnote-021" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-021-backlink">30</a> GovLab interview with Mike Flowers, former Chief Analytics Officer, Mayor’s Office of Data Analytics, New York City, August 14, 2015.</p>
+    </div>
+    <div id="footnote-020" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-020-backlink">31</a> Neubauer, Miranda. “With Business Atlas, NYC Analytics Office Looks to 2014.” TechPresident. January 2, 2014. <a href="http://techpresident.com/news/24635/business-atlas-nyc-analytics-office-looks-2014"><span class="e-link">http://techpresident.com/news/24635/business-atlas-nyc-analytics-office-looks-2014</span></a></p>
+    </div>
+    <div id="footnote-019" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-019-backlink">32</a> Krasny, Jill. “NYC Data Tool Gives Small Business an Edge.” Inc. December 27, 2013. <a href="http://www.inc.com/jill-krasny/nyc-business-atlas-helps-small-businesses.html"><span class="e-link">http://www.inc.com/jill-krasny/nyc-business-atlas-helps-small-businesses.html</span></a></p>
+    </div>
+    <div id="footnote-018" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-018-backlink">33</a> “Towards Data Driven Cities? Meet up with Chief Data Officers.” Proceedings of La Fabrique De La Cite, Paris. March 23, 2015. <a href="http://www.lafabriquedelacite.com/fabrique-de-la-cite/data.nsf/FDD3CB2E8CEA41D2C1257E0F00324482/$file/actes_cdo_02062015_def_web.pdf."><span class="e-link">http://www.lafabriquedelacite.com/fabrique-de-la-cite/data.nsf/FDD3CB2E8CEA41D2C1257E0F00324482/$file/actes_cdo_02062015_def_web.pdf.</span></a></p>
+    </div>
+    <div id="footnote-017" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-017-backlink">34</a> New York City Department of Small Business Services. “Starting a Business Improvement District: A Step-by-Step Guide.” Nyc.gov. 2003. <a href="http://www.nyc.gov/html/sbs/downloads/pdf/bid_guide_complete.pdf."><span class="e-link">http://www.nyc.gov/html/sbs/downloads/pdf/bid_guide_complete.pdf.</span></a></p>
+    </div>
+    <div id="footnote-016" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-016-backlink">35</a> “Towards Data Driven Cities? Meet up with Chief Data Officers.” Proceedings of La Fabrique De La Cite, Paris. March 23, 2015. <a href="http://www.lafabriquedelacite.com/fabrique-de-la-cite/data.nsf/FDD3CB2E8CEA41D2C1257E0F00324482/$file/actes_cdo_02062015_def_web.pdf."><span class="e-link">http://www.lafabriquedelacite.com/fabrique-de-la-cite/data.nsf/FDD3CB2E8CEA41D2C1257E0F00324482/$file/actes_cdo_02062015_def_web.pdf.</span></a></p>
+    </div>
+    <div id="footnote-015" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-015-backlink">36</a> GovLab interview with Mike Flowers, former Chief Analytics Officer, Mayor’s Office of Data Analytics, New York City, August 14, 2015.</p>
+    </div>
+    <div id="footnote-014" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-014-backlink">37</a> “FireCast: Leveraging Big Data for Mitigating Fire Risks.” The Innovation Enterprise. January 22, 2014. <a href="https://ieondemand.com/divisions/big-data/events/4/presentations/firecast-leveraging-big-data-for-mitigating-fire-risks#sthash.FidXBzgc.dpuf."><span class="e-link">https://ieondemand.com/divisions/big-data/events/4/presentations/firecast-leveraging-big-data-for-mitigating-fire-risks#sthash.FidXBzgc.dpuf.</span></a></p>
+    </div>
+    <div id="footnote-013" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-013-backlink">38</a> Yasin, Rutrell. “How analytics is making NYC’s streets and buildings safer.” GCN, October 4, 2013. <a href="http://gcn.com/articles/2013/10/04/gcn-award-nyc-databridge.aspx">http://gcn.com/articles/2013/10/04/gcn-award-nyc-databridge.aspx</a>.</p>
+    </div>
+    <div id="footnote-012" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-012-backlink">39</a> Flowers, Michael. “NYC by the Numbers Annual Report.” New York City Government. December 2013. <a href="http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf."><span class="e-link">http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf.</span></a></p>
+    </div>
+    <div id="footnote-011" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-011-backlink">40</a> <a href="http://gcn.com/articles/2014/02/19/new-york-city-geek-squad.aspx"><span class="e-link">http://gcn.com/articles/2014/02/19/new-york-city-geek-squad.aspx</span></a></p>
+    </div>
+    <div id="footnote-010" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-010-backlink">41</a> Coepland, Eddie. “Big Data in the Big Apple.” Capital City Foundation. 2015. <a href="http://capitalcityfoundation.london/big-data-in-the-big-apple-web-version/."><span class="e-link">http://capitalcityfoundation.london/big-data-in-the-big-apple-web-version/.</span></a></p>
+    </div>
+    <div id="footnote-009" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-009-backlink">42</a> Flowers, Mike and Lauren Talbot. “Building a Gov Data Skunkworks.” Code for America. February 18, 2014. <a href="http://www.codeforamerica.org/peer-network-training/02-18-2014/."><span class="e-link">http://www.codeforamerica.org/peer-network-training/02-18-2014/.</span></a></p>
+    </div>
+    <div id="footnote-008" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-008-backlink">43</a> GovLab interview with Mike Flowers, former Chief Analytics Officer, Mayor’s Office of Data Analytics, New York City, August 14, 2015.</p>
+    </div>
+    <div id="footnote-007" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-007-backlink">44</a> GovLab interview with Mike Flowers, former Chief Analytics Officer, Mayor’s Office of Data Analytics, New York City, August 14, 2015.</p>
+    </div>
+    <div id="footnote-006" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-006-backlink">45</a> GovLab interview with Lindsay Mollineaux, Director of Analytics, Mayor’s Office of Data Analytics, New York City, July 2, 2015.</p>
+    </div>
+    <div id="footnote-005" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-005-backlink">46</a> GovLab interview with Mike Flowers, former Chief Analytics Officer, Mayor’s Office of Data Analytics, New York City, August 14, 2015.</p>
+    </div>
+    <div id="footnote-004" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-004-backlink">47</a> Flowers, Michael. “NYC by the Numbers Annual Report.” New York City Government. December 2013. <a href="http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf."><span class="e-link">http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf.</span></a></p>
+    </div>
+    <div id="footnote-003" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-003-backlink">48</a> Flowers, Michael. “NYC by the Numbers Annual Report.” New York City Government. December 2013. <a href="http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf."><span class="e-link">http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf.</span></a></p>
+    </div>
+    <div id="footnote-002" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-002-backlink">49</a> Flowers, Michael. “NYC by the Numbers Annual Report.” New York City Government. December 2013. <a href="http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf."><span class="e-link">http://www.nyc.gov/html/analytics/downloads/pdf/annual_report_2013.pdf.</span></a></p>
+    </div>
+    <div id="footnote-001" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-001-backlink">50</a> GovLab interview with Florent Peyre, Chief Operating Officer and Co-Founder, Placemeter, August 19, 2015.</p>
+    </div>
+    <div id="footnote-000" class="_idFootnote">
+        <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="case-studies-2_US_New_York_City_Business_Atlas.html#footnote-000-backlink">51</a> “Open Data for All” New York City Government. 2015. <a href="http://www1.nyc.gov/assets/home/downloads/pdf/reports/2015/NYC-Open-Data-Plan-2015.pdf"><span class="e-link">http://www1.nyc.gov/assets/home/downloads/pdf/reports/2015/NYC-Open-Data-Plan-2015.pdf</span></a></p>
+    </div>
+</div>
+
+                                                
+                                                <div id="footnote-999" class="_idFootnote">
+                                                    <p class="e-footnote-text">Special thanks to Akash Kapur who provided crucial editorial support for this case study, and to <a href="odimpact.org/about">the peer reviewers</a> who provided input on a pre-published draft.</p>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="medium-1 column">
+                                                <div class="e-close"><i class="material-icons">close</i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </main>
+
+                                <script src="static/js/case-study-scripts.js"></script>
+
+                                
+
+
+<!--     <div class="b-build-team">
+        <div class="e-wrap">
+            <div class="e-social-media">
+                <a href="#" class="e-nav-item"><i class="e-social-media-item fa fa-lg fa-twitter"></i></a>
+                <a href="#" class="e-nav-item"><i class="e-social-media-item fa fa-lg fa-facebook"></i></a>
+                <a href="#" class="e-nav-item"><i class="e-social-media-item fa fa-lg fa-medium"></i></a>
+            </div>
+            <p>This website was created by these <a href="#">GovLabbers</a>.</p>
+        </div>
+    </div> -->
+    <footer class='b-footer'>
+        <div class="e-content">
+            <h4>In collaboration with</h4>
+            <a class="e-partner-logo" href="https://www.omidyar.com/" tagret="_blank"><img src="static/img/partners/omidyar-logo-white.svg" alt="Omidyar Network"></a>
+        </div>
+    </footer>
+    <div class="b-copyright">
+        <div class="row">
+            <a class="e-partner-logo" href="http://engineering.nyu.edu/tandon" tagret="_blank"><img src="static/img/partners/nyu.png" alt="NYU Tandon School of Engineering - New York University"></a>
+            <a class="e-cc-badge" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+            This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> <br> <a href="#">Copyright Infringement Information</a>.
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <script src="static/vendor/slick.min.js"></script>
+    <script src="static/vendor/EasePack.min.js"></script>
+    <script src="static/vendor/rAF.js"></script>
+    <script src="static/vendor/TweenLite.min.js"></script>
+    <script src="static/vendor/feed.min.js"></script>
+    <script src="static/vendor/prism.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.js"></script>
+
+    <script>
+    $(document).foundation();
+</script>
+
+    <script type="text/javascript" src="./static/js/scripts.js"></script>
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-40012093-5', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+</body>
+</html>
