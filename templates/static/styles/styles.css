@@ -4798,6 +4798,7 @@ ul.b-sidebar {
 
 body {
   font-family: sans-serif;
+  color: white;
   line-height: 1.6;
   font-weight: 100; }
 
@@ -4823,7 +4824,10 @@ body {
   margin: 0; }
 
 .dt-1, .dt-3 {
-  background-color: #198ab0; }
+  background-color: #1f89b0; }
+
+.dt-2 {
+  background: #137c9f; }
 
 .accordion-item.active dd {
   max-height: 900px; }

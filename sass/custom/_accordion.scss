@@ -1,5 +1,6 @@
 body{
   font-family: sans-serif;
+  color: rgba(255,255,255,1);
   line-height: 1.6;
   font-weight: 100;
 }
@@ -31,8 +32,14 @@ body{
   box-sizing: border-box;
   margin: 0;
 }
-.dt-1, .dt-3{
-  background-color:rgba(25,138,176, 1)
+.dt-1, .dt-3,{
+  background-color:rgba(31,137,176, 1);
+}
+.dt-2{
+  background:rgba(19,124,159, 1);
+}
+
+.dd-1, .dd-3{
 }
 
 .accordion-item.active dd {
