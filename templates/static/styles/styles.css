@@ -4796,6 +4796,10 @@ ul.b-sidebar {
     .map-alt {
       display: none; } }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   font-family: proxima-nova;
   color: white;
@@ -4810,29 +4814,28 @@ body {
   border: none; }
 
 .accordion dt {
-  padding: 10px;
-  font-weight: bold;
-  border-bottom: 1px solid #ddd; }
+  font-weight: bold; }
 
 .accordion dd {
   max-height: 0;
   overflow: hidden;
   transition: max-height .8s ease;
-  padding: 0 15px;
-  box-sizing: border-box;
-  margin: 0; }
+  box-sizing: border-box; }
 
 .dt-1, .dt-3 {
+  background-color: #1f89b0; }
+
+.dd-1, .dd-3 {
   background-color: #1f89b0; }
 
 .dt-2 {
   background-color: #137c9f; }
 
-.dd-1, .dd-3 {
-  background-color: #1f89b0; }
-
 .dd-2 {
   background-color: #137c9f; }
+
+p {
+  padding: 10px; }
 
 .accordion-item.active dd {
   max-height: 900px; }

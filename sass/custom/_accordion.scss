@@ -3,7 +3,10 @@ $accordion-odd-bars-color: rgba(31,137,176, 1);
 $accordion-even-bars-color: rgba(19,124,159, 1);
 $accordion-font: proxima-nova;
 
-
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
   font-family: $accordion-font;
   color: $accordion-font-color;
@@ -19,38 +22,35 @@ body{
  border: none;
 }
 
-.accordion-item {
+.accordion-item{
 
 }
-
 .accordion dt {
-  padding: 10px;
   font-weight: bold;
-  border-bottom: 1px solid #ddd;
 }
-
 .accordion dd {
   max-height: 0;
   overflow: hidden;
   transition: max-height .8s ease;
-  padding: 0 15px;
   box-sizing: border-box;
-  margin: 0;
 }
+
 .dt-1, .dt-3,{
+  background-color: $accordion-odd-bars-color;
+}
+.dd-1, .dd-3{
   background-color: $accordion-odd-bars-color;
 }
 .dt-2{
   background-color: $accordion-even-bars-color;
 }
-
-.dd-1, .dd-3{
-  background-color: $accordion-odd-bars-color;
-}
 .dd-2{
   background-color: $accordion-even-bars-color;
 }
 
+p{
+  padding: 10px;
+}
 .accordion-item.active dd {
   max-height: 900px;
 }
