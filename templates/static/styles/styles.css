@@ -4797,7 +4797,8 @@ ul.b-sidebar {
       display: none; } }
 
 .accordion-item {
-  color: white; }
+  color: white;
+  font-weight: 400; }
 
 .accordion dt {
   font-weight: bold;
