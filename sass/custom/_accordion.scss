@@ -46,9 +46,11 @@ body{
 .dd-2{
   background-color: $accordion-even-bars-color;
 }
-
 p{
   padding: 12px;
+}
+.material-icons{
+
 }
 .accordion-item.active dd {
   max-height: 900px;
