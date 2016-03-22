@@ -5250,7 +5250,8 @@ ul.b-sidebar {
   font-size: 22px !important; }
 
 .e-scrollspy {
-  text-align: right; }
+  text-align: right;
+  padding-top: 30px; }
   .e-scrollspy li {
     color: rgba(0, 0, 0, 0.3);
     text-align: right;
@@ -5265,7 +5266,10 @@ ul.b-sidebar {
       font-weight: 600; }
   .e-scrollspy.m-active {
     position: fixed;
-    top: 67px;
+    width: 370px;
+    padding-right: 20px; }
+  .e-scrollspy.m-absolute {
+    position: absolute;
     width: 370px;
     padding-right: 20px; }
 
