@@ -1,8 +1,10 @@
 $(document).ready(function() {
-
+    var leftPosition = $('.e-scrollspy').position().left;
+    
     animateScroll();
     stickyNav();
     scrollSpy();
+
 
 // BIND CLICK TO NAVIGATION AND ANIMATE SCROLLING
     function animateScroll() {
@@ -27,23 +29,24 @@ $(document).ready(function() {
 // STICKY NAVIGATION
     function stickyNav() {
         $( window ).scroll( function(){
+            
             // SCROLL LOCATION
             var yPosition = $( window ).scrollTop();
             // HEIGHT OF WINDOW
             var visibleArea = $( window ).height();
             // WHERE TO STICK THE NAV USING ELEMENT HEIGHT
-            var headerHeight = $( '.b-top-nav' ).height() + $(".e-nav-group").height();
+            var headerHeight = $( '.b-top-nav' ).height() + $(".e-nav-group").height() + 48;
             // FIND SCROLL POSITION TO LOCK VIEW
             var maxScroll = visibleArea - headerHeight;
 
             if ( yPosition > maxScroll) {
-                $('.e-scrollspy').css('position', "fixed");
-                $('.e-scrollspy').css('top',$(".e-nav-group").height());
-                $('.long-reading').addClass("medium-offset-3 end");
-                $('.b-top-nav').css('display','block');
+                $('.e-scrollspy').addClass('m-active');
+                // $('.e-scrollspy').css('position', "fixed");
+                // $('.e-scrollspy').css('top',$(".e-nav-group").height());
+                // $('.b-top-nav').css('display','block');
             } else {
-                $('.e-scrollspy').css('position', "static");
-                $('.long-reading').removeClass("medium-offset-3");
+                $('.e-scrollspy').removeClass('m-active');
+                // $('.e-scrollspy').css('position', "static");
             }    
         });
     }
