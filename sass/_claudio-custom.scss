@@ -190,13 +190,13 @@
     .e-tags {
         overflow: hidden;
         float: left;
-        width: 40%;
+        width: 80%;
 
         p { margin: 0; }
 
         .e-left {
             float: left;
-            width: 30%;
+            width: 15%;
             text-align: right;
             padding: 10px;
             font-weight: 600;
@@ -205,7 +205,7 @@
 
         .e-right {
             float: right;
-            width: 70%;
+            width: 85%;
             text-align: left;
             padding: 10px;
         }
@@ -213,10 +213,15 @@
 
 
     .e-read-times {
+        display: none;
         float: right;
-        width: 60%;
+        width: 20%;
         text-align: right;
         p { margin: 0; }
+
+        @include breakpoint(min-width 730px) {
+            display: block;
+        }
     }
 }
 
