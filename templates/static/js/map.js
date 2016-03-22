@@ -200,8 +200,6 @@ function ready(error, world, studies, names) {
     // manual adjustments
     // (i.e. some of the bounding boxes don't make visual sense, so just
     // adjust those manually)
-      console.log(d.location);
-      console.log(regions);
     if (d.location in regions) {
       x *= regions[d.location].translate.x;
       y *= regions[d.location].translate.y;
