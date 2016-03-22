@@ -1,6 +1,10 @@
 
 .b-accordion {
   border: 0;
+  a {
+    color:currentColor !important;
+    text-decoration: underline !important;
+  }
 
   p { 
     padding: 10px 30px;
@@ -62,5 +66,7 @@
   &.m-blue      { background-color: $blue; }
   &.m-teal      { background-color: $teal; }
   &.m-dark-blue { background-color: $dark-blue; }
+
+
 
 }
