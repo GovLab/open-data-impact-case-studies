@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     var leftPosition = $('.e-scrollspy').position().left;
     
     animateScroll();
@@ -29,7 +30,7 @@ $(document).ready(function() {
 // STICKY NAVIGATION
     function stickyNav() {
         $( window ).scroll( function(){
-            
+
             // SCROLL LOCATION
             var yPosition = $( window ).scrollTop();
             // HEIGHT OF WINDOW

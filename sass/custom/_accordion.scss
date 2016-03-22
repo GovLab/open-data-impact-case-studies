@@ -1,0 +1,72 @@
+
+.b-accordion {
+  border: 0;
+  a {
+    color:currentColor !important;
+    text-decoration: underline !important;
+  }
+
+  p { 
+    padding: 10px 30px;
+    margin: 0;
+  }
+
+  dt {
+    font-weight: bold;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    p { margin: 0; }
+  }
+  
+  dd {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .8s ease;
+    box-sizing: border-box;
+
+    p:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  .e-accordion-item {
+    color: $white;
+    font-weight: 400;
+  }
+
+  .e-accordion-item:nth-child(even) {
+    background-color: $gray-20;
+  }
+  
+  .e-accordion-item.m-active dd {
+    max-height: 900px;
+  }
+
+  // Adds the arrow on the right
+  
+  dt:before {
+    @include material-icons;
+    color: $white-60;
+    margin: 10px 20px;
+    float: right;
+    content: "expand_more";
+  }
+
+  // Switches the 
+
+  .accordion-item.m-active dt:before { content: "expand_less"; }
+
+
+  // Adds different bg-colours modifiers
+
+  &.m-purple    { background-color: $purple; }
+  &.m-orange    { background-color: $orange; }
+  &.m-blue      { background-color: $blue; }
+  &.m-teal      { background-color: $teal; }
+  &.m-dark-blue { background-color: $dark-blue; }
+
+
+
+}
