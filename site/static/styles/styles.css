@@ -4596,7 +4596,7 @@ ul.b-sidebar {
 .b-divider.m-next {
   position: relative; }
   .b-divider.m-next div {
-    max-width: 500px;
+    max-width: 50%;
     position: absolute;
     right: 100px;
     top: 30px; }
@@ -5017,25 +5017,27 @@ ul.b-sidebar {
 #case-study-page .e-tags {
   overflow: hidden;
   float: left;
-  width: 40%; }
+  width: 80%; }
   #case-study-page .e-tags p {
     margin: 0; }
   #case-study-page .e-tags .e-left {
     float: left;
-    width: 30%;
+    width: 15%;
     text-align: right;
     padding: 10px;
     font-weight: 600;
     text-transform: uppercase; }
   #case-study-page .e-tags .e-right {
     float: right;
-    width: 70%;
+    width: 85%;
     text-align: left;
     padding: 10px; }
 #case-study-page .e-read-times {
+  display: none;
   float: right;
-  width: 60%;
-  text-align: right; }
+  width: 20%;
+  text-align: right;
+  display: block; }
   #case-study-page .e-read-times p {
     margin: 0; }
 
@@ -5212,6 +5214,54 @@ ul.b-sidebar {
 
 .long-reading section {
   padding-bottom: 5%; }
+
+#empowering-citizens .slice {
+  fill: #ee5b43; }
+
+#creating-opportunity .slice {
+  fill: #C2C33B; }
+
+#improving-government .slice {
+  fill: #008ab3; }
+
+#solving-public-problems .slice {
+  fill: #AD0054; }
+
+.subslice:first-child .slice {
+  opacity: .1; }
+
+.subslice .slice {
+  opacity: .2; }
+
+.rounded-text {
+  fill: rgba(255, 255, 255, 0.7); }
+
+.text {
+  fill: rgba(51, 51, 51, 0.5); }
+
+.center .circle {
+  fill: #523080;
+  box-shadow: 0 0 5px rgba(51, 51, 51, 0.2); }
+.center .text {
+  fill: white; }
+
+#empowering-citizens.main-slice:hover .slice {
+  fill: #be4936 !important; }
+
+#creating-opportunity.main-slice:hover .slice {
+  fill: #9c9d2f !important; }
+
+#improving-government.main-slice:hover .slice {
+  fill: #006e8f !important; }
+
+#solving-public-problems.main-slice:hover .slice {
+  fill: #80003e !important; }
+
+.subslice .slice:hover {
+  opacity: .3 !important; }
+
+.js-filter {
+  cursor: pointer; }
 
 @media screen and (min-width: 64.0625em) {
   .b-projects-list-wrapper {
