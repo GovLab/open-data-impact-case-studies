@@ -5274,7 +5274,8 @@ ul.b-sidebar {
   display: inline-block;
   background-color: white;
   height: 0;
-  padding-bottom: 25%;
+  padding-bottom: 20%;
+  padding-top: 2%;
   margin: 2%;
   border: 1px solid rgba(0, 0, 0, 0.2); }
   .e-project-item.m-clickable {
