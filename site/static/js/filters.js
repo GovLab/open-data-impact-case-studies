@@ -7,7 +7,7 @@
         //     gutter: 10
         // }
         layoutMode: 'fitRows'
-    });
+    }).addClass('claudio');
 
     $('#government-button').click(function() {
         TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});

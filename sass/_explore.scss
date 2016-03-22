@@ -1,0 +1,45 @@
+#empowering-citizens .slice { fill: $orange; }
+#creating-opportunity .slice { fill: $yellow;}
+#improving-government .slice { fill: $blue;}
+#solving-public-problems .slice { fill: $fuschia;}
+
+.subslice:first-child .slice { opacity: .1; }
+.subslice .slice { opacity: .2; }
+
+.rounded-text { fill: rgba($white, .7); }
+
+.text { fill: rgba($black, .5); }
+
+.center {
+  .circle { 
+    fill: $purple; 
+    box-shadow: 0 0 5px rgba($black, .2);
+  }
+  .text { fill: $white; }
+}
+
+#empowering-citizens.main-slice:hover .slice { fill: $orange-20k !important; }
+#creating-opportunity.main-slice:hover .slice { fill: $yellow-20k !important;}
+#improving-government.main-slice:hover .slice { fill: $blue-20k !important;}
+#solving-public-problems.main-slice:hover .slice { fill: $fuschia-20k !important;}
+
+.subslice .slice:hover { opacity: .3 !important; }
+
+
+.js-filter {
+  cursor: pointer;
+}
+
+// .main-slice .main-arc {
+//   transform: scale(1);
+//   @include transition;
+// }
+
+// .main-slice:hover .main-arc {
+//   transform: scale(1.01);
+//   @include transition;
+// }
+
+
+
+
