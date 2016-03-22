@@ -1,6 +1,6 @@
 {# Define a macro to render each project item #}
 {% macro item(title, image) -%}
-<div class="e-project-item js-tooltip-trigger-resources m-clickable" data-open="#modal-{{title | slug}}">
+<div class="large-3 end columns e-project-item js-tooltip-trigger-resources m-clickable" data-open="#modal-{{title | slug}}">
     <div class="e-project-logo">
         <img src="{{image}}" alt="{{title}}">
     </div>
@@ -173,62 +173,56 @@
 
     <section id="appendix-3" class="b-page-section">
         <div class="row">
-            <div class="b-project-view m-grid">
+<!-- project grid-->
             <div class="column medium-10 medium-offset-1 column">
-            <h4>OPEN DATA CASE STUDY REPOSITORIES (alphabetically listed)</h4>
+                <h4>OPEN DATA CASE STUDY REPOSITORIES (alphabetically listed)</h4>
+                    {% for resource in odr %}
+                        {{ item(resource.title, resource.image) }}
+                    {% endfor %}
+            </div>
+        </div>
 
-                <div class="b-project view m-grid">  <!-- TILE GRIDS -->
-                    <div class="e-project-list">
-                        <div class="e-project-group">
-                            {% for resource in odr %}
-                                {{ item(resource.title, resource.image) }}
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div><!-- END TILE GRIDS -->
+        {% for resource in odr %}     <!-- MODALS -->
+            <div class="b-modal" id="modal-{{resource.title | slug}}">
+                <div class="e-content">
+                    <img src="{{resource.image}}" alt="{{resource.title}}">
+                    <h2>{{odr.index(resource) + 1}}. {{resource.title}}</h2>
+                    <h4>Who</h4>
+                    <p class="text">{{resource.who_html}}</p>
+                    <h4>What</h4>
+                    <p class="text">{{resource.what_html}}</p>
+                    {% if resource.rationale_html %}
+                        <h4>Rationale</h4>
+                        <p class="text">{{resource.rationale_html}}</p>
+                    {% endif %}
+                    <h4>Number of Case Studies</h4>
+                    <p class="text">{{resource.number_of_case_studies}}</p>
+                    <h4>Countries Covered</h4>
+                    <p class="text">{{resource.countries_covered}}</p>
+                    <h4>Contact</h4>
+                    <p class="text">{{resource.contact_html}}</p>
+                    {% if resource.url %}
+                        <h4>URL</h4>
+                        <p class="text"><a href="{{resource.url}}">{{resource.url}}</a></p>
+                    {% endif %}   
+                    {% if resource.case_studies_url %}
+                        <h4>Case Studies URL</h4>
+                        <p class="text"><a href="{{resource.case_studies_url}}">{{resource.case_studies_url}}</a></p>
+                    {% endif %}
+                    {% if resource.database_url %}
+                        <h4>Database</h4>
+                        <p class="text"><a href="{{resource.database_url}}">{{ resource.database_url }}</a></p>
+                    {% endif %}
 
-                {% for resource in odr %}     <!-- MODALS -->
-                    <div class="b-modal" id="modal-{{resource.title | slug}}">
-                        <div class="e-content">
-                            <img src="{{resource.image}}" alt="{{resource.title}}">
-                            <h2>{{odr.index(resource) + 1}}. {{resource.title}}</h2>
-                            <h4>Who</h4>
-                            <p class="text">{{resource.who_html}}</p>
-                            <h4>What</h4>
-                            <p class="text">{{resource.what_html}}</p>
-                            {% if resource.rationale_html %}
-                                <h4>Rationale</h4>
-                                <p class="text">{{resource.rationale_html}}</p>
-                            {% endif %}
-                            <h4>Number of Case Studies</h4>
-                            <p class="text">{{resource.number_of_case_studies}}</p>
-                            <h4>Countries Covered</h4>
-                            <p class="text">{{resource.countries_covered}}</p>
-                            <h4>Contact</h4>
-                            <p class="text">{{resource.contact_html}}</p>
-                            {% if resource.url %}
-                                <h4>URL</h4>
-                                <p class="text"><a href="{{resource.url}}">{{resource.url}}</a></p>
-                            {% endif %}   
-                            {% if resource.case_studies_url %}
-                                <h4>Case Studies URL</h4>
-                                <p class="text"><a href="{{resource.case_studies_url}}">{{resource.case_studies_url}}</a></p>
-                            {% endif %}
-                            {% if resource.database_url %}
-                                <h4>Database</h4>
-                                <p class="text"><a href="{{resource.database_url}}">{{ resource.database_url }}</a></p>
-                            {% endif %}
+                    <p class="e-buttons">
+                        <a class="b-button js-close-modal m-dark m-icon-only" href="#">Close</a>
+                    </p>
+                </div>
+            </div>
+        {% endfor %} <!-- END MODALS -->
+        </div>
+    </section>
 
-                            <p class="e-buttons">
-                                <a class="b-button js-close-modal m-dark m-icon-only" href="#">Close</a>
-                            </p>
-                        </div>
-                    </div>
-                {% endfor %} <!-- END MODALS -->
-                </div>
-                </div>
-                </div>
-                </section>
                 <hr>
 
     <section class="b-page-section" id="appendix-3b">
