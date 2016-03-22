@@ -145,7 +145,7 @@
   authors: Becky Hogge
   description: 'Taking the Long View'
   impact_type: government # citizens | government | economic | public
-  sub_impact: # engagement | assessment | growth | innovation | transparency | services | decisions | social
+  sub_impact: parent-government # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   region: eu
@@ -159,7 +159,7 @@
   authors: Becky Hogge
   description: 'New Strategies to Close the Data Gap'
   impact_type: government # citizens | government | economic | public
-  sub_impact: # engagement | assessment | growth | innovation | transparency | services | decisions | social
+  sub_impact: parent-government # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: education # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   region: eu
@@ -173,7 +173,7 @@
   authors: 'Becky Hogge'
   description: 'Open Data as One Small Part of the Picture'
   impact_type: government # citizens | government | economic | public
-  sub_impact: # engagement | assessment | growth | innovation | transparency | services | decisions | social
+  sub_impact: parent-government # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: business # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   region: eu
@@ -258,7 +258,7 @@
   authors: 'Becky Hogge'
   description: 'A view from the other side of open'
   impact_type: public # citizens | government | economic | public
-  sub_impact: # engagement | assessment | growth | innovation | transparency | services | decisions | social
+  sub_impact: parent-public # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   region: eu
@@ -329,7 +329,7 @@
   authors: 'Becky Hogge'
   description: 'Get set, go!'
   impact_type: economic # citizens | government | economic | public
-  sub_impact: # engagement | assessment | growth | innovation | transparency | services | decisions | social
+  sub_impact: parent-economic # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: transportation # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   region: eu
@@ -344,7 +344,7 @@
   authors: 'Becky Hogge'
   description: 'The UK’s trading funds, and two futures for open data'
   impact_type: economic # citizens | government | economic | public
-  sub_impact: # engagement | assessment | growth | innovation | transparency | services | decisions | social
+  sub_impact: parent-economic # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   region: eu
