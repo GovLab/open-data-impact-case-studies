@@ -4802,6 +4802,9 @@ ul.b-sidebar {
 
 .b-accordion {
   border: 0; }
+  .b-accordion a {
+    color: currentColor !important;
+    text-decoration: underline !important; }
   .b-accordion p {
     padding: 10px 30px;
     margin: 0; }

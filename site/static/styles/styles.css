@@ -4802,6 +4802,9 @@ ul.b-sidebar {
 
 .b-accordion {
   border: 0; }
+  .b-accordion a {
+    color: currentColor !important;
+    text-decoration: underline !important; }
   .b-accordion p {
     padding: 10px 30px;
     margin: 0; }
@@ -5270,38 +5273,15 @@ ul.b-sidebar {
 .long-reading section {
   padding-bottom: 5%; }
 
-@media screen and (min-width: 64.0625em) {
-  .b-projects-list-wrapper {
-    display: -webkit-flex;
-    display: flex; } }
-@media screen and (min-width: 64.0625em) {
-  .b-projects-list-wrapper .e-project-list {
-    -webkit-flex: 4;
-    flex: 4; } }
-
-@media screen and (min-width: 64.0625em) {
-  .b-project-view.m-grid .e-project-group {
-    padding: 15px; } }
-.b-project-view.m-grid .e-project-group.m-clickable {
-  cursor: crosshair; }
-.b-project-view.m-grid .e-project-item:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
-@media screen and (min-width: 64.0625em) {
-  .b-project-view.m-grid .e-project-item {
-    width: calc(33% - 30px);
-    display: inline-block;
-    background-color: white;
-    height: 0;
-    padding-bottom: calc(33% - 30px);
-    margin: 15px;
-    position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.2); }
-    .b-project-view.m-grid .e-project-item.m-clickable {
-      cursor: pointer; }
-    .b-project-view.m-grid .e-project-item img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 10%; } }
+.e-project-item {
+  display: inline-block;
+  background-color: white;
+  height: 0;
+  padding-bottom: 20%;
+  padding-top: 2%;
+  margin: 2%;
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+  .e-project-item.m-clickable {
+    cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */
