@@ -48,6 +48,11 @@
         TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
     });
 
+    // $('.js-tab-override').click(function(e) {
+    //     var w = window.location.href;
+    //     window.location.href = w.replace(/^http(s)?:\/\/[a-z0-9-]+(\.[a-z0-9-]+)*?(:[0-9]+)?(\/)?/i, '') + '/explore.html';
+    // });
+
     $('.js-filter').click(function(event){
         event.preventDefault();
         $('.js-filter').removeClass('selected');
