@@ -5238,7 +5238,38 @@ ul.b-sidebar {
 @media (max-width 767px) {
   .e-card-inner {
     width: 90%; } }
-<<<<<<< a97ad1d986d7c0bfc118c2755c606b1ebcc43b43
+.e-h1 {
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: 400 !important;
+  font-size: 22px !important; }
+
+.e-scrollspy {
+  text-align: right; }
+  .e-scrollspy li {
+    color: rgba(0, 0, 0, 0.3);
+    text-align: right;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    list-style: none; }
+    .e-scrollspy li.active {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 14px;
+      padding: 11px 0;
+      font-weight: 600; }
+  .e-scrollspy.m-active {
+    position: fixed;
+    top: 67px;
+    width: 370px;
+    padding-right: 20px; }
+
+.fixed {
+  position: fixed; }
+
+.long-reading section {
+  padding-bottom: 5%; }
+
 @media screen and (min-width: 64.0625em) {
   .b-projects-list-wrapper {
     display: -webkit-flex;
@@ -5271,50 +5302,6 @@ ul.b-sidebar {
       display: block;
       margin-left: auto;
       margin-right: auto;
-<<<<<<< 9152c25a18e5dd1deda82e96591e4b5bd20ef59d
-      padding: 10%;
-      height: 100%; } }
-=======
-.e-h1 {
-  color: rgba(0, 0, 0, 0.5);
-  text-transform: uppercase;
-  font-weight: 400 !important;
-  font-size: 22px !important; }
-
-.e-scrollspy {
-  text-align: right; }
-  .e-scrollspy li {
-    color: rgba(0, 0, 0, 0.3);
-    text-align: right;
-    font-weight: bold;
-    font-size: 12px;
-    text-transform: uppercase;
-    list-style: none; }
-    .e-scrollspy li.active {
-      color: rgba(0, 0, 0, 0.5);
-      font-size: 14px;
-      line-height: 90%;
-      padding: 11px 0; }
-
-.fixed {
-  position: fixed; }
-
-<<<<<<< 17df80e8e5ee2fdf31825315ff13f4d9f7990a9b
-.e-scrollspy {
-  background-color: blue; }
-
-.long-reading {
-  background-color: pink; }
-
-.nav-row {
-  background-color: purple; }
->>>>>>> Add styling for scrollspy
-=======
       padding: 10%; } }
->>>>>>> Remove image height from appIII modal links
-=======
-.long-reading section {
-  padding-bottom: 5%; }
->>>>>>> Format static placeholder for scrollspy
 
 /*# sourceMappingURL=styles.css.map */
