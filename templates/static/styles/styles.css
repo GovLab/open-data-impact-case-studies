@@ -4805,6 +4805,8 @@ ul.b-sidebar {
   .b-accordion a {
     color: currentColor !important;
     text-decoration: underline !important; }
+  .b-accordion ul {
+    padding: 0 5%; }
   .b-accordion p {
     padding: 10px 30px;
     margin: 0; }
