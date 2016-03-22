@@ -44,6 +44,10 @@
 
     $('#see-all-btn').addClass('selected');
 
+    $('.js-tween').click(function(e) {
+        TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
+    });
+
     $('.js-filter').click(function(event){
         event.preventDefault();
         $('.js-filter').removeClass('selected');
@@ -51,12 +55,11 @@
         d3.selectAll('.region').classed('selected', false);
         $(this).addClass('selected');
         var filterParam = $(this).attr('data-filter');
-        if (filterParam === '*') {
-            $grid.isotope({ filter : '*' })
+        // dress up if probably not a selector
+        if (!(/[*.~+>#=:()\[\]\s]/g.test(filterParam))) {
+            filterParam = '.' + filterParam;
         }
-        else {
-            $grid.isotope({ filter : '.' + filterParam })
-        }
+        $grid.isotope({ filter : filterParam })
 
         if ($grid.data('isotope').filteredItems.length === 0) {
             $('#no-results').removeClass('m-hidden');
