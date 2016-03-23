@@ -43,10 +43,13 @@
 
 // style explore-js page
 .b-button.e-explore-tab {
-    width: 100%;
+    width: 50%;
+    margin: 0 25% !important;
     display: inline-block;
-    background-color: $white-30;
+    background-color: $gray-30;
     margin: 2px;
+    color: white;
+
 }
 .e-explore-tab.active-tab {
       background-color: $dark-blue;
@@ -60,8 +63,14 @@
 }
 
 .explore-divider {
-    padding: 2% 0 !important;
+    padding: 0 !important;
+    background-color: white;
+    color: $gray-70;
 
+}
+
+.button-row {
+  padding: 2% 0 !important;
 }
 
 

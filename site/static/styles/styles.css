@@ -5439,10 +5439,12 @@ ul.b-sidebar {
   cursor: pointer; }
 
 .b-button.e-explore-tab, .b-form input.e-explore-tab[type="submit"] {
-  width: 100%;
+  width: 50%;
+  margin: 0 25% !important;
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.3);
-  margin: 2px; }
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 2px;
+  color: white; }
 
 .e-explore-tab.active-tab {
   background-color: #164A7A; }
@@ -5451,6 +5453,11 @@ ul.b-sidebar {
   text-align: center; }
 
 .explore-divider {
+  padding: 0 !important;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7); }
+
+.button-row {
   padding: 2% 0 !important; }
 
 .e-project-item {
