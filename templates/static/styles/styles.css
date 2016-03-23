@@ -5439,19 +5439,34 @@ ul.b-sidebar {
 .js-filter {
   cursor: pointer; }
 
+.tab-controller {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  margin-top: -30px; }
+
 .b-button.e-explore-tab, .b-form input.e-explore-tab[type="submit"] {
-  width: 50%;
-  margin: 0 25% !important;
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0.3);
-  margin: 2px;
-  color: white; }
+  width: 120px;
+  background-color: #ced5e3;
+  margin: 0 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
 
 .e-explore-tab.active-tab {
-  background-color: #164A7A; }
+  background-color: #164A7A;
+  color: white; }
 
-#explore-tab-caption p {
-  text-align: center; }
+#explore-page .b-top-section {
+  min-height: 296px;
+  padding-top: 90px; }
+
+.b-pack-map {
+  padding-top: 30px; }
+
+#explore-tab-caption {
+  max-width: 800px;
+  margin: 0 auto; }
+  #explore-tab-caption p {
+    text-align: center; }
 
 .explore-divider {
   padding: 0 !important;

@@ -18,7 +18,7 @@
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<body id="about-page">
+<body id="explore-page">
     
 
 <!--     <header class="b-top-nav m-transparent">
@@ -78,34 +78,24 @@
         <div class="b-wrap">
             <h2>EXPLORE</h2>
             <h3>Open data enables innovative approaches to solving complex issues across continents, sectors, and populations</h3>
+            <div id="explore-tab-caption"><p class="text"></p></div>
         </div>
     </header>
 
-
-
-<div class="b-page-section button-row">
-    <div class="row">
-        <div class="large-6 columns">
-          <div class="b-button e-explore-tab" id="explore-button-graphic">Graphic</div>
-        </div>
-        <div class="large-6 columns">
-          <div class="b-button e-explore-tab" id="explore-button-map">Map</div>
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="b-divider explore-divider">
+<!-- <div class="b-divider explore-divider">
     <div class="row">
         <div class="column small-12" id="explore-tab-caption">
-          <p class="text">Explore how open data facilitates innovation by delving into areas of impact.</p>
+          <p class="text"></p>
         </div>
     </div>
+</div> -->
+<div class="tab-controller show-for-large">
+<div class="b-button e-explore-tab active-tab" id="explore-button-graphic">Graphic</div>
+<div class="b-button e-explore-tab" id="explore-button-map">Map</div>
 </div>
 
-
 <div id="map-visualization"> <!-- PAGE LOAD TEST -->
+    <div class="b-pack-map"></div>
     <div class="pack-ui">
       <div id="tooltip" class="tooltip">More Info</div>
       <div class="map-ui">
@@ -114,10 +104,10 @@
         <div class="b-button" id="button-impacts">Impacts</div>
         <div class="b-button" id="button-sectors">Sectors</div>
         <div class="b-button" id="button-studies">Studies</div>
-        <div class="map-caption">Select a Region</div>
+        <!-- <div class="map-caption">Select a Region</div> -->
       </div>
     </div>
-    <div class="b-pack-map"></div>
+    
 </div><!-- PAGE LOAD TEST -->
 
 
