@@ -45,10 +45,19 @@
 .b-button.e-explore-tab {
     width: 100%;
     display: inline-block;
+    background-color: $white-10;
+    margin: 2px;
 }
 
-#explore-button-caption {
-    display: none;
+#explore-tab-caption {
+    p {
+    text-align: center;
+    }
+}
+
+.explore-divider {
+    padding: 2% 0 !important;
+
 }
 
 

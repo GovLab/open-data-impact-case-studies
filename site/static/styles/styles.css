@@ -5440,10 +5440,15 @@ ul.b-sidebar {
 
 .b-button.e-explore-tab, .b-form input.e-explore-tab[type="submit"] {
   width: 100%;
-  display: inline-block; }
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 2px; }
 
-#explore-button-caption {
-  display: none; }
+#explore-tab-caption p {
+  text-align: center; }
+
+.explore-divider {
+  padding: 2% 0 !important; }
 
 .e-project-item {
   display: inline-block;
