@@ -465,9 +465,6 @@ window.Feed({
         return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
     }
 
-})();
-
-$(function() {
     // http://stackoverflow.com/a/7768006
 
     var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
@@ -480,6 +477,12 @@ $(function() {
     if ((is_chrome)&&(is_opera)) {is_chrome=false;}
 
     if (is_safari) {
-        $('html').addClass('temp-browser-is-safari');
+        $('main').addClass('temp-browser-is-safari');
     }
-});
+
+
+    $('.temp-browser-is-safari .temp-hide-for-safari').hide();
+
+})();
+
+
