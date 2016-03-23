@@ -252,7 +252,7 @@
                     
                         <div class="large-3 end columns e-project-item js-tooltip-trigger-resources m-clickable" data-open="#modal-open-knowledge-foundations-global-initiative-for-fiscal-transparency-report-gift">
     <div class="e-project-logo">
-        <img src="static/img/resources/Image10219.png" alt="Open Knowledge Foundation’s Global Initiative for Fiscal Transparency Report (GIFT)">
+        <img src="static/img/resources/gift-on.png" alt="Open Knowledge Foundation’s Global Initiative for Fiscal Transparency Report (GIFT)">
     </div>
 </div>
                     
@@ -416,7 +416,7 @@
              <!-- MODALS -->
             <div class="b-modal" id="modal-open-knowledge-foundations-global-initiative-for-fiscal-transparency-report-gift">
                 <div class="e-content">
-                    <img src="static/img/resources/Image10219.png" alt="Open Knowledge Foundation’s Global Initiative for Fiscal Transparency Report (GIFT)">
+                    <img src="static/img/resources/gift-on.png" alt="Open Knowledge Foundation’s Global Initiative for Fiscal Transparency Report (GIFT)">
                     <h2>5. Open Knowledge Foundation’s Global Initiative for Fiscal Transparency Report (GIFT)</h2>
                     <h4>Who</h4>
                     <p class="text">Open Knowledge Foundation with funding provided by Omidyar Network</p>
