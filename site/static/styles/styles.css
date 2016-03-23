@@ -5361,7 +5361,8 @@ ul.b-sidebar {
 
 .e-scrollspy {
   text-align: right;
-  padding-top: 45px;
+  padding-top: 30px;
+  padding-right: 20px;
   display: block; }
   .e-scrollspy li {
     color: rgba(0, 0, 0, 0.3);
@@ -5377,11 +5378,11 @@ ul.b-sidebar {
       font-weight: 600; }
   .e-scrollspy.m-active {
     position: fixed;
-    width: 370px;
+    max-width: 250px;
     padding-right: 20px; }
   .e-scrollspy.m-absolute {
     position: absolute;
-    width: 370px;
+    max-width: 250px;
     padding-right: 20px; }
 
 .fixed {
