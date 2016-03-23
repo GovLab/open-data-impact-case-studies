@@ -80,11 +80,12 @@
     <header class="b-top-section m-dark-blue ">
         <div class="b-wrap">
             <h2>Resources</h2>
-            <h3>Definitions, glossaries, repositories, and other resources for further exploring the world of open data</h3>
+            <h3><a href="#a-definitions" class="m-bold js-data-tween" data-tween="#a-definitions">Definitions</a>, <a href="#a-glossaries" class="m-bold js-data-tween" data-tween="#a-glossaries">glossaries</a>, <a href="#a-repositories" class="m-bold js-data-tween" data-tween="#a-repositories">repositories</a>, and <a href="#a-resources" class="m-bold js-data-tween" data-tween="#a-resources">other resources</a> for further exploring the world of open data</h3>
         </div>
     </header>
 
     <div class="b-divider m-resources">
+        <a name="a-definitions" id="a-definitions"></a>
         <h2>Open Data Definitions –&#160;What’s in a Name?</h2>
     </div>
 
@@ -147,6 +148,7 @@
     </section>
 
     <div class="b-divider m-resources">
+        <a name="a-glossaries" id="a-glossaries"></a>
         <h2>Open Data Glossaries</h2>
     </div>
 
@@ -234,6 +236,7 @@
     </section>
 
     <div class="b-divider m-resources">
+        <a name="a-repositories" id="a-repositories"></a>
         <h2>Open Data Repositories</h2>
     </div>
 
@@ -720,6 +723,7 @@
 
 
     <div class="b-divider m-resources">
+        <a name="a-resources" id="a-resources"></a>
         <h2>Open Data Resources</h2>
     </div>
 
@@ -842,10 +846,21 @@ ga('send', 'pageview');
 </script>
 
 
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+
 <script type="text/javascript">
 $('.js-more-toggle').click(function() {
     $(this).parent().toggleClass('m-active');
 })
+
+$('.js-data-tween').click(function(e) {
+    e.preventDefault();
+    TweenLite.to(window, 0.5, {scrollTo:$($(this).attr('data-tween')).offset().top - 120, ease:Power2.easeOut});
+});
 </script>
      <script src="static/js/case-study-scripts.js"></script>
 
