@@ -1,7 +1,6 @@
 ul.b-sidebar {
     position: absolute;
     right: 0;
-    display: inline-block;
     list-style: none;
     text-align: center;
     z-index: 2;
@@ -19,9 +18,7 @@ ul.b-sidebar {
         @include breakpoint($desktop) {
             display: block;
         }
-        @include breakpoint($mobile-only) {
-            display: inline-block;
-        }
+            
     }
 
     @include breakpoint($desktop) {

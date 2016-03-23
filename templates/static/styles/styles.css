@@ -4558,7 +4558,6 @@ main .b-divider {
 ul.b-sidebar {
   position: absolute;
   right: 0;
-  display: inline-block;
   list-style: none;
   text-align: center;
   z-index: 2;
@@ -4567,8 +4566,7 @@ ul.b-sidebar {
     padding: 10px;
     color: white;
     width: 45px;
-    height: 45px;
-    display: inline-block; }
+    height: 45px; }
     ul.b-sidebar li.facebook {
       background-color: #3b5998; }
     ul.b-sidebar li.linkedin {
@@ -4849,7 +4847,7 @@ ul.b-sidebar {
     margin: 10px 20px;
     float: right;
     content: "expand_more"; }
-  .b-accordion .accordion-item.m-active dt:before {
+  .b-accordion .e-accordion-item.m-active dt:before {
     content: "expand_less"; }
   .b-accordion.m-purple {
     background-color: #523080; }
@@ -5253,7 +5251,8 @@ ul.b-sidebar {
 
 .e-scrollspy {
   text-align: right;
-  padding-top: 30px; }
+  padding-top: 45px;
+  display: block; }
   .e-scrollspy li {
     color: rgba(0, 0, 0, 0.3);
     text-align: right;
@@ -5333,11 +5332,15 @@ ul.b-sidebar {
   display: inline-block;
   background-color: white;
   height: 0;
-  padding-bottom: 20%;
-  padding-top: 2%;
-  margin: 2%;
-  border: 1px solid rgba(0, 0, 0, 0.2); }
+  padding: 30px;
+  margin: 4% 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  padding-bottom: 65%; }
   .e-project-item.m-clickable {
     cursor: pointer; }
+  .e-project-item img {
+    max-width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
