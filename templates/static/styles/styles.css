@@ -5328,6 +5328,13 @@ ul.b-sidebar {
 .js-filter {
   cursor: pointer; }
 
+.b-button.e-explore-tab, .b-form input.e-explore-tab[type="submit"] {
+  width: 100%;
+  display: inline-block; }
+
+#explore-button-caption {
+  display: none; }
+
 .e-project-item {
   display: inline-block;
   background-color: white;
