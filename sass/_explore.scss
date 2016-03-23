@@ -45,9 +45,13 @@
 .b-button.e-explore-tab {
     width: 100%;
     display: inline-block;
-    background-color: $white-10;
+    background-color: $white-30;
     margin: 2px;
 }
+.e-explore-tab.active-tab {
+      background-color: $dark-blue;
+    }
+
 
 #explore-tab-caption {
     p {
