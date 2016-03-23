@@ -89,7 +89,11 @@
         </hgroup>
         <div id="download-button">
             <!-- NEED CORRECT PATH TO DOWNLOAD -->
+<<<<<<< HEAD
             <a href="static/files/open-data-impact-key-findings.pdf" class="b-button m-dark-blue">Download The Report<i class="material-icons m-space">file_download</i></a>
+=======
+            <a href="./static/files/odimpact-key-findings-1.pdf" class="b-button m-dark-blue">Download The Report<i class="material-icons m-space">file_download</i></a>
+>>>>>>> 5fbf172a98f1f06c89ec35a41120ba8c8af28238
         </div>
     </div>
 
