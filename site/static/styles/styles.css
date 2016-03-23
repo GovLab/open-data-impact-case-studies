@@ -5350,6 +5350,38 @@ ul.b-sidebar {
     text-transform: uppercase;
     color: #164A7A; }
 
+table.m-respond {
+  display: block; }
+  @media screen and (min-width: 64.0625em) {
+    table.m-respond {
+      display: table; } }
+  table.m-respond th {
+    display: none; }
+    @media screen and (min-width: 64.0625em) {
+      table.m-respond th {
+        display: table-cell; } }
+  table.m-respond tr {
+    display: block; }
+    @media screen and (min-width: 64.0625em) {
+      table.m-respond tr {
+        display: table-row; } }
+  table.m-respond td {
+    display: block; }
+    @media screen and (min-width: 64.0625em) {
+      table.m-respond td {
+        display: table-cell; } }
+  table.m-respond .e-line-header {
+    font-size: 18px;
+    font-weight: 600;
+    display: block; }
+    @media screen and (min-width: 64.0625em) {
+      table.m-respond .e-line-header {
+        display: none; } }
+
+.column.expanded, .expanded.columns {
+  padding-left: 0;
+  padding-right: 0; }
+
 @media (max-width 767px) {
   .e-card-inner {
     width: 90%; } }
