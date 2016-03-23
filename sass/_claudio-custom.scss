@@ -647,6 +647,55 @@
     }
 }
 
+// worlds cheesiest responsive table
+table.m-respond {
+    @include breakpoint($desktop) {
+        display: table;
+    }
+    @include breakpoint($mobile-only) {
+        display: block;
+    }
+
+    th {
+        @include breakpoint($desktop) {
+            display: table-cell;
+        }
+        @include breakpoint($mobile-only) {
+            display: none;
+        }
+    }
+    tr {
+        @include breakpoint($desktop) {
+            display: table-row;
+        }
+        @include breakpoint($mobile-only) {
+            display: block;
+        }
+    }
+    td {
+        @include breakpoint($desktop) {
+            display: table-cell;
+        }
+        @include breakpoint($mobile-only) {
+            display: block;
+        }
+    }
+    .e-line-header {
+        font-size: 18px;
+        font-weight: 600;
+        @include breakpoint($desktop) {
+            display: none;
+        }
+        @include breakpoint($mobile-only) {
+            display: block;
+        }
+    }
+}
+.column.expanded {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 
 // $mobile-only: max-width 767px;
 // $tablet: min-width 768px;
