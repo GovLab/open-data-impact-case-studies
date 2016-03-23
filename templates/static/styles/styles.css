@@ -5382,6 +5382,13 @@ table.m-respond {
   padding-left: 0;
   padding-right: 0; }
 
+.b-top-section a.m-bold {
+  font-weight: 600; }
+  .b-top-section a.m-bold:visited {
+    color: white; }
+  .b-top-section a.m-bold:focus {
+    color: white; }
+
 @media (max-width 767px) {
   .e-card-inner {
     width: 90%; } }

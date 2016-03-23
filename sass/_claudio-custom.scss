@@ -696,6 +696,17 @@ table.m-respond {
     padding-right: 0;
 }
 
+.b-top-section {
+    a.m-bold {
+        font-weight: 600;
+        &:visited {
+            color: $white;
+        }
+        &:focus {
+            color: $white;
+        }
+    }
+}
 
 // $mobile-only: max-width 767px;
 // $tablet: min-width 768px;
