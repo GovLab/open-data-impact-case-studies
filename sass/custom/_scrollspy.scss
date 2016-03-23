@@ -1,0 +1,72 @@
+.e-h1 {
+    color: $gray-50;
+    text-transform: uppercase;
+    font-weight: 400 !important;
+    font-size: 22px !important;
+}
+
+
+
+.e-scrollspy {
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 20px;
+    display: block;
+
+    li {
+        color: $gray-30;
+        text-align: right;
+        font-weight: 400;
+        font-size: 12px;
+        text-transform: uppercase;
+        list-style: none;
+
+        &.active {
+            color: $gray-50;
+            font-size: 14px;
+            padding: 11px 0;
+            font-weight: 600;
+        }
+    }
+
+    &.m-active {
+        position: fixed;
+        // top: 67px;
+        max-width: 250px;
+        padding-right: 20px;
+    }
+
+    &.m-absolute {
+        position: absolute;
+        // top: 67px;
+        max-width: 250px;
+        padding-right: 20px;
+    }
+
+}
+
+.fixed {
+    position: fixed;
+}
+
+.long-reading {
+    section {
+        padding-bottom: 5%;
+    }
+}
+
+
+
+// COLORS FOR TESTING
+// .e-scrollspy {
+//     // background-color: blue;
+// }
+// .long-reading {
+//     section {
+//         padding-bottom: 5%;
+//     }
+// }
+// // .nav-row {
+// //     background-color:purple;
+// // }
+

@@ -7,7 +7,7 @@
         //     gutter: 10
         // }
         layoutMode: 'fitRows'
-    });
+    }).addClass('claudio');
 
     $('#government-button').click(function() {
         TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
@@ -44,6 +44,15 @@
 
     $('#see-all-btn').addClass('selected');
 
+    $('.js-tween').click(function(e) {
+        TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
+    });
+
+    // $('.js-tab-override').click(function(e) {
+    //     var w = window.location.href;
+    //     window.location.href = w.replace(/^http(s)?:\/\/[a-z0-9-]+(\.[a-z0-9-]+)*?(:[0-9]+)?(\/)?/i, '') + '/explore.html';
+    // });
+
     $('.js-filter').click(function(event){
         event.preventDefault();
         $('.js-filter').removeClass('selected');
@@ -51,12 +60,11 @@
         d3.selectAll('.region').classed('selected', false);
         $(this).addClass('selected');
         var filterParam = $(this).attr('data-filter');
-        if (filterParam === '*') {
-            $grid.isotope({ filter : '*' })
+        // dress up if probably not a selector
+        if (!(/[*.~+>#=:()\[\]\s]/g.test(filterParam))) {
+            filterParam = '.' + filterParam;
         }
-        else {
-            $grid.isotope({ filter : '.' + filterParam })
-        }
+        $grid.isotope({ filter : filterParam })
 
         if ($grid.data('isotope').filteredItems.length === 0) {
             $('#no-results').removeClass('m-hidden');

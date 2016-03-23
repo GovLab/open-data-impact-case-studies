@@ -1,0 +1,423 @@
+{# Define a macro to render each project item #}
+{% macro item(title, image) -%}
+<div class="large-4 medium-6 small-12 end columns js-tooltip-trigger-resources m-clickable" data-open="#modal-{{title | slug}}">
+    <div class="e-project-item">
+        <div class="e-project-logo ">
+            <img src="{{image}}" alt="{{title}}">
+        </div>
+    </div>
+</div>
+{%- endmacro %}
+
+
+{% extends "_base.html" %}
+<!-- {% block page_id %}about-page{% endblock %} -->
+
+{% block header %}
+<header class="b-top-nav m-transparent m-fixed">
+
+    <div class="e-nav-group m-left e-social-media hide-for-small-only">
+        <a href="https://twitter.com/TheGovLab" class="e-nav-item" target="_blank"><i class="e-social-media-item fa fa-twitter"></i></a>
+        <a href="http://thegovlab.org" class="e-nav-item" target="_blank">thegovlab.org</a>
+    </div>
+
+        <div class="e-nav-group m-right show-for-large">
+            <a href="index.html" class="e-nav-item" id="nav-home">Home</a>
+            <a href="index.html#explore" class="e-nav-item" id="nav-explore">Explore</a>
+            <a href="about.html" class="e-nav-item" id="nav-about">About</a>
+            <a href="key-findings.html" class="e-nav-item" id="nav-key-findings">Key Findings</a>
+            <a href="resources.html" class="e-nav-item" id="nav-about">Resources</a>
+        </div>
+
+    <a class="e-logo" href="./">
+        <img src="static/img/govlab-logo-white.png" alt="">
+    </a>
+
+</header>
+{% endblock %}
+
+{% block content %}
+
+<main role="main">
+    <header class="b-top-section m-dark-blue ">
+        <div class="b-wrap">
+            <h2>Resources</h2>
+            <h3><a href="#a-definitions" class="m-bold js-data-tween" data-tween="#a-definitions">Definitions</a>, <a href="#a-glossaries" class="m-bold js-data-tween" data-tween="#a-glossaries">glossaries</a>, <a href="#a-repositories" class="m-bold js-data-tween" data-tween="#a-repositories">repositories</a>, and <a href="#a-resources" class="m-bold js-data-tween" data-tween="#a-resources">other resources</a> for further exploring the world of open data</h3>
+        </div>
+    </header>
+
+    <div class="b-divider m-resources">
+        <a name="a-definitions" id="a-definitions"></a>
+        <h2>Open Data Definitions –&#160;What’s in a Name?</h2>
+    </div>
+
+    <section id="appendix-1" class="b-page-section">
+        <div class="row">
+            <div class="column medium-10 medium-offset-1 column">
+
+                <dl class="b-accordion m-dark-blue">
+                    <div class="e-accordion-item js-open-accordion">
+                        <dt><p class="e-definition-list">1. <span class="CharOverride-2">Open Definition</span> (referenced by Open Data Handbook, ODI, Open Data Census, and OECD Open Data Analytical Framework)</p></dt>
+                        <dd><p class="e-definition-list">“Open data is data that can be freely used, reused and redistributed by anyone – subject only, at most, to the requirement to attribute and sharealike.”</p><p><a href="http://opendefinition.org/od/"><span class="CharOverride-2">Open Definition</span></a></p></dd>
+                    </div>
+                    <div class="e-accordion-item js-open-accordion">
+                        <dt><p class="e-definition-list">2. <span class="CharOverride-2">The White House, 2013 OMB Memorandum</span></p></dt>
+                        <dd><p class="e-definition-list">“Open data refers to publicly available data structured in a way that enables the data to be fully discoverable and usable by end users.”</p><p><a href="http://www.whitehouse.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf"><span class="CharOverride-2">The White House, 2013 OMB Memorandum</span></a></p></dd>
+                    </div>
+                    <div class="e-accordion-item js-open-accordion">
+                        <dt><p class="e-definition-list">3. <span class="CharOverride-2">Data.Gov.UK</span></p></dt>
+                        <dd><p class="e-definition-list">“Open data is data that is published in an open format, is machine readable and is published under a license that allows for free reuse.”</p><p><a href="http://data.gov.uk/blog/simple-intro-open-data%20Auer"><span class="CharOverride-2">Data.Gov.UK</span></a></p></dd>
+                    </div>
+                    <div class="e-accordion-item js-open-accordion">
+                        <dt><p class="e-definition-list">4. <span class="CharOverride-2">Dbpedia: A nucleus for a web of open data</span></p></dt>
+                        <dd><p class="e-definition-list">“Open data is the idea that certain data should be freely available to everyone to use and republish as they wish, without restrictions from copyright, patents or other mechanisms of control.”</p><p><a href="http://www.cis.upenn.edu/~zives/research/dbpedia.pdf"><span class="CharOverride-2">Dbpedia: A nucleus for a web of open data</span></a></p></dd>
+                    </div>
+                    <div class="e-accordion-item js-open-accordion">
+                        <dt><p class="e-definition-list">5. <span class="CharOverride-2">Open Data Institute</span></p></dt>
+                        <dd><p class="e-definition-list">“Open data is information that is available for anyone to use, for any purpose, at no cost. Open data has to have a license that says it is open data. Without a license, the data can’t be reused. These principles for open data are described in detail in the Open Definition.”</p><p><a href="http://theodi.org/guides/what-open-data"><span class="CharOverride-2">Open Data Institute</span></a></p></dd>
+                    </div>
+                    <div class="e-accordion-item js-open-accordion">
+                        <dt><p class="e-definition-list">6. <span class="CharOverride-2">LinkedGov</span></p></dt>
+                        <dd><p class="e-definition-list">“Open data is non-personally identifiable data produced in the course of an organization’s ordinary business, which has been released under an unrestricted license. Open public data is underpinned by the philosophy that data generated or collected by organizations in the public sector should belong to the taxpayers, wherever financially feasible and where releasing it won’t violate any laws or rights to privacy (either for citizens or government staff).”</p><p><a href="http://linkedgov.org/what-is-open-data/"><span class="CharOverride-2">LinkedGov</span></a></p></dd>
+                    </div>
+                    <div class="e-accordion-item js-open-accordion">
+                        <dt><p class="e-definition-list">7. <span class="CharOverride-2">McKinsey Global Institute</span></p></dt>
+                        <dd><p class="e-definition-list">“Machine-readable information, particularly government data, that’s made available to others. These open datasets share the following 4 characteristics: 1. Accessibility: A wide range of users is permitted to access the data. 2. Machine readability: The data can be processed automatically. 3. Cost: Data can be accessed free or at negligible cost. 4. Rights: Limitations on the use, transformation, and distribution of data are minimal.”</p><p><a href="http://www.mckinsey.com/insights/business_technology/open_data_unlocking_innovation_and_performance_with_liquid_information"><span class="CharOverride-2">McKinsey Global Institute</span></a></p></dd>
+                    </div>
+                    <div class="e-accordion-item js-open-accordion">
+                        <dt><p class="e-definition-list">8. <span class="CharOverride-2">Open Data Now</span></p></dt>
+                        <dd><p class="e-definition-list">“Open Data is accessible public data we can use to launch new ventures, analyze trends, make decisions, and solve problems.”</p><p><a href="http://www.opendatanow.com/"><span class="CharOverride-2">Open Data Now</span></a></p></dd>
+                    </div>
+                    <div class="e-accordion-item js-open-accordion">
+                        <dt><p class="e-definition-list">9. <span class="CharOverride-2">Open Data Barometer</span></p></dt>
+                        <dd><p class="e-definition-list">Excerpt from report indicates that researchers assessed datasets based on the “full Open Definition requirements of being machine readable, accessible in bulk, and openly licensed.”</p><p><a href="http://www.opendataresearch.org/dl/odb2013/Open-Data-Barometer-2013-Global-Report.pdf"><span class="CharOverride-2">Open Data Barometer</span></a></p></dd>
+                    </div>
+                    <div class="e-accordion-item js-open-accordion">
+                        <dt><p class="e-definition-list">10. <span class="CharOverride-2">The World Bank</span></p></dt>
+                        <dd><p class="e-definition-list">“Data is open if it satisfies both conditions below:</p>
+                        <ul>
+                        <li class="e-list">Technically open: available in a machine-readable standard format, which means it can be retrieved and meaningfully processed by a computer application</li>
+                        <li class="e-list">Legally open: explicitly licensed in a way that permits commercial and non-commercial use and re-use without restrictions.”</li>
+                        </ul><p><a href="http://data.worldbank.org/about/open-government-data-toolkit/knowledge-repository"><span class="CharOverride-2">The World Bank</span></a></p></dd>
+                    </div>
+                </dl>
+
+            <p class="text"><span class="Image-Title"><img class="_idGenObjectAttribute-4" src="static/img/resources/Image10179-revised.png" alt="" /></span></p>
+            <p class="text"><span class="Image-Title"><i>Open Data Definitions: Matrix of Analysis</i></span></p>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="b-divider m-resources">
+        <a name="a-glossaries" id="a-glossaries"></a>
+        <h2>Open Data Glossaries</h2>
+    </div>
+
+
+    <section id="appendix-2" class="b-page-section">
+        <div class="expanded row">
+            <div class="column medium-10 medium-offset-1 column expanded">
+                <p class='text'>Below, we list and describe five key efforts to define the many terms related to open data –&#160;from API to XML –&#160;with a focus on how the available glossaries differ from one another. Additionally Becky Hogge’s “Open Data: Six Stories About Impact in the UK,” also commissioned by Omidyar Network, offers a glossary of terms related to open data and the six initiatives she studied.<span class="e-fn-ref _idGenCharOverride-1"><span id="footnote-000-backlink"><a class="_idFootnoteLink _idGenColorInherit" href="resources.html#footnote-000">6</a></span></span></p>
+
+             <table class="m-respond">
+                 <colgroup>
+                     <col style="width:20%" />
+                     <col style="width:30%" />
+                     <col style="width:15%" />
+                     <col style="width:35%" />
+                 </colgroup>
+                 <thead>
+                     <tr>
+                         <th scope="col">Source</th>
+                         <th scope="col">Description</th>
+                         <th scope="col">Terms</th>
+                         <th scope="col">Distinguishing Characteristics</th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+
+                         <td>
+                            <div class="e-line-header">Source</div>
+                            <p class="Appendix-II-Url"><a href="https://www.data.gov/glossary" id="_idTextAnchor000" alt="https://www.data.gov/glossary">Data.gov</a></p>
+                        </td>
+                         <td>
+                            <div class="e-line-header">Description</div>
+                            Glossary of Terms
+                        </td>
+                         <td><div class="e-line-header">Terms</div>39</td>
+                         <td><div class="e-line-header">Distinguishing Characteristics</div>Definitions sourced from a diversity of linked secondary sources. Categories of definitions for general terms and for terms related to metadata.</td>
+                     </tr>
+                     <tr>
+
+                         <td> <div class="e-line-header">Source</div><a href="https://data.gov.uk/glossary" id="_idTextAnchor001" alt="https://data.gov.uk/glossary">Data.gov.uk</a></td>
+
+                         <td><div class="e-line-header">Description</div>This glossary is intended to be an authoritative explanation of the meaning of technical terms, for all users of data.gov.uk. Users are encouraged to improve it by suggesting a better way of explaining the definitions, and by adding new definitions.</td>
+
+                         <td><div class="e-line-header">Terms</div>75</td>
+
+                         <td><div class="e-line-header">Distinguishing Characteristics</div>“Search for Term” functionality allowing the user to find instances of the term in the data.gov.uk catalog. Ability to suggest a new term.</td>
+                     </tr>
+                     <tr>
+
+                         <td><div class="e-line-header">Source</div> <p class="Appendix-II-Url"><a href="http://opendatahandbook.org/glossary/en/" id="_idTextAnchor002" alt="http://opendatahandbook.org/glossary/en/">Open Data Handbook</a></p></td>
+
+                         <td><div class="e-line-header">Description</div>N/A</td>
+
+                         <td><div class="e-line-header">Terms</div>121</td>
+
+                         <td><div class="e-line-header">Distinguishing Characteristics</div>The most extensive glossary focusing exclusively on open data. Available in 20 languages.</td>
+                     </tr>
+
+                     <tr>
+
+                         <td><div class="e-line-header">Source</div> <p class="Appendix-II-Url"><a href="https://project-open-data.cio.gov/glossary/" id="_idTextAnchor003" alt="https://project-open-data.cio.gov/glossary/">Project Open Data</a></p></td>
+
+                         <td><div class="e-line-header">Description</div>This section contains explanations of common terms referenced in Project Open Data and the Open Data Policy.</td>
+
+                         <td><div class="e-line-header">Terms</div>46</td>
+
+                         <td><div class="e-line-header">Distinguishing Characteristics</div>Generated through crowdsourced, wiki functionality, allowing users to edit the glossary and view its revision history.</td>
+                     </tr>
+
+                     <tr>
+
+                         <td><div class="e-line-header">Source</div> <p class="Appendix-II-Url"><a href="http://www.gartner.com/it-glossary/" id="_idTextAnchor004" alt="http://www.gartner.com/it-glossary/">Gartner IT Glossary</a></p></td>
+
+                         <td><div class="e-line-header">Description</div>IT Glossary is your trusted guide to exploring technology terms and definitions, from the world’s leading IT research and advisory company.</td>
+
+                         <td><div class="e-line-header">Terms</div>1,000+</td>
+
+                         <td><div class="e-line-header">Distinguishing Characteristics</div>Glossary for all manner of information technologies, not just open data. Search and alphabetical browsing functionalities. Related research displayed for terms. Term of the Day.</td>
+                     </tr>
+                 </tbody>
+             </table>
+            </div>
+        </div>
+    </section>
+
+    <div class="b-divider m-resources">
+        <a name="a-repositories" id="a-repositories"></a>
+        <h2>Open Data Repositories</h2>
+    </div>
+
+    <section id="appendix-3" class="b-page-section">
+        <div class="row">
+<!-- project grid-->
+            <div class="column medium-12">
+                <h4>OPEN DATA CASE STUDY REPOSITORIES (alphabetically listed)</h4>
+            </div>
+
+            {% for resource in odr %}
+                {{ item(resource.title, resource.image) }}
+            {% endfor %}
+        </div>
+
+        {% for resource in odr %}     <!-- MODALS -->
+            <div class="b-modal" id="modal-{{resource.title | slug}}">
+                <div class="e-content">
+                    <img src="{{resource.image}}" alt="{{resource.title}}">
+                    <h2>{{odr.index(resource) + 1}}. {{resource.title}}</h2>
+                    <h4>Who</h4>
+                    <p class="text">{{resource.who_html}}</p>
+                    <h4>What</h4>
+                    <p class="text">{{resource.what_html}}</p>
+                    {% if resource.rationale_html %}
+                        <h4>Rationale</h4>
+                        <p class="text">{{resource.rationale_html}}</p>
+                    {% endif %}
+                    <h4>Number of Case Studies</h4>
+                    <p class="text">{{resource.number_of_case_studies}}</p>
+                    <h4>Countries Covered</h4>
+                    <p class="text">{{resource.countries_covered}}</p>
+                    <h4>Contact</h4>
+                    <p class="text">{{resource.contact_html}}</p>
+                    {% if resource.url %}
+                        <!-- <h4>URL</h4> -->
+                        <p class="text"><a href="{{resource.url}}">Visit URL</a></p>
+                    {% endif %}
+                    {% if resource.case_studies_url %}
+                        <!-- <h4>Case Studies URL</h4> -->
+                        <p class="text"><a href="{{resource.case_studies_url}}">View Repository Here</a></p>
+                    {% endif %}
+                    {% if resource.database_url %}
+                        <!-- <h4>Database</h4> -->
+                        <p class="text"><a href="{{resource.database_url}}">View Database Here</a></p>
+                    {% endif %}
+
+                    <p class="e-buttons">
+                        <a class="b-button js-close-modal m-dark m-icon-only" href="#">Close</a>
+                    </p>
+                </div>
+            </div>
+        {% endfor %} <!-- END MODALS -->
+
+    </section>
+
+                <hr>
+
+    <section class="b-page-section" id="appendix-3b">
+        <div class="row">
+            <div class="column medium-10 medium-offset-1">
+            <h4>OPEN DATA PORTAL REPOSITORIES</h4>
+
+                <p class="text">Open data portals have been increasingly used by local, city and national governments to release data in open and reusable formats. These portals have encouraged the increased use of open government data and led to the development of applications, new products and services.</p>
+                <p class="text">Launched at the 2011 Open Knowledge Foundation Conference in Berlin, <a href="http://dataportals.org/"><span class="CharOverride-2">DataPortals.org</span></a> curates a list of over 400 open data portals from around the world, including Data.gov and New Zealand’s Open Data Case Studies. These portals specifically also provide a collection of case studies on how these portals have been used and contributed to social impact.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column medium-5 medium-offset-1">
+                <h4><a href="http://www.data.gov/impact/" alt='http://www.data.gov/impact'>United States – Data.gov Impact Case Studies</a></h4>
+
+                <p class="text">In addition to providing access to numerous government data sets, the site also highlights examples of open data impact, including impact in “cost savings, efficiency, fuel for business, improved civic services, informed policy, performance planning, research and scientific discoveries, transparency and accountability, and increased public participation in the democratic dialogue.”</p>
+                </div>
+
+                <div class="column medium-5 end">
+                <h4><a href="https://www.ict.govt.nz/guidance-and-resources/case-studies/open-data/" alt='https://www.ict.govt.nz/guidance-and-resources/case-studies/open-data/'>New Zealand – Open Data Case Studies</a></h4>
+
+                <p class="text">New Zealand’s Office of the Chief Information Office provides a list of case studies that highlight “the innovative implementation of government ICT initiatives, the successful contribution to the delivery of ICT functional leadership, and the impact of innovative re-use of open government data.” The portal showcases over 30 open data case studies from 2012 to 2015 across various open data use categories, including apps and tools; new skills; central government releases; statistics; and local government releases.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+
+    <section class="b-page-section" id="appendix-3b">
+        <div class="row">
+            <div class="column medium-10 medium-offset-1 column">
+            <h4>INTERMEDIARY REPOSITORIES</h4>
+                <p class="e-h3">Several Open Data intermediaries have also developed a set of client-studies, including:</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column medium-5 medium-offset-1">
+                <h4><a href="http://ckan.org/case-studies/" alt="http://ckan.org/case-studies/">CKAN Case Studies</a></h4>
+
+                <p class="text">The CKAN data management platform helps “numerous governments, organisations and communities around the world” catalogue, search and display data.<a href="http://ckan.org/instances/"><span class="e-fn-ref CharOverride-2">15</span></a> The site showcases 116 instances of use across Europe, Asia, Africa, South America, North America and Australasia as well five in-depth case studies from the U.K., the European Union, Helsinki and the International Aid Transparency Initiative (IATI).</p>
+
+
+                <h4><a href="https://civicactions.com/case-studies" alt="https://civicactions.com/case-studies">DKAN Case Studies</a></h4>
+
+                <p class="text">DKAN is the Drupal-based open source data platform that includes a full suite of cataloging, publishing and visualization features that allows governments, nonprofits and universities to easily publish data to the public. The eight case studies featured on the site present an overview of the client, the project, the goal of the work and the impact of the project.</p>
+
+
+                <h4><a href="http://www.esriuk.com/Resources/case-studies" alt="http://www.esriuk.com/Resources/case-studies">Esri Case Studies</a></h4>
+
+                <p class="text">Esri provides enterprise geographic information systems (GIS) to help its clients “make timely, informed and mission-critical decisions by leveraging the power of geography.”<a href="http://www.esriuk.com/about"><span class="e-fn-ref CharOverride-2">16</span></a> Esri provides over 80 case studies on how businesses, government agencies and nonprofits across sectors have used map-based data for decision-making and social impact.</p>
+                <h4><a href="http://www.granicus.com/customers/case-studies/" alt="http://www.granicus.com/customers/case-studies/">Granicus Case Studies</a></h4>
+
+                <p class="text">Granicus manages “the world’s largest and most reliable legislative content network—containing more than 5 million government media files and public records and maintaining a 99.98% uptime track-record.” Granicus provides 30 case studies of cities across the U.S. who are “leveraging their technology to successfully run their day-to-day government information tasks including webcasting public meetings, managing and delivering legislative information, collaborating with citizens, and more.”<a href="http://www.granicus.com/company/about/"><span class="e-fn-ref CharOverride-2">17</span></a></p>
+            </div>
+
+            <div class="column medium-5 end">
+                <h4><a href="http://www.ibm.com/smarterplanet/us/en/smarter_cities/article/smarter_cities_case_studies.html" alt="http://www.ibm.com/smarterplanet/us/en/smarter_cities/article/smarter_cities_case_studies.html">IBM Smarter Cities Case Studies</a></h4>
+
+                <p class="text">The IBM Smarter Cities projects “help government leaders manage complex city environments, incidents and emergencies with a city solution that delivers operational insights.”<a href="http://www-03.ibm.com/software/products/en/intelligent-operations-center"><span class="e-fn-ref CharOverride-2">18</span></a> Tools from the <a href="http://www.ibm.com/software/industry/intelligent-oper-center/"><span class="CharOverride-2">IBM Intelligent Operations Center (US)</span></a> offer integrated data visualization, near real-time collaboration and deep analytics to help city agencies enhance the ongoing efficiency of city operations, plan for growth and coordinate and manage response efforts. The aim of the initiative is to help power more collaborative working relationships across businesses, industries and state and town lines – and draw in an ever more active and engaged citizenry.<a href="http://www-03.ibm.com/software/products/en/intelligent-operations-center"><span class="e-fn-ref CharOverride-2">19</span></a> There are five in-depth interactive case studies from cities around the world available with details on what IBM did and how they did it.</p>
+
+
+                <h4><a href="https://customers.microsoft.com/Pages/AdvancedSearch.aspx" alt="https://customers.microsoft.com/Pages/AdvancedSearch.aspx">Microsoft Case Studies</a></h4>
+
+                <p class="text">Microsoft open government solutions “allows governments to reach and interact with citizens when and where they need through secure and effective data sharing and open access across mixed technology environments.” The solutions help to “provide effective information between various government agencies and with constituents while not sacrificing security and privacy.”<a href="http://www.microsoft.com/government/en-za/initiatives/Pages/open-government.aspx"><span class="e-fn-ref CharOverride-2">20</span></a> The diverse case studies set out the business needs of the organization (including governments, nonprofit organization and companies), the solution developed by Microsoft and the benefits of the initiative.</p>
+
+
+                <h4><a href="http://www.socrata.com/case-studies/" alt="http://www.socrata.com/case-studies/">Socrata Case Studies</a></h4>
+
+                <p class="text">The Socrata cas<a id="_idTextAnchor005"></a>e studies provide descriptions of Socrata-led initiatives with governments at the municipal (e.g., Boston), state (e.g., Hawaii) and federal levels (e.g., Spain). Each of the 29 case studies provides a description of the initiative, why it was developed and the main highlights of the project.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="b-divider m-resources">
+        <a name="a-resources" id="a-resources"></a>
+        <h2>Open Data Resources</h2>
+    </div>
+
+    <section class="b-page-section" id="appendix-4">
+        <div class="row">
+            <div class="column medium-10 medium-offset-1 column">
+
+            <h4>Selected GovLab Open Data Impact Publications</h4>
+                <ul>
+                    <li><a href="http://images.thegovlab.org/wordpress/wp-content/uploads/2015/08/OpenData-and-SME-Final-Aug2015.pdf" alt="">Open Data: A Twenty-First-Century Asset for Small and Medium-Sized Enterprises</a>
+                    <li><a href="http://images.thegovlab.org/wordpress/wp-content/uploads/2014/06/nhs-full-report.pdf" alt="">The Open Data Era in Health and Social Care</a></li>
+                    <li><a href="http://thegovlab.org/wp-content/uploads/2013/06/psi_Information-for-Impact.pdf" alt="">Information for Impact: Liberating Nonprofit Sector Data</a></li>
+                    <li><a href="http://thegovlab.org/govlab-index-open-data-updated/" alt="">The GovLab Index: Open Data</a></li>
+                    <li><a href="http://thegovlab.org/govlab-selected-readings-on-open-data/" alt="">Selected Readings on Open Data</a></li>
+                    <li><a href="http://thegovlab.org/the-govlab-selected-readings-on-smart-disclosure/" alt="">Selected Readings on Smart Disclosure</a></li>
+                </ul>
+
+            <h4>GovLab Open Data Projects</h4>
+                <ul>
+                    <li><a href="http://www.thegovlab.org/project-open-data-500-global-network.html" alt="">Open Data 500 Global Network</a></li>
+                    <li><a href="http://thegovlab.org/datacollaboratives/" alt="">Data Collaboratives Project Hub</a></li>
+                    <li><a href="http://www.thegovlab.org/project-legisletters.html" alt="">Legisletters</a></li>
+                    <li><a href="http://www.thegovlab.org/project-nhs-open-data.html" alt="">NHS - Open Data</a></li>
+                    <li><a href="http://www.thegovlab.org/project-orgpedia-crowdsourcing-and-impact-modeling.html" alt="">OrgPedia - Crowdsourcing and Impact Modeling</a></li>
+                    <li><a href="http://www.thegovlab.org/project-data-driven-criminal-justice.html" alt="">Data Driven Criminal Justice</a></li>
+                    <li><a href="http://www.thegovlab.org/project-docker-for-data.html" alt="">Docker for Data</a></li>
+                    <li><a href="http://www.thegovlab.org/project-open-grantmaking.html" alt="">Open Grantmaking</a></li>
+                </ul>
+
+            <h4>Omidyar Network Open Data Resources</h4>
+                <ul>
+                    <li><a href="https://www.omidyar.com/sites/default/files/file_archive/insights/Open%20Data_Six%20Stories%20About%20Impact%20in%20the%20UK/OpenData_CaseStudies_Report_complete_DIGITAL_102715.pdf" alt="">Open Data: Six Stories About Impact in the UK</a></li>
+                    <li><a href="https://www.omidyar.com/sites/default/files/file_archive/insights/ON%20Report_061114_FNL.pdf" alt="">Open for Business: How Open Data Can Help Achieve the G20 </Growth Target</a>
+                    <li><a href="https://www.omidyar.com/blog/business-case-open-data" alt="">The Business Case for Open Data</a></li>
+                </ul>
+
+            <h4>Other Resources</h4>
+                <ul>
+                    <li><a href="http://opendatacharter.net/" alt="">International Open Data Charter</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- FOOTNOTES -->
+
+            <div class="b-footnotes">
+                <div class="row">
+                    <div class="medium-8 large-offset-3 column">
+                        <h4>Reference</h4>
+                            <div id="footnote-000" class="_idFootnote">
+                                <p class="e-footnote-text"><a class="_idFootnoteAnchor _idGenColorInherit" href="resources.html#footnote-000-backlink">6</a>&#9; Hogge, Becky. “Open Data: Six Stories About Impact in the UK.” Omidyar Network. November 2015. https://www.omidyar. com/sites/default/ les/ le_archive/insights/Open%20Data_Six%20Stories%20About%20Impact%20in%20the%20UK/ OpenData_CaseStudies_Report_complete_DIGITAL_102715.pdf </p>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="medium-1 column">
+                            <div class="e-close"><i class="material-icons">close</i></div>
+                        </div>
+                </div>
+            </div>
+<!-- END FOOTNOTES -->
+
+</main>
+
+{% endblock %}
+
+
+{% block customscripts %}
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+
+<script type="text/javascript">
+$('.js-more-toggle').click(function() {
+    $(this).parent().toggleClass('m-active');
+})
+
+$('.js-data-tween').click(function(e) {
+    e.preventDefault();
+    TweenLite.to(window, 0.5, {scrollTo:$($(this).attr('data-tween')).offset().top - 120, ease:Power2.easeOut});
+});
+</script>
+     <script src="static/js/case-study-scripts.js"></script>
+{% endblock %}

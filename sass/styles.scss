@@ -37,3 +37,14 @@
 @import 'custom';
 @import 'claudio-custom-components';
 @import 'claudio-custom';
+
+@import 'temp-hacks';
+
+@import 'custom/scrollspy';
+
+@import 'explore';
+@import 'key-findings';
+
+// import tiles/modals from smarter case studies
+@import 'custom/projects-list.scss';
+

@@ -4,10 +4,10 @@ $(document).ready(function(){
     //     TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
     // });
 
-$('#explore-link').click(function(event) {
-    event.preventDefault();
-    TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
-});
+    $('#explore-link').click(function(event) {
+        event.preventDefault();
+        TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
+    });
 
 
 
@@ -37,22 +37,22 @@ $('#explore-link').click(function(event) {
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height(); // inside handler because window size could have changed between events, prob. not the fastest way
 
-        if (!stickyAppeared) {
-            if (scroll > 400) {
-                $('.b-sticky').removeClass('m-hidden');
-                $('.b-sticky').fadeIn('fast');
-                $('#overlay').addClass('m-active');
-                stickyAppeared = true;
-            }
-        }
+        // if (!stickyAppeared) {
+        //     if (scroll > 400) {
+        //         $('.b-sticky').removeClass('m-hidden');
+        //         $('.b-sticky').fadeIn('fast');
+        //         $('#overlay').addClass('m-active');
+        //         stickyAppeared = true;
+        //     }
+        // }
 
-        if (!stickyDisappeared) {
-            if (scroll >= $('#a-explore').offset().top) {
-                $('.b-sticky').fadeOut('fast');
-                $('#overlay').removeClass('m-active');
-                stickyDisappeared = true;
-            }
-        }
+        // if (!stickyDisappeared) {
+        //     if (scroll >= $('#a-explore').offset().top) {
+        //         $('.b-sticky').fadeOut('fast');
+        //         $('#overlay').removeClass('m-active');
+        //         stickyDisappeared = true;
+        //     }
+        // }
 
         if (!badge1Done) {
             // if center of window is scrolled past the top of the element

@@ -1,0 +1,22 @@
+.e-project-item {
+    display: inline-block;
+    background-color: $white; 
+    height: 0;
+    padding: 30px;
+    margin: 4% 0;
+    border: 1px solid $gray-20;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 65%;
+
+
+    
+    &.m-clickable {
+        cursor: pointer;
+    }
+
+    img {
+        // max-height: 180px;
+        max-width: 100%;
+    }
+}

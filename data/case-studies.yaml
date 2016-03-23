@@ -15,6 +15,7 @@
   authors: 'Auralice Graft, Stefaan Verhulst and Andrew Young'
   description: 'Making Public How Public Money Is Spent'
   impact_type: government # citizens | government | economic | public
+  sub_impact: transparency # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Brazil
   region: sa
@@ -27,6 +28,7 @@
   authors: 'Juliet McMurren, Stefaan Verhulst, Andrew Young and David Sangokoya'
   description: 'A Tale of Two Dashboards'
   impact_type: citizens # citizens | government | economic | public
+  sub_impact: social # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: education # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Tanzania
   region: af
@@ -39,6 +41,7 @@
   authors: 'Andrew Young and Stefaan Verhulst'
   description: 'Open Data for Transactional Transparency'
   impact_type: citizens # citizens | government | economic | public
+  sub_impact: decisions # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Kenya
   region: af
@@ -51,6 +54,7 @@
   authors: 'Andrew Young and Stefaan Verhulst'
   description: 'Empowering Citizens to Make Data-Driven Decisions About Education'
   impact_type: citizens # citizens | government | economic | public
+  sub_impact: decisions # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: education # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Mexico
   region: na
@@ -63,6 +67,7 @@
   authors: 'David Sangokoya, Ali Clare, Stefaan Verhulst and Andrew Young'
   description: 'Empowering Citizens to Make Data-Driven Decisions on Health Care'
   impact_type: citizens # citizens | government | economic | public
+  sub_impact: decisions # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Uruguay
   region: sa
@@ -75,6 +80,7 @@
   authors: 'Ali Clare, Stefaan Verhulst and Andrew Young'
   description: 'Enhanced Transparency and Accountability in Development Cooperation'
   impact_type: government # citizens | government | economic | public
+  sub_impact: transparency # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: philantropy # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Sweden
   region: eu
@@ -87,6 +93,7 @@
   authors: 'Ali Clare, David Sangokoya, Stefaan Verhulst and Andrew Young'
   description: 'Establishing Trust in Government through Open Data'
   impact_type: government # citizens | government | economic | public
+  sub_impact: transparency # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Slovakia
   region: eu
@@ -99,6 +106,7 @@
   authors: 'Auralice Graft, Stefaan Verhulst and Andrew Young'
   description: 'Elections: Free, Fair and Open Data'
   impact_type: government # citizens | government | economic | public
+  sub_impact: transparency # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: politics # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Indonesia
   region: as
@@ -111,6 +119,7 @@
   authors: 'Juliet McMurren, Stefaan Verhulst and Andrew Young'
   description: 'Consolidating and Freeing-up Address Data'
   impact_type: government # citizens | government | economic | public
+  sub_impact: services # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Denmark
   region: eu
@@ -123,6 +132,7 @@
   authors: 'Juliet McMurren, Stefaan Verhulst and Andrew Young'
   description: 'Accountability of Charities through Open Data'
   impact_type: government # citizens | government | economic | public
+  sub_impact: services # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: philantropy # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Canada
   region: na
@@ -135,6 +145,7 @@
   authors: Becky Hogge
   description: 'Taking the Long View'
   impact_type: government # citizens | government | economic | public
+  sub_impact: parent-government # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: public # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   region: eu
@@ -148,6 +159,7 @@
   authors: Becky Hogge
   description: 'New Strategies to Close the Data Gap'
   impact_type: government # citizens | government | economic | public
+  sub_impact: parent-government # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: education # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   region: eu
@@ -161,6 +173,7 @@
   authors: 'Becky Hogge'
   description: 'Open Data as One Small Part of the Picture'
   impact_type: government # citizens | government | economic | public
+  sub_impact: parent-government # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: business # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   region: eu
@@ -175,6 +188,7 @@
   authors: 'Andrew Young and Stefaan Verhulst'
   description: 'Data Sharing to Improve Crisis Response'
   impact_type: public # citizens | government | economic | public
+  sub_impact: engagement # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: 'Sierra Leone'
   region: af
@@ -188,6 +202,7 @@
   authors: 'Juliet McMurren, Stefaan Verhulst and Andrew Young'
   description: 'Open Data for Improving Emergency Response'
   impact_type: public # citizens | government | economic | public
+  sub_impact: engagement # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: emergency # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: 'New Zealand'
   region: oc
@@ -201,6 +216,7 @@
   authors: 'Andrew Young, David Sangokoya and Stefaan Verhulst'
   description: 'Open Data for Public Health'
   impact_type: public # citizens | government | economic | public
+  sub_impact: engagement # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: Singapore
   region: as
@@ -214,6 +230,7 @@
   authors: 'Auralice Graft, Stefaan Verhulst and Andrew Young'
   description: 'The unintended negative consequences of open data'
   impact_type: public # citizens | government | economic | public
+  sub_impact: engagement # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: politics # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
   region: na
@@ -227,6 +244,7 @@
   authors: 'Christina Rogawski, Stefaan Verhulst and Andrew Young'
   description: 'Open Data as evidence'
   impact_type: public # citizens | government | economic | public
+  sub_impact: assessment # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: law # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
   region: na
@@ -240,6 +258,7 @@
   authors: 'Becky Hogge'
   description: 'A view from the other side of open'
   impact_type: public # citizens | government | economic | public
+  sub_impact: parent-public # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: health # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   region: eu
@@ -254,6 +273,7 @@
   authors: 'Christina Rogawski, Stefaan Verhulst and Andrew Young'
   description: 'A Clash of Business Models'
   impact_type: economic # citizens | government | economic | public
+  sub_impact: growth # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   region: eu
@@ -267,6 +287,7 @@
   authors: 'Andrew Young, David Sangokoya and Stefaan Verhulst'
   description: 'Leveling the Playing Field'
   impact_type: economic # citizens | government | economic | public
+  sub_impact: growth # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: business # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
   region: na
@@ -280,6 +301,7 @@
   authors: 'Christina Rogawski, Stefaan Verhulst and Andrew Young'
   description: 'Creating a New Industry Through Access to Weather Data'
   impact_type: economic # citizens | government | economic | public
+  sub_impact: growth # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: weather # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
   region: na
@@ -293,6 +315,7 @@
   authors: 'Andrew Young, Christina Rogawski and Stefaan Verhulst'
   description: 'Creating a Global Public Utility'
   impact_type: economic # citizens | government | economic | public
+  sub_impact: growth # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: US
   region: na
@@ -306,6 +329,7 @@
   authors: 'Becky Hogge'
   description: 'Get set, go!'
   impact_type: economic # citizens | government | economic | public
+  sub_impact: parent-economic # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: transportation # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   region: eu
@@ -320,6 +344,7 @@
   authors: 'Becky Hogge'
   description: 'The UK’s trading funds, and two futures for open data'
   impact_type: economic # citizens | government | economic | public
+  sub_impact: parent-economic # engagement | assessment | growth | innovation | transparency | services | decisions | social
   sector: geospatial # public | philantropy | geospatial | politics | health | education | emergency | law | business | transportation | weather
   location: UK
   region: eu

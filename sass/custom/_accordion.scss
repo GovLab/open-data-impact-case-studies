@@ -1,6 +1,15 @@
 
 .b-accordion {
   border: 0;
+  
+
+  a {
+    color:currentColor !important;
+    text-decoration: underline !important;
+  }
+  ul {
+    padding: 0 5%;
+  }
 
   p { 
     padding: 10px 30px;
@@ -52,7 +61,7 @@
 
   // Switches the 
 
-  .accordion-item.m-active dt:before { content: "expand_less"; }
+  .e-accordion-item.m-active dt:before { content: "expand_less"; }
 
 
   // Adds different bg-colours modifiers
@@ -62,5 +71,7 @@
   &.m-blue      { background-color: $blue; }
   &.m-teal      { background-color: $teal; }
   &.m-dark-blue { background-color: $dark-blue; }
+
+
 
 }
