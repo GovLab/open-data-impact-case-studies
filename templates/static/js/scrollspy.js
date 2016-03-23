@@ -41,7 +41,7 @@ function stickyNav() {
             // FIND SCROLL POSITION TO LOCK VIEW
             // var maxScroll = visibleArea - headerHeight;
             var min = $('#a-scrollspy').offset().top - $( '.b-top-nav' ).height();
-            var max = $('#a-stop').offset().top - $( '#scrollspy' ).height();
+            var max = $('#a-stop').offset().top - $( '#scrollspy' ).height() - 150;
 
             if ( yPosition > min && yPosition < max) {
                 $('.e-scrollspy').addClass('m-active');
