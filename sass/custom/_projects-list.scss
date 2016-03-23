@@ -6,7 +6,14 @@
     padding-top: 2%;
     margin: 2%;
     border: 1px solid $gray-20;
+    text-align: center;
+    
     &.m-clickable {
         cursor: pointer;
+    }
+
+    img {
+        max-height: 180px;
+        max-width: 180px;
     }
 }
