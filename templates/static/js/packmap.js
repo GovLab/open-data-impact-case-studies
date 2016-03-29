@@ -26,6 +26,15 @@ if (window.matchMedia(mobileOnly).matches) {
 
 } else { // desktop
 
+  var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+  var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+  var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+  var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+  var is_opera = navigator.userAgent.toLowerCase().indexOf("op") > -1;
+
+  if ((is_chrome)&&(is_safari)) {is_safari=false;}
+  if ((is_chrome)&&(is_opera)) {is_chrome=false;}
+
   // configurable regions
   // set up custom regions by removing / adding entries
   // fields:
@@ -887,7 +896,11 @@ if (window.matchMedia(mobileOnly).matches) {
       if (d.region) {
         return '-.3em';
       } else {
-        return '.5em';
+        if (!is_safari) {
+          return '.5em';
+        } else {
+          return '.3em';
+        }
       }
     })
     .style('text-anchor', 'middle')
@@ -906,10 +919,18 @@ if (window.matchMedia(mobileOnly).matches) {
             t = studies.children[i].sectors[d.sector];
           }
         }
-        t = textMap[d.sector];
+        if (!is_safari) {
+          t = textMap[d.sector];
+        } else {
+          t = d.children.length;
+        }
       }
       else if (d.study) {
-        t = textMap['study'];
+        if (!is_safari) {
+          t = textMap['study'];
+        } else {
+          t = '';
+        }
       }
       else {
         for (i in studies.children) {
@@ -917,7 +938,11 @@ if (window.matchMedia(mobileOnly).matches) {
             t = studies.children[i].impacts[d.impact];
           }
         }
-        t = textMap[d.impact];
+        if (!is_safari) {
+          t = textMap[d.impact];
+        } else {
+          t = d.children.length;
+        }
       }
       return t;
     })
@@ -935,13 +960,21 @@ if (window.matchMedia(mobileOnly).matches) {
       return id;
     })
     .attr('class', function (d) {
+      var t;
       if (d.metaSector) {
-        return 'material-icons sector-text';
+        t = 'sector-text ';
+        if (!is_safari) {
+          t += 'material-icons';
+        }
       } else if (d.region) {
-        return 'text';
+        t = 'text';
       } else {
-        return 'material-icons';
+        t = '';
+        if (!is_safari) {
+          t += 'material-icons';
+        }
       }
+      return t;
     })
     .on("click", clicked)
     .on("mouseover", highlight)
