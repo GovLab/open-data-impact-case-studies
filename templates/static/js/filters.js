@@ -9,7 +9,8 @@
         layoutMode: 'fitRows'
     }).addClass('claudio');
 
-    $('#government-button').click(function() {
+    $('#government-button').click(function(event) {
+        event.preventDefault();
         TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
         $('#impact-tab').click();
         $('.js-filter').removeClass('selected');
@@ -17,7 +18,8 @@
         $grid.isotope({ filter : '.impact-government' });
     });
 
-    $('#citizens-button').click(function() {
+    $('#citizens-button').click(function(event) {
+        event.preventDefault();
         TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
         $('#impact-tab').click();
         $('.js-filter').removeClass('selected');
@@ -25,7 +27,8 @@
         $grid.isotope({ filter : '.impact-citizens' });
     });
 
-    $('#economic-button').click(function() {
+    $('#economic-button').click(function(event) {
+        event.preventDefault();
         TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
         $('#impact-tab').click();
         $('.js-filter').removeClass('selected');
@@ -33,7 +36,8 @@
         $grid.isotope({ filter : '.impact-economic' });
     });
 
-    $('#public-button').click(function() {
+    $('#public-button').click(function(event) {
+        event.preventDefault();
         TweenLite.to(window, 0.5, {scrollTo:$('#a-explore').offset().top, ease:Power2.easeOut});
         $('#impact-tab').click();
         $('.js-filter').removeClass('selected');
