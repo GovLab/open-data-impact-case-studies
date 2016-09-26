@@ -10,10 +10,11 @@ $(document).ready(function($) {
 
 
     //Logic for Sticky
-    // if ($('.b-sticky').length) {
+    $('.b-sticky') {
         // activate overlay only if b-sticky exists on page
-        // $overlay.addClass('m-active');
-    // }
+        $(this).addClass('m-active');
+        $overlay.addClass('m-active');
+    }
     $('.js-close-sticky').click(function() {
         $('.b-sticky').fadeOut('fast');
     });
