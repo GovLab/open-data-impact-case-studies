@@ -31,7 +31,6 @@ $(document).ready(function(){
     var badge4Done = false;
     var stickyAppeared = false;
     var stickyDisappeared = false;
-    $('.b-sticky').hide();
 
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();

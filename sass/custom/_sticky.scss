@@ -1,30 +1,33 @@
 .b-sticky {
     z-index: 11;
-    &#upcoming-section {
-        background-color: $purple-90;
-        color: $white;
-        @include breakpoint($mobile-only) {
-            padding: 20px 0;
-        }
-        @include breakpoint($desktop) {
-            padding: 60px 0;
-        }
-        .row {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: $white-60;
+    box-shadow: 0 0 10px $gray-20;
+
+    @include breakpoint($mobile-only) {
+        padding: 20px 0;
+    }
+    @include breakpoint($desktop) {
+        padding: 40px 0;
+    }
+
+    .row {
             max-width: 85%;
             a {
                 text-decoration: none;
                 font-style: italic;
                 font-weight: 700;
-                color: $white-70;
+                color: $white-80;
                 @include transition;
                 &:hover {
                     color: $white;
                     @include transition;
                 }
             }
-            h2 {
+            h3 {
                 font-size: 28px;
                 font-weight: 800;
+                text-transform: capitalize;
             }
             p {
                 margin: 35px 50px;
@@ -39,7 +42,7 @@
 
             @include breakpoint($mobile-only) {
                 text-align: left;
-                p, h2 {
+                p, h3 {
                     margin: 20px;
                     display: block;
                     &:last-of-type:not(:only-of-type) {
@@ -49,19 +52,25 @@
             }
 
             @include breakpoint($desktop) {
-                text-align: right;
+                text-align: left;
                 p {
-                    display: inline;
+                    //display: inline;
                     &:last-of-type:not(:only-of-type) {
                         display: block;
                         margin: 0 40px;
                     }
                 }
-                h2 {
+                h3 {
                     display: inline;
                     margin: 0;
                 }
             }
+        }
+
+        img {
+            margin-right: 40px;
+            max-height: 150px;
+            float: left;
         }
     }
 
@@ -72,6 +81,3 @@
     }
 
 
-
-
-}
